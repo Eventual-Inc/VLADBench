@@ -13,6 +13,7 @@
 <div align="center" style="font-size: 22px; margin-top: 20px; margin-bottom: 20px; line-height: 2.5;">
   <a href="https://arxiv.org/pdf/2503.21505">📖 arXiv Paper</a> &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://huggingface.co/datasets/depth2world/VLADBench">🤗 Dataset</a>
+  <a href="https://github.com/open-compass/VLMEvalKit"> 🔧 Support VLMEvalKit </a>
 </div>
 
 

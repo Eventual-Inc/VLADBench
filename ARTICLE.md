@@ -137,7 +137,7 @@ I went to VLADBench to pick a model. The later papers investigate different eval
 
 ## I am disappointed in both
 
-I am disappointed in most of the vision stack we swept for this job. Below the top five, do not use these models to find cut-ins. Gemma E2B, Gemma E4B, GPT-5.6 Luna, Qwen 3.8 without thinking, the fine-tune: they are not close. If you start anywhere, start with Qwen 3.6 35B-A3B. Not because it solved the problem. Because it is the cheapest way to spend the rest of your compute hitting the failure modes below instead of rediscovering that a 2B model cannot do this.
+I am disappointed in most of the vision stack we swept for this job. Below the top five, I would not prioritize another run of these configurations until the eval is fixed. Gemma E2B, Gemma E4B, GPT-5.6 Luna, Qwen 3.8 without thinking, the fine-tune: they are not close on this harness. If you start a replication anywhere, start with Qwen 3.6 35B-A3B. Not because it solved the problem. Because it reached the top with low measured latency, leaving more iteration time for the failure modes below.
 
 I am also disappointed in the top five. They are the ones worth experimenting with, and they are painfully sensitive to the prompt, the box, and the label taxonomy. Qwen is the winner on this harness. It is not a cut-in system.
 
@@ -155,7 +155,7 @@ I failed so you don't have to. From the most naive to least, try to avoid these 
 4. **Do not trust a high pass rate on a yes-set.** 86 of 87 clips here are positives. Fleet video is the opposite. You have not measured the false-alarm cost.
 5. **Do not treat a bounding box as a free accuracy boost.** Answers change. Sometimes they get worse. You now depend on a detector you may not have.
 6. **Do not put motives in the taxonomy.** `commuting efficiency` is not a visual class. `lane change` is. Grade what is in the frame.
-7. **Do not skip the sweep.** One model on one prompt is just one datapoint. Sweeping twenty configurations told us which models to ignore.
+7. **Do not skip the sweep.** One model on one prompt is just one datapoint. Sweeping twenty configurations told us which configurations not to prioritize on this harness.
 8. **Do not use open-loop VQA as a proxy for scenario mining.** This task did not establish whether the model actually used the image, and separate closed-loop work measures behavior much further from a yes/no over a handful of JPEGs.
 
 Detecting cut-ins is hard. Writing a perception benchmark for them, especially one that goes through a vision-language model, is harder. The value of the last two days is not a template for evaluating cut-ins open-loop; it is evidence that benchmark design dominated the result. If you build the next experiment, Qwen 3.6 35B-A3B is a reasonable starting point on this harness—not proof of production performance—and the evaluation design deserves at least as much attention as the model.

@@ -1,0 +1,1640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VLADBench scoring explorer</title>
+    <style>
+      :root {
+        --midnight: #000000;
+        --panel: #050505;
+        --surface: #0a0a0a;
+        --surface-2: #101010;
+        --paper: #ffffff;
+        --cream: #f5f4ef;
+        --steel: #b0b0b0;
+        --mineral: #8a8a8a;
+        --signal: #ff00ff;
+        --amber: #c98016;
+        --hairline: rgba(255, 255, 255, 0.16);
+        --hairline-strong: rgba(255, 255, 255, 0.3);
+        --signal-soft: rgba(255, 0, 255, 0.12);
+        --amber-soft: rgba(201, 128, 22, 0.13);
+        --sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        --mono: Menlo, "SF Mono", Consolas, "Andale Mono", monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        background: var(--midnight);
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--midnight);
+        color: var(--paper);
+        font-family: var(--sans);
+        -webkit-font-smoothing: antialiased;
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      button {
+        color: inherit;
+      }
+      code,
+      .mono {
+        font-family: var(--mono);
+      }
+
+      .app {
+        display: grid;
+        grid-template-columns: 328px minmax(0, 1fr);
+        min-height: 100vh;
+      }
+
+      .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        padding: 24px 22px 40px;
+        border-right: 1px solid var(--hairline);
+        background: var(--panel);
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--hairline);
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .brand-mark {
+        color: var(--signal);
+      }
+      .sidebar h1 {
+        margin: 22px 0 8px;
+        max-width: 250px;
+        font-size: 24px;
+        line-height: 1.04;
+        letter-spacing: -0.035em;
+      }
+      .lede {
+        margin: 0;
+        color: var(--steel);
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .section {
+        padding: 21px 0;
+        border-bottom: 1px solid var(--hairline);
+      }
+      .section-head {
+        display: flex;
+        align-items: baseline;
+        gap: 9px;
+        margin-bottom: 12px;
+      }
+      .section-index {
+        color: var(--signal);
+        font-family: var(--mono);
+        font-size: 10px;
+      }
+      .section h2 {
+        margin: 0;
+        font-family: var(--mono);
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+      }
+      .section-note {
+        margin: -4px 0 12px 24px;
+        color: var(--mineral);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+      .equation {
+        padding: 11px 12px;
+        border: 1px solid var(--hairline-strong);
+        background: var(--midnight);
+        color: var(--cream);
+        font-family: var(--mono);
+        font-size: 11px;
+        line-height: 1.6;
+      }
+      .slider {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 8px;
+        margin-top: 14px;
+        color: var(--steel);
+        font-size: 12px;
+      }
+      .slider output {
+        color: var(--paper);
+        font-family: var(--mono);
+      }
+      input[type="range"] {
+        grid-column: 1 / -1;
+        width: 100%;
+        height: 3px;
+        margin: 0;
+        accent-color: var(--signal);
+      }
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 12px;
+      }
+      .control {
+        min-height: 30px;
+        padding: 6px 9px;
+        border: 1px solid var(--hairline);
+        background: transparent;
+        color: var(--steel);
+        cursor: pointer;
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.03em;
+      }
+      .control:hover {
+        border-color: var(--hairline-strong);
+        color: var(--paper);
+      }
+      .control.active {
+        border-color: var(--signal);
+        background: var(--signal-soft);
+        color: var(--paper);
+      }
+      .control.warn.active {
+        border-color: var(--amber);
+        background: var(--amber-soft);
+      }
+      .check-row {
+        display: grid;
+        grid-template-columns: 15px 1fr;
+        gap: 8px;
+        align-items: start;
+        margin-top: 11px;
+        color: var(--steel);
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 1.35;
+      }
+      .check-row input {
+        width: 13px;
+        height: 13px;
+        margin: 1px 0 0;
+        accent-color: var(--signal);
+      }
+
+      .workspace {
+        min-width: 0;
+        padding: 0 32px 80px;
+      }
+      .masthead {
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+        padding: 29px 0 23px;
+        border-bottom: 1px solid var(--hairline);
+      }
+      .eyebrow {
+        margin-bottom: 8px;
+        color: var(--signal);
+        font-family: var(--mono);
+        font-size: 10px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+      .masthead h2 {
+        margin: 0;
+        font-size: clamp(26px, 4vw, 44px);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+      }
+      .masthead-copy {
+        max-width: 590px;
+        margin: 13px 0 0;
+        color: var(--steel);
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .data-stamp {
+        flex: 0 0 auto;
+        align-self: flex-start;
+        padding-top: 4px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 10px;
+        line-height: 1.6;
+        text-align: right;
+        text-transform: uppercase;
+      }
+
+      .metric-strip {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(120px, 1fr));
+        border-bottom: 1px solid var(--hairline);
+      }
+      .metric {
+        min-height: 105px;
+        padding: 20px 18px 18px 0;
+      }
+      .metric + .metric {
+        padding-left: 18px;
+        border-left: 1px solid var(--hairline);
+      }
+      .metric-label {
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .metric-value {
+        margin-top: 8px;
+        color: var(--cream);
+        font-family: var(--mono);
+        font-size: 24px;
+        line-height: 1;
+      }
+      .metric-value.signal {
+        color: var(--signal);
+      }
+      .metric-detail {
+        margin-top: 7px;
+        color: var(--steel);
+        font-size: 11px;
+      }
+
+      .content-section {
+        padding: 29px 0 0;
+      }
+      .content-heading {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 14px;
+      }
+      .content-heading h3 {
+        margin: 0;
+        font-size: 19px;
+        letter-spacing: -0.025em;
+      }
+      .content-heading p {
+        margin: 5px 0 0;
+        color: var(--mineral);
+        font-size: 12px;
+      }
+      .toolbar {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .field {
+        min-height: 34px;
+        border: 1px solid var(--hairline);
+        border-radius: 0;
+        outline: none;
+        background: var(--panel);
+        color: var(--paper);
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+      .field:focus {
+        border-color: var(--signal);
+      }
+      input.field {
+        width: 210px;
+        padding: 7px 10px;
+      }
+      select.field {
+        padding: 7px 30px 7px 9px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        border-top: 1px solid var(--hairline-strong);
+        border-bottom: 1px solid var(--hairline);
+      }
+      table {
+        width: 100%;
+        min-width: 1130px;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+      th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        padding: 10px 8px;
+        border-bottom: 1px solid var(--hairline);
+        background: var(--midnight);
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        text-align: left;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      td {
+        padding: 11px 8px;
+        border-top: 1px solid var(--hairline);
+        color: var(--steel);
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+      th.num,
+      td.num {
+        font-family: var(--mono);
+        text-align: right;
+      }
+      tr.result-row {
+        cursor: pointer;
+      }
+      tr.result-row:hover td {
+        background: var(--surface);
+      }
+      tr.result-row.selected td {
+        background: var(--signal-soft);
+      }
+      tr.result-row.selected td:first-child {
+        border-left: 2px solid var(--signal);
+      }
+      .rank {
+        width: 34px;
+        color: var(--mineral);
+        font-family: var(--mono);
+      }
+      .rank.first {
+        color: var(--signal);
+      }
+      .model-name {
+        color: var(--paper);
+        font-weight: 600;
+      }
+      .run-file {
+        max-width: 240px;
+        margin-top: 4px;
+        overflow: hidden;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+        text-overflow: ellipsis;
+      }
+      .pill {
+        display: inline-block;
+        padding: 4px 6px;
+        border: 1px solid var(--hairline);
+        color: var(--steel);
+        font-family: var(--mono);
+        font-size: 9px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .pill.reword {
+        border-color: var(--signal);
+        color: var(--paper);
+      }
+      .pill.low {
+        border-color: var(--amber);
+        color: var(--cream);
+      }
+      .score-cell {
+        min-width: 82px;
+        color: var(--paper);
+      }
+      .score-track {
+        width: 64px;
+        height: 2px;
+        margin: 5px 0 0 auto;
+        background: var(--surface-2);
+      }
+      .score-fill {
+        display: block;
+        height: 100%;
+        background: var(--signal);
+      }
+      .status-complete {
+        color: var(--cream);
+      }
+      .status-partial {
+        color: var(--amber);
+      }
+      .delta-pos {
+        color: var(--signal);
+      }
+      .delta-neg {
+        color: var(--amber);
+      }
+      .empty-row {
+        padding: 26px 8px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        text-align: center;
+      }
+
+      .comparison-wrap {
+        overflow-x: auto;
+        border-top: 1px solid var(--hairline-strong);
+      }
+      .comparison-wrap table {
+        min-width: 780px;
+      }
+
+      .inspector {
+        margin-top: 38px;
+        padding-top: 28px;
+        border-top: 1px solid var(--hairline-strong);
+      }
+      .inspector-placeholder {
+        padding: 44px 0;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 11px;
+      }
+      .run-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 20px;
+      }
+      .run-header h3 {
+        margin: 0;
+        color: var(--paper);
+        font-size: 24px;
+        letter-spacing: -0.035em;
+      }
+      .run-subtitle {
+        margin-top: 6px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 10px;
+      }
+      .run-metrics {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 18px;
+      }
+      .run-stat {
+        text-align: right;
+      }
+      .run-stat b {
+        display: block;
+        color: var(--cream);
+        font-family: var(--mono);
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .run-stat span {
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 8px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+      .inspector-grid {
+        display: grid;
+        grid-template-columns: 270px minmax(0, 1fr);
+        gap: 24px;
+        min-height: 520px;
+      }
+      .clip-rail {
+        border-right: 1px solid var(--hairline);
+        padding-right: 14px;
+      }
+      .clip-filter {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin-bottom: 10px;
+      }
+      .clip-filter .control {
+        padding-inline: 4px;
+      }
+      .clip-list {
+        display: grid;
+        gap: 6px;
+        max-height: 650px;
+        overflow-y: auto;
+        padding-right: 5px;
+      }
+      .clip-item {
+        display: grid;
+        grid-template-columns: 86px 1fr;
+        gap: 9px;
+        padding: 5px;
+        border: 1px solid transparent;
+        background: transparent;
+        text-align: left;
+        cursor: pointer;
+      }
+      .clip-item:hover {
+        border-color: var(--hairline);
+      }
+      .clip-item.active {
+        border-color: var(--signal);
+        background: var(--signal-soft);
+      }
+      .clip-item img {
+        width: 86px;
+        height: 50px;
+        object-fit: cover;
+        background: var(--surface);
+      }
+      .clip-title {
+        display: block;
+        overflow: hidden;
+        color: var(--steel);
+        font-family: var(--mono);
+        font-size: 9px;
+        line-height: 1.3;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .clip-result {
+        display: block;
+        margin-top: 6px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+      }
+      .clip-result.good {
+        color: var(--signal);
+      }
+      .clip-result.bad {
+        color: var(--amber);
+      }
+      .clip-content {
+        min-width: 0;
+      }
+      .clip-meta {
+        margin-bottom: 13px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+      .frames {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .frame {
+        margin: 0;
+        border: 1px solid var(--hairline);
+        background: var(--panel);
+      }
+      .frame img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        background: var(--surface);
+      }
+      .frame figcaption {
+        padding: 7px 9px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .qa-list {
+        margin-top: 18px;
+      }
+      .qa {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 1fr);
+        gap: 16px;
+        padding: 15px 0;
+        border-top: 1px solid var(--hairline);
+      }
+      .qa-kind {
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+        line-height: 1.5;
+        text-transform: uppercase;
+      }
+      .qa-outcome {
+        display: block;
+        margin-top: 7px;
+        color: var(--amber);
+      }
+      .qa-outcome.pass {
+        color: var(--signal);
+      }
+      .qa-outcome.excluded {
+        color: var(--mineral);
+      }
+      .qa-question {
+        margin: 0 0 12px;
+        color: var(--steel);
+        font-size: 13px;
+        line-height: 1.48;
+      }
+      .answer-pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+      }
+      .answer {
+        padding: 9px 10px;
+        border-left: 1px solid var(--hairline-strong);
+        background: var(--panel);
+      }
+      .answer-label {
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 8px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .answer-value {
+        display: block;
+        margin-top: 5px;
+        color: var(--cream);
+        font-family: var(--mono);
+        font-size: 11px;
+        line-height: 1.45;
+        white-space: normal;
+        word-break: break-word;
+      }
+      .qa-usage {
+        margin-top: 9px;
+        color: var(--mineral);
+        font-family: var(--mono);
+        font-size: 9px;
+      }
+
+      @media (max-width: 1050px) {
+        .app {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          position: relative;
+          height: auto;
+          border-right: 0;
+          border-bottom: 1px solid var(--hairline);
+        }
+        .metric-strip {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .metric:nth-child(3) {
+          padding-left: 0;
+          border-left: 0;
+          border-top: 1px solid var(--hairline);
+        }
+        .metric:nth-child(4) {
+          border-top: 1px solid var(--hairline);
+        }
+      }
+      @media (max-width: 760px) {
+        .workspace {
+          padding-inline: 18px;
+        }
+        .masthead,
+        .content-heading,
+        .run-header {
+          display: block;
+        }
+        .data-stamp {
+          margin-top: 14px;
+          text-align: left;
+        }
+        .toolbar {
+          margin-top: 12px;
+        }
+        input.field {
+          width: 100%;
+        }
+        .inspector-grid {
+          grid-template-columns: 1fr;
+        }
+        .clip-rail {
+          border-right: 0;
+          padding-right: 0;
+        }
+        .clip-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          max-height: 320px;
+        }
+        .run-metrics {
+          justify-content: flex-start;
+          margin-top: 14px;
+        }
+        .run-stat {
+          text-align: left;
+        }
+        .frames,
+        .answer-pair {
+          grid-template-columns: 1fr;
+        }
+        .qa {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span>Eventual / Evaluation Lab</span>
+          <span class="brand-mark">E/01</span>
+        </div>
+        <h1>Scoring controls</h1>
+        <p class="lede">
+          Reweight the published benchmark, compare prompt variants, and inspect
+          every model answer against gold.
+        </p>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="section-index">01</span>
+            <h2>Score definition</h2>
+          </div>
+          <p class="section-note">
+            The published score pools question-level rates. Aligned scoring
+            requires every answer for a clip to be correct.
+          </p>
+          <div class="button-row" id="scoreModes">
+            <button class="control active" data-mode="vlad">
+              Pooled rates
+            </button>
+            <button class="control" data-mode="aligned">All 3 aligned</button>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="section-index">02</span>
+            <h2>Weights</h2>
+          </div>
+          <div class="equation" id="equation"></div>
+          <label class="slider">
+            <span>Judgment / yes-no</span><output id="wj">70%</output>
+            <input id="judge" type="range" min="0" max="100" value="70" />
+          </label>
+          <label class="slider">
+            <span>Reason / single choice</span><output id="wr">10%</output>
+            <input id="reason" type="range" min="0" max="100" value="10" />
+          </label>
+          <label class="slider">
+            <span>Instruction compliance</span><output id="wo">20%</output>
+            <input id="obey" type="range" min="0" max="100" value="20" />
+          </label>
+          <div class="button-row">
+            <button class="control preset active" data-w="70,10,20">
+              Official 70/10/20
+            </button>
+            <button class="control preset" data-w="50,50,0">
+              Equal task weight
+            </button>
+            <button class="control preset" data-w="100,0,0">
+              Judgment only
+            </button>
+            <button class="control preset" data-w="0,100,0">Reason only</button>
+          </div>
+          <label class="check-row">
+            <input id="normalize" type="checkbox" checked />
+            <span>Normalize weights to 100%</span>
+          </label>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="section-index">03</span>
+            <h2>Runs in view</h2>
+          </div>
+          <p class="section-note">
+            Prompt and reasoning filters affect the results table. Paired prompt
+            comparisons remain visible below it.
+          </p>
+          <div class="button-row" id="promptFilters">
+            <button class="control active" data-prompt="official">
+              Official wording
+            </button>
+            <button class="control active" data-prompt="reword">
+              Cut-in rewrite
+            </button>
+          </div>
+          <div class="button-row" id="reasoningFilters">
+            <button class="control active" data-think="off">
+              Reasoning off
+            </button>
+            <button class="control active" data-think="on">Reasoning on</button>
+            <button class="control active" data-think="low">
+              Reasoning low
+            </button>
+          </div>
+          <label class="check-row">
+            <input id="completeOnly" type="checkbox" checked />
+            <span>Show completed runs only</span>
+          </label>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <span class="section-index">04</span>
+            <h2>Dataset cuts</h2>
+          </div>
+          <label class="check-row">
+            <input id="dropCommuting" type="checkbox" />
+            <span
+              >Exclude <span class="mono">commuting efficiency</span> reason
+              questions</span
+            >
+          </label>
+        </section>
+
+        <p class="lede" style="margin-top: 20px">
+          Rebuild after new runs:<br /><code
+            >uv run export_scoring_explorer.py</code
+          >
+        </p>
+      </aside>
+
+      <main class="workspace">
+        <header class="masthead">
+          <div>
+            <div class="eyebrow">VLADBench / Vehicle Cut-in</div>
+            <h2>Scoring explorer</h2>
+            <p class="masthead-copy">
+              Every completed and partial run in one place. Change the score,
+              compare the official “cross the road” prompt with the corrected
+              cut-in prompt, then inspect disagreements clip by clip.
+            </p>
+          </div>
+          <div class="data-stamp" id="dataStamp"></div>
+        </header>
+
+        <section class="metric-strip" id="summaryMetrics"></section>
+
+        <section class="content-section">
+          <div class="content-heading">
+            <div>
+              <h3>All results</h3>
+              <p id="resultCaption"></p>
+            </div>
+            <div class="toolbar">
+              <input
+                class="field"
+                id="search"
+                type="search"
+                placeholder="Filter model or run"
+              />
+              <select class="field" id="sort">
+                <option value="score">Sort / score</option>
+                <option value="judge">Sort / judgment</option>
+                <option value="reason">Sort / reason</option>
+                <option value="aligned">Sort / aligned</option>
+                <option value="latency">Sort / latency</option>
+                <option value="model">Sort / model</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Model / run</th>
+                  <th>Prompt</th>
+                  <th>Reasoning</th>
+                  <th>Status</th>
+                  <th class="num">Score</th>
+                  <th class="num">Judgment</th>
+                  <th class="num">Reason</th>
+                  <th class="num">Obey</th>
+                  <th class="num">Aligned</th>
+                  <th class="num">Yes rate</th>
+                  <th class="num">Median latency</th>
+                  <th class="num">Wall time</th>
+                </tr>
+              </thead>
+              <tbody id="resultRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-section" id="comparisonSection">
+          <div class="content-heading">
+            <div>
+              <h3>Prompt sensitivity</h3>
+              <p>
+                Paired runs only. Delta is corrected cut-in wording minus
+                official wording under the active score definition.
+              </p>
+            </div>
+          </div>
+          <div class="comparison-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Model</th>
+                  <th>Reasoning</th>
+                  <th class="num">Official</th>
+                  <th class="num">Cut-in rewrite</th>
+                  <th class="num">Score delta</th>
+                  <th class="num">Judgment delta</th>
+                  <th class="num">Reason delta</th>
+                </tr>
+              </thead>
+              <tbody id="comparisonRows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="inspector" id="inspector">
+          <div class="inspector-placeholder">
+            Select a result row to inspect its 87 clips, prompts, predictions,
+            timing, and token usage.
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="scoring-data.js"></script>
+    <script>
+      const data = window.SCORING_DATA || { clips: [], runs: [], expected: 0 };
+      const state = {
+        judge: 70,
+        reason: 10,
+        obey: 20,
+        normalize: true,
+        mode: "vlad",
+        prompts: new Set(["official", "reword"]),
+        reasoning: new Set(["off", "on", "low"]),
+        completeOnly: true,
+        dropCommuting: false,
+        search: "",
+        sort: "score",
+        selected: null,
+        clip: 0,
+        clipFilter: "all",
+      };
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function percent(value, digits = 1) {
+        return value == null ? "—" : (100 * value).toFixed(digits) + "%";
+      }
+
+      function number(value) {
+        return value == null ? "—" : Math.round(value).toLocaleString();
+      }
+
+      function duration(seconds) {
+        if (seconds == null) return "—";
+        if (seconds < 60) return seconds.toFixed(1) + "s";
+        const minutes = Math.floor(seconds / 60);
+        return minutes + "m " + (seconds % 60).toFixed(1) + "s";
+      }
+
+      function signed(value, suffix = "") {
+        if (value == null) return "—";
+        const sign = value > 0 ? "+" : "";
+        return sign + value.toFixed(1) + suffix;
+      }
+
+      function weights() {
+        let judge = state.judge;
+        let reason = state.reason;
+        let obey = state.obey;
+        const total = judge + reason + obey;
+        if (state.normalize && total > 0) {
+          judge /= total;
+          reason /= total;
+          obey /= total;
+        } else {
+          judge /= 100;
+          reason /= 100;
+          obey /= 100;
+        }
+        return { judge, reason, obey };
+      }
+
+      function scoreRun(run) {
+        let judgeN = 0;
+        let judgeOk = 0;
+        let reasonN = 0;
+        let reasonOk = 0;
+        let obeyN = 0;
+        let obeyOk = 0;
+        let alignedN = 0;
+        let alignedOk = 0;
+        let yesN = 0;
+        let yesSaid = 0;
+
+        run.answers.forEach((answers, clipIndex) => {
+          const clip = data.clips[clipIndex];
+          let clipN = 0;
+          let clipOk = 0;
+          clip.questions.forEach((question, questionIndex) => {
+            if (question.excluded) return;
+            if (state.dropCommuting && question.commute) return;
+            const answer = answers[questionIndex];
+            obeyN += 1;
+            clipN += 1;
+            if (answer.obey) obeyOk += 1;
+            if (answer.ok) clipOk += 1;
+            if (question.kind === "judge") {
+              judgeN += 1;
+              yesN += 1;
+              if (answer.ok) judgeOk += 1;
+              if (answer.pred === "yes") yesSaid += 1;
+            } else {
+              reasonN += 1;
+              if (answer.ok) reasonOk += 1;
+            }
+          });
+          if (clipN) {
+            alignedN += 1;
+            if (clipOk === clipN) alignedOk += 1;
+          }
+        });
+
+        const judge = judgeN ? judgeOk / judgeN : 0;
+        const reason = reasonN ? reasonOk / reasonN : 0;
+        const obey = obeyN ? obeyOk / obeyN : 0;
+        const aligned = alignedN ? alignedOk / alignedN : 0;
+        const activeWeights = weights();
+        const pooled =
+          100 *
+          (judge * activeWeights.judge +
+            reason * activeWeights.reason +
+            obey * activeWeights.obey);
+        return {
+          score: state.mode === "aligned" ? 100 * aligned : pooled,
+          judge,
+          reason,
+          obey,
+          aligned,
+          yesRate: yesN ? yesSaid / yesN : 0,
+          done: run.completed === run.scored,
+        };
+      }
+
+      function allScoredRuns() {
+        return data.runs.map((run, index) => ({
+          run,
+          index,
+          metrics: scoreRun(run),
+        }));
+      }
+
+      function visibleRuns() {
+        const search = state.search.trim().toLowerCase();
+        const visible = allScoredRuns().filter(({ run, metrics }) => {
+          if (!state.prompts.has(run.prompt)) return false;
+          if (!state.reasoning.has(run.think)) return false;
+          if (state.completeOnly && !metrics.done) return false;
+          if (
+            search &&
+            !(run.model + " " + run.file).toLowerCase().includes(search)
+          ) {
+            return false;
+          }
+          return true;
+        });
+        const descending = (key) => (a, b) => b.metrics[key] - a.metrics[key];
+        const sorters = {
+          score: descending("score"),
+          judge: descending("judge"),
+          reason: descending("reason"),
+          aligned: descending("aligned"),
+          latency: (a, b) =>
+            (a.run.median_seconds ?? Number.POSITIVE_INFINITY) -
+            (b.run.median_seconds ?? Number.POSITIVE_INFINITY),
+          model: (a, b) => a.run.model.localeCompare(b.run.model),
+        };
+        return visible.sort(sorters[state.sort]);
+      }
+
+      function renderEquation() {
+        const active = weights();
+        const equation = document.getElementById("equation");
+        if (state.mode === "aligned") {
+          equation.textContent = "score = clips with Q1 + Q2 + Q3 all correct";
+        } else {
+          equation.textContent =
+            "score = " +
+            (100 * active.judge).toFixed(0) +
+            "% judgment + " +
+            (100 * active.reason).toFixed(0) +
+            "% reason + " +
+            (100 * active.obey).toFixed(0) +
+            "% obey";
+        }
+        document.getElementById("wj").textContent =
+          (100 * active.judge).toFixed(0) + "%";
+        document.getElementById("wr").textContent =
+          (100 * active.reason).toFixed(0) + "%";
+        document.getElementById("wo").textContent =
+          (100 * active.obey).toFixed(0) + "%";
+      }
+
+      function datasetStats() {
+        let judgments = 0;
+        let yes = 0;
+        let reasons = 0;
+        let commuting = 0;
+        data.clips.forEach((clip) => {
+          clip.questions.forEach((question) => {
+            if (question.excluded) return;
+            if (question.kind === "judge") {
+              judgments += 1;
+              if (question.gold === "yes") yes += 1;
+            } else {
+              reasons += 1;
+              if (question.commute) commuting += 1;
+            }
+          });
+        });
+        return { judgments, yes, reasons, commuting };
+      }
+
+      function renderSummary() {
+        const visible = visibleRuns();
+        const complete = visible.filter(({ metrics }) => metrics.done);
+        const top = complete.length
+          ? [...complete].sort((a, b) => b.metrics.score - a.metrics.score)[0]
+          : null;
+        const stats = datasetStats();
+        const metrics = [
+          {
+            label: "Runs in view",
+            value: String(visible.length),
+            detail:
+              complete.length +
+              " complete / " +
+              data.runs.length +
+              " total exports",
+          },
+          {
+            label: "Leading score",
+            value: top ? top.metrics.score.toFixed(2) : "—",
+            detail: top
+              ? top.run.model + " / " + top.run.prompt
+              : "No completed run in view",
+            signal: true,
+          },
+          {
+            label: "Gold positive rate",
+            value: percent(stats.yes / stats.judgments),
+            detail:
+              stats.yes + " yes labels / " + stats.judgments + " judgments",
+          },
+          {
+            label: "Reason concentration",
+            value: percent(stats.commuting / stats.reasons),
+            detail:
+              stats.commuting +
+              " commuting-efficiency labels / " +
+              stats.reasons,
+          },
+        ];
+        document.getElementById("summaryMetrics").innerHTML = metrics
+          .map(
+            (metric) => `
+        <div class="metric">
+          <div class="metric-label">${escapeHtml(metric.label)}</div>
+          <div class="metric-value ${metric.signal ? "signal" : ""}">${escapeHtml(metric.value)}</div>
+          <div class="metric-detail">${escapeHtml(metric.detail)}</div>
+        </div>
+      `,
+          )
+          .join("");
+      }
+
+      function renderResults() {
+        const rows = visibleRuns();
+        document.getElementById("resultCaption").textContent =
+          rows.length +
+          " runs match the active prompt, reasoning, completion, and search filters.";
+        const body = document.getElementById("resultRows");
+        if (!rows.length) {
+          body.innerHTML =
+            '<tr><td class="empty-row" colspan="13">No runs match the active filters.</td></tr>';
+          return;
+        }
+        body.innerHTML = rows
+          .map(({ run, index, metrics }, rank) => {
+            const selected = state.selected === index ? "selected" : "";
+            const statusClass = metrics.done
+              ? "status-complete"
+              : "status-partial";
+            const status = run.completed + " / " + run.scored;
+            const thinkingLabel =
+              run.think === "off" ? "Off" : run.think === "on" ? "On" : "Low";
+            return `
+          <tr class="result-row ${selected}" data-run="${index}">
+            <td class="rank ${rank === 0 ? "first" : ""}">${rank + 1}</td>
+            <td>
+              <div class="model-name">${escapeHtml(run.model)}</div>
+              <div class="run-file">${escapeHtml(run.file)}</div>
+            </td>
+            <td><span class="pill ${run.prompt}">${run.prompt === "reword" ? "Cut-in rewrite" : "Official"}</span></td>
+            <td><span class="pill ${run.think}">${thinkingLabel}</span></td>
+            <td class="${statusClass} mono">${status}</td>
+            <td class="num score-cell">
+              ${metrics.score.toFixed(2)}
+              <span class="score-track"><i class="score-fill" style="width:${Math.max(0, Math.min(100, metrics.score))}%"></i></span>
+            </td>
+            <td class="num">${percent(metrics.judge)}</td>
+            <td class="num">${percent(metrics.reason)}</td>
+            <td class="num">${percent(metrics.obey)}</td>
+            <td class="num">${percent(metrics.aligned)}</td>
+            <td class="num">${percent(metrics.yesRate)}</td>
+            <td class="num">${duration(run.median_seconds)}</td>
+            <td class="num">${duration(run.wall_seconds)}</td>
+          </tr>
+        `;
+          })
+          .join("");
+      }
+
+      function pairedRuns() {
+        const pairs = new Map();
+        allScoredRuns().forEach((item) => {
+          if (!item.metrics.done) return;
+          if (!state.reasoning.has(item.run.think)) return;
+          const search = state.search.trim().toLowerCase();
+          if (
+            search &&
+            !(item.run.model + " " + item.run.file)
+              .toLowerCase()
+              .includes(search)
+          ) {
+            return;
+          }
+          const key = item.run.model + "::" + item.run.think;
+          if (!pairs.has(key)) pairs.set(key, {});
+          pairs.get(key)[item.run.prompt] = item;
+        });
+        return [...pairs.values()]
+          .filter((pair) => pair.official && pair.reword)
+          .map((pair) => ({
+            ...pair,
+            scoreDelta: pair.reword.metrics.score - pair.official.metrics.score,
+            judgeDelta:
+              100 * (pair.reword.metrics.judge - pair.official.metrics.judge),
+            reasonDelta:
+              100 * (pair.reword.metrics.reason - pair.official.metrics.reason),
+          }))
+          .sort((a, b) => b.scoreDelta - a.scoreDelta);
+      }
+
+      function renderComparisons() {
+        const pairs = pairedRuns();
+        const body = document.getElementById("comparisonRows");
+        document.getElementById("comparisonSection").style.display =
+          pairs.length ? "" : "none";
+        body.innerHTML = pairs
+          .map((pair) => {
+            const run = pair.official.run;
+            const think =
+              run.think === "off" ? "Off" : run.think === "on" ? "On" : "Low";
+            const scoreClass = pair.scoreDelta >= 0 ? "delta-pos" : "delta-neg";
+            const judgeClass = pair.judgeDelta >= 0 ? "delta-pos" : "delta-neg";
+            const reasonClass =
+              pair.reasonDelta >= 0 ? "delta-pos" : "delta-neg";
+            return `
+          <tr>
+            <td class="model-name">${escapeHtml(run.model)}</td>
+            <td><span class="pill ${run.think}">${think}</span></td>
+            <td class="num">${pair.official.metrics.score.toFixed(2)}</td>
+            <td class="num">${pair.reword.metrics.score.toFixed(2)}</td>
+            <td class="num ${scoreClass}">${signed(pair.scoreDelta)}</td>
+            <td class="num ${judgeClass}">${signed(pair.judgeDelta, " pp")}</td>
+            <td class="num ${reasonClass}">${signed(pair.reasonDelta, " pp")}</td>
+          </tr>
+        `;
+          })
+          .join("");
+      }
+
+      function clipMetrics(run, clipIndex) {
+        const clip = data.clips[clipIndex];
+        let total = 0;
+        let correct = 0;
+        clip.questions.forEach((question, questionIndex) => {
+          if (question.excluded) return;
+          if (state.dropCommuting && question.commute) return;
+          total += 1;
+          if (run.answers[clipIndex][questionIndex].ok) correct += 1;
+        });
+        return { total, correct };
+      }
+
+      function filteredClipIndexes(run) {
+        return data.clips
+          .map((_, index) => index)
+          .filter((index) => {
+            const metrics = clipMetrics(run, index);
+            if (!metrics.total) return false;
+            if (state.clipFilter === "miss")
+              return metrics.correct < metrics.total;
+            if (state.clipFilter === "aligned")
+              return metrics.correct === metrics.total;
+            return true;
+          });
+      }
+
+      function qaLabel(index, question) {
+        if (index === 0) return "Q1 / Judgment / Raw";
+        if (index === 1) return "Q2 / Judgment / Boxed";
+        return question.kind === "reason"
+          ? "Q3 / Reason / Boxed"
+          : "Q3 / Judgment";
+      }
+
+      function renderInspector() {
+        const root = document.getElementById("inspector");
+        if (state.selected == null || !data.runs[state.selected]) {
+          root.innerHTML =
+            '<div class="inspector-placeholder">Select a result row to inspect its 87 clips, prompts, predictions, timing, and token usage.</div>';
+          return;
+        }
+        const run = data.runs[state.selected];
+        const metrics = scoreRun(run);
+        const indexes = filteredClipIndexes(run);
+        if (!indexes.includes(state.clip)) state.clip = indexes[0] ?? 0;
+        const clip = data.clips[state.clip];
+        const current = clipMetrics(run, state.clip);
+        const clipButtons = indexes
+          .map((clipIndex) => {
+            const item = data.clips[clipIndex];
+            const result = clipMetrics(run, clipIndex);
+            const resultClass =
+              result.correct === result.total
+                ? "good"
+                : result.correct === 0
+                  ? "bad"
+                  : "";
+            return `
+          <button class="clip-item ${clipIndex === state.clip ? "active" : ""}" data-clip="${clipIndex}">
+            <img src="${escapeHtml(item.plot)}" alt="" loading="lazy" />
+            <span>
+              <span class="clip-title">${escapeHtml(item.seq)}</span>
+              <span class="clip-result ${resultClass}">${result.correct} / ${result.total} correct</span>
+            </span>
+          </button>
+        `;
+          })
+          .join("");
+        const qas = clip.questions
+          .map((question, questionIndex) => {
+            const answer = run.answers[state.clip][questionIndex];
+            const outcome = question.excluded
+              ? { label: "Excluded", className: "excluded" }
+              : answer.ok
+                ? { label: "Pass", className: "pass" }
+                : { label: answer.pred ? "Miss" : "Pending", className: "" };
+            const usage = [
+              answer.latency == null ? null : duration(answer.latency),
+              answer.prompt_tokens == null
+                ? null
+                : number(answer.prompt_tokens) + " prompt tok",
+              answer.completion_tokens == null
+                ? null
+                : number(answer.completion_tokens) + " completion tok",
+              answer.reasoning_tokens == null
+                ? null
+                : number(answer.reasoning_tokens) + " reasoning tok",
+            ]
+              .filter(Boolean)
+              .join(" / ");
+            return `
+          <article class="qa">
+            <div class="qa-kind">
+              ${escapeHtml(qaLabel(questionIndex, question))}
+              <span class="qa-outcome ${outcome.className}">${outcome.label}</span>
+            </div>
+            <div>
+              <p class="qa-question">${escapeHtml(answer.question || question.text)}</p>
+              <div class="answer-pair">
+                <div class="answer">
+                  <span class="answer-label">Gold</span>
+                  <span class="answer-value">${escapeHtml(question.gold)}</span>
+                </div>
+                <div class="answer">
+                  <span class="answer-label">Prediction</span>
+                  <span class="answer-value">${escapeHtml(answer.pred || "—")}</span>
+                </div>
+              </div>
+              ${usage ? `<div class="qa-usage">${escapeHtml(usage)}</div>` : ""}
+            </div>
+          </article>
+        `;
+          })
+          .join("");
+        root.innerHTML = `
+        <div class="run-header">
+          <div>
+            <div class="eyebrow">Run inspector</div>
+            <h3>${escapeHtml(run.model)}</h3>
+            <div class="run-subtitle">${escapeHtml(run.file)} / ${run.prompt} / reasoning ${run.think}</div>
+          </div>
+          <div class="run-metrics">
+            <div class="run-stat"><b>${metrics.score.toFixed(2)}</b><span>Score</span></div>
+            <div class="run-stat"><b>${duration(run.median_seconds)}</b><span>Median request</span></div>
+            <div class="run-stat"><b>${duration(run.wall_seconds)}</b><span>Wall time</span></div>
+            <div class="run-stat"><b>${number(run.reasoning_tokens)}</b><span>Reasoning tokens</span></div>
+          </div>
+        </div>
+        <div class="inspector-grid">
+          <aside class="clip-rail">
+            <div class="clip-filter" id="clipFilters">
+              <button class="control ${state.clipFilter === "all" ? "active" : ""}" data-clip-filter="all">All</button>
+              <button class="control warn ${state.clipFilter === "miss" ? "active" : ""}" data-clip-filter="miss">Any miss</button>
+              <button class="control ${state.clipFilter === "aligned" ? "active" : ""}" data-clip-filter="aligned">All correct</button>
+            </div>
+            <div class="clip-list">${clipButtons}</div>
+          </aside>
+          <div class="clip-content">
+            <div class="clip-meta">${escapeHtml(clip.seq)} / ${escapeHtml(clip.vehicle)} / ${escapeHtml(clip.country)} / ${current.correct} of ${current.total} correct</div>
+            <div class="frames">
+              <figure class="frame">
+                <img src="${escapeHtml(clip.raw)}" alt="Raw last frame" />
+                <figcaption>Raw / last frame</figcaption>
+              </figure>
+              <figure class="frame">
+                <img src="${escapeHtml(clip.plot)}" alt="Boxed last frame" />
+                <figcaption>Target box / last frame</figcaption>
+              </figure>
+            </div>
+            <div class="qa-list">${qas}</div>
+          </div>
+        </div>
+      `;
+      }
+
+      function renderDataStamp() {
+        const generated = data.generated_at
+          ? new Date(data.generated_at).toLocaleString()
+          : "local export";
+        document.getElementById("dataStamp").innerHTML =
+          escapeHtml(
+            data.runs.length + " runs / " + data.clips.length + " clips",
+          ) +
+          "<br />" +
+          escapeHtml(generated);
+      }
+
+      function render() {
+        renderEquation();
+        renderSummary();
+        renderResults();
+        renderComparisons();
+        renderInspector();
+      }
+
+      ["judge", "reason", "obey"].forEach((id) => {
+        document.getElementById(id).addEventListener("input", (event) => {
+          state[id] = Number(event.target.value);
+          document
+            .querySelectorAll(".preset")
+            .forEach((button) => button.classList.remove("active"));
+          render();
+        });
+      });
+
+      document.querySelectorAll(".preset").forEach((button) => {
+        button.addEventListener("click", () => {
+          const [judge, reason, obey] = button.dataset.w.split(",").map(Number);
+          state.judge = judge;
+          state.reason = reason;
+          state.obey = obey;
+          document.getElementById("judge").value = judge;
+          document.getElementById("reason").value = reason;
+          document.getElementById("obey").value = obey;
+          document
+            .querySelectorAll(".preset")
+            .forEach((item) =>
+              item.classList.toggle("active", item === button),
+            );
+          render();
+        });
+      });
+
+      document
+        .getElementById("scoreModes")
+        .addEventListener("click", (event) => {
+          const button = event.target.closest("[data-mode]");
+          if (!button) return;
+          state.mode = button.dataset.mode;
+          document
+            .querySelectorAll("[data-mode]")
+            .forEach((item) =>
+              item.classList.toggle("active", item === button),
+            );
+          render();
+        });
+
+      function toggleSet(containerId, attribute, set) {
+        document
+          .getElementById(containerId)
+          .addEventListener("click", (event) => {
+            const button = event.target.closest(`[${attribute}]`);
+            if (!button) return;
+            const value = button.getAttribute(attribute);
+            if (set.has(value)) {
+              if (set.size === 1) return;
+              set.delete(value);
+            } else {
+              set.add(value);
+            }
+            button.classList.toggle("active", set.has(value));
+            render();
+          });
+      }
+
+      toggleSet("promptFilters", "data-prompt", state.prompts);
+      toggleSet("reasoningFilters", "data-think", state.reasoning);
+
+      document
+        .getElementById("normalize")
+        .addEventListener("change", (event) => {
+          state.normalize = event.target.checked;
+          render();
+        });
+      document
+        .getElementById("completeOnly")
+        .addEventListener("change", (event) => {
+          state.completeOnly = event.target.checked;
+          render();
+        });
+      document
+        .getElementById("dropCommuting")
+        .addEventListener("change", (event) => {
+          state.dropCommuting = event.target.checked;
+          render();
+        });
+      document.getElementById("search").addEventListener("input", (event) => {
+        state.search = event.target.value;
+        render();
+      });
+      document.getElementById("sort").addEventListener("change", (event) => {
+        state.sort = event.target.value;
+        render();
+      });
+      document
+        .getElementById("resultRows")
+        .addEventListener("click", (event) => {
+          const row = event.target.closest("[data-run]");
+          if (!row) return;
+          state.selected = Number(row.dataset.run);
+          state.clip = 0;
+          state.clipFilter = "all";
+          render();
+          document
+            .getElementById("inspector")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      document
+        .getElementById("inspector")
+        .addEventListener("click", (event) => {
+          const clip = event.target.closest("[data-clip]");
+          if (clip) {
+            state.clip = Number(clip.dataset.clip);
+            renderInspector();
+            return;
+          }
+          const filter = event.target.closest("[data-clip-filter]");
+          if (filter) {
+            state.clipFilter = filter.dataset.clipFilter;
+            renderInspector();
+          }
+        });
+
+      renderDataStamp();
+      render();
+    </script>
+  </body>
+</html>

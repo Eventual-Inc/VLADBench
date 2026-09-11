@@ -1,0 +1,206 @@
+{
+  "currency": "USD",
+  "captured_on": "2026-09-11",
+  "known_total_usd": 53.7034,
+  "caveats": [
+    "These are account or endpoint billing totals, not normalized per-request costs.",
+    "Modal GPU charges may include endpoint startup and idle time.",
+    "Several totals cover multiple benchmark configurations and cannot yet be assigned to one run."
+  ],
+  "models": [
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "provider": "Modal",
+      "hardware": "H200",
+      "charges": [
+        {
+          "amount_usd": 3.31,
+          "run": null
+        }
+      ],
+      "total_usd": 3.31,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "Qwen/Qwen3.6-35B-A3B",
+      "provider": "Modal",
+      "hardware": "B200",
+      "charges": [
+        {
+          "amount_usd": 7.53,
+          "run": "Qwen3.6-35B-A3B-reasoning.json",
+          "allocation_confidence": "inferred"
+        },
+        {
+          "amount_usd": 1.26,
+          "run": "Qwen3.6-35B-A3B.json",
+          "allocation_confidence": "inferred"
+        },
+        {
+          "amount_usd": 1.49,
+          "run": "Qwen3.6-35B-A3B-reword.json",
+          "allocation_confidence": "tentative"
+        }
+      ],
+      "total_usd": 10.28,
+      "allocation_status": "needs_confirmation"
+    },
+    {
+      "model": "moonshotai/Kimi-K3",
+      "provider": "Modal managed endpoint",
+      "hardware": null,
+      "charges": [
+        {
+          "amount_usd": 10.04,
+          "run": "Kimi-K3-reasoning.json",
+          "tokens": 1700000
+        }
+      ],
+      "total_usd": 10.04,
+      "effective_usd_per_million_tokens": 5.9059,
+      "allocation_status": "allocated"
+    },
+    {
+      "model": "google/gemma-4-E2B-it",
+      "provider": "Modal",
+      "hardware": "A100",
+      "charges": [
+        {
+          "amount_usd": 1.02,
+          "run": null
+        }
+      ],
+      "total_usd": 1.02,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "google/gemma-4-26B-A4B-it",
+      "provider": "Modal",
+      "hardware": "B200",
+      "charges": [
+        {
+          "amount_usd": 8.19,
+          "run": null
+        }
+      ],
+      "total_usd": 8.19,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "google/gemma-4-31B-it",
+      "provider": "Modal",
+      "hardware": "B200",
+      "charges": [
+        {
+          "amount_usd": 3.6,
+          "run": null
+        }
+      ],
+      "total_usd": 3.6,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "Qwen/Qwen3.5-0.8B",
+      "provider": "Modal",
+      "hardware": "A100",
+      "charges": [
+        {
+          "amount_usd": 1.72,
+          "run": null
+        }
+      ],
+      "total_usd": 1.72,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "google/gemma-4-E4B-it",
+      "provider": "Modal",
+      "hardware": "A100",
+      "charges": [
+        {
+          "amount_usd": 0.59,
+          "run": null
+        }
+      ],
+      "total_usd": 0.59,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "Qwen/Qwen3.5-35B-A3B-FP8",
+      "provider": "Modal",
+      "hardware": "H200",
+      "charges": [
+        {
+          "amount_usd": 3.83,
+          "run": null
+        }
+      ],
+      "total_usd": 3.83,
+      "allocation_status": "unallocated"
+    },
+    {
+      "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "provider": "Modal",
+      "hardware": null,
+      "charges": [
+        {
+          "amount_usd": 3.03,
+          "run": null
+        },
+        {
+          "amount_usd": 0.95,
+          "run": null
+        }
+      ],
+      "total_usd": 3.98,
+      "allocation_status": "combined_unallocated"
+    },
+    {
+      "model": "openai/gpt-6-astra",
+      "provider": "OpenRouter",
+      "hardware": null,
+      "charges": [
+        {
+          "amount_usd": 5.11,
+          "runs": [
+            "GPT-6-Astra-low-reasoning.json",
+            "GPT-6-Astra-low-reasoning-reword.json"
+          ]
+        }
+      ],
+      "total_usd": 5.11,
+      "estimated_usd_per_run": 2.555,
+      "allocation_status": "even_split_requested"
+    },
+    {
+      "model": "google/gemini-3.8-flash",
+      "provider": "OpenRouter",
+      "hardware": null,
+      "charges": [
+        {
+          "amount_usd": 2.02,
+          "runs": [
+            "Gemini-3.8-Flash-reasoning.json",
+            "Gemini-3.8-Flash-reasoning-reword.json"
+          ]
+        }
+      ],
+      "total_usd": 2.02,
+      "estimated_usd_per_run": 1.01,
+      "allocation_status": "even_split_requested"
+    },
+    {
+      "model": "openai/gpt-5.6-luna",
+      "provider": "OpenRouter",
+      "hardware": null,
+      "charges": [
+        {
+          "amount_usd": 0.0134,
+          "run": null
+        }
+      ],
+      "total_usd": 0.0134,
+      "allocation_status": "unallocated"
+    }
+  ]
+}

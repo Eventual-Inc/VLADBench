@@ -1,7 +1,7 @@
 {
   "currency": "USD",
   "captured_on": "2026-09-11",
-  "known_total_usd": 53.7034,
+  "known_total_usd": 53.824,
   "caveats": [
     "These are account or endpoint billing totals, not normalized per-request costs.",
     "Modal GPU charges may include endpoint startup and idle time.",
@@ -195,11 +195,11 @@
       "hardware": null,
       "charges": [
         {
-          "amount_usd": 0.0134,
+          "amount_usd": 0.134,
           "run": null
         }
       ],
-      "total_usd": 0.0134,
+      "total_usd": 0.134,
       "allocation_status": "unallocated"
     }
   ]

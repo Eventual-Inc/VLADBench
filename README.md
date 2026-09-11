@@ -1,3 +1,10 @@
+> **Eventual companion fork:** This repository adds a Vehicle Cut-in sweep and analysis to
+> [Depth2World's VLADBench](https://github.com/Depth2World/VLADBench).
+> Start with the [article](ARTICLE.md), [recorded results](LEADERBOARD.md), and
+> [reproduction guide and limitations](REPRODUCIBILITY.md). Run
+> `python3 audit_recorded_results.py` to check the published scoring snapshot without
+> downloading data or calling a model. The overview below describes the upstream benchmark.
+
 # ✨✨VLADBench✨✨: Fine-Grained Evaluation of Large Vision-Language Models in Autonomous Driving 
 
 <div align="center">

@@ -209,10 +209,9 @@ def parse_run(path: Path) -> dict:
             for item in metadata
         ]
         result["median_seconds"] = statistics.median(latencies)
-        latency_quartiles = statistics.quantiles(
-            latencies,
-            n=4,
-            method="inclusive",
+        latency_quartiles = (
+            statistics.quantiles(latencies, n=4, method="inclusive")
+            if len(latencies) > 1 else [latencies[0]] * 3
         )
         result["latency_p25_seconds"] = latency_quartiles[0]
         result["latency_p75_seconds"] = latency_quartiles[2]
@@ -739,6 +738,11 @@ def update_leaderboard(
     prompt_variant: str = PROMPT_OFFICIAL,
 ) -> None:
     paths = list_run_paths(output_dir, prompt_variant)
+    if not paths:
+        raise FileNotFoundError(
+            f"No {prompt_variant} prediction files found in {output_dir}; "
+            "existing leaderboard was not changed. See REPRODUCIBILITY.md."
+        )
     results = [parse_run(path) for path in paths]
     plot_links = []
     timed = [

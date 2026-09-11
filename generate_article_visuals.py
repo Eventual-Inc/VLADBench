@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # /// script
 # requires-python = ">=3.10"
-# dependencies = ["matplotlib>=3.7", "Pillow>=10"]
+# dependencies = ["matplotlib>=3.7", "numpy>=1.24", "Pillow>=10"]
 # ///
 """Generate the Eventual-styled figures used by ARTICLE.md."""
 

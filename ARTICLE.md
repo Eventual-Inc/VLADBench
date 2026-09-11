@@ -20,7 +20,7 @@ On a task that looks trivially easy, prompting a vision language model open-loop
 
 > **Note:**
 >
-> [Bench2Drive-VL](https://arxiv.org/abs/2604.01259) (April 2026) is a closed-loop benchmark from a separate research group. It is not VLADBench's direct follow-up; I use it later as a contrast with open-loop VQA.
+> [Bench2Drive-VL](https://arxiv.org/abs/2604.01259) (April 2026) is a closed-loop benchmark from a separate research group. It is not VLADBench's direct follow-up; I use it in the appendix as a contrast with open-loop VQA.
 
 A bit of background before we dive in...
 
@@ -42,7 +42,7 @@ I looked at this task and was like, "Cool, let's see how many models I can run t
 
 The initial survey placed Qwen 3.6 35B-A3B at the top of the official composite score and among the fastest completed configurations. A score of 43.5 out of 100 shows there's still plenty of headroom for improvement. Because the endpoint totals cover different numbers of runs and hardware, this experiment does not establish a normalized cost winner.
 
-The sweep generated at least $53.70 in recorded Modal and OpenRouter charges. These are account-level experiment totals, not normalized model prices: some entries cover more configurations than others, and Modal GPU time may include startup and idle time. Treat this as the observed cost of finding the harness failures, not a price comparison.
+Observed spend varied across serving paths, hardware, and the number of configurations covered by each entry. These are account-level experiment totals, not normalized model prices, and Modal GPU time may include startup and idle time. The plot shows where spend accumulated while finding the harness failures, not a price comparison.
 
 ![Observed Modal and OpenRouter spend across the model sweep](plots/article/02-observed-sweep-spend.png)
 
@@ -58,17 +58,11 @@ Now here is how this actually went:
 
 Almost all of the clips show a vehicle moving laterally across or toward a dashed lane marking. Crossing that marking is a lane change; it becomes a cut-in when the vehicle enters the gap ahead of ego. In ordinary English, "cross the road" instead suggests traversing a roadway, often at an intersection.
 
-**The Score isn't a proxy for Cut-in detection**. The official composite score from the paper is calculated as 70% yes/no judgment, 10% reason, 20% "did you copy an option from the question."
-
 **The goldens were 98.9% positives**, so an always-yes classifier achieves 98.9% judgment accuracy.
 
-**Intent labels are unverifiable** — you can't recover why a driver merged from three frames, so "commuter efficiency" as a gold answer is scoring the model against a guess. And it isn't what a scenario miner needs anyway; they need what happened and where, not motive.
+**Intent labels are unverifiable** — you can't recover why a driver merged from two to seven frames, so "commuter efficiency" as a gold answer is scoring the model against a guess. And it isn't what a scenario miner needs anyway; they need what happened and where, not motive.
 
 Qwen 3.6 35B-A3B, quantized to FP8, led the completed official run on judgment accuracy. GPT-6 was close on composite score but slower in this run. The plot includes every completed configuration with timing metadata; with one run per configuration, I do not have enough evidence to explain why Qwen 3.8 scored below Qwen 3.6.
-
-Turning reasoning on did not help the models that were already ahead. Qwen FP8 dropped from 31.6% judgment to 20.7%. The extra thinking made it more literal, not more visual. That is the first failure mode, and we found it before we changed a word of the prompt.
-
-Relative ranking across a large sweep is operationally more useful than a single heroic run on one model. We ran each configuration once. I am not going to pretend that is a confidence interval. It is enough to choose which configurations deserve replication, not to make a production claim.
 
 ## Then we read the prompt
 
@@ -84,18 +78,11 @@ That does not make the sweep worthless. It makes the absolute numbers too low, a
 
 ![Judgment accuracy before and after replacing the official crossing-the-road wording with cut-in wording](plots/article/04-prompt-rewrite-comparison.png)
 
-
-| Model               | Judgment, official | Judgment, reworded | False positives |
-| ------------------- | ------------------ | ------------------ | --------------- |
-| Qwen3.6-35B-A3B-FP8 | 31.6%              | 71.8%              | 0 → 1           |
-| Qwen3.6-35B-A3B     | 29.3%              | 65.5%              | —               |
-| GPT-6 Astra         | 25.9%              | 52.3%              | 0 → 0           |
-| Gemini 3.8 Flash    | 15.5%              | 18.4%              | 0 → 0           |
-
-
 The order of the models we re-ran did not change. Qwen FP8, then Qwen, then GPT-6, then Gemini. If you came to this task to pick a model, that ranking is the thing that survived. The scores did not. Four words moved Qwen by forty points. Gemini barely moved. Specificity is not a style choice. It is a hyperparameter, it does not transfer across vendors, and on a fleet you will not have a folder name to warn you that the prompt is almost the right question.
 
 I am not going to relabel the gold to make anyone look better. The ranking held. The magnitudes did not. Both of those facts matter.
+
+[The exact reworded results are in the appendix.](APPENDIX.md#exact-prompt-rewrite-results)
 
 ## The yes-set problem
 
@@ -117,24 +104,6 @@ We have seen the drop internally as well: turn localization on, performance move
 
 That is a large part of why throwing a VLM at ambient logs is expensive. You do not just pay per token. You pay for a prompt you cannot validate, a box you may need, and a miss rate you cannot see.
 
-## Then we tried to grade "why"
-
-The third question asserts the cut-in and asks for a reason from a short list. The most common gold reason, 44 of 86 scored clips, is `commuting efficiency`. It is not defined in the paper, the supplement, or the JSON. It is a motive: they moved into ego's path to get ahead. You cannot see that in a last frame. You can see a Honda on a dashed line. The models say `lane change`. Gold uses `lane change` twice.
-
-![Distribution of VLADBench gold reason labels, dominated by commuting efficiency](plots/article/07-reason-label-distribution.png)
-
-This is the point where I got angry at the benchmark as a grading instrument, not just as a prompt. Cut-in is hard to see. Explaining it in a taxonomy that mixes geometry (`merge onto main road`) with unobservable intent is harder. We did not "correct" those golds to `lane change`. That would be fitting labels to the predictions we already had. What we can say is: once the English was honest, GPT-6's reason accuracy fell (25.6% → 18.6%) and the number of clips it got fully right — yes, yes, and the canned reason — fell from 13 to 7. With the broken prompt it had been matching the benchmark's favorite phrase. Ask the real question and the reason head falls apart.
-
-Designing the eval is the job. If the classes are not in the pixels, you are not measuring perception.
-
-## What the authors did next
-
-The VLADBench paper does not publish a postmortem on this task. Three months later, an overlapping author group (including Yue Li and Meng Tian) put out [Drive-R1](https://arxiv.org/abs/2506.18234) (AAAI 2026). The question there is no longer "did the VLM answer the VQA." The opening result is a planner that does as well or better without camera data. The model was using history and ego state, not the image. They evaluate on nuScenes and DriveLM, not on VLADBench.
-
-That later paper is not a VLADBench postmortem, but it demonstrates the broader risk: open-loop visual question answering can look like understanding while the model is not looking. Separately, [Bench2Drive-VL](https://arxiv.org/abs/2604.01259) (April 2026), from a different research group, contrasts closed-loop evaluation with the previous generation of open-loop VQA. VLADBench's own limitations section is narrower. It asks for multi-view and better domain training. It does not ask whether the questions are the task.
-
-I went to VLADBench to pick a model. The later papers investigate different evaluation problems; they do not prove why the authors changed direction. My narrower finding is that this VQA task was not a stable measurement of cut-in detection.
-
 ## I am disappointed in both
 
 I am disappointed in most of the vision stack we swept for this job. Below the top five, I would not prioritize another run of these configurations until the eval is fixed. Gemma E2B, Gemma E4B, GPT-5.6 Luna, Qwen 3.8 without thinking, the fine-tune: they are not close on this harness. If you start a replication anywhere, start with Qwen 3.6 35B-A3B. Not because it solved the problem. Because it reached the top with low measured latency, leaving more iteration time for the failure modes below.
@@ -145,17 +114,6 @@ I am disappointed in the benchmark. The English did not name the task. The class
 
 Both can be true. A bad eval does not automatically mean the ranking is bad. Ours held after we fixed the English. It does mean you should not believe the score.
 
-## A list of ways not to do this
-
-I failed so you don't have to. From the most naive to least, try to avoid these assumptions when working with your fleet logs:
-
-1. **Do not treat scoring as a model pick without reading the question.** If the prompt does not reflect the scenario, you are ranking overfit results, not perception. The scenario is a spec worth spending time on.
-2. **Do not assume the prompt wording transfers across models.** Four words, forty points on Qwen, almost nothing on Gemini. Write the question you mean. Test it on every vendor.
-3. **Do not turn on chain-of-thought and assume vision improved.** On this task, thinking almost always made the leader more literal and worsened scores.
-4. **Do not trust a high pass rate on a yes-set.** 86 of 87 clips here are positives. Fleet video is the opposite. You have not measured the false-alarm cost.
-5. **Do not treat a bounding box as a free accuracy boost.** Answers change. Sometimes they get worse. You now depend on a detector you may not have.
-6. **Do not put motives in the taxonomy.** `commuting efficiency` is not a visual class. `lane change` is. Grade what is in the frame.
-7. **Do not skip the sweep.** One model on one prompt is just one datapoint. Sweeping twenty configurations told us which configurations not to prioritize on this harness.
-8. **Do not use open-loop VQA as a proxy for scenario mining.** This task did not establish whether the model actually used the image, and separate closed-loop work measures behavior much further from a yes/no over a handful of JPEGs.
-
 Detecting cut-ins is hard. Writing a perception benchmark for them, especially one that goes through a vision-language model, is harder. The value of the last two days is not a template for evaluating cut-ins open-loop; it is evidence that benchmark design dominated the result. If you build the next experiment, Qwen 3.6 35B-A3B is a reasonable starting point on this harness—not proof of production performance—and the evaluation design deserves at least as much attention as the model.
+
+[The appendix contains the complete scores, exact prompt results, reasoning analysis, reason-label taxonomy, related work, and full checklist.](APPENDIX.md)

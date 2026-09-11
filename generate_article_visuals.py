@@ -481,10 +481,10 @@ def generate_observed_spend() -> Path:
     )
     figure = new_figure(
         "02 · observed spend",
-        f"The sweep cost at least ${costs['known_total_usd']:.2f}.",
+        "Where the sweep spend accumulated.",
         "Observed Modal and OpenRouter billing—not normalized per request or configuration.",
     )
-    axes = figure.add_axes((0.33, 0.11, 0.61, 0.68))
+    axes = figure.add_axes((0.285, 0.12, 0.66, 0.68))
     axes.set_facecolor(COLORS["midnight"])
     y_positions = list(reversed(range(len(entries))))
     values = [entry["total_usd"] for entry in entries]
@@ -579,7 +579,11 @@ def generate_observed_spend() -> Path:
     )
     add_footer(
         figure,
-        "Source · recorded endpoint and account charges · startup and idle time may be included",
+        (
+            "Source · recorded endpoint and account charges"
+            f" · captured total ${costs['known_total_usd']:.2f}"
+            " · startup and idle time may be included"
+        ),
     )
     return save_figure(figure, "02-observed-sweep-spend.png")
 

@@ -58,7 +58,17 @@ def convert_if_number(answer):
         return str(answer)
     return answer
 
+
+def remove_think_trace(input_string):
+    """Return the visible answer after a model's hidden reasoning trace."""
+    think_end = "</think>"
+    if think_end not in input_string:
+        return input_string
+    return input_string.rsplit(think_end, maxsplit=1)[-1].strip()
+
+
 def remove_symbols(input_string):
+    input_string = remove_think_trace(input_string)
     if 'correct answer is:' in input_string:
         input_string = input_string.split('correct answer is:')[-1]
     cleaned_string = re.sub(r'[\*\n\""]', '', input_string)
@@ -366,7 +376,7 @@ def Judge_criterion_QA(third_task_data,MODEL=None):
                 des_ques_total_num += 1
             if len(options_nums)==1: 
                 # if clean_pred in ques_nopath: 
-                if ''.join(clean_pred.split(';') in ques_nopath: 
+                if ''.join(clean_pred.split(';')) in ques_nopath:
                     obey_insytruction+=1
                 if clean_pred==reference_q_ind:
                     if 'yes' == reference_q_ind or 'no'  == reference_q_ind:

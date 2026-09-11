@@ -125,7 +125,6 @@ def yes_or_no(value: str) -> str:
 
 
 def new_figure(
-    kicker: str,
     title: str,
     subtitle: str | None = None,
     *,
@@ -136,15 +135,6 @@ def new_figure(
     figure.text(
         0.065,
         0.94,
-        kicker,
-        color=COLORS["signal"],
-        fontfamily=MONO_FONT,
-        fontsize=9,
-        va="top",
-    )
-    figure.text(
-        0.065,
-        0.885,
         title,
         color=COLORS["paper"],
         fontfamily=DISPLAY_FONT,
@@ -155,7 +145,7 @@ def new_figure(
     if subtitle:
         figure.text(
             0.065,
-            0.83,
+            0.875,
             subtitle,
             color=COLORS["steel"],
             fontfamily=MONO_FONT,
@@ -163,19 +153,6 @@ def new_figure(
             va="top",
         )
     return figure
-
-
-def add_footer(figure: plt.Figure, text: str) -> None:
-    """Add a compact source note."""
-    figure.text(
-        0.065,
-        0.028,
-        text,
-        color=COLORS["mineral"],
-        fontfamily=MONO_FONT,
-        fontsize=6.5,
-        va="bottom",
-    )
 
 
 def add_divider(
@@ -313,9 +290,8 @@ def generate_prompt_anatomy(samples: list[dict]) -> Path:
     prediction = sample_by_id(run, PROMPT_SAMPLE_ID)["prediction"]
 
     figure = new_figure(
-        "01 · benchmark anatomy",
-        "Three questions. Two views. One scored label set.",
-        "The official task asks about “crossing the road” inside a benchmark named Vehicle_Cutin.",
+        "How the VLADBench vehicle cut-in task works",
+        "Raw and boxed frames are scored on two judgments and one reason label.",
     )
     add_image_stack(
         figure,
@@ -344,7 +320,7 @@ def generate_prompt_anatomy(samples: list[dict]) -> Path:
     }
     for heading, x in (
         ("Question sent to model", columns["question"]),
-        ("Qwen official", columns["model"]),
+        ("Qwen FP8 answer", columns["model"]),
         ("Gold label", columns["gold"]),
     ):
         figure.text(
@@ -423,10 +399,6 @@ def generate_prompt_anatomy(samples: list[dict]) -> Path:
         if index < len(rows) - 1:
             add_divider(figure, y - 0.065)
 
-    add_footer(
-        figure,
-        "Source · VLADBench Vehicle_Cutin · sample 3_1_1_0 · Qwen 3.6 35B-A3B FP8",
-    )
     return save_figure(figure, "01-benchmark-prompt-anatomy.png")
 
 
@@ -442,7 +414,8 @@ def generate_latency_plot() -> Path:
         results,
         output_path,
         reasoning=None,
-        kicker="03 · performance sweep",
+        kicker=None,
+        title="Request latency and benchmark score",
     )
     if not generated:
         raise RuntimeError("No timed benchmark runs were available")
@@ -458,12 +431,12 @@ def short_cost_model_name(model: str) -> str:
         "Qwen/Qwen3.6-35B-A3B": "Qwen 3.6 35B-A3B",
         "moonshotai/Kimi-K3": "Kimi K3",
         "google/gemma-4-E2B-it": "Gemma 4 E2B-IT",
-        "google/gemma-4-26B-A4B-it": "Gemma 4 26B-A4B-IT · DNF",
+        "google/gemma-4-26B-A4B-it": "Gemma 4 26B-A4B · DNF",
         "google/gemma-4-31B-it": "Gemma 4 31B-IT",
         "Qwen/Qwen3.5-0.8B": "Qwen 3.5 0.8B · partial",
         "google/gemma-4-E4B-it": "Gemma 4 E4B-IT",
-        "Qwen/Qwen3.5-35B-A3B-FP8": "Qwen 3.5 35B-A3B-FP8",
-        "Qwen/Qwen3.6-35B-A3B-FP8": "Qwen 3.6 35B-A3B-FP8",
+        "Qwen/Qwen3.5-35B-A3B-FP8": "Qwen 3.5 35B-A3B FP8",
+        "Qwen/Qwen3.6-35B-A3B-FP8": "Qwen 3.6 35B-A3B FP8",
         "openai/gpt-6-astra": "GPT-6 Astra",
         "google/gemini-3.8-flash": "Gemini 3.8 Flash",
         "openai/gpt-5.6-luna": "GPT-5.6 Luna",
@@ -480,11 +453,14 @@ def generate_observed_spend() -> Path:
         reverse=True,
     )
     figure = new_figure(
-        "02 · observed spend",
-        "Where the sweep spend accumulated.",
-        "Observed Modal and OpenRouter billing—not normalized per request or configuration.",
+        "Recorded spend by model",
+        (
+            f"Recorded total: ${costs['known_total_usd']:.3f} · "
+            "billing coverage shown below each bar; GPU idle time may be included."
+        ),
+        figsize=(12, 9),
     )
-    axes = figure.add_axes((0.285, 0.12, 0.66, 0.68))
+    axes = figure.add_axes((0.19, 0.12, 0.755, 0.68))
     axes.set_facecolor(COLORS["midnight"])
     y_positions = list(reversed(range(len(entries))))
     values = [entry["total_usd"] for entry in entries]
@@ -505,17 +481,17 @@ def generate_observed_spend() -> Path:
         y_positions,
         values,
         color=colors,
-        height=0.54,
+        height=0.38,
     )
     for y, entry in zip(y_positions, entries):
         amount = entry["total_usd"]
-        amount_label = f"${amount:.4f}" if amount < 0.1 else f"${amount:.2f}"
+        amount_label = f"${amount:.3f}" if round(amount, 2) != amount else f"${amount:.2f}"
         provider = entry["provider"]
         hardware = entry["hardware"]
         infrastructure = provider if hardware is None else f"{provider} · {hardware}"
         axes.text(
             amount + 0.18,
-            y + 0.08,
+            y,
             amount_label,
             color=(
                 COLORS["signal"]
@@ -528,13 +504,41 @@ def generate_observed_spend() -> Path:
             fontweight="bold",
             va="center",
         )
+        # Coverage comes from billing associations, never output-file counts.
+        billed_runs = list(dict.fromkeys(
+            run
+            for charge in entry["charges"]
+            for run in charge.get("runs", [charge.get("run")])
+            if run
+        ))
+        if billed_runs:
+            variants = []
+            if any("reasoning" in run for run in billed_runs):
+                variants.append(
+                    "low reasoning" if entry["model"] == "openai/gpt-6-astra"
+                    else "reasoning"
+                )
+            if any("reasoning" not in run for run in billed_runs):
+                variants.append("non-reasoning")
+            if any("reword" in run for run in billed_runs):
+                variants.append("original + reworded prompts")
+            count = len(billed_runs)
+            provisional = entry["allocation_status"] == "needs_confirmation"
+            coverage = f"{count} {'runs' if count != 1 else 'run'}"
+            if provisional:
+                coverage += " provisionally linked"
+            coverage += " · " + ", ".join(variants)
+        else:
+            coverage = "run coverage unallocated"
+            if len(entry["charges"]) > 1:
+                coverage = f"{len(entry['charges'])} charges · " + coverage
         axes.text(
-            amount + 0.18,
-            y - 0.16,
-            infrastructure,
-            color=COLORS["mineral"],
+            0.12,
+            y - 0.34,
+            f"{infrastructure} · {coverage}",
+            color=COLORS["steel"],
             fontfamily=MONO_FONT,
-            fontsize=5.8,
+            fontsize=6.5,
             va="center",
         )
     axes.set_yticks(y_positions, labels)
@@ -576,14 +580,6 @@ def generate_observed_spend() -> Path:
         prop={"family": MONO_FONT, "size": 7},
         labelcolor=COLORS["paper"],
         ncol=2,
-    )
-    add_footer(
-        figure,
-        (
-            "Source · recorded endpoint and account charges"
-            f" · captured total ${costs['known_total_usd']:.2f}"
-            " · startup and idle time may be included"
-        ),
     )
     return save_figure(figure, "02-observed-sweep-spend.png")
 
@@ -629,9 +625,8 @@ def generate_prompt_rewrite_comparison() -> Path:
         for label, official, reworded in runs
     ]
     figure = new_figure(
-        "04 · prompt sensitivity",
-        "Four words moved Qwen by forty points.",
-        "Only the wording changed. Frames, gold labels, and scoring stayed fixed.",
+        "Judgment accuracy before and after prompt rewording",
+        "174 judgment prompts per model; frames, reference labels, and scoring were unchanged.",
     )
     axes = figure.add_axes((0.27, 0.17, 0.67, 0.57))
     axes.set_facecolor(COLORS["midnight"])
@@ -730,10 +725,6 @@ def generate_prompt_rewrite_comparison() -> Path:
         labelcolor=COLORS["paper"],
         ncol=2,
     )
-    add_footer(
-        figure,
-        "Source · completed official and cut-in-reword runs · 174 judgment prompts per model",
-    )
     return save_figure(figure, "04-prompt-rewrite-comparison.png")
 
 
@@ -747,9 +738,8 @@ def generate_label_imbalance(samples: list[dict]) -> Path:
     negative_count = len(samples) - positive_count
 
     figure = new_figure(
-        "05 · label distribution",
-        "This is a yes-set, not a fleet distribution.",
-        "A detector that always says yes scores 98.9% on the judgment prompts.",
+        "Vehicle cut-in reference label distribution",
+        "An always-yes prediction achieves 98.9% judgment accuracy.",
     )
     figure.text(
         0.075,
@@ -813,7 +803,7 @@ def generate_label_imbalance(samples: list[dict]) -> Path:
     figure.text(
         0.08,
         0.19,
-        "One negative clip, asked twice.",
+        "One negative clip with two judgment prompts",
         color=COLORS["paper"],
         fontfamily=DISPLAY_FONT,
         fontsize=14,
@@ -837,10 +827,6 @@ def generate_label_imbalance(samples: list[dict]) -> Path:
         label="The same clip · target boxed",
         border=COLORS["signal"],
         zorder=2,
-    )
-    add_footer(
-        figure,
-        "Source · VLADBench Vehicle_Cutin · 87 clips / 174 yes-no judgments",
     )
     return save_figure(figure, "05-label-imbalance.png")
 
@@ -875,9 +861,8 @@ def generate_reason_taxonomy(samples: list[dict]) -> Path:
     values.append(("8 other labels", other_count))
 
     figure = new_figure(
-        "07 · reason labels",
-        "The dominant “reason” is not visible in the pixels.",
-        "The benchmark mixes motive, geometry, and maneuver labels in one answer list.",
+        "Distribution of reference reason labels",
+        "86 scored answers; labels mix motive, geometry, and maneuver. One malformed question excluded.",
     )
     axes = figure.add_axes((0.30, 0.12, 0.64, 0.66))
     axes.set_facecolor(COLORS["midnight"])
@@ -930,10 +915,6 @@ def generate_reason_taxonomy(samples: list[dict]) -> Path:
         label.set_fontfamily(MONO_FONT)
     for spine in axes.spines.values():
         spine.set_visible(False)
-    add_footer(
-        figure,
-        "Source · VLADBench Vehicle_Cutin gold reason labels · malformed q3 excluded",
-    )
     return save_figure(figure, "07-reason-label-distribution.png")
 
 
@@ -949,9 +930,8 @@ def generate_box_flip(samples: list[dict]) -> Path:
         for item in run
     )
     figure = new_figure(
-        "06 · attribution sensitivity",
-        "Draw a box. Get a different answer.",
-        "Same frames. Same words. Only the red target rectangle changed.",
+        "Effect of a target box on Qwen’s answer",
+        "Qwen 3.6 35B-A3B FP8 · official prompt · identical frames with and without a target box.",
         figsize=(12, 6.75),
     )
     add_image_stack(
@@ -1014,15 +994,11 @@ def generate_box_flip(samples: list[dict]) -> Path:
     figure.text(
         0.92,
         0.135,
-        "Qwen answers flipped",
+        "clips with different answers",
         color=COLORS["steel"],
         fontfamily=MONO_FONT,
         fontsize=7,
         ha="right",
-    )
-    add_footer(
-        figure,
-        "Source · official prompt · Qwen 3.6 35B-A3B FP8 · sample 3_1_1_54",
     )
     return save_figure(figure, "06-bounding-box-answer-flip.png")
 

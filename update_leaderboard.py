@@ -418,7 +418,8 @@ def generate_request_latency_plot(
     plot_path: Path,
     reasoning: str | None,
     *,
-    kicker: str = "vehicle cut-in",
+    kicker: str | None = "vehicle cut-in",
+    title: str = "Latency vs. score",
 ) -> bool:
     def is_in_scope(result: dict) -> bool:
         if reasoning is None:
@@ -515,19 +516,20 @@ def generate_request_latency_plot(
         if reasoning is None
         else f"reasoning {reasoning.lower()}"
     )
-    axes.text(
-        0.0,
-        1.14,
-        f"{kicker}  ·  {scope}",
-        transform=axes.transAxes,
-        fontname=MONO_FONT,
-        fontsize=9,
-        color=EVENTUAL["signal"],
-        ha="left",
-        va="bottom",
-    )
+    if kicker is not None:
+        axes.text(
+            0.0,
+            1.14,
+            f"{kicker}  ·  {scope}",
+            transform=axes.transAxes,
+            fontname=MONO_FONT,
+            fontsize=9,
+            color=EVENTUAL["signal"],
+            ha="left",
+            va="bottom",
+        )
     axes.set_title(
-        "Latency vs. score",
+        title,
         fontname=DISPLAY_FONT,
         fontsize=22,
         fontweight="bold",

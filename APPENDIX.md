@@ -1,12 +1,18 @@
 # Appendix: VLADBench Vehicle Cut-in details
 
-This appendix contains the detailed results, attribution analysis, related work, and complete checklist for [the main article](ARTICLE.md).
+This appendix contains the detailed results, attribution analysis, related work, and complete checklist for [the forthcoming article](https://eventual.ai/blog/open-loop-vlm-evals-scenario-mining).
 
 ## Complete scores and scoring
 
 **The Score isn't a proxy for Cut-in detection**. The official composite score from the paper is calculated as 70% yes/no judgment, 10% reason, 20% "did you copy an option from the question."
 
 The complete run tables are in the [official leaderboard](LEADERBOARD.md) and [reworded-prompt leaderboard](LEADERBOARD-reword.md).
+
+## Observed sweep spend
+
+Actual recorded spend for the sweep was $53.824, or about $54. The chart labels identify billing coverage where known.
+
+![Observed Modal and OpenRouter spend across the model sweep](plots/article/02-observed-sweep-spend.png)
 
 ## Exact prompt-rewrite results
 

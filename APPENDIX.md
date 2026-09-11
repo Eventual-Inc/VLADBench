@@ -1,6 +1,6 @@
 # Appendix: VLADBench Vehicle Cut-in details
 
-This appendix contains the detailed results, attribution analysis, related work, and complete checklist for [the main article](ARTICLE.md).
+This appendix contains the detailed results, attribution analysis, related work, and complete checklist for [the forthcoming article](https://eventual.ai/blog/open-loop-vlm-evals-scenario-mining).
 
 ## Complete scores and scoring
 

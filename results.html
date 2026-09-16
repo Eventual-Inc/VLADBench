@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=28" />
+    <link rel="stylesheet" href="web/results.css?v=29" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
-    <script src="web/results.js?v=46" defer></script>
+    <script src="web/results.js?v=47" defer></script>
   </head>
   <body>
     <header>
@@ -56,7 +56,7 @@
 
       <section class="tab-page" data-tab="overview">
         <div class="overview-grid">
-          <section class="panel cost-score-panel" aria-labelledby="cost-score-title">
+          <section class="panel cost-score-panel span-2" aria-labelledby="cost-score-title">
             <div class="chart-heading">
               <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
               <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
@@ -64,7 +64,7 @@
             <div id="cost-score" class="bar-chart"></div>
             <p class="sub" id="cost-score-note"></p>
           </section>
-          <aside class="panel leaderboard" aria-labelledby="leaderboard-title">
+          <aside class="panel leaderboard span-2" aria-labelledby="leaderboard-title">
             <div class="chart-heading">
               <h3 class="section-title" id="leaderboard-title">Leaderboard</h3>
               <p class="sub" id="method"></p>

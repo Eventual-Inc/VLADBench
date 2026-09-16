@@ -128,12 +128,6 @@ function rankedModels() {
   return MODELS.slice().sort((left, right) => modelMean(right) - modelMean(left));
 }
 
-function winsFor(model) {
-  return TASKS.filter((task) => {
-    const scores = MODELS.map((candidate) => composite(candidate, task.name)).filter((s) => s !== null);
-    return scores.length && composite(model, task.name) === Math.max(...scores) && scores.filter((s) => s === Math.max(...scores)).length === 1;
-  }).length;
-}
 
 function partsFor(task, model) {
   const result = model.tasks[task.name];
@@ -191,7 +185,7 @@ function renderLeaderboard() {
   const omitted = MODELS.filter((m) => m.featured === false);
   const scaleMax = Math.max(...MODELS.map((m) => m.usage?.latency_seconds?.p95 || 0)) * 1.05;
   const head = element("tr");
-  [["#", ""], ["Model", ""], ["TOTAL", "num"], ["Wins", "num"], ["Cost", "num"], ["$/video hour", "num"], ["Latency", ""]].forEach(([label, cls]) => head.append(element("th", label, cls)));
+  [["#", ""], ["Model", ""], ["Score", "num"], ["Sweep cost", "num"], ["Input $/frame", "num"], ["Output $/query", "num"], ["Est. $/hour of video", "num"], ["Latency", ""]].forEach(([label, cls]) => head.append(element("th", label, cls)));
   const thead = element("thead");
   thead.append(head);
   table.append(thead);
@@ -208,14 +202,16 @@ function renderLeaderboard() {
     if (frontierIds.includes(model.id)) title.append(element("span", "frontier", "chip-frontier"));
     name.append(title, element("span", conditionChips(model).join(" · "), "chips"));
     row.append(name);
-    row.append(element("td", percent(modelMean(model), 1), "num"));
-    row.append(element("td", winsFor(model), "num"));
+    row.append(element("td", modelMean(model).toFixed(2), "num strong"));
     const spend = element("td", money(model.usage?.cost_usd), "num");
     spend.title = model.usage?.cost_usd === null || model.usage?.cost_usd === undefined
       ? (model.usage?.note || "No per-request cost receipts")
       : model.usage.cost_basis || `Provider-billed API spend for ${model.usage.cost_receipts.toLocaleString()} answers`;
     row.append(spend);
     const metered = meteredHour(model, videoSettings());
+    const perFrame = metered ? metered.tokensPerFrame * model.usage.metering.prompt_price : null;
+    row.append(element("td", perFrame == null ? "—" : `$${perFrame.toFixed(5)}`, "num"),
+               element("td", metered ? `$${metered.outputPerQuery.toFixed(5)}` : "—", "num"));
     const hour = element("td", money(metered ? metered.total : null), "num");
     hour.title = model.usage?.video_cost_basis || "";
     row.append(hour);
@@ -226,7 +222,7 @@ function renderLeaderboard() {
   });
   table.append(body);
   $("leaderboard-note").textContent =
-    "TOTAL is the overall score: the average of the 28 task scores with each task weighted by its number of questions, the same rule the paper's Table 10 follows, using the paper's component weights for every task. Cost is what the full sweep was billed through OpenRouter. $/video hour is an estimate for one workload, a 1 FPS feed in 8-frame clips with one question each: 3,600 frames at the measured input cost per frame plus 450 queries at the measured output cost per query, reasoning included. Latency: p25–p75 box, median tick, p95 dot."
+    "Score is the paper's TOTAL: the average of the 28 task scores with each task weighted by its number of questions, using the paper's component weights. Sweep cost is what the full sweep was billed through OpenRouter. Input $/frame, output $/query, and the hourly estimate follow the video cost calculator below and its knobs. Latency: p25–p75 box, median tick, p95 dot."
     + (omitted.length ? ` Left out of this table and the plot, still in every other tab: ${omitted.map((m) => `${m.label} (${modelMean(m).toFixed(1)}; ${m.not_featured_reason})`).join("; ")}.` : "");
 }
 
@@ -280,7 +276,7 @@ function renderCostScore() {
   if (!chart) return;
   chart.replaceChildren();
   const points = MODELS.filter((m) => m.usage?.cost_usd && m.featured !== false).map((m) => ({ model: m, cost: m.usage.cost_usd, score: modelMean(m), spread: taskSpread(m), gpu: Boolean(m.usage.cost_basis), text: `${m.label} · ${modelMean(m).toFixed(1)}` }));
-  const width = 760, height = 440, margin = { top: 24, right: 40, bottom: 52, left: 54 };
+  const width = 1180, height = 460, margin = { top: 24, right: 48, bottom: 52, left: 54 };
   const plotW = width - margin.left - margin.right, plotH = height - margin.top - margin.bottom;
   const costs = points.map((p) => p.cost);
   const scores = points.map((p) => p.score);

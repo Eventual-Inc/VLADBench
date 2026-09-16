@@ -28,7 +28,7 @@ Up and to the left is better. The dashed line is the cost-performance frontier w
 ## Leaderboard
 
 
-| # | Model | TOTAL | Sweep cost | Input $/frame | Output $/query | Est. $/hour of video |
+| # | Model | Score | Sweep cost | Input $/frame | Output $/query | Est. $/hour of video |
 |---|---|---|---|---|---|---|
 @LEADERBOARD@
 

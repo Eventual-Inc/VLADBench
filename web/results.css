@@ -1283,8 +1283,8 @@ h1, h2, h3, .brand, .tabs [role="tab"] { font-family: "Helvetica Neue", Helvetic
   .overview { grid-template-columns: minmax(0, 1fr); }
   .tabbar .weights { grid-template-columns: 1fr auto; grid-template-areas: "title reset" "track track" "note note"; }
   .tabbar .weights-track { width: 100%; }
-  .leaderboard th:nth-child(4), .leaderboard td:nth-child(4),
-  .leaderboard th:nth-child(7), .leaderboard td:nth-child(7) { display: none; }   /* wins and latency: desktop only */
+  .leaderboard th:nth-child(5), .leaderboard td:nth-child(5), .leaderboard th:nth-child(6), .leaderboard td:nth-child(6),
+  .leaderboard th:nth-child(8), .leaderboard td:nth-child(8) { display: none; }   /* per-frame, per-query, latency: desktop only */
   .leaderboard th, .leaderboard td { white-space: normal; }
   .frontier { font-size: 11px; }
   .frontier th, .frontier td { padding: 5px 4px; white-space: normal; }

@@ -439,16 +439,37 @@ function renderVideoCost() {
 
 // ---- horizontal bar chart -------------------------------------------------------------
 
+// Task families shown in Score by task and the matrix; pills like the model filter. Empty set means all.
+state.families = new Set();
+
 function visibleTasks() {
-  const query = $("search").value.trim().toLowerCase();
-  const tasks = TASKS.filter((task) => [task.name, task.category, task.group].some((v) => humanize(v).toLowerCase().includes(query)));
-  const spread = (task) => {
-    const scores = MODELS.map((m) => composite(m, task.name)).filter((s) => s !== null);
-    return scores.length < 2 ? 0 : Math.max(...scores) - Math.min(...scores);
+  return TASKS.filter((task) => !state.families.size || state.families.has(task.group));
+}
+
+function buildTaskFilter() {
+  const box = $("task-filter");
+  if (!box) return;
+  const families = [...new Map(TASKS.filter((t) => MODELS.some((m) => m.tasks[t.name])).map((t) => [t.group, t.category])).entries()];
+  const paint = () => {
+    for (const chip of box.querySelectorAll("[data-family]")) chip.setAttribute("aria-pressed", String(!state.families.size || state.families.has(chip.dataset.family)));
+    box.querySelector(".preset").setAttribute("aria-pressed", String(!state.families.size));
   };
-  if ($("sort").value === "spread") return tasks.sort((a, b) => spread(b) - spread(a));
-  if ($("sort").value === "alphabetical") return tasks.sort((a, b) => a.name.localeCompare(b.name));
-  return tasks;
+  const all = element("button", "All tasks", "preset");
+  all.type = "button";
+  all.addEventListener("click", () => { state.families.clear(); paint(); renderBarChart(); renderMatrix(); });
+  box.append(all);
+  for (const [group, category] of families) {
+    const chip = element("button", humanize(group), "chip");
+    chip.type = "button"; chip.dataset.family = group; chip.title = humanize(category);
+    chip.addEventListener("click", () => {
+      if (!state.families.size) state.families = new Set([group]);
+      else if (state.families.has(group)) state.families.delete(group);
+      else state.families.add(group);
+      paint(); renderBarChart(); renderMatrix();
+    });
+    box.append(chip);
+  }
+  paint();
 }
 
 function selectTask(task, model) {
@@ -725,7 +746,7 @@ function renderMatrix() {
     return;
   }
   let category = null;
-  const showGroups = $("sort").value === "benchmark";
+  const showGroups = true;
   for (const task of tasks) {
     if (showGroups && task.category !== category) {
       category = task.category;
@@ -1015,11 +1036,11 @@ function wireTabs() {
 wireTabs();
 
 // Embed mode: ?embed=overview|results|score|matrix shows one panel with no chrome, for iframes in the blog.
-const EMBED_TABS = { overview: "overview", results: "paper", score: "leaderboard", matrix: "matrix" };
+const EMBED_TABS = { overview: "overview", leaderboard: "overview", plot: "overview", frontier: "overview", video: "overview", results: "paper", score: "leaderboard", matrix: "matrix" };
 const embed = new URLSearchParams(location.search).get("embed");
 if (embed === "full") document.body.classList.add("embed-full");   // whole tabbed page without the site header, for /blog/VLADBench
 if (embed && EMBED_TABS[embed]) {
-  document.body.classList.add("embed");
+  document.body.classList.add("embed", `embed-${embed}`);
   for (const page of document.querySelectorAll(".tab-page")) page.hidden = page.dataset.tab !== EMBED_TABS[embed];
   const shared = document.getElementById("toolbar");
   if (shared) shared.hidden = !["leaderboard", "matrix"].includes(EMBED_TABS[embed]);
@@ -1030,11 +1051,10 @@ for (const [id, target] of [["article-link", window.VLADBENCH_ARTICLE], ["blog-l
 }
 $("cost-linear")?.addEventListener("change", renderCostScore);
 for (const id of ["video-res", "video-fps", "video-frames"]) $(id)?.addEventListener("change", () => { renderVideoCost(); renderLeaderboard(); });
-$("sort").addEventListener("change", () => { state.expanded = null; state.selected = null; renderAll(); });
-$("search").addEventListener("input", () => { renderBarChart(); renderMatrix(); });
 $("inspector-close").onclick = () => $("inspector").close();
 
 buildModelFilter();
+buildTaskFilter();
 renderAll();
 renderPaperFormat();
 wireHeatPicker();

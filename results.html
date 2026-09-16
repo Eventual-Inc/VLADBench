@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=29" />
+    <link rel="stylesheet" href="web/results.css?v=30" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
-    <script src="web/results.js?v=47" defer></script>
+    <script src="web/results.js?v=48" defer></script>
   </head>
   <body>
     <header>
@@ -39,31 +39,10 @@
         <div class="model-filter" id="model-filter" aria-label="Models shown in every view"></div>
       </div>
 
-      <section class="panel toolbar" id="toolbar" data-tabs="overview leaderboard matrix paper" aria-label="Controls" hidden>
-        <label class="search">
-          <span>Find a task</span>
-          <input id="search" type="search" placeholder="Search task, group, or domain" />
-        </label>
-        <label>
-          <span>Sort</span>
-          <select id="sort">
-            <option value="benchmark">Benchmark order</option>
-            <option value="spread">Largest spread</option>
-            <option value="alphabetical">Alphabetical</option>
-          </select>
-        </label>
-      </section>
+      <div class="task-filter" id="task-filter" data-tabs="leaderboard matrix" aria-label="Task families shown" hidden></div>
 
       <section class="tab-page" data-tab="overview">
         <div class="overview-grid">
-          <section class="panel cost-score-panel span-2" aria-labelledby="cost-score-title">
-            <div class="chart-heading">
-              <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
-              <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
-            </div>
-            <div id="cost-score" class="bar-chart"></div>
-            <p class="sub" id="cost-score-note"></p>
-          </section>
           <aside class="panel leaderboard span-2" aria-labelledby="leaderboard-title">
             <div class="chart-heading">
               <h3 class="section-title" id="leaderboard-title">Leaderboard</h3>
@@ -72,18 +51,26 @@
             <table id="leaderboard"></table>
             <p class="sub" id="leaderboard-note"></p>
           </aside>
-          <section class="panel" aria-labelledby="frontier-title">
+          <section class="panel cost-score-panel span-2" aria-labelledby="cost-score-title">
+            <div class="chart-heading">
+              <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
+              <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
+            </div>
+            <div id="cost-score" class="bar-chart"></div>
+            <p class="sub" id="cost-score-note"></p>
+          </section>
+          <section class="panel frontier-panel" aria-labelledby="frontier-title">
             <h3 class="section-title" id="frontier-title">Cost-Performance Frontier</h3>
             <p class="sub">At each sweep cost, the model no other beats for the same money or less.</p>
             <table id="frontier" class="frontier"></table>
             <p class="sub" id="frontier-note"></p>
           </section>
-          <section class="panel" aria-labelledby="marginal-title">
+          <section class="panel marginal-panel" aria-labelledby="marginal-title">
             <h3 class="section-title" id="marginal-title">Marginal Performance Cost</h3>
             <p class="sub">What each step up the frontier buys, and what it costs per point.</p>
             <table id="marginal" class="frontier"></table>
           </section>
-          <section class="panel span-2" aria-labelledby="video-title">
+          <section class="panel span-2 video-panel" aria-labelledby="video-title">
             <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>
             <div class="row video-knobs">
               <label>Frame size <select id="video-res"><option value="640x360">640×360</option><option value="1280x720" selected>1280×720</option><option value="1920x1080">1920×1080</option></select></label>

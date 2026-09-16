@@ -32,7 +32,7 @@ Up and to the left is better. The dashed line is the cost-performance frontier w
 |---|---|---|---|---|---|---|
 @LEADERBOARD@
 
-The last three columns meter video question answering at 1280x720. Input cost per frame is the tokeniser rule fitted to our billed tokens (`vladbench.metering`: OpenAI bills about 1.2 tokens per 32x32 patch at its cache-write rate, Qwen bills per pair of frames in proportion to area, Google's video path bills a flat count per frame) times the per-token price the sweep was actually charged. Output cost per query is the billed completion cost per answer, reasoning tokens included. The hourly estimate applies one workload: a 1 FPS feed cut into non-overlapping 8-frame clips with one question each, so 3,600 frames and 450 queries an hour. The rules are checked against every sweep and live against the API in `tests/test_metering.py`; residuals at 720p are under 10% for OpenAI and Google and within host variance for Qwen, whose OpenRouter hosts differ in frame sampling. Models without a fitted rule show n/a. `models.input_cost_per_frame_usd`, `models.output_cost_per_query_usd`, and `models.cost_per_video_hour_usd` carry them.
+See the code for how we calculated the 
 
 
 @OMITTED@

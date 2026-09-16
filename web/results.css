@@ -1348,3 +1348,18 @@ nav a.request:hover { background: var(--accent-soft); }
 .multiple .sub { margin: 0 0 6px; font-size: 10.5px; }
 .multiple svg { display: block; width: 100%; height: auto; }
 .tab-page > .score-bars .bar-chart svg { min-width: 0; }
+
+/* ---- task family pills ---- */
+.task-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 12px; }
+.task-filter .preset, .task-filter .chip { padding: 3px 9px; font-size: 11px; border-radius: 999px; }
+.task-filter .preset { font-weight: 700; }
+.task-filter .chip { color: var(--muted); }
+.task-filter .chip[aria-pressed="true"] { color: var(--ink); border-color: var(--muted); }
+.task-filter .chip[aria-pressed="false"] { opacity: 0.45; }
+body.embed .task-filter { display: none; }
+/* single-panel embeds of the overview */
+body.embed-leaderboard .overview-grid > .panel:not(.leaderboard),
+body.embed-plot .overview-grid > .panel:not(.cost-score-panel),
+body.embed-frontier .overview-grid > .panel:not(.frontier-panel):not(.marginal-panel),
+body.embed-video .overview-grid > .panel:not(.video-panel) { display: none; }
+body.embed .overview-grid { gap: 10px; }

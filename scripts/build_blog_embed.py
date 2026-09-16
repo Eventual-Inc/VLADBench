@@ -17,7 +17,11 @@ OUT = ROOT / "dist/blog/vladbench-reeval"
 DATA_SCRIPTS = ["task-review-tasks.js", "task-review-audit.js", "task-review-published.js", "task-review-results.js"]
 FIGURES = ["results/dataset/cost-vs-score.png", "results/dataset/cost-vs-score-hero.png"]
 VIEWS = {
-    "overview": ("Cost vs Score with the cost-performance frontier and the leaderboard", 1250),
+    "overview": ("Leaderboard, Cost vs Score, frontier tables, and the video cost calculator", 2500),
+    "leaderboard": ("Leaderboard with score, sweep cost, and metered video costs", 700),
+    "plot": ("Cost vs Score with the cost-performance frontier", 640),
+    "frontier": ("Cost-performance frontier and marginal cost per point", 520),
+    "video": ("Metered cost of video question answering, with knobs", 620),
     "results": ("Our results in the paper's Table 10 layout, above the paper's own table", 2200),
     "score": ("Score by task, one bar per model", 900),
     "matrix": ("Task by model matrix with scorer components", 1600),

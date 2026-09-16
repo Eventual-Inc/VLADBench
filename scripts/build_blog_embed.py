@@ -45,6 +45,7 @@ def build(out: Path = OUT) -> Path:
     out.mkdir(parents=True)
     (out / "embed.html").write_text(embed_html())
     (out / "site.html").write_text(site_html())
+    shutil.copy(ROOT / "self-test.html", out / "self-test.html")   # linked from the results nav
     shutil.copytree(ROOT / "web", out / "web")
     (out / "web/config.js").write_text('window.VLADBENCH_ARTICLE = "/blog/vladbench-reeval";\nwindow.VLADBENCH_BLOG = "/blog";\n')
     for name in DATA_SCRIPTS + ["task-review-data.js"]:

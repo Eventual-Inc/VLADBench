@@ -24,8 +24,7 @@ Current benchmarks designed for VLM-based AD face several notable limitations:
 
 - **Coarse-grained Categories**: The underlying datasets of
 the VLM-based models are often simplistic, typically categorizing tasks into perception, prediction, and planning
-with reasoning, which are incomplete for evaluating the nuanced cognitive and reasoning abilities required for safe and
-reliable AD. 
+with reasoning, which are incomplete for evaluating the nuanced cognitive and reasoning abilities required for safe and reliable AD.
 
 - **Lack of Dynamic Elements**: Both static and dynamic scenes are crucial for evaluating AD systems, a robust analysis of dynamic elements is particularly important for validating the temporal reasoning capabilities, especially in understanding traffic participant intentions within the scene and executing the nuanced spatio-temporal reasoning required for safe navigation. 
 
@@ -44,22 +43,22 @@ We introduce **VLADBench**, specifically designed to rigorously evaluate the cap
 using GPT-4 and train models on individual domain-specific (DS) datasets. Finally, we validate the trained models on VLADBench to assess their performance across different domains.
 
 <p align="center">
-    <img src="./asset/sun.jpeg" width="50%" height="50%">
+    <img src="./original/asset/sun.jpeg" width="50%" height="50%">
 </p>
 
 
 
 # Examples
 <p align="center">
-    <img src="./asset/domain_123.jpeg" width="90%" height="90%">
+    <img src="./original/asset/domain_123.jpeg" width="90%" height="90%">
 </p>
 <p align="center">
-    <img src="./asset/domain_45.jpeg" width="90%" height="90%">
+    <img src="./original/asset/domain_45.jpeg" width="90%" height="90%">
 </p>
 
 # Evaluation Results
 <p align="center">
-    <img src="./asset/results_vlms.png" width="100%" height="100%">
+    <img src="./original/asset/results_vlms.png" width="100%" height="100%">
 </p>
 
 For the detailed results of each tasks and the results from the large-scale models, please see the paper.
@@ -73,3 +72,31 @@ For the detailed results of each tasks and the results from the large-scale mode
 **Note**  
 **1. The bounding boxes in VLADBench are NOT resized. You should modify them in [prompt](https://github.com/Depth2World/VLADBench/blob/8156375d6b0e88ec5ca4f5a8119a9a0ee6c1ed18/qwen2vl_all.py#L79) and [evaluation](https://github.com/Depth2World/VLADBench/blob/8156375d6b0e88ec5ca4f5a8119a9a0ee6c1ed18/evaluate_utils.py#L170) for different VLMs.**  
 **2. The finall scores do NOT include the trajectory evaluation.**
+
+
+## Running the benchmark
+
+```sh
+pip install -e .
+vladbench run results/protocols/full-original.json --models inkling      # billable
+vladbench score results/protocols/full-original.json --models inkling
+```
+
+`results/protocols/full-original.json` is the whole protocol: dataset revision, prompt
+handling, completion guard, reasoning policy, and one entry per model declaring
+its endpoint, sequence transport, and reasoning setting. The runner sends each
+unanswered question and appends the answer under `results/runs/`; the scorer rebuilds
+every request, checks the stored hash, and applies the paper's scoring criteria, running its scoring code unchanged. Details and
+the claims the data supports are in [docs/PROTOCOL.md](docs/PROTOCOL.md);
+commands in [docs/REPRODUCTION.md](docs/REPRODUCTION.md).
+
+Layout:
+
+- `src/vladbench/`: `dataset`, `spec`, `requests`, `video`, `run`, `scoring`, `cli`.
+- `results/`: everything about a condition in one place. `protocols/` holds the specification (one file is one condition),
+  `runs/` the raw per-question answers (gitignored), `scores-<model>.json` the scored summaries, `audit/` the pinned dataset
+  metadata and the published Table 10 values, and `rerun.json` the compact record the results page reads.
+- `original/`: the paper's scoring code (its criteria, unchanged), task catalog, and README images, byte for byte, with hashes.
+- `results.html` (tabbed results: cost against score with the frontier and a video-cost calculator, the paper's Table 10 layout, score by task, task matrix), `task-review.html` (the older single-page companion) and `self-test.html` (take the benchmark yourself): static pages, `python3 -m http.server`. `scripts/export_parquet.py` writes the published parquet tables to `results/dataset/`; `scripts/publish_hf.py` pushes them to the Hugging Face dataset (`--with-space` also publishes the static site), sending only changed files; it needs `HF_TOKEN` in `.env`. `scripts/build_blog_embed.py` assembles the bundle the blog serves.
+- `scripts/`: the results builder, the parquet export, the publishing and blog-bundle scripts, the metering re-fit report, and the dataset audit.
+- `src/vladbench/metering.py`: the fitted tokeniser and billing rules behind the cost-per-video-hour estimates, validated offline against every sweep and live against the API in `tests/test_metering.py` (set `RUN_LIVE_METERING=1`).

@@ -1,0 +1,2426 @@
+[
+    {
+        "sequence": "DRAMA_2020-0127-132751",
+        "image_path": [
+            "2020-0127-132751_frame_022035.png",
+            "2020-0127-132751_frame_022044.png",
+            "2020-0127-132751_frame_022053.png",
+            "2020-0127-132751_frame_022062.png"
+        ],
+        "image_path_plot": [
+            "2020-0127-132751_frame_022035_plot.png",
+            "2020-0127-132751_frame_022044_plot.png",
+            "2020-0127-132751_frame_022053_plot.png",
+            "2020-0127-132751_frame_022062_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Traffic Efficiency', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Bicycle Left Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_0"
+    },
+    {
+        "sequence": "DRAMA_2020-0129-105040",
+        "image_path": [
+            "2020-0129-105040_frame_026193.png",
+            "2020-0129-105040_frame_026202.png"
+        ],
+        "image_path_plot": [
+            "2020-0129-105040_frame_026193_plot.png",
+            "2020-0129-105040_frame_026202_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Pedestrian Walking on Motor Vehicle Lane', 'Borrow Lane', 'Yield to Left Vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_1"
+    },
+    {
+        "sequence": "DRAMA_2020-0129-105040_2",
+        "image_path": [
+            "2020-0129-105040_frame_081395.png"
+        ],
+        "image_path_plot": [
+            "2020-0129-105040_frame_081395_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Cannot Speculate', 'Normal Driving', 'Yield to Left Vehicle', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_2"
+    },
+    {
+        "sequence": "DRAMA_2020-0131-103016",
+        "image_path": [
+            "2020-0131-103016_frame_012354.png",
+            "2020-0131-103016_frame_012363.png"
+        ],
+        "image_path_plot": [
+            "2020-0131-103016_frame_012354_plot.png",
+            "2020-0131-103016_frame_012363_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Normal Driving', 'Yield to Left Vehicle', 'Borrow Lane', 'Cannot Speculate', 'Jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Yield to Left Vehicle"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_3"
+    },
+    {
+        "sequence": "DRAMA_2020-0203-154554",
+        "image_path": [
+            "2020-0203-154554_frame_073672.png"
+        ],
+        "image_path_plot": [
+            "2020-0203-154554_frame_073672_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Borrow Lane', 'Bicycle Left Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_4"
+    },
+    {
+        "sequence": "DRAMA_2020-0203-154554_2",
+        "image_path": [
+            "2020-0203-154554_frame_073681.png",
+            "2020-0203-154554_frame_073690.png"
+        ],
+        "image_path_plot": [
+            "2020-0203-154554_frame_073681_plot.png",
+            "2020-0203-154554_frame_073690_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Borrow Lane', 'Bicycle Left Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_5"
+    },
+    {
+        "sequence": "DRAMA_2020-0204-150838",
+        "image_path": [
+            "2020-0204-150838_frame_003010.png",
+            "2020-0204-150838_frame_003019.png",
+            "2020-0204-150838_frame_003028.png"
+        ],
+        "image_path_plot": [
+            "2020-0204-150838_frame_003010_plot.png",
+            "2020-0204-150838_frame_003019_plot.png",
+            "2020-0204-150838_frame_003028_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Pedestrian Walking on Motor Vehicle Lane', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Borrow Lane', 'Yield to Left Vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_6"
+    },
+    {
+        "sequence": "DRAMA_2020-0204-150838_2",
+        "image_path": [
+            "2020-0204-150838_frame_079100.png",
+            "2020-0204-150838_frame_079109.png"
+        ],
+        "image_path_plot": [
+            "2020-0204-150838_frame_079100_plot.png",
+            "2020-0204-150838_frame_079109_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Bicycle Left Turn into Motor Vehicle Lane', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Walking on Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_7"
+    },
+    {
+        "sequence": "DRAMA_2020-0205-152530",
+        "image_path": [
+            "2020-0205-152530_frame_019669.png"
+        ],
+        "image_path_plot": [
+            "2020-0205-152530_frame_019669_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Pedestrian Walking on Motor Vehicle Lane', 'Yield to Left Vehicle', 'Borrow Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_8"
+    },
+    {
+        "sequence": "DRAMA_2020-0210-101957_2",
+        "image_path": [
+            "2020-0210-101957_frame_019133.png",
+            "2020-0210-101957_frame_019142.png",
+            "2020-0210-101957_frame_019151.png",
+            "2020-0210-101957_frame_019160.png"
+        ],
+        "image_path_plot": [
+            "2020-0210-101957_frame_019133_plot.png",
+            "2020-0210-101957_frame_019142_plot.png",
+            "2020-0210-101957_frame_019151_plot.png",
+            "2020-0210-101957_frame_019160_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Bicycle Left Turn into Motor Vehicle Lane', 'Traffic Efficiency', 'Cannot Speculate', 'Pedestrian Walking on Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_9"
+    },
+    {
+        "sequence": "DRAMA_2020-0218-151547",
+        "image_path": [
+            "2020-0218-151547_frame_009303.png",
+            "2020-0218-151547_frame_009312.png"
+        ],
+        "image_path_plot": [
+            "2020-0218-151547_frame_009303_plot.png",
+            "2020-0218-151547_frame_009312_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Cannot Speculate', 'Yield to Left Vehicle', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_10"
+    },
+    {
+        "sequence": "DRAMA_2020-0218-151547_2",
+        "image_path": [
+            "2020-0218-151547_frame_009348.png",
+            "2020-0218-151547_frame_009357.png"
+        ],
+        "image_path_plot": [
+            "2020-0218-151547_frame_009348_plot.png",
+            "2020-0218-151547_frame_009357_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Cannot Speculate', 'Yield to Left Vehicle', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_11"
+    },
+    {
+        "sequence": "DRAMA_2020-0220-102630",
+        "image_path": [
+            "2020-0220-102630_frame_094421.png",
+            "2020-0220-102630_frame_094430.png",
+            "2020-0220-102630_frame_094439.png",
+            "2020-0220-102630_frame_094448.png"
+        ],
+        "image_path_plot": [
+            "2020-0220-102630_frame_094421_plot.png",
+            "2020-0220-102630_frame_094430_plot.png",
+            "2020-0220-102630_frame_094439_plot.png",
+            "2020-0220-102630_frame_094448_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Walking on Motor Vehicle Lane', 'Cannot Speculate', 'Traffic Efficiency', 'Bicycle Left Turn into Motor Vehicle Lane', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_12"
+    },
+    {
+        "sequence": "DRAMA_2020-0220-151845",
+        "image_path": [
+            "2020-0220-151845_frame_034308.png"
+        ],
+        "image_path_plot": [
+            "2020-0220-151845_frame_034308_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Yield to Left Vehicle', 'Pedestrian Walking on Motor Vehicle Lane', 'Pedestrian Crossing at Crosswalk', 'Cannot Speculate', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_13"
+    },
+    {
+        "sequence": "DRAMA_2020-0220-151845_2",
+        "image_path": [
+            "2020-0220-151845_frame_048260.png",
+            "2020-0220-151845_frame_048269.png"
+        ],
+        "image_path_plot": [
+            "2020-0220-151845_frame_048260_plot.png",
+            "2020-0220-151845_frame_048269_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Yield to Left Vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_14"
+    },
+    {
+        "sequence": "DRAMA_2020-0225-102455",
+        "image_path": [
+            "2020-0225-102455_frame_003387.png",
+            "2020-0225-102455_frame_003396.png",
+            "2020-0225-102455_frame_003405.png"
+        ],
+        "image_path_plot": [
+            "2020-0225-102455_frame_003387_plot.png",
+            "2020-0225-102455_frame_003396_plot.png",
+            "2020-0225-102455_frame_003405_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Borrow Lane', 'Traffic Efficiency', 'Pedestrian Walking on Motor Vehicle Lane', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_15"
+    },
+    {
+        "sequence": "DRAMA_clip_1060_000258",
+        "image_path": [
+            "clip_1060_000258_frame_000258.png"
+        ],
+        "image_path_plot": [
+            "clip_1060_000258_frame_000258_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Traffic Efficiency', 'Yield to Left Vehicle', 'Pedestrian Crossing at Crosswalk', 'Normal Driving', 'Borrow Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_16"
+    },
+    {
+        "sequence": "DRAMA_clip_1189_000486",
+        "image_path": [
+            "clip_1189_000486_frame_000486.png"
+        ],
+        "image_path_plot": [
+            "clip_1189_000486_frame_000486_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Normal Driving', 'Traffic Efficiency', 'Cannot Speculate', 'Borrow Lane', 'Yield to Left Vehicle', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_17"
+    },
+    {
+        "sequence": "DRAMA_clip_1352_000552",
+        "image_path": [
+            "clip_1352_000552_frame_000552.png"
+        ],
+        "image_path_plot": [
+            "clip_1352_000552_frame_000552_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Normal Driving', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_18"
+    },
+    {
+        "sequence": "DRAMA_clip_826_000318",
+        "image_path": [
+            "clip_826_000318_frame_000210.png",
+            "clip_826_000318_frame_000222.png",
+            "clip_826_000318_frame_000234.png",
+            "clip_826_000318_frame_000246.png"
+        ],
+        "image_path_plot": [
+            "clip_826_000318_frame_000210_plot.png",
+            "clip_826_000318_frame_000222_plot.png",
+            "clip_826_000318_frame_000234_plot.png",
+            "clip_826_000318_frame_000246_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Normal Driving', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_19"
+    },
+    {
+        "sequence": "DRAMA_clip_840_000114",
+        "image_path": [
+            "clip_840_000114_frame_000102.png",
+            "clip_840_000114_frame_000114.png"
+        ],
+        "image_path_plot": [
+            "clip_840_000114_frame_000102_plot.png",
+            "clip_840_000114_frame_000114_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Normal Driving', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_20"
+    },
+    {
+        "sequence": "HAD_train0022",
+        "image_path": [
+            "HAD_cyclist_train0022_frame_0310.png",
+            "HAD_cyclist_train0022_frame_0320.png",
+            "HAD_cyclist_train0022_frame_0330.png",
+            "HAD_cyclist_train0022_frame_0340.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0022_frame_0310_plot.png",
+            "HAD_cyclist_train0022_frame_0320_plot.png",
+            "HAD_cyclist_train0022_frame_0330_plot.png",
+            "HAD_cyclist_train0022_frame_0340_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Normal Driving', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_21"
+    },
+    {
+        "sequence": "HAD_train0219",
+        "image_path": [
+            "HAD_cyclist_train0219_frame_0040.png",
+            "HAD_cyclist_train0219_frame_0050.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0219_frame_0040_plot.png",
+            "HAD_cyclist_train0219_frame_0050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Normal Driving', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_22"
+    },
+    {
+        "sequence": "HAD_train0271",
+        "image_path": [
+            "HAD_cyclist_train0271_frame_0300.png",
+            "HAD_cyclist_train0271_frame_0310.png",
+            "HAD_cyclist_train0271_frame_0320.png",
+            "HAD_cyclist_train0271_frame_0330.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0271_frame_0300_plot.png",
+            "HAD_cyclist_train0271_frame_0310_plot.png",
+            "HAD_cyclist_train0271_frame_0320_plot.png",
+            "HAD_cyclist_train0271_frame_0330_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Normal Driving', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_23"
+    },
+    {
+        "sequence": "HAD_train0508",
+        "image_path": [
+            "HAD_cyclist_train0508_frame_0050.png",
+            "HAD_cyclist_train0508_frame_0070.png",
+            "HAD_cyclist_train0508_frame_0090.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0508_frame_0050_plot.png",
+            "HAD_cyclist_train0508_frame_0070_plot.png",
+            "HAD_cyclist_train0508_frame_0090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency', 'Borrow Lane', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_24"
+    },
+    {
+        "sequence": "HAD_train0552",
+        "image_path": [
+            "HAD_cyclist_train0552_frame_0100.png",
+            "HAD_cyclist_train0552_frame_0110.png",
+            "HAD_cyclist_train0552_frame_0120.png",
+            "HAD_cyclist_train0552_frame_0130.png",
+            "HAD_cyclist_train0552_frame_0140.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0552_frame_0100_plot.png",
+            "HAD_cyclist_train0552_frame_0110_plot.png",
+            "HAD_cyclist_train0552_frame_0120_plot.png",
+            "HAD_cyclist_train0552_frame_0130_plot.png",
+            "HAD_cyclist_train0552_frame_0140_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency', 'Borrow Lane', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_25"
+    },
+    {
+        "sequence": "HAD_train0553",
+        "image_path": [
+            "HAD_cyclist_train0553_frame_0000.png",
+            "HAD_cyclist_train0553_frame_0010.png",
+            "HAD_cyclist_train0553_frame_0020.png",
+            "HAD_cyclist_train0553_frame_0030.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0553_frame_0000_plot.png",
+            "HAD_cyclist_train0553_frame_0010_plot.png",
+            "HAD_cyclist_train0553_frame_0020_plot.png",
+            "HAD_cyclist_train0553_frame_0030_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_26"
+    },
+    {
+        "sequence": "HAD_train0554",
+        "image_path": [
+            "HAD_cyclist_train0554_frame_0070.png",
+            "HAD_cyclist_train0554_frame_0080.png",
+            "HAD_cyclist_train0554_frame_0090.png",
+            "HAD_cyclist_train0554_frame_0100.png",
+            "HAD_cyclist_train0554_frame_0110.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0554_frame_0070_plot.png",
+            "HAD_cyclist_train0554_frame_0080_plot.png",
+            "HAD_cyclist_train0554_frame_0090_plot.png",
+            "HAD_cyclist_train0554_frame_0100_plot.png",
+            "HAD_cyclist_train0554_frame_0110_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_27"
+    },
+    {
+        "sequence": "HAD_train0575",
+        "image_path": [
+            "HAD_cyclist_train0575_frame_0050.png",
+            "HAD_cyclist_train0575_frame_0060.png",
+            "HAD_cyclist_train0575_frame_0070.png",
+            "HAD_cyclist_train0575_frame_0080.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0575_frame_0050_plot.png",
+            "HAD_cyclist_train0575_frame_0060_plot.png",
+            "HAD_cyclist_train0575_frame_0070_plot.png",
+            "HAD_cyclist_train0575_frame_0080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_28"
+    },
+    {
+        "sequence": "HAD_train0594",
+        "image_path": [
+            "HAD_cyclist_train0594_frame_0030.png",
+            "HAD_cyclist_train0594_frame_0040.png",
+            "HAD_cyclist_train0594_frame_0050.png",
+            "HAD_cyclist_train0594_frame_0060.png",
+            "HAD_cyclist_train0594_frame_0070.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0594_frame_0030_plot.png",
+            "HAD_cyclist_train0594_frame_0040_plot.png",
+            "HAD_cyclist_train0594_frame_0050_plot.png",
+            "HAD_cyclist_train0594_frame_0060_plot.png",
+            "HAD_cyclist_train0594_frame_0070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_29"
+    },
+    {
+        "sequence": "HAD_train0890",
+        "image_path": [
+            "HAD_cyclist_train0890_frame_0450.png",
+            "HAD_cyclist_train0890_frame_0460.png",
+            "HAD_cyclist_train0890_frame_0470.png",
+            "HAD_cyclist_train0890_frame_0480.png",
+            "HAD_cyclist_train0890_frame_0490.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0890_frame_0450_plot.png",
+            "HAD_cyclist_train0890_frame_0460_plot.png",
+            "HAD_cyclist_train0890_frame_0470_plot.png",
+            "HAD_cyclist_train0890_frame_0480_plot.png",
+            "HAD_cyclist_train0890_frame_0490_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_30"
+    },
+    {
+        "sequence": "HAD_train0904",
+        "image_path": [
+            "HAD_cyclist_train0904_frame_0480.png",
+            "HAD_cyclist_train0904_frame_0490.png",
+            "HAD_cyclist_train0904_frame_0500.png",
+            "HAD_cyclist_train0904_frame_0510.png",
+            "HAD_cyclist_train0904_frame_0520.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0904_frame_0480_plot.png",
+            "HAD_cyclist_train0904_frame_0490_plot.png",
+            "HAD_cyclist_train0904_frame_0500_plot.png",
+            "HAD_cyclist_train0904_frame_0510_plot.png",
+            "HAD_cyclist_train0904_frame_0520_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_31"
+    },
+    {
+        "sequence": "HAD_train0908",
+        "image_path": [
+            "HAD_cyclist_train0908_frame_0440.png",
+            "HAD_cyclist_train0908_frame_0450.png",
+            "HAD_cyclist_train0908_frame_0460.png",
+            "HAD_cyclist_train0908_frame_0470.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0908_frame_0440_plot.png",
+            "HAD_cyclist_train0908_frame_0450_plot.png",
+            "HAD_cyclist_train0908_frame_0460_plot.png",
+            "HAD_cyclist_train0908_frame_0470_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_32"
+    },
+    {
+        "sequence": "HAD_train1059",
+        "image_path": [
+            "HAD_cyclist_train1059_frame_0280.png",
+            "HAD_cyclist_train1059_frame_0290.png",
+            "HAD_cyclist_train1059_frame_0300.png",
+            "HAD_cyclist_train1059_frame_0310.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1059_frame_0280_plot.png",
+            "HAD_cyclist_train1059_frame_0290_plot.png",
+            "HAD_cyclist_train1059_frame_0300_plot.png",
+            "HAD_cyclist_train1059_frame_0310_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_33"
+    },
+    {
+        "sequence": "HAD_train1154",
+        "image_path": [
+            "HAD_cyclist_train1154_frame_0520.png",
+            "HAD_cyclist_train1154_frame_0530.png",
+            "HAD_cyclist_train1154_frame_0540.png",
+            "HAD_cyclist_train1154_frame_0550.png",
+            "HAD_cyclist_train1154_frame_0560.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1154_frame_0520_plot.png",
+            "HAD_cyclist_train1154_frame_0530_plot.png",
+            "HAD_cyclist_train1154_frame_0540_plot.png",
+            "HAD_cyclist_train1154_frame_0550_plot.png",
+            "HAD_cyclist_train1154_frame_0560_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_34"
+    },
+    {
+        "sequence": "HAD_train1161",
+        "image_path": [
+            "HAD_cyclist_train1161_frame_0080.png",
+            "HAD_cyclist_train1161_frame_0090.png",
+            "HAD_cyclist_train1161_frame_0100.png",
+            "HAD_cyclist_train1161_frame_0110.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1161_frame_0080_plot.png",
+            "HAD_cyclist_train1161_frame_0090_plot.png",
+            "HAD_cyclist_train1161_frame_0100_plot.png",
+            "HAD_cyclist_train1161_frame_0110_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_35"
+    },
+    {
+        "sequence": "HAD_train1255",
+        "image_path": [
+            "HAD_cyclist_train1255_frame_0420.png",
+            "HAD_cyclist_train1255_frame_0430.png",
+            "HAD_cyclist_train1255_frame_0440.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1255_frame_0420_plot.png",
+            "HAD_cyclist_train1255_frame_0430_plot.png",
+            "HAD_cyclist_train1255_frame_0440_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Borrow Lane', 'Cannot Speculate', 'Normal Driving', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_36"
+    },
+    {
+        "sequence": "HAD_train1321",
+        "image_path": [
+            "HAD_cyclist_train1321_frame_0170.png",
+            "HAD_cyclist_train1321_frame_0180.png",
+            "HAD_cyclist_train1321_frame_0190.png",
+            "HAD_cyclist_train1321_frame_0200.png",
+            "HAD_cyclist_train1321_frame_0210.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1321_frame_0170_plot.png",
+            "HAD_cyclist_train1321_frame_0180_plot.png",
+            "HAD_cyclist_train1321_frame_0190_plot.png",
+            "HAD_cyclist_train1321_frame_0200_plot.png",
+            "HAD_cyclist_train1321_frame_0210_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Normal Driving', 'Traffic Efficiency', 'Yield to Left Vehicle', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_37"
+    },
+    {
+        "sequence": "HAD_train1327",
+        "image_path": [
+            "HAD_cyclist_train1327_frame_0130.png",
+            "HAD_cyclist_train1327_frame_0140.png",
+            "HAD_cyclist_train1327_frame_0150.png",
+            "HAD_cyclist_train1327_frame_0160.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1327_frame_0130_plot.png",
+            "HAD_cyclist_train1327_frame_0140_plot.png",
+            "HAD_cyclist_train1327_frame_0150_plot.png",
+            "HAD_cyclist_train1327_frame_0160_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Borrow Lane', 'Yield to Left Vehicle', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Jaywalking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_38"
+    },
+    {
+        "sequence": "HAD_train1385",
+        "image_path": [
+            "HAD_cyclist_train1385_frame_0240.png",
+            "HAD_cyclist_train1385_frame_0250.png",
+            "HAD_cyclist_train1385_frame_0260.png",
+            "HAD_cyclist_train1385_frame_0270.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1385_frame_0240_plot.png",
+            "HAD_cyclist_train1385_frame_0250_plot.png",
+            "HAD_cyclist_train1385_frame_0260_plot.png",
+            "HAD_cyclist_train1385_frame_0270_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Borrow Lane', 'Yield to Left Vehicle', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Jaywalking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_39"
+    },
+    {
+        "sequence": "HAD_train1415",
+        "image_path": [
+            "HAD_cyclist_train1415_frame_0000.png",
+            "HAD_cyclist_train1415_frame_0010.png",
+            "HAD_cyclist_train1415_frame_0020.png",
+            "HAD_cyclist_train1415_frame_0030.png",
+            "HAD_cyclist_train1415_frame_0040.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1415_frame_0000_plot.png",
+            "HAD_cyclist_train1415_frame_0010_plot.png",
+            "HAD_cyclist_train1415_frame_0020_plot.png",
+            "HAD_cyclist_train1415_frame_0030_plot.png",
+            "HAD_cyclist_train1415_frame_0040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Borrow Lane', 'Yield to Left Vehicle', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Jaywalking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_40"
+    },
+    {
+        "sequence": "HAD_train1593",
+        "image_path": [
+            "HAD_cyclist_train1593_frame_0200.png",
+            "HAD_cyclist_train1593_frame_0210.png",
+            "HAD_cyclist_train1593_frame_0220.png",
+            "HAD_cyclist_train1593_frame_0230.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1593_frame_0200_plot.png",
+            "HAD_cyclist_train1593_frame_0210_plot.png",
+            "HAD_cyclist_train1593_frame_0220_plot.png",
+            "HAD_cyclist_train1593_frame_0230_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Left', 'Normal Driving', 'Yield to Left Vehicle', 'Borrow Lane to Turn Right']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane to Turn Left"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_41"
+    },
+    {
+        "sequence": "HAD_train1644",
+        "image_path": [
+            "HAD_cyclist_train1644_frame_0000.png",
+            "HAD_cyclist_train1644_frame_0010.png",
+            "HAD_cyclist_train1644_frame_0020.png",
+            "HAD_cyclist_train1644_frame_0030.png",
+            "HAD_cyclist_train1644_frame_0040.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1644_frame_0000_plot.png",
+            "HAD_cyclist_train1644_frame_0010_plot.png",
+            "HAD_cyclist_train1644_frame_0020_plot.png",
+            "HAD_cyclist_train1644_frame_0030_plot.png",
+            "HAD_cyclist_train1644_frame_0040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Left', 'Normal Driving', 'Yield to Left Vehicle', 'Borrow Lane to Turn Right']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane to Turn Left"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_42"
+    },
+    {
+        "sequence": "HAD_train1943",
+        "image_path": [
+            "HAD_cyclist_train1943_frame_0400.png",
+            "HAD_cyclist_train1943_frame_0410.png",
+            "HAD_cyclist_train1943_frame_0420.png",
+            "HAD_cyclist_train1943_frame_0430.png",
+            "HAD_cyclist_train1943_frame_0440.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1943_frame_0400_plot.png",
+            "HAD_cyclist_train1943_frame_0410_plot.png",
+            "HAD_cyclist_train1943_frame_0420_plot.png",
+            "HAD_cyclist_train1943_frame_0430_plot.png",
+            "HAD_cyclist_train1943_frame_0440_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Walking on Motor Vehicle Lane', 'Yield to Left Vehicle', 'Cannot Speculate', 'Traffic Efficiency', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_43"
+    },
+    {
+        "sequence": "HAD_train1957",
+        "image_path": [
+            "HAD_cyclist_train1957_frame_0520.png",
+            "HAD_cyclist_train1957_frame_0530.png",
+            "HAD_cyclist_train1957_frame_0540.png",
+            "HAD_cyclist_train1957_frame_0550.png",
+            "HAD_cyclist_train1957_frame_0560.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1957_frame_0520_plot.png",
+            "HAD_cyclist_train1957_frame_0530_plot.png",
+            "HAD_cyclist_train1957_frame_0540_plot.png",
+            "HAD_cyclist_train1957_frame_0550_plot.png",
+            "HAD_cyclist_train1957_frame_0560_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Walking on Motor Vehicle Lane', 'Yield to Left Vehicle', 'Cannot Speculate', 'Traffic Efficiency', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Cannot Speculate"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_44"
+    },
+    {
+        "sequence": "HAD_train1987",
+        "image_path": [
+            "HAD_cyclist_train1987_frame_0430.png",
+            "HAD_cyclist_train1987_frame_0440.png",
+            "HAD_cyclist_train1987_frame_0450.png",
+            "HAD_cyclist_train1987_frame_0460.png",
+            "HAD_cyclist_train1987_frame_0470.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train1987_frame_0430_plot.png",
+            "HAD_cyclist_train1987_frame_0440_plot.png",
+            "HAD_cyclist_train1987_frame_0450_plot.png",
+            "HAD_cyclist_train1987_frame_0460_plot.png",
+            "HAD_cyclist_train1987_frame_0470_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Walking on Motor Vehicle Lane', 'Yield to Left Vehicle', 'Cannot Speculate', 'Traffic Efficiency', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Cannot Speculate"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_45"
+    },
+    {
+        "sequence": "HAD_train2016",
+        "image_path": [
+            "HAD_cyclist_train2016_frame_0520.png",
+            "HAD_cyclist_train2016_frame_0530.png",
+            "HAD_cyclist_train2016_frame_0540.png",
+            "HAD_cyclist_train2016_frame_0550.png",
+            "HAD_cyclist_train2016_frame_0560.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2016_frame_0520_plot.png",
+            "HAD_cyclist_train2016_frame_0530_plot.png",
+            "HAD_cyclist_train2016_frame_0540_plot.png",
+            "HAD_cyclist_train2016_frame_0550_plot.png",
+            "HAD_cyclist_train2016_frame_0560_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Normal Driving', 'Yield to Left Vehicle', 'Jaywalking', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane to Turn Left"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_46"
+    },
+    {
+        "sequence": "HAD_train2046",
+        "image_path": [
+            "HAD_cyclist_train2046_frame_0100.png",
+            "HAD_cyclist_train2046_frame_0110.png",
+            "HAD_cyclist_train2046_frame_0120.png",
+            "HAD_cyclist_train2046_frame_0130.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2046_frame_0100_plot.png",
+            "HAD_cyclist_train2046_frame_0110_plot.png",
+            "HAD_cyclist_train2046_frame_0120_plot.png",
+            "HAD_cyclist_train2046_frame_0130_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Normal Driving', 'Stop on Motor Vehicle Lane', 'Jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane to Turn Right"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_47"
+    },
+    {
+        "sequence": "HAD_train2082",
+        "image_path": [
+            "HAD_cyclist_train2082_frame_0000.png",
+            "HAD_cyclist_train2082_frame_0010.png",
+            "HAD_cyclist_train2082_frame_0020.png",
+            "HAD_cyclist_train2082_frame_0030.png",
+            "HAD_cyclist_train2082_frame_0040.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2082_frame_0000_plot.png",
+            "HAD_cyclist_train2082_frame_0010_plot.png",
+            "HAD_cyclist_train2082_frame_0020_plot.png",
+            "HAD_cyclist_train2082_frame_0030_plot.png",
+            "HAD_cyclist_train2082_frame_0040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Normal Driving', 'Stop on Motor Vehicle Lane', 'Jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane to Turn Right"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_48"
+    },
+    {
+        "sequence": "HAD_train2115",
+        "image_path": [
+            "HAD_cyclist_train2115_frame_0210.png",
+            "HAD_cyclist_train2115_frame_0220.png",
+            "HAD_cyclist_train2115_frame_0230.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2115_frame_0210_plot.png",
+            "HAD_cyclist_train2115_frame_0220_plot.png",
+            "HAD_cyclist_train2115_frame_0230_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Normal Driving', 'Stop on Motor Vehicle Lane', 'Jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane to Turn Right"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_49"
+    },
+    {
+        "sequence": "HAD_train2144",
+        "image_path": [
+            "HAD_cyclist_train2144_frame_0030.png",
+            "HAD_cyclist_train2144_frame_0040.png",
+            "HAD_cyclist_train2144_frame_0050.png",
+            "HAD_cyclist_train2144_frame_0060.png",
+            "HAD_cyclist_train2144_frame_0070.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2144_frame_0030_plot.png",
+            "HAD_cyclist_train2144_frame_0040_plot.png",
+            "HAD_cyclist_train2144_frame_0050_plot.png",
+            "HAD_cyclist_train2144_frame_0060_plot.png",
+            "HAD_cyclist_train2144_frame_0070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Normal Driving', 'Stop on Motor Vehicle Lane', 'Jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane to Turn Right"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_50"
+    },
+    {
+        "sequence": "HAD_train2166",
+        "image_path": [
+            "HAD_cyclist_train2166_frame_0170.png",
+            "HAD_cyclist_train2166_frame_0180.png",
+            "HAD_cyclist_train2166_frame_0190.png",
+            "HAD_cyclist_train2166_frame_0200.png",
+            "HAD_cyclist_train2166_frame_0210.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2166_frame_0170_plot.png",
+            "HAD_cyclist_train2166_frame_0180_plot.png",
+            "HAD_cyclist_train2166_frame_0190_plot.png",
+            "HAD_cyclist_train2166_frame_0200_plot.png",
+            "HAD_cyclist_train2166_frame_0210_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Right', 'Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Normal Driving', 'Stop on Motor Vehicle Lane', 'Jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane to Turn Right"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_51"
+    },
+    {
+        "sequence": "HAD_train2647",
+        "image_path": [
+            "HAD_cyclist_train2647_frame_0370.png",
+            "HAD_cyclist_train2647_frame_0380.png",
+            "HAD_cyclist_train2647_frame_0390.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2647_frame_0370_plot.png",
+            "HAD_cyclist_train2647_frame_0380_plot.png",
+            "HAD_cyclist_train2647_frame_0390_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Normal Driving', 'Cannot Speculate', 'Yield to Left Vehicle', 'Pedestrian Crossing at Crosswalk', 'Borrow Lane', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_52"
+    },
+    {
+        "sequence": "HAD_train2973",
+        "image_path": [
+            "HAD_cyclist_train2973_frame_0390.png",
+            "HAD_cyclist_train2973_frame_0400.png",
+            "HAD_cyclist_train2973_frame_0410.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2973_frame_0390_plot.png",
+            "HAD_cyclist_train2973_frame_0400_plot.png",
+            "HAD_cyclist_train2973_frame_0410_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Left', 'Borrow Lane to Turn Right', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Bicycle Left Turn into Bicycle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_53"
+    },
+    {
+        "sequence": "HAD_train2975",
+        "image_path": [
+            "HAD_cyclist_train2975_frame_0400.png",
+            "HAD_cyclist_train2975_frame_0410.png",
+            "HAD_cyclist_train2975_frame_0420.png",
+            "HAD_cyclist_train2975_frame_0430.png",
+            "HAD_cyclist_train2975_frame_0440.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train2975_frame_0400_plot.png",
+            "HAD_cyclist_train2975_frame_0410_plot.png",
+            "HAD_cyclist_train2975_frame_0420_plot.png",
+            "HAD_cyclist_train2975_frame_0430_plot.png",
+            "HAD_cyclist_train2975_frame_0440_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Left', 'Borrow Lane to Turn Right', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Bicycle Left Turn into Bicycle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_54"
+    },
+    {
+        "sequence": "HAD_train3437",
+        "image_path": [
+            "HAD_cyclist_train3437_frame_0540.png",
+            "HAD_cyclist_train3437_frame_0550.png",
+            "HAD_cyclist_train3437_frame_0560.png",
+            "HAD_cyclist_train3437_frame_0570.png",
+            "HAD_cyclist_train3437_frame_0580.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3437_frame_0540_plot.png",
+            "HAD_cyclist_train3437_frame_0550_plot.png",
+            "HAD_cyclist_train3437_frame_0560_plot.png",
+            "HAD_cyclist_train3437_frame_0570_plot.png",
+            "HAD_cyclist_train3437_frame_0580_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Jaywalking', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Left', 'Borrow Lane to Turn Right', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Bicycle Left Turn into Bicycle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_55"
+    },
+    {
+        "sequence": "HAD_train3471",
+        "image_path": [
+            "HAD_cyclist_train3471_frame_0030.png",
+            "HAD_cyclist_train3471_frame_0050.png",
+            "HAD_cyclist_train3471_frame_0070.png",
+            "HAD_cyclist_train3471_frame_0090.png",
+            "HAD_cyclist_train3471_frame_0100.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3471_frame_0030_plot.png",
+            "HAD_cyclist_train3471_frame_0050_plot.png",
+            "HAD_cyclist_train3471_frame_0070_plot.png",
+            "HAD_cyclist_train3471_frame_0090_plot.png",
+            "HAD_cyclist_train3471_frame_0100_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Normal Driving', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Cannot Speculate', 'Yield to Left Vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_56"
+    },
+    {
+        "sequence": "HAD_train3478",
+        "image_path": [
+            "HAD_cyclist_train3478_frame_0250.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3478_frame_0250_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_57"
+    },
+    {
+        "sequence": "HAD_train3545",
+        "image_path": [
+            "HAD_cyclist_train3545_frame_0350.png",
+            "HAD_cyclist_train3545_frame_0360.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3545_frame_0350_plot.png",
+            "HAD_cyclist_train3545_frame_0360_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_58"
+    },
+    {
+        "sequence": "HAD_train3545_2",
+        "image_path": [
+            "HAD_cyclist_train3545_frame_0370.png",
+            "HAD_cyclist_train3545_frame_0380.png",
+            "HAD_cyclist_train3545_frame_0390.png",
+            "HAD_cyclist_train3545_frame_0400.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3545_frame_0370_plot.png",
+            "HAD_cyclist_train3545_frame_0380_plot.png",
+            "HAD_cyclist_train3545_frame_0390_plot.png",
+            "HAD_cyclist_train3545_frame_0400_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_59"
+    },
+    {
+        "sequence": "HAD_train3554",
+        "image_path": [
+            "HAD_cyclist_train3554_frame_0480.png",
+            "HAD_cyclist_train3554_frame_0490.png",
+            "HAD_cyclist_train3554_frame_0500.png",
+            "HAD_cyclist_train3554_frame_0510.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3554_frame_0480_plot.png",
+            "HAD_cyclist_train3554_frame_0490_plot.png",
+            "HAD_cyclist_train3554_frame_0500_plot.png",
+            "HAD_cyclist_train3554_frame_0510_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Normal Driving', 'Traffic Efficiency', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_60"
+    },
+    {
+        "sequence": "HAD_train3567",
+        "image_path": [
+            "HAD_cyclist_train3567_frame_0210.png",
+            "HAD_cyclist_train3567_frame_0220.png",
+            "HAD_cyclist_train3567_frame_0230.png",
+            "HAD_cyclist_train3567_frame_0240.png",
+            "HAD_cyclist_train3567_frame_0250.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3567_frame_0210_plot.png",
+            "HAD_cyclist_train3567_frame_0220_plot.png",
+            "HAD_cyclist_train3567_frame_0230_plot.png",
+            "HAD_cyclist_train3567_frame_0240_plot.png",
+            "HAD_cyclist_train3567_frame_0250_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_61"
+    },
+    {
+        "sequence": "HAD_train3578",
+        "image_path": [
+            "HAD_cyclist_train3578_frame_0310.png",
+            "HAD_cyclist_train3578_frame_0320.png",
+            "HAD_cyclist_train3578_frame_0330.png",
+            "HAD_cyclist_train3578_frame_0340.png",
+            "HAD_cyclist_train3578_frame_0350.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3578_frame_0310_plot.png",
+            "HAD_cyclist_train3578_frame_0320_plot.png",
+            "HAD_cyclist_train3578_frame_0330_plot.png",
+            "HAD_cyclist_train3578_frame_0340_plot.png",
+            "HAD_cyclist_train3578_frame_0350_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_62"
+    },
+    {
+        "sequence": "HAD_train3580",
+        "image_path": [
+            "HAD_cyclist_train3580_frame_0190.png",
+            "HAD_cyclist_train3580_frame_0200.png",
+            "HAD_cyclist_train3580_frame_0210.png",
+            "HAD_cyclist_train3580_frame_0220.png",
+            "HAD_cyclist_train3580_frame_0230.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3580_frame_0190_plot.png",
+            "HAD_cyclist_train3580_frame_0200_plot.png",
+            "HAD_cyclist_train3580_frame_0210_plot.png",
+            "HAD_cyclist_train3580_frame_0220_plot.png",
+            "HAD_cyclist_train3580_frame_0230_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_63"
+    },
+    {
+        "sequence": "HAD_train3580_2",
+        "image_path": [
+            "HAD_cyclist_train3580_frame_0370.png",
+            "HAD_cyclist_train3580_frame_0380.png",
+            "HAD_cyclist_train3580_frame_0390.png",
+            "HAD_cyclist_train3580_frame_0400.png",
+            "HAD_cyclist_train3580_frame_0410.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3580_frame_0370_plot.png",
+            "HAD_cyclist_train3580_frame_0380_plot.png",
+            "HAD_cyclist_train3580_frame_0390_plot.png",
+            "HAD_cyclist_train3580_frame_0400_plot.png",
+            "HAD_cyclist_train3580_frame_0410_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_64"
+    },
+    {
+        "sequence": "HAD_train3582",
+        "image_path": [
+            "HAD_cyclist_train3582_frame_0010.png",
+            "HAD_cyclist_train3582_frame_0020.png",
+            "HAD_cyclist_train3582_frame_0030.png",
+            "HAD_cyclist_train3582_frame_0040.png",
+            "HAD_cyclist_train3582_frame_0050.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3582_frame_0010_plot.png",
+            "HAD_cyclist_train3582_frame_0020_plot.png",
+            "HAD_cyclist_train3582_frame_0030_plot.png",
+            "HAD_cyclist_train3582_frame_0040_plot.png",
+            "HAD_cyclist_train3582_frame_0050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_65"
+    },
+    {
+        "sequence": "HAD_train3582_2",
+        "image_path": [
+            "HAD_cyclist_train3582_frame_0190.png",
+            "HAD_cyclist_train3582_frame_0200.png",
+            "HAD_cyclist_train3582_frame_0210.png",
+            "HAD_cyclist_train3582_frame_0220.png",
+            "HAD_cyclist_train3582_frame_0230.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3582_frame_0190_plot.png",
+            "HAD_cyclist_train3582_frame_0200_plot.png",
+            "HAD_cyclist_train3582_frame_0210_plot.png",
+            "HAD_cyclist_train3582_frame_0220_plot.png",
+            "HAD_cyclist_train3582_frame_0230_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_66"
+    },
+    {
+        "sequence": "HAD_train3645",
+        "image_path": [
+            "HAD_cyclist_train3645_frame_0260.png",
+            "HAD_cyclist_train3645_frame_0270.png",
+            "HAD_cyclist_train3645_frame_0280.png",
+            "HAD_cyclist_train3645_frame_0290.png",
+            "HAD_cyclist_train3645_frame_0300.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3645_frame_0260_plot.png",
+            "HAD_cyclist_train3645_frame_0270_plot.png",
+            "HAD_cyclist_train3645_frame_0280_plot.png",
+            "HAD_cyclist_train3645_frame_0290_plot.png",
+            "HAD_cyclist_train3645_frame_0300_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_67"
+    },
+    {
+        "sequence": "HAD_train3678",
+        "image_path": [
+            "HAD_cyclist_train3678_frame_0380.png",
+            "HAD_cyclist_train3678_frame_0390.png",
+            "HAD_cyclist_train3678_frame_0400.png",
+            "HAD_cyclist_train3678_frame_0410.png",
+            "HAD_cyclist_train3678_frame_0420.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3678_frame_0380_plot.png",
+            "HAD_cyclist_train3678_frame_0390_plot.png",
+            "HAD_cyclist_train3678_frame_0400_plot.png",
+            "HAD_cyclist_train3678_frame_0410_plot.png",
+            "HAD_cyclist_train3678_frame_0420_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane to Turn Left', 'Bicycle Left Turn into Bicycle Lane', 'Borrow Lane to Turn Right', 'Bicycle Right Turn into Motor Vehicle Lane', 'Stop on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Stop on Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_68"
+    },
+    {
+        "sequence": "HAD_train3685",
+        "image_path": [
+            "HAD_cyclist_train3685_frame_0430.png",
+            "HAD_cyclist_train3685_frame_0440.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3685_frame_0430_plot.png",
+            "HAD_cyclist_train3685_frame_0440_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Pedestrian Walking on Motor Vehicle Lane', 'Cannot Speculate', 'Traffic Efficiency', 'Borrow Lane', 'Yield to Left Vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Cannot Speculate"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_69"
+    },
+    {
+        "sequence": "HAD_train3812",
+        "image_path": [
+            "HAD_cyclist_train3812_frame_0100.png",
+            "HAD_cyclist_train3812_frame_0110.png",
+            "HAD_cyclist_train3812_frame_0120.png",
+            "HAD_cyclist_train3812_frame_0130.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3812_frame_0100_plot.png",
+            "HAD_cyclist_train3812_frame_0110_plot.png",
+            "HAD_cyclist_train3812_frame_0120_plot.png",
+            "HAD_cyclist_train3812_frame_0130_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Stop on Motor Vehicle Lane', 'Turn Left', 'Parking by the Road', 'Bicycle Left Turn into Motor Vehicle Lane', 'Bicycle Right Turn into Motor Vehicle Lane', 'Bicycle Left Turn into Bicycle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Bicycle Right Turn into Motor Vehicle Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_70"
+    },
+    {
+        "sequence": "HAD_train3828",
+        "image_path": [
+            "HAD_cyclist_train3828_frame_0120.png",
+            "HAD_cyclist_train3828_frame_0130.png",
+            "HAD_cyclist_train3828_frame_0140.png",
+            "HAD_cyclist_train3828_frame_0150.png",
+            "HAD_cyclist_train3828_frame_0160.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3828_frame_0120_plot.png",
+            "HAD_cyclist_train3828_frame_0130_plot.png",
+            "HAD_cyclist_train3828_frame_0140_plot.png",
+            "HAD_cyclist_train3828_frame_0150_plot.png",
+            "HAD_cyclist_train3828_frame_0160_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Cannot Speculate', 'Yield to Left Vehicle', 'Borrow Lane', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_71"
+    },
+    {
+        "sequence": "HAD_train3928",
+        "image_path": [
+            "HAD_cyclist_train3928_frame_0280.png",
+            "HAD_cyclist_train3928_frame_0290.png",
+            "HAD_cyclist_train3928_frame_0300.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train3928_frame_0280_plot.png",
+            "HAD_cyclist_train3928_frame_0290_plot.png",
+            "HAD_cyclist_train3928_frame_0300_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Bicycle Right Turn into Motor Vehicle Lane', 'Turn Left', 'Stop on Motor Vehicle Lane', 'Bicycle Left Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Parking by the Road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Turn Left"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_72"
+    },
+    {
+        "sequence": "HAD_train4128",
+        "image_path": [
+            "HAD_cyclist_train4128_frame_0540.png",
+            "HAD_cyclist_train4128_frame_0550.png",
+            "HAD_cyclist_train4128_frame_0560.png",
+            "HAD_cyclist_train4128_frame_0570.png",
+            "HAD_cyclist_train4128_frame_0580.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train4128_frame_0540_plot.png",
+            "HAD_cyclist_train4128_frame_0550_plot.png",
+            "HAD_cyclist_train4128_frame_0560_plot.png",
+            "HAD_cyclist_train4128_frame_0570_plot.png",
+            "HAD_cyclist_train4128_frame_0580_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Yield to Left Vehicle', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_73"
+    },
+    {
+        "sequence": "HAD_train4194",
+        "image_path": [
+            "HAD_cyclist_train4194_frame_0490.png",
+            "HAD_cyclist_train4194_frame_0500.png",
+            "HAD_cyclist_train4194_frame_0510.png",
+            "HAD_cyclist_train4194_frame_0520.png",
+            "HAD_cyclist_train4194_frame_0530.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train4194_frame_0490_plot.png",
+            "HAD_cyclist_train4194_frame_0500_plot.png",
+            "HAD_cyclist_train4194_frame_0510_plot.png",
+            "HAD_cyclist_train4194_frame_0520_plot.png",
+            "HAD_cyclist_train4194_frame_0530_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Yield to Left Vehicle', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_0_74"
+    },
+    {
+        "sequence": "JAAD_video__0066",
+        "image_path": [
+            "JAAD_video__0066_00070.png",
+            "JAAD_video__0066_00080.png",
+            "JAAD_video__0066_00090.png",
+            "JAAD_video__0066_00100.png",
+            "JAAD_video__0066_00110.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0066_00070_plot.png",
+            "JAAD_video__0066_00080_plot.png",
+            "JAAD_video__0066_00090_plot.png",
+            "JAAD_video__0066_00100_plot.png",
+            "JAAD_video__0066_00110_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Bicycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Bicycle Right Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Turn Left', 'Bicycle Left Turn into Motor Vehicle Lane', 'Parking by the Road', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Bicycle Left Turn into Motor Vehicle Lane"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_0_75"
+    },
+    {
+        "sequence": "JAAD_video__0180",
+        "image_path": [
+            "JAAD_video__0180_00010.png",
+            "JAAD_video__0180_00030.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0180_00010_plot.png",
+            "JAAD_video__0180_00030_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Turn Left', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Bicycle Left Turn into Motor Vehicle Lane', 'Bicycle Right Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Pedestrian Walking on Motor Vehicle Lane"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_0_76"
+    },
+    {
+        "sequence": "JAAD_video__0210",
+        "image_path": [
+            "JAAD_video__0210_00010.png",
+            "JAAD_video__0210_00030.png",
+            "JAAD_video__0210_00050.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0210_00010_plot.png",
+            "JAAD_video__0210_00030_plot.png",
+            "JAAD_video__0210_00050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Bicycle Left Turn into Motor Vehicle Lane', 'Turn Left', 'Traffic Efficiency', 'Pedestrian Crossing at Crosswalk', 'Pedestrian Walking on Motor Vehicle Lane', 'Bicycle Right Turn into Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Pedestrian Walking on Motor Vehicle Lane"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_0_77"
+    },
+    {
+        "sequence": "JAAD_video__0233",
+        "image_path": [
+            "JAAD_video__0233_00000.png",
+            "JAAD_video__0233_00010.png",
+            "JAAD_video__0233_00020.png",
+            "JAAD_video__0233_00030.png",
+            "JAAD_video__0233_00040.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0233_00000_plot.png",
+            "JAAD_video__0233_00010_plot.png",
+            "JAAD_video__0233_00020_plot.png",
+            "JAAD_video__0233_00030_plot.png",
+            "JAAD_video__0233_00040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Bicycle Left Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Turn Left', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Pedestrian Crossing at Crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_0_78"
+    },
+    {
+        "sequence": "LingoQA_05143c82ebe11e1b8cb6390785940afd",
+        "image_path": [
+            "LingoQA_05143c82ebe11e1b8cb6390785940afd_4.png"
+        ],
+        "image_path_plot": [
+            "LingoQA_05143c82ebe11e1b8cb6390785940afd_4_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Walking on Motor Vehicle Lane', 'Traffic Efficiency', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Bicycle Left Turn into Motor Vehicle Lane', 'Cannot Speculate']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "LingoQA",
+        "country": "LingoQA",
+        "id": "3_1_0_79"
+    },
+    {
+        "sequence": "LingoQA_1c2a0e27058174c00c7617ae534162b0",
+        "image_path": [
+            "LingoQA_1c2a0e27058174c00c7617ae534162b0_2.png",
+            "LingoQA_1c2a0e27058174c00c7617ae534162b0_3.png",
+            "LingoQA_1c2a0e27058174c00c7617ae534162b0_4.png"
+        ],
+        "image_path_plot": [
+            "LingoQA_1c2a0e27058174c00c7617ae534162b0_2_plot.png",
+            "LingoQA_1c2a0e27058174c00c7617ae534162b0_3_plot.png",
+            "LingoQA_1c2a0e27058174c00c7617ae534162b0_4_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Pedestrian Walking on Motor Vehicle Lane', 'Traffic Efficiency', 'Bicycle Left Turn into Motor Vehicle Lane', 'Cannot Speculate', 'Borrow Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "LingoQA",
+        "country": "LingoQA",
+        "id": "3_1_0_80"
+    },
+    {
+        "sequence": "LingoQA_3c2f8be005b4fd8371891320b137211c",
+        "image_path": [
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_0.png",
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_1.png",
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_2.png",
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_3.png"
+        ],
+        "image_path_plot": [
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_0_plot.png",
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_1_plot.png",
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_2_plot.png",
+            "LingoQA_3c2f8be005b4fd8371891320b137211c_3_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Pedestrian Crossing at Crosswalk', 'Pedestrian Walking on Motor Vehicle Lane', 'Traffic Efficiency', 'Bicycle Left Turn into Motor Vehicle Lane', 'Cannot Speculate', 'Borrow Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Traffic Efficiency"
+        ],
+        "venue": "LingoQA",
+        "country": "LingoQA",
+        "id": "3_1_0_81"
+    },
+    {
+        "sequence": "LingoQA_618c2c4aea82be2ff23833f29cd88396",
+        "image_path": [
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_0.png",
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_1.png",
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_2.png",
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_3.png"
+        ],
+        "image_path_plot": [
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_0_plot.png",
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_1_plot.png",
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_2_plot.png",
+            "LingoQA_618c2c4aea82be2ff23833f29cd88396_3_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Motorcycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Motorcycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Borrow Lane', 'Pedestrian Walking on Motor Vehicle Lane', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Bicycle Left Turn into Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Traffic Efficiency"
+        ],
+        "venue": "LingoQA",
+        "country": "LingoQA",
+        "id": "3_1_0_82"
+    },
+    {
+        "sequence": "ONCE_000077",
+        "image_path": [
+            "1616344749400.png",
+            "1616344749900.png",
+            "1616344750400.png",
+            "1616344750900.png"
+        ],
+        "image_path_plot": [
+            "1616344749400_plot.png",
+            "1616344749900_plot.png",
+            "1616344750400_plot.png",
+            "1616344750900_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Normal Driving', 'Yield to Left Vehicle', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_0_83"
+    },
+    {
+        "sequence": "ONCE_000168",
+        "image_path": [
+            "1618717262300.png",
+            "1618717262799.png",
+            "1618717263299.png",
+            "1618717263799.png"
+        ],
+        "image_path_plot": [
+            "1618717262300_plot.png",
+            "1618717262799_plot.png",
+            "1618717263299_plot.png",
+            "1618717263799_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Traffic Efficiency', 'Normal Driving', 'Yield to Left Vehicle', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_0_84"
+    },
+    {
+        "sequence": "ONCE_000200",
+        "image_path": [
+            "1618798340300.png",
+            "1618798340801.png"
+        ],
+        "image_path_plot": [
+            "1618798340300_plot.png",
+            "1618798340801_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Tricycle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Tricycle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Tricycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Normal Driving', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_0_85"
+    },
+    {
+        "sequence": "ONCE_000303",
+        "image_path": [
+            "1619290365800.png",
+            "1619290366300.png",
+            "1619290366800.png",
+            "1619290367300.png"
+        ],
+        "image_path_plot": [
+            "1619290365800_plot.png",
+            "1619290366300_plot.png",
+            "1619290366800_plot.png",
+            "1619290367300_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Tricycle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Normal Driving', 'Cannot Speculate', 'Borrow Lane', 'Pedestrian Crossing at Crosswalk', 'Yield to Left Vehicle', 'Traffic Efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "Borrow Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_0_86"
+    },
+    {
+        "sequence": "VRU_CUTIN_ONCE_000076",
+        "image_path": [
+            "1616344591699.png",
+            "1616344592199.png"
+        ],
+        "image_path_plot": [
+            "1616344591699_plot.png",
+            "1616344592199_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Normal Driving', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Traffic Efficiency', 'Borrow Lane', 'Yield to Left Vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_0_87"
+    },
+    {
+        "sequence": "VRU_CUTIN_ONCE_000076_2",
+        "image_path": [
+            "1616344592700.png",
+            "1616344593200.png",
+            "1616344593700.png"
+        ],
+        "image_path_plot": [
+            "1616344592700_plot.png",
+            "1616344593200_plot.png",
+            "1616344593700_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Borrow Lane', 'Traffic Efficiency', 'Yield to Left Vehicle', 'Normal Driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "Borrow Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_0_88"
+    }
+]

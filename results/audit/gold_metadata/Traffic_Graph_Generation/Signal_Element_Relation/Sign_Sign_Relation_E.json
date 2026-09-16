@@ -1,0 +1,936 @@
+[
+    {
+        "image_path": "ONCE_1616442709800.jpg",
+        "questions": [
+            "ONCE_1616442709800.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "ONCE_1616442709800.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Straight ahead on third lane sign, No.1 traffic sign is Construction vehicles use second lane sign, No.2 traffic sign is Straight ahead on second lane sign, No.3 traffic sign is Straight ahead on first lane sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "2"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "2_0_0_0"
+    },
+    {
+        "image_path": "ONCE_1616536114699.jpg",
+        "questions": [
+            "ONCE_1616536114699.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "ONCE_1616536114699.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "ONCE_1616536114699.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "ONCE_1616536114699.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No entry for trucks sign, No.1 traffic sign is Straight ahead on second lane sign, No.2 traffic sign is Includes special operation vehicle sign, No.3 traffic sign is Straight ahead on first lane sign, No.4 traffic sign is Straight ahead on third lane sign, No.5 traffic sign is Construction vehicles use second lane sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "ONCE_1616536114699.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No entry for trucks sign, No.1 traffic sign is Straight ahead on second lane sign, No.2 traffic sign is Includes special operation vehicle sign, No.3 traffic sign is Straight ahead on first lane sign, No.4 traffic sign is Straight ahead on third lane sign, No.5 traffic sign is Construction vehicles use second lane sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "ONCE_1616536114699.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No entry for trucks sign, No.1 traffic sign is Straight ahead on second lane sign, No.2 traffic sign is Includes special operation vehicle sign, No.3 traffic sign is Straight ahead on first lane sign, No.4 traffic sign is Straight ahead on third lane sign, No.5 traffic sign is Construction vehicles use second lane sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "1",
+            "1/3/4",
+            "0",
+            "1",
+            "1/3/4"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "2_0_0_1"
+    },
+    {
+        "image_path": "RS10K_China_10843-1637564321000.jpg",
+        "questions": [
+            "RS10K_China_10843-1637564321000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_10843-1637564321000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_10843-1637564321000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_10843-1637564321000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Left turn or U-turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No U-turn sign, No.5 traffic sign is No left turn sign, No.6 traffic sign is Large truck sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_10843-1637564321000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Left turn or U-turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No U-turn sign, No.5 traffic sign is No left turn sign, No.6 traffic sign is Large truck sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_10843-1637564321000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Left turn or U-turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No U-turn sign, No.5 traffic sign is No left turn sign, No.6 traffic sign is Large truck sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5/4",
+            "1",
+            "1",
+            "5/4",
+            "1",
+            "1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_2"
+    },
+    {
+        "image_path": "RS10K_China_11-1594189040675.jpg",
+        "questions": [
+            "RS10K_China_11-1594189040675.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11-1594189040675.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11-1594189040675.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is 500m indicator sign, No.1 traffic sign is No parking sign, No.2 traffic sign is Bus lane sign, No.3 traffic sign is Sign for 7:00-9:00, 17:00-19:00. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11-1594189040675.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is 500m indicator sign, No.1 traffic sign is No parking sign, No.2 traffic sign is Bus lane sign, No.3 traffic sign is Sign for 7:00-9:00, 17:00-19:00. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "2",
+            "1",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_3"
+    },
+    {
+        "image_path": "RS10K_China_11263-1637452591469.jpg",
+        "questions": [
+            "RS10K_China_11263-1637452591469.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11263-1637452591469.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is No right turn sign, No.6 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_4"
+    },
+    {
+        "image_path": "RS10K_China_11286-1592385351834.jpg",
+        "questions": [
+            "RS10K_China_11286-1592385351834.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11286-1592385351834.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11286-1592385351834.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Explanation sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is No U-turn for trailer trucks sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11286-1592385351834.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Explanation sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is No U-turn for trailer trucks sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "2",
+            "3",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_5"
+    },
+    {
+        "image_path": "RS10K_China_11603-1639114755000.jpg",
+        "questions": [
+            "RS10K_China_11603-1639114755000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11603-1639114755000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11603-1639114755000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn left sign, No.1 traffic sign is Go straight or turn right sign, No.2 traffic sign is No left or right turn sign, No.3 traffic sign is Two or three wheel vehicle sign, No.4 traffic sign is No turns for tuk-tuk vehicles sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11603-1639114755000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn left sign, No.1 traffic sign is Go straight or turn right sign, No.2 traffic sign is No left or right turn sign, No.3 traffic sign is Two or three wheel vehicle sign, No.4 traffic sign is No turns for tuk-tuk vehicles sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "0/1",
+            "2",
+            "0/1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_6"
+    },
+    {
+        "image_path": "RS10K_China_11652-1637205634000.jpg",
+        "questions": [
+            "RS10K_China_11652-1637205634000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11652-1637205634000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No left turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Right turn sign, No.4 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_7"
+    },
+    {
+        "image_path": "RS10K_China_11852-1636966248611.jpg",
+        "questions": [
+            "RS10K_China_11852-1636966248611.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11852-1636966248611.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11852-1636966248611.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Electronic monitoring sign, No.2 traffic sign is Go straight or turn left sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No right turns for medium and large trucks with automatic capture for violators sign, No.5 traffic sign is No right turn sign, No.6 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_11852-1636966248611.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Electronic monitoring sign, No.2 traffic sign is Go straight or turn left sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No right turns for medium and large trucks with automatic capture for violators sign, No.5 traffic sign is No right turn sign, No.6 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5",
+            "6",
+            "5",
+            "6"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_8"
+    },
+    {
+        "image_path": "RS10K_China_12502-1638494467000.jpg",
+        "questions": [
+            "RS10K_China_12502-1638494467000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_12502-1638494467000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Certain vehicles no right turn sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_9"
+    },
+    {
+        "image_path": "RS10K_China_13028-1637220920000.jpg",
+        "questions": [
+            "RS10K_China_13028-1637220920000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13028-1637220920000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Certain vehicles no right turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_10"
+    },
+    {
+        "image_path": "RS10K_China_13490-1638427815000.jpg",
+        "questions": [
+            "RS10K_China_13490-1638427815000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13490-1638427815000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13490-1638427815000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13490-1638427815000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is 00:00-24:00, no right turns for trucks over X tons sign, No.1 traffic sign is No left or right turn sign, No.2 traffic sign is Hazardous materials transport vehicle sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13490-1638427815000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is 00:00-24:00, no right turns for trucks over X tons sign, No.1 traffic sign is No left or right turn sign, No.2 traffic sign is Hazardous materials transport vehicle sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13490-1638427815000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is 00:00-24:00, no right turns for trucks over X tons sign, No.1 traffic sign is No left or right turn sign, No.2 traffic sign is Hazardous materials transport vehicle sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "3/4",
+            "4",
+            "1",
+            "3/4",
+            "4"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_11"
+    },
+    {
+        "image_path": "RS10K_China_13586-1637632561500.jpg",
+        "questions": [
+            "RS10K_China_13586-1637632561500.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13586-1637632561500.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn or U-turn sign, No.1 traffic sign is No straight for trucks sign, No.2 traffic sign is Go straight or turn right sign, No.3 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3/2",
+            "3/2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_12"
+    },
+    {
+        "image_path": "RS10K_China_13754-1639097969627.jpg",
+        "questions": [
+            "RS10K_China_13754-1639097969627.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_13754-1639097969627.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Certain vehicles no right turn sign, No.4 traffic sign is Left turn or U-turn sign, No.5 traffic sign is Right turn sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5",
+            "5"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_13"
+    },
+    {
+        "image_path": "RS10K_China_14475-1638514270568.jpg",
+        "questions": [
+            "RS10K_China_14475-1638514270568.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14475-1638514270568.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14475-1638514270568.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No left or right turn sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Heavy and medium trucks 6:00-24:00 sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14475-1638514270568.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No left or right turn sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Heavy and medium trucks 6:00-24:00 sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "4/1",
+            "0",
+            "4/1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_14"
+    },
+    {
+        "image_path": "RS10K_China_14567-1637716317000.jpg",
+        "questions": [
+            "RS10K_China_14567-1637716317000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14567-1637716317000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Certain vehicles no left turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_15"
+    },
+    {
+        "image_path": "RS10K_China_14816-1623276047841.jpg",
+        "questions": [
+            "RS10K_China_14816-1623276047841.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14816-1623276047841.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Go straight or turn right sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Certain vehicles no left or right turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1/3",
+            "1/3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_16"
+    },
+    {
+        "image_path": "RS10K_China_14993-1638174207000.jpg",
+        "questions": [
+            "RS10K_China_14993-1638174207000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14993-1638174207000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14993-1638174207000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is 7:00-21:00, trucks over 5 tons sign, No.3 traffic sign is No straight or left turn sign, No.4 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_14993-1638174207000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is 7:00-21:00, trucks over 5 tons sign, No.3 traffic sign is No straight or left turn sign, No.4 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "4/1",
+            "3",
+            "4/1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_17"
+    },
+    {
+        "image_path": "RS10K_China_15614-1638773416000.jpg",
+        "questions": [
+            "RS10K_China_15614-1638773416000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15614-1638773416000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15614-1638773416000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No entry for medium and larger trucks all day sign, No.1 traffic sign is No straight sign, No.2 traffic sign is Go straight or turn left sign, No.3 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15614-1638773416000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No entry for medium and larger trucks all day sign, No.1 traffic sign is No straight sign, No.2 traffic sign is Go straight or turn left sign, No.3 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "2/3",
+            "0",
+            "2/3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_18"
+    },
+    {
+        "image_path": "RS10K_China_15970-1638415797762.jpg",
+        "questions": [
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No straight for large trucks sign, No.2 traffic sign is No straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No left or right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is No left or right turns for large trucks sign, No.7 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No straight for large trucks sign, No.2 traffic sign is No straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No left or right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is No left or right turns for large trucks sign, No.7 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No straight for large trucks sign, No.2 traffic sign is No straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No left or right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is No left or right turns for large trucks sign, No.7 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15970-1638415797762.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No straight for large trucks sign, No.2 traffic sign is No straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No left or right turn sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is No left or right turns for large trucks sign, No.7 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "4",
+            "3/5",
+            "0/7",
+            "2",
+            "4",
+            "3/5",
+            "0/7"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_19"
+    },
+    {
+        "image_path": "RS10K_China_15992-1637828710758.jpg",
+        "questions": [
+            "RS10K_China_15992-1637828710758.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_15992-1637828710758.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No left turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Bus lane sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_20"
+    },
+    {
+        "image_path": "RS10K_China_16392-1638403091000.jpg",
+        "questions": [
+            "RS10K_China_16392-1638403091000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16392-1638403091000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16392-1638403091000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16392-1638403091000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Medium and above vehicles 6:00-22:00 sign, No.1 traffic sign is No left turns for trucks except enclosed medium trucks (electronically monitored) sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Right turn sign, No.4 traffic sign is No left turn sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16392-1638403091000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Medium and above vehicles 6:00-22:00 sign, No.1 traffic sign is No left turns for trucks except enclosed medium trucks (electronically monitored) sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Right turn sign, No.4 traffic sign is No left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16392-1638403091000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Medium and above vehicles 6:00-22:00 sign, No.1 traffic sign is No left turns for trucks except enclosed medium trucks (electronically monitored) sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Right turn sign, No.4 traffic sign is No left turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "4",
+            "4",
+            "2",
+            "4",
+            "4",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_21"
+    },
+    {
+        "image_path": "RS10K_China_16432-1637200434000.jpg",
+        "questions": [
+            "RS10K_China_16432-1637200434000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16432-1637200434000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16432-1637200434000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16432-1637200434000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn or U-turn sign, No.1 traffic sign is Go straight or turn right sign, No.2 traffic sign is No U-turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is No left turn sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16432-1637200434000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn or U-turn sign, No.1 traffic sign is Go straight or turn right sign, No.2 traffic sign is No U-turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is No left turn sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_16432-1637200434000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn or U-turn sign, No.1 traffic sign is Go straight or turn right sign, No.2 traffic sign is No U-turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is No left turn sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "6/2",
+            "0",
+            "0",
+            "6/2",
+            "0",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_22"
+    },
+    {
+        "image_path": "RS10K_China_17738-1639008110490.jpg",
+        "questions": [
+            "RS10K_China_17738-1639008110490.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_17738-1639008110490.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Right turn sign, No.5 traffic sign is No left or right turns for trucks sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "4/1",
+            "4/1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_23"
+    },
+    {
+        "image_path": "RS10K_China_17839-1638087184000.jpg",
+        "questions": [
+            "RS10K_China_17839-1638087184000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_17839-1638087184000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight or turn right sign, No.3 traffic sign is No straight for operation vehicles 7:00-20:00 sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0/2",
+            "0/2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_24"
+    },
+    {
+        "image_path": "RS10K_China_18186-1638142404000.jpg",
+        "questions": [
+            "RS10K_China_18186-1638142404000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_18186-1638142404000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight or turn right sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Certain vehicles time-restricted no right turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_25"
+    },
+    {
+        "image_path": "RS10K_China_19022-1639182214440.jpg",
+        "questions": [
+            "RS10K_China_19022-1639182214440.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19022-1639182214440.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Certain vehicles no left or right turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight or turn right sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5/3",
+            "5/3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_26"
+    },
+    {
+        "image_path": "RS10K_China_19369-1637564318000.jpg",
+        "questions": [
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is No U-turn sign, No.4 traffic sign is No left turn sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is No U-turn sign, No.4 traffic sign is No left turn sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is No U-turn sign, No.4 traffic sign is No left turn sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19369-1637564318000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is No U-turn sign, No.4 traffic sign is No left turn sign, No.5 traffic sign is Large truck sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "4",
+            "3",
+            "2",
+            "2",
+            "4",
+            "3",
+            "2",
+            "2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_27"
+    },
+    {
+        "image_path": "RS10K_China_19411-1637218475000.jpg",
+        "questions": [
+            "RS10K_China_19411-1637218475000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_19411-1637218475000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is Certain vehicles no left turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "4",
+            "4"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_28"
+    },
+    {
+        "image_path": "RS10K_China_1951-1637201076709.jpg",
+        "questions": [
+            "RS10K_China_1951-1637201076709.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_1951-1637201076709.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_1951-1637201076709.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is All trucks excluding new energy trucks sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is No left or right turn sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_1951-1637201076709.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is All trucks excluding new energy trucks sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is No left or right turn sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "1/2",
+            "3",
+            "1/2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_29"
+    },
+    {
+        "image_path": "RS10K_China_20497-1639111712000.jpg",
+        "questions": [
+            "RS10K_China_20497-1639111712000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_20497-1639111712000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Certain vehicles no right turn sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Right turn sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_30"
+    },
+    {
+        "image_path": "RS10K_China_21159-1638776447222.jpg",
+        "questions": [
+            "RS10K_China_21159-1638776447222.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_21159-1638776447222.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_21159-1638776447222.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Straight ahead on first lane sign, No.1 traffic sign is No non-motor vehicles sign, No.2 traffic sign is No non-motor vehicles on Zhijiang East Road sign, No.3 traffic sign is Yellow plate trucks use first lane sign, No.4 traffic sign is Straight ahead on second lane sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_21159-1638776447222.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Straight ahead on first lane sign, No.1 traffic sign is No non-motor vehicles sign, No.2 traffic sign is No non-motor vehicles on Zhijiang East Road sign, No.3 traffic sign is Yellow plate trucks use first lane sign, No.4 traffic sign is Straight ahead on second lane sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "0",
+            "1",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_31"
+    },
+    {
+        "image_path": "RS10K_China_21367-1638427852538.jpg",
+        "questions": [
+            "RS10K_China_21367-1638427852538.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_21367-1638427852538.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_21367-1638427852538.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is No right turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Hazardous materials transport vehicle sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_21367-1638427852538.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is No right turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Hazardous materials transport vehicle sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "0",
+            "1",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_32"
+    },
+    {
+        "image_path": "RS10K_China_22790-1637801721640.jpg",
+        "questions": [
+            "RS10K_China_22790-1637801721640.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_22790-1637801721640.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Certain vehicles no left turn sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Left turn sign, No.6 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5",
+            "5"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_33"
+    },
+    {
+        "image_path": "RS10K_China_22964-1638062389541.jpg",
+        "questions": [
+            "RS10K_China_22964-1638062389541.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_22964-1638062389541.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is Certain vehicles no left turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight or turn right sign, No.4 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "4",
+            "4"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_34"
+    },
+    {
+        "image_path": "RS10K_China_23021-1638665005000.jpg",
+        "questions": [
+            "RS10K_China_23021-1638665005000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23021-1638665005000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Certain vehicles no left turn sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_35"
+    },
+    {
+        "image_path": "RS10K_China_23599-1639027380880.jpg",
+        "questions": [
+            "RS10K_China_23599-1639027380880.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23599-1639027380880.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is No right turn for trucks sign, No.2 traffic sign is Left turn sign, No.3 traffic sign is Go straight or turn right sign, No.4 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_36"
+    },
+    {
+        "image_path": "RS10K_China_23936-1638161794000.jpg",
+        "questions": [
+            "RS10K_China_23936-1638161794000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.8 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23936-1638161794000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23936-1638161794000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.7 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23936-1638161794000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Keep right sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Certain vehicles no right turn sign, No.6 traffic sign is Right turn sign, No.7 traffic sign is Certain vehicles no right turn sign, No.8 traffic sign is 7:00-24:00 sign. Analyze which traffic sign corresponds to No.8 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23936-1638161794000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Keep right sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Certain vehicles no right turn sign, No.6 traffic sign is Right turn sign, No.7 traffic sign is Certain vehicles no right turn sign, No.8 traffic sign is 7:00-24:00 sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23936-1638161794000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Keep right sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Certain vehicles no right turn sign, No.6 traffic sign is Right turn sign, No.7 traffic sign is Certain vehicles no right turn sign, No.8 traffic sign is 7:00-24:00 sign. Analyze which traffic sign corresponds to No.7 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5/7",
+            "6",
+            "6",
+            "5/7",
+            "6",
+            "6"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_37"
+    },
+    {
+        "image_path": "RS10K_China_23967-1638152214140.jpg",
+        "questions": [
+            "RS10K_China_23967-1638152214140.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_23967-1638152214140.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is Right turn sign, No.4 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2/3",
+            "2/3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_38"
+    },
+    {
+        "image_path": "RS10K_China_24002-1637648824000.jpg",
+        "questions": [
+            "RS10K_China_24002-1637648824000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_24002-1637648824000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Certain vehicle type no left or right turn sign, No.2 traffic sign is Left turn or U-turn sign, No.3 traffic sign is Right turn sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2/3/5",
+            "2/3/5"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_39"
+    },
+    {
+        "image_path": "RS10K_China_24297-1639121103687.jpg",
+        "questions": [
+            "RS10K_China_24297-1639121103687.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_24297-1639121103687.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_24297-1639121103687.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is No left or right turns for hazardous material vehicles sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_24297-1639121103687.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is No left or right turns for hazardous material vehicles sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "1/2",
+            "1",
+            "1/2"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_40"
+    },
+    {
+        "image_path": "RS10K_China_24656-1639006922637.jpg",
+        "questions": [
+            "RS10K_China_24656-1639006922637.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_24656-1639006922637.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Left turn or U-turn sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "5/1/4",
+            "5/1/4"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_41"
+    },
+    {
+        "image_path": "RS10K_China_25294-1637892496000.jpg",
+        "questions": [
+            "RS10K_China_25294-1637892496000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_25294-1637892496000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Certain vehicles no left or right turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0/1",
+            "0/1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_42"
+    },
+    {
+        "image_path": "RS10K_China_25943-1637207695000.jpg",
+        "questions": [
+            "RS10K_China_25943-1637207695000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_25943-1637207695000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Right turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Certain vehicles no left turn sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_43"
+    },
+    {
+        "image_path": "RS10K_China_28455-1639200795000.jpg",
+        "questions": [
+            "RS10K_China_28455-1639200795000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_28455-1639200795000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_28455-1639200795000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_28455-1639200795000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is No left turns for large trucks into the city sign, No.2 traffic sign is No left turn sign, No.3 traffic sign is No entry for trucks sign, No.4 traffic sign is Go straight or turn left sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_28455-1639200795000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is No left turns for large trucks into the city sign, No.2 traffic sign is No left turn sign, No.3 traffic sign is No entry for trucks sign, No.4 traffic sign is Go straight or turn left sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_28455-1639200795000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is No left turns for large trucks into the city sign, No.2 traffic sign is No left turn sign, No.3 traffic sign is No entry for trucks sign, No.4 traffic sign is Go straight or turn left sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "3",
+            "2",
+            "4",
+            "3",
+            "2",
+            "4"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_44"
+    },
+    {
+        "image_path": "RS10K_China_28663-1637712081229.jpg",
+        "questions": [
+            "RS10K_China_28663-1637712081229.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_28663-1637712081229.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No left turn sign, No.1 traffic sign is Certain vehicles no left turn sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_45"
+    },
+    {
+        "image_path": "RS10K_China_3393-1637471098000.jpg",
+        "questions": [
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.7 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.8 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is No entry for trucks sign, No.3 traffic sign is No straight or right turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is No straight or right turns for hazardous materials, sand, earth transport vehicles and trucks sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is No entry for hazardous material transport vehicles sign, No.8 traffic sign is No honking sign, No.9 traffic sign is U-turn sign. Analyze which traffic sign corresponds to No.7 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is No entry for trucks sign, No.3 traffic sign is No straight or right turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is No straight or right turns for hazardous materials, sand, earth transport vehicles and trucks sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is No entry for hazardous material transport vehicles sign, No.8 traffic sign is No honking sign, No.9 traffic sign is U-turn sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is No entry for trucks sign, No.3 traffic sign is No straight or right turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is No straight or right turns for hazardous materials, sand, earth transport vehicles and trucks sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is No entry for hazardous material transport vehicles sign, No.8 traffic sign is No honking sign, No.9 traffic sign is U-turn sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is No entry for trucks sign, No.3 traffic sign is No straight or right turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is No straight or right turns for hazardous materials, sand, earth transport vehicles and trucks sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is No entry for hazardous material transport vehicles sign, No.8 traffic sign is No honking sign, No.9 traffic sign is U-turn sign. Analyze which traffic sign corresponds to No.8 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_3393-1637471098000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is No right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is No entry for trucks sign, No.3 traffic sign is No straight or right turn sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is No straight or right turns for hazardous materials, sand, earth transport vehicles and trucks sign, No.6 traffic sign is Go straight sign, No.7 traffic sign is No entry for hazardous material transport vehicles sign, No.8 traffic sign is No honking sign, No.9 traffic sign is U-turn sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/4/6",
+            "2/3/7/8",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/4/6",
+            "2/3/7/8"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_46"
+    },
+    {
+        "image_path": "RS10K_China_486-1639194301116.jpg",
+        "questions": [
+            "RS10K_China_486-1639194301116.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_486-1639194301116.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is Go straight sign, No.2 traffic sign is U-turn sign, No.3 traffic sign is Left turn sign, No.4 traffic sign is Left turn or U-turn sign, No.5 traffic sign is No U-turn for large vehicles sign, No.6 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2/4",
+            "2/4"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_47"
+    },
+    {
+        "image_path": "RS10K_China_6186-1637656079000.jpg",
+        "questions": [
+            "RS10K_China_6186-1637656079000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6186-1637656079000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6186-1637656079000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6186-1637656079000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Trucks over 1 ton inclusive sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is Passenger vehicles over 9 seats inclusive sign, No.4 traffic sign is No left turn sign. Analyze which traffic sign corresponds to No.3 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6186-1637656079000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Trucks over 1 ton inclusive sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is Passenger vehicles over 9 seats inclusive sign, No.4 traffic sign is No left turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6186-1637656079000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Trucks over 1 ton inclusive sign, No.2 traffic sign is Right turn sign, No.3 traffic sign is Passenger vehicles over 9 seats inclusive sign, No.4 traffic sign is No left turn sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "4",
+            "4",
+            "0",
+            "4",
+            "4",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_48"
+    },
+    {
+        "image_path": "RS10K_China_62-1637646756000.jpg",
+        "questions": [
+            "RS10K_China_62-1637646756000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_62-1637646756000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is Certain vehicles no right turn sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_49"
+    },
+    {
+        "image_path": "RS10K_China_6351-1638228223000.jpg",
+        "questions": [
+            "RS10K_China_6351-1638228223000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6351-1638228223000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6351-1638228223000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6351-1638228223000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No honking sign, No.2 traffic sign is No left turn for motor vehicles sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No honking within the outer ring road sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.4 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6351-1638228223000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No honking sign, No.2 traffic sign is No left turn for motor vehicles sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No honking within the outer ring road sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6351-1638228223000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Right turn sign, No.1 traffic sign is No honking sign, No.2 traffic sign is No left turn for motor vehicles sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is No honking within the outer ring road sign, No.5 traffic sign is Go straight sign, No.6 traffic sign is Go straight or turn right sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "5",
+            "5/3/6/0",
+            "1",
+            "5",
+            "5/3/6/0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_50"
+    },
+    {
+        "image_path": "RS10K_China_6461-1639099900400.jpg",
+        "questions": [
+            "RS10K_China_6461-1639099900400.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6461-1639099900400.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight sign, No.1 traffic sign is Left turn sign, No.2 traffic sign is Go straight or turn right sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Right turn sign, No.5 traffic sign is Certain vehicles no left turn sign, No.6 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.5 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "1",
+            "1"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_51"
+    },
+    {
+        "image_path": "RS10K_China_6478-1637117811000.jpg",
+        "questions": [
+            "RS10K_China_6478-1637117811000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6478-1637117811000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6478-1637117811000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.8 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6478-1637117811000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Medium and above trucks 07:00-21:00 sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Right turn sign, No.6 traffic sign is Excluding new energy trucks sign, No.7 traffic sign is Go straight sign, No.8 traffic sign is No right turn sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6478-1637117811000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Medium and above trucks 07:00-21:00 sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Right turn sign, No.6 traffic sign is Excluding new energy trucks sign, No.7 traffic sign is Go straight sign, No.8 traffic sign is No right turn sign. Analyze which traffic sign corresponds to No.6 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_6478-1637117811000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Left turn sign, No.1 traffic sign is Medium and above trucks 07:00-21:00 sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Go straight sign, No.4 traffic sign is Left turn sign, No.5 traffic sign is Right turn sign, No.6 traffic sign is Excluding new energy trucks sign, No.7 traffic sign is Go straight sign, No.8 traffic sign is No right turn sign. Analyze which traffic sign corresponds to No.8 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "8",
+            "8",
+            "5",
+            "8",
+            "8",
+            "5"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_52"
+    },
+    {
+        "image_path": "RS10K_China_724-1639100331730.jpg",
+        "questions": [
+            "RS10K_China_724-1639100331730.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_724-1639100331730.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Go straight or turn right sign, No.1 traffic sign is Left turn or U-turn sign, No.2 traffic sign is Certain vehicles no right turn sign, No.3 traffic sign is Service road sign, No.4 traffic sign is Go straight sign, No.5 traffic sign is Go straight sign. Analyze which traffic sign corresponds to No.2 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "0",
+            "0"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_53"
+    },
+    {
+        "image_path": "RS10K_China_8037-1638925181000.jpg",
+        "questions": [
+            "RS10K_China_8037-1638925181000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+            "RS10K_China_8037-1638925181000.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Certain vehicles time-restricted no straight or right turn sign, No.1 traffic sign is Go straight or turn left sign, No.2 traffic sign is Go straight sign, No.3 traffic sign is Right turn sign. Analyze which traffic sign corresponds to No.0 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+            "2/3",
+            "2/3"
+        ],
+        "venue": "RS10K",
+        "country": "China",
+        "id": "2_0_0_54"
+    }
+]

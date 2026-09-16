@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VLADBench re-evaluation</title>
+    <link rel="stylesheet" href="web/results.css?v=28" />
+    <script src="web/config.js"></script>
+    <script src="task-review-data.js?v=2" defer></script>
+    <script src="task-review-audit.js" defer></script>
+    <script src="task-review-published.js" defer></script>
+    <script src="task-review-results.js?v=12" defer></script>
+    <script src="web/results.js?v=46" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="brand-lockup">
+        <a class="brand" href="results.html">VLAD<span>Bench</span></a>
+        <a class="fork" href="https://github.com/Eventual-Inc/VLADBench" target="_blank" rel="noopener noreferrer">Eventual-Inc/VLADBench Fork</a>
+      </div>
+      <nav>
+        <a href="results.html" aria-current="page">Results</a>
+        <a id="article-link" href="#" hidden>Article</a>
+        <a id="blog-link" href="#" hidden>Blog</a>
+        <a href="self-test.html">Take the benchmark</a>
+        <a href="https://github.com/Eventual-Inc/VLADBench" target="_blank" rel="noopener noreferrer">Repository ↗</a>
+        <a class="request" href="mailto:everett@eventualcomputing.com?subject=VLADBench%3A%20please%20run%20a%20model&body=Model%20(provider%2Fslug)%3A%0AWhy%20it%20matters%20to%20you%3A%0A">Request a model</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tabbar">
+        <div class="tabs" role="tablist" aria-label="Views">
+          <button role="tab" data-tab="overview" aria-selected="true">Overview</button>
+          <button role="tab" data-tab="paper" aria-selected="false">Results</button>
+          <button role="tab" data-tab="leaderboard" data-desktop aria-selected="false">Score by task</button>
+          <button role="tab" data-tab="matrix" data-desktop aria-selected="false">Task matrix</button>
+        </div>
+        <div class="model-filter" id="model-filter" aria-label="Models shown in every view"></div>
+      </div>
+
+      <section class="panel toolbar" id="toolbar" data-tabs="overview leaderboard matrix paper" aria-label="Controls" hidden>
+        <label class="search">
+          <span>Find a task</span>
+          <input id="search" type="search" placeholder="Search task, group, or domain" />
+        </label>
+        <label>
+          <span>Sort</span>
+          <select id="sort">
+            <option value="benchmark">Benchmark order</option>
+            <option value="spread">Largest spread</option>
+            <option value="alphabetical">Alphabetical</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="tab-page" data-tab="overview">
+        <div class="overview-grid">
+          <section class="panel cost-score-panel" aria-labelledby="cost-score-title">
+            <div class="chart-heading">
+              <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
+              <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
+            </div>
+            <div id="cost-score" class="bar-chart"></div>
+            <p class="sub" id="cost-score-note"></p>
+          </section>
+          <aside class="panel leaderboard" aria-labelledby="leaderboard-title">
+            <div class="chart-heading">
+              <h3 class="section-title" id="leaderboard-title">Leaderboard</h3>
+              <p class="sub" id="method"></p>
+            </div>
+            <table id="leaderboard"></table>
+            <p class="sub" id="leaderboard-note"></p>
+          </aside>
+          <section class="panel" aria-labelledby="frontier-title">
+            <h3 class="section-title" id="frontier-title">Cost-Performance Frontier</h3>
+            <p class="sub">At each sweep cost, the model no other beats for the same money or less.</p>
+            <table id="frontier" class="frontier"></table>
+            <p class="sub" id="frontier-note"></p>
+          </section>
+          <section class="panel" aria-labelledby="marginal-title">
+            <h3 class="section-title" id="marginal-title">Marginal Performance Cost</h3>
+            <p class="sub">What each step up the frontier buys, and what it costs per point.</p>
+            <table id="marginal" class="frontier"></table>
+          </section>
+          <section class="panel span-2" aria-labelledby="video-title">
+            <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>
+            <div class="row video-knobs">
+              <label>Frame size <select id="video-res"><option value="640x360">640×360</option><option value="1280x720" selected>1280×720</option><option value="1920x1080">1920×1080</option></select></label>
+              <label>Frames per second <select id="video-fps"><option value="0.2">0.2</option><option value="0.5">0.5</option><option value="1" selected>1</option><option value="2">2</option><option value="5">5</option><option value="10">10</option></select></label>
+              <label>Frames per query <select id="video-frames"><option value="1">1</option><option value="4">4</option><option value="8" selected>8</option><option value="16">16</option><option value="32">32</option></select></label>
+            </div>
+            <table id="video-cost" class="frontier"></table>
+            <p class="sub" id="video-cost-note"></p>
+          </section>
+        </div>
+      </section>
+<section class="tab-page" data-tab="leaderboard" hidden>
+        <section id="score-bars" class="panel score-bars" aria-labelledby="score-bars-title">
+            <div class="chart-heading">
+              <p class="eyebrow" id="score-bars-title">Score by task</p>
+              <div id="bar-legend" class="bar-legend" aria-label="Model legend"></div>
+            </div>
+            <div id="bar-chart" class="bar-chart"></div>
+          </section>
+          
+        </div>
+      </section>
+
+      <section class="tab-page" data-tab="matrix" hidden>
+        <section class="panel matrix" aria-label="Task by model score matrix">
+          <table>
+            <thead id="head"></thead>
+            <tbody id="body"></tbody>
+          </table>
+        </section>
+      </section>
+
+      <section class="tab-page" data-tab="paper" hidden>
+        <section class="panel paper" aria-labelledby="paper-title">
+          <div class="chart-heading">
+            <p class="eyebrow" id="paper-title">Results</p>
+            <p class="sub">The paper's Table 10 layout on our runs: its task abbreviations and order, MEAN after each task group, TOTAL last. Columns grouped by lab, smallest model first. Best per row underlined.</p>
+            <div class="row heat-controls">
+              <span class="control-group" aria-label="Heat scale">
+                <label>Low <input id="heat-low" type="color" /></label>
+                <label>Mid <input id="heat-mid" type="color" /></label>
+                <label>High <input id="heat-high" type="color" /></label>
+                <label>Midpoint <b id="heat-midpoint-readout"></b> <input id="heat-midpoint" type="range" min="10" max="90" step="1" /></label>
+                <span id="heat-legend" class="heat-legend" aria-label="Scale from 0 to 100"></span>
+                <button id="heat-reset" type="button">Reset</button>
+              </span>
+              <span class="control-group" aria-label="Export">
+                <button id="copy-latex" type="button">Copy LaTeX</button>
+                <button id="copy-csv" type="button">Copy CSV</button>
+              </span>
+            </div>
+          </div>
+          <div class="matrix paper-matrix table10">
+            <table>
+              <thead id="ours-head"></thead>
+              <tbody id="ours-body"></tbody>
+            </table>
+          </div>
+          <p class="sub" id="table10-note"></p>
+          <div class="chart-heading">
+            <p class="eyebrow">Paper, Table 10 as published (2025)</p>
+            <p class="sub">Different models, inference stack, and image handling. Read side by side, not merged. Row labels as printed, including L.R.RL for Light-Lane Relation.</p>
+          </div>
+          <div class="matrix paper-matrix table10">
+            <table>
+              <thead id="paper-head"></thead>
+              <tbody id="paper-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="inspector" aria-label="Evidence inspector">
+      <button id="inspector-close" class="close" type="button">Close ✕</button>
+      <div id="detail"></div>
+    </dialog>
+  </body>
+</html>

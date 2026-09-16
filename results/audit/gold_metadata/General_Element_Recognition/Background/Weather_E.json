@@ -1,0 +1,1986 @@
+[
+    {
+        "image_path": "CODA2022_0045_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0045_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0045_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'rainy', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_0"
+    },
+    {
+        "image_path": "CODA2022_0083_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0083_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0083_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'cloudy', 'overcast', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_1"
+    },
+    {
+        "image_path": "CODA2022_0093_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0093_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0093_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'cloudy', 'clear', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_2"
+    },
+    {
+        "image_path": "CODA2022_0144_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0144_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0144_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'rainy', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_3"
+    },
+    {
+        "image_path": "CODA2022_0149_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0149_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0149_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'snowy', 'overcast', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_4"
+    },
+    {
+        "image_path": "CODA2022_0174_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0174_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0174_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'clear', 'rainy', 'overcast', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_5"
+    },
+    {
+        "image_path": "CODA2022_0219_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0219_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0219_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'snowy', 'clear', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_6"
+    },
+    {
+        "image_path": "CODA2022_0227_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0227_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0227_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'snowy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_7"
+    },
+    {
+        "image_path": "CODA2022_0290_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0290_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0290_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'snowy', 'clear', 'cloudy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_8"
+    },
+    {
+        "image_path": "CODA2022_0364_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0364_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0364_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'snowy', 'cloudy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_9"
+    },
+    {
+        "image_path": "CODA2022_0374_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0374_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0374_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'cloudy', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_10"
+    },
+    {
+        "image_path": "CODA2022_0378_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0378_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0378_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'snowy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_11"
+    },
+    {
+        "image_path": "CODA2022_0392_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0392_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0392_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'cloudy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_12"
+    },
+    {
+        "image_path": "CODA2022_0393_night_snowy.png",
+        "time": "nighttime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0393_night_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0393_night_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'snowy', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "snowy"
+        ],
+        "id": "1_0_1_13"
+    },
+    {
+        "image_path": "CODA2022_0394_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0394_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0394_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'clear', 'overcast', 'snowy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_14"
+    },
+    {
+        "image_path": "CODA2022_0397_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0397_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0397_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'snowy', 'rainy', 'clear', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_15"
+    },
+    {
+        "image_path": "CODA2022_0420_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0420_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0420_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'rainy', 'overcast', 'clear', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_16"
+    },
+    {
+        "image_path": "CODA2022_0430_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0430_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0430_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'rainy', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_17"
+    },
+    {
+        "image_path": "CODA2022_0474_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0474_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0474_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'cloudy', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_18"
+    },
+    {
+        "image_path": "CODA2022_0504_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0504_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0504_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'clear', 'overcast', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_19"
+    },
+    {
+        "image_path": "CODA2022_0565_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0565_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0565_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'snowy', 'overcast', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_20"
+    },
+    {
+        "image_path": "CODA2022_0604_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0604_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0604_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'overcast', 'rainy', 'snowy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_21"
+    },
+    {
+        "image_path": "CODA2022_0610_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0610_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0610_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'cloudy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_22"
+    },
+    {
+        "image_path": "CODA2022_0642_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0642_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0642_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'cloudy', 'rainy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_23"
+    },
+    {
+        "image_path": "CODA2022_0673_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0673_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0673_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'clear', 'rainy', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_24"
+    },
+    {
+        "image_path": "CODA2022_0688_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0688_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0688_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'rainy', 'overcast', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_25"
+    },
+    {
+        "image_path": "CODA2022_0729_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0729_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0729_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'rainy', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_26"
+    },
+    {
+        "image_path": "CODA2022_0755_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0755_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0755_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'snowy', 'overcast', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_27"
+    },
+    {
+        "image_path": "CODA2022_0756_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0756_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0756_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'rainy', 'clear', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_28"
+    },
+    {
+        "image_path": "CODA2022_0758_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0758_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0758_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'snowy', 'clear', 'overcast', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_29"
+    },
+    {
+        "image_path": "CODA2022_0782_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0782_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0782_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'cloudy', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_30"
+    },
+    {
+        "image_path": "CODA2022_0788_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0788_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0788_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'clear', 'overcast', 'rainy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_31"
+    },
+    {
+        "image_path": "CODA2022_0795_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0795_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0795_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'clear', 'snowy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_32"
+    },
+    {
+        "image_path": "CODA2022_0815_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0815_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0815_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'overcast', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_33"
+    },
+    {
+        "image_path": "CODA2022_0821_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0821_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0821_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'clear', 'overcast', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_34"
+    },
+    {
+        "image_path": "CODA2022_0863_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0863_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0863_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'rainy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_35"
+    },
+    {
+        "image_path": "CODA2022_0882_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0882_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0882_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'clear', 'overcast', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_36"
+    },
+    {
+        "image_path": "CODA2022_0896_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0896_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0896_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'clear', 'cloudy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_37"
+    },
+    {
+        "image_path": "CODA2022_0912_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0912_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0912_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'snowy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_38"
+    },
+    {
+        "image_path": "CODA2022_0917_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0917_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0917_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'cloudy', 'rainy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_39"
+    },
+    {
+        "image_path": "CODA2022_0926_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0926_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0926_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'snowy', 'overcast', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_40"
+    },
+    {
+        "image_path": "CODA2022_0937_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0937_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0937_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'overcast', 'cloudy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_41"
+    },
+    {
+        "image_path": "CODA2022_0939_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0939_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0939_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'snowy', 'overcast', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_42"
+    },
+    {
+        "image_path": "CODA2022_0948_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0948_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_0948_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'snowy', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_43"
+    },
+    {
+        "image_path": "CODA2022_0951_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0951_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0951_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'overcast', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_44"
+    },
+    {
+        "image_path": "CODA2022_0955_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0955_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0955_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'clear', 'cloudy', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_45"
+    },
+    {
+        "image_path": "CODA2022_0982_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0982_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0982_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'clear', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_46"
+    },
+    {
+        "image_path": "CODA2022_0992_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_0992_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_0992_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'snowy', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_47"
+    },
+    {
+        "image_path": "CODA2022_1050_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1050_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1050_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'snowy', 'cloudy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_48"
+    },
+    {
+        "image_path": "CODA2022_1079_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1079_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1079_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'snowy', 'cloudy', 'overcast', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_49"
+    },
+    {
+        "image_path": "CODA2022_1080_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1080_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1080_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'cloudy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_50"
+    },
+    {
+        "image_path": "CODA2022_1088_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1088_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1088_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'rainy', 'cloudy', 'overcast', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_51"
+    },
+    {
+        "image_path": "CODA2022_1145_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1145_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1145_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'rainy', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_52"
+    },
+    {
+        "image_path": "CODA2022_1159_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1159_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1159_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'cloudy', 'clear', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_53"
+    },
+    {
+        "image_path": "CODA2022_1281_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1281_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1281_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'overcast', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_54"
+    },
+    {
+        "image_path": "CODA2022_1320_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1320_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1320_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'clear', 'cloudy', 'overcast', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_55"
+    },
+    {
+        "image_path": "CODA2022_1329_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1329_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1329_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'cloudy', 'overcast', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_56"
+    },
+    {
+        "image_path": "CODA2022_1382_night_snowy.png",
+        "time": "nighttime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1382_night_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1382_night_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'overcast', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "snowy"
+        ],
+        "id": "1_0_1_57"
+    },
+    {
+        "image_path": "CODA2022_1424_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1424_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1424_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'clear', 'snowy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_58"
+    },
+    {
+        "image_path": "CODA2022_1454_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1454_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_1454_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'snowy', 'clear', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_59"
+    },
+    {
+        "image_path": "CODA2022_1480_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1480_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1480_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'cloudy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_60"
+    },
+    {
+        "image_path": "CODA2022_1719_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1719_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1719_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'snowy', 'rainy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_61"
+    },
+    {
+        "image_path": "CODA2022_1895_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_1895_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_1895_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'snowy', 'rainy', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_62"
+    },
+    {
+        "image_path": "CODA2022_2039_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2039_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_2039_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'overcast', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_63"
+    },
+    {
+        "image_path": "CODA2022_2137_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2137_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2137_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'rainy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_64"
+    },
+    {
+        "image_path": "CODA2022_2455_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2455_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_2455_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'clear', 'snowy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_65"
+    },
+    {
+        "image_path": "CODA2022_2463_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2463_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_2463_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'rainy', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_66"
+    },
+    {
+        "image_path": "CODA2022_2529_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2529_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2529_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'clear', 'snowy', 'cloudy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_67"
+    },
+    {
+        "image_path": "CODA2022_2709_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2709_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2709_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'rainy', 'snowy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_68"
+    },
+    {
+        "image_path": "CODA2022_2723_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2723_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2723_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'overcast', 'rainy', 'snowy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_69"
+    },
+    {
+        "image_path": "CODA2022_2859_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2859_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2859_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'snowy', 'clear', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_70"
+    },
+    {
+        "image_path": "CODA2022_2867_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2867_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2867_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'snowy', 'rainy', 'clear', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_71"
+    },
+    {
+        "image_path": "CODA2022_2901_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_2901_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_2901_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'clear', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_72"
+    },
+    {
+        "image_path": "CODA2022_3030_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3030_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3030_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'snowy', 'clear', 'overcast', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_73"
+    },
+    {
+        "image_path": "CODA2022_3113_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3113_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3113_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'rainy', 'overcast', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_74"
+    },
+    {
+        "image_path": "CODA2022_3155_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3155_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_3155_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'snowy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_75"
+    },
+    {
+        "image_path": "CODA2022_3279_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3279_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_3279_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'overcast', 'cloudy', 'snowy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_76"
+    },
+    {
+        "image_path": "CODA2022_3315_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3315_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3315_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'clear', 'rainy', 'cloudy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_77"
+    },
+    {
+        "image_path": "CODA2022_3324_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3324_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3324_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'snowy', 'rainy', 'overcast', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_78"
+    },
+    {
+        "image_path": "CODA2022_3383_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3383_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_3383_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'rainy', 'snowy', 'clear', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_79"
+    },
+    {
+        "image_path": "CODA2022_3438_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3438_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3438_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'cloudy', 'overcast', 'rainy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_80"
+    },
+    {
+        "image_path": "CODA2022_3533_night_snowy.png",
+        "time": "nighttime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3533_night_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3533_night_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'clear', 'snowy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "snowy"
+        ],
+        "id": "1_0_1_81"
+    },
+    {
+        "image_path": "CODA2022_3552_night_snowy.png",
+        "time": "nighttime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3552_night_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3552_night_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'snowy', 'cloudy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "snowy"
+        ],
+        "id": "1_0_1_82"
+    },
+    {
+        "image_path": "CODA2022_3585_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3585_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_3585_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'snowy', 'clear', 'cloudy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_83"
+    },
+    {
+        "image_path": "CODA2022_3648_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3648_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3648_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'cloudy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_84"
+    },
+    {
+        "image_path": "CODA2022_3891_daytime_overcast.png",
+        "time": "daytime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3891_daytime_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3891_daytime_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'snowy', 'cloudy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "overcast"
+        ],
+        "id": "1_0_1_85"
+    },
+    {
+        "image_path": "CODA2022_3919_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3919_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_3919_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'cloudy', 'overcast', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_86"
+    },
+    {
+        "image_path": "CODA2022_3922_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_3922_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_3922_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'snowy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_87"
+    },
+    {
+        "image_path": "CODA2022_4049_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4049_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4049_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'cloudy', 'clear', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_88"
+    },
+    {
+        "image_path": "CODA2022_4066_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4066_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4066_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'snowy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_89"
+    },
+    {
+        "image_path": "CODA2022_4094_dawn&dusk_rainy.png",
+        "time": "dawn&dusk",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4094_dawn&dusk_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_4094_dawn&dusk_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'clear', 'rainy', 'overcast', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_90"
+    },
+    {
+        "image_path": "CODA2022_4132_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4132_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_4132_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'overcast', 'snowy', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_91"
+    },
+    {
+        "image_path": "CODA2022_4135_dawn&dusk_overcast.png",
+        "time": "dawn&dusk",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4135_dawn&dusk_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_4135_dawn&dusk_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'clear', 'rainy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_92"
+    },
+    {
+        "image_path": "CODA2022_4229_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4229_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4229_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'overcast', 'snowy', 'cloudy', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_93"
+    },
+    {
+        "image_path": "CODA2022_4525_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4525_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_4525_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'cloudy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_94"
+    },
+    {
+        "image_path": "CODA2022_4777_night_overcast.png",
+        "time": "nighttime",
+        "weather": "overcast",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4777_night_overcast.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4777_night_overcast.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'rainy', 'snowy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "overcast"
+        ],
+        "id": "1_0_1_95"
+    },
+    {
+        "image_path": "CODA2022_4792_night_rainy.png",
+        "time": "nighttime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4792_night_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4792_night_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'overcast', 'rainy', 'clear', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "rainy"
+        ],
+        "id": "1_0_1_96"
+    },
+    {
+        "image_path": "CODA2022_4794_night_clear.png",
+        "time": "nighttime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4794_night_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4794_night_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'clear', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_97"
+    },
+    {
+        "image_path": "CODA2022_4818_daytime_snowy.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4818_daytime_snowy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "CODA2022_4818_daytime_snowy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'cloudy', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_98"
+    },
+    {
+        "image_path": "CODA2022_4857_dawn&dusk_clear.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4857_dawn&dusk_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_4857_dawn&dusk_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'rainy', 'overcast', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_99"
+    },
+    {
+        "image_path": "CODA2022_4866_daytime_rainy.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+            "CODA2022_4866_daytime_rainy.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "CODA2022_4866_daytime_rainy.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'cloudy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_100"
+    },
+    {
+        "image_path": "HAD_change_lane_train1074_frame_0430.png",
+        "time": "daytime",
+        "weather": "rainy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_change_lane_train1074_frame_0430.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "HAD_change_lane_train1074_frame_0430.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'cloudy', 'clear', 'overcast', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "rainy"
+        ],
+        "id": "1_0_1_101"
+    },
+    {
+        "image_path": "HAD_change_lane_train1518_frame_0100.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_change_lane_train1518_frame_0100.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "HAD_change_lane_train1518_frame_0100.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'snowy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_102"
+    },
+    {
+        "image_path": "HAD_change_lane_train2402_frame_0220.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_change_lane_train2402_frame_0220.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "HAD_change_lane_train2402_frame_0220.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'rainy', 'cloudy', 'snowy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_103"
+    },
+    {
+        "image_path": "HAD_change_lane_train3616_frame_0020.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_change_lane_train3616_frame_0020.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "HAD_change_lane_train3616_frame_0020.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'rainy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_104"
+    },
+    {
+        "image_path": "HAD_merge_train2993_frame_0010.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_merge_train2993_frame_0010.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "HAD_merge_train2993_frame_0010.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'rainy', 'cloudy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_105"
+    },
+    {
+        "image_path": "HAD_merge_train3002_frame_0510.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_merge_train3002_frame_0510.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "HAD_merge_train3002_frame_0510.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'overcast', 'rainy', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_106"
+    },
+    {
+        "image_path": "HAD_merge_train3102_frame_0430.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_merge_train3102_frame_0430.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "HAD_merge_train3102_frame_0430.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'cloudy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_107"
+    },
+    {
+        "image_path": "HAD_merge_train3165_frame_0500.png",
+        "time": "dawn&dusk",
+        "weather": "clear",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_merge_train3165_frame_0500.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "HAD_merge_train3165_frame_0500.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'snowy', 'rainy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Nighttime",
+            "clear"
+        ],
+        "id": "1_0_1_108"
+    },
+    {
+        "image_path": "HAD_slow_train2904_frame_0310.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_slow_train2904_frame_0310.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "HAD_slow_train2904_frame_0310.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'snowy', 'clear', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_109"
+    },
+    {
+        "image_path": "HAD_slow_train2909_frame_0480.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_slow_train2909_frame_0480.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "HAD_slow_train2909_frame_0480.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['snowy', 'rainy', 'cloudy', 'clear', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_110"
+    },
+    {
+        "image_path": "HAD_slow_train2932_frame_0220.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_slow_train2932_frame_0220.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "HAD_slow_train2932_frame_0220.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'clear', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_111"
+    },
+    {
+        "image_path": "HAD_slow_train2991_frame_0260.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "HAD",
+        "country": "America",
+        "questions": [
+            "HAD_slow_train2991_frame_0260.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "HAD_slow_train2991_frame_0260.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'rainy', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_112"
+    },
+    {
+        "image_path": "JAAD_video__0294_00060.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0294_00060.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "JAAD_video__0294_00060.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'rainy', 'cloudy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_113"
+    },
+    {
+        "image_path": "JAAD_video__0308_00020.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0308_00020.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "JAAD_video__0308_00020.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'cloudy', 'overcast', 'rainy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_114"
+    },
+    {
+        "image_path": "JAAD_video__0329_00090.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0329_00090.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "JAAD_video__0329_00090.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['rainy', 'overcast', 'cloudy', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_115"
+    },
+    {
+        "image_path": "JAAD_video__0334_00160.png",
+        "time": "daytime",
+        "weather": "snowy",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0334_00160.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "JAAD_video__0334_00160.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'rainy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "snowy"
+        ],
+        "id": "1_0_1_116"
+    },
+    {
+        "image_path": "JAAD_video__0336_00020.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0336_00020.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "JAAD_video__0336_00020.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'snowy', 'clear', 'rainy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_117"
+    },
+    {
+        "image_path": "JAAD_video__0336_00100.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0336_00100.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "JAAD_video__0336_00100.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'overcast', 'rainy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_118"
+    },
+    {
+        "image_path": "JAAD_video__0340_00130.png",
+        "time": "daytime",
+        "weather": "cloudy",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0340_00130.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "JAAD_video__0340_00130.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['clear', 'snowy', 'cloudy', 'rainy', 'overcast']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "cloudy"
+        ],
+        "id": "1_0_1_119"
+    },
+    {
+        "image_path": "JAAD_video__0344_00020.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0344_00020.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "JAAD_video__0344_00020.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'rainy', 'clear', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_120"
+    },
+    {
+        "image_path": "JAAD_video__0345_00000.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0345_00000.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "JAAD_video__0345_00000.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['cloudy', 'snowy', 'overcast', 'rainy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_121"
+    },
+    {
+        "image_path": "JAAD_video__0345_00080.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0345_00080.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+            "JAAD_video__0345_00080.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'rainy', 'snowy', 'cloudy']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_122"
+    },
+    {
+        "image_path": "JAAD_video__0346_00010.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "JAAD",
+        "country": "Germany",
+        "questions": [
+            "JAAD_video__0346_00010.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Daytime', 'Nighttime']. Note that no explantion is needed.",
+            "JAAD_video__0346_00010.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'cloudy', 'rainy', 'snowy', 'clear']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "Daytime",
+            "clear"
+        ],
+        "id": "1_0_1_123"
+    }
+]

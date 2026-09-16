@@ -1,0 +1,2492 @@
+[
+    {
+        "sequence": "DRAMA_2020-0127-132751",
+        "image_path": [
+            "2020-0127-132751_frame_079518.png",
+            "2020-0127-132751_frame_079527.png",
+            "2020-0127-132751_frame_079536.png"
+        ],
+        "image_path_plot": [
+            "2020-0127-132751_frame_079518_plot.png",
+            "2020-0127-132751_frame_079527_plot.png",
+            "2020-0127-132751_frame_079536_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the crosswalk', 'cross the road', 'cross the path of the vehicle', 'normal walking', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_0"
+    },
+    {
+        "sequence": "DRAMA_2020-0129-105040",
+        "image_path": [
+            "2020-0129-105040_frame_031150.png",
+            "2020-0129-105040_frame_031159.png"
+        ],
+        "image_path_plot": [
+            "2020-0129-105040_frame_031150_plot.png",
+            "2020-0129-105040_frame_031159_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'cross the path of the vehicle', 'standing and waiting', 'normal walking', 'wait for the traffic light', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_1"
+    },
+    {
+        "sequence": "DRAMA_2020-0131-103016",
+        "image_path": [
+            "2020-0131-103016_frame_085458.png",
+            "2020-0131-103016_frame_085467.png",
+            "2020-0131-103016_frame_085476.png"
+        ],
+        "image_path_plot": [
+            "2020-0131-103016_frame_085458_plot.png",
+            "2020-0131-103016_frame_085467_plot.png",
+            "2020-0131-103016_frame_085476_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'standing and waiting', 'cross the road', 'normal walking', 'wait for the traffic light', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_2"
+    },
+    {
+        "sequence": "DRAMA_2020-0131-103016_2",
+        "image_path": [
+            "2020-0131-103016_frame_085494.png",
+            "2020-0131-103016_frame_085503.png",
+            "2020-0131-103016_frame_085512.png",
+            "2020-0131-103016_frame_085521.png"
+        ],
+        "image_path_plot": [
+            "2020-0131-103016_frame_085494_plot.png",
+            "2020-0131-103016_frame_085503_plot.png",
+            "2020-0131-103016_frame_085512_plot.png",
+            "2020-0131-103016_frame_085521_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'standing and waiting', 'normal walking', 'cross the road', 'normal driving', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_3"
+    },
+    {
+        "sequence": "DRAMA_2020-0203-114632",
+        "image_path": [
+            "2020-0203-114632_frame_049510.png",
+            "2020-0203-114632_frame_049519.png",
+            "2020-0203-114632_frame_049528.png",
+            "2020-0203-114632_frame_049537.png"
+        ],
+        "image_path_plot": [
+            "2020-0203-114632_frame_049510_plot.png",
+            "2020-0203-114632_frame_049519_plot.png",
+            "2020-0203-114632_frame_049528_plot.png",
+            "2020-0203-114632_frame_049537_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'cross the road', 'normal walking', 'wait for the traffic light', 'cross the crosswalk', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_4"
+    },
+    {
+        "sequence": "DRAMA_2020-0203-114632_2",
+        "image_path": [
+            "2020-0203-114632_frame_065492.png",
+            "2020-0203-114632_frame_065501.png",
+            "2020-0203-114632_frame_065510.png"
+        ],
+        "image_path_plot": [
+            "2020-0203-114632_frame_065492_plot.png",
+            "2020-0203-114632_frame_065501_plot.png",
+            "2020-0203-114632_frame_065510_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'standing and waiting', 'normal walking', 'cross the road', 'cross the path of the vehicle', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_5"
+    },
+    {
+        "sequence": "DRAMA_2020-0203-114632_3",
+        "image_path": [
+            "2020-0203-114632_frame_086164.png",
+            "2020-0203-114632_frame_086173.png"
+        ],
+        "image_path_plot": [
+            "2020-0203-114632_frame_086164_plot.png",
+            "2020-0203-114632_frame_086173_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['standing and waiting', 'cross the crosswalk', 'cross the road', 'normal walking', 'wait for the traffic light', 'cross the path of the vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_6"
+    },
+    {
+        "sequence": "DRAMA_2020-0205-103411",
+        "image_path": [
+            "2020-0205-103411_frame_013799.png",
+            "2020-0205-103411_frame_013808.png",
+            "2020-0205-103411_frame_013817.png"
+        ],
+        "image_path_plot": [
+            "2020-0205-103411_frame_013799_plot.png",
+            "2020-0205-103411_frame_013808_plot.png",
+            "2020-0205-103411_frame_013817_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'normal driving', 'cross the road', 'cross the crosswalk', 'standing and waiting', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_7"
+    },
+    {
+        "sequence": "DRAMA_2020-0207-101955",
+        "image_path": [
+            "2020-0207-101955_frame_037772.png",
+            "2020-0207-101955_frame_037781.png",
+            "2020-0207-101955_frame_037790.png",
+            "2020-0207-101955_frame_037799.png"
+        ],
+        "image_path_plot": [
+            "2020-0207-101955_frame_037772_plot.png",
+            "2020-0207-101955_frame_037781_plot.png",
+            "2020-0207-101955_frame_037790_plot.png",
+            "2020-0207-101955_frame_037799_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'cross the crosswalk', 'normal walking', 'wait for the traffic light', 'cross the road', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_8"
+    },
+    {
+        "sequence": "DRAMA_2020-0212-102546",
+        "image_path": [
+            "2020-0212-102546_frame_053800.png",
+            "2020-0212-102546_frame_053809.png",
+            "2020-0212-102546_frame_053818.png",
+            "2020-0212-102546_frame_053827.png",
+            "2020-0212-102546_frame_053836.png"
+        ],
+        "image_path_plot": [
+            "2020-0212-102546_frame_053800_plot.png",
+            "2020-0212-102546_frame_053809_plot.png",
+            "2020-0212-102546_frame_053818_plot.png",
+            "2020-0212-102546_frame_053827_plot.png",
+            "2020-0212-102546_frame_053836_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal walking', 'standing and waiting', 'normal driving', 'cross the crosswalk', 'wait for the traffic light', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_9"
+    },
+    {
+        "sequence": "DRAMA_2020-0213-143552",
+        "image_path": [
+            "2020-0213-143552_frame_012416.png",
+            "2020-0213-143552_frame_012425.png",
+            "2020-0213-143552_frame_012434.png",
+            "2020-0213-143552_frame_012443.png",
+            "2020-0213-143552_frame_012452.png"
+        ],
+        "image_path_plot": [
+            "2020-0213-143552_frame_012416_plot.png",
+            "2020-0213-143552_frame_012425_plot.png",
+            "2020-0213-143552_frame_012434_plot.png",
+            "2020-0213-143552_frame_012443_plot.png",
+            "2020-0213-143552_frame_012452_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'normal driving', 'standing and waiting', 'cross the road', 'cross the crosswalk', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_10"
+    },
+    {
+        "sequence": "DRAMA_2020-0214-102601_3",
+        "image_path": [
+            "2020-0214-102601_frame_074921.png",
+            "2020-0214-102601_frame_074930.png",
+            "2020-0214-102601_frame_074939.png",
+            "2020-0214-102601_frame_074948.png"
+        ],
+        "image_path_plot": [
+            "2020-0214-102601_frame_074921_plot.png",
+            "2020-0214-102601_frame_074930_plot.png",
+            "2020-0214-102601_frame_074939_plot.png",
+            "2020-0214-102601_frame_074948_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal walking', 'cross the path of the vehicle', 'cross the road', 'cross the crosswalk', 'wait for the traffic light', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_11"
+    },
+    {
+        "sequence": "DRAMA_2020-0214-102601_4",
+        "image_path": [
+            "2020-0214-102601_frame_085620.png",
+            "2020-0214-102601_frame_085629.png",
+            "2020-0214-102601_frame_085638.png",
+            "2020-0214-102601_frame_085647.png",
+            "2020-0214-102601_frame_085656.png"
+        ],
+        "image_path_plot": [
+            "2020-0214-102601_frame_085620_plot.png",
+            "2020-0214-102601_frame_085629_plot.png",
+            "2020-0214-102601_frame_085638_plot.png",
+            "2020-0214-102601_frame_085647_plot.png",
+            "2020-0214-102601_frame_085656_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['standing and waiting', 'cross the road', 'normal walking', 'cross the path of the vehicle', 'wait for the traffic light', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_12"
+    },
+    {
+        "sequence": "DRAMA_2020-0225-145150",
+        "image_path": [
+            "2020-0225-145150_frame_011531.png",
+            "2020-0225-145150_frame_011540.png",
+            "2020-0225-145150_frame_011549.png",
+            "2020-0225-145150_frame_011558.png",
+            "2020-0225-145150_frame_011567.png"
+        ],
+        "image_path_plot": [
+            "2020-0225-145150_frame_011531_plot.png",
+            "2020-0225-145150_frame_011540_plot.png",
+            "2020-0225-145150_frame_011549_plot.png",
+            "2020-0225-145150_frame_011558_plot.png",
+            "2020-0225-145150_frame_011567_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['standing and waiting', 'normal walking', 'wait for the traffic light', 'cross the road', 'cross the path of the vehicle', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_13"
+    },
+    {
+        "sequence": "DRAMA_2020-0226-101332",
+        "image_path": [
+            "2020-0226-101332_frame_019000.png",
+            "2020-0226-101332_frame_019009.png",
+            "2020-0226-101332_frame_019018.png"
+        ],
+        "image_path_plot": [
+            "2020-0226-101332_frame_019000_plot.png",
+            "2020-0226-101332_frame_019009_plot.png",
+            "2020-0226-101332_frame_019018_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the crosswalk', 'standing and waiting', 'cross the path of the vehicle', 'cross the road', 'normal walking', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_14"
+    },
+    {
+        "sequence": "DRAMA_2020-0227-153144",
+        "image_path": [
+            "2020-0227-153144_frame_008479.png",
+            "2020-0227-153144_frame_008481.png",
+            "2020-0227-153144_frame_008488.png",
+            "2020-0227-153144_frame_008490.png"
+        ],
+        "image_path_plot": [
+            "2020-0227-153144_frame_008479_plot.png",
+            "2020-0227-153144_frame_008481_plot.png",
+            "2020-0227-153144_frame_008488_plot.png",
+            "2020-0227-153144_frame_008490_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'cross the path of the vehicle', 'standing and waiting', 'normal walking', 'wait for the traffic light', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_15"
+    },
+    {
+        "sequence": "DRAMA_2020-0228-102841",
+        "image_path": [
+            "2020-0228-102841_frame_054395.png",
+            "2020-0228-102841_frame_054404.png",
+            "2020-0228-102841_frame_054413.png"
+        ],
+        "image_path_plot": [
+            "2020-0228-102841_frame_054395_plot.png",
+            "2020-0228-102841_frame_054404_plot.png",
+            "2020-0228-102841_frame_054413_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'cross the crosswalk', 'standing and waiting', 'wait for the traffic light', 'cross the road', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_16"
+    },
+    {
+        "sequence": "DRAMA_clip_1121_000084",
+        "image_path": [
+            "clip_1121_000084_frame_000012.png",
+            "clip_1121_000084_frame_000024.png"
+        ],
+        "image_path_plot": [
+            "clip_1121_000084_frame_000012_plot.png",
+            "clip_1121_000084_frame_000024_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'cross the crosswalk', 'standing and waiting', 'wait for the traffic light', 'cross the road', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_17"
+    },
+    {
+        "sequence": "DRAMA_clip_1156_000162",
+        "image_path": [
+            "clip_1156_000162_frame_000126.png",
+            "clip_1156_000162_frame_000138.png",
+            "clip_1156_000162_frame_000150.png",
+            "clip_1156_000162_frame_000162.png"
+        ],
+        "image_path_plot": [
+            "clip_1156_000162_frame_000126_plot.png",
+            "clip_1156_000162_frame_000138_plot.png",
+            "clip_1156_000162_frame_000150_plot.png",
+            "clip_1156_000162_frame_000162_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Tricycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Tricycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Tricycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'jaywalking', 'proceed by borrowing lane', 'cross the road', 'might turn right', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_18"
+    },
+    {
+        "sequence": "DRAMA_clip_1339_000474",
+        "image_path": [
+            "clip_1339_000474_frame_000450.png",
+            "clip_1339_000474_frame_000462.png",
+            "clip_1339_000474_frame_000474.png"
+        ],
+        "image_path_plot": [
+            "clip_1339_000474_frame_000450_plot.png",
+            "clip_1339_000474_frame_000462_plot.png",
+            "clip_1339_000474_frame_000474_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the path of the vehicle', 'cross the crosswalk', 'standing and waiting', 'cross the road', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_19"
+    },
+    {
+        "sequence": "DRAMA_clip_1352_000552",
+        "image_path": [
+            "clip_1352_000552_frame_000516.png",
+            "clip_1352_000552_frame_000528.png",
+            "clip_1352_000552_frame_000540.png",
+            "clip_1352_000552_frame_000552.png"
+        ],
+        "image_path_plot": [
+            "clip_1352_000552_frame_000516_plot.png",
+            "clip_1352_000552_frame_000528_plot.png",
+            "clip_1352_000552_frame_000540_plot.png",
+            "clip_1352_000552_frame_000552_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['jaywalking', 'might turn right', 'might turn left', 'normal driving', 'proceed by borrowing lane', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "proceed by borrowing lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_20"
+    },
+    {
+        "sequence": "DRAMA_clip_165_000168",
+        "image_path": [
+            "clip_165_000168_frame_000144.png",
+            "clip_165_000168_frame_000156.png"
+        ],
+        "image_path_plot": [
+            "clip_165_000168_frame_000144_plot.png",
+            "clip_165_000168_frame_000156_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the crosswalk', 'normal walking', 'cross the road', 'cross the path of the vehicle', 'wait for the traffic light', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_21"
+    },
+    {
+        "sequence": "DRAMA_clip_177_000150",
+        "image_path": [
+            "clip_177_000150_frame_000090.png",
+            "clip_177_000150_frame_000102.png",
+            "clip_177_000150_frame_000114.png"
+        ],
+        "image_path_plot": [
+            "clip_177_000150_frame_000090_plot.png",
+            "clip_177_000150_frame_000102_plot.png",
+            "clip_177_000150_frame_000114_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'might turn left', 'proceed by borrowing lane', 'might turn right', 'jaywalking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "might turn right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_22"
+    },
+    {
+        "sequence": "DRAMA_clip_298_000474",
+        "image_path": [
+            "clip_298_000474_frame_000390.png",
+            "clip_298_000474_frame_000402.png"
+        ],
+        "image_path_plot": [
+            "clip_298_000474_frame_000390_plot.png",
+            "clip_298_000474_frame_000402_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'cross the road', 'jaywalking', 'proceed by borrowing lane', 'might turn right', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_23"
+    },
+    {
+        "sequence": "DRAMA_clip_358_000204",
+        "image_path": [
+            "clip_358_000204_frame_000120.png",
+            "clip_358_000204_frame_000132.png",
+            "clip_358_000204_frame_000144.png"
+        ],
+        "image_path_plot": [
+            "clip_358_000204_frame_000120_plot.png",
+            "clip_358_000204_frame_000132_plot.png",
+            "clip_358_000204_frame_000144_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'cross the road', 'jaywalking', 'proceed by borrowing lane', 'might turn right', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "jaywalking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_24"
+    },
+    {
+        "sequence": "DRAMA_clip_449_000552",
+        "image_path": [
+            "clip_449_000552_frame_000468.png",
+            "clip_449_000552_frame_000480.png"
+        ],
+        "image_path_plot": [
+            "clip_449_000552_frame_000468_plot.png",
+            "clip_449_000552_frame_000480_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'standing and waiting', 'cross the crosswalk', 'cross the path of the vehicle', 'normal walking', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_25"
+    },
+    {
+        "sequence": "DRAMA_clip_535_000360",
+        "image_path": [
+            "clip_535_000360_frame_000324.png",
+            "clip_535_000360_frame_000336.png",
+            "clip_535_000360_frame_000348.png",
+            "clip_535_000360_frame_000360.png"
+        ],
+        "image_path_plot": [
+            "clip_535_000360_frame_000324_plot.png",
+            "clip_535_000360_frame_000336_plot.png",
+            "clip_535_000360_frame_000348_plot.png",
+            "clip_535_000360_frame_000360_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'standing and waiting', 'cross the crosswalk', 'cross the path of the vehicle', 'normal walking', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_26"
+    },
+    {
+        "sequence": "DRAMA_clip_639_000594",
+        "image_path": [
+            "clip_639_000594_frame_000510.png",
+            "clip_639_000594_frame_000522.png"
+        ],
+        "image_path_plot": [
+            "clip_639_000594_frame_000510_plot.png",
+            "clip_639_000594_frame_000522_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Electric vehicle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'standing and waiting', 'might turn left', 'cross the path of the vehicle', 'might turn right', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "might turn left"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_27"
+    },
+    {
+        "sequence": "DRAMA_clip_639_000594_2",
+        "image_path": [
+            "clip_639_000594_frame_000570.png",
+            "clip_639_000594_frame_000582.png"
+        ],
+        "image_path_plot": [
+            "clip_639_000594_frame_000570_plot.png",
+            "clip_639_000594_frame_000582_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the path of the vehicle', 'standing and waiting', 'cross the crosswalk', 'normal walking', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_28"
+    },
+    {
+        "sequence": "DRAMA_clip_686_000468",
+        "image_path": [
+            "clip_686_000468_frame_000384.png",
+            "clip_686_000468_frame_000396.png"
+        ],
+        "image_path_plot": [
+            "clip_686_000468_frame_000384_plot.png",
+            "clip_686_000468_frame_000396_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'normal walking', 'cross the crosswalk', 'standing and waiting', 'wait for the traffic light', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_29"
+    },
+    {
+        "sequence": "DRAMA_clip_842_000396",
+        "image_path": [
+            "clip_842_000396_frame_000312.png",
+            "clip_842_000396_frame_000324.png"
+        ],
+        "image_path_plot": [
+            "clip_842_000396_frame_000312_plot.png",
+            "clip_842_000396_frame_000324_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'might turn right', 'jaywalking', 'normal driving', 'cross the road', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_30"
+    },
+    {
+        "sequence": "DRAMA_clip_993_000114",
+        "image_path": [
+            "clip_993_000114_frame_000030.png",
+            "clip_993_000114_frame_000042.png",
+            "clip_993_000114_frame_000054.png",
+            "clip_993_000114_frame_000066.png"
+        ],
+        "image_path_plot": [
+            "clip_993_000114_frame_000030_plot.png",
+            "clip_993_000114_frame_000042_plot.png",
+            "clip_993_000114_frame_000054_plot.png",
+            "clip_993_000114_frame_000066_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['jaywalking', 'proceed by borrowing lane', 'wait for the traffic light', 'cross the road', 'might turn right', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_31"
+    },
+    {
+        "sequence": "HAD_train0262",
+        "image_path": [
+            "HAD_cyclist_train0262_frame_0220.png",
+            "HAD_cyclist_train0262_frame_0230.png",
+            "HAD_cyclist_train0262_frame_0240.png"
+        ],
+        "image_path_plot": [
+            "HAD_cyclist_train0262_frame_0220_plot.png",
+            "HAD_cyclist_train0262_frame_0230_plot.png",
+            "HAD_cyclist_train0262_frame_0240_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the path of the vehicle', 'cross the road', 'cross the crosswalk', 'normal walking', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_2_32"
+    },
+    {
+        "sequence": "JAAD_video__0001",
+        "image_path": [
+            "JAAD_video__0001_00360.png",
+            "JAAD_video__0001_00380.png",
+            "JAAD_video__0001_00400.png",
+            "JAAD_video__0001_00420.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0001_00360_plot.png",
+            "JAAD_video__0001_00380_plot.png",
+            "JAAD_video__0001_00400_plot.png",
+            "JAAD_video__0001_00420_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn left', 'standing and waiting', 'normal walking', 'proceed by borrowing lane', 'cross the path of the vehicle', 'might turn right']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the path of the vehicle"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_33"
+    },
+    {
+        "sequence": "JAAD_video__0002",
+        "image_path": [
+            "JAAD_video__0002_00030.png",
+            "JAAD_video__0002_00040.png",
+            "JAAD_video__0002_00050.png",
+            "JAAD_video__0002_00060.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0002_00030_plot.png",
+            "JAAD_video__0002_00040_plot.png",
+            "JAAD_video__0002_00050_plot.png",
+            "JAAD_video__0002_00060_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'might turn left', 'normal walking', 'standing and waiting', 'cross the path of the vehicle', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the path of the vehicle"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_34"
+    },
+    {
+        "sequence": "JAAD_video__0003",
+        "image_path": [
+            "JAAD_video__0003_00000.png",
+            "JAAD_video__0003_00010.png",
+            "JAAD_video__0003_00020.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0003_00000_plot.png",
+            "JAAD_video__0003_00010_plot.png",
+            "JAAD_video__0003_00020_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'cross the road', 'might turn right', 'proceed by borrowing lane', 'jaywalking', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_35"
+    },
+    {
+        "sequence": "JAAD_video__0004",
+        "image_path": [
+            "JAAD_video__0004_00000.png",
+            "JAAD_video__0004_00010.png",
+            "JAAD_video__0004_00020.png",
+            "JAAD_video__0004_00030.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0004_00000_plot.png",
+            "JAAD_video__0004_00010_plot.png",
+            "JAAD_video__0004_00020_plot.png",
+            "JAAD_video__0004_00030_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'jaywalking', 'wait for the traffic light', 'cross the road', 'normal driving', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_36"
+    },
+    {
+        "sequence": "JAAD_video__0004_2",
+        "image_path": [
+            "JAAD_video__0004_00040.png",
+            "JAAD_video__0004_00050.png",
+            "JAAD_video__0004_00060.png",
+            "JAAD_video__0004_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0004_00040_plot.png",
+            "JAAD_video__0004_00050_plot.png",
+            "JAAD_video__0004_00060_plot.png",
+            "JAAD_video__0004_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'might turn left', 'normal walking', 'standing and waiting', 'might turn right', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_37"
+    },
+    {
+        "sequence": "JAAD_video__0006",
+        "image_path": [
+            "JAAD_video__0006_00120.png",
+            "JAAD_video__0006_00130.png",
+            "JAAD_video__0006_00140.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0006_00120_plot.png",
+            "JAAD_video__0006_00130_plot.png",
+            "JAAD_video__0006_00140_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'cross the road', 'jaywalking', 'wait for the traffic light', 'might turn right', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_38"
+    },
+    {
+        "sequence": "JAAD_video__0006_2",
+        "image_path": [
+            "JAAD_video__0006_00170.png",
+            "JAAD_video__0006_00180.png",
+            "JAAD_video__0006_00190.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0006_00170_plot.png",
+            "JAAD_video__0006_00180_plot.png",
+            "JAAD_video__0006_00190_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'cross the road', 'jaywalking', 'wait for the traffic light', 'might turn right', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "no",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_39"
+    },
+    {
+        "sequence": "JAAD_video__0009",
+        "image_path": [
+            "JAAD_video__0009_00030.png",
+            "JAAD_video__0009_00040.png",
+            "JAAD_video__0009_00050.png",
+            "JAAD_video__0009_00060.png",
+            "JAAD_video__0009_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0009_00030_plot.png",
+            "JAAD_video__0009_00040_plot.png",
+            "JAAD_video__0009_00050_plot.png",
+            "JAAD_video__0009_00060_plot.png",
+            "JAAD_video__0009_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'might turn right', 'normal walking', 'standing and waiting', 'cross the crosswalk', 'might turn left']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_40"
+    },
+    {
+        "sequence": "JAAD_video__0010",
+        "image_path": [
+            "JAAD_video__0010_00010.png",
+            "JAAD_video__0010_00020.png",
+            "JAAD_video__0010_00030.png",
+            "JAAD_video__0010_00040.png",
+            "JAAD_video__0010_00050.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0010_00010_plot.png",
+            "JAAD_video__0010_00020_plot.png",
+            "JAAD_video__0010_00030_plot.png",
+            "JAAD_video__0010_00040_plot.png",
+            "JAAD_video__0010_00050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['standing and waiting', 'cross the path of the vehicle', 'might turn left', 'normal walking', 'cross the crosswalk', 'might turn right']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_41"
+    },
+    {
+        "sequence": "JAAD_video__0011",
+        "image_path": [
+            "JAAD_video__0011_00060.png",
+            "JAAD_video__0011_00070.png",
+            "JAAD_video__0011_00080.png",
+            "JAAD_video__0011_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0011_00060_plot.png",
+            "JAAD_video__0011_00070_plot.png",
+            "JAAD_video__0011_00080_plot.png",
+            "JAAD_video__0011_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'might turn right', 'wait for the traffic light', 'jaywalking', 'cross the road', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_42"
+    },
+    {
+        "sequence": "JAAD_video__0014",
+        "image_path": [
+            "JAAD_video__0014_00070.png",
+            "JAAD_video__0014_00080.png",
+            "JAAD_video__0014_00090.png",
+            "JAAD_video__0014_00100.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0014_00070_plot.png",
+            "JAAD_video__0014_00080_plot.png",
+            "JAAD_video__0014_00090_plot.png",
+            "JAAD_video__0014_00100_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'normal driving', 'wait for the traffic light', 'might turn right', 'cross the road', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_43"
+    },
+    {
+        "sequence": "JAAD_video__0020",
+        "image_path": [
+            "JAAD_video__0020_00000.png",
+            "JAAD_video__0020_00010.png",
+            "JAAD_video__0020_00020.png",
+            "JAAD_video__0020_00030.png",
+            "JAAD_video__0020_00040.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0020_00000_plot.png",
+            "JAAD_video__0020_00010_plot.png",
+            "JAAD_video__0020_00020_plot.png",
+            "JAAD_video__0020_00030_plot.png",
+            "JAAD_video__0020_00040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the crosswalk', 'normal walking', 'might turn right', 'standing and waiting', 'cross the path of the vehicle', 'might turn left']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_44"
+    },
+    {
+        "sequence": "JAAD_video__0020_2",
+        "image_path": [
+            "JAAD_video__0020_00330.png",
+            "JAAD_video__0020_00350.png",
+            "JAAD_video__0020_00370.png",
+            "JAAD_video__0020_00390.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0020_00330_plot.png",
+            "JAAD_video__0020_00350_plot.png",
+            "JAAD_video__0020_00370_plot.png",
+            "JAAD_video__0020_00390_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'normal driving', 'cross the road', 'might turn right', 'wait for the traffic light', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_45"
+    },
+    {
+        "sequence": "JAAD_video__0020_3",
+        "image_path": [
+            "JAAD_video__0020_00060.png",
+            "JAAD_video__0020_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0020_00060_plot.png",
+            "JAAD_video__0020_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the path of the vehicle', 'might turn right', 'might turn left', 'normal walking', 'cross the crosswalk', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_46"
+    },
+    {
+        "sequence": "JAAD_video__0024",
+        "image_path": [
+            "JAAD_video__0024_00060.png",
+            "JAAD_video__0024_00070.png",
+            "JAAD_video__0024_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0024_00060_plot.png",
+            "JAAD_video__0024_00070_plot.png",
+            "JAAD_video__0024_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'might turn right', 'jaywalking', 'wait for the traffic light', 'proceed by borrowing lane', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_47"
+    },
+    {
+        "sequence": "JAAD_video__0027",
+        "image_path": [
+            "JAAD_video__0027_00070.png",
+            "JAAD_video__0027_00080.png",
+            "JAAD_video__0027_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0027_00070_plot.png",
+            "JAAD_video__0027_00080_plot.png",
+            "JAAD_video__0027_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'wait for the traffic light', 'cross the road', 'might turn right', 'jaywalking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_48"
+    },
+    {
+        "sequence": "JAAD_video__0028",
+        "image_path": [
+            "JAAD_video__0028_00060.png",
+            "JAAD_video__0028_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0028_00060_plot.png",
+            "JAAD_video__0028_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'might turn right', 'wait for the traffic light', 'cross the road', 'jaywalking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_49"
+    },
+    {
+        "sequence": "JAAD_video__0038",
+        "image_path": [
+            "JAAD_video__0038_00080.png",
+            "JAAD_video__0038_00190.png",
+            "JAAD_video__0038_00210.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0038_00080_plot.png",
+            "JAAD_video__0038_00190_plot.png",
+            "JAAD_video__0038_00210_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'normal driving', 'cross the road', 'proceed by borrowing lane', 'jaywalking', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_50"
+    },
+    {
+        "sequence": "JAAD_video__0041",
+        "image_path": [
+            "JAAD_video__0041_00010.png",
+            "JAAD_video__0041_00030.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0041_00010_plot.png",
+            "JAAD_video__0041_00030_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'might turn right', 'wait for the traffic light', 'proceed by borrowing lane', 'jaywalking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_51"
+    },
+    {
+        "sequence": "JAAD_video__0049",
+        "image_path": [
+            "JAAD_video__0049_00120.png",
+            "JAAD_video__0049_00130.png",
+            "JAAD_video__0049_00140.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0049_00120_plot.png",
+            "JAAD_video__0049_00130_plot.png",
+            "JAAD_video__0049_00140_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'might turn right', 'wait for the traffic light', 'jaywalking', 'cross the road', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_52"
+    },
+    {
+        "sequence": "JAAD_video__0050",
+        "image_path": [
+            "JAAD_video__0050_00060.png",
+            "JAAD_video__0050_00070.png",
+            "JAAD_video__0050_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0050_00060_plot.png",
+            "JAAD_video__0050_00070_plot.png",
+            "JAAD_video__0050_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'wait for the traffic light', 'might turn right', 'jaywalking', 'proceed by borrowing lane', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_53"
+    },
+    {
+        "sequence": "JAAD_video__0054",
+        "image_path": [
+            "JAAD_video__0054_00100.png",
+            "JAAD_video__0054_00120.png",
+            "JAAD_video__0054_00140.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0054_00100_plot.png",
+            "JAAD_video__0054_00120_plot.png",
+            "JAAD_video__0054_00140_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'jaywalking', 'normal driving', 'wait for the traffic light', 'cross the road', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_54"
+    },
+    {
+        "sequence": "JAAD_video__0060",
+        "image_path": [
+            "JAAD_video__0060_00050.png",
+            "JAAD_video__0060_00070.png",
+            "JAAD_video__0060_00090.png",
+            "JAAD_video__0060_00110.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0060_00050_plot.png",
+            "JAAD_video__0060_00070_plot.png",
+            "JAAD_video__0060_00090_plot.png",
+            "JAAD_video__0060_00110_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['jaywalking', 'normal walking', 'cross the crosswalk', 'wait for the traffic light', 'normal driving', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_55"
+    },
+    {
+        "sequence": "JAAD_video__0063",
+        "image_path": [
+            "JAAD_video__0063_00070.png",
+            "JAAD_video__0063_00080.png",
+            "JAAD_video__0063_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0063_00070_plot.png",
+            "JAAD_video__0063_00080_plot.png",
+            "JAAD_video__0063_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['jaywalking', 'normal walking', 'normal driving', 'cross the crosswalk', 'cross the road', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_56"
+    },
+    {
+        "sequence": "JAAD_video__0073",
+        "image_path": [
+            "JAAD_video__0073_00030.png",
+            "JAAD_video__0073_00040.png",
+            "JAAD_video__0073_00050.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0073_00030_plot.png",
+            "JAAD_video__0073_00040_plot.png",
+            "JAAD_video__0073_00050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'wait for the traffic light', 'jaywalking', 'normal driving', 'proceed by borrowing lane', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_57"
+    },
+    {
+        "sequence": "JAAD_video__0079",
+        "image_path": [
+            "JAAD_video__0079_00090.png",
+            "JAAD_video__0079_00100.png",
+            "JAAD_video__0079_00110.png",
+            "JAAD_video__0079_00120.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0079_00090_plot.png",
+            "JAAD_video__0079_00100_plot.png",
+            "JAAD_video__0079_00110_plot.png",
+            "JAAD_video__0079_00120_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the crosswalk', 'jaywalking', 'normal walking', 'wait for the traffic light', 'cross the road', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_58"
+    },
+    {
+        "sequence": "JAAD_video__0081",
+        "image_path": [
+            "JAAD_video__0081_00040.png",
+            "JAAD_video__0081_00050.png",
+            "JAAD_video__0081_00060.png",
+            "JAAD_video__0081_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0081_00040_plot.png",
+            "JAAD_video__0081_00050_plot.png",
+            "JAAD_video__0081_00060_plot.png",
+            "JAAD_video__0081_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the crosswalk', 'jaywalking', 'cross the road', 'normal driving', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_59"
+    },
+    {
+        "sequence": "JAAD_video__0096",
+        "image_path": [
+            "JAAD_video__0096_00070.png",
+            "JAAD_video__0096_00080.png",
+            "JAAD_video__0096_00090.png",
+            "JAAD_video__0096_00100.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0096_00070_plot.png",
+            "JAAD_video__0096_00080_plot.png",
+            "JAAD_video__0096_00090_plot.png",
+            "JAAD_video__0096_00100_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'jaywalking', 'cross the crosswalk', 'wait for the traffic light', 'normal driving', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_60"
+    },
+    {
+        "sequence": "JAAD_video__0097",
+        "image_path": [
+            "JAAD_video__0097_00000.png",
+            "JAAD_video__0097_00020.png",
+            "JAAD_video__0097_00040.png",
+            "JAAD_video__0097_00060.png",
+            "JAAD_video__0097_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0097_00000_plot.png",
+            "JAAD_video__0097_00020_plot.png",
+            "JAAD_video__0097_00040_plot.png",
+            "JAAD_video__0097_00060_plot.png",
+            "JAAD_video__0097_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'cross the crosswalk', 'standing and waiting', 'wait for the traffic light', 'cross the path of the vehicle', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_61"
+    },
+    {
+        "sequence": "JAAD_video__0102",
+        "image_path": [
+            "JAAD_video__0102_00160.png",
+            "JAAD_video__0102_00180.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0102_00160_plot.png",
+            "JAAD_video__0102_00180_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the path of the vehicle', 'normal walking', 'standing and waiting', 'cross the crosswalk', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_62"
+    },
+    {
+        "sequence": "JAAD_video__0103",
+        "image_path": [
+            "JAAD_video__0103_00090.png",
+            "JAAD_video__0103_00110.png",
+            "JAAD_video__0103_00130.png",
+            "JAAD_video__0103_00150.png",
+            "JAAD_video__0103_00170.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0103_00090_plot.png",
+            "JAAD_video__0103_00110_plot.png",
+            "JAAD_video__0103_00130_plot.png",
+            "JAAD_video__0103_00150_plot.png",
+            "JAAD_video__0103_00170_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal walking', 'wait for the traffic light', 'cross the crosswalk', 'standing and waiting', 'cross the path of the vehicle', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_63"
+    },
+    {
+        "sequence": "JAAD_video__0110",
+        "image_path": [
+            "JAAD_video__0110_00020.png",
+            "JAAD_video__0110_00040.png",
+            "JAAD_video__0110_00060.png",
+            "JAAD_video__0110_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0110_00020_plot.png",
+            "JAAD_video__0110_00040_plot.png",
+            "JAAD_video__0110_00060_plot.png",
+            "JAAD_video__0110_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'proceed by borrowing lane', 'jaywalking', 'normal driving', 'wait for the traffic light', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_64"
+    },
+    {
+        "sequence": "JAAD_video__0125",
+        "image_path": [
+            "JAAD_video__0125_00070.png",
+            "JAAD_video__0125_00090.png",
+            "JAAD_video__0125_00110.png",
+            "JAAD_video__0125_00130.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0125_00070_plot.png",
+            "JAAD_video__0125_00090_plot.png",
+            "JAAD_video__0125_00110_plot.png",
+            "JAAD_video__0125_00130_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'cross the crosswalk', 'wait for the traffic light', 'standing and waiting', 'cross the path of the vehicle', 'normal walking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_65"
+    },
+    {
+        "sequence": "JAAD_video__0126",
+        "image_path": [
+            "JAAD_video__0126_00080.png",
+            "JAAD_video__0126_00100.png",
+            "JAAD_video__0126_00120.png",
+            "JAAD_video__0126_00140.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0126_00080_plot.png",
+            "JAAD_video__0126_00100_plot.png",
+            "JAAD_video__0126_00120_plot.png",
+            "JAAD_video__0126_00140_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['standing and waiting', 'cross the path of the vehicle', 'normal walking', 'cross the road', 'wait for the traffic light', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_66"
+    },
+    {
+        "sequence": "JAAD_video__0129",
+        "image_path": [
+            "JAAD_video__0129_00020.png",
+            "JAAD_video__0129_00030.png",
+            "JAAD_video__0129_00040.png",
+            "JAAD_video__0129_00050.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0129_00020_plot.png",
+            "JAAD_video__0129_00030_plot.png",
+            "JAAD_video__0129_00040_plot.png",
+            "JAAD_video__0129_00050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'might turn right', 'wait for the traffic light', 'proceed by borrowing lane', 'normal driving', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_67"
+    },
+    {
+        "sequence": "JAAD_video__0133",
+        "image_path": [
+            "JAAD_video__0133_00010.png",
+            "JAAD_video__0133_00030.png",
+            "JAAD_video__0133_00050.png",
+            "JAAD_video__0133_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0133_00010_plot.png",
+            "JAAD_video__0133_00030_plot.png",
+            "JAAD_video__0133_00050_plot.png",
+            "JAAD_video__0133_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'proceed by borrowing lane', 'cross the road', 'might turn right', 'jaywalking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_68"
+    },
+    {
+        "sequence": "JAAD_video__0137",
+        "image_path": [
+            "JAAD_video__0137_00090.png",
+            "JAAD_video__0137_00100.png",
+            "JAAD_video__0137_00110.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0137_00090_plot.png",
+            "JAAD_video__0137_00100_plot.png",
+            "JAAD_video__0137_00110_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'normal driving', 'cross the road', 'might turn right', 'wait for the traffic light', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_69"
+    },
+    {
+        "sequence": "JAAD_video__0138",
+        "image_path": [
+            "JAAD_video__0138_00020.png",
+            "JAAD_video__0138_00040.png",
+            "JAAD_video__0138_00080.png",
+            "JAAD_video__0138_00100.png",
+            "JAAD_video__0138_00120.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0138_00020_plot.png",
+            "JAAD_video__0138_00040_plot.png",
+            "JAAD_video__0138_00080_plot.png",
+            "JAAD_video__0138_00100_plot.png",
+            "JAAD_video__0138_00120_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'jaywalking', 'might turn right', 'normal driving', 'cross the road', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_70"
+    },
+    {
+        "sequence": "JAAD_video__0154",
+        "image_path": [
+            "JAAD_video__0154_00210.png",
+            "JAAD_video__0154_00230.png",
+            "JAAD_video__0154_00250.png",
+            "JAAD_video__0154_00270.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0154_00210_plot.png",
+            "JAAD_video__0154_00230_plot.png",
+            "JAAD_video__0154_00250_plot.png",
+            "JAAD_video__0154_00270_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'proceed by borrowing lane', 'might turn right', 'wait for the traffic light', 'jaywalking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_71"
+    },
+    {
+        "sequence": "JAAD_video__0155",
+        "image_path": [
+            "JAAD_video__0155_00010.png",
+            "JAAD_video__0155_00030.png",
+            "JAAD_video__0155_00050.png",
+            "JAAD_video__0155_00070.png",
+            "JAAD_video__0155_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0155_00010_plot.png",
+            "JAAD_video__0155_00030_plot.png",
+            "JAAD_video__0155_00050_plot.png",
+            "JAAD_video__0155_00070_plot.png",
+            "JAAD_video__0155_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'jaywalking', 'wait for the traffic light', 'cross the crosswalk', 'normal walking', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the road"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_72"
+    },
+    {
+        "sequence": "JAAD_video__0156",
+        "image_path": [
+            "JAAD_video__0156_00010.png",
+            "JAAD_video__0156_00030.png",
+            "JAAD_video__0156_00050.png",
+            "JAAD_video__0156_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0156_00010_plot.png",
+            "JAAD_video__0156_00030_plot.png",
+            "JAAD_video__0156_00050_plot.png",
+            "JAAD_video__0156_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['proceed by borrowing lane', 'cross the road', 'might turn right', 'wait for the traffic light', 'normal driving', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_73"
+    },
+    {
+        "sequence": "JAAD_video__0162",
+        "image_path": [
+            "JAAD_video__0162_00040.png",
+            "JAAD_video__0162_00050.png",
+            "JAAD_video__0162_00060.png",
+            "JAAD_video__0162_00070.png",
+            "JAAD_video__0162_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0162_00040_plot.png",
+            "JAAD_video__0162_00050_plot.png",
+            "JAAD_video__0162_00060_plot.png",
+            "JAAD_video__0162_00070_plot.png",
+            "JAAD_video__0162_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the crosswalk', 'normal walking', 'standing and waiting', 'cross the path of the vehicle', 'might turn right', 'might turn left']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_74"
+    },
+    {
+        "sequence": "JAAD_video__0168",
+        "image_path": [
+            "JAAD_video__0168_00000.png",
+            "JAAD_video__0168_00010.png",
+            "JAAD_video__0168_00020.png",
+            "JAAD_video__0168_00030.png",
+            "JAAD_video__0168_00040.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0168_00000_plot.png",
+            "JAAD_video__0168_00010_plot.png",
+            "JAAD_video__0168_00020_plot.png",
+            "JAAD_video__0168_00030_plot.png",
+            "JAAD_video__0168_00040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'proceed by borrowing lane', 'jaywalking', 'might turn right', 'cross the road', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_75"
+    },
+    {
+        "sequence": "JAAD_video__0169",
+        "image_path": [
+            "JAAD_video__0169_00010.png",
+            "JAAD_video__0169_00030.png",
+            "JAAD_video__0169_00050.png",
+            "JAAD_video__0169_00070.png",
+            "JAAD_video__0169_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0169_00010_plot.png",
+            "JAAD_video__0169_00030_plot.png",
+            "JAAD_video__0169_00050_plot.png",
+            "JAAD_video__0169_00070_plot.png",
+            "JAAD_video__0169_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'might turn right', 'cross the road', 'jaywalking', 'normal driving', 'proceed by borrowing lane']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_76"
+    },
+    {
+        "sequence": "JAAD_video__0185",
+        "image_path": [
+            "JAAD_video__0185_00010.png",
+            "JAAD_video__0185_00020.png",
+            "JAAD_video__0185_00040.png",
+            "JAAD_video__0185_00060.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0185_00010_plot.png",
+            "JAAD_video__0185_00020_plot.png",
+            "JAAD_video__0185_00040_plot.png",
+            "JAAD_video__0185_00060_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['jaywalking', 'proceed by borrowing lane', 'normal driving', 'might turn right', 'wait for the traffic light', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_77"
+    },
+    {
+        "sequence": "JAAD_video__0191",
+        "image_path": [
+            "JAAD_video__0191_00010.png",
+            "JAAD_video__0191_00030.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0191_00010_plot.png",
+            "JAAD_video__0191_00030_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'proceed by borrowing lane', 'cross the road', 'wait for the traffic light', 'might turn right', 'jaywalking']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_78"
+    },
+    {
+        "sequence": "JAAD_video__0216",
+        "image_path": [
+            "JAAD_video__0216_00020.png",
+            "JAAD_video__0216_00040.png",
+            "JAAD_video__0216_00060.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0216_00020_plot.png",
+            "JAAD_video__0216_00040_plot.png",
+            "JAAD_video__0216_00060_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'jaywalking', 'normal driving', 'proceed by borrowing lane', 'wait for the traffic light', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_79"
+    },
+    {
+        "sequence": "JAAD_video__0216_3",
+        "image_path": [
+            "JAAD_video__0216_00100.png",
+            "JAAD_video__0216_00120.png",
+            "JAAD_video__0216_00130.png",
+            "JAAD_video__0216_00140.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0216_00100_plot.png",
+            "JAAD_video__0216_00120_plot.png",
+            "JAAD_video__0216_00130_plot.png",
+            "JAAD_video__0216_00140_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'wait for the traffic light', 'jaywalking', 'cross the road', 'proceed by borrowing lane', 'normal driving']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_80"
+    },
+    {
+        "sequence": "JAAD_video__0229",
+        "image_path": [
+            "JAAD_video__0229_00000.png",
+            "JAAD_video__0229_00010.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0229_00000_plot.png",
+            "JAAD_video__0229_00010_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'proceed by borrowing lane', 'normal driving', 'jaywalking', 'cross the road', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_81"
+    },
+    {
+        "sequence": "JAAD_video__0230",
+        "image_path": [
+            "JAAD_video__0230_00020.png",
+            "JAAD_video__0230_00030.png",
+            "JAAD_video__0230_00040.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0230_00020_plot.png",
+            "JAAD_video__0230_00030_plot.png",
+            "JAAD_video__0230_00040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'jaywalking', 'normal driving', 'proceed by borrowing lane', 'might turn right', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_82"
+    },
+    {
+        "sequence": "JAAD_video__0232",
+        "image_path": [
+            "JAAD_video__0232_00010.png",
+            "JAAD_video__0232_00030.png",
+            "JAAD_video__0232_00050.png",
+            "JAAD_video__0232_00070.png",
+            "JAAD_video__0232_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0232_00010_plot.png",
+            "JAAD_video__0232_00030_plot.png",
+            "JAAD_video__0232_00050_plot.png",
+            "JAAD_video__0232_00070_plot.png",
+            "JAAD_video__0232_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the path of the vehicle', 'normal walking', 'cross the road', 'standing and waiting', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_83"
+    },
+    {
+        "sequence": "JAAD_video__0233",
+        "image_path": [
+            "JAAD_video__0233_00090.png",
+            "JAAD_video__0233_00110.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0233_00090_plot.png",
+            "JAAD_video__0233_00110_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'normal walking', 'wait for the traffic light', 'cross the path of the vehicle', 'standing and waiting', 'cross the crosswalk']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_84"
+    },
+    {
+        "sequence": "JAAD_video__0238",
+        "image_path": [
+            "JAAD_video__0238_00030.png",
+            "JAAD_video__0238_00050.png",
+            "JAAD_video__0238_00070.png",
+            "JAAD_video__0238_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0238_00030_plot.png",
+            "JAAD_video__0238_00050_plot.png",
+            "JAAD_video__0238_00070_plot.png",
+            "JAAD_video__0238_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'cross the crosswalk', 'normal walking', 'standing and waiting', 'cross the path of the vehicle', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "cross the crosswalk"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_85"
+    },
+    {
+        "sequence": "JAAD_video__0261",
+        "image_path": [
+            "JAAD_video__0261_00070.png",
+            "JAAD_video__0261_00080.png",
+            "JAAD_video__0261_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0261_00070_plot.png",
+            "JAAD_video__0261_00080_plot.png",
+            "JAAD_video__0261_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'proceed by borrowing lane', 'wait for the traffic light', 'jaywalking', 'might turn right', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_86"
+    },
+    {
+        "sequence": "JAAD_video__0270",
+        "image_path": [
+            "JAAD_video__0270_00010.png",
+            "JAAD_video__0270_00030.png",
+            "JAAD_video__0270_00050.png",
+            "JAAD_video__0270_00070.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0270_00010_plot.png",
+            "JAAD_video__0270_00030_plot.png",
+            "JAAD_video__0270_00050_plot.png",
+            "JAAD_video__0270_00070_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal walking', 'cross the crosswalk', 'might turn right', 'cross the path of the vehicle', 'might turn left', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_87"
+    },
+    {
+        "sequence": "JAAD_video__0270_2",
+        "image_path": [
+            "JAAD_video__0270_00010.png",
+            "JAAD_video__0270_00030.png",
+            "JAAD_video__0270_00050.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0270_00010_plot.png",
+            "JAAD_video__0270_00030_plot.png",
+            "JAAD_video__0270_00050_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['might turn right', 'proceed by borrowing lane', 'normal driving', 'jaywalking', 'wait for the traffic light', 'cross the road']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_88"
+    },
+    {
+        "sequence": "JAAD_video__0284",
+        "image_path": [
+            "JAAD_video__0284_00010.png",
+            "JAAD_video__0284_00020.png",
+            "JAAD_video__0284_00030.png",
+            "JAAD_video__0284_00040.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0284_00010_plot.png",
+            "JAAD_video__0284_00020_plot.png",
+            "JAAD_video__0284_00030_plot.png",
+            "JAAD_video__0284_00040_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['standing and waiting', 'cross the crosswalk', 'normal walking', 'might turn left', 'might turn right', 'cross the path of the vehicle']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "standing and waiting"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_89"
+    },
+    {
+        "sequence": "JAAD_video__0285",
+        "image_path": [
+            "JAAD_video__0285_00010.png",
+            "JAAD_video__0285_00030.png",
+            "JAAD_video__0285_00050.png",
+            "JAAD_video__0285_00070.png",
+            "JAAD_video__0285_00090.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0285_00010_plot.png",
+            "JAAD_video__0285_00030_plot.png",
+            "JAAD_video__0285_00050_plot.png",
+            "JAAD_video__0285_00070_plot.png",
+            "JAAD_video__0285_00090_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['cross the road', 'might turn right', 'proceed by borrowing lane', 'jaywalking', 'normal driving', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_90"
+    },
+    {
+        "sequence": "JAAD_video__0341",
+        "image_path": [
+            "JAAD_video__0341_00090.png",
+            "JAAD_video__0341_00110.png",
+            "JAAD_video__0341_00130.png",
+            "JAAD_video__0341_00150.png",
+            "JAAD_video__0341_00170.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0341_00090_plot.png",
+            "JAAD_video__0341_00110_plot.png",
+            "JAAD_video__0341_00130_plot.png",
+            "JAAD_video__0341_00150_plot.png",
+            "JAAD_video__0341_00170_plot.png"
+        ],
+        "questions": [
+            "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Pedestrian within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Pedestrian within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['normal driving', 'jaywalking', 'might turn right', 'cross the road', 'proceed by borrowing lane', 'wait for the traffic light']. Note no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "jaywalking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_2_91"
+    }
+]

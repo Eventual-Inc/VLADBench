@@ -1,0 +1,1599 @@
+[
+    {
+        "image_path": "CODA_000002_1616005678500.jpg",
+        "questions": [
+            "CODA_000002_1616005678500.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1393, 543, 1675, 655] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'truck', 'sanitation vehicle', 'car', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000002_1616005678500_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'bus', 'car', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_0"
+    },
+    {
+        "image_path": "CODA_000003_1616007142300.jpg",
+        "questions": [
+            "CODA_000003_1616007142300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1612, 502, 1773, 687] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'bus', 'truck', 'car']. Note that no explantion is needed.",
+            "CODA_000003_1616007142300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'sanitation vehicle', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_1"
+    },
+    {
+        "image_path": "CODA_000005_1616008599699.jpg",
+        "questions": [
+            "CODA_000005_1616008599699.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1545, 563, 1918, 710] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'car', 'bus', 'truck']. Note that no explantion is needed.",
+            "CODA_000005_1616008599699_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'car', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_2"
+    },
+    {
+        "image_path": "CODA_000006_1616008913199.jpg",
+        "questions": [
+            "CODA_000006_1616008913199.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1119, 498, 1225, 626] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'car', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000006_1616008913199_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'truck', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_3"
+    },
+    {
+        "image_path": "CODA_000008_1616010321400.jpg",
+        "questions": [
+            "CODA_000008_1616010321400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [5, 557, 107, 648] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'truck', 'construction vehicle', 'car', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000008_1616010321400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'bus', 'sanitation vehicle', 'construction vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_4"
+    },
+    {
+        "image_path": "CODA_000011_1616012185499.jpg",
+        "questions": [
+            "CODA_000011_1616012185499.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000011_1616012185499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1293, 0, 1916, 983] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'bus', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000011_1616012185499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1293,
+                0,
+                1916,
+                983
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_5"
+    },
+    {
+        "image_path": "CODA_000011_1616012213499.jpg",
+        "questions": [
+            "CODA_000011_1616012213499.jpg;The width and height of the image are 1920 and 1020. Where is the truck located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000011_1616012213499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1478, 360, 1916, 992] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'truck', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000011_1616012213499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'truck', 'car', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1478,
+                360,
+                1916,
+                992
+            ],
+            "truck",
+            "truck"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_6"
+    },
+    {
+        "image_path": "CODA_000011_1616012662499.jpg",
+        "questions": [
+            "CODA_000011_1616012662499.jpg;The width and height of the image are 1920 and 1020. Where is the bus located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000011_1616012662499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1144, 183, 1916, 840] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'construction vehicle', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000011_1616012662499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'bus', 'construction vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1144,
+                183,
+                1916,
+                840
+            ],
+            "bus",
+            "bus"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_7"
+    },
+    {
+        "image_path": "CODA_000012_1616013479399.jpg",
+        "questions": [
+            "CODA_000012_1616013479399.jpg;The width and height of the image are 1920 and 1020. Where is the car located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000012_1616013479399.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [5, 538, 542, 1004] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'bus', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000012_1616013479399_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'bus', 'car', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                5,
+                538,
+                542,
+                1004
+            ],
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_8"
+    },
+    {
+        "image_path": "CODA_000023_1616098846901.jpg",
+        "questions": [
+            "CODA_000023_1616098846901.jpg;The width and height of the image are 1920 and 1020. Where is the truck located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000023_1616098846901.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [957, 333, 1479, 858] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'sanitation vehicle', 'truck', 'bus']. Note that no explantion is needed.",
+            "CODA_000023_1616098846901_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'truck', 'sanitation vehicle', 'car', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                957,
+                333,
+                1479,
+                858
+            ],
+            "truck",
+            "truck"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_9"
+    },
+    {
+        "image_path": "CODA_000023_1616099070901.jpg",
+        "questions": [
+            "CODA_000023_1616099070901.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1484, 556, 1919, 1019] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'sanitation vehicle', 'car', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000023_1616099070901_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'construction vehicle', 'car', 'sanitation vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_10"
+    },
+    {
+        "image_path": "CODA_000027_1616101101401.jpg",
+        "questions": [
+            "CODA_000027_1616101101401.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1662, 527, 1911, 611] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'truck', 'bus', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000027_1616101101401_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'truck', 'bus', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_11"
+    },
+    {
+        "image_path": "CODA_000029_1616102945099.jpg",
+        "questions": [
+            "CODA_000029_1616102945099.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [0, 542, 390, 699] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'bus', 'construction vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000029_1616102945099_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_12"
+    },
+    {
+        "image_path": "CODA_000036_1616177006100.jpg",
+        "questions": [
+            "CODA_000036_1616177006100.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000036_1616177006100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [580, 403, 791, 724] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'car', 'construction vehicle', 'sanitation vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000036_1616177006100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'truck', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                580,
+                403,
+                791,
+                724
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_13"
+    },
+    {
+        "image_path": "CODA_000043_1616182780600.jpg",
+        "questions": [
+            "CODA_000043_1616182780600.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1605, 516, 1856, 614] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'bus', 'construction vehicle', 'sanitation vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000043_1616182780600_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'bus', 'sanitation vehicle', 'construction vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_14"
+    },
+    {
+        "image_path": "CODA_000052_1616191136699.jpg",
+        "questions": [
+            "CODA_000052_1616191136699.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1600, 573, 1910, 680] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'truck', 'sanitation vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000052_1616191136699_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'bus', 'truck', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_15"
+    },
+    {
+        "image_path": "CODA_000055_1616194559500.jpg",
+        "questions": [
+            "CODA_000055_1616194559500.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [962, 180, 1129, 664] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'sanitation vehicle', 'bus', 'truck']. Note that no explantion is needed.",
+            "CODA_000055_1616194559500_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'construction vehicle', 'car', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_16"
+    },
+    {
+        "image_path": "CODA_000058_1616262263599.jpg",
+        "questions": [
+            "CODA_000058_1616262263599.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1295, 453, 1915, 992] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'bus', 'car', 'truck']. Note that no explantion is needed.",
+            "CODA_000058_1616262263599_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'car', 'truck', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_17"
+    },
+    {
+        "image_path": "CODA_000060_1616263776700.jpg",
+        "questions": [
+            "CODA_000060_1616263776700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [4, 348, 287, 1018] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'bus', 'truck', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000060_1616263776700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'construction vehicle', 'truck', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_18"
+    },
+    {
+        "image_path": "CODA_000061_1616265655400.jpg",
+        "questions": [
+            "CODA_000061_1616265655400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1590, 415, 1919, 1016] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'construction vehicle', 'car', 'bus']. Note that no explantion is needed.",
+            "CODA_000061_1616265655400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'truck', 'sanitation vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_19"
+    },
+    {
+        "image_path": "CODA_000063_1616270186100.jpg",
+        "questions": [
+            "CODA_000063_1616270186100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1658, 573, 1919, 971] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'truck', 'car']. Note that no explantion is needed.",
+            "CODA_000063_1616270186100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'bus', 'truck', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_20"
+    },
+    {
+        "image_path": "CODA_000069_1616275899200.jpg",
+        "questions": [
+            "CODA_000069_1616275899200.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [10, 555, 205, 747] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'sanitation vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000069_1616275899200_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'bus', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_21"
+    },
+    {
+        "image_path": "CODA_000072_1616277112300.jpg",
+        "questions": [
+            "CODA_000072_1616277112300.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000072_1616277112300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1193, 0, 1512, 705] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'truck', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000072_1616277112300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1193,
+                0,
+                1512,
+                705
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_22"
+    },
+    {
+        "image_path": "CODA_000079_1616346910900.jpg",
+        "questions": [
+            "CODA_000079_1616346910900.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1727, 659, 1919, 1006] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'car', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000079_1616346910900_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'bus', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_23"
+    },
+    {
+        "image_path": "CODA_000084_1616351803900.jpg",
+        "questions": [
+            "CODA_000084_1616351803900.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [649, 551, 1418, 1015] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'bus', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000084_1616351803900_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'truck', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_24"
+    },
+    {
+        "image_path": "CODA_000085_1616352128300.jpg",
+        "questions": [
+            "CODA_000085_1616352128300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1421, 520, 1785, 673] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000085_1616352128300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_25"
+    },
+    {
+        "image_path": "CODA_000092_1616442528800.jpg",
+        "questions": [
+            "CODA_000092_1616442528800.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [111, 539, 408, 644] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'car', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000092_1616442528800_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'car', 'truck', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_26"
+    },
+    {
+        "image_path": "CODA_000092_1616442852300.jpg",
+        "questions": [
+            "CODA_000092_1616442852300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1533, 558, 1902, 700] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'bus', 'truck', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000092_1616442852300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'construction vehicle', 'car', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_27"
+    },
+    {
+        "image_path": "CODA_000092_1616442862800.jpg",
+        "questions": [
+            "CODA_000092_1616442862800.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1597, 555, 1905, 665] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'truck', 'bus', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000092_1616442862800_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'car', 'construction vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_28"
+    },
+    {
+        "image_path": "CODA_000096_1616445883099.jpg",
+        "questions": [
+            "CODA_000096_1616445883099.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1704, 0, 1919, 930] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'sanitation vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000096_1616445883099_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'bus', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "truck",
+            "truck"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_29"
+    },
+    {
+        "image_path": "CODA_000109_1616532412499.jpg",
+        "questions": [
+            "CODA_000109_1616532412499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1261, 455, 1439, 619] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'sanitation vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000109_1616532412499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'construction vehicle', 'sanitation vehicle', 'truck', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "truck",
+            "truck"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_30"
+    },
+    {
+        "image_path": "CODA_000110_1616532840400.jpg",
+        "questions": [
+            "CODA_000110_1616532840400.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000110_1616532840400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [901, 518, 1019, 594] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'bus', 'truck', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000110_1616532840400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'truck', 'sanitation vehicle', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                901,
+                518,
+                1019,
+                594
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_31"
+    },
+    {
+        "image_path": "CODA_000115_1616614220600.jpg",
+        "questions": [
+            "CODA_000115_1616614220600.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1258, 546, 1464, 682] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'bus', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000115_1616614220600_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'bus', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_32"
+    },
+    {
+        "image_path": "CODA_000118_1616616478400.jpg",
+        "questions": [
+            "CODA_000118_1616616478400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [345, 538, 740, 670] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'bus', 'construction vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000118_1616616478400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'truck', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_33"
+    },
+    {
+        "image_path": "CODA_000123_1616619394100.jpg",
+        "questions": [
+            "CODA_000123_1616619394100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1531, 509, 1918, 710] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000123_1616619394100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'bus', 'car', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_34"
+    },
+    {
+        "image_path": "CODA_000123_1616620241599.jpg",
+        "questions": [
+            "CODA_000123_1616620241599.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [0, 533, 264, 720] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'car', 'bus', 'truck']. Note that no explantion is needed.",
+            "CODA_000123_1616620241599_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_35"
+    },
+    {
+        "image_path": "CODA_000126_1616621975400.jpg",
+        "questions": [
+            "CODA_000126_1616621975400.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000126_1616621975400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [0, 410, 282, 658] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'truck', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000126_1616621975400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'bus', 'construction vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                0,
+                410,
+                282,
+                658
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_36"
+    },
+    {
+        "image_path": "CODA_000141_1618688049700.jpg",
+        "questions": [
+            "CODA_000141_1618688049700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1539, 521, 1918, 750] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'truck', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000141_1618688049700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'truck', 'construction vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_37"
+    },
+    {
+        "image_path": "CODA_000148_1618697034599.jpg",
+        "questions": [
+            "CODA_000148_1618697034599.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1622, 576, 1903, 693] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000148_1618697034599_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_38"
+    },
+    {
+        "image_path": "CODA_000154_1618702730399.jpg",
+        "questions": [
+            "CODA_000154_1618702730399.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1349, 549, 1695, 693] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000154_1618702730399_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'bus', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_39"
+    },
+    {
+        "image_path": "CODA_000157_1618705445000.jpg",
+        "questions": [
+            "CODA_000157_1618705445000.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1585, 544, 1918, 682] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000157_1618705445000_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'car', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_40"
+    },
+    {
+        "image_path": "CODA_000174_1618763902100.jpg",
+        "questions": [
+            "CODA_000174_1618763902100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [540, 552, 1018, 720] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'car', 'construction vehicle', 'truck', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000174_1618763902100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'construction vehicle', 'truck', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_41"
+    },
+    {
+        "image_path": "CODA_000183_1618773512200.jpg",
+        "questions": [
+            "CODA_000183_1618773512200.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000183_1618773512200.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1365, 455, 1745, 651] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000183_1618773512200_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'car', 'construction vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1365,
+                455,
+                1745,
+                651
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_42"
+    },
+    {
+        "image_path": "CODA_000201_1618798673600.jpg",
+        "questions": [
+            "CODA_000201_1618798673600.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [61, 520, 378, 650] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000201_1618798673600_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'construction vehicle', 'car', 'sanitation vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_43"
+    },
+    {
+        "image_path": "CODA_000207_1618804261501.jpg",
+        "questions": [
+            "CODA_000207_1618804261501.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000207_1618804261501.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1368, 180, 1919, 677] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'construction vehicle', 'bus', 'truck', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000207_1618804261501_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'sanitation vehicle', 'construction vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1368,
+                180,
+                1919,
+                677
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_44"
+    },
+    {
+        "image_path": "CODA_000207_1618804325999.jpg",
+        "questions": [
+            "CODA_000207_1618804325999.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000207_1618804325999.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1319, 140, 1918, 607] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000207_1618804325999_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'bus', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1319,
+                140,
+                1918,
+                607
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_45"
+    },
+    {
+        "image_path": "CODA_000207_1618804710499.jpg",
+        "questions": [
+            "CODA_000207_1618804710499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [317, 542, 480, 668] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'car', 'sanitation vehicle', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000207_1618804710499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'truck', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_46"
+    },
+    {
+        "image_path": "CODA_000212_1618809565001.jpg",
+        "questions": [
+            "CODA_000212_1618809565001.jpg;The width and height of the image are 1920 and 1020. Where is the car located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000212_1618809565001.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [591, 534, 741, 700] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'truck', 'bus', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000212_1618809565001_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'car', 'construction vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                591,
+                534,
+                741,
+                700
+            ],
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_47"
+    },
+    {
+        "image_path": "CODA_000241_1618942004401.jpg",
+        "questions": [
+            "CODA_000241_1618942004401.jpg;The width and height of the image are 1920 and 1020. Where is the sanitation vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000241_1618942004401.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [490, 376, 866, 746] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'truck', 'car', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000241_1618942004401_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'truck', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                490,
+                376,
+                866,
+                746
+            ],
+            "sanitation vehicle",
+            "sanitation vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_48"
+    },
+    {
+        "image_path": "CODA_000242_1618942685799.jpg",
+        "questions": [
+            "CODA_000242_1618942685799.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1440, 544, 1918, 748] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'sanitation vehicle', 'truck', 'bus']. Note that no explantion is needed.",
+            "CODA_000242_1618942685799_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'sanitation vehicle', 'car', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_49"
+    },
+    {
+        "image_path": "CODA_000242_1618942708799.jpg",
+        "questions": [
+            "CODA_000242_1618942708799.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1332, 546, 1918, 800] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'truck', 'car', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000242_1618942708799_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'truck', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_50"
+    },
+    {
+        "image_path": "CODA_000242_1618942709300.jpg",
+        "questions": [
+            "CODA_000242_1618942709300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1080, 522, 1396, 664] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'bus', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000242_1618942709300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'truck', 'construction vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_51"
+    },
+    {
+        "image_path": "CODA_000242_1618942721300.jpg",
+        "questions": [
+            "CODA_000242_1618942721300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1285, 517, 1915, 727] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'sanitation vehicle', 'bus', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000242_1618942721300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'construction vehicle', 'truck', 'car', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_52"
+    },
+    {
+        "image_path": "CODA_000253_1618955584600.jpg",
+        "questions": [
+            "CODA_000253_1618955584600.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1320, 563, 1542, 654] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'bus', 'car', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000253_1618955584600_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'bus', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_53"
+    },
+    {
+        "image_path": "CODA_000257_1618975696799.jpg",
+        "questions": [
+            "CODA_000257_1618975696799.jpg;The width and height of the image are 1920 and 1020. Where is the bus located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000257_1618975696799.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [0, 265, 427, 773] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000257_1618975696799_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'construction vehicle', 'truck', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                0,
+                265,
+                427,
+                773
+            ],
+            "bus",
+            "bus"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_54"
+    },
+    {
+        "image_path": "CODA_000264_1619030664800.jpg",
+        "questions": [
+            "CODA_000264_1619030664800.jpg;The width and height of the image are 1920 and 1020. Where is the truck located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000264_1619030664800.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1113, 0, 1920, 997] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'bus', 'car', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000264_1619030664800_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1113,
+                0,
+                1920,
+                997
+            ],
+            "truck",
+            "truck"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_55"
+    },
+    {
+        "image_path": "CODA_000270_1619036888700.jpg",
+        "questions": [
+            "CODA_000270_1619036888700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1455, 559, 1716, 723] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'bus', 'car', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000270_1619036888700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'construction vehicle', 'truck', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_56"
+    },
+    {
+        "image_path": "CODA_000296_1619285230700.jpg",
+        "questions": [
+            "CODA_000296_1619285230700.jpg;The width and height of the image are 1920 and 1020. Where is the bus located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000296_1619285230700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1744, 177, 1918, 837] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'sanitation vehicle', 'truck', 'car']. Note that no explantion is needed.",
+            "CODA_000296_1619285230700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1744,
+                177,
+                1918,
+                837
+            ],
+            "bus",
+            "bus"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_57"
+    },
+    {
+        "image_path": "CODA_000305_1619322141199.jpg",
+        "questions": [
+            "CODA_000305_1619322141199.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000305_1619322141199.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [935, 196, 1282, 729] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'sanitation vehicle', 'bus', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000305_1619322141199_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                935,
+                196,
+                1282,
+                729
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_58"
+    },
+    {
+        "image_path": "CODA_000326_1619384693900.jpg",
+        "questions": [
+            "CODA_000326_1619384693900.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1670, 555, 1880, 633] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'truck', 'sanitation vehicle', 'car', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000326_1619384693900_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'bus', 'car', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_59"
+    },
+    {
+        "image_path": "CODA_000327_1619387422900.jpg",
+        "questions": [
+            "CODA_000327_1619387422900.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [3, 492, 337, 1017] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'sanitation vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000327_1619387422900_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'construction vehicle', 'truck', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_60"
+    },
+    {
+        "image_path": "CODA_000327_1619387515399.jpg",
+        "questions": [
+            "CODA_000327_1619387515399.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [707, 525, 1147, 875] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'bus', 'car', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000327_1619387515399_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_61"
+    },
+    {
+        "image_path": "CODA_000337_1619408126000.jpg",
+        "questions": [
+            "CODA_000337_1619408126000.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1489, 552, 1793, 658] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'bus', 'car', 'truck']. Note that no explantion is needed.",
+            "CODA_000337_1619408126000_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'car', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_62"
+    },
+    {
+        "image_path": "CODA_000338_1619408854099.jpg",
+        "questions": [
+            "CODA_000338_1619408854099.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1416, 554, 1718, 716] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'truck', 'car', 'bus']. Note that no explantion is needed.",
+            "CODA_000338_1619408854099_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'sanitation vehicle', 'truck', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_63"
+    },
+    {
+        "image_path": "CODA_000350_1619452423900.jpg",
+        "questions": [
+            "CODA_000350_1619452423900.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [524, 534, 793, 668] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'construction vehicle', 'truck', 'bus']. Note that no explantion is needed.",
+            "CODA_000350_1619452423900_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'sanitation vehicle', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_64"
+    },
+    {
+        "image_path": "CODA_000371_1619488491599.jpg",
+        "questions": [
+            "CODA_000371_1619488491599.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1584, 540, 1904, 721] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'sanitation vehicle', 'construction vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000371_1619488491599_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_65"
+    },
+    {
+        "image_path": "CODA_000372_1619490599299.jpg",
+        "questions": [
+            "CODA_000372_1619490599299.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [768, 520, 1203, 902] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'bus', 'car', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000372_1619490599299_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'car', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_66"
+    },
+    {
+        "image_path": "CODA_000372_1619491137799.jpg",
+        "questions": [
+            "CODA_000372_1619491137799.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1098, 533, 1393, 662] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'truck', 'car']. Note that no explantion is needed.",
+            "CODA_000372_1619491137799_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'car', 'truck', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_67"
+    },
+    {
+        "image_path": "CODA_000372_1619491240800.jpg",
+        "questions": [
+            "CODA_000372_1619491240800.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [464, 573, 546, 640] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'construction vehicle', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000372_1619491240800.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [550, 574, 669, 665] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'sanitation vehicle', 'construction vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000372_1619491240800.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [671, 572, 752, 636] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'bus', 'truck', 'car']. Note that no explantion is needed.",
+            "CODA_000372_1619491240800_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'bus', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000372_1619491240800_1.jpg;What is the object within the green box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'bus', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000372_1619491240800_2.jpg;What is the object within the blue box in the image? Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'truck', 'construction vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000372_1619491240800_all.jpg; What are the objects within the red, green, and blue boxes in the image?Please select the appropriate answers from the following phrases: ['bus', 'truck', 'construction vehicle', 'car', 'sanitation vehicle']. Answer these three questions separately, separating the answers with commas. e.g., 'car,truck,bus'"
+        ],
+        "reference": [
+            "car",
+            "car",
+            "car",
+            "car",
+            "car",
+            "car",
+            "car, car, car,"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_68"
+    },
+    {
+        "image_path": "CODA_000376_1619496969100.jpg",
+        "questions": [
+            "CODA_000376_1619496969100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1398, 567, 1890, 757] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'car', 'bus', 'truck']. Note that no explantion is needed.",
+            "CODA_000376_1619496969100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'truck', 'sanitation vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_69"
+    },
+    {
+        "image_path": "CODA_000376_1619496971599.jpg",
+        "questions": [
+            "CODA_000376_1619496971599.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1275, 477, 1643, 772] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'bus', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000376_1619496971599_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'truck', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_70"
+    },
+    {
+        "image_path": "CODA_000379_1619501329000.jpg",
+        "questions": [
+            "CODA_000379_1619501329000.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1538, 428, 1918, 651] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'truck', 'construction vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000379_1619501329000_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'bus', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "bus",
+            "bus"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_71"
+    },
+    {
+        "image_path": "CODA_000380_1619501757100.jpg",
+        "questions": [
+            "CODA_000380_1619501757100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [2, 48, 168, 849] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'bus', 'car', 'truck']. Note that no explantion is needed.",
+            "CODA_000380_1619501757100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'bus', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "truck",
+            "truck"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_72"
+    },
+    {
+        "image_path": "CODA_000386_1619573757599.jpg",
+        "questions": [
+            "CODA_000386_1619573757599.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [0, 539, 264, 736] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'construction vehicle', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000386_1619573757599_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'construction vehicle', 'sanitation vehicle', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_73"
+    },
+    {
+        "image_path": "CODA_000390_1619578953099.jpg",
+        "questions": [
+            "CODA_000390_1619578953099.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [580, 540, 1375, 1013] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'truck', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000390_1619578953099_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'car', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_74"
+    },
+    {
+        "image_path": "CODA_000397_1619585803400.jpg",
+        "questions": [
+            "CODA_000397_1619585803400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [38, 517, 414, 677] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'bus', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000397_1619585803400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'truck', 'construction vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_75"
+    },
+    {
+        "image_path": "CODA_000412_1619640336700.jpg",
+        "questions": [
+            "CODA_000412_1619640336700.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+            "CODA_000412_1619640336700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1670, 648, 1919, 916] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'car', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000412_1619640336700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'car', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            [
+                1670,
+                648,
+                1919,
+                916
+            ],
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+            1920.0,
+            1020.0
+        ],
+        "id": "1_1_0_76"
+    },
+    {
+        "image_path": "CODA_000423_1619638751799.jpg",
+        "questions": [
+            "CODA_000423_1619638751799.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1239, 382, 1806, 838] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'truck', 'sanitation vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000423_1619638751799_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'truck', 'construction vehicle', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_77"
+    },
+    {
+        "image_path": "CODA_000425_1619644334099.jpg",
+        "questions": [
+            "CODA_000425_1619644334099.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1310, 511, 1436, 622] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'car', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000425_1619644334099_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'car', 'construction vehicle', 'sanitation vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "construction vehicle",
+            "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_78"
+    },
+    {
+        "image_path": "CODA_000427_1619656800400.jpg",
+        "questions": [
+            "CODA_000427_1619656800400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [751, 358, 1246, 890] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'construction vehicle', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000427_1619656800400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'truck', 'construction vehicle', 'sanitation vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_79"
+    },
+    {
+        "image_path": "CODA_000491_1619826654200.jpg",
+        "questions": [
+            "CODA_000491_1619826654200.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1514, 515, 1918, 737] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000491_1619826654200_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'construction vehicle', 'sanitation vehicle', 'bus', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_80"
+    },
+    {
+        "image_path": "CODA_000500_1619838685300.jpg",
+        "questions": [
+            "CODA_000500_1619838685300.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1434, 552, 1840, 704] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000500_1619838685300_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'bus', 'truck', 'car', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_81"
+    },
+    {
+        "image_path": "CODA_000511_1619896727200.jpg",
+        "questions": [
+            "CODA_000511_1619896727200.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [16, 558, 387, 698] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'construction vehicle', 'truck', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000511_1619896727200_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'car', 'construction vehicle', 'truck', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_82"
+    },
+    {
+        "image_path": "CODA_000511_1619897046700.jpg",
+        "questions": [
+            "CODA_000511_1619897046700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [904, 524, 1621, 1014] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'sanitation vehicle', 'car', 'bus', 'truck']. Note that no explantion is needed.",
+            "CODA_000511_1619897046700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'sanitation vehicle', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_83"
+    },
+    {
+        "image_path": "CODA_000511_1619897057199.jpg",
+        "questions": [
+            "CODA_000511_1619897057199.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [758, 523, 1630, 1001] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'construction vehicle', 'sanitation vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000511_1619897057199_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'bus', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_84"
+    },
+    {
+        "image_path": "CODA_000511_1619897538700.jpg",
+        "questions": [
+            "CODA_000511_1619897538700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1460, 523, 1918, 684] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'car', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000511_1619897538700.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1502, 497, 1918, 704] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'car', 'construction vehicle', 'truck']. Note that no explantion is needed.",
+            "CODA_000511_1619897538700_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'car', 'bus', 'sanitation vehicle', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000511_1619897538700_1.jpg;What is the object within the green box in the image? Please select the appropriate one from the following phrases: ['bus', 'truck', 'car', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000511_1619897538700_all.jpg; What are the objects within the red and green boxes in the image?Please select the appropriate answers from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'car', 'truck']. Answer these two questions separately, separating the answers with commas. e.g., 'car,truck'"
+        ],
+        "reference": [
+            "car",
+            "car",
+            "car",
+            "car",
+            "car, car,"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_85"
+    },
+    {
+        "image_path": "CODA_000513_1619898843400.jpg",
+        "questions": [
+            "CODA_000513_1619898843400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [0, 532, 307, 686] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'car', 'sanitation vehicle', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000513_1619898843400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'bus', 'car', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_86"
+    },
+    {
+        "image_path": "CODA_000516_1619901484899.jpg",
+        "questions": [
+            "CODA_000516_1619901484899.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1001, 415, 1906, 1018] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'truck', 'construction vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000516_1619901484899_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'car', 'construction vehicle', 'truck', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_87"
+    },
+    {
+        "image_path": "CODA_000523_1619920285100.jpg",
+        "questions": [
+            "CODA_000523_1619920285100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [5, 594, 221, 744] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['construction vehicle', 'truck', 'sanitation vehicle', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000523_1619920285100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'truck', 'sanitation vehicle', 'bus', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_88"
+    },
+    {
+        "image_path": "CODA_000523_1619920313600.jpg",
+        "questions": [
+            "CODA_000523_1619920313600.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [45, 512, 504, 686] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'construction vehicle', 'bus', 'sanitation vehicle']. Note that no explantion is needed.",
+            "CODA_000523_1619920313600_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['car', 'bus', 'construction vehicle', 'truck', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_89"
+    },
+    {
+        "image_path": "CODA_000529_1619979253100.jpg",
+        "questions": [
+            "CODA_000529_1619979253100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1065, 453, 1482, 812] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'truck', 'construction vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000529_1619979253100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'car', 'bus']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_90"
+    },
+    {
+        "image_path": "CODA_000529_1619979321100.jpg",
+        "questions": [
+            "CODA_000529_1619979321100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1237, 484, 1824, 932] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'sanitation vehicle', 'bus', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000529_1619979321100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'bus', 'sanitation vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_91"
+    },
+    {
+        "image_path": "CODA_000529_1619979429100.jpg",
+        "questions": [
+            "CODA_000529_1619979429100.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1261, 501, 1696, 814] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'car', 'bus']. Note that no explantion is needed.",
+            "CODA_000529_1619979429100_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'sanitation vehicle', 'car', 'construction vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_92"
+    },
+    {
+        "image_path": "CODA_000534_1619986784200.jpg",
+        "questions": [
+            "CODA_000534_1619986784200.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1045, 544, 1304, 728] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'sanitation vehicle', 'construction vehicle', 'bus', 'car']. Note that no explantion is needed.",
+            "CODA_000534_1619986784200_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'car', 'bus', 'sanitation vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_93"
+    },
+    {
+        "image_path": "CODA_000537_1620002585400.jpg",
+        "questions": [
+            "CODA_000537_1620002585400.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [117, 518, 469, 671] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'bus', 'sanitation vehicle', 'truck', 'construction vehicle']. Note that no explantion is needed.",
+            "CODA_000537_1620002585400_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['truck', 'bus', 'construction vehicle', 'car', 'sanitation vehicle']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_94"
+    },
+    {
+        "image_path": "CODA_000537_1620003265900.jpg",
+        "questions": [
+            "CODA_000537_1620003265900.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1549, 549, 1918, 733] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'bus', 'sanitation vehicle', 'construction vehicle', 'car']. Note that no explantion is needed.",
+            "CODA_000537_1620003265900_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'truck', 'bus', 'construction vehicle', 'car']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_95"
+    },
+    {
+        "image_path": "CODA_000543_1620014199000.jpg",
+        "questions": [
+            "CODA_000543_1620014199000.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1179, 531, 1386, 618] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'car', 'sanitation vehicle', 'construction vehicle', 'bus']. Note that no explantion is needed.",
+            "CODA_000543_1620014199000_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['sanitation vehicle', 'car', 'construction vehicle', 'bus', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_96"
+    },
+    {
+        "image_path": "CODA_000552_1620362334299.jpg",
+        "questions": [
+            "CODA_000552_1620362334299.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1566, 555, 1755, 674] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['truck', 'construction vehicle', 'sanitation vehicle', 'car', 'bus']. Note that no explantion is needed.",
+            "CODA_000552_1620362334299_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['construction vehicle', 'bus', 'car', 'sanitation vehicle', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+            "car",
+            "car"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_0_97"
+    }
+]

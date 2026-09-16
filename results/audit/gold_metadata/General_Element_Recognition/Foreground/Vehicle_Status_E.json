@@ -1,0 +1,1646 @@
+[
+    {
+        "image_path": "CODA2022val_0074.png",
+        "questions": [
+            "CODA2022val_0074_0.png;The width and height of the image are 1355 and 720. What is the current state of the truck located at the bounding box [365, 179, 705, 571] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'All compartment doors open', 'Left turn light on', 'Rear compartment door open for loading', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_0074_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Cargo hanging from trunk', 'Brake light on', 'Left turn light on', 'Rear compartment door open for loading', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_0"
+    },
+    {
+        "image_path": "CODA2022val_0091.png",
+        "questions": [
+            "CODA2022val_0091_0.png;The width and height of the image are 1355 and 720. What is the current state of the car located at the bounding box [382, 352, 550, 497] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Right turn light on', 'All compartment doors open', 'Cargo hanging from trunk', 'Left turn light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_0091_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on', 'Passenger light on', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_1"
+    },
+    {
+        "image_path": "CODA2022val_0117.png",
+        "questions": [
+            "CODA2022val_0117_0.png;The width and height of the image are 1355 and 720. What is the current state of the car located at the bounding box [860, 393, 1128, 596] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Left turn light on', 'Right turn light on', 'Rear compartment door open for loading', 'All compartment doors open'], note that no explaination is needed.",
+            "CODA2022val_0117_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'All compartment doors open', 'Cargo hanging from trunk', 'Left turn light on', 'Rear compartment door open for loading', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_2"
+    },
+    {
+        "image_path": "CODA2022val_1051.png",
+        "questions": [
+            "CODA2022val_1051_0.png;The width and height of the image are 1280 and 720. What is the current state of the special vehicle located at the bounding box [754, 203, 1277, 582] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open for boarding', 'Rear compartment door open for loading', 'Left door open for boarding', 'Construction work', 'Accident scene', 'Trunk open'], note that no explaination is needed.",
+            "CODA2022val_1051_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Construction work', 'Left door open for boarding', 'Right door open for boarding', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_3"
+    },
+    {
+        "image_path": "CODA2022val_1052.png",
+        "questions": [
+            "CODA2022val_1052_0.png;The width and height of the image are 1281 and 720. What is the current state of the car located at the bounding box [833, 442, 1013, 553] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open', 'Right door open', 'Hazard lights on', 'Left door open for boarding', 'Empty car light on', 'Right door open for boarding'], note that no explaination is needed.",
+            "CODA2022val_1052_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right door open for boarding', 'Empty car light on', 'Left door open', 'Right door open', 'Left door open for boarding', 'Hazard lights on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right door open",
+            "Right door open"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_4"
+    },
+    {
+        "image_path": "CODA2022val_1064.png",
+        "questions": [
+            "CODA2022val_1064_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [672, 428, 912, 556] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open for boarding', 'Accident scene', 'Trunk open', 'Construction work', 'Rear compartment door open for loading', 'Right door open for boarding'], note that no explaination is needed.",
+            "CODA2022val_1064_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Accident scene', 'Right door open for boarding', 'Rear compartment door open for loading', 'Construction work', 'Trunk open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_5"
+    },
+    {
+        "image_path": "CODA2022val_1066.png",
+        "questions": [
+            "CODA2022val_1066_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [786, 436, 1069, 710] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'All compartment doors open', 'Left turn light on', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "CODA2022val_1066_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'Rear compartment door open for loading', 'Brake light on', 'All compartment doors open', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_6"
+    },
+    {
+        "image_path": "CODA2022val_1070.png",
+        "questions": [
+            "CODA2022val_1070_0.png;The width and height of the image are 1280 and 720. What is the current state of the car located at the bounding box [643, 471, 705, 518] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'All compartment doors open', 'Left turn light on', 'Passenger light on', 'Right turn light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_1070_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Brake light on', 'Cargo hanging from trunk', 'Passenger light on', 'All compartment doors open', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_7"
+    },
+    {
+        "image_path": "CODA2022val_1124.png",
+        "questions": [
+            "CODA2022val_1124_0.png;The width and height of the image are 1280 and 720. What is the current state of the truck located at the bounding box [652, 536, 756, 668] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open', 'Right door open for boarding', 'Left door open for boarding', 'Construction work', 'Rear compartment door open for loading', 'Accident scene'], note that no explaination is needed.",
+            "CODA2022val_1124_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Accident scene', 'Left door open for boarding', 'Trunk open', 'Right door open for boarding', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_8"
+    },
+    {
+        "image_path": "CODA2022val_1172.png",
+        "questions": [
+            "CODA2022val_1172_0.png;The width and height of the image are 1281 and 720. What is the current state of the car located at the bounding box [639, 481, 803, 582] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'All compartment doors open', 'Right turn light on', 'Rear compartment door open for loading', 'Brake light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_1172_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Cargo hanging from trunk', 'Brake light on', 'All compartment doors open', 'Left turn light on', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_9"
+    },
+    {
+        "image_path": "CODA2022val_1250.png",
+        "questions": [
+            "CODA2022val_1250_0.png;The width and height of the image are 1280 and 720. What is the current state of the special vehicle located at the bounding box [390, 107, 845, 710] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Rear compartment door open for loading', 'Right turn light on', 'All compartment doors open', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_1250_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'All compartment doors open', 'Left turn light on', 'Rear compartment door open for loading', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_10"
+    },
+    {
+        "image_path": "CODA2022val_1272.png",
+        "questions": [
+            "CODA2022val_1272_0.png;The width and height of the image are 1280 and 720. What is the current state of the minibus located at the bounding box [658, 509, 815, 682] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Passenger light on', 'Cargo hanging from trunk', 'Brake light on', 'All compartment doors open', 'Left turn light on'], note that no explaination is needed.",
+            "CODA2022val_1272_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Brake light on', 'All compartment doors open', 'Right turn light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_11"
+    },
+    {
+        "image_path": "CODA2022val_1454.png",
+        "questions": [
+            "CODA2022val_1454_0.png;The width and height of the image are 1280 and 720. What is the current state of the special vehicle located at the bounding box [768, 165, 1120, 640] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Rear compartment door open for loading', 'All compartment doors open', 'Left turn light on', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_1454_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Left turn light on', 'Right turn light on', 'Brake light on', 'Cargo hanging from trunk', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_12"
+    },
+    {
+        "image_path": "CODA2022val_1481.png",
+        "questions": [
+            "CODA2022val_1481_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [558, 201, 883, 653] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Passenger light on', 'Brake light on', 'Left turn light on', 'All compartment doors open', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_1481_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'All compartment doors open', 'Right turn light on', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_13"
+    },
+    {
+        "image_path": "CODA2022val_1491.png",
+        "questions": [
+            "CODA2022val_1491_0.png;The width and height of the image are 1280 and 720. What is the current state of the minibus located at the bounding box [486, 398, 696, 648] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open', 'Construction work', 'Trunk open for loading', 'All compartment doors open', 'Rear compartment door open for loading', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "CODA2022val_1491_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'All compartment doors open', 'Construction work', 'Trunk open', 'Rear compartment door open for loading', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_14"
+    },
+    {
+        "image_path": "CODA2022val_1502.png",
+        "questions": [
+            "CODA2022val_1502_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [381, 219, 656, 613] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Brake light on', 'Rear compartment door open for loading', 'Left turn light on', 'All compartment doors open', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_1502_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Brake light on', 'Right turn light on', 'All compartment doors open', 'Left turn light on', 'Cargo hanging from trunk'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_15"
+    },
+    {
+        "image_path": "CODA2022val_1513.png",
+        "questions": [
+            "CODA2022val_1513_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [488, 291, 725, 632] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on', 'Rear compartment door open for loading', 'All compartment doors open'], note that no explaination is needed.",
+            "CODA2022val_1513_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Brake light on', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'Left turn light on', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_16"
+    },
+    {
+        "image_path": "CODA2022val_1542.png",
+        "questions": [
+            "CODA2022val_1542_0.png;The width and height of the image are 1280 and 720. What is the current state of the special vehicle located at the bounding box [335, 21, 794, 697] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Right turn light on', 'Left turn light on', 'All compartment doors open', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_1542_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Left turn light on', 'Rear compartment door open for loading', 'Brake light on', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_17"
+    },
+    {
+        "image_path": "CODA2022val_1717.png",
+        "questions": [
+            "CODA2022val_1717_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [490, 112, 857, 669] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'All compartment doors open', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA2022val_1717_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Left turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'Brake light on', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_18"
+    },
+    {
+        "image_path": "CODA2022val_1943.png",
+        "questions": [
+            "CODA2022val_1943_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [567, 211, 1036, 710] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Passenger light on', 'Cargo hanging from trunk', 'Left turn light on', 'All compartment doors open', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_1943_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Brake light on', 'Cargo hanging from trunk', 'Left turn light on', 'Passenger light on', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_19"
+    },
+    {
+        "image_path": "CODA2022val_1945.png",
+        "questions": [
+            "CODA2022val_1945_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [469, 328, 677, 633] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Passenger light on', 'Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_1945_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on', 'Passenger light on', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_20"
+    },
+    {
+        "image_path": "CODA2022val_1958.png",
+        "questions": [
+            "CODA2022val_1958_0.png;The width and height of the image are 1281 and 720. What is the current state of the brake light on located at the bounding box [786, 477, 849, 527] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Right door open for boarding', 'Right door open', 'Construction work', 'Accident scene', 'Left door open for boarding'], note that no explaination is needed.",
+            "CODA2022val_1958_0.png;What is the current state of the brake light on within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Rear compartment door open for loading', 'Right door open for boarding', 'Construction work', 'Right door open', 'Left door open for boarding'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Accident scene",
+            "Accident scene"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_21"
+    },
+    {
+        "image_path": "CODA2022val_1974.png",
+        "questions": [
+            "CODA2022val_1974_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [626, 308, 854, 563] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'All compartment doors open', 'Right turn light on', 'Brake light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA2022val_1974_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Right turn light on', 'Brake light on', 'Cargo hanging from trunk', 'Left turn light on', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_22"
+    },
+    {
+        "image_path": "CODA2022val_2028.png",
+        "questions": [
+            "CODA2022val_2028_0.png;The width and height of the image are 1280 and 720. What is the current state of the car located at the bounding box [304, 446, 628, 678] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Left turn light on', 'Cargo hanging from trunk', 'Right turn light on', 'Rear compartment door open for loading', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_2028_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'All compartment doors open', 'Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_23"
+    },
+    {
+        "image_path": "CODA2022val_2041.png",
+        "questions": [
+            "CODA2022val_2041_0.png;The width and height of the image are 1281 and 720. What is the current state of the coach located at the bounding box [481, 271, 962, 694] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Right turn light on', 'All compartment doors open', 'Brake light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed.",
+            "CODA2022val_2041_0.png;What is the current state of the coach within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Left turn light on', 'Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_24"
+    },
+    {
+        "image_path": "CODA2022val_2068.png",
+        "questions": [
+            "CODA2022val_2068_0.png;The width and height of the image are 1280 and 720. What is the current state of the minibus located at the bounding box [672, 348, 923, 602] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Trunk open for loading', 'Construction work', 'Trunk open', 'Rear compartment door open for loading', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "CODA2022val_2068_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Construction work', 'Rear compartment door open for loading', 'Trunk open for loading', 'Trunk open', 'Rear compartment door open for loading', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_25"
+    },
+    {
+        "image_path": "CODA2022val_2175.png",
+        "questions": [
+            "CODA2022val_2175_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [268, 159, 736, 590] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'All compartment doors open', 'Right turn light on', 'Left turn light on', 'Rear compartment door open for loading', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_2175_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Right turn light on', 'All compartment doors open', 'Brake light on', 'Left turn light on', 'Cargo hanging from trunk'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_26"
+    },
+    {
+        "image_path": "CODA2022val_2179.png",
+        "questions": [
+            "CODA2022val_2179_0.png;The width and height of the image are 1280 and 720. What is the current state of the cargo located at the bounding box [692, 440, 819, 529] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'Rear compartment door open for loading', 'Accident scene', 'Left door open for boarding', 'Right door open for boarding', 'Trunk open'], note that no explaination is needed.",
+            "CODA2022val_2179_0.png;What is the current state of the cargo within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open', 'Construction work', 'Rear compartment door open for loading', 'Right door open for boarding', 'Left door open for boarding', 'Accident scene'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_27"
+    },
+    {
+        "image_path": "CODA2022val_2282.png",
+        "questions": [
+            "CODA2022val_2282_0.png;The width and height of the image are 1281 and 720. What is the current state of the minibus located at the bounding box [542, 381, 771, 648] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Construction work', 'Rear compartment door open for loading', 'Trunk open for loading', 'All compartment doors open', 'Trunk open'], note that no explaination is needed.",
+            "CODA2022val_2282_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Construction work', 'Rear compartment door open for loading', 'All compartment doors open', 'Rear compartment door open for loading', 'Trunk open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_28"
+    },
+    {
+        "image_path": "CODA2022val_2284.png",
+        "questions": [
+            "CODA2022val_2284_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [706, 411, 929, 549] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open for boarding', 'Right door open for boarding', 'Construction work', 'Accident scene', 'Rear compartment door open for loading', 'Trunk open'], note that no explaination is needed.",
+            "CODA2022val_2284_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Construction work', 'Trunk open', 'Right door open for boarding', 'Rear compartment door open for loading', 'Accident scene'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_29"
+    },
+    {
+        "image_path": "CODA2022val_2303.png",
+        "questions": [
+            "CODA2022val_2303_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [646, 317, 840, 625] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'Left turn light on', 'All compartment doors open', 'Passenger light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_2303_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'All compartment doors open', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Cargo hanging from trunk'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_30"
+    },
+    {
+        "image_path": "CODA2022val_2306.png",
+        "questions": [
+            "CODA2022val_2306_0.png;The width and height of the image are 1281 and 720. What is the current state of the minibus located at the bounding box [515, 497, 691, 610] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Hazard lights on', 'Empty car light on', 'Passenger light on', 'Left door open', 'Right door open', 'Right door open for boarding'], note that no explaination is needed.",
+            "CODA2022val_2306_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Hazard lights on', 'Passenger light on', 'Right door open', 'Left door open', 'Empty car light on', 'Right door open for boarding'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left door open",
+            "Left door open"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_31"
+    },
+    {
+        "image_path": "CODA2022val_2390.png",
+        "questions": [
+            "CODA2022val_2390_0.png;The width and height of the image are 1280 and 720. What is the current state of the minibus located at the bounding box [496, 385, 782, 707] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'All compartment doors open', 'Trunk open for loading', 'Rear compartment door open for loading', 'Rear compartment door open for loading', 'Trunk open'], note that no explaination is needed.",
+            "CODA2022val_2390_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Rear compartment door open for loading', 'All compartment doors open', 'Trunk open for loading', 'Trunk open', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_32"
+    },
+    {
+        "image_path": "CODA2022val_2435.png",
+        "questions": [
+            "CODA2022val_2435_0.png;The width and height of the image are 1280 and 720. What is the current state of the special vehicle located at the bounding box [511, 437, 726, 570] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Trunk open', 'Left door open for boarding', 'Construction work', 'Accident scene', 'Right door open for boarding'], note that no explaination is needed.",
+            "CODA2022val_2435_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Left door open for boarding', 'Trunk open', 'Right door open for boarding', 'Construction work', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_33"
+    },
+    {
+        "image_path": "CODA2022val_2447.png",
+        "questions": [
+            "CODA2022val_2447_0.png;The width and height of the image are 1281 and 720. What is the current state of the car located at the bounding box [525, 414, 753, 609] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Brake light on', 'Rear compartment door open for loading', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed.",
+            "CODA2022val_2447_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Left turn light on', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'All compartment doors open', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_34"
+    },
+    {
+        "image_path": "CODA2022val_2473.png",
+        "questions": [
+            "CODA2022val_2473_0.png;The width and height of the image are 1280 and 720. What is the current state of the car located at the bounding box [687, 553, 813, 648] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'All compartment doors open', 'Left turn light on', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed.",
+            "CODA2022val_2473_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Right turn light on', 'Brake light on', 'Cargo hanging from trunk', 'All compartment doors open', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_35"
+    },
+    {
+        "image_path": "CODA2022val_2498.png",
+        "questions": [
+            "CODA2022val_2498_0.png;The width and height of the image are 1280 and 720. What is the current state of the car located at the bounding box [289, 486, 652, 718] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Rear compartment door open for loading', 'All compartment doors open', 'Left turn light on', 'Right turn light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_2498_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'All compartment doors open', 'Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_36"
+    },
+    {
+        "image_path": "CODA2022val_2593.png",
+        "questions": [
+            "CODA2022val_2593_0.png;The width and height of the image are 1281 and 720. What is the current state of the truck located at the bounding box [391, 446, 842, 710] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Right turn light on', 'Brake light on', 'Empty car light on', 'Passenger light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_2593_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Right turn light on', 'Brake light on', 'Empty car light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_37"
+    },
+    {
+        "image_path": "CODA2022val_2722.png",
+        "questions": [
+            "CODA2022val_2722_0.png;The width and height of the image are 1281 and 720. What is the current state of the special vehicle located at the bounding box [685, 265, 982, 575] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Passenger light on', 'All compartment doors open', 'Left turn light on', 'Cargo hanging from trunk', 'Right turn light on'], note that no explaination is needed.",
+            "CODA2022val_2722_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Left turn light on', 'Passenger light on', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_38"
+    },
+    {
+        "image_path": "CODA2022val_3293.png",
+        "questions": [
+            "CODA2022val_3293_0.png;The width and height of the image are 1280 and 720. What is the current state of the special vehicle located at the bounding box [387, 103, 849, 713] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Left turn light on', 'Right turn light on', 'Brake light on', 'All compartment doors open', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA2022val_3293_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Brake light on', 'Rear compartment door open for loading', 'All compartment doors open', 'Right turn light on', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_39"
+    },
+    {
+        "image_path": "CODA_000006_1616008919200.png",
+        "questions": [
+            "CODA_000006_1616008919200_0.png;The width and height of the image are 1920 and 1020. What is the current state of the special vehicle located at the bounding box [1127, 463, 1312, 638] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'Left door open for boarding', 'Rear compartment door open for loading', 'Right door open for boarding', 'Accident scene', 'Trunk open'], note that no explaination is needed.",
+            "CODA_000006_1616008919200_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Right door open for boarding', 'Accident scene', 'Left door open for boarding', 'Trunk open', 'Construction work', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_40"
+    },
+    {
+        "image_path": "CODA_000020_1616097126699.png",
+        "questions": [
+            "CODA_000020_1616097126699_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [852, 517, 1137, 792] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Empty car light on', 'Brake light on', 'Right turn light on', 'Passenger light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA_000020_1616097126699_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Left turn light on', 'Empty car light on', 'Cargo hanging from trunk', 'Right turn light on', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_41"
+    },
+    {
+        "image_path": "CODA_000020_1616097601700.png",
+        "questions": [
+            "CODA_000020_1616097601700_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1427, 530, 1736, 804] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Left turn light on', 'Passenger light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000020_1616097601700_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Brake light on', 'Right turn light on', 'Left turn light on', 'Cargo hanging from trunk', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_42"
+    },
+    {
+        "image_path": "CODA_000022_1616098633200.png",
+        "questions": [
+            "CODA_000022_1616098633200_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [711, 496, 1212, 986] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Left turn light on', 'Empty car light on', 'Brake light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000022_1616098633200_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'Right turn light on', 'Empty car light on', 'Brake light on', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_43"
+    },
+    {
+        "image_path": "CODA_000023_1616098846901.png",
+        "questions": [
+            "CODA_000023_1616098846901_0.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [950, 336, 1473, 837] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Right turn light on', 'Rear compartment door open for loading', 'Brake light on', 'All compartment doors open', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA_000023_1616098846901_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Left turn light on', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Brake light on', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_44"
+    },
+    {
+        "image_path": "CODA_000052_1616191776200.png",
+        "questions": [
+            "CODA_000052_1616191776200_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1040, 547, 1427, 895] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Left turn light on', 'All compartment doors open', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000052_1616191776200_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Left turn light on', 'Right turn light on', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_45"
+    },
+    {
+        "image_path": "CODA_000053_1616193177299.png",
+        "questions": [
+            "CODA_000053_1616193177299_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1004, 541, 1221, 743] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Left turn light on', 'Right turn light on', 'Cargo hanging from trunk', 'Empty car light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000053_1616193177299_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Empty car light on', 'Brake light on', 'Passenger light on', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_46"
+    },
+    {
+        "image_path": "CODA_000055_1616194559500.png",
+        "questions": [
+            "CODA_000055_1616194559500_0.png;The width and height of the image are 1920 and 1020. What is the current state of the special vehicle located at the bounding box [788, 408, 981, 678] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Passenger light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000055_1616194559500_1.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [979, 194, 1128, 666] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Empty car light on', 'Cargo hanging from trunk', 'Brake light on', 'Passenger light on', 'Right turn light on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000055_1616194559500_2.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [15, 543, 607, 954] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Empty car light on', 'Brake light on', 'Left turn light on', 'Right turn light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA_000055_1616194559500_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Passenger light on', 'Cargo hanging from trunk', 'Right turn light on', 'Left turn light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000055_1616194559500_1.png;What is the current state of the truck within the green box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'Right turn light on', 'Empty car light on', 'Brake light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000055_1616194559500_2.png;What is the current state of the car within the blue box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000055_1616194559500_all.png; What is the current state of the special vehicle within the red box in the image?What is the current state of the truck within the green box in the image?What is the current state of the car within the blue box in the image?Please select the appropriate answers from the following phrases:['Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Passenger light on'].Answer these three questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on, Right turn light on'"
+        ],
+        "reference": [
+            "Brake light on",
+            "Construction work",
+            "Brake light on",
+            "Brake light on",
+            "Construction work",
+            "Brake light on",
+            "Brake light on,Construction work,Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_47"
+    },
+    {
+        "image_path": "CODA_000072_1616277112300.png",
+        "questions": [
+            "CODA_000072_1616277112300_0.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [1192, 11, 1523, 721] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Accident scene', 'Left door open for boarding', 'Construction work', 'Rear compartment door open for loading', 'Trunk open', 'Right door open for boarding'], note that no explaination is needed.",
+            "CODA_000072_1616277112300_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Left door open for boarding', 'Accident scene', 'Right door open for boarding', 'Trunk open', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_48"
+    },
+    {
+        "image_path": "CODA_000077_1616344646399.png",
+        "questions": [
+            "CODA_000077_1616344646399_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [850, 546, 1278, 898] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Rear compartment door open for loading', 'Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000077_1616344646399_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'All compartment doors open', 'Rear compartment door open for loading', 'Left turn light on', 'Right turn light on', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_49"
+    },
+    {
+        "image_path": "CODA_000083_1616350831299.png",
+        "questions": [
+            "CODA_000083_1616350831299_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [796, 549, 1285, 970] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Cargo hanging from trunk', 'Left turn light on', 'Right turn light on', 'Empty car light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000083_1616350831299_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Empty car light on', 'Passenger light on', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_50"
+    },
+    {
+        "image_path": "CODA_000084_1616351803900.png",
+        "questions": [
+            "CODA_000084_1616351803900_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [640, 557, 1415, 1011] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Hazard lights on', 'Right door open for boarding', 'Accident scene', 'Right door open', 'Left door open', 'Left door open for boarding'], note that no explaination is needed.",
+            "CODA_000084_1616351803900_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Left door open', 'Accident scene', 'Right door open for boarding', 'Hazard lights on', 'Right door open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right door open for boarding",
+            "Right door open for boarding"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_51"
+    },
+    {
+        "image_path": "CODA_000085_1616352128300.png",
+        "questions": [
+            "CODA_000085_1616352128300_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1024, 546, 1330, 807] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'Rear compartment door open for loading', 'Brake light on', 'Right turn light on', 'All compartment doors open'], note that no explaination is needed.",
+            "CODA_000085_1616352128300_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Right turn light on', 'Rear compartment door open for loading', 'All compartment doors open', 'Brake light on', 'Cargo hanging from trunk'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_52"
+    },
+    {
+        "image_path": "CODA_000110_1616532482400.png",
+        "questions": [
+            "CODA_000110_1616532482400_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [659, 538, 1260, 1012] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Brake light on', 'Cargo hanging from trunk', 'Passenger light on', 'Empty car light on', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000110_1616532482400_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Empty car light on', 'Cargo hanging from trunk', 'Left turn light on', 'Passenger light on', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_53"
+    },
+    {
+        "image_path": "CODA_000118_1616616929900.png",
+        "questions": [
+            "CODA_000118_1616616929900_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [789, 560, 1073, 788] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Left turn light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000118_1616616929900_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Left turn light on', 'Brake light on', 'Passenger light on', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_54"
+    },
+    {
+        "image_path": "CODA_000122_1616618833298.png",
+        "questions": [
+            "CODA_000122_1616618833298_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [891, 549, 1114, 743] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Left turn light on', 'Empty car light on', 'Brake light on', 'Cargo hanging from trunk', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000122_1616618833298_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Left turn light on', 'Right turn light on', 'Empty car light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_55"
+    },
+    {
+        "image_path": "CODA_000135_1618683459999.png",
+        "questions": [
+            "CODA_000135_1618683459999_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [618, 556, 925, 857] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Cargo hanging from trunk', 'Brake light on', 'All compartment doors open', 'Left turn light on', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000135_1618683459999_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Passenger light on', 'Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_56"
+    },
+    {
+        "image_path": "CODA_000141_1618686897200.png",
+        "questions": [
+            "CODA_000141_1618686897200_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [527, 440, 1228, 1012] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Passenger light on', 'Cargo hanging from trunk', 'Right turn light on', 'Empty car light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000141_1618686897200_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_57"
+    },
+    {
+        "image_path": "CODA_000141_1618688659200.png",
+        "questions": [
+            "CODA_000141_1618688659200_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [859, 524, 1127, 775] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Brake light on', 'Empty car light on', 'Left turn light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000141_1618688659200_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Left turn light on', 'Passenger light on', 'Empty car light on', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_58"
+    },
+    {
+        "image_path": "CODA_000146_1618695346900.png",
+        "questions": [
+            "CODA_000146_1618695346900_0.png;The width and height of the image are 1920 and 1020. What is the current state of the taxi located at the bounding box [912, 527, 1196, 815] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open', 'Brake light on', 'Empty car light on', 'Left turn light on', 'Hazard lights on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000146_1618695346900_1.png;The width and height of the image are 1920 and 1020. What is the current state of the taxi located at the bounding box [378, 533, 765, 798] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Left door open', 'Hazard lights on', 'Passenger light on', 'Left turn light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000146_1618695346900_0.png;What is the current state of the taxi within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Passenger light on', 'Left door open', 'Empty car light on', 'Hazard lights on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000146_1618695346900_1.png;What is the current state of the taxi within the green box in the image? Please select the appropriate one from the following phrases:['Left door open', 'Empty car light on', 'Brake light on', 'Left turn light on', 'Hazard lights on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000146_1618695346900_all.png; What is the current state of the taxi within the red box in the image?What is the current state of the taxi within the green box in the image?Please select the appropriate answers from the following phrases:['Left door open', 'Empty car light on', 'Brake light on', 'Left turn light on', 'Hazard lights on', 'Passenger light on'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Empty car light on",
+            "Passenger light on",
+            "Empty car light on",
+            "Passenger light on",
+            "Empty car light on,Passenger light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_59"
+    },
+    {
+        "image_path": "CODA_000146_1618695977899.png",
+        "questions": [
+            "CODA_000146_1618695977899_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [889, 528, 1252, 879] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'Right turn light on', 'Empty car light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000146_1618695977899_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Empty car light on', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on', 'Passenger light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_60"
+    },
+    {
+        "image_path": "CODA_000151_1618700171299.png",
+        "questions": [
+            "CODA_000151_1618700171299_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [862, 552, 1157, 801] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'All compartment doors open', 'Left turn light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000151_1618700171299_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Left turn light on', 'All compartment doors open', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_61"
+    },
+    {
+        "image_path": "CODA_000152_1618701851399.png",
+        "questions": [
+            "CODA_000152_1618701851399_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [649, 566, 1198, 1007] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Empty car light on', 'Passenger light on', 'Left turn light on', 'Brake light on', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000152_1618701851399_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Right turn light on', 'Cargo hanging from trunk', 'Brake light on', 'Left turn light on', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_62"
+    },
+    {
+        "image_path": "CODA_000155_1618703490498.png",
+        "questions": [
+            "CODA_000155_1618703490498_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [556, 469, 1089, 1004] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Cargo hanging from trunk', 'Right turn light on', 'All compartment doors open', 'Passenger light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000155_1618703490498_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Left turn light on', 'Passenger light on', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left turn light on",
+            "Left turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_63"
+    },
+    {
+        "image_path": "CODA_000169_1618718590900.png",
+        "questions": [
+            "CODA_000169_1618718590900_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [814, 475, 1228, 873] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Brake light on', 'Left turn light on', 'Empty car light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000169_1618718590900_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Passenger light on', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_64"
+    },
+    {
+        "image_path": "CODA_000205_1618801421200.png",
+        "questions": [
+            "CODA_000205_1618801421200_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [865, 549, 1165, 802] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Passenger light on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000205_1618801421200_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_65"
+    },
+    {
+        "image_path": "CODA_000205_1618801422699.png",
+        "questions": [
+            "CODA_000205_1618801422699_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [824, 541, 1131, 821] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Empty car light on', 'Left turn light on', 'Brake light on', 'Passenger light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA_000205_1618801422699_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_66"
+    },
+    {
+        "image_path": "CODA_000207_1618804261501.png",
+        "questions": [
+            "CODA_000207_1618804261501_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [660, 499, 1157, 970] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Left turn light on', 'Right turn light on', 'Passenger light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000207_1618804261501_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Brake light on', 'Passenger light on', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_67"
+    },
+    {
+        "image_path": "CODA_000207_1618804325999.png",
+        "questions": [
+            "CODA_000207_1618804325999_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [763, 473, 1436, 1015] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Brake light on', 'Left turn light on', 'Cargo hanging from trunk', 'Right turn light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000207_1618804325999_1.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1443, 507, 1914, 882] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Passenger light on', 'Brake light on', 'Empty car light on', 'Left turn light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "CODA_000207_1618804325999_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Passenger light on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000207_1618804325999_1.png;What is the current state of the car within the green box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Passenger light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000207_1618804325999_all.png; What is the current state of the car within the red box in the image?What is the current state of the car within the green box in the image?Please select the appropriate answers from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Passenger light on', 'Empty car light on'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on",
+            "Brake light on",
+            "Brake light on",
+            "Brake light on,Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_68"
+    },
+    {
+        "image_path": "CODA_000212_1618809565001.png",
+        "questions": [
+            "CODA_000212_1618809565001_0.png;The width and height of the image are 1920 and 1020. What is the current state of the minibus located at the bounding box [711, 291, 1208, 917] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Empty car light on', 'Right turn light on', 'Brake light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000212_1618809565001_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Right turn light on', 'Brake light on', 'Passenger light on', 'Left turn light on', 'Cargo hanging from trunk'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_69"
+    },
+    {
+        "image_path": "CODA_000212_1618809735500.png",
+        "questions": [
+            "CODA_000212_1618809735500_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [943, 530, 981, 576] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'Empty car light on', 'Brake light on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000212_1618809735500_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Empty car light on', 'Brake light on', 'Left turn light on', 'Cargo hanging from trunk', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_70"
+    },
+    {
+        "image_path": "CODA_000216_1618846811799.png",
+        "questions": [
+            "CODA_000216_1618846811799_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [817, 538, 1178, 875] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Passenger light on', 'Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000216_1618846811799_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Left turn light on', 'Brake light on', 'Passenger light on', 'Right turn light on', 'Cargo hanging from trunk'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_71"
+    },
+    {
+        "image_path": "CODA_000246_1618947040099.png",
+        "questions": [
+            "CODA_000246_1618947040099_0.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [1205, 179, 1431, 727] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open', 'Left door open for boarding', 'Right door open for boarding', 'Accident scene', 'Construction work', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "CODA_000246_1618947040099_1.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [1441, 172, 1696, 696] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'Right door open for boarding', 'Trunk open', 'Rear compartment door open for loading', 'Left door open for boarding', 'Accident scene'], note that no explaination is needed.",
+            "CODA_000246_1618947040099_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Construction work', 'Trunk open', 'Accident scene', 'Right door open for boarding', 'Left door open for boarding', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "CODA_000246_1618947040099_1.png;What is the current state of the truck within the green box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Right door open for boarding', 'Accident scene', 'Construction work', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "CODA_000246_1618947040099_all.png; What is the current state of the truck within the red box in the image?What is the current state of the truck within the green box in the image?Please select the appropriate answers from the following phrases:['Left door open for boarding', 'Right door open for boarding', 'Accident scene', 'Construction work', 'Trunk open', 'Rear compartment door open for loading'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work",
+            "Construction work",
+            "Construction work",
+            "Construction work,Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_72"
+    },
+    {
+        "image_path": "CODA_000257_1618975696799.png",
+        "questions": [
+            "CODA_000257_1618975696799_0.png;The width and height of the image are 1920 and 1020. What is the current state of the minibus located at the bounding box [575, 357, 1263, 1014] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'Passenger light on', 'Right turn light on', 'Brake light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000257_1618975696799_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Passenger light on', 'Left turn light on', 'Right turn light on', 'Brake light on', 'Empty car light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_73"
+    },
+    {
+        "image_path": "CODA_000345_1619413564900.png",
+        "questions": [
+            "CODA_000345_1619413564900_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1047, 533, 1417, 833] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'Empty car light on', 'Cargo hanging from trunk', 'Brake light on', 'Passenger light on', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000345_1619413564900_1.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [712, 547, 804, 617] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Empty car light on', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000345_1619413564900_2.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [936, 549, 1033, 611] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Empty car light on', 'Brake light on', 'Left turn light on', 'Right turn light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000345_1619413564900_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'Right turn light on', 'Brake light on', 'Passenger light on', 'Empty car light on'], note that no explaination is needed.",
+            "CODA_000345_1619413564900_1.png;What is the current state of the car within the green box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Passenger light on', 'Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000345_1619413564900_2.png;What is the current state of the car within the blue box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Cargo hanging from trunk', 'Brake light on', 'Right turn light on', 'Left turn light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000345_1619413564900_all.png; What is the current state of the car within the red box in the image?What is the current state of the car within the green box in the image?What is the current state of the car within the blue box in the image?Please select the appropriate answers from the following phrases:['Empty car light on', 'Cargo hanging from trunk', 'Brake light on', 'Right turn light on', 'Left turn light on', 'Passenger light on'].Answer these three questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on, Right turn light on'"
+        ],
+        "reference": [
+            "Brake light on",
+            "Left turn light on",
+            "Brake light on",
+            "Brake light on",
+            "Left turn light on",
+            "Brake light on",
+            "Brake light on,Left turn light on,Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_74"
+    },
+    {
+        "image_path": "CODA_000363_1619469485400.png",
+        "questions": [
+            "CODA_000363_1619469485400_0.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [1288, 453, 1757, 789] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open for boarding', 'Trunk open', 'Left door open for boarding', 'Construction work', 'Rear compartment door open for loading', 'Accident scene'], note that no explaination is needed.",
+            "CODA_000363_1619469485400_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Right door open for boarding', 'Trunk open', 'Accident scene', 'Rear compartment door open for loading', 'Construction work', 'Left door open for boarding'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_75"
+    },
+    {
+        "image_path": "CODA_000375_1619495264900.png",
+        "questions": [
+            "CODA_000375_1619495264900_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [776, 533, 1210, 846] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Passenger light on', 'Cargo hanging from trunk', 'Empty car light on', 'Right turn light on', 'Left turn light on'], note that no explaination is needed.",
+            "CODA_000375_1619495264900_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Right turn light on', 'Left turn light on', 'Cargo hanging from trunk', 'Passenger light on', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_76"
+    },
+    {
+        "image_path": "CODA_000413_1619637138600.png",
+        "questions": [
+            "CODA_000413_1619637138600_0.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [1123, 481, 1376, 696] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Right door open for boarding', 'Left door open for boarding', 'Accident scene', 'Trunk open', 'Construction work'], note that no explaination is needed.",
+            "CODA_000413_1619637138600_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Right door open for boarding', 'Construction work', 'Left door open for boarding', 'Trunk open', 'Accident scene', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_77"
+    },
+    {
+        "image_path": "CODA_000425_1619644333099.png",
+        "questions": [
+            "CODA_000425_1619644333099_0.png;The width and height of the image are 1920 and 1020. What is the current state of the truck located at the bounding box [1333, 453, 1610, 682] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open for boarding', 'Trunk open', 'Accident scene', 'Rear compartment door open for loading', 'Construction work', 'Right door open for boarding'], note that no explaination is needed.",
+            "CODA_000425_1619644333099_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Trunk open', 'Right door open for boarding', 'Accident scene', 'Rear compartment door open for loading', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_78"
+    },
+    {
+        "image_path": "CODA_000465_1619762207799.png",
+        "questions": [
+            "CODA_000465_1619762207799_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [933, 550, 1044, 644] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Empty car light on', 'Brake light on', 'Right turn light on', 'Left turn light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000465_1619762207799_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Passenger light on', 'Empty car light on', 'Left turn light on', 'Brake light on', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_79"
+    },
+    {
+        "image_path": "CODA_000473_1619800901000.png",
+        "questions": [
+            "CODA_000473_1619800901000_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [859, 510, 1215, 853] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Left turn light on', 'Empty car light on', 'Passenger light on', 'Brake light on', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000473_1619800901000_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Brake light on', 'Empty car light on', 'Right turn light on', 'Cargo hanging from trunk', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_80"
+    },
+    {
+        "image_path": "CODA_000483_1619812970099.png",
+        "questions": [
+            "CODA_000483_1619812970099_0.png;The width and height of the image are 1920 and 1020. What is the current state of the minibus located at the bounding box [1353, 466, 1782, 805] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Construction work', 'Rear compartment door open for loading', 'Trunk open for loading', 'Accident scene', 'Trunk open'], note that no explaination is needed.",
+            "CODA_000483_1619812970099_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Rear compartment door open for loading', 'Rear compartment door open for loading', 'Construction work', 'Accident scene', 'Trunk open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open",
+            "Trunk open"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_81"
+    },
+    {
+        "image_path": "CODA_000500_1619837535799.png",
+        "questions": [
+            "CODA_000500_1619837535799_0.png;The width and height of the image are 1920 and 1020. What is the current state of the special vehicle located at the bounding box [1446, 446, 1808, 770] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Accident scene', 'Right door open for boarding', 'Trunk open', 'Construction work', 'Rear compartment door open for loading', 'Left door open for boarding'], note that no explaination is needed.",
+            "CODA_000500_1619837535799_1.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [1088, 536, 1163, 604] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Accident scene', 'Right door open for boarding', 'Trunk open', 'Construction work', 'Rear compartment door open for loading', 'Left door open for boarding'], note that no explaination is needed.",
+            "CODA_000500_1619837535799_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Right door open for boarding', 'Rear compartment door open for loading', 'Trunk open', 'Construction work', 'Left door open for boarding'], note that no explaination is needed.",
+            "CODA_000500_1619837535799_1.png;What is the current state of the car within the green box in the image? Please select the appropriate one from the following phrases:['Right door open for boarding', 'Construction work', 'Rear compartment door open for loading', 'Accident scene', 'Trunk open', 'Left door open for boarding'], note that no explaination is needed.",
+            "CODA_000500_1619837535799_all.png; What is the current state of the special vehicle within the red box in the image?What is the current state of the car within the green box in the image?Please select the appropriate answers from the following phrases:['Right door open for boarding', 'Construction work', 'Rear compartment door open for loading', 'Accident scene', 'Trunk open', 'Left door open for boarding'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Construction work",
+            "Brake light on",
+            "Construction work",
+            "Brake light on",
+            "Construction work,Brake light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_82"
+    },
+    {
+        "image_path": "CODA_000511_1619897046700.png",
+        "questions": [
+            "CODA_000511_1619897046700_0.png;The width and height of the image are 1920 and 1020. What is the current state of the courteous located at the bounding box [910, 524, 1611, 978] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open for boarding', 'Right door open', 'Left door open for boarding', 'Hazard lights on', 'Accident scene', 'Left door open'], note that no explaination is needed.",
+            "CODA_000511_1619897046700_0.png;What is the current state of the courteous within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Right door open', 'Right door open for boarding', 'Hazard lights on', 'Left door open for boarding', 'Left door open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right door open for boarding",
+            "Right door open for boarding"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_83"
+    },
+    {
+        "image_path": "CODA_000513_1619899342399.png",
+        "questions": [
+            "CODA_000513_1619899342399_0.png;The width and height of the image are 1920 and 1020. What is the current state of the minibus located at the bounding box [775, 305, 1260, 915] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Left turn light on', 'Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'All compartment doors open'], note that no explaination is needed.",
+            "CODA_000513_1619899342399_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Cargo hanging from trunk', 'Right turn light on', 'Brake light on', 'Left turn light on', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_84"
+    },
+    {
+        "image_path": "CODA_000516_1619901484899.png",
+        "questions": [
+            "CODA_000516_1619901484899_0.png;The width and height of the image are 1920 and 1020. What is the current state of the minibus located at the bounding box [1002, 410, 1911, 1015] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Accident scene', 'Right door open', 'Left door open for boarding', 'Construction work', 'Right door open for boarding', 'Left door open'], note that no explaination is needed.",
+            "CODA_000516_1619901484899_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Left door open', 'Right door open', 'Accident scene', 'Right door open for boarding', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Left door open for boarding",
+            "Left door open for boarding"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_85"
+    },
+    {
+        "image_path": "CODA_000522_1619916860600.png",
+        "questions": [
+            "CODA_000522_1619916860600_0.png;The width and height of the image are 1920 and 1020. What is the current state of the special vehicle located at the bounding box [1110, 437, 1289, 663] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open for boarding', 'Right door open for boarding', 'Construction work', 'Rear compartment door open for loading', 'Accident scene', 'Trunk open'], note that no explaination is needed.",
+            "CODA_000522_1619916860600_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Right door open for boarding', 'Left door open for boarding', 'Rear compartment door open for loading', 'Accident scene', 'Construction work', 'Trunk open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_86"
+    },
+    {
+        "image_path": "CODA_000529_1619979253100.png",
+        "questions": [
+            "CODA_000529_1619979253100_0.png;The width and height of the image are 1920 and 1020. What is the current state of the car located at the bounding box [776, 550, 860, 630] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Right turn light on', 'Empty car light on', 'Left turn light on', 'Cargo hanging from trunk', 'Brake light on'], note that no explaination is needed.",
+            "CODA_000529_1619979253100_1.png;The width and height of the image are 1920 and 1020. What is the current state of the minibus located at the bounding box [1072, 459, 1454, 799] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Right turn light on', 'Empty car light on', 'Left turn light on', 'Cargo hanging from trunk', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000529_1619979253100_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Empty car light on', 'Brake light on', 'Cargo hanging from trunk', 'Left turn light on', 'Right turn light on'], note that no explaination is needed.",
+            "CODA_000529_1619979253100_1.png;What is the current state of the minibus within the green box in the image? Please select the appropriate one from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Empty car light on', 'Left turn light on', 'Passenger light on'], note that no explaination is needed.",
+            "CODA_000529_1619979253100_all.png; What is the current state of the car within the red box in the image?What is the current state of the minibus within the green box in the image?Please select the appropriate answers from the following phrases:['Brake light on', 'Cargo hanging from trunk', 'Right turn light on', 'Empty car light on', 'Left turn light on', 'Passenger light on'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Brake light on",
+            "Trunk open",
+            "Brake light on",
+            "Trunk open",
+            "Brake light on,Trunk open"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_87"
+    },
+    {
+        "image_path": "CODA_000529_1619979429100.png",
+        "questions": [
+            "CODA_000529_1619979429100_0.png;The width and height of the image are 1920 and 1020. What is the current state of the medium bus located at the bounding box [1062, 510, 1238, 678] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Trunk open for loading', 'Rear compartment door open for loading', 'Construction work', 'Accident scene', 'Trunk open'], note that no explaination is needed.",
+            "CODA_000529_1619979429100_0.png;What is the current state of the medium bus within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Trunk open for loading', 'Construction work', 'Accident scene', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open",
+            "Trunk open"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "id": "1_1_4_88"
+    },
+    {
+        "image_path": "Drama_2020-0204-103442_frame_072046.png",
+        "questions": [
+            "Drama_2020-0204-103442_frame_072046_0.png;The width and height of the image are 1920 and 1208. What is the current state of the truck located at the bounding box [746, 493, 895, 688] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Trunk open for loading', 'Trunk open', 'Rear compartment door open for loading', 'All compartment doors open', 'Construction work'], note that no explaination is needed.",
+            "Drama_2020-0204-103442_frame_072046_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Trunk open for loading', 'Rear compartment door open for loading', 'Trunk open', 'Construction work', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_89"
+    },
+    {
+        "image_path": "Drama_2020-0205-103411_frame_059948.png",
+        "questions": [
+            "Drama_2020-0205-103411_frame_059948_0.png;The width and height of the image are 1920 and 1208. What is the current state of the truck located at the bounding box [341, 421, 749, 821] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'Rear compartment door open for loading', 'All compartment doors open', 'Rear compartment door open for loading', 'Trunk open', 'Trunk open for loading'], note that no explaination is needed.",
+            "Drama_2020-0205-103411_frame_059948_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Construction work', 'Trunk open', 'Rear compartment door open for loading', 'All compartment doors open', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_90"
+    },
+    {
+        "image_path": "Drama_2020-0206-101736_frame_013851.png",
+        "questions": [
+            "Drama_2020-0206-101736_frame_013851_0.png;The width and height of the image are 1920 and 1208. What is the current state of the truck located at the bounding box [895, 608, 950, 666] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open', 'Brake light on', 'Passenger light on', 'Hazard lights on', 'Right door open', 'Empty car light on'], note that no explaination is needed.",
+            "Drama_2020-0206-101736_frame_013851_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Hazard lights on', 'Passenger light on', 'Empty car light on', 'Left door open', 'Brake light on', 'Right door open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Hazard lights on",
+            "Hazard lights on"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_91"
+    },
+    {
+        "image_path": "Drama_2020-0206-101736_frame_018471.png",
+        "questions": [
+            "Drama_2020-0206-101736_frame_018471_0.png;The width and height of the image are 1920 and 1208. What is the current state of the car located at the bounding box [772, 638, 866, 695] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open for boarding', 'Left door open for boarding', 'Hazard lights on', 'Right door open', 'Accident scene', 'Left door open'], note that no explaination is needed.",
+            "Drama_2020-0206-101736_frame_018471_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Left door open', 'Hazard lights on', 'Left door open for boarding', 'Right door open', 'Accident scene', 'Right door open for boarding'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right door open for boarding",
+            "Right door open for boarding"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_92"
+    },
+    {
+        "image_path": "Drama_2020-0207-101955_frame_003497.png",
+        "questions": [
+            "Drama_2020-0207-101955_frame_003497_0.png;The width and height of the image are 1920 and 1208. What is the current state of the truck located at the bounding box [654, 1089, 7, 344] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open', 'Passenger light on', 'Empty car light on', 'Left door open', 'Brake light on', 'Hazard lights on'], note that no explaination is needed.",
+            "Drama_2020-0207-101955_frame_003497_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Empty car light on', 'Passenger light on', 'Right door open', 'Hazard lights on', 'Brake light on', 'Left door open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Hazard lights on",
+            "Hazard lights on"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_93"
+    },
+    {
+        "image_path": "Drama_2020-0207-101955_frame_012500.png",
+        "questions": [
+            "Drama_2020-0207-101955_frame_012500_0.png;The width and height of the image are 1920 and 1208. What is the current state of the truck located at the bounding box [486, 532, 715, 779] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Cargo hanging from trunk', 'Trunk open for loading', 'Trunk open', 'Rear compartment door open for loading', 'All compartment doors open'], note that no explaination is needed.",
+            "Drama_2020-0207-101955_frame_012500_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Cargo hanging from trunk', 'All compartment doors open', 'Rear compartment door open for loading', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Rear compartment door open for loading",
+            "Rear compartment door open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_94"
+    },
+    {
+        "image_path": "Drama_2020-0210-101957_frame_001729.png",
+        "questions": [
+            "Drama_2020-0210-101957_frame_001729_0.png;The width and height of the image are 1920 and 1208. What is the current state of the truck located at the bounding box [630, 553, 804, 722] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open', 'Trunk open for loading', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'All compartment doors open', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "Drama_2020-0210-101957_frame_001729_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Trunk open', 'Rear compartment door open for loading', 'Trunk open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Rear compartment door open for loading",
+            "Rear compartment door open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_95"
+    },
+    {
+        "image_path": "Drama_clip_436_000078_frame_000078.png",
+        "questions": [
+            "Drama_clip_436_000078_frame_000078_0.png;The width and height of the image are 2704 and 1520. What is the current state of the truck located at the bounding box [906, 702, 1299, 953] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Passenger light on', 'Empty car light on', 'Left door open', 'Hazard lights on', 'Right door open', 'Brake light on'], note that no explaination is needed.",
+            "Drama_clip_436_000078_frame_000078_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Passenger light on', 'Hazard lights on', 'Left door open', 'Empty car light on', 'Brake light on', 'Right door open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Hazard lights on",
+            "Hazard lights on"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_96"
+    },
+    {
+        "image_path": "Drama_clip_66_000186_frame_000186.png",
+        "questions": [
+            "Drama_clip_66_000186_frame_000186_0.png;The width and height of the image are 2704 and 1520. What is the current state of the minibus located at the bounding box [1175, 766, 1293, 872] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Trunk open for loading', 'Construction work', 'Trunk open', 'Rear compartment door open for loading', 'All compartment doors open'], note that no explaination is needed.",
+            "Drama_clip_66_000186_frame_000186_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Construction work', 'Rear compartment door open for loading', 'Trunk open', 'Rear compartment door open for loading', 'All compartment doors open', 'Trunk open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_97"
+    },
+    {
+        "image_path": "Drama_clip_681_000474_frame_000474.png",
+        "questions": [
+            "Drama_clip_681_000474_frame_000474_0.png;The width and height of the image are 2704 and 1520. What is the current state of the special vehicle located at the bounding box [1265, 1119, 18, 129] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open for boarding', 'Left door open for boarding', 'Accident scene', 'Trunk open', 'Rear compartment door open for loading', 'Construction work'], note that no explaination is needed.",
+            "Drama_clip_681_000474_frame_000474_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Right door open for boarding', 'Left door open for boarding', 'Trunk open', 'Rear compartment door open for loading', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_98"
+    },
+    {
+        "image_path": "Drama_clip_692_000384_frame_000384.png",
+        "questions": [
+            "Drama_clip_692_000384_frame_000384_0.png;The width and height of the image are 2704 and 1520. What is the current state of the minibus located at the bounding box [893, 1474, 12, 484] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left door open for boarding', 'Accident scene', 'Left door open', 'Right door open', 'Hazard lights on', 'Right door open for boarding'], note that no explaination is needed.",
+            "Drama_clip_692_000384_frame_000384_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Hazard lights on', 'Left door open', 'Right door open for boarding', 'Right door open', 'Accident scene', 'Left door open for boarding'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right door open for boarding",
+            "Right door open for boarding"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_99"
+    },
+    {
+        "image_path": "Drama_clip_742_000144_frame_000144.png",
+        "questions": [
+            "Drama_clip_742_000144_frame_000144_0.png;The width and height of the image are 2704 and 1520. What is the current state of the special vehicle located at the bounding box [987, 400, 1306, 968] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open', 'Rear compartment door open for loading', 'Left door open for boarding', 'Construction work', 'Accident scene', 'Right door open for boarding'], note that no explaination is needed.",
+            "Drama_clip_742_000144_frame_000144_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Left door open for boarding', 'Rear compartment door open for loading', 'Trunk open', 'Right door open for boarding', 'Accident scene', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_100"
+    },
+    {
+        "image_path": "Drama_clip_748_000480_frame_000480.png",
+        "questions": [
+            "Drama_clip_748_000480_frame_000480_0.png;The width and height of the image are 2704 and 1520. What is the current state of the special vehicle located at the bounding box [1330, 862, 922, 449] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'Accident scene', 'Left door open for boarding', 'Right door open for boarding', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "Drama_clip_748_000480_frame_000480_0.png;What is the current state of the special vehicle within the red box in the image? Please select the appropriate one from the following phrases:['Construction work', 'Right door open for boarding', 'Left door open for boarding', 'Accident scene', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Construction work",
+            "Construction work"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_101"
+    },
+    {
+        "image_path": "Drama_clip_766_000348_frame_000348.png",
+        "questions": [
+            "Drama_clip_766_000348_frame_000348_0.png;The width and height of the image are 2704 and 1520. What is the current state of the truck located at the bounding box [987, 729, 1155, 904] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Right turn light on', 'Trunk open', 'Trunk open for loading'], note that no explaination is needed.",
+            "Drama_clip_766_000348_frame_000348_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Right turn light on', 'Rear compartment door open for loading', 'Trunk open', 'Cargo hanging from trunk', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "All compartment doors open",
+            "All compartment doors open"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_102"
+    },
+    {
+        "image_path": "Drama_clip_770_000144_frame_000144.png",
+        "questions": [
+            "Drama_clip_770_000144_frame_000144_0.png;The width and height of the image are 2704 and 1520. What is the current state of the car located at the bounding box [1206, 760, 1369, 892] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Brake light on', 'Empty car light on', 'Passenger light on', 'Right turn light on', 'Left turn light on', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "Drama_clip_770_000144_frame_000144_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'Passenger light on', 'Left turn light on', 'Empty car light on', 'Brake light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Brake light on",
+            "Brake light on"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_103"
+    },
+    {
+        "image_path": "Drama_clip_774_000240_frame_000240.png",
+        "questions": [
+            "Drama_clip_774_000240_frame_000240_0.png;The width and height of the image are 2704 and 1520. What is the current state of the car located at the bounding box [977, 725, 1255, 886] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Right door open', 'Left door open', 'Accident scene', 'Right door open for boarding', 'Left door open for boarding', 'Hazard lights on'], note that no explaination is needed.",
+            "Drama_clip_774_000240_frame_000240_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Hazard lights on', 'Right door open for boarding', 'Left door open', 'Left door open for boarding', 'Right door open', 'Accident scene'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right door open for boarding",
+            "Right door open for boarding"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_104"
+    },
+    {
+        "image_path": "Drama_clip_78_000510_frame_000510.png",
+        "questions": [
+            "Drama_clip_78_000510_frame_000510_0.png;The width and height of the image are 2704 and 1520. What is the current state of the minibus located at the bounding box [750, 678, 1097, 945] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Construction work', 'Rear compartment door open for loading', 'Trunk open for loading', 'Trunk open', 'Rear compartment door open for loading'], note that no explaination is needed.",
+            "Drama_clip_78_000510_frame_000510_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Rear compartment door open for loading', 'Trunk open', 'All compartment doors open', 'Rear compartment door open for loading', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open for loading",
+            "Trunk open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_105"
+    },
+    {
+        "image_path": "Drama_clip_804_000228_frame_000228.png",
+        "questions": [
+            "Drama_clip_804_000228_frame_000228_0.png;The width and height of the image are 2704 and 1520. What is the current state of the truck located at the bounding box [1016, 566, 1218, 817] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['All compartment doors open', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'Rear compartment door open for loading', 'Trunk open for loading', 'Trunk open'], note that no explaination is needed.",
+            "Drama_clip_804_000228_frame_000228_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open', 'All compartment doors open', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'Rear compartment door open for loading', 'Trunk open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Rear compartment door open for loading",
+            "Rear compartment door open for loading"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_106"
+    },
+    {
+        "image_path": "Drama_clip_807_000432_frame_000432.png",
+        "questions": [
+            "Drama_clip_807_000432_frame_000432_0.png;The width and height of the image are 2704 and 1520. What is the current state of the car located at the bounding box [1657, 800, 2385, 1170] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Accident scene', 'Left door open for boarding', 'Right door open for boarding', 'Right door open', 'Hazard lights on', 'Left door open'], note that no explaination is needed.",
+            "Drama_clip_807_000432_frame_000432_1.png;The width and height of the image are 2704 and 1520. What is the current state of the truck located at the bounding box [804, 1347, 16, 21] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Hazard lights on', 'Left door open', 'Left door open for boarding', 'Accident scene', 'Right door open', 'Right door open for boarding'], note that no explaination is needed.",
+            "Drama_clip_807_000432_frame_000432_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Left door open', 'Right door open', 'Right door open for boarding', 'Hazard lights on', 'Left door open for boarding'], note that no explaination is needed.",
+            "Drama_clip_807_000432_frame_000432_1.png;What is the current state of the truck within the green box in the image? Please select the appropriate one from the following phrases:['Accident scene', 'Left door open', 'Hazard lights on', 'Left door open for boarding', 'Right door open', 'Right door open for boarding'], note that no explaination is needed.",
+            "Drama_clip_807_000432_frame_000432_all.png; What is the current state of the car within the red box in the image?What is the current state of the truck within the green box in the image?Please select the appropriate answers from the following phrases:['Accident scene', 'Left door open', 'Hazard lights on', 'Left door open for boarding', 'Right door open', 'Right door open for boarding'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Right door open for boarding",
+            "Right door open for boarding",
+            "Right door open for boarding",
+            "Right door open for boarding",
+            "Right door open for boarding,Right door open for boarding"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_107"
+    },
+    {
+        "image_path": "Drama_clip_81_000042_frame_000042.png",
+        "questions": [
+            "Drama_clip_81_000042_frame_000042_0.png;The width and height of the image are 2704 and 1520. What is the current state of the car located at the bounding box [1569, 939, 1657, 1025] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Construction work', 'Rear compartment door open for loading', 'Rear compartment door open for loading', 'Trunk open for loading', 'Accident scene', 'Trunk open'], note that no explaination is needed.",
+            "Drama_clip_81_000042_frame_000042_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open for loading', 'Accident scene', 'Rear compartment door open for loading', 'Trunk open', 'Rear compartment door open for loading', 'Construction work'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Trunk open",
+            "Trunk open"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_108"
+    },
+    {
+        "image_path": "Drama_clip_84_000102_frame_000102.png",
+        "questions": [
+            "Drama_clip_84_000102_frame_000102_0.png;The width and height of the image are 2704 and 1520. What is the current state of the car located at the bounding box [561, 845, 1136, 1188] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open', 'Rear compartment door open for loading', 'Rear compartment door open for loading', 'Trunk open for loading', 'Accident scene', 'Construction work'], note that no explaination is needed.",
+            "Drama_clip_84_000102_frame_000102_1.png;The width and height of the image are 2704 and 1520. What is the current state of the car located at the bounding box [1471, 890, 1636, 990] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Trunk open', 'Accident scene', 'Rear compartment door open for loading', 'Construction work', 'Trunk open for loading'], note that no explaination is needed.",
+            "Drama_clip_84_000102_frame_000102_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Rear compartment door open for loading', 'Construction work', 'Trunk open', 'Trunk open for loading', 'Accident scene'], note that no explaination is needed.",
+            "Drama_clip_84_000102_frame_000102_1.png;What is the current state of the car within the green box in the image? Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Rear compartment door open for loading', 'Accident scene', 'Trunk open for loading', 'Construction work', 'Trunk open'], note that no explaination is needed.",
+            "Drama_clip_84_000102_frame_000102_all.png; What is the current state of the car within the red box in the image?What is the current state of the car within the green box in the image?Please select the appropriate answers from the following phrases:['Rear compartment door open for loading', 'Rear compartment door open for loading', 'Accident scene', 'Trunk open for loading', 'Construction work', 'Trunk open'].Answer these two questions separately, separating the answers with commas. e.g., 'Cargo hanging from trunk, Empty car light on'"
+        ],
+        "reference": [
+            "Trunk open",
+            "Brake light on",
+            "Trunk open",
+            "Brake light on",
+            "Trunk open,Brake light on"
+        ],
+        "venue": "Drama",
+        "country": "Japan",
+        "id": "1_1_4_109"
+    },
+    {
+        "image_path": "HAD_change_lane_train1238_frame_0000.png",
+        "questions": [
+            "HAD_change_lane_train1238_frame_0000_0.png;The width and height of the image are 1280 and 720. What is the current state of the truck located at the bounding box [728, 244, 894, 405] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Trunk open for loading', 'Rear compartment door open for loading', 'All compartment doors open', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Trunk open'], note that no explaination is needed.",
+            "HAD_change_lane_train1238_frame_0000_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['Trunk open', 'Rear compartment door open for loading', 'All compartment doors open', 'Cargo hanging from trunk', 'Trunk open for loading', 'Rear compartment door open for loading'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Rear compartment door open for loading",
+            "Rear compartment door open for loading"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "1_1_4_110"
+    },
+    {
+        "image_path": "HAD_slow_train0246_frame_0000.png",
+        "questions": [
+            "HAD_slow_train0246_frame_0000_0.png;The width and height of the image are 1280 and 720. What is the current state of the car located at the bounding box [619, 344, 796, 455] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Rear compartment door open for loading', 'Left turn light on', 'Trunk open for loading', 'Right turn light on', 'All compartment doors open', 'Cargo hanging from trunk'], note that no explaination is needed.",
+            "HAD_slow_train0246_frame_0000_0.png;What is the current state of the car within the red box in the image? Please select the appropriate one from the following phrases:['Right turn light on', 'Cargo hanging from trunk', 'Trunk open for loading', 'Rear compartment door open for loading', 'All compartment doors open', 'Left turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Cargo hanging from trunk",
+            "Cargo hanging from trunk"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "1_1_4_111"
+    },
+    {
+        "image_path": "JAAD_video__0142_00180.png",
+        "questions": [
+            "JAAD_video__0142_00180_0.png;The width and height of the image are 1920 and 1080. What is the current state of the minibus located at the bounding box [431, 660, 820, 922] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Left turn light on', 'All compartment doors open', 'Rear compartment door open for loading', 'Cargo hanging from trunk', 'Right turn light on', 'Brake light on'], note that no explaination is needed.",
+            "JAAD_video__0142_00180_0.png;What is the current state of the minibus within the red box in the image? Please select the appropriate one from the following phrases:['Left turn light on', 'Brake light on', 'Right turn light on', 'Cargo hanging from trunk', 'Rear compartment door open for loading', 'All compartment doors open'], note that no explaination is needed."
+        ],
+        "reference": [
+            "Right turn light on",
+            "Right turn light on"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "1_1_4_112"
+    }
+]

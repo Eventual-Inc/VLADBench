@@ -1,0 +1,1495 @@
+[
+    {
+        "sequence": "accelerate_DRAMA_2020-0129-105040",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Accelerate from start', 'Wait for the traffic light', 'Start with acceleration', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right', 'Keep to the right and prepare to temporarily park', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+            "Accelerate from start"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0129-105040_frame_019338.png",
+            "2020-0129-105040_frame_019302.png",
+            "2020-0129-105040_frame_019320.png",
+            "2020-0129-105040_frame_019293.png"
+        ],
+        "id": "3_0_1_0"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0129-144857",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Accelerate straight', 'Accelerate from start', 'Wait for the traffic light', 'Start with acceleration', 'Keep to the right and prepare to temporarily park', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+            "Start with acceleration"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0129-144857_frame_021254.png",
+            "2020-0129-144857_frame_021263.png",
+            "2020-0129-144857_frame_021272.png",
+            "2020-0129-144857_frame_021281.png"
+        ],
+        "id": "3_0_1_1"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0131-103016",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Proceed straight through the intersection', 'Keep to the right and prepare to temporarily park', 'Accelerate straight', 'Wait for the traffic light', 'Accelerate from start', 'Start with acceleration'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0131-103016_frame_018079.png",
+            "2020-0131-103016_frame_018070.png",
+            "2020-0131-103016_frame_018052.png",
+            "2020-0131-103016_frame_018088.png",
+            "2020-0131-103016_frame_018061.png"
+        ],
+        "id": "3_0_1_2"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0131-135401",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Turn right slowly across the pedestrian crossing', 'Accelerate from start', 'Start with acceleration', 'Wait for the traffic light', 'Proceed straight through the intersection', 'Accelerate straight'], no explaination needed."
+        ],
+        "reference": [
+            "Accelerate straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0131-135401_frame_002471.png",
+            "2020-0131-135401_frame_002453.png",
+            "2020-0131-135401_frame_002480.png",
+            "2020-0131-135401_frame_002444.png",
+            "2020-0131-135401_frame_002462.png"
+        ],
+        "id": "3_0_1_3"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for the traffic light', 'Keep to the right and prepare to temporarily park', 'Start with acceleration', 'Accelerate from start', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right', 'Accelerate straight'], no explaination needed."
+        ],
+        "reference": [
+            "Start with acceleration"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0203-114632_frame_008476.png",
+            "2020-0203-114632_frame_008440.png",
+            "2020-0203-114632_frame_008485.png",
+            "2020-0203-114632_frame_008458.png",
+            "2020-0203-114632_frame_008422.png"
+        ],
+        "id": "3_0_1_4"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-154554",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Proceed straight through the intersection', 'Wait for the traffic light', 'Accelerate straight', 'Start slowly and proceed straight through the intersection', 'Turn right slowly across the pedestrian crossing', 'Start with acceleration'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0203-154554_frame_019151.png",
+            "2020-0203-154554_frame_019133.png",
+            "2020-0203-154554_frame_019142.png",
+            "2020-0203-154554_frame_019124.png"
+        ],
+        "id": "3_0_1_5"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0204-103442",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Proceed straight through the intersection', 'Wait for the traffic light', 'Turn right slowly across the pedestrian crossing', 'Accelerate straight', 'Start with acceleration', 'Start slowly and proceed straight through the intersection'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0204-103442_frame_005492.png",
+            "2020-0204-103442_frame_005510.png",
+            "2020-0204-103442_frame_005483.png",
+            "2020-0204-103442_frame_005501.png"
+        ],
+        "id": "3_0_1_6"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0204-150838",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Start with acceleration', 'Wait for the traffic light', 'Turn right slowly across the pedestrian crossing', 'Start slowly and proceed straight through the intersection', 'Proceed straight through the intersection', 'Accelerate straight'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0204-150838_frame_002855.png",
+            "2020-0204-150838_frame_002837.png",
+            "2020-0204-150838_frame_002873.png",
+            "2020-0204-150838_frame_002819.png",
+            "2020-0204-150838_frame_002891.png"
+        ],
+        "id": "3_0_1_7"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0205-103411",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Start slowly and proceed straight through the intersection', 'Accelerate straight', 'Wait for the traffic light', 'Proceed slowly straight', 'Proceed straight through the intersection', 'Turn right slowly across the pedestrian crossing'], no explaination needed."
+        ],
+        "reference": [
+            "Turn right slowly across the pedestrian crossing"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0205-103411_frame_001388.png",
+            "2020-0205-103411_frame_001442.png",
+            "2020-0205-103411_frame_001370.png",
+            "2020-0205-103411_frame_001424.png",
+            "2020-0205-103411_frame_001406.png"
+        ],
+        "id": "3_0_1_8"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0205-152530",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Start slowly and proceed straight through the intersection', 'Prepare to turn left through the intersection', 'Proceed straight through the intersection', 'Proceed slowly straight', 'Accelerate straight', 'Turn right slowly across the pedestrian crossing'], no explaination needed."
+        ],
+        "reference": [
+            "Start slowly and proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0205-152530_frame_014022.png",
+            "2020-0205-152530_frame_013986.png",
+            "2020-0205-152530_frame_014058.png",
+            "2020-0205-152530_frame_014004.png",
+            "2020-0205-152530_frame_014040.png"
+        ],
+        "id": "3_0_1_9"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0206-101736",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the red sedan from the following phrases:['Turn right slowly across the pedestrian crossing', 'Accelerate straight', 'Start slowly and proceed straight through the intersection', 'Start with acceleration', 'Proceed straight through the intersection', 'Wait for the traffic light'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0206-101736_frame_004849.png",
+            "2020-0206-101736_frame_004831.png",
+            "2020-0206-101736_frame_004795.png",
+            "2020-0206-101736_frame_004813.png",
+            "2020-0206-101736_frame_004777.png"
+        ],
+        "id": "3_0_1_10"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0206-142535",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Start slowly and proceed straight through the intersection', 'Temporary parking ahead, turn right to change lanes', 'Proceed slowly straight', 'Prepare to turn left through the intersection', 'Proceed straight through the intersection', 'Turn right slowly across the pedestrian crossing'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed slowly straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0206-142535_frame_001513.png",
+            "2020-0206-142535_frame_001531.png",
+            "2020-0206-142535_frame_001504.png",
+            "2020-0206-142535_frame_001522.png"
+        ],
+        "id": "3_0_1_11"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0207-101955",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white van from the following phrases:['Accelerate straight', 'Start slowly and proceed straight through the intersection', 'Wait for the traffic light', 'Start with acceleration', 'Proceed straight through the intersection', 'Turn right slowly across the pedestrian crossing'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0207-101955_frame_005717.png",
+            "2020-0207-101955_frame_005726.png",
+            "2020-0207-101955_frame_005735.png",
+            "2020-0207-101955_frame_005753.png",
+            "2020-0207-101955_frame_005744.png"
+        ],
+        "id": "3_0_1_12"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0207-151349",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for the traffic light', 'Start with acceleration', 'Accelerate from start', 'Proceed straight through the intersection', 'Turn right slowly across the pedestrian crossing', 'Accelerate straight'], no explaination needed."
+        ],
+        "reference": [
+            "Accelerate straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0207-151349_frame_001668.png",
+            "2020-0207-151349_frame_001686.png",
+            "2020-0207-151349_frame_001677.png",
+            "2020-0207-151349_frame_001695.png",
+            "2020-0207-151349_frame_001704.png"
+        ],
+        "id": "3_0_1_13"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0210-101957",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Start slowly and proceed straight through the intersection', 'Proceed straight through the intersection', 'Accelerate straight', 'Turn right slowly across the pedestrian crossing', 'Start with acceleration', 'Wait for the traffic light'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-101957_frame_053779.png",
+            "2020-0210-101957_frame_053770.png",
+            "2020-0210-101957_frame_053788.png",
+            "2020-0210-101957_frame_053761.png",
+            "2020-0210-101957_frame_053752.png"
+        ],
+        "id": "3_0_1_14"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0210-155354",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the red compact car from the following phrases:['Prepare to turn left through the intersection', 'Start slowly and proceed straight through the intersection', 'Temporary parking ahead, turn right to change lanes', 'Turn right slowly across the pedestrian crossing', 'Merge left into the main road', 'Proceed slowly straight'], no explaination needed."
+        ],
+        "reference": [
+            "Prepare to turn left through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-155354_frame_015292.png",
+            "2020-0210-155354_frame_015274.png",
+            "2020-0210-155354_frame_015265.png",
+            "2020-0210-155354_frame_015301.png",
+            "2020-0210-155354_frame_015283.png"
+        ],
+        "id": "3_0_1_15"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0212-102546",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Start with acceleration', 'Accelerate straight', 'Start slowly and proceed straight through the intersection', 'Wait for the traffic light', 'Turn right slowly across the pedestrian crossing', 'Proceed straight through the intersection'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0212-102546_frame_001904.png",
+            "2020-0212-102546_frame_001922.png",
+            "2020-0212-102546_frame_001895.png",
+            "2020-0212-102546_frame_001913.png",
+            "2020-0212-102546_frame_001931.png"
+        ],
+        "id": "3_0_1_16"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0212-150403",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right', 'Keep to the right and prepare to temporarily park', 'Wait for the traffic light', 'Accelerate from start', 'Start with acceleration', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+            "Accelerate from start"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0212-150403_frame_001277.png",
+            "2020-0212-150403_frame_001286.png",
+            "2020-0212-150403_frame_001268.png",
+            "2020-0212-150403_frame_001295.png"
+        ],
+        "id": "3_0_1_17"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0213-143552",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white van from the following phrases:['Accelerate straight', 'Start slowly and proceed straight through the intersection', 'Proceed straight through the intersection', 'Start with acceleration', 'Turn right slowly across the pedestrian crossing', 'Wait for the traffic light'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0213-143552_frame_013970.png",
+            "2020-0213-143552_frame_013979.png",
+            "2020-0213-143552_frame_013961.png",
+            "2020-0213-143552_frame_013988.png"
+        ],
+        "id": "3_0_1_18"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0129-105040",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Proceed slowly straight', 'Prepare to turn left through the intersection', 'Proceed straight through the intersection', 'Start slowly and proceed straight through the intersection', 'Temporary parking ahead, turn right to change lanes', 'Turn right slowly across the pedestrian crossing'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed slowly straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0129-105040_frame_001113.png",
+            "2020-0129-105040_frame_001122.png",
+            "2020-0129-105040_frame_001140.png",
+            "2020-0129-105040_frame_001149.png",
+            "2020-0129-105040_frame_001131.png"
+        ],
+        "id": "3_0_1_19"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0131-135401",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Proceed slowly straight', 'Start slowly and proceed straight through the intersection', 'Merge left into the main road', 'Temporary parking ahead, turn right to change lanes', 'Prepare to turn left through the intersection', 'Temporary parking on the left, veer right to change lanes'], no explaination needed."
+        ],
+        "reference": [
+            "Temporary parking ahead, turn right to change lanes"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0131-135401_frame_021411.png",
+            "2020-0131-135401_frame_021429.png",
+            "2020-0131-135401_frame_021420.png"
+        ],
+        "id": "3_0_1_20"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0204-150838_6_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Prepare to turn left through the intersection', 'Merge left into the main road', 'Wait for vehicles on the left to pass, then turn left into the side road', 'Proceed slowly straight', 'Temporary parking on the left, veer right to change lanes', 'Temporary parking ahead, turn right to change lanes'], no explaination needed."
+        ],
+        "reference": [
+            "Merge left into the main road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0204-150838_frame_061764.png",
+            "2020-0204-150838_frame_061763.png",
+            "2020-0204-150838_frame_061771.png",
+            "2020-0204-150838_frame_061766.png",
+            "2020-0204-150838_frame_061772.png"
+        ],
+        "id": "3_0_1_21"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0205-152530_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Temporary parking ahead, turn right to change lanes', 'Change lanes from the first to the second and accelerate straight through the intersection', 'Temporary parking on the left, veer right to change lanes', 'Wait for vehicles on the left to pass, then turn left into the side road', 'Merge left into the main road', 'Prepare to turn left through the intersection'], no explaination needed."
+        ],
+        "reference": [
+            "Temporary parking on the left, veer right to change lanes"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0205-152530_frame_018878.png",
+            "2020-0205-152530_frame_018887.png",
+            "2020-0205-152530_frame_018869.png",
+            "2020-0205-152530_frame_018905.png",
+            "2020-0205-152530_frame_018896.png"
+        ],
+        "id": "3_0_1_22"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0210-155354",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the yellow construction vehicle from the following phrases:['Merge left into the main road', 'Change lanes from the first to the second and accelerate straight through the intersection', 'Electric vehicle on the left, change lanes to the right', 'Wait for vehicles on the left to pass, then turn left into the side road', 'Temporary parking ahead, turn right to change lanes', 'Temporary parking on the left, veer right to change lanes'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for vehicles on the left to pass, then turn left into the side road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-155354_frame_025604.png",
+            "2020-0210-155354_frame_025595.png",
+            "2020-0210-155354_frame_025577.png",
+            "2020-0210-155354_frame_025586.png",
+            "2020-0210-155354_frame_025613.png"
+        ],
+        "id": "3_0_1_23"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0214-145407_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Change lanes from the first to the second and accelerate straight through the intersection', 'Wait for vehicles on the left to pass, then turn left into the side road', 'Electric vehicle on the left, change lanes to the right', 'Roadblock ahead, temporarily park', 'Temporary parking on the left, veer right to change lanes', 'Merge left into the main road'], no explaination needed."
+        ],
+        "reference": [
+            "Change lanes from the first to the second and accelerate straight through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0214-145407_frame_044189.png",
+            "2020-0214-145407_frame_044198.png",
+            "2020-0214-145407_frame_044207.png"
+        ],
+        "id": "3_0_1_24"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0218-103119_3",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Accelerate straight', 'Start with acceleration', 'Accelerate from start', 'Proceed straight through the intersection', 'Turn right slowly across the pedestrian crossing', 'Wait for the traffic light'], no explaination needed."
+        ],
+        "reference": [
+            "Accelerate straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0218-103119_frame_013148.png",
+            "2020-0218-103119_frame_013139.png",
+            "2020-0218-103119_frame_013130.png"
+        ],
+        "id": "3_0_1_25"
+    },
+    {
+        "sequence": "cut_in_DRAMA_2020-0227-104226_3",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Electric vehicle on the left, change lanes to the right', 'Wait for vehicles on the left to pass, then turn left into the side road', 'Roadblock ahead, temporarily park', 'Temporary parking on the left, veer right to change lanes', 'Change lanes from the first to the second and accelerate straight through the intersection', 'Start by turning right then proceed straight'], no explaination needed."
+        ],
+        "reference": [
+            "Electric vehicle on the left, change lanes to the right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0227-104226_frame_026354.png",
+            "2020-0227-104226_frame_026345.png",
+            "2020-0227-104226_frame_026336.png",
+            "2020-0227-104226_frame_026363.png"
+        ],
+        "id": "3_0_1_26"
+    },
+    {
+        "sequence": "cut_in_DRAMA_clip_318_000048",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the blue compact car from the following phrases:['Roadblock ahead, temporarily park', 'Wait for vehicles on the left to pass, then turn left into the side road', 'Start by turning right then proceed straight', 'Wait for the traffic light, temporarily parked', 'Change lanes from the first to the second and accelerate straight through the intersection', 'Electric vehicle on the left, change lanes to the right'], no explaination needed."
+        ],
+        "reference": [
+            "Roadblock ahead, temporarily park"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_318_000048_frame_000036.png",
+            "clip_318_000048_frame_000024.png",
+            "clip_318_000048_frame_000048.png",
+            "clip_318_000048_frame_000012.png"
+        ],
+        "id": "3_0_1_27"
+    },
+    {
+        "sequence": "cut_in_DRAMA_clip_880_000120",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Start by turning right then proceed straight', 'Wait for the traffic light, temporarily parked', 'Electric vehicle on the left, change lanes to the right', 'Change lanes from the first to the second and accelerate straight through the intersection', 'Roadblock ahead, temporarily park', 'Park on the side to load and unload'], no explaination needed."
+        ],
+        "reference": [
+            "Start by turning right then proceed straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_880_000120_frame_000084.png",
+            "clip_880_000120_frame_000120.png",
+            "clip_880_000120_frame_000108.png",
+            "clip_880_000120_frame_000072.png",
+            "clip_880_000120_frame_000096.png"
+        ],
+        "id": "3_0_1_28"
+    },
+    {
+        "sequence": "parked_DRAMA_2020-0127-132751",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white van from the following phrases:['Roadblock ahead, temporarily park', 'Roadblock ahead, proceed straight and park on the side to yield', 'Wait for the traffic light, temporarily parked', 'Park on the side to load and unload', 'Electric vehicle on the left, change lanes to the right', 'Start by turning right then proceed straight'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for the traffic light, temporarily parked"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0127-132751_frame_004009.png"
+        ],
+        "id": "3_0_1_29"
+    },
+    {
+        "sequence": "parked_DRAMA_2020-0210-101957",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Roadblock ahead, proceed straight and park on the side to yield', 'Park on the side to load and unload', 'Temporarily park on the side', 'Start by turning right then proceed straight', 'Roadblock ahead, temporarily park', 'Wait for the traffic light, temporarily parked'], no explaination needed."
+        ],
+        "reference": [
+            "Park on the side to load and unload"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-101957_frame_001702.png",
+            "2020-0210-101957_frame_001693.png",
+            "2020-0210-101957_frame_001729.png",
+            "2020-0210-101957_frame_001711.png",
+            "2020-0210-101957_frame_001720.png"
+        ],
+        "id": "3_0_1_30"
+    },
+    {
+        "sequence": "parked_DRAMA_2020-0213-143552",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black truck from the following phrases:['Park on the side to load and unload', 'Temporarily park on the side', 'Wait for the traffic light, temporarily parked', 'Roadblock ahead, proceed straight and park on the side to yield', 'Start by turning right then proceed straight', 'Roadblock ahead, temporarily park'], no explaination needed."
+        ],
+        "reference": [
+            "Park on the side to load and unload"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0213-143552_frame_005037.png",
+            "2020-0213-143552_frame_005019.png",
+            "2020-0213-143552_frame_005001.png",
+            "2020-0213-143552_frame_005010.png",
+            "2020-0213-143552_frame_005028.png"
+        ],
+        "id": "3_0_1_31"
+    },
+    {
+        "sequence": "parked_DRAMA_2020-0218-103119",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the green sedan from the following phrases:['Wait for the traffic light, temporarily parked', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Temporarily park on the side', 'Park on the side to load and unload', 'Roadblock ahead, proceed straight and park on the side to yield', 'Start by turning right then proceed straight'], no explaination needed."
+        ],
+        "reference": [
+            "Roadblock ahead, proceed straight and park on the side to yield"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0218-103119_frame_006702.png",
+            "2020-0218-103119_frame_006711.png",
+            "2020-0218-103119_frame_006720.png"
+        ],
+        "id": "3_0_1_32"
+    },
+    {
+        "sequence": "parked_DRAMA_2020-0218-103119_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the green sedan from the following phrases:['Park on the side to load and unload', 'Wait for the traffic light, temporarily parked', 'Roadblock ahead, proceed straight and park on the side to yield', 'Start by turning right then proceed straight', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Temporarily park on the side'], no explaination needed."
+        ],
+        "reference": [
+            "Roadblock ahead, proceed straight and park on the side to yield"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0218-103119_frame_006648.png",
+            "2020-0218-103119_frame_006639.png",
+            "2020-0218-103119_frame_006666.png",
+            "2020-0218-103119_frame_006657.png"
+        ],
+        "id": "3_0_1_33"
+    },
+    {
+        "sequence": "parked_DRAMA_clip_429_000330",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver sedan from the following phrases:['Wait for the traffic light, temporarily parked', 'Park on the side to load and unload', 'Temporarily park and wait for the traffic light', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Roadblock ahead, proceed straight and park on the side to yield', 'Temporarily park on the side'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily park on the side"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_429_000330_frame_000234.png",
+            "clip_429_000330_frame_000246.png",
+            "clip_429_000330_frame_000222.png",
+            "clip_429_000330_frame_000258.png",
+            "clip_429_000330_frame_000270.png"
+        ],
+        "id": "3_0_1_34"
+    },
+    {
+        "sequence": "parked_DRAMA_clip_436_000078",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Roadblock ahead, proceed straight and park on the side to yield', 'Roadblock ahead, temporarily park', 'Park on the side to load and unload', 'Start by turning right then proceed straight', 'Temporarily park on the side', 'Wait for the traffic light, temporarily parked'], no explaination needed."
+        ],
+        "reference": [
+            "Park on the side to load and unload"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_436_000078_frame_000054.png",
+            "clip_436_000078_frame_000030.png",
+            "clip_436_000078_frame_000066.png",
+            "clip_436_000078_frame_000042.png",
+            "clip_436_000078_frame_000078.png"
+        ],
+        "id": "3_0_1_35"
+    },
+    {
+        "sequence": "parked_DRAMA_clip_500_000636",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Start by turning right then proceed straight', 'Temporarily park on the side', 'Roadblock ahead, temporarily park', 'Park on the side to load and unload', 'Wait for the traffic light, temporarily parked', 'Roadblock ahead, proceed straight and park on the side to yield'], no explaination needed."
+        ],
+        "reference": [
+            "Park on the side to load and unload"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_500_000636_frame_000564.png",
+            "clip_500_000636_frame_000552.png",
+            "clip_500_000636_frame_000540.png",
+            "clip_500_000636_frame_000528.png",
+            "clip_500_000636_frame_000576.png"
+        ],
+        "id": "3_0_1_36"
+    },
+    {
+        "sequence": "parked_DRAMA_clip_649_000120",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Wait for the traffic light, temporarily parked', 'Start by turning right then proceed straight', 'Park on the side to load and unload', 'Temporarily park on the side', 'Roadblock ahead, temporarily park', 'Roadblock ahead, proceed straight and park on the side to yield'], no explaination needed."
+        ],
+        "reference": [
+            "Park on the side to load and unload"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_649_000120_frame_000072.png",
+            "clip_649_000120_frame_000096.png",
+            "clip_649_000120_frame_000108.png",
+            "clip_649_000120_frame_000120.png",
+            "clip_649_000120_frame_000084.png"
+        ],
+        "id": "3_0_1_37"
+    },
+    {
+        "sequence": "parked_DRAMA_clip_81_000042",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Temporarily park on the side', 'Roadblock ahead, proceed straight and park on the side to yield', 'Proceed straight preparing to park on the side', 'Park on the side to load and unload', 'Temporarily park and wait for the traffic light', 'Temporarily park on the side for passengers to retrieve items from the trunk'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily park on the side for passengers to retrieve items from the trunk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_81_000042_frame_000042.png",
+            "clip_81_000042_frame_000030.png",
+            "clip_81_000042_frame_000018.png"
+        ],
+        "id": "3_0_1_38"
+    },
+    {
+        "sequence": "parked_DRAMA_clip_81_000510",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Temporarily park and wait for the traffic light', 'Roadblock ahead, proceed straight and park on the side to yield', 'Park on the side to load and unload', 'Temporarily park on the side', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Proceed straight preparing to park on the side'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily park on the side for passengers to retrieve items from the trunk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_81_000510_frame_000426.png",
+            "clip_81_000510_frame_000402.png",
+            "clip_81_000510_frame_000414.png",
+            "clip_81_000510_frame_000438.png",
+            "clip_81_000510_frame_000450.png"
+        ],
+        "id": "3_0_1_39"
+    },
+    {
+        "sequence": "slow_turn_DRAMA_2020-0127-132751",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Roadblock ahead, proceed straight and park on the side to yield', 'Proceed straight preparing to park on the side', 'Temporarily park and wait for the traffic light', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Wait for the car in front, prepare to turn left through the intersection', 'Temporarily park on the side'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily park and wait for the traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0127-132751_frame_023608.png",
+            "2020-0127-132751_frame_023599.png",
+            "2020-0127-132751_frame_023572.png",
+            "2020-0127-132751_frame_023581.png",
+            "2020-0127-132751_frame_023590.png"
+        ],
+        "id": "3_0_1_40"
+    },
+    {
+        "sequence": "slow_turn_DRAMA_2020-0205-152530",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Changing lanes with a right turn', 'Proceed straight preparing to park on the side', 'Wait for the car in front, prepare to turn left through the intersection', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Temporarily park on the side', 'Temporarily park and wait for the traffic light'], no explaination needed."
+        ],
+        "reference": [
+            "Proceed straight preparing to park on the side"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0205-152530_frame_019514.png",
+            "2020-0205-152530_frame_019541.png",
+            "2020-0205-152530_frame_019523.png",
+            "2020-0205-152530_frame_019532.png",
+            "2020-0205-152530_frame_019550.png"
+        ],
+        "id": "3_0_1_41"
+    },
+    {
+        "sequence": "slow_turn_DRAMA_2020-0217-110854",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white sedan from the following phrases:['Wait for the car in front, prepare to turn left through the intersection', 'Proceed straight preparing to park on the side', 'Temporarily park on the side for passengers to retrieve items from the trunk', 'Wait for vehicles on the right, prepare to turn right', 'Temporarily park and wait for the traffic light', 'Changing lanes with a right turn'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for the car in front, prepare to turn left through the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0217-110854_frame_006074.png",
+            "2020-0217-110854_frame_006047.png",
+            "2020-0217-110854_frame_006056.png",
+            "2020-0217-110854_frame_006083.png",
+            "2020-0217-110854_frame_006065.png"
+        ],
+        "id": "3_0_1_42"
+    },
+    {
+        "sequence": "slow_turn_DRAMA_2020-0220-151845",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Turning right into the road', 'Proceed straight preparing to park on the side', 'Changing lanes with a right turn', 'Wait for the car in front, prepare to turn left through the intersection', 'Wait for vehicles on the right, prepare to turn right', 'Temporarily park and wait for the traffic light'], no explaination needed."
+        ],
+        "reference": [
+            "Changing lanes with a right turn"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0220-151845_frame_018038.png",
+            "2020-0220-151845_frame_018020.png",
+            "2020-0220-151845_frame_018011.png",
+            "2020-0220-151845_frame_018029.png",
+            "2020-0220-151845_frame_018002.png"
+        ],
+        "id": "3_0_1_43"
+    },
+    {
+        "sequence": "slow_turn_DRAMA_2020-0226-101332",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white truck from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Wait for the car in front, prepare to turn left through the intersection', 'Turning left into the road', 'Changing lanes with a right turn', 'Turning right into the road', 'Proceed straight preparing to park on the side'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for vehicles on the right, prepare to turn right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0226-101332_frame_025710.png",
+            "2020-0226-101332_frame_025728.png",
+            "2020-0226-101332_frame_025737.png",
+            "2020-0226-101332_frame_025719.png",
+            "2020-0226-101332_frame_025746.png"
+        ],
+        "id": "3_0_1_44"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0127-132751",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Electric vehicle on the left, change lanes to the right', 'Start by turning right then proceed straight', 'Roadblock ahead, temporarily park', 'Roadblock ahead, proceed straight and park on the side to yield', 'Wait for the traffic light, temporarily parked', 'Park on the side to load and unload'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for the traffic light, temporarily parked"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0127-132751_frame_023608.png",
+            "2020-0127-132751_frame_023599.png",
+            "2020-0127-132751_frame_023572.png",
+            "2020-0127-132751_frame_023581.png",
+            "2020-0127-132751_frame_023590.png"
+        ],
+        "id": "3_0_1_45"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0129-105040",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Turning right into the road', 'Changing lanes with a right turn', 'Wait for the car in front, prepare to turn left through the intersection', 'Turning right into the lane for motor vehicles', 'Turning left into the road', 'Wait for vehicles on the right, prepare to turn right'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0129-105040_frame_069690.png",
+            "2020-0129-105040_frame_069681.png",
+            "2020-0129-105040_frame_069672.png",
+            "2020-0129-105040_frame_069699.png"
+        ],
+        "id": "3_0_1_46"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0129-105040_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning left into the road', 'Turning right into the road', 'Turning right into the lane for motor vehicles', 'Changing lanes with a right turn', 'Wait for the car in front, prepare to turn left through the intersection'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0129-105040_frame_069726.png",
+            "2020-0129-105040_frame_069717.png",
+            "2020-0129-105040_frame_069744.png",
+            "2020-0129-105040_frame_069735.png",
+            "2020-0129-105040_frame_069753.png"
+        ],
+        "id": "3_0_1_47"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0129-144857",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Wait for the car in front, prepare to turn left through the intersection', 'Turning right into the road', 'Changing lanes with a right turn', 'Turning left into the road', 'Wait for vehicles on the right, prepare to turn right', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0129-144857_frame_011507.png",
+            "2020-0129-144857_frame_011516.png",
+            "2020-0129-144857_frame_011534.png",
+            "2020-0129-144857_frame_011525.png",
+            "2020-0129-144857_frame_011543.png"
+        ],
+        "id": "3_0_1_48"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-103016",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning right into the road', 'Wait for the car in front, prepare to turn left through the intersection', 'Changing lanes with a right turn', 'Turning right into the lane for motor vehicles', 'Turning left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0131-103016_frame_018406.png",
+            "2020-0131-103016_frame_018397.png",
+            "2020-0131-103016_frame_018415.png",
+            "2020-0131-103016_frame_018433.png",
+            "2020-0131-103016_frame_018424.png"
+        ],
+        "id": "3_0_1_49"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-135401",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Turning left into the road', 'Turning right into the lane for motor vehicles', 'Turning right into the road', 'Changing lanes with a right turn', 'Wait for the car in front, prepare to turn left through the intersection', 'Wait for vehicles on the right, prepare to turn right'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0131-135401_frame_013306.png",
+            "2020-0131-135401_frame_013315.png",
+            "2020-0131-135401_frame_013297.png",
+            "2020-0131-135401_frame_013279.png",
+            "2020-0131-135401_frame_013288.png"
+        ],
+        "id": "3_0_1_50"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-135401_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Turning right into the road', 'Wait for vehicles on the right, prepare to turn right', 'Changing lanes with a right turn', 'Wait for the car in front, prepare to turn left through the intersection', 'Turning right into the lane for motor vehicles', 'Turning left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0131-135401_frame_013243.png",
+            "2020-0131-135401_frame_013261.png",
+            "2020-0131-135401_frame_013252.png",
+            "2020-0131-135401_frame_013270.png",
+            "2020-0131-135401_frame_013234.png"
+        ],
+        "id": "3_0_1_51"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0203-154554",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning right into the lane for motor vehicles', 'Wait for the car in front, prepare to turn left through the intersection', 'Changing lanes with a right turn', 'Turning left into the road', 'Turning right into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0203-154554_frame_061159.png",
+            "2020-0203-154554_frame_061168.png",
+            "2020-0203-154554_frame_061177.png",
+            "2020-0203-154554_frame_061186.png",
+            "2020-0203-154554_frame_061195.png"
+        ],
+        "id": "3_0_1_52"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0204-103442",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for the car in front, prepare to turn left through the intersection', 'Wait for vehicles on the right, prepare to turn right', 'Changing lanes with a right turn', 'Turning left into the road', 'Turning right into the road', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0204-103442_frame_051092.png",
+            "2020-0204-103442_frame_051128.png",
+            "2020-0204-103442_frame_051119.png",
+            "2020-0204-103442_frame_051110.png",
+            "2020-0204-103442_frame_051101.png"
+        ],
+        "id": "3_0_1_53"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0204-150838",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning left into the road', 'Turning right into the road', 'Prepare to turn right into the road', 'Changing lanes with a right turn', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0204-150838_frame_018013.png",
+            "2020-0204-150838_frame_018031.png",
+            "2020-0204-150838_frame_017995.png",
+            "2020-0204-150838_frame_018022.png",
+            "2020-0204-150838_frame_018004.png"
+        ],
+        "id": "3_0_1_54"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0205-103411",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Turning right into the road', 'Turning left into the road', 'Turning right into the lane for motor vehicles', 'Changing lanes with a right turn', 'Wait for the car in front, prepare to turn left through the intersection', 'Wait for vehicles on the right, prepare to turn right'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0205-103411_frame_019912.png",
+            "2020-0205-103411_frame_019894.png",
+            "2020-0205-103411_frame_019903.png",
+            "2020-0205-103411_frame_019921.png",
+            "2020-0205-103411_frame_019930.png"
+        ],
+        "id": "3_0_1_55"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0205-152530",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Changing lanes with a right turn', 'Turning right into the lane for motor vehicles', 'Wait for vehicles on the right, prepare to turn right', 'Turning right into the road', 'Turning left into the road', 'Prepare to turn right into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0205-152530_frame_007325.png",
+            "2020-0205-152530_frame_007352.png",
+            "2020-0205-152530_frame_007334.png",
+            "2020-0205-152530_frame_007316.png",
+            "2020-0205-152530_frame_007343.png"
+        ],
+        "id": "3_0_1_56"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0206-142535",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white electric vehicle from the following phrases:['Turning right into the road', 'Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Prepare to turn right into the road', 'Wait for vehicles on the right, prepare to turn right', 'Turning right into the lane for motor vehicles', 'Turning left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the lane for motor vehicles"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0206-142535_frame_002395.png",
+            "2020-0206-142535_frame_002386.png",
+            "2020-0206-142535_frame_002413.png",
+            "2020-0206-142535_frame_002404.png",
+            "2020-0206-142535_frame_002377.png"
+        ],
+        "id": "3_0_1_57"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0207-101955",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Proceeding straight ahead right, crossing the intersection', 'Turning right into the road', 'Prepare to turn right into the road', 'Turning left into the road', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Prepare to turn right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0207-101955_frame_001562.png",
+            "2020-0207-101955_frame_001553.png",
+            "2020-0207-101955_frame_001571.png",
+            "2020-0207-101955_frame_001580.png",
+            "2020-0207-101955_frame_001544.png"
+        ],
+        "id": "3_0_1_58"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0207-151349",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Proceeding straight ahead right, crossing the intersection', 'Turning right into the lane for motor vehicles', 'Prepare to turn right into the road', 'Turning left into the road', 'Prepare to turn left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily park, wait for the traffic light, prepare to turn left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0207-151349_frame_003864.png",
+            "2020-0207-151349_frame_003846.png",
+            "2020-0207-151349_frame_003855.png",
+            "2020-0207-151349_frame_003873.png",
+            "2020-0207-151349_frame_003837.png"
+        ],
+        "id": "3_0_1_59"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0210-101957",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white sedan from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning left into the road', 'Turning right into the road', 'Turning right into the lane for motor vehicles', 'Prepare to turn right into the road', 'Changing lanes with a right turn'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-101957_frame_009763.png",
+            "2020-0210-101957_frame_009799.png",
+            "2020-0210-101957_frame_009772.png",
+            "2020-0210-101957_frame_009781.png",
+            "2020-0210-101957_frame_009790.png"
+        ],
+        "id": "3_0_1_60"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0210-142719",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white electric vehicle from the following phrases:['Prepare to turn left into the road', 'Proceeding straight ahead right, crossing the intersection', 'Prepare to turn right into the road', 'Turning right into the lane for motor vehicles', 'Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Wait for pedestrians to cross the zebra crossing, then turn left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Proceeding straight ahead right, crossing the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-142719_frame_006446.png",
+            "2020-0210-142719_frame_006428.png",
+            "2020-0210-142719_frame_006437.png",
+            "2020-0210-142719_frame_006455.png",
+            "2020-0210-142719_frame_006419.png"
+        ],
+        "id": "3_0_1_61"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0210-155354",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Turning right into the road', 'Wait for vehicles on the right, prepare to turn right', 'Turning right into the lane for motor vehicles', 'Wait for the car in front, prepare to turn left through the intersection', 'Turning left into the road', 'Changing lanes with a right turn'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0210-155354_frame_010415.png",
+            "2020-0210-155354_frame_010407.png",
+            "2020-0210-155354_frame_010406.png",
+            "2020-0210-155354_frame_010397.png",
+            "2020-0210-155354_frame_010398.png"
+        ],
+        "id": "3_0_1_62"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0212-102546",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black sedan from the following phrases:['Proceeding straight ahead right, crossing the intersection', 'Turning right into the lane for motor vehicles', 'Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Turning left into the road', 'Prepare to turn right into the road', 'Prepare to turn left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily park, wait for the traffic light, prepare to turn left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0212-102546_frame_000325.png",
+            "2020-0212-102546_frame_000343.png",
+            "2020-0212-102546_frame_000334.png",
+            "2020-0212-102546_frame_000352.png",
+            "2020-0212-102546_frame_000316.png"
+        ],
+        "id": "3_0_1_63"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0213-143552",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black special vehicle from the following phrases:['Turning right into the lane for motor vehicles', 'Turning left into the road', 'Prepare to turn right into the road', 'Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Turning right into the road', 'Proceeding straight ahead right, crossing the intersection'], no explaination needed."
+        ],
+        "reference": [
+            "Prepare to turn right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0213-143552_frame_075237.png",
+            "2020-0213-143552_frame_075246.png",
+            "2020-0213-143552_frame_075228.png",
+            "2020-0213-143552_frame_075255.png",
+            "2020-0213-143552_frame_075219.png"
+        ],
+        "id": "3_0_1_64"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0217-110854",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white sedan from the following phrases:['Proceeding straight ahead right, crossing the intersection', 'Prepare to turn left into the road', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right', 'Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Prepare to turn right into the road', 'Wait for pedestrians to cross the zebra crossing, then turn left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Prepare to turn left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0217-110854_frame_006074.png",
+            "2020-0217-110854_frame_006047.png",
+            "2020-0217-110854_frame_006056.png",
+            "2020-0217-110854_frame_006083.png",
+            "2020-0217-110854_frame_006065.png"
+        ],
+        "id": "3_0_1_65"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0217-144444",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Wait for pedestrians to cross the zebra crossing, then turn left into the road', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right', 'Proceeding straight ahead right, crossing the intersection', 'Prepare to turn left into the road', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+            "Wait for pedestrians to cross the zebra crossing, then turn left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0217-144444_frame_015272.png",
+            "2020-0217-144444_frame_015263.png",
+            "2020-0217-144444_frame_015245.png",
+            "2020-0217-144444_frame_015281.png",
+            "2020-0217-144444_frame_015254.png"
+        ],
+        "id": "3_0_1_66"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0218-103119",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Prepare to turn left into the road', 'Proceeding straight ahead right, crossing the intersection', 'Wait for pedestrians to cross the zebra crossing, then turn left into the road', 'Keep to the right and prepare to temporarily park', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0218-103119_frame_002222.png",
+            "2020-0218-103119_frame_002231.png",
+            "2020-0218-103119_frame_002204.png",
+            "2020-0218-103119_frame_002213.png",
+            "2020-0218-103119_frame_002240.png"
+        ],
+        "id": "3_0_1_67"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0218-151547",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white and orange coach from the following phrases:['Wait for the car in front, prepare to turn left through the intersection', 'Turning right into the lane for motor vehicles', 'Turning left into the road', 'Wait for vehicles on the right, prepare to turn right', 'Turning right into the road', 'Changing lanes with a right turn'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0218-151547_frame_007477.png",
+            "2020-0218-151547_frame_007459.png",
+            "2020-0218-151547_frame_007486.png",
+            "2020-0218-151547_frame_007468.png",
+            "2020-0218-151547_frame_007450.png"
+        ],
+        "id": "3_0_1_68"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0226-140503",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Turning left into the road', 'Wait for the car in front, prepare to turn left through the intersection', 'Turning right into the lane for motor vehicles', 'Changing lanes with a right turn', 'Turning right into the road', 'Wait for vehicles on the right, prepare to turn right'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0226-140503_frame_009763.png",
+            "2020-0226-140503_frame_009754.png",
+            "2020-0226-140503_frame_009781.png",
+            "2020-0226-140503_frame_009772.png",
+            "2020-0226-140503_frame_009745.png"
+        ],
+        "id": "3_0_1_69"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0226-140503_2",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Changing lanes with a right turn', 'Turning right into the road', 'Turning left into the road', 'Turning right into the lane for motor vehicles', 'Wait for the car in front, prepare to turn left through the intersection', 'Wait for vehicles on the right, prepare to turn right'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0226-140503_frame_009763.png",
+            "2020-0226-140503_frame_009754.png",
+            "2020-0226-140503_frame_009781.png",
+            "2020-0226-140503_frame_009772.png",
+            "2020-0226-140503_frame_009745.png"
+        ],
+        "id": "3_0_1_70"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0227-153144",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black compact car from the following phrases:['Turning left into the road', 'Changing lanes with a right turn', 'Wait for vehicles on the right, prepare to turn right', 'Prepare to turn right into the road', 'Turning right into the lane for motor vehicles', 'Turning right into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0227-153144_frame_014045.png",
+            "2020-0227-153144_frame_014072.png",
+            "2020-0227-153144_frame_014054.png",
+            "2020-0227-153144_frame_014063.png",
+            "2020-0227-153144_frame_014036.png"
+        ],
+        "id": "3_0_1_71"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0228-102841",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right', 'Prepare to turn left into the road', 'Keep to the right and prepare to temporarily park', 'Accelerate from start', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right', 'Wait for pedestrians to cross the zebra crossing, then turn left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "2020-0228-102841_frame_008411.png",
+            "2020-0228-102841_frame_008402.png",
+            "2020-0228-102841_frame_008393.png",
+            "2020-0228-102841_frame_008384.png"
+        ],
+        "id": "3_0_1_72"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_1056_000120",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the silver compact car from the following phrases:['Start with acceleration', 'Keep to the right and prepare to temporarily park', 'Accelerate from start', 'Wait for pedestrians to cross the zebra crossing, then turn left into the road', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+            "Keep to the right and prepare to temporarily park"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_1056_000120_frame_000072.png",
+            "clip_1056_000120_frame_000120.png",
+            "clip_1056_000120_frame_000096.png",
+            "clip_1056_000120_frame_000084.png",
+            "clip_1056_000120_frame_000108.png"
+        ],
+        "id": "3_0_1_73"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_128_000120",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Prepare to turn right into the road', 'Changing lanes with a right turn', 'Turning right into the road', 'Turning right into the lane for motor vehicles', 'Wait for vehicles on the right, prepare to turn right', 'Turning left into the road'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_128_000120_frame_000084.png",
+            "clip_128_000120_frame_000096.png",
+            "clip_128_000120_frame_000108.png",
+            "clip_128_000120_frame_000072.png",
+            "clip_128_000120_frame_000120.png"
+        ],
+        "id": "3_0_1_74"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_290_000090",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white sedan from the following phrases:['Prepare to turn right into the road', 'Turning right into the road', 'Turning right into the lane for motor vehicles', 'Wait for vehicles on the right, prepare to turn right', 'Turning left into the road', 'Changing lanes with a right turn'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_290_000090_frame_000042.png",
+            "clip_290_000090_frame_000090.png",
+            "clip_290_000090_frame_000078.png",
+            "clip_290_000090_frame_000066.png",
+            "clip_290_000090_frame_000054.png"
+        ],
+        "id": "3_0_1_75"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_551_000456",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white van from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning left into the road', 'Wait for the car in front, prepare to turn left through the intersection', 'Changing lanes with a right turn', 'Turning right into the road', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_551_000456_frame_000360.png",
+            "clip_551_000456_frame_000384.png",
+            "clip_551_000456_frame_000396.png",
+            "clip_551_000456_frame_000348.png",
+            "clip_551_000456_frame_000372.png"
+        ],
+        "id": "3_0_1_76"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_676_000564",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the black truck from the following phrases:['Changing lanes with a right turn', 'Turning left into the road', 'Prepare to turn right into the road', 'Wait for vehicles on the right, prepare to turn right', 'Turning right into the road', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Turning left into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_676_000564_frame_000564.png",
+            "clip_676_000564_frame_000540.png",
+            "clip_676_000564_frame_000528.png",
+            "clip_676_000564_frame_000516.png",
+            "clip_676_000564_frame_000552.png"
+        ],
+        "id": "3_0_1_77"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_69_000048",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the orange and green coach from the following phrases:['Wait for vehicles on the right, prepare to turn right', 'Turning right into the lane for motor vehicles', 'Changing lanes with a right turn', 'Turning right into the road', 'Turning left into the road', 'Wait for the car in front, prepare to turn left through the intersection'], no explaination needed."
+        ],
+        "reference": [
+            "Turning right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_69_000048_frame_000012.png",
+            "clip_69_000048_frame_000048.png",
+            "clip_69_000048_frame_000024.png",
+            "clip_69_000048_frame_000036.png"
+        ],
+        "id": "3_0_1_78"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_79_000576",
+        "questions": [
+            "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Proceeding straight ahead right, crossing the intersection', 'Turning right into the road', 'Prepare to turn right into the road', 'Temporarily park, wait for the traffic light, prepare to turn left into the road', 'Turning left into the road', 'Turning right into the lane for motor vehicles'], no explaination needed."
+        ],
+        "reference": [
+            "Prepare to turn right into the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+            "clip_79_000576_frame_000480.png",
+            "clip_79_000576_frame_000468.png",
+            "clip_79_000576_frame_000492.png",
+            "clip_79_000576_frame_000516.png",
+            "clip_79_000576_frame_000504.png"
+        ],
+        "id": "3_0_1_79"
+    }
+]

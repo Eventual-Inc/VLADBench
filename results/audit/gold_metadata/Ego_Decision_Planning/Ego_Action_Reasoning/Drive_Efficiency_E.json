@@ -1,0 +1,2323 @@
+[
+    {
+        "sequence": "accelerate_DRAMA_2020-0127-132751_2",
+        "image_path": [
+            "2020-0127-132751_frame_033824.png",
+            "2020-0127-132751_frame_033842.png",
+            "2020-0127-132751_frame_033860.png",
+            "2020-0127-132751_frame_033878.png",
+            "2020-0127-132751_frame_033896.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle ahead is in the left turn lane', 'Approaching an uphill, surrounding vehicles are moving normally', 'Lateral vehicle is slowly turning left, ego vehicle yields', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The road ahead is congested, and the vehicle in front is accelerating after moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_0"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0127-132751_3",
+        "image_path": [
+            "2020-0127-132751_frame_035699.png",
+            "2020-0127-132751_frame_035717.png",
+            "2020-0127-132751_frame_035735.png",
+            "2020-0127-132751_frame_035753.png",
+            "2020-0127-132751_frame_035771.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Lateral vehicle is slowly turning left, ego vehicle yields', 'The road ahead is clear', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly', 'Approaching an uphill, surrounding vehicles are moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Approaching an uphill, surrounding vehicles are moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_1"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0127-132751_4",
+        "image_path": [
+            "2020-0127-132751_frame_050044.png",
+            "2020-0127-132751_frame_050062.png",
+            "2020-0127-132751_frame_050080.png",
+            "2020-0127-132751_frame_050098.png",
+            "2020-0127-132751_frame_050116.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is congested, and the vehicle in front is accelerating after moving slowly', 'Approaching an uphill, surrounding vehicles are moving normally', 'The road ahead is clear', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The road ahead is clear"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_2"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0131-135401_10",
+        "image_path": [
+            "2020-0131-135401_frame_015975.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving', 'Approaching an uphill, surrounding vehicles are moving normally', 'The road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_3"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0131-135401_14",
+        "image_path": [
+            "2020-0131-135401_frame_065907.png",
+            "2020-0131-135401_frame_065925.png",
+            "2020-0131-135401_frame_065935.png",
+            "2020-0131-135401_frame_065944.png",
+            "2020-0131-135401_frame_065953.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving', 'The road ahead is clear', 'Approaching a traffic light controlled intersection, the car ahead is moving normally, straight green light', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_4"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0131-135401_15",
+        "image_path": [
+            "2020-0131-135401_frame_065980.png",
+            "2020-0131-135401_frame_065989.png",
+            "2020-0131-135401_frame_065998.png",
+            "2020-0131-135401_frame_066007.png",
+            "2020-0131-135401_frame_066016.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The road ahead is clear', 'Approaching a traffic light controlled intersection, the car ahead is moving normally, straight green light', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_5"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632_1",
+        "image_path": [
+            "2020-0203-114632_frame_017031.png",
+            "2020-0203-114632_frame_017049.png",
+            "2020-0203-114632_frame_017067.png",
+            "2020-0203-114632_frame_017085.png",
+            "2020-0203-114632_frame_017103.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Approaching a traffic light controlled intersection, the car ahead is moving normally, straight green light', 'Passing a traffic light controlled intersection, the light is green, the car ahead is moving normally', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Approaching a traffic light controlled intersection, the car ahead is moving normally, straight green light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_6"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632_2",
+        "image_path": [
+            "2020-0203-114632_frame_031205.png",
+            "2020-0203-114632_frame_031223.png",
+            "2020-0203-114632_frame_031241.png",
+            "2020-0203-114632_frame_031259.png",
+            "2020-0203-114632_frame_031277.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Approaching a traffic light controlled intersection, the car ahead is moving normally, straight green light', 'Passing a traffic light controlled intersection, the light is green, the car ahead is moving normally', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front has started moving', 'The road is blocked, and the front car is starting to move'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Passing a traffic light controlled intersection, the light is green, the car ahead is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_7"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632_3",
+        "image_path": [
+            "2020-0203-114632_frame_041514.png",
+            "2020-0203-114632_frame_041532.png",
+            "2020-0203-114632_frame_041550.png",
+            "2020-0203-114632_frame_041568.png",
+            "2020-0203-114632_frame_041586.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Approaching a traffic light controlled intersection, the car ahead is moving normally, straight green light', 'The road is blocked, and the front car is starting to move', 'Passing a traffic light controlled intersection, the light is green, the car ahead is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The road is blocked, and the front car is starting to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_8"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632_4",
+        "image_path": [
+            "2020-0203-114632_frame_048143.png",
+            "2020-0203-114632_frame_048161.png",
+            "2020-0203-114632_frame_048179.png",
+            "2020-0203-114632_frame_048197.png",
+            "2020-0203-114632_frame_048215.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Passing a traffic light controlled intersection, the light is green, the car ahead is moving normally', 'The road is blocked, and the front car is starting to move', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Passing through a traffic light controlled intersection, the car ahead is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_9"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632_8",
+        "image_path": [
+            "2020-0203-114632_frame_091382.png",
+            "2020-0203-114632_frame_091400.png",
+            "2020-0203-114632_frame_091418.png",
+            "2020-0203-114632_frame_091436.png",
+            "2020-0203-114632_frame_091454.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is blocked, and the front car is starting to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Waiting at the intersection, the light has turned green, the vehicle in front has started to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_10"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-114632_10",
+        "image_path": [
+            "2020-0203-114632_frame_093733.png",
+            "2020-0203-114632_frame_093751.png",
+            "2020-0203-114632_frame_093769.png",
+            "2020-0203-114632_frame_093787.png",
+            "2020-0203-114632_frame_093805.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road is congested, traffic is moving slowly', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The vehicle in front is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_11"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0203-154554",
+        "image_path": [
+            "2020-0203-154554_frame_019124.png",
+            "2020-0203-154554_frame_019142.png",
+            "2020-0203-154554_frame_019160.png",
+            "2020-0203-154554_frame_019178.png",
+            "2020-0203-154554_frame_019196.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road is congested, traffic is moving slowly', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_12"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0204-103442",
+        "image_path": [
+            "2020-0204-103442_frame_005483.png",
+            "2020-0204-103442_frame_005501.png",
+            "2020-0204-103442_frame_005519.png",
+            "2020-0204-103442_frame_005537.png",
+            "2020-0204-103442_frame_005555.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The road is blocked, and the front car is starting to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Waiting at the intersection, the light has turned green, the vehicle in front has started to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_13"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0204-103442_4",
+        "image_path": [
+            "2020-0204-103442_frame_058084.png",
+            "2020-0204-103442_frame_058102.png",
+            "2020-0204-103442_frame_058120.png",
+            "2020-0204-103442_frame_058138.png",
+            "2020-0204-103442_frame_058156.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_14"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0204-103442_6",
+        "image_path": [
+            "2020-0204-103442_frame_087552.png",
+            "2020-0204-103442_frame_087561.png",
+            "2020-0204-103442_frame_087570.png",
+            "2020-0204-103442_frame_087579.png",
+            "2020-0204-103442_frame_087588.png",
+            "2020-0204-103442_frame_087597.png",
+            "2020-0204-103442_frame_087606.png",
+            "2020-0204-103442_frame_087615.png",
+            "2020-0204-103442_frame_087624.png",
+            "2020-0204-103442_frame_087633.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The road is blocked, and the front car is starting to move'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Waiting at the intersection, the light has turned green, the vehicle in front has started to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_15"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0204-103442_7",
+        "image_path": [
+            "2020-0204-103442_frame_088694.png",
+            "2020-0204-103442_frame_088709.png",
+            "2020-0204-103442_frame_088712.png",
+            "2020-0204-103442_frame_088718.png",
+            "2020-0204-103442_frame_088721.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The vehicle in front is moving normally', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_16"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0206-101736_6",
+        "image_path": [
+            "2020-0206-101736_frame_061525.png",
+            "2020-0206-101736_frame_061543.png",
+            "2020-0206-101736_frame_061561.png",
+            "2020-0206-101736_frame_061579.png",
+            "2020-0206-101736_frame_061597.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Passing the intersection, the light has turned green, the vehicle in front has started moving', 'The vehicle in front is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The road is congested, traffic is moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_17"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0206-101736_7",
+        "image_path": [
+            "2020-0206-101736_frame_072587.png",
+            "2020-0206-101736_frame_072605.png",
+            "2020-0206-101736_frame_072623.png",
+            "2020-0206-101736_frame_072641.png",
+            "2020-0206-101736_frame_072659.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally', 'Passing the intersection, the light has turned green, the vehicle in front has started moving', 'The road is congested, traffic is moving slowly', 'Through the intersection, the light is green, and the vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Passing the intersection, the light has turned green, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_18"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0206-142535_1",
+        "image_path": [
+            "2020-0206-142535_frame_019623.png",
+            "2020-0206-142535_frame_019641.png",
+            "2020-0206-142535_frame_019659.png",
+            "2020-0206-142535_frame_019677.png",
+            "2020-0206-142535_frame_019695.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Ego vehicle moving straight, the traffic light ahead is red', 'The road is congested, traffic is moving slowly', 'Passing the intersection, the light has turned green, the vehicle in front has started moving', 'Through the intersection, the light is green, and the vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Through the intersection, the light is green, and the vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_19"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0207-101955",
+        "image_path": [
+            "2020-0207-101955_frame_005672.png",
+            "2020-0207-101955_frame_005690.png",
+            "2020-0207-101955_frame_005708.png",
+            "2020-0207-101955_frame_005726.png",
+            "2020-0207-101955_frame_005744.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road is congested, traffic is moving slowly', 'The vehicle in front is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_20"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0207-101955_15",
+        "image_path": [
+            "2020-0207-101955_frame_066220.png",
+            "2020-0207-101955_frame_066238.png",
+            "2020-0207-101955_frame_066256.png",
+            "2020-0207-101955_frame_066274.png",
+            "2020-0207-101955_frame_066292.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_21"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0207-151349",
+        "image_path": [
+            "2020-0207-151349_frame_001623.png",
+            "2020-0207-151349_frame_001641.png",
+            "2020-0207-151349_frame_001659.png",
+            "2020-0207-151349_frame_001677.png",
+            "2020-0207-151349_frame_001695.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['Ego vehicle moving straight, the traffic light ahead is red', 'Passing the intersection, the light has turned green, the vehicle in front has started moving', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'The vehicle in front is moving normally, the intersection traffic light is green'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "Ego vehicle moving straight, the traffic light ahead is red"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_22"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0210-101957_1",
+        "image_path": [
+            "2020-0210-101957_frame_054055.png",
+            "2020-0210-101957_frame_054073.png",
+            "2020-0210-101957_frame_054091.png",
+            "2020-0210-101957_frame_054109.png",
+            "2020-0210-101957_frame_054127.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The road is congested, traffic is moving slowly', 'The vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_23"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0210-101957_3",
+        "image_path": [
+            "2020-0210-101957_frame_065114.png",
+            "2020-0210-101957_frame_065132.png",
+            "2020-0210-101957_frame_065150.png",
+            "2020-0210-101957_frame_065168.png",
+            "2020-0210-101957_frame_065186.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The vehicle in front is moving normally', 'The road is congested, traffic is moving slowly', 'Passing through a traffic light controlled intersection, the car ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_24"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0210-101957_7",
+        "image_path": [
+            "2020-0210-101957_frame_085409.png",
+            "2020-0210-101957_frame_085427.png",
+            "2020-0210-101957_frame_085445.png",
+            "2020-0210-101957_frame_085463.png",
+            "2020-0210-101957_frame_085481.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The vehicle in front is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_25"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0212-102546_6",
+        "image_path": [
+            "2020-0212-102546_frame_048609.png",
+            "2020-0212-102546_frame_048627.png",
+            "2020-0212-102546_frame_048645.png",
+            "2020-0212-102546_frame_048663.png",
+            "2020-0212-102546_frame_048681.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally, the intersection traffic light is green', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'The road ahead is clear, the intersection traffic light is green', 'Ego vehicle moving straight, the traffic light ahead is red'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_26"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0212-102546_8",
+        "image_path": [
+            "2020-0212-102546_frame_062251.png",
+            "2020-0212-102546_frame_062269.png",
+            "2020-0212-102546_frame_062287.png",
+            "2020-0212-102546_frame_062305.png",
+            "2020-0212-102546_frame_062323.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Ego vehicle moving straight, the traffic light ahead is red', 'The vehicle in front is moving normally, the intersection traffic light is green', 'The road ahead is clear, the intersection traffic light is green', 'Through the intersection, the light is green, and the vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_27"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0213-143552_8",
+        "image_path": [
+            "2020-0213-143552_frame_035028.png",
+            "2020-0213-143552_frame_035046.png",
+            "2020-0213-143552_frame_035064.png",
+            "2020-0213-143552_frame_035082.png",
+            "2020-0213-143552_frame_035100.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection light is green', 'Ego vehicle moving straight, the traffic light ahead is red', 'The road ahead is clear, the intersection traffic light is green', 'The vehicle in front is moving normally, the intersection traffic light is green'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The road ahead is clear, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_28"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0213-143552_9",
+        "image_path": [
+            "2020-0213-143552_frame_036099.png",
+            "2020-0213-143552_frame_036117.png",
+            "2020-0213-143552_frame_036135.png",
+            "2020-0213-143552_frame_036153.png",
+            "2020-0213-143552_frame_036171.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The road is congested, traffic is moving slowly', 'The vehicle in front is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_29"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0214-145407_1",
+        "image_path": [
+            "2020-0214-145407_frame_008393.png",
+            "2020-0214-145407_frame_008411.png",
+            "2020-0214-145407_frame_008429.png",
+            "2020-0214-145407_frame_008447.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection traffic light is green', 'Ego vehicle moving straight, the traffic light ahead is red', 'The vehicle in front is moving normally, the intersection traffic light is green', 'Through the intersection, the light is green, and the vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_30"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0214-145407_2",
+        "image_path": [
+            "2020-0214-145407_frame_011795.png",
+            "2020-0214-145407_frame_011813.png",
+            "2020-0214-145407_frame_011831.png",
+            "2020-0214-145407_frame_011849.png",
+            "2020-0214-145407_frame_011867.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally', 'The road is blocked, and the front car is starting to move', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Waiting at the intersection, the light has turned green, the vehicle in front has started to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_31"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0227-104226",
+        "image_path": [
+            "2020-0227-104226_frame_025246.png",
+            "2020-0227-104226_frame_025264.png",
+            "2020-0227-104226_frame_025282.png",
+            "2020-0227-104226_frame_025300.png",
+            "2020-0227-104226_frame_025318.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The vehicle in front is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_32"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0227-104226_4",
+        "image_path": [
+            "2020-0227-104226_frame_076993.png",
+            "2020-0227-104226_frame_077011.png",
+            "2020-0227-104226_frame_077029.png",
+            "2020-0227-104226_frame_077047.png",
+            "2020-0227-104226_frame_077065.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection traffic light is green', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'Ego vehicle moving straight, the traffic light ahead is red', 'The vehicle in front is moving normally, the intersection traffic light is green'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_33"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0227-104226_6",
+        "image_path": [
+            "2020-0227-104226_frame_113931.png",
+            "2020-0227-104226_frame_113949.png",
+            "2020-0227-104226_frame_113967.png",
+            "2020-0227-104226_frame_113985.png",
+            "2020-0227-104226_frame_114003.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection light is green', 'The vehicle in front is moving normally, the intersection traffic light is green', 'The road ahead is clear, the intersection traffic light is green', 'The road is clear, and the vehicle ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The road ahead is clear, the intersection light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_34"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0228-102841_10",
+        "image_path": [
+            "2020-0228-102841_frame_063022.png",
+            "2020-0228-102841_frame_063040.png",
+            "2020-0228-102841_frame_063058.png",
+            "2020-0228-102841_frame_063076.png",
+            "2020-0228-102841_frame_063094.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle ahead is in the left turn lane', 'Lateral vehicle is slowly turning left, ego vehicle yields', 'Approaching an uphill, surrounding vehicles are moving normally', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The road ahead is congested, and the vehicle in front is accelerating after moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_35"
+    },
+    {
+        "sequence": "accelerate_DRAMA_2020-0228-150133_8",
+        "image_path": [
+            "2020-0228-150133_frame_081125.png",
+            "2020-0228-150133_frame_081143.png",
+            "2020-0228-150133_frame_081161.png",
+            "2020-0228-150133_frame_081179.png",
+            "2020-0228-150133_frame_081197.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection light is green', 'The traffic light at the intersection ahead is red', 'The road is clear, and the vehicle ahead is moving normally', 'The road ahead is clear, the intersection traffic light is green'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The road is clear, and the vehicle ahead is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_36"
+    },
+    {
+        "sequence": "ONCE_000200",
+        "image_path": [
+            "1618797325298.jpg",
+            "1618797325799.jpg",
+            "1618797326300.jpg",
+            "1618797326800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection light is green', 'The traffic light at the intersection ahead is red', 'The vehicle in front is moving normally, preparing to turn right at the intersection', 'The road is clear, and the vehicle ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "The traffic light at the intersection ahead is red"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_37"
+    },
+    {
+        "sequence": "ONCE_000273",
+        "image_path": [
+            "1619039072700.jpg",
+            "1619039073200.jpg",
+            "1619039073699.jpg",
+            "1619039074200.jpg",
+            "1619039074700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection light is green', 'The traffic light at the intersection ahead is red', 'The road is clear, and the vehicle ahead is moving normally', 'The vehicle in front is moving normally, preparing to turn right at the intersection'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The traffic light at the intersection ahead is red"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_38"
+    },
+    {
+        "sequence": "ONCE_000275",
+        "image_path": [
+            "1619041212901.jpg",
+            "1619041213401.jpg",
+            "1619041213900.jpg",
+            "1619041214400.jpg",
+            "1619041214899.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The road is clear, and the vehicle ahead is moving normally', 'The road ahead is clear, the intersection light is green', 'The vehicle in front is moving normally, preparing to turn right at the intersection', 'The traffic light at the intersection ahead is red'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "The traffic light at the intersection ahead is red"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_39"
+    },
+    {
+        "sequence": "ONCE_000303",
+        "image_path": [
+            "1619290242299.jpg",
+            "1619290242799.jpg",
+            "1619290243299.jpg",
+            "1619290243800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Through the intersection, the light is green, and the road ahead is clear', 'The traffic light at the intersection ahead is red', 'The road is clear, and the vehicle ahead is moving normally', 'The vehicle in front is moving normally, preparing to turn right at the intersection'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally, preparing to turn right at the intersection"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_40"
+    },
+    {
+        "sequence": "ONCE_000318",
+        "image_path": [
+            "1619374068600.jpg",
+            "1619374069100.jpg",
+            "1619374069600.jpg",
+            "1619374070099.jpg",
+            "1619374070599.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally, preparing to turn right at the intersection', 'The road ahead is clear, the intersection light is green', 'The traffic light at the intersection ahead is red', 'The road is clear, and the vehicle ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "decrease",
+            "The traffic light at the intersection ahead is red"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_41"
+    },
+    {
+        "sequence": "ONCE_000322",
+        "image_path": [
+            "1619377417900.jpg",
+            "1619377418400.jpg",
+            "1619377418900.jpg",
+            "1619377419400.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally, preparing to turn right at the intersection', 'Through the intersection, the light is green, and the road ahead is clear', 'The traffic light at the intersection ahead is red', 'The vehicle in front has turned right, the road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "Through the intersection, the light is green, and the road ahead is clear"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_42"
+    },
+    {
+        "sequence": "ONCE_000334",
+        "image_path": [
+            "1619407069800.jpg",
+            "1619407070300.jpg",
+            "1619407070799.jpg",
+            "1619407071299.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Through the intersection, the light is green, and the road ahead is clear', 'The vehicle in front is moving slowly', 'The vehicle in front is moving normally, preparing to turn right at the intersection', 'The vehicle in front has turned right, the road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The vehicle in front has turned right, the road ahead is clear"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_3_43"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0127-132751",
+        "image_path": [
+            "2020-0127-132751_frame_089631.png",
+            "2020-0127-132751_frame_089640.png",
+            "2020-0127-132751_frame_089649.png",
+            "2020-0127-132751_frame_089658.png",
+            "2020-0127-132751_frame_089667.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front has turned right, the road ahead is clear', 'Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly', 'Through the intersection, the light is green, and the road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_44"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0131-103016_1",
+        "image_path": [
+            "2020-0131-103016_frame_026594.png",
+            "2020-0131-103016_frame_026612.png",
+            "2020-0131-103016_frame_026630.png",
+            "2020-0131-103016_frame_026648.png",
+            "2020-0131-103016_frame_026666.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is blocked', 'The vehicle in front is moving slowly', 'Waiting at the intersection, the light is red', 'The vehicle in front has turned right, the road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "Waiting at the intersection, the light is red"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_45"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0131-103016_2",
+        "image_path": [
+            "2020-0131-103016_frame_061611.png",
+            "2020-0131-103016_frame_061629.png",
+            "2020-0131-103016_frame_061647.png",
+            "2020-0131-103016_frame_061665.png",
+            "2020-0131-103016_frame_061683.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving slowly', 'The vehicle in front is moving slowly, and there is congestion ahead', 'Waiting at the intersection, the light is red', 'The road ahead is blocked'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The road ahead is blocked"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_46"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0131-135401_1",
+        "image_path": [
+            "2020-0131-135401_frame_048812.png",
+            "2020-0131-135401_frame_048830.png",
+            "2020-0131-135401_frame_048848.png",
+            "2020-0131-135401_frame_048866.png",
+            "2020-0131-135401_frame_048884.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally', 'Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is congested, traffic is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_47"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0204-103442",
+        "image_path": [
+            "2020-0204-103442_frame_017038.png",
+            "2020-0204-103442_frame_017056.png",
+            "2020-0204-103442_frame_017074.png",
+            "2020-0204-103442_frame_017092.png",
+            "2020-0204-103442_frame_017110.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is blocked', 'Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly, and there is congestion ahead', 'Passing the intersection, the vehicle in front has started moving'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly, and there is congestion ahead"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_48"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0204-150838_1",
+        "image_path": [
+            "2020-0204-150838_frame_048436.png",
+            "2020-0204-150838_frame_048454.png",
+            "2020-0204-150838_frame_048472.png",
+            "2020-0204-150838_frame_048490.png",
+            "2020-0204-150838_frame_048508.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The road is congested, traffic is moving slowly', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'The vehicle in front is moving normally', 'Passing the intersection, the light has turned green, the vehicle in front has started moving'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Passing the intersection, the light has turned green, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_49"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0204-150838_2",
+        "image_path": [
+            "2020-0204-150838_frame_060050.png",
+            "2020-0204-150838_frame_060068.png",
+            "2020-0204-150838_frame_060086.png",
+            "2020-0204-150838_frame_060104.png",
+            "2020-0204-150838_frame_060122.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is moving slowly, and there is congestion ahead', 'The vehicle in front is starting to move', 'Passing the intersection, the vehicle in front has started moving', 'The road ahead is blocked'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Passing the intersection, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_50"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0204-150838_3",
+        "image_path": [
+            "2020-0204-150838_frame_082878.png",
+            "2020-0204-150838_frame_082896.png",
+            "2020-0204-150838_frame_082914.png",
+            "2020-0204-150838_frame_082932.png",
+            "2020-0204-150838_frame_082950.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front has turned right, the road ahead is clear', 'Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly', 'Through the intersection, the light is green, and the road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_51"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0206-142535",
+        "image_path": [
+            "2020-0206-142535_frame_047034.png",
+            "2020-0206-142535_frame_047052.png",
+            "2020-0206-142535_frame_047070.png",
+            "2020-0206-142535_frame_047088.png",
+            "2020-0206-142535_frame_047106.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly, and there is congestion ahead', 'Passing the intersection, the vehicle in front has started moving', 'The road ahead is blocked'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly, and there is congestion ahead"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_52"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0207-101955",
+        "image_path": [
+            "2020-0207-101955_frame_054071.png",
+            "2020-0207-101955_frame_054089.png",
+            "2020-0207-101955_frame_054107.png",
+            "2020-0207-101955_frame_054125.png",
+            "2020-0207-101955_frame_054143.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is moving slowly, and there is congestion ahead', 'The road ahead is blocked', 'The vehicle in front is starting to move', 'Passing the intersection, the vehicle in front has started moving'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Passing the intersection, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_53"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0207-101955_1",
+        "image_path": [
+            "2020-0207-101955_frame_075348.png",
+            "2020-0207-101955_frame_075357.png",
+            "2020-0207-101955_frame_075366.png",
+            "2020-0207-101955_frame_075375.png",
+            "2020-0207-101955_frame_075384.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Passing the intersection, the vehicle in front has started moving', 'The vehicle in front is starting to turn left', 'The vehicle in front is moving slowly, and there is congestion ahead', 'The vehicle in front is starting to move'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle in front is starting to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_54"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0214-102601",
+        "image_path": [
+            "2020-0214-102601_frame_050861.png",
+            "2020-0214-102601_frame_050879.png",
+            "2020-0214-102601_frame_050897.png",
+            "2020-0214-102601_frame_050915.png",
+            "2020-0214-102601_frame_050933.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Passing the intersection, the vehicle in front has started moving', 'The vehicle in front is starting to move', 'The vehicle in front is starting to turn left', 'The vehicle in front is moving slowly, and there is congestion ahead'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle in front is starting to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_55"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0217-110854",
+        "image_path": [
+            "2020-0217-110854_frame_006002.png",
+            "2020-0217-110854_frame_006020.png",
+            "2020-0217-110854_frame_006038.png",
+            "2020-0217-110854_frame_006056.png",
+            "2020-0217-110854_frame_006074.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is starting to turn left', 'The vehicle in front is turning left normally', 'The vehicle in front is starting to move', 'Passing the intersection, the vehicle in front has started moving'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle in front is starting to turn left"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_56"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0217-144444",
+        "image_path": [
+            "2020-0217-144444_frame_007888.png",
+            "2020-0217-144444_frame_007906.png",
+            "2020-0217-144444_frame_007924.png",
+            "2020-0217-144444_frame_007942.png",
+            "2020-0217-144444_frame_007960.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is starting to turn left', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'The vehicle in front is starting to move', 'The vehicle in front is turning left normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is turning left normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_57"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0218-103119",
+        "image_path": [
+            "2020-0218-103119_frame_041093.png",
+            "2020-0218-103119_frame_041102.png",
+            "2020-0218-103119_frame_041111.png",
+            "2020-0218-103119_frame_041120.png",
+            "2020-0218-103119_frame_041129.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly', 'The vehicle in front has turned right, the road ahead is clear', 'Through the intersection, the light is green, and the road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_58"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0220-151845",
+        "image_path": [
+            "2020-0220-151845_frame_017957.png",
+            "2020-0220-151845_frame_017975.png",
+            "2020-0220-151845_frame_017993.png",
+            "2020-0220-151845_frame_018011.png",
+            "2020-0220-151845_frame_018029.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is clear, the intersection traffic light is green', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'The vehicle in front is moving normally, the intersection traffic light is green', 'Ego vehicle moving straight, the traffic light ahead is red'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_59"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0220-151845_1",
+        "image_path": [
+            "2020-0220-151845_frame_047122.png",
+            "2020-0220-151845_frame_047140.png",
+            "2020-0220-151845_frame_047158.png",
+            "2020-0220-151845_frame_047176.png",
+            "2020-0220-151845_frame_047194.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle in front is starting to move', 'Passing the intersection, the vehicle in front has started moving', 'The vehicle in front is moving slowly, and there is congestion ahead', 'The vehicle in front is starting to turn left'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle in front is starting to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_60"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0225-145150",
+        "image_path": [
+            "2020-0225-145150_frame_012254.png",
+            "2020-0225-145150_frame_012272.png",
+            "2020-0225-145150_frame_012290.png",
+            "2020-0225-145150_frame_012308.png",
+            "2020-0225-145150_frame_012326.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front has turned right, the road ahead is clear', 'Through the intersection, the light is green, and the road ahead is clear', 'Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_61"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0225-145150_1",
+        "image_path": [
+            "2020-0225-145150_frame_031878.png",
+            "2020-0225-145150_frame_031896.png",
+            "2020-0225-145150_frame_031914.png",
+            "2020-0225-145150_frame_031932.png",
+            "2020-0225-145150_frame_031950.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is blocked', 'The vehicle in front is moving slowly', 'Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly, and there is congestion ahead'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The road ahead is blocked"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_62"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0226-140503",
+        "image_path": [
+            "2020-0226-140503_frame_051195.png",
+            "2020-0226-140503_frame_051213.png",
+            "2020-0226-140503_frame_051231.png",
+            "2020-0226-140503_frame_051249.png",
+            "2020-0226-140503_frame_051267.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Through the intersection, the light is green, and the vehicle in front is moving normally', 'The vehicle in front is starting to turn left', 'Slowing down ahead, waiting to turn right', 'The vehicle in front is turning left normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Through the intersection, the light is green, and the vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_63"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0226-140503_1",
+        "image_path": [
+            "2020-0226-140503_frame_085707.png",
+            "2020-0226-140503_frame_085725.png",
+            "2020-0226-140503_frame_085743.png",
+            "2020-0226-140503_frame_085761.png",
+            "2020-0226-140503_frame_085779.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is slowing down, moving slowly', 'The vehicle in front is turning left normally', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'Slowing down ahead, waiting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "Slowing down ahead, waiting to turn right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_64"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0226-140503_2",
+        "image_path": [
+            "2020-0226-140503_frame_088472.png",
+            "2020-0226-140503_frame_088481.png",
+            "2020-0226-140503_frame_088490.png",
+            "2020-0226-140503_frame_088499.png",
+            "2020-0226-140503_frame_088508.png",
+            "2020-0226-140503_frame_088517.png",
+            "2020-0226-140503_frame_088526.png",
+            "2020-0226-140503_frame_088535.png",
+            "2020-0226-140503_frame_088544.png",
+            "2020-0226-140503_frame_088553.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The road ahead is blocked', 'The vehicle in front is moving slowly, and there is congestion ahead', 'The vehicle in front is moving slowly', 'Waiting at the intersection, the light is red'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The road ahead is blocked"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_65"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0227-153144_1",
+        "image_path": [
+            "2020-0227-153144_frame_044261.png",
+            "2020-0227-153144_frame_044279.png",
+            "2020-0227-153144_frame_044297.png",
+            "2020-0227-153144_frame_044315.png",
+            "2020-0227-153144_frame_044333.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The vehicle in front is slowing down, moving slowly', 'Slowing down ahead, waiting to turn right', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'Approaching a traffic light controlled intersection, the light changes from red to green'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "The vehicle in front is slowing down, moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_66"
+    },
+    {
+        "sequence": "slow_other_DRAMA_2020-0228-150133",
+        "image_path": [
+            "2020-0228-150133_frame_054072.png",
+            "2020-0228-150133_frame_054090.png",
+            "2020-0228-150133_frame_054108.png",
+            "2020-0228-150133_frame_054126.png",
+            "2020-0228-150133_frame_054144.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The road is congested, traffic is moving slowly', 'Passing the intersection, the light has turned green, the vehicle in front has started moving', 'Through the intersection, the light is green, and the vehicle in front is moving normally', 'The vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Passing the intersection, the light has turned green, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_67"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0129-105040",
+        "image_path": [
+            "2020-0129-105040_frame_069672.png",
+            "2020-0129-105040_frame_069690.png",
+            "2020-0129-105040_frame_069708.png",
+            "2020-0129-105040_frame_069726.png",
+            "2020-0129-105040_frame_069744.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Approaching a traffic light controlled intersection, the light changes from red to green', 'The vehicle in front is slowing down, moving slowly', 'Slowing down ahead, waiting to turn right', 'Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Approaching a traffic light controlled intersection, the light changes from red to green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_68"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0129-144857",
+        "image_path": [
+            "2020-0129-144857_frame_011462.png",
+            "2020-0129-144857_frame_011480.png",
+            "2020-0129-144857_frame_011498.png",
+            "2020-0129-144857_frame_011516.png",
+            "2020-0129-144857_frame_011534.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right', 'The vehicle in front is slowing down, moving slowly', 'Approaching a traffic light controlled intersection, the light changes from red to green', 'Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_69"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0129-144857_1",
+        "image_path": [
+            "2020-0129-144857_frame_048289.png",
+            "2020-0129-144857_frame_048307.png",
+            "2020-0129-144857_frame_048325.png",
+            "2020-0129-144857_frame_048343.png",
+            "2020-0129-144857_frame_048361.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right', 'Approaching a traffic light controlled intersection, the light changes from red to green', 'Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally', 'Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_70"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-103016",
+        "image_path": [
+            "2020-0131-103016_frame_018352.png",
+            "2020-0131-103016_frame_018370.png",
+            "2020-0131-103016_frame_018388.png",
+            "2020-0131-103016_frame_018406.png",
+            "2020-0131-103016_frame_018424.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Approaching a traffic light controlled intersection, the light changes from red to green', 'Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right', 'Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_71"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-103016_3",
+        "image_path": [
+            "2020-0131-103016_frame_038939.png",
+            "2020-0131-103016_frame_038957.png",
+            "2020-0131-103016_frame_038975.png",
+            "2020-0131-103016_frame_038993.png",
+            "2020-0131-103016_frame_039011.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right', 'The intersection traffic light ahead changes from green to yellow', 'Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_72"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-103016_5",
+        "image_path": [
+            "2020-0131-103016_frame_070890.png",
+            "2020-0131-103016_frame_070908.png",
+            "2020-0131-103016_frame_070926.png",
+            "2020-0131-103016_frame_070944.png",
+            "2020-0131-103016_frame_070962.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light is red', 'The vehicle in front has turned right, the road ahead is clear', 'Through the intersection, the light is green, and the road ahead is clear', 'The vehicle in front is moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_73"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-135401",
+        "image_path": [
+            "2020-0131-135401_frame_013234.png",
+            "2020-0131-135401_frame_013252.png",
+            "2020-0131-135401_frame_013270.png",
+            "2020-0131-135401_frame_013288.png",
+            "2020-0131-135401_frame_013306.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Approaching an uphill, surrounding vehicles are moving normally', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving', 'The road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The road ahead is clear"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_74"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0131-135401_1",
+        "image_path": [
+            "2020-0131-135401_frame_013320.png",
+            "2020-0131-135401_frame_013338.png",
+            "2020-0131-135401_frame_013356.png",
+            "2020-0131-135401_frame_013374.png",
+            "2020-0131-135401_frame_013392.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally', 'The intersection traffic light ahead changes from green to yellow', 'The vehicle in front is turning left slowly', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "decrease",
+            "The intersection traffic light ahead changes from green to yellow"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_75"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0203-114632_1",
+        "image_path": [
+            "2020-0203-114632_frame_057864.png",
+            "2020-0203-114632_frame_057882.png",
+            "2020-0203-114632_frame_057900.png",
+            "2020-0203-114632_frame_057918.png",
+            "2020-0203-114632_frame_057936.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Approaching an uphill, surrounding vehicles are moving normally', 'The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly', 'The road ahead is clear'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "increase",
+            "The road ahead is clear"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_76"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0203-114632_3",
+        "image_path": [
+            "2020-0203-114632_frame_075499.png",
+            "2020-0203-114632_frame_075517.png",
+            "2020-0203-114632_frame_075526.png",
+            "2020-0203-114632_frame_075535.png",
+            "2020-0203-114632_frame_075544.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is turning left slowly', 'The vehicle in front is turning right slowly', 'The intersection traffic light ahead changes from green to yellow', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is turning left slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_77"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0204-103442",
+        "image_path": [
+            "2020-0204-103442_frame_051092.png",
+            "2020-0204-103442_frame_051110.png",
+            "2020-0204-103442_frame_051128.png",
+            "2020-0204-103442_frame_051146.png",
+            "2020-0204-103442_frame_051164.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is turning left slowly', 'The vehicle in front is turning right slowly', 'The intersection traffic light ahead changes from green to yellow', \"Oncoming vehicle is slowly turning left into the ego vehicle's intended lane\"], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is turning right slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_78"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0204-150838",
+        "image_path": [
+            "2020-0204-150838_frame_017950.png",
+            "2020-0204-150838_frame_017968.png",
+            "2020-0204-150838_frame_017986.png",
+            "2020-0204-150838_frame_018004.png",
+            "2020-0204-150838_frame_018022.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is starting to move', 'The vehicle in front is starting to turn left', 'The vehicle in front is turning left normally', 'Through the intersection, the light is green, and the vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is turning left normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_79"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0205-152530_2",
+        "image_path": [
+            "2020-0205-152530_frame_055073.png",
+            "2020-0205-152530_frame_055091.png",
+            "2020-0205-152530_frame_055109.png",
+            "2020-0205-152530_frame_055127.png",
+            "2020-0205-152530_frame_055145.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'maintain', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light has turned green, the vehicle in front has started to move', 'The road is congested, traffic is moving slowly', 'The vehicle in front is moving normally', 'Passing through a traffic light controlled intersection, the car ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_80"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0206-101736_1",
+        "image_path": [
+            "2020-0206-101736_frame_007481.png",
+            "2020-0206-101736_frame_007499.png",
+            "2020-0206-101736_frame_007517.png",
+            "2020-0206-101736_frame_007535.png",
+            "2020-0206-101736_frame_007553.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The vehicle in front is turning right slowly', 'The vehicle in front is turning left slowly', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right', 'The intersection traffic light ahead changes from green to yellow'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "The vehicle in front is turning left slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_81"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0207-101955",
+        "image_path": [
+            "2020-0207-101955_frame_001499.png",
+            "2020-0207-101955_frame_001517.png",
+            "2020-0207-101955_frame_001535.png",
+            "2020-0207-101955_frame_001553.png",
+            "2020-0207-101955_frame_001571.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The road is congested, traffic is moving slowly', 'Passing the intersection, the light has turned green, the vehicle in front has started moving', 'The vehicle in front is moving normally', 'Through the intersection, the light is green, and the vehicle in front is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Passing the intersection, the light has turned green, the vehicle in front has started moving"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_82"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0207-151349_2",
+        "image_path": [
+            "2020-0207-151349_frame_014297.png",
+            "2020-0207-151349_frame_014315.png",
+            "2020-0207-151349_frame_014333.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Waiting at the intersection, the light is red', 'The vehicle in front is moving slowly, and there is congestion ahead', 'The vehicle in front is moving slowly', 'The road ahead is blocked'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The road ahead is blocked"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_83"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0210-155354_2",
+        "image_path": [
+            "2020-0210-155354_frame_010444.png",
+            "2020-0210-155354_frame_010462.png",
+            "2020-0210-155354_frame_010480.png",
+            "2020-0210-155354_frame_010498.png",
+            "2020-0210-155354_frame_010516.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['Turning left through the intersection, the light has changed to green, the vehicle ahead is starting to move', 'The vehicle in front is turning left slowly', 'The vehicle in front is turning right slowly', \"Oncoming vehicle is slowly turning left into the ego vehicle's intended lane\"], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "Oncoming vehicle is slowly turning left into the ego vehicle's intended lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_84"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0212-102546_5",
+        "image_path": [
+            "2020-0212-102546_frame_027459.png",
+            "2020-0212-102546_frame_027477.png",
+            "2020-0212-102546_frame_027495.png",
+            "2020-0212-102546_frame_027513.png",
+            "2020-0212-102546_frame_027531.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: [\"Oncoming vehicle is slowly turning left into the ego vehicle's intended lane\", 'Turning left through the intersection, the light has changed to green, the vehicle ahead is starting to move', 'The vehicle in front is turning right normally', 'The vehicle in front is turning right slowly'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Turning left through the intersection, the light has changed to green, the vehicle ahead is starting to move"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_85"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0212-102546_6",
+        "image_path": [
+            "2020-0212-102546_frame_079698.png",
+            "2020-0212-102546_frame_079716.png",
+            "2020-0212-102546_frame_079734.png",
+            "2020-0212-102546_frame_079752.png",
+            "2020-0212-102546_frame_079770.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection', \"Oncoming vehicle is slowly turning left into the ego vehicle's intended lane\", 'Turning left through the intersection, the light has changed to green, the vehicle ahead is starting to move', 'The vehicle in front is turning right normally'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle in front is turning right normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_86"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0213-143552",
+        "image_path": [
+            "2020-0213-143552_frame_075174.png",
+            "2020-0213-143552_frame_075192.png",
+            "2020-0213-143552_frame_075210.png",
+            "2020-0213-143552_frame_075228.png",
+            "2020-0213-143552_frame_075246.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Turning left through the intersection, the light has changed to green, the vehicle ahead is starting to move', 'The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection', 'The vehicle in front is turning right normally', 'There might be a cyclist crossing the road'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_87"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0217-144444",
+        "image_path": [
+            "2020-0217-144444_frame_015200.png",
+            "2020-0217-144444_frame_015218.png",
+            "2020-0217-144444_frame_015236.png",
+            "2020-0217-144444_frame_015254.png",
+            "2020-0217-144444_frame_015272.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The vehicle in front is turning right slowly', 'The vehicle in front is turning left slowly', 'The intersection traffic light ahead changes from green to yellow', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "The vehicle in front is turning left slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_88"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0218-103119_1",
+        "image_path": [
+            "2020-0218-103119_frame_002684.png",
+            "2020-0218-103119_frame_002702.png",
+            "2020-0218-103119_frame_002720.png",
+            "2020-0218-103119_frame_002738.png",
+            "2020-0218-103119_frame_002756.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['There might be a cyclist crossing the road', 'The vehicle in front is turning right normally', 'The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection', 'Turning left through the intersection, the light has changed to green, the vehicle ahead is starting to move'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_89"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0218-103119_2",
+        "image_path": [
+            "2020-0218-103119_frame_011713.png",
+            "2020-0218-103119_frame_011722.png",
+            "2020-0218-103119_frame_011731.png",
+            "2020-0218-103119_frame_011740.png",
+            "2020-0218-103119_frame_011749.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will decrease. Select the most appropriate reason from the following options: ['The vehicle in front is turning right normally', 'There might be a cyclist crossing the road', 'Preparing to go through the intersection, left turn light is green', 'The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "decrease",
+            "There might be a cyclist crossing the road"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_90"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0220-102630_1",
+        "image_path": [
+            "2020-0220-102630_frame_005881.png",
+            "2020-0220-102630_frame_005899.png",
+            "2020-0220-102630_frame_005917.png",
+            "2020-0220-102630_frame_005935.png",
+            "2020-0220-102630_frame_005953.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The light has turned green, the vehicle in front is starting to move, preparing to turn right at the intersection', 'Preparing to go through the intersection, left turn light is green', 'The light is green, the vehicle in front is starting to move, preparing to turn left at the intersection', 'There might be a cyclist crossing the road'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "Preparing to go through the intersection, left turn light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_91"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0220-102630_3",
+        "image_path": [
+            "2020-0220-102630_frame_036347.png",
+            "2020-0220-102630_frame_036365.png",
+            "2020-0220-102630_frame_036383.png",
+            "2020-0220-102630_frame_036401.png",
+            "2020-0220-102630_frame_036415.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning left, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['There might be a cyclist crossing the road', 'Preparing to go through the intersection, left turn light is green', 'The vehicle ahead is moving normally', 'The light is green, the vehicle in front is starting to move, preparing to turn left at the intersection'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The light is green, the vehicle in front is starting to move, preparing to turn left at the intersection"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_92"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0220-102630_5",
+        "image_path": [
+            "2020-0220-102630_frame_109617.png",
+            "2020-0220-102630_frame_109635.png",
+            "2020-0220-102630_frame_109653.png",
+            "2020-0220-102630_frame_109671.png",
+            "2020-0220-102630_frame_109689.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['decrease', 'increase', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle ahead is moving normally', 'Preparing to go through the intersection, left turn light is green', 'The vehicle ahead is in the left turn lane', 'The light is green, the vehicle in front is starting to move, preparing to turn left at the intersection'], note no explaination needed."
+        ],
+        "reference": [
+            "normal",
+            "maintain",
+            "The vehicle ahead is moving normally"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_93"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0226-101332_1",
+        "image_path": [
+            "2020-0226-101332_frame_007302.png",
+            "2020-0226-101332_frame_007320.png",
+            "2020-0226-101332_frame_007338.png",
+            "2020-0226-101332_frame_007356.png",
+            "2020-0226-101332_frame_007374.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is turning right, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The intersection traffic light ahead changes from green to yellow', 'Preparing to turn right at the intersection, the right turn light is green, the vehicle in front is turning right normally', 'Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right', 'Preparing to turn right at the intersection, the right turn light is on, the vehicle in front is starting to turn right'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "Preparing to turn right at the intersection, the light is green, the vehicle in front is starting to turn right"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_94"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0226-101332_4",
+        "image_path": [
+            "2020-0226-101332_frame_011885.png",
+            "2020-0226-101332_frame_011903.png",
+            "2020-0226-101332_frame_011921.png",
+            "2020-0226-101332_frame_011939.png",
+            "2020-0226-101332_frame_011957.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'High', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is moving normally, the intersection traffic light is green', 'Ego vehicle moving straight, the traffic light ahead is red', 'The road ahead is clear, the intersection traffic light is green', 'The road ahead is clear, the intersection light is green'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The road ahead is clear, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_95"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0226-140503_3",
+        "image_path": [
+            "2020-0226-140503_frame_015729.png",
+            "2020-0226-140503_frame_015747.png",
+            "2020-0226-140503_frame_015765.png",
+            "2020-0226-140503_frame_015783.png",
+            "2020-0226-140503_frame_015801.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['Lateral vehicle is slowly turning left, ego vehicle yields', 'The vehicle ahead is in the left turn lane', 'The light is green, the vehicle in front is starting to move, preparing to turn left at the intersection', 'The vehicle ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "increase",
+            "The vehicle ahead is in the left turn lane"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_96"
+    },
+    {
+        "sequence": "turn_DRAMA_2020-0226-140503_7",
+        "image_path": [
+            "2020-0226-140503_frame_063174.png",
+            "2020-0226-140503_frame_063192.png",
+            "2020-0226-140503_frame_063210.png",
+            "2020-0226-140503_frame_063228.png",
+            "2020-0226-140503_frame_063246.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Normal', 'Low']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['Ego vehicle moving straight, the traffic light ahead is red', 'The road ahead is clear, the intersection light is green', 'The road ahead is clear, the intersection traffic light is green', 'The vehicle in front is moving normally, the intersection traffic light is green'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The road ahead is clear, the intersection traffic light is green"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_97"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_69_000048",
+        "image_path": [
+            "clip_69_000048_frame_000012.png",
+            "clip_69_000048_frame_000024.png",
+            "clip_69_000048_frame_000036.png",
+            "clip_69_000048_frame_000048.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['High', 'Low', 'Normal']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'decrease', 'maintain']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle in front is turning right slowly', 'The vehicle in front is turning left slowly', 'The intersection traffic light ahead changes from green to yellow', \"Oncoming vehicle is slowly turning left into the ego vehicle's intended lane\"], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "The vehicle in front is turning right slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_98"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_79_000576",
+        "image_path": [
+            "clip_79_000576_frame_000468.png",
+            "clip_79_000576_frame_000492.png",
+            "clip_79_000576_frame_000516.png",
+            "clip_79_000576_frame_000540.png",
+            "clip_79_000576_frame_000564.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Normal', 'Low', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'increase', 'decrease']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle ahead is in the left turn lane', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly', 'Lateral vehicle is slowly turning left, ego vehicle yields', 'The vehicle ahead is moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "low",
+            "maintain",
+            "Lateral vehicle is slowly turning left, ego vehicle yields"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_99"
+    },
+    {
+        "sequence": "turn_DRAMA_clip_128_000120",
+        "image_path": [
+            "clip_128_000120_frame_000012.png",
+            "clip_128_000120_frame_000036.png",
+            "clip_128_000120_frame_000060.png",
+            "clip_128_000120_frame_000084.png",
+            "clip_128_000120_frame_000108.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'Normal', 'High']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['maintain', 'decrease', 'increase']. No explantion needed.",
+            "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will maintain. Select the most appropriate reason from the following options: ['The vehicle is at the intersection, waiting for the traffic light; the light has turned green, the vehicle in front is about to start moving', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly', 'The road ahead is clear', 'Approaching an uphill, surrounding vehicles are moving normally'], note no explaination needed."
+        ],
+        "reference": [
+            "high",
+            "maintain",
+            "The road ahead is clear"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_100"
+    }
+]

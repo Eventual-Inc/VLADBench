@@ -1,0 +1,1687 @@
+{
+  "schema_version": 3,
+  "model_id": "qwen38or",
+  "model": "qwen/qwen3.8-27b",
+  "specification_sha256": "7bcd5ec824b9d6e719edfa1e95322ce0068fe7ca941fec314c3cec05fb299072",
+  "declared": {
+    "input_transport": "video_mp4",
+    "reasoning_effort": "none",
+    "reasoning_parameter": "openrouter_reasoning",
+    "single_frame_policy": "as_is",
+    "oversize_fallback": "h264_crf18"
+  },
+  "protocol": {
+    "prompt": "original",
+    "coordinate_convention": "native_pixels",
+    "image_detail": "auto",
+    "max_tokens": 8192,
+    "temperature": null,
+    "timeout_seconds": 300,
+    "max_attempts": 4,
+    "concurrency_per_model": 7,
+    "minimum_free_gib": 1.0,
+    "reasoning_policy": "lowest_enabled",
+    "sequence_policy": "declared_transport",
+    "video": {
+      "fps": 1,
+      "encoding": "libx264rgb-crf0",
+      "frame_selection": "annotation_frames_in_order"
+    }
+  },
+  "variant": "upstream",
+  "scorer": {
+    "variant": "upstream",
+    "source_repository": "https://github.com/Depth2World/VLADBench",
+    "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+    "source_file": "original/evaluate_utils.py",
+    "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+    "runtime_patches": [
+      {
+        "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+        "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+        "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+      }
+    ],
+    "wrapper_version": 1
+  },
+  "scope": "all available tasks, recorded original-condition responses",
+  "generated_at": 1789525400.772804,
+  "tasks": {
+    "Traffic_Light": {
+      "task": "Traffic_Light",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 77.61006289308176,
+      "eligible_subset_score": 77.61006289308176,
+      "components": {
+        "accuracy": 0.7220125786163522,
+        "instruction_following": 0.9924528301886792,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 129,
+        "questions": 795
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 129,
+        "samples_scored": 129,
+        "questions_expected": 795,
+        "questions_prepared": 795,
+        "responses_received": 795,
+        "questions_scored": 795,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Pavement_Marking": {
+      "task": "Pavement_Marking",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 75.88652482269504,
+      "eligible_subset_score": 75.88652482269504,
+      "components": {
+        "accuracy": 0.7145390070921985,
+        "instruction_following": 0.9361702127659575,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 119,
+        "questions": 564
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 119,
+        "samples_scored": 119,
+        "questions_expected": 564,
+        "questions_prepared": 564,
+        "responses_received": 564,
+        "questions_scored": 564,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Traffic_Sign": {
+      "task": "Traffic_Sign",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 77.46077032810271,
+      "eligible_subset_score": 77.46077032810271,
+      "components": {
+        "accuracy": 0.724679029957204,
+        "instruction_following": 0.9743223965763196,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 250,
+        "questions": 701
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 250,
+        "samples_scored": 250,
+        "questions_expected": 701,
+        "questions_prepared": 701,
+        "responses_received": 701,
+        "questions_scored": 701,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Right_Of_Way": {
+      "task": "Right_Of_Way",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 74.69255663430421,
+      "eligible_subset_score": 74.69255663430421,
+      "components": {
+        "accuracy": 0.686084142394822,
+        "instruction_following": 0.9902912621359223,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 103,
+        "questions": 309
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 103,
+        "samples_scored": 103,
+        "questions_expected": 309,
+        "questions_prepared": 309,
+        "responses_received": 309,
+        "questions_scored": 309,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "VRU_Recognition": {
+      "task": "VRU_Recognition",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Grounding_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 46.765211301868945,
+      "eligible_subset_score": 46.765211301868945,
+      "components": {
+        "accuracy": 0.5660377358490566,
+        "instruction_following": 0.8915094339622641,
+        "other": 0.02110452767236094,
+        "other_name": "mean_iou",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 135,
+        "questions": 424
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 135,
+        "samples_scored": 135,
+        "questions_expected": 424,
+        "questions_prepared": 424,
+        "responses_received": 424,
+        "questions_scored": 424,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 70,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Vehicle_Recognition": {
+      "task": "Vehicle_Recognition",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Grounding_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 60.90810864649004,
+      "eligible_subset_score": 60.90810864649004,
+      "components": {
+        "accuracy": 0.8340807174887892,
+        "instruction_following": 0.8923766816143498,
+        "other": 0.04521797132545275,
+        "other_name": "mean_iou",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 98,
+        "questions": 223
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 98,
+        "samples_scored": 98,
+        "questions_expected": 223,
+        "questions_prepared": 223,
+        "responses_received": 223,
+        "questions_scored": 223,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 19,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Vehicle_Status": {
+      "task": "Vehicle_Status",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 64.6692607003891,
+      "eligible_subset_score": 64.6692607003891,
+      "components": {
+        "accuracy": 0.5758754863813229,
+        "instruction_following": 0.9299610894941635,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 113,
+        "questions": 257
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 113,
+        "samples_scored": 113,
+        "questions_expected": 257,
+        "questions_prepared": 257,
+        "responses_received": 257,
+        "questions_scored": 257,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Lane_Recognition": {
+      "task": "Lane_Recognition",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 79.25641025641026,
+      "eligible_subset_score": 79.25641025641026,
+      "components": {
+        "accuracy": 0.7461538461538462,
+        "instruction_following": 0.9782051282051282,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 100,
+        "questions": 780
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 100,
+        "samples_scored": 100,
+        "questions_expected": 780,
+        "questions_prepared": 780,
+        "responses_received": 780,
+        "questions_scored": 780,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Obstruction_Recognition": {
+      "task": "Obstruction_Recognition",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Grounding_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 50.73529411764706,
+      "eligible_subset_score": 50.73529411764706,
+      "components": {
+        "accuracy": 0.6176470588235294,
+        "instruction_following": 0.9926470588235294,
+        "other": 0.0,
+        "other_name": "mean_iou",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 224,
+        "questions": 680
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 224,
+        "samples_scored": 224,
+        "questions_expected": 680,
+        "questions_prepared": 680,
+        "responses_received": 680,
+        "questions_scored": 680,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 23,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Light": {
+      "task": "Light",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 68.0,
+      "eligible_subset_score": 68.0,
+      "components": {
+        "accuracy": 0.6,
+        "instruction_following": 1.0,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 100,
+        "questions": 200
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 100,
+        "samples_scored": 100,
+        "questions_expected": 200,
+        "questions_prepared": 200,
+        "responses_received": 200,
+        "questions_scored": 200,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Weather": {
+      "task": "Weather",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 70.56451612903226,
+      "eligible_subset_score": 70.56451612903226,
+      "components": {
+        "accuracy": 0.6370967741935484,
+        "instruction_following": 0.9798387096774194,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 124,
+        "questions": 248
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 124,
+        "samples_scored": 124,
+        "questions_expected": 248,
+        "questions_prepared": 248,
+        "responses_received": 248,
+        "questions_scored": 248,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Sign_Sign_Relation": {
+      "task": "Sign_Sign_Relation",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Relation_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 31.024305555555554,
+      "eligible_subset_score": 31.024305555555554,
+      "components": {
+        "accuracy": 0.1267361111111111,
+        "instruction_following": 0.984375,
+        "other": 0.16666666666666666,
+        "other_name": "paired_improvement",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 55,
+        "questions": 192
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 55,
+        "samples_scored": 55,
+        "questions_expected": 192,
+        "questions_prepared": 192,
+        "responses_received": 192,
+        "questions_scored": 192,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 96
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Sign_Lane_Relation": {
+      "task": "Sign_Lane_Relation",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Relation_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 48.92723880597015,
+      "eligible_subset_score": 48.92723880597015,
+      "components": {
+        "accuracy": 0.35914179104477606,
+        "instruction_following": 0.9888059701492538,
+        "other": 0.373134328358209,
+        "other_name": "paired_improvement",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 124,
+        "questions": 1072
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 124,
+        "samples_scored": 124,
+        "questions_expected": 1072,
+        "questions_prepared": 1072,
+        "responses_received": 1072,
+        "questions_scored": 1072,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 536
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Light_Lane_Relation": {
+      "task": "Light_Lane_Relation",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Relation_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 47.63295346628681,
+      "eligible_subset_score": 47.63295346628681,
+      "components": {
+        "accuracy": 0.31334283000949675,
+        "instruction_following": 0.9957264957264957,
+        "other": 0.4017094017094017,
+        "other_name": "paired_improvement",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 111,
+        "questions": 702
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 111,
+        "samples_scored": 111,
+        "questions_expected": 702,
+        "questions_prepared": 702,
+        "responses_received": 702,
+        "questions_scored": 702,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 351
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Lane_Speed_Relation": {
+      "task": "Lane_Speed_Relation",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "RoadSpeed_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 77.51470588235294,
+      "eligible_subset_score": 77.51470588235294,
+      "components": {
+        "accuracy": 0.7102941176470589,
+        "instruction_following": 0.9794117647058823,
+        "other": 0.7470588235294118,
+        "other_name": "paired_improvement",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 44,
+        "questions": 340
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 44,
+        "samples_scored": 44,
+        "questions_expected": 340,
+        "questions_prepared": 340,
+        "responses_received": 340,
+        "questions_scored": 340,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 170
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Lane_Change_Relation": {
+      "task": "Lane_Change_Relation",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "RoadChange_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 55.0,
+      "eligible_subset_score": 55.0,
+      "components": {
+        "accuracy": 0.40816326530612246,
+        "instruction_following": 0.9987244897959183,
+        "other": 0.4872448979591837,
+        "other_name": "paired_improvement",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 108,
+        "questions": 784
+      },
+      "weights": {
+        "other": 0.3,
+        "accuracy": 0.5,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 108,
+        "samples_scored": 108,
+        "questions_expected": 784,
+        "questions_prepared": 784,
+        "responses_received": 784,
+        "questions_scored": 784,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 392
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "VRU_Cutin": {
+      "task": "VRU_Cutin",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Judge_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 58.35205992509363,
+      "eligible_subset_score": 58.35205992509363,
+      "components": {
+        "accuracy": 0.30337078651685395,
+        "instruction_following": 0.9962546816479401,
+        "other": 0.5056179775280899,
+        "other_name": "judgment_accuracy",
+        "accuracy_name": "description_accuracy"
+      },
+      "dataset_totals": {
+        "samples": 89,
+        "questions": 267
+      },
+      "weights": {
+        "other": 0.7,
+        "accuracy": 0.1,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 89,
+        "samples_scored": 89,
+        "questions_expected": 267,
+        "questions_prepared": 267,
+        "responses_received": 267,
+        "questions_scored": 267,
+        "judgment": 178,
+        "description": 89,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Vehicle_Cutin": {
+      "task": "Vehicle_Cutin",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Judge_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 31.015325670498086,
+      "eligible_subset_score": 31.015325670498086,
+      "components": {
+        "accuracy": 0.12643678160919541,
+        "instruction_following": 0.9846743295019157,
+        "other": 0.14367816091954022,
+        "other_name": "judgment_accuracy",
+        "accuracy_name": "description_accuracy"
+      },
+      "dataset_totals": {
+        "samples": 87,
+        "questions": 261
+      },
+      "weights": {
+        "other": 0.7,
+        "accuracy": 0.1,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 87,
+        "samples_scored": 87,
+        "questions_expected": 261,
+        "questions_prepared": 261,
+        "responses_received": 261,
+        "questions_scored": 261,
+        "judgment": 174,
+        "description": 87,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "VRU_Cross": {
+      "task": "VRU_Cross",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Judge_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 62.28260869565217,
+      "eligible_subset_score": 62.28260869565217,
+      "components": {
+        "accuracy": 0.34782608695652173,
+        "instruction_following": 1.0,
+        "other": 0.5543478260869565,
+        "other_name": "judgment_accuracy",
+        "accuracy_name": "description_accuracy"
+      },
+      "dataset_totals": {
+        "samples": 92,
+        "questions": 276
+      },
+      "weights": {
+        "other": 0.7,
+        "accuracy": 0.1,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 92,
+        "samples_scored": 92,
+        "questions_expected": 276,
+        "questions_prepared": 276,
+        "responses_received": 276,
+        "questions_scored": 276,
+        "judgment": 184,
+        "description": 92,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Long_Short_Parking": {
+      "task": "Long_Short_Parking",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 57.125,
+      "eligible_subset_score": 57.125,
+      "components": {
+        "accuracy": 0.4875,
+        "instruction_following": 0.90625,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 98,
+        "questions": 320
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 98,
+        "samples_scored": 98,
+        "questions_expected": 320,
+        "questions_prepared": 320,
+        "responses_received": 320,
+        "questions_scored": 320,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Vehicle_Bahavior": {
+      "task": "Vehicle_Bahavior",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 37.25,
+      "eligible_subset_score": 37.25,
+      "components": {
+        "accuracy": 0.225,
+        "instruction_following": 0.9625,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 80,
+        "questions": 80
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 80,
+        "samples_scored": 80,
+        "questions_expected": 80,
+        "questions_prepared": 80,
+        "responses_received": 80,
+        "questions_scored": 80,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "VRU_Bahavior": {
+      "task": "VRU_Bahavior",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 56.96969696969697,
+      "eligible_subset_score": 56.96969696969697,
+      "components": {
+        "accuracy": 0.46464646464646464,
+        "instruction_following": 0.98989898989899,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 99,
+        "questions": 99
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 99,
+        "samples_scored": 99,
+        "questions_expected": 99,
+        "questions_prepared": 99,
+        "responses_received": 99,
+        "questions_scored": 99,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Key_Obsturction_Detection": {
+      "task": "Key_Obsturction_Detection",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Judge_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 65.48446069469836,
+      "eligible_subset_score": 65.48446069469836,
+      "components": {
+        "accuracy": 0.0,
+        "instruction_following": 1.0,
+        "other": 0.5685557586837294,
+        "other_name": "judgment_accuracy",
+        "accuracy_name": "description_accuracy"
+      },
+      "dataset_totals": {
+        "samples": 154,
+        "questions": 547
+      },
+      "weights": {
+        "other": 0.8,
+        "accuracy": 0,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 154,
+        "samples_scored": 154,
+        "questions_expected": 547,
+        "questions_prepared": 547,
+        "responses_received": 547,
+        "questions_scored": 547,
+        "judgment": 547,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Spatial_Temporal_Reasoning": {
+      "task": "Spatial_Temporal_Reasoning",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Judge_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 63.34812185743864,
+      "eligible_subset_score": 63.34812185743864,
+      "components": {
+        "accuracy": 0.6054421768707483,
+        "instruction_following": 0.9565217391304348,
+        "other": 0.5,
+        "other_name": "judgment_accuracy",
+        "accuracy_name": "description_accuracy"
+      },
+      "dataset_totals": {
+        "samples": 87,
+        "questions": 161
+      },
+      "weights": {
+        "other": 0.4,
+        "accuracy": 0.4,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 87,
+        "samples_scored": 87,
+        "questions_expected": 161,
+        "questions_prepared": 161,
+        "responses_received": 161,
+        "questions_scored": 161,
+        "judgment": 14,
+        "description": 147,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Risk_Prediction": {
+      "task": "Risk_Prediction",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Judge_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 78.9889705882353,
+      "eligible_subset_score": 78.9889705882353,
+      "components": {
+        "accuracy": 0.65625,
+        "instruction_following": 0.9963235294117647,
+        "other": 0.75,
+        "other_name": "judgment_accuracy",
+        "accuracy_name": "description_accuracy"
+      },
+      "dataset_totals": {
+        "samples": 103,
+        "questions": 272
+      },
+      "weights": {
+        "other": 0.7,
+        "accuracy": 0.1,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 103,
+        "samples_scored": 103,
+        "questions_expected": 272,
+        "questions_prepared": 272,
+        "responses_received": 272,
+        "questions_scored": 272,
+        "judgment": 112,
+        "description": 160,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Drive_Efficiency": {
+      "task": "Drive_Efficiency",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 54.65346534653466,
+      "eligible_subset_score": 54.65346534653466,
+      "components": {
+        "accuracy": 0.43564356435643564,
+        "instruction_following": 0.9900990099009901,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 101,
+        "questions": 303
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 101,
+        "samples_scored": 101,
+        "questions_expected": 303,
+        "questions_prepared": 303,
+        "responses_received": 303,
+        "questions_scored": 303,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Longitudinal": {
+      "task": "Longitudinal",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 54.851485148514854,
+      "eligible_subset_score": 54.851485148514854,
+      "components": {
+        "accuracy": 0.43564356435643564,
+        "instruction_following": 1.0,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 101,
+        "questions": 101
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 101,
+        "samples_scored": 101,
+        "questions_expected": 101,
+        "questions_prepared": 101,
+        "responses_received": 101,
+        "questions_scored": 101,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    },
+    "Lateral": {
+      "task": "Lateral",
+      "scope": "selected_samples",
+      "scorer": {
+        "variant": "upstream",
+        "source_repository": "https://github.com/Depth2World/VLADBench",
+        "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+        "source_file": "original/evaluate_utils.py",
+        "sha256": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+        "runtime_patches": [
+          {
+            "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+            "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+            "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+          }
+        ],
+        "wrapper_version": 1,
+        "weights_sha256": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+        "function": "Geneal_criterion_QA",
+        "model_argument": "native_pixels"
+      },
+      "status": "complete",
+      "complete": true,
+      "dataset_complete": true,
+      "score": 50.8936170212766,
+      "eligible_subset_score": 50.8936170212766,
+      "components": {
+        "accuracy": 0.3872340425531915,
+        "instruction_following": 0.9957446808510638,
+        "other": 0.0,
+        "other_name": "unused",
+        "accuracy_name": "accuracy"
+      },
+      "dataset_totals": {
+        "samples": 109,
+        "questions": 235
+      },
+      "weights": {
+        "other": 0,
+        "accuracy": 0.8,
+        "instruction_following": 0.2
+      },
+      "denominators": {
+        "samples_total": 109,
+        "samples_scored": 109,
+        "questions_expected": 235,
+        "questions_prepared": 235,
+        "responses_received": 235,
+        "questions_scored": 235,
+        "judgment": 0,
+        "description": 0,
+        "bounding_box": 0,
+        "comparison_pairs": 0
+      },
+      "missing_request_ids": [],
+      "missing_questions": [],
+      "exclusions": []
+    }
+  },
+  "source": "/Users/everettkleven/git/VLADBench/results/runs/full-original/qwen38or",
+  "dataset_complete": true,
+  "request_success": {
+    "completed": 11193,
+    "total": 11193
+  },
+  "oversize_fallback_requests": 254,
+  "truncated_answers": 2,
+  "carried_from_superseded_condition": 0,
+  "protocol_complete": false,
+  "protocol_complete_rule": "Every question answered and no answer cut off by the completion guard (finish_reason=length).",
+  "aggregation": "Each task scored once over its complete samples; no averaging and no overall headline score."
+}

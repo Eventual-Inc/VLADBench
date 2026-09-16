@@ -1,0 +1,1740 @@
+[
+    {
+        "sequence": "CODA2022_000113",
+        "image_path": [
+            "1616536020699.jpg",
+            "1616536022200.jpg",
+            "1616536053699.jpg",
+            "1616536054200.jpg",
+            "1616536054700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me where the road of the current vehicle lane leads to? Please choose the most appropriate answer from the following options:['Binkang Road', 'Juyuan Road', 'Jiangnan Avenue'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me where the road in the left lane will lead Please choose the most appropriate answer from the following options:['Binkang Road', 'Juyuan Road', 'Jiangnan Avenue'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "Binkang Road",
+            "Juyuan Road"
+        ],
+        "venue": "CODA2022",
+        "country": "China",
+        "id": "4_0_1_0"
+    },
+    {
+        "sequence": "DRAMA_2020-0203-154554",
+        "image_path": [
+            "2020-0203-154554_frame_075275.png",
+            "2020-0203-154554_frame_075284.png",
+            "2020-0203-154554_frame_075293.png",
+            "2020-0203-154554_frame_075302.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the speed limit of the vehicle's current lane? Please choose the most appropriate answer from the following options:['50', '70', '80', '40'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, is the white passenger car located to the right of our vehicle an oncoming vehicle? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "50",
+            "yes"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_1_1"
+    },
+    {
+        "sequence": "DRAMA_clip_998_000096",
+        "image_path": [
+            "clip_998_000096_frame_000060.png",
+            "clip_998_000096_frame_000072.png",
+            "clip_998_000096_frame_000084.png",
+            "clip_998_000096_frame_000096.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the speed limit for this lane? Please choose the most appropriate answer from the following options:['20', '30', '40', '50'], note that no explaination needed."
+        ],
+        "reference": [
+            "30"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_1_2"
+    },
+    {
+        "sequence": "HAD_train1061",
+        "image_path": [
+            "HAD_merge_train1061_frame_0250.png",
+            "HAD_merge_train1061_frame_0260.png",
+            "HAD_merge_train1061_frame_0270.png",
+            "HAD_merge_train1061_frame_0280.png",
+            "HAD_merge_train1061_frame_0290.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the current status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "4_0_1_3"
+    },
+    {
+        "sequence": "HAD_train1879",
+        "image_path": [
+            "HAD_merge_train1879_frame_0010.png",
+            "HAD_merge_train1879_frame_0030.png",
+            "HAD_merge_train1879_frame_0050.png",
+            "HAD_merge_train1879_frame_0070.png",
+            "HAD_merge_train1879_frame_0080.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the status of the traffic light at this time? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "left turn lane",
+            "green light"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "4_0_1_4"
+    },
+    {
+        "sequence": "HAD_train2782",
+        "image_path": [
+            "HAD_change_lane_train2782_frame_0000.png",
+            "HAD_change_lane_train2782_frame_0020.png",
+            "HAD_change_lane_train2782_frame_0040.png",
+            "HAD_change_lane_train2782_frame_0060.png",
+            "HAD_change_lane_train2782_frame_0080.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is partially obscured by the car in front, using other signal lights, what is the current status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, is the pickup truck located on the right side of the road parked? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "red light",
+            "yes"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "4_0_1_5"
+    },
+    {
+        "sequence": "HAD_train2828",
+        "image_path": [
+            "HAD_change_lane_train2828_frame_0320.png",
+            "HAD_change_lane_train2828_frame_0330.png",
+            "HAD_change_lane_train2828_frame_0340.png",
+            "HAD_change_lane_train2828_frame_0350.png",
+            "HAD_change_lane_train2828_frame_0360.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is partially obscured by the vehicle in front, through other signals, what is the current status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "4_0_1_6"
+    },
+    {
+        "sequence": "HAD_train3501",
+        "image_path": [
+            "HAD_start_train3501_frame_0320.png",
+            "HAD_start_train3501_frame_0340.png",
+            "HAD_start_train3501_frame_0360.png",
+            "HAD_start_train3501_frame_0380.png",
+            "HAD_start_train3501_frame_0400.png"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the traffic light status when it is obscured by the vehicle in front Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light",
+            "straight lane"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "id": "4_0_1_7"
+    },
+    {
+        "sequence": "ONCE_0000077",
+        "image_path": [
+            "1616344700401.jpg",
+            "1616344700900.jpg",
+            "1616344701400.jpg",
+            "1616344701900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is an ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me what the left lane of an autonomous vehicle is? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_8"
+    },
+    {
+        "sequence": "ONCE_000027",
+        "image_path": [
+            "1616100967899.jpg",
+            "1616100968900.jpg",
+            "1616100969899.jpg",
+            "1616100970899.jpg",
+            "1616100971399.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego vehicle's left lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane is the reversible lane located in? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "ego vehicle left lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_9"
+    },
+    {
+        "sequence": "ONCE_000027_2",
+        "image_path": [
+            "1616101210400.jpg",
+            "1616101211900.jpg",
+            "1616101212900.jpg",
+            "1616101213400.jpg",
+            "1616101213900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego vehicle's left lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_10"
+    },
+    {
+        "sequence": "ONCE_000027_3",
+        "image_path": [
+            "1616101520899.jpg",
+            "1616101521399.jpg",
+            "1616101521900.jpg",
+            "1616101522400.jpg",
+            "1616101522899.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which lane the engineering vehicle should take? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane', 'No.3 lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "No.2 lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_11"
+    },
+    {
+        "sequence": "ONCE_000027_4",
+        "image_path": [
+            "1616101566900.jpg",
+            "1616101567399.jpg",
+            "1616101567900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please explain what the ego lane is Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how to get to times avenue? Please choose the most appropriate answer from the following options:['left lane change', 'go straight', 'right lane change'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "left lane change"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_12"
+    },
+    {
+        "sequence": "ONCE_000027_5",
+        "image_path": [
+            "1616101686400.jpg",
+            "1616101686899.jpg",
+            "1616101687399.jpg",
+            "1616101687900.jpg",
+            "1616101688400.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is an ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_13"
+    },
+    {
+        "sequence": "ONCE_000028",
+        "image_path": [
+            "1616102256299.jpg",
+            "1616102257299.jpg",
+            "1616102258300.jpg",
+            "1616102259300.jpg",
+            "1616102260299.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the status of the traffic light when it is obstructed by the vehicle in front Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_14"
+    },
+    {
+        "sequence": "ONCE_000034",
+        "image_path": [
+            "1616175297299.jpg",
+            "1616175297800.jpg",
+            "1616175298300.jpg",
+            "1616175298800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is No.3 lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is No.4 lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "right turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_15"
+    },
+    {
+        "sequence": "ONCE_000034_2",
+        "image_path": [
+            "1616175546300.jpg",
+            "1616175547299.jpg",
+            "1616175547799.jpg",
+            "1616175548300.jpg",
+            "1616175548800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is partially obscured by the vehicle ahead, by observing other signals, what is the status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, can the autonomous vehicle execute a right lane change? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "red light",
+            "no"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_16"
+    },
+    {
+        "sequence": "ONCE_000034_3",
+        "image_path": [
+            "1616175572300.jpg",
+            "1616175572800.jpg",
+            "1616175573300.jpg",
+            "1616175573800.jpg",
+            "1616175574300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the vehicle in front, what could be the current state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_17"
+    },
+    {
+        "sequence": "ONCE_000076",
+        "image_path": [
+            "1616343922200.jpg",
+            "1616343923200.jpg",
+            "1616343924201.jpg",
+            "1616343925200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you tell me which road does the right turn lead to? Please choose the most appropriate answer from the following options:['Yueming Road', 'Binxing Road', 'Binhe Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which lane the construction vehicle should take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "Yueming Road",
+            "ego vehicle left lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_18"
+    },
+    {
+        "sequence": "ONCE_000076_2",
+        "image_path": [
+            "1616344188200.jpg",
+            "1616344189200.jpg",
+            "1616344190199.jpg",
+            "1616344191200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which lane the construction vehicle should take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "ego vehicle lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_19"
+    },
+    {
+        "sequence": "ONCE_000077_2",
+        "image_path": [
+            "1616344863399.jpg",
+            "1616344863899.jpg",
+            "1616344864400.jpg",
+            "1616344864900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the right lane for the autonomous vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "straight and right turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_20"
+    },
+    {
+        "sequence": "ONCE_000077_3",
+        "image_path": [
+            "1616344927900.jpg",
+            "1616344928400.jpg",
+            "1616344928900.jpg",
+            "1616344929399.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the right lane for the ego vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_21"
+    },
+    {
+        "sequence": "ONCE_000077_4",
+        "image_path": [
+            "1616345118899.jpg",
+            "1616345119399.jpg",
+            "1616345119899.jpg",
+            "1616345120399.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please explain what is a self-driving vehicle lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and u-turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego vehicle's right lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and u-turn lane",
+            "straight and right turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_22"
+    },
+    {
+        "sequence": "ONCE_000077_5",
+        "image_path": [
+            "1616345265899.jpg",
+            "1616345266398.jpg",
+            "1616345266899.jpg",
+            "1616345267400.jpg",
+            "1616345267900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what lane is to the left of the ego vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_23"
+    },
+    {
+        "sequence": "ONCE_000080",
+        "image_path": [
+            "1616348777800.jpg",
+            "1616348778799.jpg",
+            "1616348779300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, excuse me, which direction should I drive to get to Wentao Road? Please choose the most appropriate answer from the following options:['go straight', 'turn right', 'turn left'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you tell me which road the right turn leads to? Please choose the most appropriate answer from the following options:['Wentao Road', 'Binsong Road'], note that no explaination needed."
+        ],
+        "reference": [
+            "go straight",
+            "Binsong Road"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_24"
+    },
+    {
+        "sequence": "ONCE_000080_2",
+        "image_path": [
+            "1616348833300.jpg",
+            "1616348834300.jpg",
+            "1616348835299.jpg",
+            "1616348835799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which direction should i drive to reach weiye road? Please choose the most appropriate answer from the following options:['go straight', 'turn right', 'turn left'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you tell me which road the right turn leads to? Please choose the most appropriate answer from the following options:['Xincheng Road', 'Weiye Road'], note that no explaination needed."
+        ],
+        "reference": [
+            "turn left",
+            "Xincheng Road"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_25"
+    },
+    {
+        "sequence": "ONCE_000080_3",
+        "image_path": [
+            "1616349170799.jpg",
+            "1616349171801.jpg",
+            "1616349173300.jpg",
+            "1616349174299.jpg",
+            "1616349174799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which road the yellow-plate truck should take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which road the ego vehicle's lane leads to? Please choose the most appropriate answer from the following options:['Dongguan Road', 'Guanshan Road', 'Binwen Road'], note that no explaination needed."
+        ],
+        "reference": [
+            "ego vehicle right lane",
+            "Guanshan Road"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_26"
+    },
+    {
+        "sequence": "ONCE_000080_4",
+        "image_path": [
+            "1616349371799.jpg",
+            "1616349372299.jpg",
+            "1616349372800.jpg",
+            "1616349373299.jpg",
+            "1616349373799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, may i ask which lane a yellow-plated truck should use? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, ensure safe driving, which lane should we take? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "No.1 lane",
+            "No.2 lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_27"
+    },
+    {
+        "sequence": "ONCE_000092",
+        "image_path": [
+            "1616443045799.jpg",
+            "1616443046300.jpg",
+            "1616443046801.jpg",
+            "1616443047301.jpg",
+            "1616443047800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which route the construction vehicle should take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, to ensure safety while driving, which lane should be avoided? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane', 'No.3 lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "ego vehicle lane",
+            "No.2 lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_28"
+    },
+    {
+        "sequence": "ONCE_000104",
+        "image_path": [
+            "1616451148799.jpg",
+            "1616451149799.jpg",
+            "1616451150800.jpg",
+            "1616451151799.jpg",
+            "1616451152800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does the ego vehicle's lane lead? Please choose the most appropriate answer from the following options:['Juyuan Road', 'Binkang Road', 'Jiangnan Avenue'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which direction should i drive on jiangnan avenue? Please choose the most appropriate answer from the following options:['go straight', 'turn right', 'turn left'], note that no explaination needed."
+        ],
+        "reference": [
+            "Binkang Road",
+            "go straight"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_29"
+    },
+    {
+        "sequence": "ONCE_000104_2",
+        "image_path": [
+            "1616451266300.jpg",
+            "1616451266800.jpg",
+            "1616451267300.jpg",
+            "1616451267800.jpg",
+            "1616451268299.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which direction to drive towards bin'an road? Please choose the most appropriate answer from the following options:['go straight', 'turn right', 'turn left'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, may i ask which road the left lane of the vehicle leads to? Please choose the most appropriate answer from the following options:['Dongliu Road', 'Binan Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should the construction vehicle take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "go straight",
+            "Dongliu Road",
+            "ego vehicle lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_30"
+    },
+    {
+        "sequence": "ONCE_000104_3",
+        "image_path": [
+            "1616451451799.jpg",
+            "1616451452800.jpg",
+            "1616451453800.jpg",
+            "1616451454300.jpg",
+            "1616451454799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, excuse me, which direction should I drive to reach yueming road? Please choose the most appropriate answer from the following options:['go straight', 'turn right', 'turn left'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, excuse me, which road does the left lane of our vehicle lead to? Please choose the most appropriate answer from the following options:['Yueming Road', 'Binhe Road', 'Jiangnan Avenue'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which lane the engineering vehicle should take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "go straight",
+            "Binhe Road",
+            "ego vehicle lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_31"
+    },
+    {
+        "sequence": "ONCE_000112",
+        "image_path": [
+            "1616534733199.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is partially obscured by the vehicle in front, and you need to rely on other signals—what is the status of the straight-ahead traffic light in this situation? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_32"
+    },
+    {
+        "sequence": "ONCE_000112_10",
+        "image_path": [
+            "1616535600200.jpg",
+            "1616535600699.jpg",
+            "1616535601199.jpg",
+            "1616535601700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which road does the vehicle's lane lead to? Please choose the most appropriate answer from the following options:['Bairen Road', 'Nanchuan Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, may i ask which road does the right turn lead to? Please choose the most appropriate answer from the following options:['Bairen Road', 'Nanchuan Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the vehicle in front, by analyzing other traffic signals, what is the inferred status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should the construction vehicle take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "Bairen Road",
+            "Nanchuan Road",
+            "red light",
+            "ego vehicle right lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_33"
+    },
+    {
+        "sequence": "ONCE_000112_11",
+        "image_path": [
+            "1616535672200.jpg",
+            "1616535672700.jpg",
+            "1616535673200.jpg",
+            "1616535673700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how does an autonomous vehicle change lanes on xiaowen road? Please choose the most appropriate answer from the following options:['left lane change', 'go straight', 'right lane change'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, when the traffic light is obstructed by the vehicle in front, how can the current state of the traffic light be inferred through other signals? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "right lane change",
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_34"
+    },
+    {
+        "sequence": "ONCE_000112_12",
+        "image_path": [
+            "1616535729700.jpg",
+            "1616535730200.jpg",
+            "1616535730699.jpg",
+            "1616535731199.jpg",
+            "1616535731700.jpg"
+        ],
+        "questions": [
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, is this lane capable of going straight? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, is the vehicle in the left lane able to make a U-turn to the left? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obscured by the car in front, inferred from other signal lights, what is the current status of this traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "yes",
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_35"
+    },
+    {
+        "sequence": "ONCE_000112_13",
+        "image_path": [
+            "1616535851699.jpg",
+            "1616535852200.jpg",
+            "1616535852700.jpg",
+            "1616535853200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the car in front, what could be the current state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_36"
+    },
+    {
+        "sequence": "ONCE_000112_14",
+        "image_path": [
+            "1616535885199.jpg",
+            "1616535885700.jpg",
+            "1616535886200.jpg",
+            "1616535886700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obscured by the car ahead, what is the state of the traffic light in our lane Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_37"
+    },
+    {
+        "sequence": "ONCE_000112_15",
+        "image_path": [
+            "1616535942700.jpg",
+            "1616535943200.jpg",
+            "1616535943700.jpg",
+            "1616535944199.jpg",
+            "1616535944699.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obscured by the vehicle in front, what is the estimated status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_38"
+    },
+    {
+        "sequence": "ONCE_000112_2",
+        "image_path": [
+            "1616534909200.jpg",
+            "1616534912699.jpg",
+            "1616534913199.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, traffic light is obstructed by the vehicle ahead, what is the assumed status of the straight-through traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, are the traffic lights obscured by the vehicle in front, can the vehicle in our left lane proceed? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "red light",
+            "yes"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_39"
+    },
+    {
+        "sequence": "ONCE_000112_3",
+        "image_path": [
+            "1616534964699.jpg",
+            "1616534965199.jpg",
+            "1616534966200.jpg",
+            "1616534967199.jpg",
+            "1616534967699.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is partially blocked by the vehicle in front, and through other signal lights, what is the straight traffic light's status? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_40"
+    },
+    {
+        "sequence": "ONCE_000112_4",
+        "image_path": [
+            "1616535178200.jpg",
+            "1616535178700.jpg",
+            "1616535179200.jpg",
+            "1616535179699.jpg",
+            "1616535180199.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the vehicle in front, what is the presumed state of the straight-going traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the predicted status of the left-turn traffic light when it is obscured by the vehicle in front? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light",
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_41"
+    },
+    {
+        "sequence": "ONCE_000112_5",
+        "image_path": [
+            "1616535246700.jpg",
+            "1616535247200.jpg",
+            "1616535247699.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me what the self-vehicle's left lane is Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the right lane of the ego vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "left turn lane",
+            "straight and right turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_42"
+    },
+    {
+        "sequence": "ONCE_000112_6",
+        "image_path": [
+            "1616535281199.jpg",
+            "1616535281699.jpg",
+            "1616535282200.jpg",
+            "1616535282700.jpg",
+            "1616535283200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, when the traffic light is partially obscured by the leading vehicle, through other signal lights, what is the status of the straight-going traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_43"
+    },
+    {
+        "sequence": "ONCE_000112_7",
+        "image_path": [
+            "1616535347199.jpg",
+            "1616535347700.jpg",
+            "1616535348699.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the vehicle ahead, what is the inferred state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_44"
+    },
+    {
+        "sequence": "ONCE_000112_8",
+        "image_path": [
+            "1616535351699.jpg",
+            "1616535353200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the status of the traffic light when it is partially obscured by tree branches? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_45"
+    },
+    {
+        "sequence": "ONCE_000112_9",
+        "image_path": [
+            "1616535517200.jpg",
+            "1616535517699.jpg",
+            "1616535518200.jpg",
+            "1616535518700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should be taken for a right turn? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane', 'No.3 lane', 'No.4 lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you tell me which road the vehicle's lane leads to? Please choose the most appropriate answer from the following options:['Xincheng South Road', 'Torch Avenue'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how does the autonomous vehicle change lanes for a right turn? Please choose the most appropriate answer from the following options:['left lane change', 'go straight', 'right lane change'], note that no explaination needed."
+        ],
+        "reference": [
+            "No.4 lane",
+            "Xincheng South Road",
+            "right lane change"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_46"
+    },
+    {
+        "sequence": "ONCE_000113",
+        "image_path": [
+            "1616536674699.jpg",
+            "1616536675700.jpg",
+            "1616536677699.jpg",
+            "1616536678700.jpg",
+            "1616536679700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane is the ego vehicle in? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, is the right lane available for going straight? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "yes"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_47"
+    },
+    {
+        "sequence": "ONCE_000113_2",
+        "image_path": [
+            "1616536648200.jpg",
+            "1616536649200.jpg",
+            "1616536650199.jpg",
+            "1616536651199.jpg",
+            "1616536652200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does the vehicle's lane lead to? Please choose the most appropriate answer from the following options:['Wangjiang Tunnel', 'Binsong Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does the ego vehicle's lane lead to? Please choose the most appropriate answer from the following options:['Wangjiang Tunnel', 'Binsong Road'], note that no explaination needed."
+        ],
+        "reference": [
+            "Wangjiang Tunnel",
+            "Binsong Road"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_48"
+    },
+    {
+        "sequence": "ONCE_000121",
+        "image_path": [
+            "1616618359499.jpg",
+            "1616618360500.jpg",
+            "1616618361501.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does the path ahead lead to? Please choose the most appropriate answer from the following options:['Qiantang River Bridge', 'South Ring Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, may i ask which road the left lane of our vehicle leads to? Please choose the most appropriate answer from the following options:['Qiantang River Bridge', 'South Ring Road'], note that no explaination needed."
+        ],
+        "reference": [
+            "Qiantang River Bridge",
+            "South Ring Road"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_49"
+    },
+    {
+        "sequence": "ONCE_000168",
+        "image_path": [
+            "1618716910799.jpg",
+            "1618716911300.jpg",
+            "1618716911800.jpg",
+            "1618716912300.jpg",
+            "1618716912800.jpg",
+            "1618716913299.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the speed limit for this lane? Please choose the most appropriate answer from the following options:['50', '70', '80', '100'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how should I change lanes to reach Bin'an Road? Please choose the most appropriate answer from the following options:['left lane change', 'go straight', 'right lane change'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does the self-driving car's left lane lead to? Please choose the most appropriate answer from the following options:['Jiangnan Avenue', 'Hunan Avenue', 'Jiangxi Avenue'], note that no explaination needed."
+        ],
+        "reference": [
+            "80",
+            "right lane change",
+            "Jiangnan Avenue"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_50"
+    },
+    {
+        "sequence": "ONCE_000168_3",
+        "image_path": [
+            "1618716984800.jpg",
+            "1618716985300.jpg",
+            "1618716985800.jpg",
+            "1618716986300.jpg",
+            "1618716986800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, does the autonomous vehicle need to change lanes to make a right turn? Please choose the most appropriate answer from the following options:['left lane change', 'go straight', 'right lane change'], note that no explaination needed."
+        ],
+        "reference": [
+            "right lane change"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_51"
+    },
+    {
+        "sequence": "ONCE_000168_4",
+        "image_path": [
+            "1618717039300.jpg",
+            "1618717039799.jpg",
+            "1618717040299.jpg",
+            "1618717040799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should be chosen for a right turn? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane', 'No.3 lane', 'No.4 lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "No.4 lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_52"
+    },
+    {
+        "sequence": "ONCE_000168_5",
+        "image_path": [
+            "1618717230799.jpg",
+            "1618717231300.jpg",
+            "1618717231800.jpg",
+            "1618717232300.jpg",
+            "1618717232800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the vehicle ahead, what is the inferred state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_53"
+    },
+    {
+        "sequence": "ONCE_000168_6",
+        "image_path": [
+            "1618717237799.jpg",
+            "1618717238299.jpg",
+            "1618717238799.jpg",
+            "1618717239300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obstructed by the car in front; according to other traffic signals, what can be inferred about the current state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_54"
+    },
+    {
+        "sequence": "ONCE_000168_7",
+        "image_path": [
+            "1618717269799.jpg",
+            "1618717270299.jpg",
+            "1618717270799.jpg",
+            "1618717271300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the lane to the left of the autonomous vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, can the ego vehicle make a left turn from the left lane? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight lane",
+            "no"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_55"
+    },
+    {
+        "sequence": "ONCE_000168_8",
+        "image_path": [
+            "1618717400799.jpg",
+            "1618717401300.jpg",
+            "1618717401800.jpg",
+            "1618717402300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego vehicle's left lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "left turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_56"
+    },
+    {
+        "sequence": "ONCE_000168_9",
+        "image_path": [
+            "1618717536299.jpg",
+            "1618717536800.jpg",
+            "1618717537300.jpg",
+            "1618717537800.jpg"
+        ],
+        "questions": [
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, is the vehicle's lane able to go straight? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "left turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_57"
+    },
+    {
+        "sequence": "ONCE_000200",
+        "image_path": [
+            "1618797325298.jpg",
+            "1618797325799.jpg",
+            "1618797326300.jpg",
+            "1618797326800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the left lane of the ego vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_58"
+    },
+    {
+        "sequence": "ONCE_000200_1",
+        "image_path": [
+            "1618797631799.jpg",
+            "1618797632299.jpg",
+            "1618797632799.jpg",
+            "1618797633300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obstructed by the vehicle in front, based on the other traffic lights, what is the inferred state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_59"
+    },
+    {
+        "sequence": "ONCE_000200_10",
+        "image_path": [
+            "1618798064800.jpg",
+            "1618798065800.jpg",
+            "1618798066300.jpg",
+            "1618798066799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is an ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];Based on the traffic sign in given autonomous driving image sequence, at the moment of the final image, can the ego vehicle make a left turn from the left lane? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "yes"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_60"
+    },
+    {
+        "sequence": "ONCE_000200_11",
+        "image_path": [
+            "1618798081800.jpg",
+            "1618798082799.jpg",
+            "1618798083299.jpg",
+            "1618798083800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what lane is the one on the left of our vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "straight and left turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_61"
+    },
+    {
+        "sequence": "ONCE_000200_12",
+        "image_path": [
+            "1618798172800.jpg",
+            "1618798173300.jpg",
+            "1618798173799.jpg",
+            "1618798174300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the inferred state of the traffic light at this moment? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_62"
+    },
+    {
+        "sequence": "ONCE_000200_13",
+        "image_path": [
+            "1618798377299.jpg",
+            "1618798379301.jpg",
+            "1618798380300.jpg",
+            "1618798381299.jpg",
+            "1618798381800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me what No.4 lane is? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is No.3 lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_63"
+    },
+    {
+        "sequence": "ONCE_000200_2",
+        "image_path": [
+            "1618797689799.jpg",
+            "1618797690300.jpg",
+            "1618797690800.jpg",
+            "1618797691301.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obscured by the vehicle ahead, based on other signals, what can be inferred about the current state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_64"
+    },
+    {
+        "sequence": "ONCE_000200_3",
+        "image_path": [
+            "1618797786300.jpg",
+            "1618797786799.jpg",
+            "1618797787299.jpg",
+            "1618797787800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, if the traffic lights are obscured by the car in front, based on other signals, what can be inferred about the current traffic light status? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_65"
+    },
+    {
+        "sequence": "ONCE_000200_4",
+        "image_path": [
+            "1618797794300.jpg",
+            "1618797794799.jpg",
+            "1618797795299.jpg",
+            "1618797795800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obscured by the vehicle in front, based on other signal lights, what can be inferred about the current state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_66"
+    },
+    {
+        "sequence": "ONCE_000200_5",
+        "image_path": [
+            "1618797841299.jpg",
+            "1618797841800.jpg",
+            "1618797842300.jpg",
+            "1618797842800.jpg",
+            "1618797843300.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego vehicle's right lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "left turn lane",
+            "left turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_67"
+    },
+    {
+        "sequence": "ONCE_000200_6",
+        "image_path": [
+            "1618797931300.jpg",
+            "1618797931800.jpg",
+            "1618797932299.jpg",
+            "1618797932799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the car ahead, what is its current state Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_68"
+    },
+    {
+        "sequence": "ONCE_000200_7",
+        "image_path": [
+            "1618797956300.jpg",
+            "1618797956800.jpg",
+            "1618797957301.jpg",
+            "1618797957800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is blocked by the car in front, based on other signal lights, what is the current state of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_69"
+    },
+    {
+        "sequence": "ONCE_000200_8",
+        "image_path": [
+            "1618797984300.jpg",
+            "1618797984800.jpg",
+            "1618797985300.jpg",
+            "1618797985799.jpg"
+        ],
+        "questions": [
+            "[image_path];Based on the traffic sign in given autonomous driving image sequence, at the moment of the final image, is it possible for the ego vehicle's lane to continue straight? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the lane on the left of our vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me which lane the construction vehicle should take? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "left turn lane",
+            "ego vehicle lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_70"
+    },
+    {
+        "sequence": "ONCE_000200_9",
+        "image_path": [
+            "1618797969300.jpg",
+            "1618797969799.jpg",
+            "1618797970300.jpg",
+            "1618797970800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should the construction vehicle take? Please choose the most appropriate answer from the following options:['No.1 lane', 'No.2 lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, according to the traffic signs in the given image sequence, to ensure driving safety as much as possible, which lane should be taken? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "No.2 lane",
+            "ego vehicle left lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_71"
+    },
+    {
+        "sequence": "ONCE_000273",
+        "image_path": [
+            "1619039072700.jpg",
+            "1619039073200.jpg",
+            "1619039073699.jpg",
+            "1619039074200.jpg",
+            "1619039074700.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, may i ask what the host vehicle lane is? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and right turn lane",
+            "left turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_72"
+    },
+    {
+        "sequence": "ONCE_000273_2",
+        "image_path": [
+            "1619039124700.jpg",
+            "1619039125200.jpg",
+            "1619039125700.jpg",
+            "1619039126199.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the current status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_73"
+    },
+    {
+        "sequence": "ONCE_000273_3",
+        "image_path": [
+            "1619039166699.jpg",
+            "1619039167199.jpg",
+            "1619039167700.jpg",
+            "1619039168200.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the current status of the traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_74"
+    },
+    {
+        "sequence": "ONCE_000275",
+        "image_path": [
+            "1619041212901.jpg",
+            "1619041213401.jpg",
+            "1619041213900.jpg",
+            "1619041214400.jpg",
+            "1619041214899.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the lane to the right of the ego vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "straight and right turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_75"
+    },
+    {
+        "sequence": "ONCE_000303",
+        "image_path": [
+            "1619290242299.jpg",
+            "1619290242799.jpg",
+            "1619290243299.jpg",
+            "1619290243800.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does turning right lead to? Please choose the most appropriate answer from the following options:['Jiangnan Avenue', 'South Ring Road'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should a yellow plate truck choose? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "South Ring Road",
+            "ego vehicle left lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_76"
+    },
+    {
+        "sequence": "ONCE_000303_2",
+        "image_path": [
+            "1619290474799.jpg",
+            "1619290475800.jpg",
+            "1619290476300.jpg",
+            "1619290476799.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me what is the right lane for the autonomous vehicle Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight and left turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_77"
+    },
+    {
+        "sequence": "ONCE_000303_3",
+        "image_path": [
+            "1619290521800.jpg",
+            "1619290522300.jpg",
+            "1619290522799.jpg",
+            "1619290523299.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please tell me what the self-vehicle's left lane is? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you please explain how to change lanes for a left turn for an autonomous vehicle? Please choose the most appropriate answer from the following options:['left lane change', 'go straight', 'right lane change'], note that no explaination needed."
+        ],
+        "reference": [
+            "straight lane",
+            "left U-turn lane",
+            "left lane change"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_78"
+    },
+    {
+        "sequence": "ONCE_000303_4",
+        "image_path": [
+            "1619291026799.jpg",
+            "1619291027299.jpg",
+            "1619291027800.jpg",
+            "1619291028300.jpg"
+        ],
+        "questions": [
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, is it possible for the autonomous vehicle to make a left turn in its lane? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the adjacent lane to the right of the autonomous vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_79"
+    },
+    {
+        "sequence": "ONCE_000303_5",
+        "image_path": [
+            "1619291095300.jpg",
+            "1619291095800.jpg",
+            "1619291096299.jpg",
+            "1619291096799.jpg"
+        ],
+        "questions": [
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, is it possible for the vehicle in its current lane to go straight? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is an ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego vehicle's right lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "no",
+            "left turn lane",
+            "right turn lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_80"
+    },
+    {
+        "sequence": "ONCE_000318",
+        "image_path": [
+            "1619374069100.jpg",
+            "1619374069600.jpg",
+            "1619374070099.jpg"
+        ],
+        "questions": [
+            "[image_path];Based on the pavement marking in given autonomous driving image sequence, at the moment of the final image, is it possible for the autonomous vehicle's lane to make a left turn? Answer 'yes'or'no', note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, based on other traffic signals, what is the current status of the left turn traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "yes",
+            "red light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_81"
+    },
+    {
+        "sequence": "ONCE_000322",
+        "image_path": [
+            "1619377417900.jpg",
+            "1619377418400.jpg",
+            "1619377418900.jpg",
+            "1619377419400.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how do I drive to Jianshe Yi road? Please choose the most appropriate answer from the following options:['go straight', 'turn left', 'turn right'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, excuse me, which road does this lane lead to? Please choose the most appropriate answer from the following options:['Binxing Road', 'Jianshe Yi Road', 'Beihai Road'], note that no explaination needed."
+        ],
+        "reference": [
+            "go straight",
+            "Binxing Road"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_82"
+    },
+    {
+        "sequence": "ONCE_000322_2",
+        "image_path": [
+            "1619377901400.jpg",
+            "1619377901900.jpg",
+            "1619377902400.jpg",
+            "1619377902900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, the traffic light is obstructed by the car in front, what is the estimated state of the straight-through traffic light? Please choose the most appropriate answer from the following options:['red light', 'green light', 'yellow light'], note that no explaination needed."
+        ],
+        "reference": [
+            "green light"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_83"
+    },
+    {
+        "sequence": "ONCE_000322_3",
+        "image_path": [
+            "1619377925401.jpg",
+            "1619377926400.jpg",
+            "1619377927399.jpg",
+            "1619377928400.jpg",
+            "1619377928900.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, which lane should be chosen to go to jiangnan avenue? Please choose the most appropriate answer from the following options:['ego vehicle left lane', 'ego vehicle lane', 'ego vehicle right lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, could you tell me where the right lane leads to? Please choose the most appropriate answer from the following options:['Jiangnan Avenue', 'Xiaoshan Airport'], note that no explaination needed."
+        ],
+        "reference": [
+            "ego vehicle lane",
+            "Xiaoshan Airport"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_84"
+    },
+    {
+        "sequence": "ONCE_000322_4",
+        "image_path": [
+            "1619377955900.jpg",
+            "1619377956899.jpg",
+            "1619377958400.jpg",
+            "1619377959400.jpg",
+            "1619377960399.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, where does the ego vehicle's lane lead to? Please choose the most appropriate answer from the following options:['Xiaoshan Airport', 'Olympic Sports Expo Center'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, may i ask where the left lane of our vehicle leads to? Please choose the most appropriate answer from the following options:['Xiaoshan Airport', 'Olympic Sports Expo Center'], note that no explaination needed."
+        ],
+        "reference": [
+            "Xiaoshan Airport",
+            "Olympic Sports Expo Center"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_85"
+    },
+    {
+        "sequence": "ONCE_000334",
+        "image_path": [
+            "1619407070300.jpg",
+            "1619407070799.jpg",
+            "1619407071299.jpg"
+        ],
+        "questions": [
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the ego lane? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed.",
+            "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the adjacent left lane of the autonomous vehicle? Please choose the most appropriate answer from the following options:['straight lane', 'left turn lane', 'right turn lane', 'straight and left turn lane', 'straight and right turn lane', 'U-turn lane', 'left U-turn lane'], note that no explaination needed."
+        ],
+        "reference": [
+            "right turn lane",
+            "straight lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "4_0_1_86"
+    }
+]

@@ -1,0 +1,60 @@
+{
+  "_note": "Short task descriptions and the scoring rule of each task family, written from the released annotations and original/evaluate_utils.py. Shown in the task matrix when a row is expanded.",
+  "scoring": {
+    "Geneal_criterion_QA": {
+      "label": "General question answering",
+      "rule": "Each question is a fixed-choice or short answer. Accuracy: the cleaned answer equals the reference, or contains it without also containing any other listed option. Instruction following: the answer is one of the options the question offered. Composite = 80% accuracy + 20% instruction following."
+    },
+    "Grounding_criterion_QA": {
+      "label": "Grounding",
+      "rule": "The answer is a bounding box or a class plus a box. Accuracy: the predicted box overlaps the reference with IoU above 0.5. Instruction following: the answer is in the requested box format. A third component, mean IoU over all boxes, also enters the composite."
+    },
+    "Relation_criterion_QA": {
+      "label": "Element relation",
+      "rule": "Each question asks which numbered elements a sign or light corresponds to. The answer is parsed for the numbers after 'corresponds to'. Any wrong number scores zero; otherwise credit is the fraction of reference numbers named. Accuracy and instruction following are averaged with a third relation-consistency component."
+    },
+    "RoadSpeed_criterion_QA": {
+      "label": "Lane speed relation",
+      "rule": "Two questions per scene ask for speed limits as [min, max]. Accuracy: the parsed pair matches the reference. Instruction following: the answer is a bracketed pair. A third component rewards consistency between the paired questions."
+    },
+    "RoadChange_criterion_QA": {
+      "label": "Lane change relation",
+      "rule": "Two questions per scene ask whether a lane change is allowed. Accuracy: the parsed True/False matches. Instruction following: the answer is a boolean. A third component rewards consistency between the paired questions."
+    },
+    "Judge_criterion_QA": {
+      "label": "Judgment and description",
+      "rule": "Each scene mixes yes/no judgment questions with descriptive ones. Accuracy: descriptive answers match the reference. Instruction following: the answer is one of the offered options. A third component is the yes/no judgment accuracy. Composite weights the three."
+    }
+  },
+  "tasks": {
+    "Traffic_Light": "Identify the state or type of a traffic light within the marked box.",
+    "Pavement_Marking": "Name the pavement marking within the marked box.",
+    "Traffic_Sign": "Read the meaning of a traffic sign within the marked box.",
+    "Right_Of_Way": "Decide which road user has right of way in the scene.",
+    "VRU_Recognition": "Locate pedestrians and riders with a bounding box.",
+    "Vehicle_Recognition": "Locate vehicles with a bounding box.",
+    "Vehicle_Status": "State a vehicle's status, such as moving, parked, or turning.",
+    "Lane_Recognition": "Name the lane type the ego vehicle is in.",
+    "Obstruction_Recognition": "Locate an obstruction on the road with a bounding box.",
+    "Light": "State the lighting condition of the scene.",
+    "Weather": "State the weather in the scene.",
+    "Sign_Sign_Relation": "Say which numbered signs a given sign corresponds to.",
+    "Sign_Lane_Relation": "Say which numbered lanes a sign applies to.",
+    "Light_Lane_Relation": "Say which numbered lanes a traffic light governs.",
+    "Lane_Speed_Relation": "Give the speed limits that apply to a lane as [min, max].",
+    "Lane_Change_Relation": "Say whether a lane change is permitted here.",
+    "VRU_Cutin": "Judge from a short clip whether a pedestrian or rider cuts into the ego path.",
+    "Vehicle_Cutin": "Judge from a short clip whether a vehicle cuts into the ego lane.",
+    "VRU_Cross": "Judge from a short clip whether a pedestrian or rider is crossing.",
+    "Long_Short_Parking": "Say whether a stopped vehicle is parked for a short or long time.",
+    "Vehicle_Bahavior": "Describe what a marked vehicle is doing across the clip.",
+    "VRU_Bahavior": "Describe what a marked pedestrian or rider is doing across the clip.",
+    "Key_Obsturction_Detection": "Judge whether an obstruction is relevant to the ego path and describe it.",
+    "Spatial_Temporal_Reasoning": "Answer about motion and relative position across the clip.",
+    "Risk_Prediction": "Judge the risk posed by a road user and explain it.",
+    "Drive_Efficiency": "Rate how efficiently the ego vehicle is being driven.",
+    "Longitudinal": "Choose the longitudinal meta-action: accelerate, maintain, decelerate, stop.",
+    "Lateral": "Choose the lateral meta-action: keep straight, turn, or change lane.",
+    "Trajectory": "Predict the ego trajectory; scored separately in the paper and not included here."
+  }
+}

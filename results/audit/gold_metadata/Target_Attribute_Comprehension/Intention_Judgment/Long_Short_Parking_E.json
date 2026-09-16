@@ -1,0 +1,2766 @@
+[
+    {
+        "sequence": "DRAMA_2020-0203-154554",
+        "image_path": [
+            "2020-0203-154554_frame_007480.png",
+            "2020-0203-154554_frame_007489.png",
+            "2020-0203-154554_frame_007498.png"
+        ],
+        "image_path_plot": [
+            "2020-0203-154554_frame_007480_plot.png",
+            "2020-0203-154554_frame_007489_plot.png",
+            "2020-0203-154554_frame_007498_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the bus within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Roadside construction', 'Loading and unloading', 'Road congestion', 'Waiting to start', 'Waiting for traffic light', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the bus within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Loading and unloading', 'Roadside construction', 'Parking', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting to start",
+            "Waiting for traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_0"
+    },
+    {
+        "sequence": "DRAMA_2020-0218-103119",
+        "image_path": [
+            "2020-0218-103119_frame_006684.png",
+            "2020-0218-103119_frame_006693.png",
+            "2020-0218-103119_frame_006702.png",
+            "2020-0218-103119_frame_006711.png",
+            "2020-0218-103119_frame_006720.png"
+        ],
+        "image_path_plot": [
+            "2020-0218-103119_frame_006684_plot.png",
+            "2020-0218-103119_frame_006693_plot.png",
+            "2020-0218-103119_frame_006702_plot.png",
+            "2020-0218-103119_frame_006711_plot.png",
+            "2020-0218-103119_frame_006720_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Road congestion', 'Loading and unloading', 'Roadside construction', 'Parking', 'Waiting for traffic light', 'Temporary parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Road congestion', 'Roadside construction', 'Waiting to start', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Road congestion",
+            "Waiting to start"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_1"
+    },
+    {
+        "sequence": "DRAMA_2020-0218-103119_2",
+        "image_path": [
+            "2020-0218-103119_frame_006639.png",
+            "2020-0218-103119_frame_006648.png",
+            "2020-0218-103119_frame_006657.png",
+            "2020-0218-103119_frame_006666.png",
+            "2020-0218-103119_frame_006675.png"
+        ],
+        "image_path_plot": [
+            "2020-0218-103119_frame_006639_plot.png",
+            "2020-0218-103119_frame_006648_plot.png",
+            "2020-0218-103119_frame_006657_plot.png",
+            "2020-0218-103119_frame_006666_plot.png",
+            "2020-0218-103119_frame_006675_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Road congestion', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Road congestion",
+            "Waiting to start"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_2"
+    },
+    {
+        "sequence": "DRAMA_clip_429_000330",
+        "image_path": [
+            "clip_429_000330_frame_000294.png",
+            "clip_429_000330_frame_000306.png",
+            "clip_429_000330_frame_000318.png",
+            "clip_429_000330_frame_000330.png"
+        ],
+        "image_path_plot": [
+            "clip_429_000330_frame_000294_plot.png",
+            "clip_429_000330_frame_000306_plot.png",
+            "clip_429_000330_frame_000318_plot.png",
+            "clip_429_000330_frame_000330_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Parking', 'Roadside construction', 'Waiting for traffic light', 'Loading and unloading', 'Waiting to start', 'Waiting for traffic light', 'Temporary parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Temporary parking', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_3"
+    },
+    {
+        "sequence": "DRAMA_clip_436_000078",
+        "image_path": [
+            "clip_436_000078_frame_000054.png",
+            "clip_436_000078_frame_000066.png",
+            "clip_436_000078_frame_000078.png"
+        ],
+        "image_path_plot": [
+            "clip_436_000078_frame_000054_plot.png",
+            "clip_436_000078_frame_000066_plot.png",
+            "clip_436_000078_frame_000078_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Road congestion', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_4"
+    },
+    {
+        "sequence": "DRAMA_clip_649_000120",
+        "image_path": [
+            "clip_649_000120_frame_000096.png",
+            "clip_649_000120_frame_000108.png",
+            "clip_649_000120_frame_000120.png"
+        ],
+        "image_path_plot": [
+            "clip_649_000120_frame_000096_plot.png",
+            "clip_649_000120_frame_000108_plot.png",
+            "clip_649_000120_frame_000120_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the silver minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the silver minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Roadside construction', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Road congestion', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Loading and unloading', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Waiting to start', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Temporary parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_5"
+    },
+    {
+        "sequence": "DRAMA_clip_649_000432",
+        "image_path": [
+            "clip_649_000432_frame_000324.png",
+            "clip_649_000432_frame_000336.png",
+            "clip_649_000432_frame_000348.png"
+        ],
+        "image_path_plot": [
+            "clip_649_000432_frame_000324_plot.png",
+            "clip_649_000432_frame_000336_plot.png",
+            "clip_649_000432_frame_000348_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the silver minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the silver minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Roadside construction', 'Parking', 'Loading and unloading', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Temporary parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Parking', 'Waiting to start', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Temporary parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_6"
+    },
+    {
+        "sequence": "DRAMA_clip_656_000360",
+        "image_path": [
+            "clip_656_000360_frame_000336.png",
+            "clip_656_000360_frame_000348.png",
+            "clip_656_000360_frame_000360.png"
+        ],
+        "image_path_plot": [
+            "clip_656_000360_frame_000336_plot.png",
+            "clip_656_000360_frame_000348_plot.png",
+            "clip_656_000360_frame_000360_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Waiting for traffic light', 'Loading and unloading', 'Roadside construction', 'Waiting to start', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_7"
+    },
+    {
+        "sequence": "DRAMA_clip_659_000366",
+        "image_path": [
+            "clip_659_000366_frame_000354.png",
+            "clip_659_000366_frame_000366.png"
+        ],
+        "image_path_plot": [
+            "clip_659_000366_frame_000354_plot.png",
+            "clip_659_000366_frame_000366_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Parking', 'Temporary parking', 'Road congestion', 'Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_8"
+    },
+    {
+        "sequence": "DRAMA_clip_664_000246",
+        "image_path": [
+            "clip_664_000246_frame_000138.png",
+            "clip_664_000246_frame_000150.png",
+            "clip_664_000246_frame_000162.png",
+            "clip_664_000246_frame_000174.png"
+        ],
+        "image_path_plot": [
+            "clip_664_000246_frame_000138_plot.png",
+            "clip_664_000246_frame_000150_plot.png",
+            "clip_664_000246_frame_000162_plot.png",
+            "clip_664_000246_frame_000174_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Waiting to start', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Loading and unloading', 'Temporary parking', 'Road congestion']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Roadside construction', 'Temporary parking', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "long parking",
+            "Road congestion",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_9"
+    },
+    {
+        "sequence": "DRAMA_clip_675_000108",
+        "image_path": [
+            "clip_675_000108_frame_000072.png",
+            "clip_675_000108_frame_000084.png",
+            "clip_675_000108_frame_000096.png",
+            "clip_675_000108_frame_000108.png"
+        ],
+        "image_path_plot": [
+            "clip_675_000108_frame_000072_plot.png",
+            "clip_675_000108_frame_000084_plot.png",
+            "clip_675_000108_frame_000096_plot.png",
+            "clip_675_000108_frame_000108_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Temporary parking', 'Loading and unloading', 'Road congestion', 'Waiting to start', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_10"
+    },
+    {
+        "sequence": "DRAMA_clip_681_000474",
+        "image_path": [
+            "clip_681_000474_frame_000426.png",
+            "clip_681_000474_frame_000438.png",
+            "clip_681_000474_frame_000450.png",
+            "clip_681_000474_frame_000462.png",
+            "clip_681_000474_frame_000474.png"
+        ],
+        "image_path_plot": [
+            "clip_681_000474_frame_000426_plot.png",
+            "clip_681_000474_frame_000438_plot.png",
+            "clip_681_000474_frame_000450_plot.png",
+            "clip_681_000474_frame_000462_plot.png",
+            "clip_681_000474_frame_000474_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the construction vehicle within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the construction vehicle within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Roadside construction', 'Temporary parking', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Roadside construction"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_11"
+    },
+    {
+        "sequence": "DRAMA_clip_692_000384",
+        "image_path": [
+            "clip_692_000384_frame_000276.png",
+            "clip_692_000384_frame_000288.png",
+            "clip_692_000384_frame_000300.png",
+            "clip_692_000384_frame_000312.png",
+            "clip_692_000384_frame_000324.png"
+        ],
+        "image_path_plot": [
+            "clip_692_000384_frame_000276_plot.png",
+            "clip_692_000384_frame_000288_plot.png",
+            "clip_692_000384_frame_000300_plot.png",
+            "clip_692_000384_frame_000312_plot.png",
+            "clip_692_000384_frame_000324_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the red box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Loading and unloading', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Temporary parking', 'Roadside construction', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the red box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Waiting to start', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "short parking",
+            "Temporary parking",
+            "Road congestion",
+            "Road congestion"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_12"
+    },
+    {
+        "sequence": "DRAMA_clip_705_000144",
+        "image_path": [
+            "clip_705_000144_frame_000120.png",
+            "clip_705_000144_frame_000132.png",
+            "clip_705_000144_frame_000144.png"
+        ],
+        "image_path_plot": [
+            "clip_705_000144_frame_000120_plot.png",
+            "clip_705_000144_frame_000132_plot.png",
+            "clip_705_000144_frame_000144_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Parking', 'Waiting to start', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_13"
+    },
+    {
+        "sequence": "DRAMA_clip_722_000090",
+        "image_path": [
+            "clip_722_000090_frame_000054.png",
+            "clip_722_000090_frame_000066.png",
+            "clip_722_000090_frame_000078.png",
+            "clip_722_000090_frame_000090.png"
+        ],
+        "image_path_plot": [
+            "clip_722_000090_frame_000054_plot.png",
+            "clip_722_000090_frame_000066_plot.png",
+            "clip_722_000090_frame_000078_plot.png",
+            "clip_722_000090_frame_000090_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_14"
+    },
+    {
+        "sequence": "DRAMA_clip_723_000156",
+        "image_path": [
+            "clip_723_000156_frame_000048.png",
+            "clip_723_000156_frame_000060.png"
+        ],
+        "image_path_plot": [
+            "clip_723_000156_frame_000048_plot.png",
+            "clip_723_000156_frame_000060_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Temporary parking', 'Waiting to start', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Parking', 'Loading and unloading', 'Waiting to start', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_15"
+    },
+    {
+        "sequence": "DRAMA_clip_724_000048",
+        "image_path": [
+            "clip_724_000048_frame_000012.png",
+            "clip_724_000048_frame_000024.png",
+            "clip_724_000048_frame_000036.png",
+            "clip_724_000048_frame_000048.png"
+        ],
+        "image_path_plot": [
+            "clip_724_000048_frame_000012_plot.png",
+            "clip_724_000048_frame_000024_plot.png",
+            "clip_724_000048_frame_000036_plot.png",
+            "clip_724_000048_frame_000048_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Parking', 'Waiting to start', 'Roadside construction', 'Temporary parking', 'Waiting for traffic light', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Temporary parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_16"
+    },
+    {
+        "sequence": "DRAMA_clip_727_000246",
+        "image_path": [
+            "clip_727_000246_frame_000210.png",
+            "clip_727_000246_frame_000222.png",
+            "clip_727_000246_frame_000234.png",
+            "clip_727_000246_frame_000246.png"
+        ],
+        "image_path_plot": [
+            "clip_727_000246_frame_000210_plot.png",
+            "clip_727_000246_frame_000222_plot.png",
+            "clip_727_000246_frame_000234_plot.png",
+            "clip_727_000246_frame_000246_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Roadside construction', 'Waiting to start', 'Road congestion', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_17"
+    },
+    {
+        "sequence": "DRAMA_clip_736_000012",
+        "image_path": [
+            "clip_736_000012_frame_000012.png"
+        ],
+        "image_path_plot": [
+            "clip_736_000012_frame_000012_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Parking', 'Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_18"
+    },
+    {
+        "sequence": "DRAMA_clip_742_000144",
+        "image_path": [
+            "clip_742_000144_frame_000108.png",
+            "clip_742_000144_frame_000120.png",
+            "clip_742_000144_frame_000132.png",
+            "clip_742_000144_frame_000144.png"
+        ],
+        "image_path_plot": [
+            "clip_742_000144_frame_000108_plot.png",
+            "clip_742_000144_frame_000120_plot.png",
+            "clip_742_000144_frame_000132_plot.png",
+            "clip_742_000144_frame_000144_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the special vehicle within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the special vehicle within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Temporary parking', 'Parking', 'Loading and unloading', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Roadside construction"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_19"
+    },
+    {
+        "sequence": "DRAMA_clip_742_000876",
+        "image_path": [
+            "clip_742_000876_frame_000768.png",
+            "clip_742_000876_frame_000780.png",
+            "clip_742_000876_frame_000792.png"
+        ],
+        "image_path_plot": [
+            "clip_742_000876_frame_000768_plot.png",
+            "clip_742_000876_frame_000780_plot.png",
+            "clip_742_000876_frame_000792_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the special vehicle within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the special vehicle within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Roadside construction', 'Road congestion', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Roadside construction', 'Road congestion', 'Waiting to start', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Roadside construction",
+            "Roadside construction"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_20"
+    },
+    {
+        "sequence": "DRAMA_clip_748_000480",
+        "image_path": [
+            "clip_748_000480_frame_000432.png",
+            "clip_748_000480_frame_000444.png",
+            "clip_748_000480_frame_000456.png",
+            "clip_748_000480_frame_000468.png",
+            "clip_748_000480_frame_000480.png"
+        ],
+        "image_path_plot": [
+            "clip_748_000480_frame_000432_plot.png",
+            "clip_748_000480_frame_000444_plot.png",
+            "clip_748_000480_frame_000456_plot.png",
+            "clip_748_000480_frame_000468_plot.png",
+            "clip_748_000480_frame_000480_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the special vehicle within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the special vehicle within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Roadside construction"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_21"
+    },
+    {
+        "sequence": "DRAMA_clip_754_000042",
+        "image_path": [
+            "clip_754_000042_frame_000018.png",
+            "clip_754_000042_frame_000030.png",
+            "clip_754_000042_frame_000042.png"
+        ],
+        "image_path_plot": [
+            "clip_754_000042_frame_000018_plot.png",
+            "clip_754_000042_frame_000030_plot.png",
+            "clip_754_000042_frame_000042_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Temporary parking', 'Road congestion', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start', 'Parking', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Loading and unloading', 'Road congestion', 'Parking', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_22"
+    },
+    {
+        "sequence": "DRAMA_clip_766_000216",
+        "image_path": [
+            "clip_766_000216_frame_000180.png",
+            "clip_766_000216_frame_000192.png",
+            "clip_766_000216_frame_000204.png",
+            "clip_766_000216_frame_000216.png"
+        ],
+        "image_path_plot": [
+            "clip_766_000216_frame_000180_plot.png",
+            "clip_766_000216_frame_000192_plot.png",
+            "clip_766_000216_frame_000204_plot.png",
+            "clip_766_000216_frame_000216_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Temporary parking', 'Waiting to start', 'Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Road congestion', 'Roadside construction', 'Waiting for traffic light', 'Parking', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_23"
+    },
+    {
+        "sequence": "DRAMA_clip_766_000348",
+        "image_path": [
+            "clip_766_000348_frame_000312.png",
+            "clip_766_000348_frame_000324.png",
+            "clip_766_000348_frame_000336.png",
+            "clip_766_000348_frame_000348.png"
+        ],
+        "image_path_plot": [
+            "clip_766_000348_frame_000312_plot.png",
+            "clip_766_000348_frame_000324_plot.png",
+            "clip_766_000348_frame_000336_plot.png",
+            "clip_766_000348_frame_000348_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Roadside construction', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Temporary parking', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Parking', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_24"
+    },
+    {
+        "sequence": "DRAMA_clip_768_000126",
+        "image_path": [
+            "clip_768_000126_frame_000090.png",
+            "clip_768_000126_frame_000102.png",
+            "clip_768_000126_frame_000114.png",
+            "clip_768_000126_frame_000126.png"
+        ],
+        "image_path_plot": [
+            "clip_768_000126_frame_000090_plot.png",
+            "clip_768_000126_frame_000102_plot.png",
+            "clip_768_000126_frame_000114_plot.png",
+            "clip_768_000126_frame_000126_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_25"
+    },
+    {
+        "sequence": "DRAMA_clip_770_000144",
+        "image_path": [
+            "clip_770_000144_frame_000108.png",
+            "clip_770_000144_frame_000120.png",
+            "clip_770_000144_frame_000132.png",
+            "clip_770_000144_frame_000144.png"
+        ],
+        "image_path_plot": [
+            "clip_770_000144_frame_000108_plot.png",
+            "clip_770_000144_frame_000120_plot.png",
+            "clip_770_000144_frame_000132_plot.png",
+            "clip_770_000144_frame_000144_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Waiting to start', 'Loading and unloading', 'Waiting for traffic light', 'Temporary parking', 'Roadside construction', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Road congestion"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_26"
+    },
+    {
+        "sequence": "DRAMA_clip_771_000150",
+        "image_path": [
+            "clip_771_000150_frame_000042.png",
+            "clip_771_000150_frame_000054.png",
+            "clip_771_000150_frame_000066.png"
+        ],
+        "image_path_plot": [
+            "clip_771_000150_frame_000042_plot.png",
+            "clip_771_000150_frame_000054_plot.png",
+            "clip_771_000150_frame_000066_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting for traffic light', 'Road congestion', 'Waiting to start', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Road congestion', 'Loading and unloading', 'Waiting to start', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_27"
+    },
+    {
+        "sequence": "DRAMA_clip_774_000240",
+        "image_path": [
+            "clip_774_000240_frame_000132.png",
+            "clip_774_000240_frame_000144.png",
+            "clip_774_000240_frame_000156.png"
+        ],
+        "image_path_plot": [
+            "clip_774_000240_frame_000132_plot.png",
+            "clip_774_000240_frame_000144_plot.png",
+            "clip_774_000240_frame_000156_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Road congestion', 'Waiting for traffic light', 'Parking', 'Waiting for traffic light', 'Waiting to start', 'Temporary parking', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_28"
+    },
+    {
+        "sequence": "DRAMA_clip_780_000324",
+        "image_path": [
+            "clip_780_000324_frame_000216.png",
+            "clip_780_000324_frame_000228.png",
+            "clip_780_000324_frame_000240.png",
+            "clip_780_000324_frame_000252.png"
+        ],
+        "image_path_plot": [
+            "clip_780_000324_frame_000216_plot.png",
+            "clip_780_000324_frame_000228_plot.png",
+            "clip_780_000324_frame_000240_plot.png",
+            "clip_780_000324_frame_000252_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Parking', 'Waiting for traffic light', 'Loading and unloading', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_29"
+    },
+    {
+        "sequence": "DRAMA_clip_797_000570",
+        "image_path": [
+            "clip_797_000570_frame_000534.png",
+            "clip_797_000570_frame_000546.png",
+            "clip_797_000570_frame_000558.png",
+            "clip_797_000570_frame_000570.png"
+        ],
+        "image_path_plot": [
+            "clip_797_000570_frame_000534_plot.png",
+            "clip_797_000570_frame_000546_plot.png",
+            "clip_797_000570_frame_000558_plot.png",
+            "clip_797_000570_frame_000570_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Loading and unloading', 'Roadside construction', 'Temporary parking', 'Road congestion', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_30"
+    },
+    {
+        "sequence": "DRAMA_clip_804_000228",
+        "image_path": [
+            "clip_804_000228_frame_000204.png",
+            "clip_804_000228_frame_000216.png",
+            "clip_804_000228_frame_000228.png"
+        ],
+        "image_path_plot": [
+            "clip_804_000228_frame_000204_plot.png",
+            "clip_804_000228_frame_000216_plot.png",
+            "clip_804_000228_frame_000228_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Waiting to start', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_31"
+    },
+    {
+        "sequence": "DRAMA_clip_805_000564",
+        "image_path": [
+            "clip_805_000564_frame_000456.png",
+            "clip_805_000564_frame_000468.png",
+            "clip_805_000564_frame_000480.png"
+        ],
+        "image_path_plot": [
+            "clip_805_000564_frame_000456_plot.png",
+            "clip_805_000564_frame_000468_plot.png",
+            "clip_805_000564_frame_000480_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Roadside construction', 'Temporary parking', 'Loading and unloading', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_32"
+    },
+    {
+        "sequence": "DRAMA_clip_806_000510",
+        "image_path": [
+            "clip_806_000510_frame_000486.png",
+            "clip_806_000510_frame_000498.png",
+            "clip_806_000510_frame_000510.png"
+        ],
+        "image_path_plot": [
+            "clip_806_000510_frame_000486_plot.png",
+            "clip_806_000510_frame_000498_plot.png",
+            "clip_806_000510_frame_000510_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Roadside construction', 'Waiting for traffic light', 'Temporary parking', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Waiting to start', 'Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Parking', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_33"
+    },
+    {
+        "sequence": "DRAMA_clip_807_000432",
+        "image_path": [
+            "clip_807_000432_frame_000324.png",
+            "clip_807_000432_frame_000336.png",
+            "clip_807_000432_frame_000348.png",
+            "clip_807_000432_frame_000360.png"
+        ],
+        "image_path_plot": [
+            "clip_807_000432_frame_000324_plot.png",
+            "clip_807_000432_frame_000336_plot.png",
+            "clip_807_000432_frame_000348_plot.png",
+            "clip_807_000432_frame_000360_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Temporary parking', 'Waiting for traffic light', 'Road congestion', 'Roadside construction', 'Loading and unloading', 'Parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Waiting to start', 'Roadside construction', 'Parking', 'Road congestion', 'Temporary parking', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_34"
+    },
+    {
+        "sequence": "DRAMA_clip_809_000030",
+        "image_path": [
+            "clip_809_000030_frame_000006.png",
+            "clip_809_000030_frame_000018.png",
+            "clip_809_000030_frame_000030.png"
+        ],
+        "image_path_plot": [
+            "clip_809_000030_frame_000006_plot.png",
+            "clip_809_000030_frame_000018_plot.png",
+            "clip_809_000030_frame_000030_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Temporary parking', 'Parking', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_35"
+    },
+    {
+        "sequence": "DRAMA_clip_813_000372",
+        "image_path": [
+            "clip_813_000372_frame_000348.png",
+            "clip_813_000372_frame_000360.png",
+            "clip_813_000372_frame_000372.png"
+        ],
+        "image_path_plot": [
+            "clip_813_000372_frame_000348_plot.png",
+            "clip_813_000372_frame_000360_plot.png",
+            "clip_813_000372_frame_000372_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Waiting for traffic light', 'Parking', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_36"
+    },
+    {
+        "sequence": "DRAMA_clip_815_000294",
+        "image_path": [
+            "clip_815_000294_frame_000270.png",
+            "clip_815_000294_frame_000282.png",
+            "clip_815_000294_frame_000294.png"
+        ],
+        "image_path_plot": [
+            "clip_815_000294_frame_000270_plot.png",
+            "clip_815_000294_frame_000282_plot.png",
+            "clip_815_000294_frame_000294_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Loading and unloading', 'Temporary parking', 'Road congestion', 'Waiting to start', 'Parking', 'Roadside construction', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_37"
+    },
+    {
+        "sequence": "DRAMA_clip_826_000318",
+        "image_path": [
+            "clip_826_000318_frame_000306.png",
+            "clip_826_000318_frame_000318.png"
+        ],
+        "image_path_plot": [
+            "clip_826_000318_frame_000306_plot.png",
+            "clip_826_000318_frame_000318_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the box truck within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Parking', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Waiting to start', 'Waiting for traffic light', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the box truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Temporary parking', 'Parking', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Loading and unloading",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_38"
+    },
+    {
+        "sequence": "DRAMA_clip_831_000054",
+        "image_path": [
+            "clip_831_000054_frame_000030.png",
+            "clip_831_000054_frame_000042.png",
+            "clip_831_000054_frame_000054.png"
+        ],
+        "image_path_plot": [
+            "clip_831_000054_frame_000030_plot.png",
+            "clip_831_000054_frame_000042_plot.png",
+            "clip_831_000054_frame_000054_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Temporary parking', 'Loading and unloading', 'Road congestion', 'Parking', 'Waiting for traffic light', 'Waiting to start', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Waiting to start', 'Road congestion', 'Temporary parking', 'Waiting for traffic light', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Loading and unloading",
+            "Temporary parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_39"
+    },
+    {
+        "sequence": "DRAMA_clip_831_000546",
+        "image_path": [
+            "clip_831_000546_frame_000522.png",
+            "clip_831_000546_frame_000534.png",
+            "clip_831_000546_frame_000546.png"
+        ],
+        "image_path_plot": [
+            "clip_831_000546_frame_000522_plot.png",
+            "clip_831_000546_frame_000534_plot.png",
+            "clip_831_000546_frame_000546_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Waiting for traffic light', 'Parking', 'Road congestion', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Temporary parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_40"
+    },
+    {
+        "sequence": "DRAMA_clip_845_000024",
+        "image_path": [
+            "clip_845_000024_frame_000012.png",
+            "clip_845_000024_frame_000024.png"
+        ],
+        "image_path_plot": [
+            "clip_845_000024_frame_000012_plot.png",
+            "clip_845_000024_frame_000024_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Loading and unloading', 'Parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_41"
+    },
+    {
+        "sequence": "DRAMA_clip_84_000366",
+        "image_path": [
+            "clip_84_000366_frame_000258.png",
+            "clip_84_000366_frame_000270.png",
+            "clip_84_000366_frame_000282.png",
+            "clip_84_000366_frame_000294.png"
+        ],
+        "image_path_plot": [
+            "clip_84_000366_frame_000258_plot.png",
+            "clip_84_000366_frame_000270_plot.png",
+            "clip_84_000366_frame_000282_plot.png",
+            "clip_84_000366_frame_000294_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the coach within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the red box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start', 'Roadside construction', 'Temporary parking', 'Loading and unloading', 'Road congestion']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the coach within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Parking', 'Road congestion', 'Waiting for traffic light', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the red box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Waiting for traffic light', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "long parking",
+            "Temporary parking",
+            "Loading and unloading",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_42"
+    },
+    {
+        "sequence": "DRAMA_clip_855_000168",
+        "image_path": [
+            "clip_855_000168_frame_000144.png",
+            "clip_855_000168_frame_000156.png",
+            "clip_855_000168_frame_000168.png"
+        ],
+        "image_path_plot": [
+            "clip_855_000168_frame_000144_plot.png",
+            "clip_855_000168_frame_000156_plot.png",
+            "clip_855_000168_frame_000168_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Road congestion', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Parking', 'Waiting to start', 'Roadside construction', 'Road congestion', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_43"
+    },
+    {
+        "sequence": "DRAMA_clip_867_000024",
+        "image_path": [
+            "clip_867_000024_frame_000012.png",
+            "clip_867_000024_frame_000024.png"
+        ],
+        "image_path_plot": [
+            "clip_867_000024_frame_000012_plot.png",
+            "clip_867_000024_frame_000024_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading', 'Roadside construction', 'Waiting to start', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_44"
+    },
+    {
+        "sequence": "DRAMA_clip_879_000084",
+        "image_path": [
+            "clip_879_000084_frame_000060.png",
+            "clip_879_000084_frame_000072.png",
+            "clip_879_000084_frame_000084.png"
+        ],
+        "image_path_plot": [
+            "clip_879_000084_frame_000060_plot.png",
+            "clip_879_000084_frame_000072_plot.png",
+            "clip_879_000084_frame_000084_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting to start', 'Loading and unloading', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Temporary parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Temporary parking', 'Road congestion', 'Waiting to start', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_45"
+    },
+    {
+        "sequence": "DRAMA_clip_881_000252",
+        "image_path": [
+            "clip_881_000252_frame_000240.png",
+            "clip_881_000252_frame_000252.png"
+        ],
+        "image_path_plot": [
+            "clip_881_000252_frame_000240_plot.png",
+            "clip_881_000252_frame_000252_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Roadside construction', 'Parking', 'Road congestion', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Roadside construction', 'Parking', 'Waiting to start', 'Road congestion', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Road congestion"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_46"
+    },
+    {
+        "sequence": "DRAMA_clip_882_000102",
+        "image_path": [
+            "clip_882_000102_frame_000066.png",
+            "clip_882_000102_frame_000078.png",
+            "clip_882_000102_frame_000090.png",
+            "clip_882_000102_frame_000102.png"
+        ],
+        "image_path_plot": [
+            "clip_882_000102_frame_000066_plot.png",
+            "clip_882_000102_frame_000078_plot.png",
+            "clip_882_000102_frame_000090_plot.png",
+            "clip_882_000102_frame_000102_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Parking', 'Roadside construction', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light', 'Waiting for traffic light', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_47"
+    },
+    {
+        "sequence": "DRAMA_clip_883_000474",
+        "image_path": [
+            "clip_883_000474_frame_000462.png",
+            "clip_883_000474_frame_000474.png"
+        ],
+        "image_path_plot": [
+            "clip_883_000474_frame_000462_plot.png",
+            "clip_883_000474_frame_000474_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting to start', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_48"
+    },
+    {
+        "sequence": "DRAMA_clip_887_000444",
+        "image_path": [
+            "clip_887_000444_frame_000336.png",
+            "clip_887_000444_frame_000348.png",
+            "clip_887_000444_frame_000360.png",
+            "clip_887_000444_frame_000372.png"
+        ],
+        "image_path_plot": [
+            "clip_887_000444_frame_000336_plot.png",
+            "clip_887_000444_frame_000348_plot.png",
+            "clip_887_000444_frame_000360_plot.png",
+            "clip_887_000444_frame_000372_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting to start', 'Parking', 'Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_49"
+    },
+    {
+        "sequence": "DRAMA_clip_88_000090",
+        "image_path": [
+            "clip_88_000090_frame_000054.png",
+            "clip_88_000090_frame_000066.png",
+            "clip_88_000090_frame_000078.png",
+            "clip_88_000090_frame_000090.png"
+        ],
+        "image_path_plot": [
+            "clip_88_000090_frame_000054_plot.png",
+            "clip_88_000090_frame_000066_plot.png",
+            "clip_88_000090_frame_000078_plot.png",
+            "clip_88_000090_frame_000090_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Road congestion', 'Waiting to start', 'Temporary parking', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_50"
+    },
+    {
+        "sequence": "DRAMA_clip_894_000168",
+        "image_path": [
+            "clip_894_000168_frame_000156.png",
+            "clip_894_000168_frame_000168.png"
+        ],
+        "image_path_plot": [
+            "clip_894_000168_frame_000156_plot.png",
+            "clip_894_000168_frame_000168_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting to start', 'Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Parking', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading', 'Roadside construction', 'Road congestion', 'Waiting for traffic light', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_51"
+    },
+    {
+        "sequence": "DRAMA_clip_894_000318",
+        "image_path": [
+            "clip_894_000318_frame_000210.png",
+            "clip_894_000318_frame_000222.png",
+            "clip_894_000318_frame_000234.png"
+        ],
+        "image_path_plot": [
+            "clip_894_000318_frame_000210_plot.png",
+            "clip_894_000318_frame_000222_plot.png",
+            "clip_894_000318_frame_000234_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the minivan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the minivan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Roadside construction', 'Parking', 'Temporary parking', 'Waiting to start', 'Road congestion']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Parking', 'Loading and unloading', 'Roadside construction', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_52"
+    },
+    {
+        "sequence": "DRAMA_clip_895_000024",
+        "image_path": [
+            "clip_895_000024_frame_000012.png",
+            "clip_895_000024_frame_000024.png"
+        ],
+        "image_path_plot": [
+            "clip_895_000024_frame_000012_plot.png",
+            "clip_895_000024_frame_000024_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Parking', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_53"
+    },
+    {
+        "sequence": "DRAMA_clip_898_000582",
+        "image_path": [
+            "clip_898_000582_frame_000474.png",
+            "clip_898_000582_frame_000486.png",
+            "clip_898_000582_frame_000498.png"
+        ],
+        "image_path_plot": [
+            "clip_898_000582_frame_000474_plot.png",
+            "clip_898_000582_frame_000486_plot.png",
+            "clip_898_000582_frame_000498_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the black SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting to start', 'Parking', 'Roadside construction', 'Road congestion', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the black SUV within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Roadside construction', 'Parking', 'Temporary parking', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "long parking",
+            "Parking",
+            "Parking"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_54"
+    },
+    {
+        "sequence": "DRAMA_clip_902_000324",
+        "image_path": [
+            "clip_902_000324_frame_000216.png",
+            "clip_902_000324_frame_000228.png",
+            "clip_902_000324_frame_000240.png",
+            "clip_902_000324_frame_000252.png"
+        ],
+        "image_path_plot": [
+            "clip_902_000324_frame_000216_plot.png",
+            "clip_902_000324_frame_000228_plot.png",
+            "clip_902_000324_frame_000240_plot.png",
+            "clip_902_000324_frame_000252_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Roadside construction', 'Temporary parking', 'Waiting to start', 'Road congestion', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "Loading and unloading"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_55"
+    },
+    {
+        "sequence": "HAD_train0125",
+        "image_path": [
+            "HAD_change_lane_train0125_frame_0200.png",
+            "HAD_change_lane_train0125_frame_0210.png",
+            "HAD_change_lane_train0125_frame_0220.png",
+            "HAD_change_lane_train0125_frame_0230.png",
+            "HAD_change_lane_train0125_frame_0240.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0125_frame_0200_plot.png",
+            "HAD_change_lane_train0125_frame_0210_plot.png",
+            "HAD_change_lane_train0125_frame_0220_plot.png",
+            "HAD_change_lane_train0125_frame_0230_plot.png",
+            "HAD_change_lane_train0125_frame_0240_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Waiting to start', 'Parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Parking', 'Roadside construction', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_56"
+    },
+    {
+        "sequence": "HAD_train0192",
+        "image_path": [
+            "HAD_change_lane_train0192_frame_0550.png",
+            "HAD_change_lane_train0192_frame_0560.png",
+            "HAD_change_lane_train0192_frame_0570.png",
+            "HAD_change_lane_train0192_frame_0580.png",
+            "HAD_change_lane_train0192_frame_0590.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0192_frame_0550_plot.png",
+            "HAD_change_lane_train0192_frame_0560_plot.png",
+            "HAD_change_lane_train0192_frame_0570_plot.png",
+            "HAD_change_lane_train0192_frame_0580_plot.png",
+            "HAD_change_lane_train0192_frame_0590_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Parking', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_57"
+    },
+    {
+        "sequence": "HAD_train0194",
+        "image_path": [
+            "HAD_change_lane_train0194_frame_0130.png",
+            "HAD_change_lane_train0194_frame_0140.png",
+            "HAD_change_lane_train0194_frame_0150.png",
+            "HAD_change_lane_train0194_frame_0160.png",
+            "HAD_change_lane_train0194_frame_0170.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0194_frame_0130_plot.png",
+            "HAD_change_lane_train0194_frame_0140_plot.png",
+            "HAD_change_lane_train0194_frame_0150_plot.png",
+            "HAD_change_lane_train0194_frame_0160_plot.png",
+            "HAD_change_lane_train0194_frame_0170_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the white SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Road congestion', 'Loading and unloading', 'Waiting to start', 'Waiting for traffic light', 'Waiting for traffic light', 'Roadside construction', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the white SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Roadside construction', 'Road congestion', 'Parking', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_58"
+    },
+    {
+        "sequence": "HAD_train0261",
+        "image_path": [
+            "HAD_change_lane_train0261_frame_0360.png",
+            "HAD_change_lane_train0261_frame_0370.png",
+            "HAD_change_lane_train0261_frame_0380.png",
+            "HAD_change_lane_train0261_frame_0390.png",
+            "HAD_change_lane_train0261_frame_0400.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0261_frame_0360_plot.png",
+            "HAD_change_lane_train0261_frame_0370_plot.png",
+            "HAD_change_lane_train0261_frame_0380_plot.png",
+            "HAD_change_lane_train0261_frame_0390_plot.png",
+            "HAD_change_lane_train0261_frame_0400_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the coach within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the coach within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting for traffic light', 'Loading and unloading', 'Parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting to start', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_59"
+    },
+    {
+        "sequence": "HAD_train0411",
+        "image_path": [
+            "HAD_avoid_train0411_frame_0090.png",
+            "HAD_avoid_train0411_frame_0100.png",
+            "HAD_avoid_train0411_frame_0110.png",
+            "HAD_avoid_train0411_frame_0120.png",
+            "HAD_avoid_train0411_frame_0130.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train0411_frame_0090_plot.png",
+            "HAD_avoid_train0411_frame_0100_plot.png",
+            "HAD_avoid_train0411_frame_0110_plot.png",
+            "HAD_avoid_train0411_frame_0120_plot.png",
+            "HAD_avoid_train0411_frame_0130_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting for traffic light', 'Roadside construction', 'Road congestion', 'Waiting for traffic light', 'Parking', 'Loading and unloading', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_60"
+    },
+    {
+        "sequence": "HAD_train0432",
+        "image_path": [
+            "HAD_change_lane_train0432_frame_0230.png",
+            "HAD_change_lane_train0432_frame_0240.png",
+            "HAD_change_lane_train0432_frame_0250.png",
+            "HAD_change_lane_train0432_frame_0260.png",
+            "HAD_change_lane_train0432_frame_0270.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0432_frame_0230_plot.png",
+            "HAD_change_lane_train0432_frame_0240_plot.png",
+            "HAD_change_lane_train0432_frame_0250_plot.png",
+            "HAD_change_lane_train0432_frame_0260_plot.png",
+            "HAD_change_lane_train0432_frame_0270_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting to start', 'Waiting for traffic light', 'Temporary parking', 'Roadside construction', 'Loading and unloading', 'Road congestion', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Roadside construction', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Parking', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_61"
+    },
+    {
+        "sequence": "HAD_train0558",
+        "image_path": [
+            "HAD_change_lane_train0558_frame_0180.png",
+            "HAD_change_lane_train0558_frame_0190.png",
+            "HAD_change_lane_train0558_frame_0200.png",
+            "HAD_change_lane_train0558_frame_0210.png",
+            "HAD_change_lane_train0558_frame_0220.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0558_frame_0180_plot.png",
+            "HAD_change_lane_train0558_frame_0190_plot.png",
+            "HAD_change_lane_train0558_frame_0200_plot.png",
+            "HAD_change_lane_train0558_frame_0210_plot.png",
+            "HAD_change_lane_train0558_frame_0220_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Roadside construction', 'Parking', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_62"
+    },
+    {
+        "sequence": "HAD_train0815",
+        "image_path": [
+            "HAD_change_lane_train0815_frame_0470.png",
+            "HAD_change_lane_train0815_frame_0480.png",
+            "HAD_change_lane_train0815_frame_0490.png",
+            "HAD_change_lane_train0815_frame_0500.png",
+            "HAD_change_lane_train0815_frame_0510.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train0815_frame_0470_plot.png",
+            "HAD_change_lane_train0815_frame_0480_plot.png",
+            "HAD_change_lane_train0815_frame_0490_plot.png",
+            "HAD_change_lane_train0815_frame_0500_plot.png",
+            "HAD_change_lane_train0815_frame_0510_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Road congestion', 'Roadside construction', 'Temporary parking', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Road congestion"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_63"
+    },
+    {
+        "sequence": "HAD_train1010",
+        "image_path": [
+            "HAD_avoid_train1010_frame_0000.png",
+            "HAD_avoid_train1010_frame_0010.png",
+            "HAD_avoid_train1010_frame_0020.png",
+            "HAD_avoid_train1010_frame_0030.png",
+            "HAD_avoid_train1010_frame_0040.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train1010_frame_0000_plot.png",
+            "HAD_avoid_train1010_frame_0010_plot.png",
+            "HAD_avoid_train1010_frame_0020_plot.png",
+            "HAD_avoid_train1010_frame_0030_plot.png",
+            "HAD_avoid_train1010_frame_0040_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Loading and unloading', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Roadside construction', 'Parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Parking', 'Waiting to start', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "long parking",
+            "Waiting to start",
+            "Temporary parking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_64"
+    },
+    {
+        "sequence": "HAD_train1122",
+        "image_path": [
+            "HAD_avoid_train1122_frame_0160.png",
+            "HAD_avoid_train1122_frame_0170.png",
+            "HAD_avoid_train1122_frame_0180.png",
+            "HAD_avoid_train1122_frame_0190.png",
+            "HAD_avoid_train1122_frame_0200.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train1122_frame_0160_plot.png",
+            "HAD_avoid_train1122_frame_0170_plot.png",
+            "HAD_avoid_train1122_frame_0180_plot.png",
+            "HAD_avoid_train1122_frame_0190_plot.png",
+            "HAD_avoid_train1122_frame_0200_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the white sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the red box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Temporary parking', 'Loading and unloading', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Waiting to start', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the white sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Parking', 'Road congestion', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the red box in the image is long parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Roadside construction', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "long parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light",
+            "Loading and unloading"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_65"
+    },
+    {
+        "sequence": "HAD_train1122_2",
+        "image_path": [
+            "HAD_avoid_train1122_frame_0160.png",
+            "HAD_avoid_train1122_frame_0170.png",
+            "HAD_avoid_train1122_frame_0180.png",
+            "HAD_avoid_train1122_frame_0190.png",
+            "HAD_avoid_train1122_frame_0200.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train1122_frame_0160_plot.png",
+            "HAD_avoid_train1122_frame_0170_plot.png",
+            "HAD_avoid_train1122_frame_0180_plot.png",
+            "HAD_avoid_train1122_frame_0190_plot.png",
+            "HAD_avoid_train1122_frame_0200_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Loading and unloading', 'Road congestion', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Temporary parking', 'Parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Roadside construction', 'Road congestion', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Loading and unloading",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_66"
+    },
+    {
+        "sequence": "HAD_train1238",
+        "image_path": [
+            "HAD_avoid_train1238_frame_0420.png",
+            "HAD_avoid_train1238_frame_0430.png",
+            "HAD_avoid_train1238_frame_0440.png",
+            "HAD_avoid_train1238_frame_0450.png",
+            "HAD_avoid_train1238_frame_0460.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train1238_frame_0420_plot.png",
+            "HAD_avoid_train1238_frame_0430_plot.png",
+            "HAD_avoid_train1238_frame_0440_plot.png",
+            "HAD_avoid_train1238_frame_0450_plot.png",
+            "HAD_avoid_train1238_frame_0460_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Roadside construction', 'Road congestion', 'Waiting for traffic light', 'Temporary parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting to start', 'Parking', 'Temporary parking', 'Road congestion', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "long parking",
+            "Waiting for traffic light",
+            "Parking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_67"
+    },
+    {
+        "sequence": "HAD_train1310",
+        "image_path": [
+            "HAD_change_lane_train1310_frame_0210.png",
+            "HAD_change_lane_train1310_frame_0220.png",
+            "HAD_change_lane_train1310_frame_0230.png",
+            "HAD_change_lane_train1310_frame_0240.png",
+            "HAD_change_lane_train1310_frame_0250.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train1310_frame_0210_plot.png",
+            "HAD_change_lane_train1310_frame_0220_plot.png",
+            "HAD_change_lane_train1310_frame_0230_plot.png",
+            "HAD_change_lane_train1310_frame_0240_plot.png",
+            "HAD_change_lane_train1310_frame_0250_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting to start', 'Roadside construction', 'Temporary parking', 'Parking', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Parking', 'Temporary parking', 'Roadside construction', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_68"
+    },
+    {
+        "sequence": "HAD_train1322",
+        "image_path": [
+            "HAD_change_lane_train1322_frame_0550.png",
+            "HAD_change_lane_train1322_frame_0560.png",
+            "HAD_change_lane_train1322_frame_0570.png",
+            "HAD_change_lane_train1322_frame_0580.png",
+            "HAD_change_lane_train1322_frame_0590.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train1322_frame_0550_plot.png",
+            "HAD_change_lane_train1322_frame_0560_plot.png",
+            "HAD_change_lane_train1322_frame_0570_plot.png",
+            "HAD_change_lane_train1322_frame_0580_plot.png",
+            "HAD_change_lane_train1322_frame_0590_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the black sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking', 'Waiting for traffic light', 'Loading and unloading', 'Parking', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the black sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Temporary parking', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Waiting for traffic light', 'Loading and unloading', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Road congestion",
+            "Road congestion"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_69"
+    },
+    {
+        "sequence": "HAD_train1482",
+        "image_path": [
+            "HAD_avoid_train1482_frame_0450.png",
+            "HAD_avoid_train1482_frame_0470.png",
+            "HAD_avoid_train1482_frame_0490.png",
+            "HAD_avoid_train1482_frame_0510.png",
+            "HAD_avoid_train1482_frame_0530.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train1482_frame_0450_plot.png",
+            "HAD_avoid_train1482_frame_0470_plot.png",
+            "HAD_avoid_train1482_frame_0490_plot.png",
+            "HAD_avoid_train1482_frame_0510_plot.png",
+            "HAD_avoid_train1482_frame_0530_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the red box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting for traffic light', 'Roadside construction', 'Loading and unloading', 'Road congestion', 'Waiting to start', 'Temporary parking', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Temporary parking', 'Waiting to start', 'Road congestion', 'Waiting for traffic light', 'Parking', 'Roadside construction', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the red box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Parking', 'Waiting to start', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "long parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light",
+            "Parking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_70"
+    },
+    {
+        "sequence": "HAD_train1704",
+        "image_path": [
+            "HAD_change_lane_train1704_frame_0260.png",
+            "HAD_change_lane_train1704_frame_0270.png",
+            "HAD_change_lane_train1704_frame_0280.png",
+            "HAD_change_lane_train1704_frame_0290.png",
+            "HAD_change_lane_train1704_frame_0300.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train1704_frame_0260_plot.png",
+            "HAD_change_lane_train1704_frame_0270_plot.png",
+            "HAD_change_lane_train1704_frame_0280_plot.png",
+            "HAD_change_lane_train1704_frame_0290_plot.png",
+            "HAD_change_lane_train1704_frame_0300_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the red box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Road congestion', 'Parking', 'Temporary parking', 'Roadside construction', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting to start', 'Parking', 'Waiting for traffic light', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the red box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Waiting for traffic light', 'Road congestion', 'Roadside construction', 'Temporary parking', 'Waiting to start', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "short parking",
+            "Parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_71"
+    },
+    {
+        "sequence": "HAD_train1780",
+        "image_path": [
+            "HAD_change_lane_train1780_frame_0140.png",
+            "HAD_change_lane_train1780_frame_0150.png",
+            "HAD_change_lane_train1780_frame_0160.png",
+            "HAD_change_lane_train1780_frame_0170.png",
+            "HAD_change_lane_train1780_frame_0180.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train1780_frame_0140_plot.png",
+            "HAD_change_lane_train1780_frame_0150_plot.png",
+            "HAD_change_lane_train1780_frame_0160_plot.png",
+            "HAD_change_lane_train1780_frame_0170_plot.png",
+            "HAD_change_lane_train1780_frame_0180_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the black sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the black sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Waiting to start', 'Waiting for traffic light', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Loading and unloading', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Temporary parking', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_72"
+    },
+    {
+        "sequence": "HAD_train2628",
+        "image_path": [
+            "HAD_change_lane_train2628_frame_0000.png",
+            "HAD_change_lane_train2628_frame_0010.png",
+            "HAD_change_lane_train2628_frame_0020.png",
+            "HAD_change_lane_train2628_frame_0030.png",
+            "HAD_change_lane_train2628_frame_0040.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train2628_frame_0000_plot.png",
+            "HAD_change_lane_train2628_frame_0010_plot.png",
+            "HAD_change_lane_train2628_frame_0020_plot.png",
+            "HAD_change_lane_train2628_frame_0030_plot.png",
+            "HAD_change_lane_train2628_frame_0040_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting for traffic light', 'Loading and unloading', 'Parking', 'Road congestion', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Roadside construction', 'Waiting to start', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_73"
+    },
+    {
+        "sequence": "HAD_train2629",
+        "image_path": [
+            "HAD_change_lane_train2629_frame_0360.png",
+            "HAD_change_lane_train2629_frame_0370.png",
+            "HAD_change_lane_train2629_frame_0380.png",
+            "HAD_change_lane_train2629_frame_0390.png",
+            "HAD_change_lane_train2629_frame_0400.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train2629_frame_0360_plot.png",
+            "HAD_change_lane_train2629_frame_0370_plot.png",
+            "HAD_change_lane_train2629_frame_0380_plot.png",
+            "HAD_change_lane_train2629_frame_0390_plot.png",
+            "HAD_change_lane_train2629_frame_0400_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting to start', 'Parking', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_74"
+    },
+    {
+        "sequence": "HAD_train2638",
+        "image_path": [
+            "HAD_avoid_train2638_frame_0280.png",
+            "HAD_avoid_train2638_frame_0290.png",
+            "HAD_avoid_train2638_frame_0300.png",
+            "HAD_avoid_train2638_frame_0310.png",
+            "HAD_avoid_train2638_frame_0320.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train2638_frame_0280_plot.png",
+            "HAD_avoid_train2638_frame_0290_plot.png",
+            "HAD_avoid_train2638_frame_0300_plot.png",
+            "HAD_avoid_train2638_frame_0310_plot.png",
+            "HAD_avoid_train2638_frame_0320_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Parking', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Waiting to start', 'Roadside construction', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Waiting to start', 'Temporary parking', 'Roadside construction', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_75"
+    },
+    {
+        "sequence": "HAD_train2709",
+        "image_path": [
+            "HAD_change_lane_train2709_frame_0340.png",
+            "HAD_change_lane_train2709_frame_0350.png",
+            "HAD_change_lane_train2709_frame_0360.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train2709_frame_0340_plot.png",
+            "HAD_change_lane_train2709_frame_0350_plot.png",
+            "HAD_change_lane_train2709_frame_0360_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the red sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the red sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Loading and unloading', 'Parking', 'Temporary parking', 'Roadside construction', 'Waiting to start', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Temporary parking', 'Road congestion', 'Waiting to start', 'Roadside construction', 'Loading and unloading', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_76"
+    },
+    {
+        "sequence": "HAD_train2833",
+        "image_path": [
+            "HAD_change_lane_train2833_frame_0570.png",
+            "HAD_change_lane_train2833_frame_0580.png",
+            "HAD_change_lane_train2833_frame_0590.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train2833_frame_0570_plot.png",
+            "HAD_change_lane_train2833_frame_0580_plot.png",
+            "HAD_change_lane_train2833_frame_0590_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Waiting to start', 'Parking', 'Roadside construction', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Loading and unloading']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Waiting for traffic light', 'Parking', 'Roadside construction', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_77"
+    },
+    {
+        "sequence": "HAD_train2857",
+        "image_path": [
+            "HAD_avoid_train2857_frame_0310.png",
+            "HAD_avoid_train2857_frame_0320.png",
+            "HAD_avoid_train2857_frame_0330.png",
+            "HAD_avoid_train2857_frame_0340.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train2857_frame_0310_plot.png",
+            "HAD_avoid_train2857_frame_0320_plot.png",
+            "HAD_avoid_train2857_frame_0330_plot.png",
+            "HAD_avoid_train2857_frame_0340_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Loading and unloading', 'Roadside construction', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_78"
+    },
+    {
+        "sequence": "HAD_train2938",
+        "image_path": [
+            "HAD_change_lane_train2938_frame_0360.png",
+            "HAD_change_lane_train2938_frame_0370.png",
+            "HAD_change_lane_train2938_frame_0380.png",
+            "HAD_change_lane_train2938_frame_0390.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train2938_frame_0360_plot.png",
+            "HAD_change_lane_train2938_frame_0370_plot.png",
+            "HAD_change_lane_train2938_frame_0380_plot.png",
+            "HAD_change_lane_train2938_frame_0390_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the pickup truck within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting to start', 'Loading and unloading', 'Parking', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the pickup truck within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Temporary parking', 'Waiting to start', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_79"
+    },
+    {
+        "sequence": "HAD_train3421",
+        "image_path": [
+            "HAD_avoid_train3421_frame_0190.png",
+            "HAD_avoid_train3421_frame_0200.png",
+            "HAD_avoid_train3421_frame_0210.png",
+            "HAD_avoid_train3421_frame_0220.png",
+            "HAD_avoid_train3421_frame_0230.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train3421_frame_0190_plot.png",
+            "HAD_avoid_train3421_frame_0200_plot.png",
+            "HAD_avoid_train3421_frame_0210_plot.png",
+            "HAD_avoid_train3421_frame_0220_plot.png",
+            "HAD_avoid_train3421_frame_0230_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Roadside construction', 'Road congestion', 'Loading and unloading', 'Parking', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Parking', 'Temporary parking', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Road congestion",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_80"
+    },
+    {
+        "sequence": "HAD_train3521",
+        "image_path": [
+            "HAD_change_lane_train3521_frame_0240.png",
+            "HAD_change_lane_train3521_frame_0300.png",
+            "HAD_change_lane_train3521_frame_0370.png",
+            "HAD_change_lane_train3521_frame_0500.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train3521_frame_0240_plot.png",
+            "HAD_change_lane_train3521_frame_0300_plot.png",
+            "HAD_change_lane_train3521_frame_0370_plot.png",
+            "HAD_change_lane_train3521_frame_0500_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Road congestion', 'Parking', 'Temporary parking', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_81"
+    },
+    {
+        "sequence": "HAD_train3616",
+        "image_path": [
+            "HAD_change_lane_train3616_frame_0230.png",
+            "HAD_change_lane_train3616_frame_0240.png",
+            "HAD_change_lane_train3616_frame_0250.png",
+            "HAD_change_lane_train3616_frame_0260.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train3616_frame_0230_plot.png",
+            "HAD_change_lane_train3616_frame_0240_plot.png",
+            "HAD_change_lane_train3616_frame_0250_plot.png",
+            "HAD_change_lane_train3616_frame_0260_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Parking', 'Waiting to start', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_82"
+    },
+    {
+        "sequence": "HAD_train3699",
+        "image_path": [
+            "HAD_change_lane_train3699_frame_0000.png",
+            "HAD_change_lane_train3699_frame_0010.png",
+            "HAD_change_lane_train3699_frame_0020.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train3699_frame_0000_plot.png",
+            "HAD_change_lane_train3699_frame_0010_plot.png",
+            "HAD_change_lane_train3699_frame_0020_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the white sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the white sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Roadside construction', 'Road congestion', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Roadside construction', 'Waiting for traffic light', 'Waiting to start', 'Road congestion', 'Temporary parking', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_83"
+    },
+    {
+        "sequence": "HAD_train3721",
+        "image_path": [
+            "HAD_change_lane_train3721_frame_0120.png",
+            "HAD_change_lane_train3721_frame_0130.png",
+            "HAD_change_lane_train3721_frame_0140.png",
+            "HAD_change_lane_train3721_frame_0150.png",
+            "HAD_change_lane_train3721_frame_0160.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train3721_frame_0120_plot.png",
+            "HAD_change_lane_train3721_frame_0130_plot.png",
+            "HAD_change_lane_train3721_frame_0140_plot.png",
+            "HAD_change_lane_train3721_frame_0150_plot.png",
+            "HAD_change_lane_train3721_frame_0160_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Waiting to start', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Loading and unloading', 'Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "Waiting for traffic light",
+            "Road congestion"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_84"
+    },
+    {
+        "sequence": "HAD_train3840",
+        "image_path": [
+            "HAD_change_lane_train3840_frame_0000.png",
+            "HAD_change_lane_train3840_frame_0010.png",
+            "HAD_change_lane_train3840_frame_0020.png",
+            "HAD_change_lane_train3840_frame_0030.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train3840_frame_0000_plot.png",
+            "HAD_change_lane_train3840_frame_0010_plot.png",
+            "HAD_change_lane_train3840_frame_0020_plot.png",
+            "HAD_change_lane_train3840_frame_0030_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Roadside construction', 'Road congestion', 'Parking', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting for traffic light"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_85"
+    },
+    {
+        "sequence": "HAD_train3855",
+        "image_path": [
+            "HAD_avoid_train3855_frame_0550.png",
+            "HAD_avoid_train3855_frame_0560.png",
+            "HAD_avoid_train3855_frame_0570.png",
+            "HAD_avoid_train3855_frame_0580.png",
+            "HAD_avoid_train3855_frame_0590.png"
+        ],
+        "image_path_plot": [
+            "HAD_avoid_train3855_frame_0550_plot.png",
+            "HAD_avoid_train3855_frame_0560_plot.png",
+            "HAD_avoid_train3855_frame_0570_plot.png",
+            "HAD_avoid_train3855_frame_0580_plot.png",
+            "HAD_avoid_train3855_frame_0590_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting to start', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Roadside construction']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_86"
+    },
+    {
+        "sequence": "HAD_train3884",
+        "image_path": [
+            "HAD_change_lane_train3884_frame_0240.png",
+            "HAD_change_lane_train3884_frame_0250.png",
+            "HAD_change_lane_train3884_frame_0260.png",
+            "HAD_change_lane_train3884_frame_0270.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train3884_frame_0240_plot.png",
+            "HAD_change_lane_train3884_frame_0250_plot.png",
+            "HAD_change_lane_train3884_frame_0260_plot.png",
+            "HAD_change_lane_train3884_frame_0270_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Waiting to start', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Loading and unloading', 'Parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Parking', 'Loading and unloading', 'Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Waiting for traffic light', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "long parking",
+            "Waiting for traffic light",
+            "Parking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_87"
+    },
+    {
+        "sequence": "HAD_train4311",
+        "image_path": [
+            "HAD_change_lane_train4311_frame_0140.png",
+            "HAD_change_lane_train4311_frame_0150.png",
+            "HAD_change_lane_train4311_frame_0160.png",
+            "HAD_change_lane_train4311_frame_0170.png",
+            "HAD_change_lane_train4311_frame_0180.png"
+        ],
+        "image_path_plot": [
+            "HAD_change_lane_train4311_frame_0140_plot.png",
+            "HAD_change_lane_train4311_frame_0150_plot.png",
+            "HAD_change_lane_train4311_frame_0160_plot.png",
+            "HAD_change_lane_train4311_frame_0170_plot.png",
+            "HAD_change_lane_train4311_frame_0180_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the white SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the red box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the white SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Loading and unloading', 'Waiting to start', 'Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Roadside construction', 'Loading and unloading', 'Temporary parking', 'Waiting to start', 'Parking', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the red box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Parking', 'Roadside construction', 'Road congestion', 'Loading and unloading', 'Temporary parking', 'Waiting for traffic light', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "short parking",
+            "long parking",
+            "Waiting for traffic light",
+            "Waiting for traffic light",
+            "Parking"
+        ],
+        "venue": "America",
+        "country": "America",
+        "id": "3_1_3_88"
+    },
+    {
+        "sequence": "JAAD_video__0045",
+        "image_path": [
+            "JAAD_video__0045_00000.png",
+            "JAAD_video__0045_00010.png",
+            "JAAD_video__0045_00020.png",
+            "JAAD_video__0045_00030.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0045_00000_plot.png",
+            "JAAD_video__0045_00010_plot.png",
+            "JAAD_video__0045_00020_plot.png",
+            "JAAD_video__0045_00030_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Waiting for traffic light', 'Temporary parking', 'Road congestion', 'Loading and unloading', 'Waiting for traffic light', 'Parking', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_89"
+    },
+    {
+        "sequence": "JAAD_video__0051",
+        "image_path": [
+            "JAAD_video__0051_00040.png",
+            "JAAD_video__0051_00050.png",
+            "JAAD_video__0051_00060.png",
+            "JAAD_video__0051_00070.png",
+            "JAAD_video__0051_00080.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0051_00040_plot.png",
+            "JAAD_video__0051_00050_plot.png",
+            "JAAD_video__0051_00060_plot.png",
+            "JAAD_video__0051_00070_plot.png",
+            "JAAD_video__0051_00080_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Waiting for traffic light', 'Roadside construction', 'Temporary parking', 'Parking']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_90"
+    },
+    {
+        "sequence": "JAAD_video__0052",
+        "image_path": [
+            "JAAD_video__0052_00000.png",
+            "JAAD_video__0052_00010.png",
+            "JAAD_video__0052_00020.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0052_00000_plot.png",
+            "JAAD_video__0052_00010_plot.png",
+            "JAAD_video__0052_00020_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Roadside construction', 'Parking', 'Temporary parking', 'Waiting for traffic light']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_91"
+    },
+    {
+        "sequence": "JAAD_video__0115",
+        "image_path": [
+            "JAAD_video__0115_00230.png",
+            "JAAD_video__0115_00240.png",
+            "JAAD_video__0115_00250.png",
+            "JAAD_video__0115_00260.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0115_00230_plot.png",
+            "JAAD_video__0115_00240_plot.png",
+            "JAAD_video__0115_00250_plot.png",
+            "JAAD_video__0115_00260_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Road congestion', 'Temporary parking', 'Waiting to start', 'Roadside construction', 'Waiting for traffic light', 'Loading and unloading', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Parking', 'Waiting to start', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Waiting for traffic light', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_92"
+    },
+    {
+        "sequence": "JAAD_video__0127",
+        "image_path": [
+            "JAAD_video__0127_00150.png",
+            "JAAD_video__0127_00160.png",
+            "JAAD_video__0127_00170.png",
+            "JAAD_video__0127_00190.png",
+            "JAAD_video__0127_00200.png",
+            "JAAD_video__0127_00210.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0127_00150_plot.png",
+            "JAAD_video__0127_00160_plot.png",
+            "JAAD_video__0127_00170_plot.png",
+            "JAAD_video__0127_00190_plot.png",
+            "JAAD_video__0127_00200_plot.png",
+            "JAAD_video__0127_00210_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the compact sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the compact sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Roadside construction', 'Loading and unloading', 'Waiting to start', 'Road congestion', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Roadside construction', 'Waiting to start', 'Parking', 'Road congestion', 'Temporary parking', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_93"
+    },
+    {
+        "sequence": "JAAD_video__0127_2",
+        "image_path": [
+            "JAAD_video__0127_00170.png",
+            "JAAD_video__0127_00180.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0127_00170_plot.png",
+            "JAAD_video__0127_00180_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the compact sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the compact sedan within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Parking', 'Road congestion', 'Waiting for traffic light', 'Waiting for traffic light', 'Waiting to start', 'Loading and unloading', 'Roadside construction']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Waiting for traffic light', 'Parking', 'Roadside construction', 'Waiting to start', 'Road congestion', 'Temporary parking']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_94"
+    },
+    {
+        "sequence": "JAAD_video__0175",
+        "image_path": [
+            "JAAD_video__0175_00010.png",
+            "JAAD_video__0175_00020.png",
+            "JAAD_video__0175_00030.png",
+            "JAAD_video__0175_00040.png",
+            "JAAD_video__0175_00050.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0175_00010_plot.png",
+            "JAAD_video__0175_00020_plot.png",
+            "JAAD_video__0175_00030_plot.png",
+            "JAAD_video__0175_00040_plot.png",
+            "JAAD_video__0175_00050_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the SUV within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the SUV within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Waiting to start', 'Roadside construction', 'Waiting for traffic light', 'Road congestion', 'Waiting for traffic light', 'Parking', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "Waiting to start"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_95"
+    },
+    {
+        "sequence": "JAAD_video__0206",
+        "image_path": [
+            "JAAD_video__0206_00130.png",
+            "JAAD_video__0206_00140.png",
+            "JAAD_video__0206_00150.png",
+            "JAAD_video__0206_00160.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0206_00130_plot.png",
+            "JAAD_video__0206_00140_plot.png",
+            "JAAD_video__0206_00150_plot.png",
+            "JAAD_video__0206_00160_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the black sedan within the green box in the image? Select the appropriate answer from the following phrases: ['short parking', 'long parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Loading and unloading', 'Waiting for traffic light', 'Parking', 'Road congestion', 'Roadside construction', 'Temporary parking', 'Waiting to start', 'Waiting for traffic light']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the black sedan within the green box in the image is long parking. Select the appropriate reason from the following phrases: ['Road congestion', 'Roadside construction', 'Waiting to start', 'Parking', 'Waiting for traffic light', 'Temporary parking', 'Waiting for traffic light', 'Loading and unloading']. No explantion needed."
+        ],
+        "reference": [
+            "short parking",
+            "long parking",
+            "Road congestion",
+            "Parking"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_96"
+    },
+    {
+        "sequence": "JAAD_video__0274",
+        "image_path": [
+            "JAAD_video__0274_00210.png",
+            "JAAD_video__0274_00220.png",
+            "JAAD_video__0274_00230.png",
+            "JAAD_video__0274_00240.png"
+        ],
+        "image_path_plot": [
+            "JAAD_video__0274_00210_plot.png",
+            "JAAD_video__0274_00220_plot.png",
+            "JAAD_video__0274_00230_plot.png",
+            "JAAD_video__0274_00240_plot.png"
+        ],
+        "questions": [
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the truck within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the truck within the blue box in the image is long parking. Select the appropriate reason from the following phrases: ['Parking', 'Waiting for traffic light', 'Temporary parking', 'Waiting for traffic light', 'Road congestion', 'Roadside construction', 'Loading and unloading', 'Waiting to start']. No explantion needed.",
+            "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Temporary parking', 'Loading and unloading', 'Waiting for traffic light', 'Road congestion', 'Waiting for traffic light', 'Parking', 'Roadside construction', 'Waiting to start']. No explantion needed."
+        ],
+        "reference": [
+            "long parking",
+            "short parking",
+            "Parking",
+            "Road congestion"
+        ],
+        "venue": "JAAD",
+        "country": "Germany",
+        "id": "3_1_3_97"
+    }
+]

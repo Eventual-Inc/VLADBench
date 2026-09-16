@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VLADBench · Results companion</title>
+    <link rel="stylesheet" href="web/results.css?v=28" />
+    <script src="task-review-data.js" defer></script>
+    <script src="task-review-audit.js" defer></script>
+    <script src="task-review-published.js" defer></script>
+    <script src="task-review-results.js?v=10" defer></script>
+    <script src="web/results.js?v=35" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="brand-lockup">
+        <a class="brand" href="task-review.html">VLAD<span>Bench</span></a>
+        <a class="fork" href="https://github.com/Eventual-Inc/VLADBench" target="_blank" rel="noopener noreferrer">Eventual-Inc/VLADBench Fork</a>
+      </div>
+      <nav>
+        <a href="task-review.html" aria-current="page">Results companion</a>
+        <a href="self-test.html">Take the benchmark</a>
+        <a href="https://github.com/Eventual-Inc/VLADBench" target="_blank" rel="noopener noreferrer">Repository ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel toolbar" aria-label="Controls">
+        <label class="search">
+          <span>Find a task</span>
+          <input id="search" type="search" placeholder="Search task, group, or domain" />
+        </label>
+        <label>
+          <span>Sort</span>
+          <select id="sort">
+            <option value="benchmark">Benchmark order</option>
+            <option value="spread">Largest spread</option>
+            <option value="alphabetical">Alphabetical</option>
+          </select>
+        </label>
+      </section>
+
+      <div class="two-up">
+        <section id="score-bars" class="panel score-bars" aria-labelledby="score-bars-title">
+          <div class="chart-heading">
+            <p class="eyebrow" id="score-bars-title">Score by task</p>
+            <div id="bar-legend" class="bar-legend" aria-label="Model legend"></div>
+          </div>
+          <div id="bar-chart" class="bar-chart"></div>
+        </section>
+
+        <aside class="panel leaderboard" aria-labelledby="leaderboard-title">
+          <div class="chart-heading">
+            <p class="eyebrow" id="leaderboard-title">Leaderboard</p>
+            <p class="sub" id="method"></p>
+          </div>
+          <table id="leaderboard"></table>
+          <p class="sub" id="leaderboard-note"></p>
+        </aside>
+      </div>
+
+      <section class="panel matrix" aria-label="Task by model score matrix">
+        <table>
+          <thead id="head"></thead>
+          <tbody id="body"></tbody>
+        </table>
+      </section>
+
+      <section class="panel paper" aria-labelledby="paper-title">
+          <div class="chart-heading">
+            <p class="eyebrow" id="paper-title">Results</p>
+            <p class="sub">The paper's Table 10 layout on our runs: its task abbreviations and order, MEAN after each task group, TOTAL last. Columns grouped by lab, smallest model first. Best per row underlined.</p>
+            <div class="row heat-controls">
+              <span class="control-group" aria-label="Heat scale">
+                <label>Low <input id="heat-low" type="color" /></label>
+                <label>Mid <input id="heat-mid" type="color" /></label>
+                <label>High <input id="heat-high" type="color" /></label>
+                <label>Midpoint <b id="heat-midpoint-readout"></b> <input id="heat-midpoint" type="range" min="10" max="90" step="1" /></label>
+                <span id="heat-legend" class="heat-legend" aria-label="Scale from 0 to 100"></span>
+                <button id="heat-reset" type="button">Reset</button>
+              </span>
+              <span class="control-group" aria-label="Export">
+                <button id="copy-latex" type="button">Copy LaTeX</button>
+                <button id="copy-csv" type="button">Copy CSV</button>
+              </span>
+            </div>
+          </div>
+          <div class="matrix paper-matrix table10">
+            <table>
+              <thead id="ours-head"></thead>
+              <tbody id="ours-body"></tbody>
+            </table>
+          </div>
+          <p class="sub" id="table10-note"></p>
+          <div class="chart-heading">
+            <p class="eyebrow">Paper, Table 10 as published (2025)</p>
+            <p class="sub">Different models, inference stack, and image handling. Read side by side, not merged. Row labels as printed, including L.R.RL for Light-Lane Relation.</p>
+          </div>
+          <div class="matrix paper-matrix table10">
+            <table>
+              <thead id="paper-head"></thead>
+              <tbody id="paper-body"></tbody>
+            </table>
+          </div>
+        </section>
+    </main>
+
+    <dialog id="inspector" aria-label="Evidence inspector">
+      <button id="inspector-close" class="close" type="button">Close ✕</button>
+      <div id="detail"></div>
+    </dialog>
+  </body>
+</html>

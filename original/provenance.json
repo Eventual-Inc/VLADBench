@@ -1,0 +1,18 @@
+{
+  "source_repository": "https://github.com/Depth2World/VLADBench",
+  "source_commit": "b0dde78ab7d4a7c0a9118a2cb519adaef1118f41",
+  "files": {
+    "evaluate_utils.py": "ec5a8b2dc66fb8774bfe0fa09d9ce9a26bcb3fef5549f315d42da88921decde9",
+    "evaluate_vlm.py": "d602dfdb8fb09c22749af0f3f7dc0418c1305dba5b0b0c8307695783ac17b84f",
+    "all_task.json": "2a5b344aee65ad7bb249e79067fd0cb73509bed23af484e6e9e771642a3728e2"
+  },
+  "runtime_patches": {
+    "upstream": [
+      {
+        "old": "if ''.join(clean_pred.split(';') in ques_nopath:",
+        "new": "if ''.join(clean_pred.split(';')) in ques_nopath:",
+        "reason": "Add missing closing parenthesis required to compile the preserved upstream source."
+      }
+    ]
+  }
+}

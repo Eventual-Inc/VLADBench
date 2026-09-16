@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "name": "full-original-512",
+  "dataset_revision": "1895f22252f9a702fed95334c8e3b60280b4c626",
+  "tasks": "all",
+  "protocol": {
+    "prompt": "original",
+    "coordinate_convention": "native_pixels",
+    "image_detail": "auto",
+    "max_tokens": 512,
+    "temperature": null,
+    "timeout_seconds": 300,
+    "max_attempts": 2,
+    "concurrency_per_model": 7,
+    "minimum_free_gib": 1.0,
+    "reasoning_policy": "lowest_enabled",
+    "sequence_policy": "declared_transport",
+    "video": {
+      "fps": 1,
+      "encoding": "libx264rgb-crf0",
+      "frame_selection": "annotation_frames_in_order"
+    }
+  },
+  "models": [
+    {
+      "id": "gemini38",
+      "provider": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1",
+      "model": "google/gemini-3.8-flash",
+      "reasoning_effort": "low",
+      "reasoning_parameter": "openrouter_reasoning",
+      "input_transport": "video_mp4",
+      "single_frame_policy": "as_is",
+      "oversize_fallback": "h264_crf18",
+      "video_options": {
+        "content_part": {
+          "processing": "static"
+        }
+      },
+      "credential": {
+        "type": "environment",
+        "variable": "OPENROUTER_API_KEY"
+      },
+      "backend_reproducibility": "Provider-managed route. Gemini cannot disable reasoning, so low is its lowest enabled setting and reasoning tokens count against the 512-token budget. Requests above the 20 MB provider body limit fall back to a receipted H.264 crf18 encoding. Provider frame sampling is not observed."
+    }
+  ]
+}

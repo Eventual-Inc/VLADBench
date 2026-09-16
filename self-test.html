@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>VLADBench · Take the benchmark</title>
+    <link rel="stylesheet" href="web/results.css?v=27" />
+  </head>
+  <body class="quiz">
+    <header>
+      <div class="brand-lockup">
+        <a class="brand" href="results.html">VLAD<span>Bench</span></a>
+        <a class="fork" href="https://github.com/Eventual-Inc/VLADBench" target="_blank" rel="noopener noreferrer">Eventual-Inc/VLADBench Fork</a>
+      </div>
+      <nav>
+        <a href="results.html">Results</a>
+        <a href="self-test.html" aria-current="page">Take the benchmark</a>
+      </nav>
+    </header>
+    <main>
+      <div class="chart-heading">
+        <div>
+          <p class="eyebrow">Human baseline</p>
+          <h2>Take the benchmark yourself</h2>
+        </div>
+        <button id="export" type="button">Export my answers</button>
+      </div><p class="sub">Read the question and inspect the images before revealing the reference. No model requests are made; answers stay in this browser.</p><section class="panel"><div class="row"><label>Task <select id="task"></select></label><strong id="progress"></strong></div><div class="row" style="margin-top:16px"><button id="previous">← Previous question</button><button id="next">Next question →</button><button id="nextTask">Next task →</button></div></section><section class="panel"><div id="frames" class="frames"></div><h2>Question</h2><pre id="prompt"></pre><small>Images follow the dataset’s listed order. This shows source images and the source question with country context; provider resizing and model-specific coordinate changes are not applied.</small><h2>Your answer</h2><textarea id="answer" placeholder="Type the answer in the format the question requests." aria-label="Your answer"></textarea><div class="row"><button id="reveal" class="primary" type="button">Submit & reveal reference</button><button id="skip">Skip / ambiguous</button></div><div id="feedback" class="result" hidden></div><label><p>Notes or concerns</p><textarea id="notes" aria-label="Notes or concerns" placeholder="What made this unclear or impossible to answer?"></textarea></label><small id="saved"></small></section>    </main>
+    <script src="task-review-data.js"></script><script>
+const $=id=>document.getElementById(id),tasks=REVIEW_DATA.filter(t=>t.items.length);let ti=0,qi=0,records={};try{records=JSON.parse(localStorage.getItem('vlad-human-v1')||'{}')}catch{};const key=()=>tasks[ti].name+':'+tasks[ti].items[qi].id+':'+tasks[ti].items[qi].question;
+function save(extra={}){records[key()]={...records[key()],task:tasks[ti].name,id:tasks[ti].items[qi].id,question:tasks[ti].items[qi].question,answer:$('answer').value,notes:$('notes').value,...extra};try{localStorage.setItem('vlad-human-v1',JSON.stringify(records));$('saved').textContent='Saved in this browser. Export a copy to keep your answers.'}catch{$('saved').textContent='Browser storage unavailable. Export your answers before closing.'}}
+function feedback(r){$('feedback').hidden=!r.revealed;if(!r.revealed)return;let gold=tasks[ti].items[qi].gold;$('feedback').replaceChildren();let title=document.createElement('strong');title.textContent='Reference answer';let p=document.createElement('pre');p.textContent=typeof gold==='string'?gold:JSON.stringify(gold);let note=document.createElement('p');note.textContent='Reference comparison only—not an official score. Some tasks use partial credit, coordinates, or other task-specific grading. You can flag a reference you disagree with.';$('feedback').append(title,p,note)}
+function render(){let t=tasks[ti],q=t.items[qi],r=records[key()]||{};$('task').value=ti;$('progress').textContent=`Question ${qi+1} of ${t.items.length} · Task ${ti+1} of ${tasks.length}`;$('previous').disabled=qi===0;$('next').disabled=qi===t.items.length-1;$('nextTask').disabled=ti===tasks.length-1;$('frames').replaceChildren();q.images.forEach((im,i)=>{let f=document.createElement('figure'),img=document.createElement('img'),cap=document.createElement('figcaption');img.src=im.path;img.alt='Frame '+(i+1);img.loading='lazy';cap.textContent='Frame '+(i+1);img.onerror=()=>{cap.textContent+=' — image failed to load; use source link'};let a=document.createElement('a');a.href=im.path;a.target='_blank';a.rel='noopener';a.append(img);f.append(a,cap);$('frames').append(f)});$('prompt').textContent=q.prompt;$('answer').value=r.answer||'';$('notes').value=r.notes||'';feedback(r);$('saved').textContent='Your answers stay in this browser; nothing is sent to a provider.'}
+tasks.forEach((t,i)=>$('task').append(new Option(t.name.replaceAll('_',' '),i)));{const want=new URLSearchParams(location.search).get('task');const at=tasks.findIndex(t=>t.name===want);if(at>=0){ti=at;qi=0}}$('task').onchange=()=>{save();ti=+$('task').value;qi=0;render()};$('previous').onclick=()=>{save();qi--;render()};$('next').onclick=()=>{save();qi++;render()};$('nextTask').onclick=()=>{save();ti++;qi=0;render()};$('answer').oninput=()=>save();$('notes').oninput=()=>save();$('reveal').onclick=()=>{save({revealed:true,submitted_at:new Date().toISOString()});feedback(records[key()])};$('skip').onclick=()=>{save({skipped:true});if(qi<tasks[ti].items.length-1)qi++;else if(ti<tasks.length-1){ti++;qi=0}render()};$('export').onclick=()=>{save();let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({dataset_revision:tasks[0].revision,answers:records},null,2)],{type:'application/json'}));a.download='vlad-human-answers.json';a.click();URL.revokeObjectURL(a.href)};render();
+</script>
+  </body>
+</html>
+

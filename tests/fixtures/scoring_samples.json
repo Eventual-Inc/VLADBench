@@ -1,0 +1,983 @@
+{
+  "dataset": "depth2world/VLADBench",
+  "revision": "1895f22252f9a702fed95334c8e3b60280b4c626",
+  "note": "Complete public samples, exact-reference synthetic answers. No inference was performed.",
+  "fixtures": [
+    {
+      "task": "Drive_Efficiency",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Ego_Decision_Planning/Ego_Action_Reasoning/Drive_Efficiency_E.json",
+      "sample_index": 0,
+      "task_total_samples": 101,
+      "task_total_questions": 303,
+      "sample": {
+        "sequence": "accelerate_DRAMA_2020-0127-132751_2",
+        "image_path": [
+          "2020-0127-132751_frame_033824.png",
+          "2020-0127-132751_frame_033842.png",
+          "2020-0127-132751_frame_033860.png",
+          "2020-0127-132751_frame_033878.png",
+          "2020-0127-132751_frame_033896.png"
+        ],
+        "questions": [
+          "[image_path];In the given autonomous driving image sequence, at the moment of the final image, how about the driving efficiency of the ego vehicle? Select the most appropriate term from the following options: ['Low', 'High', 'Normal']. No explantion needed.",
+          "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, how the driving efficiency of the ego vehicle will be? Select the most appropriate term from the following options: ['increase', 'maintain', 'decrease']. No explantion needed.",
+          "[image_path];In the given autonomous driving image sequence, the ego vehicle is moving straight, at the moment of the last image, the future driving efficiency of the ego vehicle will increase. Select the most appropriate reason from the following options: ['The vehicle ahead is in the left turn lane', 'Approaching an uphill, surrounding vehicles are moving normally', 'Lateral vehicle is slowly turning left, ego vehicle yields', 'The road ahead is congested, and the vehicle in front is accelerating after moving slowly'], note no explaination needed."
+        ],
+        "reference": [
+          "low",
+          "increase",
+          "The road ahead is congested, and the vehicle in front is accelerating after moving slowly"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_3_0"
+      },
+      "answers": [
+        "low",
+        "increase",
+        "The road ahead is congested, and the vehicle in front is accelerating after moving slowly"
+      ]
+    },
+    {
+      "task": "Key_Obsturction_Detection",
+      "family": "Judge_criterion_QA",
+      "source_path": "Ego_Decision_Planning/Ego_Action_Reasoning/Key_Obsturction_Detection_E.json",
+      "sample_index": 0,
+      "task_total_samples": 154,
+      "task_total_questions": 547,
+      "sample": {
+        "image_path": "clip_1060_000258_frame_000258.png",
+        "questions": [
+          "clip_1060_000258_frame_000258.png;In autonomous driving, a key obstacle is defined as an object that can have a direct or indirect impact on the vehicle's ability to proceed straight or change lanes to the left or right. Based on the image, is the cyclist within the red box key obstruction? Answer 'yes' or 'no', note no explaination needed.",
+          "clip_1060_000258_frame_000258.png;In autonomous driving, a key obstacle is defined as an object that can have a direct or indirect impact on the vehicle's ability to proceed straight or change lanes to the left or right. Based on the image, is the pedestrian within the green box key obstruction? Answer 'yes' or 'no', note no explaination needed.",
+          "clip_1060_000258_frame_000258.png;In autonomous driving, a key obstacle is defined as an object that can have a direct or indirect impact on the vehicle's ability to proceed straight or change lanes to the left or right. Based on the image, is the truck within the blue box key obstruction? Answer 'yes' or 'no', note no explaination needed."
+        ],
+        "reference": [
+          "yes",
+          "yes",
+          "yes"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_0_0"
+      },
+      "answers": [
+        "yes",
+        "yes",
+        "yes"
+      ]
+    },
+    {
+      "task": "Risk_Prediction",
+      "family": "Judge_criterion_QA",
+      "source_path": "Ego_Decision_Planning/Ego_Action_Reasoning/Risk_Prediction_E.json",
+      "sample_index": 0,
+      "task_total_samples": 103,
+      "task_total_questions": 272,
+      "sample": {
+        "sequence": "Construction_DRAMA_2020-0127-132751",
+        "image_path": [
+          "2020-0127-132751_frame_003523.png",
+          "2020-0127-132751_frame_003541.png",
+          "2020-0127-132751_frame_003559.png",
+          "2020-0127-132751_frame_003577.png",
+          "2020-0127-132751_frame_003595.png"
+        ],
+        "questions": [
+          "[image_path];Based on the given sequence of images, assess whether there are any significant potential risks present in the environment if the vehicle proceeds straight or changes lanes to the left or right. Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path];In the given image sequence, the construction zone poses significant risks to the vehicle’s straight driving and lane changes to the left or right. Please choose the most appropriate description from the following options to describe this risk:['There is a cyclist ahead in the lane of the autonomous vehicle; the vehicle should slow down and yield.', 'There is a construction area on the left side of the roadway; the autonomous vehicle should proceed with caution and drive slowly.', 'There is a pedestrian walking straight on the right side of the vehicle; the vehicle should decelerate and proceed with caution.', 'There are pedestrians in front of the autonomous vehicle. The vehicle should slow down and yield, maintaining a safe distance.'], note no explaination needed.",
+          "[image_path];In the given image sequence, the cyclist poses significant risks to the vehicle’s straight driving and lane changes to the left or right. Please choose the most appropriate description from the following options to describe this risk:['There are pedestrians in front of the autonomous vehicle. The vehicle should slow down and yield, maintaining a safe distance.', 'There is a construction area on the left side of the roadway; the autonomous vehicle should proceed with caution and drive slowly.', 'There is a construction zone on the right side of the road, the vehicle should proceed with caution and drive slowly.', 'There is a cyclist ahead in the lane of the autonomous vehicle; the vehicle should slow down and yield.'], note no explaination needed."
+        ],
+        "reference": [
+          "yes",
+          "There is a construction area on the left side of the roadway; the autonomous vehicle should proceed with caution and drive slowly.",
+          "There is a cyclist ahead in the lane of the autonomous vehicle; the vehicle should slow down and yield."
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_2_0"
+      },
+      "answers": [
+        "yes",
+        "There is a construction area on the left side of the roadway; the autonomous vehicle should proceed with caution and drive slowly.",
+        "There is a cyclist ahead in the lane of the autonomous vehicle; the vehicle should slow down and yield."
+      ]
+    },
+    {
+      "task": "Spatial_Temporal_Reasoning",
+      "family": "Judge_criterion_QA",
+      "source_path": "Ego_Decision_Planning/Ego_Action_Reasoning/Spatial_Temporal_Reasoning_E.json",
+      "sample_index": 1,
+      "task_total_samples": 87,
+      "task_total_questions": 161,
+      "sample": {
+        "sequence": "DRAMA_2020-0203-154554",
+        "image_path": [
+          "2020-0203-154554_frame_075275.png",
+          "2020-0203-154554_frame_075284.png",
+          "2020-0203-154554_frame_075293.png",
+          "2020-0203-154554_frame_075302.png"
+        ],
+        "questions": [
+          "[image_path];In the given autonomous driving image sequence, at the moment of the final image, what is the speed limit of the vehicle's current lane? Please choose the most appropriate answer from the following options:['50', '70', '80', '40'], note that no explaination needed.",
+          "[image_path];In the given autonomous driving image sequence, at the moment of the final image, is the white passenger car located to the right of our vehicle an oncoming vehicle? Answer 'yes'or'no', note that no explaination needed."
+        ],
+        "reference": [
+          "50",
+          "yes"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "4_0_1_1"
+      },
+      "answers": [
+        "50",
+        "yes"
+      ]
+    },
+    {
+      "task": "Lateral",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Ego_Decision_Planning/Meta_Action_Decision/Lateral_E.json",
+      "sample_index": 0,
+      "task_total_samples": 109,
+      "task_total_questions": 235,
+      "sample": {
+        "sequence": "HAD_train0102",
+        "image_path": [
+          "HAD_avoid_train0102_frame_0200.png",
+          "HAD_avoid_train0102_frame_0220.png",
+          "HAD_avoid_train0102_frame_0240.png",
+          "HAD_avoid_train0102_frame_0260.png"
+        ],
+        "questions": [
+          "[image_path]; Based on the given sequence of autonomous driving vehicle, the current environment is ahead red car blocking, ego vehicle proceeds straight. Based on the assessment of driving risk and traffic efficiency, what lateral decision should the vehicle make at this moment? Select the appropriate answer from the following phrases: ['Change lane to the left or right', 'In-lane left avoidance', 'Maintain straight', 'Maintain straight or Change lane to the left', 'In-lane right avoidance', 'Maintain straight or Change lane to the right', 'Borrow lane for right avoidance', 'Change lane to the left', 'Borrow lane for left avoidance', 'Change lane to the right']. No explantion needed."
+        ],
+        "reference": [
+          "Borrow lane for left avoidance"
+        ],
+        "venue": "HAD",
+        "country": "Amercia",
+        "id": "4_1_1_0"
+      },
+      "answers": [
+        "Borrow lane for left avoidance"
+      ]
+    },
+    {
+      "task": "Longitudinal",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Ego_Decision_Planning/Meta_Action_Decision/Longitudinal_E.json",
+      "sample_index": 0,
+      "task_total_samples": 101,
+      "task_total_questions": 101,
+      "sample": {
+        "sequence": "acc_HAD_train0298",
+        "image_path": [
+          "HAD_slow_train0298_frame_0160.png",
+          "HAD_slow_train0298_frame_0170.png",
+          "HAD_slow_train0298_frame_0180.png",
+          "HAD_slow_train0298_frame_0190.png",
+          "HAD_slow_train0298_frame_0200.png"
+        ],
+        "questions": [
+          "[image_path]; Based on the given sequence of autonomous driving vehicle, the current environment is the road ahead is clear, ego vehicle completes a left turn, enters the straight lane. Based on the assessment of driving risk and traffic efficiency, what longitudinal decision should the vehicle make at this moment? Select the appropriate answer from the following phrases: ['Accelerate', 'Stop', 'Decelerate', 'Decelerate to stop', 'Maintain speed、Accelerate', 'Maintain speed', 'Maintain speed、Decelerate', 'Decelerate、Decelerate to stop']. No explantion needed."
+        ],
+        "reference": [
+          "Accelerate"
+        ],
+        "venue": "HAD",
+        "country": "Amercia",
+        "id": "4_1_0_0"
+      },
+      "answers": [
+        "Accelerate"
+      ]
+    },
+    {
+      "task": "Light",
+      "family": "Geneal_criterion_QA",
+      "source_path": "General_Element_Recognition/Background/Light_E.json",
+      "sample_index": 0,
+      "task_total_samples": 100,
+      "task_total_questions": 200,
+      "sample": {
+        "image_path": "CODA2022test_0028_daytime_clear.png",
+        "time": "daytime",
+        "light": "bright",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+          "CODA2022test_0028_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime, nighttime, or dawn&dusk. Chose an answer from the options: ['Daytime', 'dawn&dusk', 'Nighttime']. Note that no explantion is needed.",
+          "CODA2022test_0028_daytime_clear.png; Based on the visual features in the image, estimate the light level. Chose an answer from the following options: ['low', 'diffuse', 'backlit', 'snowy', 'shadowed light', 'bright', 'very low', 'dark']. Note that no explantion is needed."
+        ],
+        "reference": [
+          "daytime",
+          "bright"
+        ],
+        "id": "1_0_0_0"
+      },
+      "answers": [
+        "daytime",
+        "bright"
+      ]
+    },
+    {
+      "task": "Weather",
+      "family": "Geneal_criterion_QA",
+      "source_path": "General_Element_Recognition/Background/Weather_E.json",
+      "sample_index": 0,
+      "task_total_samples": 124,
+      "task_total_questions": 248,
+      "sample": {
+        "image_path": "CODA2022_0045_daytime_clear.png",
+        "time": "daytime",
+        "weather": "clear",
+        "venue": "CODA2022",
+        "country": "China",
+        "questions": [
+          "CODA2022_0045_daytime_clear.png; Based on the visual features in the image, estimate whether it is daytime or nighttime. Choose an answer from the options: ['Nighttime', 'Daytime']. Note that no explantion is needed.",
+          "CODA2022_0045_daytime_clear.png; Based on the visual features in the image, estimate the weather condition. Choose an answer from the following options: ['overcast', 'clear', 'rainy', 'cloudy', 'snowy']. Note that no explantion is needed."
+        ],
+        "reference": [
+          "Daytime",
+          "clear"
+        ],
+        "id": "1_0_1_0"
+      },
+      "answers": [
+        "Daytime",
+        "clear"
+      ]
+    },
+    {
+      "task": "Lane_Recognition",
+      "family": "Geneal_criterion_QA",
+      "source_path": "General_Element_Recognition/Foreground/Lane_Recognition_E.json",
+      "sample_index": 0,
+      "task_total_samples": 100,
+      "task_total_questions": 780,
+      "sample": {
+        "image_path": "HT_TEST_000001_SH_011.jpg",
+        "questions": [
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. What is the type of No.0 Lane? Please choose one from the following phrases: ['ETC Exclusive Lane', 'Motorized Vehicle Lane', 'Non-Motorized Vehicle Lane', 'Sidewalk', 'Emergency Lane', 'Dedicated Bus Lane']. Note that no explaination is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. Determine the direction of the lane. What type of lane is No.0 Lane? Please choose one from the following phrases: ['Opposite Direction Lane', 'Same Direction Lane']. Note that no explantion is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. No.0 Lane in the image is a Motorized Vehicle Lane; Specify whether it is fast, regular, or slow? Choose one as the answer from the following lists: ['slow lane', 'regular lane', 'fast lane']. Note that no explaination is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. What is the type of No.1 Lane? Please choose one from the following phrases: ['Sidewalk', 'Emergency Lane', 'Non-Motorized Vehicle Lane', 'ETC Exclusive Lane', 'Motorized Vehicle Lane', 'Dedicated Bus Lane']. Note that no explaination is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. Determine the direction of the lane. What type of lane is No.1 Lane? Please choose one from the following phrases: ['Same Direction Lane', 'Opposite Direction Lane']. Note that no explantion is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. No.1 Lane in the image is a Motorized Vehicle Lane; Specify whether it is fast, regular, or slow? Choose one as the answer from the following lists: ['slow lane', 'fast lane', 'regular lane']. Note that no explaination is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. What is the type of No.2 Lane? Please choose one from the following phrases: ['Emergency Lane', 'Sidewalk', 'ETC Exclusive Lane', 'Non-Motorized Vehicle Lane', 'Motorized Vehicle Lane', 'Dedicated Bus Lane']. Note that no explaination is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. Determine the direction of the lane. What type of lane is No.2 Lane? Please choose one from the following phrases: ['Opposite Direction Lane', 'Same Direction Lane']. Note that no explantion is needed.",
+          "HT_TEST_000001_SH_011_plot.png;In the image, the lanes are represented by red Lines, with the adjacent red numbers indicating the lane identification. No.2 Lane in the image is a Motorized Vehicle Lane; Specify whether it is fast, regular, or slow? Choose one as the answer from the following lists: ['regular lane', 'slow lane', 'fast lane']. Note that no explaination is needed."
+        ],
+        "reference": [
+          "Motorized Vehicle Lane",
+          "Same Direction Lane",
+          "Slow Lane",
+          "Motorized Vehicle Lane",
+          "Same Direction Lane",
+          "Regular Lane",
+          "Motorized Vehicle Lane",
+          "Same Direction Lane",
+          "Fast Lane"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "1_1_3_0"
+      },
+      "answers": [
+        "Motorized Vehicle Lane",
+        "Same Direction Lane",
+        "Slow Lane",
+        "Motorized Vehicle Lane",
+        "Same Direction Lane",
+        "Regular Lane",
+        "Motorized Vehicle Lane",
+        "Same Direction Lane",
+        "Fast Lane"
+      ]
+    },
+    {
+      "task": "Obstruction_Recognition",
+      "family": "Grounding_criterion_QA",
+      "source_path": "General_Element_Recognition/Foreground/Obstruction_Recognition_E.json",
+      "sample_index": 197,
+      "task_total_samples": 224,
+      "task_total_questions": 680,
+      "sample": {
+        "image_path": "CODA2022val_0312.jpg",
+        "questions": [
+          "CODA2022val_0312.jpg;The width and height of the image are 1355 and 720. Where is the dog located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y], note that no explaination needed.",
+          "CODA2022val_0312.jpg;The width and height of the image are 1355 and 720. What is the object located at the bounding box [682, 424, 702, 439] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['traffic cone', 'traffic box', 'suitcace', 'traffic island', 'dog', 'debris'], note that no explaination needed.",
+          "CODA2022val_0312_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases:['traffic cone', 'traffic island', 'dog', 'traffic box', 'suitcace', 'debris'], note that no explaination needed."
+        ],
+        "reference": [
+          [
+            682,
+            424,
+            702,
+            439
+          ],
+          "dog",
+          "dog"
+        ],
+        "venue": "CODA2022",
+        "country": "China",
+        "dimension": [
+          1355.0,
+          720.0
+        ],
+        "id": "1_1_2_197"
+      },
+      "answers": [
+        "[682, 424, 702, 439]",
+        "dog",
+        "dog"
+      ]
+    },
+    {
+      "task": "VRU_Recognition",
+      "family": "Grounding_criterion_QA",
+      "source_path": "General_Element_Recognition/Foreground/VRU_Recognition_E.json",
+      "sample_index": 0,
+      "task_total_samples": 135,
+      "task_total_questions": 424,
+      "sample": {
+        "image_path": "CODA_000011_1616013214499.jpg",
+        "questions": [
+          "CODA_000011_1616013214499.jpg;The width and height of the image are 1920 and 1020. Where is the moped located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+          "CODA_000011_1616013214499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1760, 588, 1918, 986] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['moped', 'tricycle', 'cart', 'stroller', 'bicycle', 'cyclist', 'motorcycle', 'wheelchair']. Note that no explantion is needed.",
+          "CODA_000011_1616013214499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['cart', 'moped', 'cyclist', 'stroller', 'wheelchair', 'tricycle', 'bicycle', 'motorcycle']. Note that no explantion is needed."
+        ],
+        "reference": [
+          [
+            1760,
+            588,
+            1918,
+            986
+          ],
+          "moped",
+          "moped"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+          1920.0,
+          1020.0
+        ],
+        "id": "1_1_1_0"
+      },
+      "answers": [
+        "[1760, 588, 1918, 986]",
+        "moped",
+        "moped"
+      ]
+    },
+    {
+      "task": "Vehicle_Recognition",
+      "family": "Grounding_criterion_QA",
+      "source_path": "General_Element_Recognition/Foreground/Vehicle_Recognition_E.json",
+      "sample_index": 5,
+      "task_total_samples": 98,
+      "task_total_questions": 223,
+      "sample": {
+        "image_path": "CODA_000011_1616012185499.jpg",
+        "questions": [
+          "CODA_000011_1616012185499.jpg;The width and height of the image are 1920 and 1020. Where is the construction vehicle located in the image? The output format should be [top-left X, top-left Y, bottom-right X, bottom-right Y].",
+          "CODA_000011_1616012185499.jpg;The width and height of the image are 1920 and 1020. What is the object located at the bounding box [1293, 0, 1916, 983] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases: ['car', 'truck', 'bus', 'construction vehicle', 'sanitation vehicle']. Note that no explantion is needed.",
+          "CODA_000011_1616012185499_0.jpg;What is the object within the red box in the image? Please select the appropriate one from the following phrases: ['bus', 'sanitation vehicle', 'construction vehicle', 'car', 'truck']. Note that no explantion is needed."
+        ],
+        "reference": [
+          [
+            1293,
+            0,
+            1916,
+            983
+          ],
+          "construction vehicle",
+          "construction vehicle"
+        ],
+        "venue": "CODA",
+        "country": "China",
+        "dimension": [
+          1920.0,
+          1020.0
+        ],
+        "id": "1_1_0_5"
+      },
+      "answers": [
+        "[1293, 0, 1916, 983]",
+        "construction vehicle",
+        "construction vehicle"
+      ]
+    },
+    {
+      "task": "Vehicle_Status",
+      "family": "Geneal_criterion_QA",
+      "source_path": "General_Element_Recognition/Foreground/Vehicle_Status_E.json",
+      "sample_index": 0,
+      "task_total_samples": 113,
+      "task_total_questions": 257,
+      "sample": {
+        "image_path": "CODA2022val_0074.png",
+        "questions": [
+          "CODA2022val_0074_0.png;The width and height of the image are 1355 and 720. What is the current state of the truck located at the bounding box [365, 179, 705, 571] in the image? The format of the box is [top-left X, top-left Y, bottom-right X, bottom-right Y]. Please select the appropriate one from the following phrases:['Cargo hanging from trunk', 'Right turn light on', 'All compartment doors open', 'Left turn light on', 'Rear compartment door open for loading', 'Brake light on'], note that no explaination is needed.",
+          "CODA2022val_0074_0.png;What is the current state of the truck within the red box in the image? Please select the appropriate one from the following phrases:['All compartment doors open', 'Cargo hanging from trunk', 'Brake light on', 'Left turn light on', 'Rear compartment door open for loading', 'Right turn light on'], note that no explaination is needed."
+        ],
+        "reference": [
+          "Right turn light on",
+          "Right turn light on"
+        ],
+        "venue": "CODA2022val",
+        "country": "China",
+        "id": "1_1_4_0"
+      },
+      "answers": [
+        "Right turn light on",
+        "Right turn light on"
+      ]
+    },
+    {
+      "task": "VRU_Bahavior",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Target_Attribute_Comprehension/Behavior_Understanding/VRU_Bahavior_E.json",
+      "sample_index": 0,
+      "task_total_samples": 99,
+      "task_total_questions": 99,
+      "sample": {
+        "sequence": "cut_in_DRAMA_2020-0127-132751",
+        "questions": [
+          "[image_path]; Based on the given sequence of images, select the appropriate description for the motorcycle from the following phrases:['Keep straight in the leftmost vehicle lane', 'Move slowly forward from the gap between cars', 'Bicycle is preparing to go straight through the zebra crossing', 'Change lanes to the front left and accelerate straight', 'Bicycle is crossing the road', 'Bicycle is crossing the road towards the front left'], no explaination needed."
+        ],
+        "reference": [
+          "Change lanes to the front left and accelerate straight"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+          "2020-0127-132751_frame_022053.png",
+          "2020-0127-132751_frame_022044.png",
+          "2020-0127-132751_frame_022035.png",
+          "2020-0127-132751_frame_022062.png",
+          "2020-0127-132751_frame_022026.png"
+        ],
+        "id": "3_0_0_0"
+      },
+      "answers": [
+        "Change lanes to the front left and accelerate straight"
+      ]
+    },
+    {
+      "task": "Vehicle_Bahavior",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Target_Attribute_Comprehension/Behavior_Understanding/Vehicle_Bahavior_E.json",
+      "sample_index": 0,
+      "task_total_samples": 80,
+      "task_total_questions": 80,
+      "sample": {
+        "sequence": "accelerate_DRAMA_2020-0129-105040",
+        "questions": [
+          "[image_path]; Based on the given sequence of images, select the appropriate description for the white compact car from the following phrases:['Accelerate from start', 'Wait for the traffic light', 'Start with acceleration', 'Temporarily parked in the middle of the road, waiting for oncoming traffic to pass before turning right', 'Keep to the right and prepare to temporarily park', 'Temporarily parked at the intersection, waiting for oncoming traffic to pass before turning right'], no explaination needed."
+        ],
+        "reference": [
+          "Accelerate from start"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "image_path": [
+          "2020-0129-105040_frame_019338.png",
+          "2020-0129-105040_frame_019302.png",
+          "2020-0129-105040_frame_019320.png",
+          "2020-0129-105040_frame_019293.png"
+        ],
+        "id": "3_0_1_0"
+      },
+      "answers": [
+        "Accelerate from start"
+      ]
+    },
+    {
+      "task": "Long_Short_Parking",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Target_Attribute_Comprehension/Intention_Judgment/Long_Short_Parking_E.json",
+      "sample_index": 0,
+      "task_total_samples": 98,
+      "task_total_questions": 320,
+      "sample": {
+        "sequence": "DRAMA_2020-0203-154554",
+        "image_path": [
+          "2020-0203-154554_frame_007480.png",
+          "2020-0203-154554_frame_007489.png",
+          "2020-0203-154554_frame_007498.png"
+        ],
+        "image_path_plot": [
+          "2020-0203-154554_frame_007480_plot.png",
+          "2020-0203-154554_frame_007489_plot.png",
+          "2020-0203-154554_frame_007498_plot.png"
+        ],
+        "questions": [
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the sedan within the blue box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, what is the stopped state of the bus within the green box in the image? Select the appropriate answer from the following phrases: ['long parking', 'short parking']. No explantion needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the sedan within the blue box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting for traffic light', 'Temporary parking', 'Roadside construction', 'Loading and unloading', 'Road congestion', 'Waiting to start', 'Waiting for traffic light', 'Parking']. No explantion needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the stopped state of the bus within the green box in the image is short parking. Select the appropriate reason from the following phrases: ['Waiting to start', 'Loading and unloading', 'Roadside construction', 'Parking', 'Temporary parking', 'Waiting for traffic light', 'Waiting for traffic light', 'Road congestion']. No explantion needed."
+        ],
+        "reference": [
+          "short parking",
+          "short parking",
+          "Waiting to start",
+          "Waiting for traffic light"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_3_0"
+      },
+      "answers": [
+        "short parking",
+        "short parking",
+        "Waiting to start",
+        "Waiting for traffic light"
+      ]
+    },
+    {
+      "task": "VRU_Cross",
+      "family": "Judge_criterion_QA",
+      "source_path": "Target_Attribute_Comprehension/Intention_Judgment/VRU_Cross_E.json",
+      "sample_index": 0,
+      "task_total_samples": 92,
+      "task_total_questions": 276,
+      "sample": {
+        "sequence": "DRAMA_2020-0127-132751",
+        "image_path": [
+          "2020-0127-132751_frame_079518.png",
+          "2020-0127-132751_frame_079527.png",
+          "2020-0127-132751_frame_079536.png"
+        ],
+        "image_path_plot": [
+          "2020-0127-132751_frame_079518_plot.png",
+          "2020-0127-132751_frame_079527_plot.png",
+          "2020-0127-132751_frame_079536_plot.png"
+        ],
+        "questions": [
+          "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Bicycle in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Bicycle within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Bicycle within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['wait for the traffic light', 'cross the crosswalk', 'cross the road', 'cross the path of the vehicle', 'normal walking', 'standing and waiting']. Note no explaination needed."
+        ],
+        "reference": [
+          "yes",
+          "yes",
+          "cross the crosswalk"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_2_0"
+      },
+      "answers": [
+        "yes",
+        "yes",
+        "cross the crosswalk"
+      ]
+    },
+    {
+      "task": "VRU_Cutin",
+      "family": "Judge_criterion_QA",
+      "source_path": "Target_Attribute_Comprehension/Intention_Judgment/VRU_Cutin_E.json",
+      "sample_index": 0,
+      "task_total_samples": 89,
+      "task_total_questions": 267,
+      "sample": {
+        "sequence": "DRAMA_2020-0127-132751",
+        "image_path": [
+          "2020-0127-132751_frame_022035.png",
+          "2020-0127-132751_frame_022044.png",
+          "2020-0127-132751_frame_022053.png",
+          "2020-0127-132751_frame_022062.png"
+        ],
+        "image_path_plot": [
+          "2020-0127-132751_frame_022035_plot.png",
+          "2020-0127-132751_frame_022044_plot.png",
+          "2020-0127-132751_frame_022053_plot.png",
+          "2020-0127-132751_frame_022062_plot.png"
+        ],
+        "questions": [
+          "[image_path]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, does the Electric vehicle within the red box in the image have the intention to cut in? Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path_plot]; Based on the given autonomous driving image sequence, at the moment of the last image, the Electric vehicle within the red box in the image have the intention to cut in. Choose the most appropriate reason from the following phrases:['Borrow Lane', 'Traffic Efficiency', 'Cannot Speculate', 'Pedestrian Crossing at Crosswalk', 'Bicycle Left Turn into Motor Vehicle Lane', 'Pedestrian Walking on Motor Vehicle Lane']. Note no explaination needed."
+        ],
+        "reference": [
+          "yes",
+          "yes",
+          "Traffic Efficiency"
+        ],
+        "venue": "DRAMA",
+        "country": "Japan",
+        "id": "3_1_0_0"
+      },
+      "answers": [
+        "yes",
+        "yes",
+        "Traffic Efficiency"
+      ]
+    },
+    {
+      "task": "Vehicle_Cutin",
+      "family": "Judge_criterion_QA",
+      "source_path": "Target_Attribute_Comprehension/Intention_Judgment/Vehicle_Cutin_E.json",
+      "sample_index": 0,
+      "task_total_samples": 87,
+      "task_total_questions": 261,
+      "sample": {
+        "sequence": "CUTIN_ONCE_000076",
+        "image_path": [
+          "1616343817699.png",
+          "1616343818199.png",
+          "1616343818699.png",
+          "1616343819200.png",
+          "1616343819700.png"
+        ],
+        "image_path_plot": [
+          "1616343817699_plot.png",
+          "1616343818199_plot.png",
+          "1616343818699_plot.png",
+          "1616343819200_plot.png",
+          "1616343819700_plot.png"
+        ],
+        "questions": [
+          "[image_path]; Based on the given sequence of images, at the moment of the last image, does the Sedan in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, does the Sedan within the red box in the image have the intention to cross the road? Answer 'yes' or 'no', note no explaination needed.",
+          "[image_path_plot]; Based on the given sequence of images, at the moment of the last image, the Sedan within the red box in the image have the intention to cross the road. Choose the most appropriate reason from the following phrases:['intersection turning', 'lateral vehicle left turn', 'right turn onto main road', 'lane change', 'reverse borrow lane', 'commuting efficiency']. Note no explaination needed."
+        ],
+        "reference": [
+          "yes",
+          "yes",
+          "commuting efficiency"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "3_1_1_0"
+      },
+      "answers": [
+        "yes",
+        "yes",
+        "commuting efficiency"
+      ]
+    },
+    {
+      "task": "Lane_Change_Relation",
+      "family": "RoadChange_criterion_QA",
+      "source_path": "Traffic_Graph_Generation/Lane_Element_Relation/Lane_Change_Relation_E.json",
+      "sample_index": 0,
+      "task_total_samples": 108,
+      "task_total_questions": 784,
+      "sample": {
+        "image_path": "HT_TEST_000258_SH_011.jpg",
+        "questions": [
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. Legally, can the vehicle in No.0 Lane change lanes to No.1 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. Legally, can the vehicle in No.1 Lane change lanes to No.0 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. Legally, can the vehicle in No.0 Lane change lanes to No.2 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. Legally, can the vehicle in No.2 Lane change lanes to No.0 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. No.0 Lane is Ego Vehicle Lane, Straight Lane, No.1 Lane is Ego Vehicle Left Lane, Straight and Left Turn Lane, No.2 Lane is Ego Vehicle Right Lane, Straight and Right Turn Lane. No.0 Road Line is Left Road Line, White Broken Line, No.1 Road Line is Right Road Line, White Broken Line. Legally, can the vehicle in No.0 Lane change lanes to No.1 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. No.0 Lane is Ego Vehicle Lane, Straight Lane, No.1 Lane is Ego Vehicle Left Lane, Straight and Left Turn Lane, No.2 Lane is Ego Vehicle Right Lane, Straight and Right Turn Lane. No.0 Road Line is Left Road Line, White Broken Line, No.1 Road Line is Right Road Line, White Broken Line. Legally, can the vehicle in No.1 Lane change lanes to No.0 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. No.0 Lane is Ego Vehicle Lane, Straight Lane, No.1 Lane is Ego Vehicle Left Lane, Straight and Left Turn Lane, No.2 Lane is Ego Vehicle Right Lane, Straight and Right Turn Lane. No.0 Road Line is Left Road Line, White Broken Line, No.1 Road Line is Right Road Line, White Broken Line. Legally, can the vehicle in No.0 Lane change lanes to No.2 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed.",
+          "HT_TEST_000258_SH_011.jpg; In the image, lanes are represented by red lines, with the closest red number indicating the lane number. Road markings are represented by blue lines, with the closest blue number indicating the marking number. Analyze the relationship of lane changes. No.0 Lane is Ego Vehicle Lane, Straight Lane, No.1 Lane is Ego Vehicle Left Lane, Straight and Left Turn Lane, No.2 Lane is Ego Vehicle Right Lane, Straight and Right Turn Lane. No.0 Road Line is Left Road Line, White Broken Line, No.1 Road Line is Right Road Line, White Broken Line. Legally, can the vehicle in No.2 Lane change lanes to No.0 Lane in the image? Choose one answer from the following list: ['True','False']. Note that no explaination needed."
+        ],
+        "reference": [
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True",
+          "True"
+        ],
+        "venue": "China",
+        "country": "SODA",
+        "id": "2_1_1_0"
+      },
+      "answers": [
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True",
+        "True"
+      ]
+    },
+    {
+      "task": "Lane_Speed_Relation",
+      "family": "RoadSpeed_criterion_QA",
+      "source_path": "Traffic_Graph_Generation/Lane_Element_Relation/Lane_Speed_Relation_E.json",
+      "sample_index": 0,
+      "task_total_samples": 44,
+      "task_total_questions": 340,
+      "sample": {
+        "image_path": "RS10K_China_10197-1637046250194.jpg",
+        "venue": "RS10K",
+        "country": "China",
+        "questions": [
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.0 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.1 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.2 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.3 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. No.0 Lane is Straight Lane and is Vehicle Lane, No.1 Lane is Ego Vehicle Straight Lane and is Vehicle Lane, No.2 Lane is Straight Lane and is Small Passenger Car Lane, No.3 Lane is Straight Lane and is Vehicle Lane. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.0 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. No.0 Lane is Straight Lane and is Vehicle Lane, No.1 Lane is Ego Vehicle Straight Lane and is Vehicle Lane, No.2 Lane is Straight Lane and is Small Passenger Car Lane, No.3 Lane is Straight Lane and is Vehicle Lane. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.1 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. No.0 Lane is Straight Lane and is Vehicle Lane, No.1 Lane is Ego Vehicle Straight Lane and is Vehicle Lane, No.2 Lane is Straight Lane and is Small Passenger Car Lane, No.3 Lane is Straight Lane and is Vehicle Lane. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.2 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed.",
+          "RS10K_China_10197-1637046250194.jpg;In the image, lanes are indicated by blue boxes, with the closest blue numbers representing the lane numbers. No.0 Lane is Straight Lane and is Vehicle Lane, No.1 Lane is Ego Vehicle Straight Lane and is Vehicle Lane, No.2 Lane is Straight Lane and is Small Passenger Car Lane, No.3 Lane is Straight Lane and is Vehicle Lane. Based on the traffic signs in the image, please analyze the low-speed limit and high-speed limit for No.3 Lane. The response format should be '[X,Y]', where X is the low-speed limit and Y is the high-speed limit. If there is no corresponding speed limit, mark it as 0, such as [0,80], [60,0]. For Emergency Lane, the speed limit is [0,0]. Note that no explaination needed."
+        ],
+        "reference": [
+          "[60,80]",
+          "[80,100]",
+          "[80,100]",
+          "[60,80]",
+          "[60,80]",
+          "[80,100]",
+          "[80,100]",
+          "[60,80]"
+        ],
+        "id": "2_1_0_0"
+      },
+      "answers": [
+        "[60,80]",
+        "[80,100]",
+        "[80,100]",
+        "[60,80]",
+        "[60,80]",
+        "[80,100]",
+        "[80,100]",
+        "[60,80]"
+      ]
+    },
+    {
+      "task": "Light_Lane_Relation",
+      "family": "Relation_criterion_QA",
+      "source_path": "Traffic_Graph_Generation/Signal_Element_Relation/Light_Lane_Relation_E.json",
+      "sample_index": 0,
+      "task_total_samples": 111,
+      "task_total_questions": 702,
+      "sample": {
+        "image_path": "A_val_10003_315976480749927220.png",
+        "venue": "Argoverse2",
+        "country": "America",
+        "questions": [
+          "A_val_10003_315976480749927220.png;In the image, the lanes are represented by red lines, with the adjacent red numbers indicating the lane identification. Traffic lights are represented by blue boxes, with the adjacent blue numbers indicating the traffic light identification. Analyze which lane corresponds to No.0 traffic light. If there are no corresponding lanes, treat the lane for the traffic light as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed.",
+          "A_val_10003_315976480749927220.png;In the image, the lanes are represented by red lines, with the adjacent red numbers indicating the lane identification. Traffic lights are represented by blue boxes, with the adjacent blue numbers indicating the traffic light identification. Analyze which lane corresponds to No.1 traffic light. If there are no corresponding lanes, treat the lane for the traffic light as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed.",
+          "A_val_10003_315976480749927220.png;In the image, the lanes are represented by red lines, with the adjacent red numbers indicating the lane identification. Traffic lights are represented by blue boxes, with the adjacent blue numbers indicating the traffic light identification. No.0 traffic light is Green Light, No.1 traffic light is Green Light, No.0 lane is Straight Lane, No.1 lane is Left Turn Lane. Analyze which lane corresponds to No.0 traffic light. If there are no corresponding lanes, treat the lane for the traffic light as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed.",
+          "A_val_10003_315976480749927220.png;In the image, the lanes are represented by red lines, with the adjacent red numbers indicating the lane identification. Traffic lights are represented by blue boxes, with the adjacent blue numbers indicating the traffic light identification. No.0 traffic light is Green Light, No.1 traffic light is Green Light, No.0 lane is Straight Lane, No.1 lane is Left Turn Lane. Analyze which lane corresponds to No.1 traffic light. If there are no corresponding lanes, treat the lane for the traffic light as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed."
+        ],
+        "reference": [
+          "0/1",
+          "0/1",
+          "0/1",
+          "0/1"
+        ],
+        "id": "2_0_2_0"
+      },
+      "answers": [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ]
+    },
+    {
+      "task": "Sign_Lane_Relation",
+      "family": "Relation_criterion_QA",
+      "source_path": "Traffic_Graph_Generation/Signal_Element_Relation/Sign_Lane_Relation_E.json",
+      "sample_index": 0,
+      "task_total_samples": 124,
+      "task_total_questions": 1072,
+      "sample": {
+        "image_path": "A_val_10005_315971859249927215.png",
+        "venue": "Argoverse2",
+        "country": "America",
+        "questions": [
+          "A_val_10005_315971859249927215.png;In the image, lanes are indicated by red lines, with the closest red numbers representing lane numbers. Traffic signs are depicted within blue boxes, with the nearest blue numbers indicating traffic sign numbers. Analyze which lane corresponds to No.1 traffic sign. If there are no corresponding lanes, treat the lane for the traffic sign as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed.",
+          "A_val_10005_315971859249927215.png;In the image, lanes are indicated by red lines, with the closest red numbers representing lane numbers. Traffic signs are depicted within blue boxes, with the nearest blue numbers indicating traffic sign numbers. Analyze which lane corresponds to No.0 traffic sign. If there are no corresponding lanes, treat the lane for the traffic sign as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed.",
+          "A_val_10005_315971859249927215.png;In the image, lanes are indicated by red lines, with the closest red numbers representing lane numbers. Traffic signs are depicted within blue boxes, with the nearest blue numbers indicating traffic sign numbers. No.0 traffic sign is Right Turn Sign, No.1 traffic sign is Straight and Left Turn Sign, No.0 lane is Straight and Left Turn Lane, No.1 lane is Right Turn Lane. Analyze which lane corresponds to No.1 traffic sign. If there are no corresponding lanes, treat the lane for the traffic sign as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed.",
+          "A_val_10005_315971859249927215.png;In the image, lanes are indicated by red lines, with the closest red numbers representing lane numbers. Traffic signs are depicted within blue boxes, with the nearest blue numbers indicating traffic sign numbers. No.0 traffic sign is Right Turn Sign, No.1 traffic sign is Straight and Left Turn Sign, No.0 lane is Straight and Left Turn Lane, No.1 lane is Right Turn Lane. Analyze which lane corresponds to No.0 traffic sign. If there are no corresponding lanes, treat the lane for the traffic sign as -1. If there are multiple corresponding lanes, separate them with the '/' symbol, such as 2/3/4. Note that only answer the lane number and no expaination is needed."
+        ],
+        "reference": [
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        "id": "2_0_1_0"
+      },
+      "answers": [
+        "0",
+        "1",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "task": "Sign_Sign_Relation",
+      "family": "Relation_criterion_QA",
+      "source_path": "Traffic_Graph_Generation/Signal_Element_Relation/Sign_Sign_Relation_E.json",
+      "sample_index": 0,
+      "task_total_samples": 55,
+      "task_total_questions": 192,
+      "sample": {
+        "image_path": "ONCE_1616442709800.jpg",
+        "questions": [
+          "ONCE_1616442709800.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed.",
+          "ONCE_1616442709800.jpg;In the image, traffic signs are indicated by red boxes, with the closest red numbers representing the traffic sign numbers. No.0 traffic sign is Straight ahead on third lane sign, No.1 traffic sign is Construction vehicles use second lane sign, No.2 traffic sign is Straight ahead on second lane sign, No.3 traffic sign is Straight ahead on first lane sign. Analyze which traffic sign corresponds to No.1 traffic sign. If there are no corresponding traffic signs, treat the result as -1. If there are multiple corresponding traffic signs, separate them with the '/' symbol, such as 2/3/4. Note that only answer the traffic sign number and no expaination is needed."
+        ],
+        "reference": [
+          "2",
+          "2"
+        ],
+        "venue": "ONCE",
+        "country": "China",
+        "id": "2_0_0_0"
+      },
+      "answers": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "task": "Right_Of_Way",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Traffic_Knowledge_Understanding/Road_Passage_Provisions/Right_Of_Way_E.json",
+      "sample_index": 0,
+      "task_total_samples": 103,
+      "task_total_questions": 309,
+      "sample": {
+        "image_path": [
+          "HAD_rightofway_train0063_frame_0290.png",
+          "HAD_rightofway_train0063_frame_0300.png",
+          "HAD_rightofway_train0063_frame_0310.png",
+          "HAD_rightofway_train0063_frame_0320.png",
+          "HAD_rightofway_train0063_frame_0330.png",
+          "HAD_rightofway_train0063_frame_0340.png",
+          "HAD_rightofway_train0063_frame_0350.png",
+          "HAD_rightofway_train0063_frame_0360.png"
+        ],
+        "image_path_plot": [
+          "HAD_rightofway_train0063_frame_0290_plot.png",
+          "HAD_rightofway_train0063_frame_0300_plot.png",
+          "HAD_rightofway_train0063_frame_0310_plot.png",
+          "HAD_rightofway_train0063_frame_0320_plot.png",
+          "HAD_rightofway_train0063_frame_0330_plot.png",
+          "HAD_rightofway_train0063_frame_0340_plot.png",
+          "HAD_rightofway_train0063_frame_0350_plot.png",
+          "HAD_rightofway_train0063_frame_0360_plot.png"
+        ],
+        "questions": [
+          "[image_path];The input image sequence is captured from the front view of ego vehicle. Determine the right of way at the current road. Choose one from the below list as the result and note that no explantion is needed:['Ego Vehicle Yielding', 'Other Vehicle Yielding'].",
+          "[image_path_plot];The input image sequence is captured from the front view of ego vehicle, the object in the red box is sedan. Determine the right of way at the current road. Choose one from the below list as the result and note that no explantion is needed:['Ego Vehicle Yielding', 'Other Vehicle Yielding'].",
+          "[image_path];The input image sequence is captured from the front view of ego vehicle. At the unsignalized intersection, the ego vehicle makes a right turn while a vehicle from the cross traffic proceeds straight into the ego vehicle's target lane. Determine the right of way at the current road. Choose one from the below list as the result and note that no explantion is needed:['Ego Vehicle Yielding', 'Other Vehicle Yielding']."
+        ],
+        "reference": [
+          "Ego Vehicle Yielding",
+          "Ego Vehicle Yielding",
+          "Ego Vehicle Yielding"
+        ],
+        "venue": "HAD",
+        "country": "America",
+        "sequence": "HAD_train0063",
+        "id": "0_1_0_0"
+      },
+      "answers": [
+        "Ego Vehicle Yielding",
+        "Ego Vehicle Yielding",
+        "Ego Vehicle Yielding"
+      ]
+    },
+    {
+      "task": "Pavement_Marking",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Traffic_Knowledge_Understanding/Road_Traffic_Signals/Pavement_Marking_E.json",
+      "sample_index": 0,
+      "task_total_samples": 119,
+      "task_total_questions": 564,
+      "sample": {
+        "image_path": "Argoverse2_A_val_10008_315969524849927223.png",
+        "questions": [
+          "Argoverse2_A_val_10008_315969524849927223_0.png;In the image, the red box highlights a pavement marking. What is its type ? Select the most appropriate answer from the following phrases, note that no explantion is needed:['Yield Sign', 'Solid White Line', 'Guide Line', 'Yellow Grid Line', 'Stop Line', 'solid and Dashed Yellow Line']",
+          "Argoverse2_A_val_10008_315969524849927223_0.png;What is the meaning of the Guide Line within the red box in the image? Please select one phrase from the list below as the answer, note that no explantion is needed:['Straight and left-turn lane', 'Left turn only', 'Straight only', 'Speed limit 60', 'Left lane change into main road', 'Crossing from dashed-line side to solid-line side is allowed'].",
+          "Argoverse2_A_val_10008_315969524849927223_1.png;In the image, the red box highlights a pavement marking. What is its type ? Select the most appropriate answer from the following phrases, note that no explantion is needed:['Guide Line', 'Stop Line', 'Yellow Grid Line', 'solid and Dashed Yellow Line', 'Solid White Line', 'Yield Sign']",
+          "Argoverse2_A_val_10008_315969524849927223_1.png;What is the meaning of the Guide Line within the red box in the image? Please select one phrase from the list below as the answer, note that no explantion is needed:['Left turn only', 'Separates different lanes moving in the same direction, changing lanes over a white solid line is prohibited', 'Straight only', 'Crossing from dashed-line side to solid-line side is allowed', 'Straight and left-turn lane', 'Left lane change into main road']."
+        ],
+        "reference": [
+          "Guide Line",
+          "Straight only",
+          "Guide Line",
+          "Straight and left-turn lane"
+        ],
+        "venue": "Argoverse2",
+        "country": "America",
+        "id": "0_0_0_0"
+      },
+      "answers": [
+        "Guide Line",
+        "Straight only",
+        "Guide Line",
+        "Straight and left-turn lane"
+      ]
+    },
+    {
+      "task": "Traffic_Light",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Traffic_Knowledge_Understanding/Road_Traffic_Signals/Traffic_Light_E.json",
+      "sample_index": 0,
+      "task_total_samples": 129,
+      "task_total_questions": 795,
+      "sample": {
+        "image_path": "A_val_10003_315976480749927220.png",
+        "questions": [
+          "A_val_10003_315976480749927220_0.png;In the image, the traffic lights are within the blue box.Please identify the type of traffic light in the image.Select the most appropriate answer from the following answers: ['Non-Motorized Vehicle Light', 'Motor Vehicle Light', 'Arrow Light', 'Pedestrian Crossing Light', 'Lane Light']. Note that no explantion is needed.",
+          "A_val_10003_315976480749927220_0.png;In the image, the traffic lights are within the blue box.What is the state of the Motor Vehicle Light in the blue box?Choose the most appropriate one from the following answers: ['Red Light', 'Malfunction', 'Yellow Light', 'Green Light']. Note that no explantion is needed.",
+          "A_val_10003_315976480749927220_1.png;In the image, the traffic lights are within the blue box.Please identify the type of traffic light in the image.Select the most appropriate answer from the following answers: ['Motor Vehicle Light', 'Arrow Light', 'Pedestrian Crossing Light', 'Lane Light', 'Non-Motorized Vehicle Light']. Note that no explantion is needed.",
+          "A_val_10003_315976480749927220_1.png;In the image, the traffic lights are within the blue box.What is the state of the Motor Vehicle Light in the blue box?Choose the most appropriate one from the following answers: ['Red Light', 'Yellow Light', 'Green Light', 'Malfunction']. Note that no explantion is needed."
+        ],
+        "reference": [
+          "Motor Vehicle Light",
+          "Green Light",
+          "Motor Vehicle Light",
+          "Green Light"
+        ],
+        "venue": "Argoverse2",
+        "country": "America",
+        "id": "0_0_2_0"
+      },
+      "answers": [
+        "Motor Vehicle Light",
+        "Green Light",
+        "Motor Vehicle Light",
+        "Green Light"
+      ]
+    },
+    {
+      "task": "Traffic_Sign",
+      "family": "Geneal_criterion_QA",
+      "source_path": "Traffic_Knowledge_Understanding/Road_Traffic_Signals/Traffic_Sign_E.json",
+      "sample_index": 0,
+      "task_total_samples": 250,
+      "task_total_questions": 701,
+      "sample": {
+        "image_path": "GTSDB_German_ID_00544_plot.png",
+        "questions": [
+          "GTSDB_German_ID_00544.png;The width and height of the image are 1360 and 800. What is the meaning of the traffic sign located at the bounding box [1054, 297, 1122, 358] in the image?Please select one from the following phrases, note that no explantion is needed: ['animals', 'uneven road', 'keep right', 'roundabout', 'restriction ends', 'priority at next intersection'].",
+          "GTSDB_German_ID_00544_plot.png;What is the meaning of the traffic sign in the red box in the image? Please select one from the following phrases, note that no explantion is needed: ['animals', 'uneven road', 'keep right', 'roundabout', 'restriction ends', 'priority at next intersection']."
+        ],
+        "reference": [
+          "priority at next intersection",
+          "priority at next intersection"
+        ],
+        "venue": "GTSDB",
+        "country": "Germany",
+        "id": "0_0_1_0"
+      },
+      "answers": [
+        "priority at next intersection",
+        "priority at next intersection"
+      ]
+    }
+  ]
+}

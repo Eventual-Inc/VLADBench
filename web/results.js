@@ -1047,7 +1047,7 @@ if (embed && EMBED_TABS[embed]) {
 }
 for (const [id, target] of [["article-link", window.VLADBENCH_ARTICLE], ["blog-link", window.VLADBENCH_BLOG]]) {
   const link = $(id);
-  if (link && target) { link.href = target; link.hidden = false; }
+  if (link && target) { link.href = target; link.target = "_top"; link.hidden = false; }   // leave the iframe when embedded
 }
 $("cost-linear")?.addEventListener("change", renderCostScore);
 for (const id of ["video-res", "video-fps", "video-frames"]) $(id)?.addEventListener("change", () => { renderVideoCost(); renderLeaderboard(); });

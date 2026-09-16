@@ -21,6 +21,7 @@ class Rule:
     """How a provider turns one frame into billed prompt tokens.
 
     kind "patch": ceil(w/patch) * ceil(h/patch) * multiplier per frame, the OpenAI image path.
+    kind "area": tokens_per_pixel * w * h per frame, Alibaba's image path for Qwen Max.
     kind "pair": tokens_per_pixel * w * h per pair of frames, ceil(frames/2) pairs; the Qwen video tokeniser merges
                  two consecutive frames into one temporal patch. Some OpenRouter hosts subsample and bill a third of this.
     kind "flat": tokens_per_frame regardless of resolution, the Google video path at 1 FPS.
@@ -37,6 +38,8 @@ def clip_tokens(rule: Rule, width: int, height: int, frames: int) -> float:
     """Billed visual tokens for a clip of ``frames`` frames at one resolution."""
     if rule.kind == "patch":
         return frames * math.ceil(width / rule.patch) * math.ceil(height / rule.patch) * rule.multiplier
+    if rule.kind == "area":
+        return frames * rule.tokens_per_pixel * width * height
     if rule.kind == "pair":
         return math.ceil(frames / 2) * rule.tokens_per_pixel * width * height
     return frames * rule.tokens_per_frame
@@ -53,15 +56,21 @@ def frame_tokens(rule: Rule, width: int, height: int, frames: int = 8) -> float:
 # for 2-frame clips or 1920x1208 frames; the live check at 720p x 8 frames passes within 10%. pair: the standard Qwen
 # tokeniser as served by most OpenRouter hosts (about 880 tokens per pair at 720p); DeepInfra, Darkbloom, Phala, and
 # AtlasCloud subsample frames and bill about a third of it, so hourly figures for the open Qwens are an upper bound.
+# area: Alibaba bills Qwen Max images at about 1,000 tokens per megapixel, within 5% at every resolution here.
+# Muse and MiniMax video paths are flat to within about 20%; Reka within 10%.
 RULES: dict[str, Rule] = {
     "luna56": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
     "sol56": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
     "astra6": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
     "qwen36or": Rule("pair", tokens_per_pixel=880 / (1280 * 720)),
     "qwen38or": Rule("pair", tokens_per_pixel=880 / (1280 * 720)),
+    "qwen38max": Rule("area", tokens_per_pixel=945 / (1280 * 720)),
     "gemini38": Rule("flat", tokens_per_frame=63),
     "gemini25lite": Rule("flat", tokens_per_frame=255),
     "gemma431": Rule("flat", tokens_per_frame=74),
+    "muse13": Rule("flat", tokens_per_frame=130),      # Meta video path: 96 to 126 per frame on the dataset's 4 to 6 frame clips, 130 live on 8 frames
+    "minimax3": Rule("flat", tokens_per_frame=185),    # three hosts; 168 to 231 per frame at 720p and 1080p
+    "rekaedge": Rule("flat", tokens_per_frame=57),
 }
 
 
@@ -71,6 +80,7 @@ class Prices:
     prompt: float
     completion: float
     input_cache_write: float | None = None
+    input_cache_read: float | None = None
 
     def input(self, rate: str) -> float:
         value = getattr(self, rate, None)
@@ -78,9 +88,9 @@ class Prices:
 
 
 def prices_from_openrouter(pricing: dict) -> Prices:
-    cache = pricing.get("input_cache_write")
+    optional = lambda key: float(pricing[key]) if pricing.get(key) is not None else None
     return Prices(prompt=float(pricing["prompt"]), completion=float(pricing["completion"]),
-                  input_cache_write=float(cache) if cache is not None else None)
+                  input_cache_write=optional("input_cache_write"), input_cache_read=optional("input_cache_read"))
 
 
 def fetch_prices(api_key: str, slugs: list[str]) -> dict[str, Prices]:

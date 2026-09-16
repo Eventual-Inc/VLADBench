@@ -1539,9 +1539,24 @@
           "p95": 30.969668082980206,
           "max": 169.68920262501342
         },
-        "input_cost_per_frame_usd": null,
-        "output_cost_per_query_usd": null,
-        "cost_per_video_hour_usd": null
+        "input_cost_per_frame_usd": 0.0018873946102832522,
+        "output_cost_per_query_usd": 0.0018274971857410883,
+        "cost_per_video_hour_usd": 7.71585785780851,
+        "tokens_per_frame_720p": 945.0,
+        "metering": {
+          "rule": {
+            "kind": "area",
+            "patch": 0,
+            "multiplier": 0.0,
+            "tokens_per_pixel": 0.001025390625,
+            "tokens_per_frame": 0.0
+          },
+          "prompt_price": 1.9972429738447113e-06,
+          "completion_price": 6e-06,
+          "output_tokens_per_query": 304.58286429018136,
+          "text_tokens": 110
+        },
+        "video_cost_basis": "1280x720 at 1 FPS in non-overlapping 8-frame clips, one question each: 3,600 frames and 450 queries an hour; fitted tokeniser rule (vladbench.metering), the sweep's effective per-token prices, measured output tokens per query including reasoning"
       }
     },
     {
@@ -2264,9 +2279,24 @@
           "p95": 27.33979620898026,
           "max": 110.16114270901016
         },
-        "input_cost_per_frame_usd": null,
-        "output_cost_per_query_usd": null,
-        "cost_per_video_hour_usd": null
+        "input_cost_per_frame_usd": 0.0001589000475470597,
+        "output_cost_per_query_usd": 0.0034853379344233003,
+        "cost_per_video_hour_usd": 2.200946490533588,
+        "tokens_per_frame_720p": 130.0,
+        "metering": {
+          "rule": {
+            "kind": "flat",
+            "patch": 0,
+            "multiplier": 0.0,
+            "tokens_per_pixel": 0.0,
+            "tokens_per_frame": 130
+          },
+          "prompt_price": 1.2223080580543053e-06,
+          "completion_price": 4.25e-06,
+          "output_tokens_per_query": 820.079513981953,
+          "text_tokens": 110
+        },
+        "video_cost_basis": "1280x720 at 1 FPS in non-overlapping 8-frame clips, one question each: 3,600 frames and 450 queries an hour; fitted tokeniser rule (vladbench.metering), the sweep's effective per-token prices, measured output tokens per query including reasoning"
       }
     },
     {
@@ -2989,9 +3019,24 @@
           "p95": 37.607533375005005,
           "max": 689.1217989590077
         },
-        "input_cost_per_frame_usd": null,
-        "output_cost_per_query_usd": null,
-        "cost_per_video_hour_usd": null
+        "input_cost_per_frame_usd": 4.568046088498705e-05,
+        "output_cost_per_query_usd": 0.0005760796998123827,
+        "cost_per_video_hour_usd": 0.435908133905887,
+        "tokens_per_frame_720p": 185.0,
+        "metering": {
+          "rule": {
+            "kind": "flat",
+            "patch": 0,
+            "multiplier": 0.0,
+            "tokens_per_pixel": 0.0,
+            "tokens_per_frame": 185
+          },
+          "prompt_price": 2.469214101891192e-07,
+          "completion_price": 1.192868253479922e-06,
+          "output_tokens_per_query": 482.9365674975431,
+          "text_tokens": 110
+        },
+        "video_cost_basis": "1280x720 at 1 FPS in non-overlapping 8-frame clips, one question each: 3,600 frames and 450 queries an hour; fitted tokeniser rule (vladbench.metering), the sweep's effective per-token prices, measured output tokens per query including reasoning"
       }
     },
     {
@@ -7414,9 +7459,24 @@
           "p95": 6.027817124995636,
           "max": 51.44675441700383
         },
-        "input_cost_per_frame_usd": null,
-        "output_cost_per_query_usd": null,
-        "cost_per_video_hour_usd": null
+        "input_cost_per_frame_usd": 5.7e-06,
+        "output_cost_per_query_usd": 1.9127758420441346e-06,
+        "cost_per_video_hour_usd": 0.026330749128919858,
+        "tokens_per_frame_720p": 57.0,
+        "metering": {
+          "rule": {
+            "kind": "flat",
+            "patch": 0,
+            "multiplier": 0.0,
+            "tokens_per_pixel": 0.0,
+            "tokens_per_frame": 57
+          },
+          "prompt_price": 1e-07,
+          "completion_price": 1e-07,
+          "output_tokens_per_query": 19.127758420441346,
+          "text_tokens": 110
+        },
+        "video_cost_basis": "1280x720 at 1 FPS in non-overlapping 8-frame clips, one question each: 3,600 frames and 450 queries an hour; fitted tokeniser rule (vladbench.metering), the sweep's effective per-token prices, measured output tokens per query including reasoning"
       }
     },
     {

@@ -4,13 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=33" />
+    <link rel="stylesheet" href="web/results.css?v=34" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
-    <script src="web/results.js?v=50" defer></script>
+    <script src="web/results.js?v=51" defer></script>
     <script src="web/task-detail.js?v=3" defer></script>
   </head>
   <body>
@@ -33,9 +33,9 @@
       <div class="tabbar">
         <div class="tabs" role="tablist" aria-label="Views">
           <button role="tab" data-tab="overview" aria-selected="true">Overview</button>
-          <button role="tab" data-tab="paper" aria-selected="false">Results</button>
-          <button role="tab" data-tab="leaderboard" data-desktop aria-selected="false">Score by task</button>
-          <button role="tab" data-tab="matrix" data-desktop aria-selected="false">Task matrix</button>
+          <button role="tab" data-tab="leaderboard" aria-selected="false">Leaderboard</button>
+          <button role="tab" data-tab="matrix" data-desktop aria-selected="false">Explore</button>
+          <button role="tab" data-tab="cost" aria-selected="false">Cost Performance Frontier</button>
         </div>
         <div class="model-filter" id="model-filter" aria-label="Models shown in every view"></div>
       </div>
@@ -43,72 +43,10 @@
       <div class="task-filter" id="task-filter" data-tabs="leaderboard matrix" aria-label="Task families shown" hidden></div>
 
       <section class="tab-page" data-tab="overview">
-        <div class="overview-grid">
-          <aside class="panel leaderboard span-2" aria-labelledby="leaderboard-title">
-            <div class="chart-heading">
-              <h3 class="section-title" id="leaderboard-title">Leaderboard</h3>
-              <p class="sub" id="method"></p>
-            </div>
-            <table id="leaderboard"></table>
-            <p class="sub" id="leaderboard-note"></p>
-          </aside>
-          <section class="panel cost-score-panel span-2" aria-labelledby="cost-score-title">
-            <div class="chart-heading">
-              <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
-              <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
-            </div>
-            <div id="cost-score" class="bar-chart"></div>
-            <p class="sub" id="cost-score-note"></p>
-          </section>
-          <section class="panel frontier-panel" aria-labelledby="frontier-title">
-            <h3 class="section-title" id="frontier-title">Cost-Performance Frontier</h3>
-            <p class="sub">At each sweep cost, the model no other beats for the same money or less.</p>
-            <table id="frontier" class="frontier"></table>
-            <p class="sub" id="frontier-note"></p>
-          </section>
-          <section class="panel marginal-panel" aria-labelledby="marginal-title">
-            <h3 class="section-title" id="marginal-title">Marginal Performance Cost</h3>
-            <p class="sub">What each step up the frontier buys, and what it costs per point.</p>
-            <table id="marginal" class="frontier"></table>
-          </section>
-          <section class="panel span-2 video-panel" aria-labelledby="video-title">
-            <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>
-            <div class="row video-knobs">
-              <label>Frame size <select id="video-res"><option value="640x360">640×360</option><option value="1280x720" selected>1280×720</option><option value="1920x1080">1920×1080</option></select></label>
-              <label>Frames per second <select id="video-fps"><option value="0.2">0.2</option><option value="0.5">0.5</option><option value="1" selected>1</option><option value="2">2</option><option value="5">5</option><option value="10">10</option></select></label>
-              <label>Frames per query <select id="video-frames"><option value="1">1</option><option value="4">4</option><option value="8" selected>8</option><option value="16">16</option><option value="32">32</option></select></label>
-            </div>
-            <table id="video-cost" class="frontier"></table>
-            <p class="sub" id="video-cost-note"></p>
-          </section>
-        </div>
-      </section>
-<section class="tab-page" data-tab="leaderboard" hidden>
-        <section id="score-bars" class="panel score-bars" aria-labelledby="score-bars-title">
-            <div class="chart-heading">
-              <p class="eyebrow" id="score-bars-title">Score by task</p>
-              <div id="bar-legend" class="bar-legend" aria-label="Model legend"></div>
-            </div>
-            <div id="bar-chart" class="bar-chart"></div>
-          </section>
-          
-        </div>
-      </section>
-
-      <section class="tab-page" data-tab="matrix" hidden>
-        <section class="panel matrix" aria-label="Task by model score matrix">
-          <table>
-            <thead id="head"></thead>
-            <tbody id="body"></tbody>
-          </table>
-        </section>
-      </section>
-
-      <section class="tab-page" data-tab="paper" hidden>
         <section class="panel paper" aria-labelledby="paper-title">
           <div class="chart-heading">
-            <p class="eyebrow" id="paper-title">Results</p>
-            <p class="sub">The paper's Table 10 layout on our runs: its task abbreviations and order, MEAN after each task group, TOTAL last. Columns grouped by lab, smallest model first. Best per row underlined.</p>
+            <p class="eyebrow" id="paper-title">How well frontier VLMs understand driving scenes</p>
+            <p class="sub">Every task of the benchmark, in the paper's Table 10 layout, on our runs: its task abbreviations and order, MEAN after each task group, TOTAL last. Columns grouped by lab, smallest model first. Best per row underlined.</p>
             <div class="row heat-controls">
               <span class="control-group" aria-label="Heat scale">
                 <label>Low <input id="heat-low" type="color" /></label>
@@ -143,6 +81,69 @@
           </div>
         </section>
       </section>
+      <section class="tab-page" data-tab="leaderboard" hidden>
+        <div class="overview-grid">
+          <aside class="panel leaderboard span-2" aria-labelledby="leaderboard-title">
+            <div class="chart-heading">
+              <h3 class="section-title" id="leaderboard-title">Leaderboard</h3>
+              <p class="sub" id="method"></p>
+            </div>
+            <table id="leaderboard"></table>
+            <p class="sub" id="leaderboard-note"></p>
+          </aside>
+          <section id="score-bars" class="panel score-bars span-2" aria-labelledby="score-bars-title">
+            <div class="chart-heading">
+              <p class="eyebrow" id="score-bars-title">Score by task</p>
+              <div id="bar-legend" class="bar-legend" aria-label="Model legend"></div>
+            </div>
+            <div id="bar-chart" class="bar-chart"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="tab-page" data-tab="matrix" hidden>
+        <section class="panel matrix" aria-label="Task by model score matrix">
+          <table>
+            <thead id="head"></thead>
+            <tbody id="body"></tbody>
+          </table>
+        </section>
+      </section>
+
+      <section class="tab-page" data-tab="cost" hidden>
+        <div class="overview-grid">
+          <section class="panel cost-score-panel span-2" aria-labelledby="cost-score-title">
+            <div class="chart-heading">
+              <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
+              <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
+            </div>
+            <div id="cost-score" class="bar-chart"></div>
+            <p class="sub" id="cost-score-note"></p>
+          </section>
+          <section class="panel frontier-panel" aria-labelledby="frontier-title">
+            <h3 class="section-title" id="frontier-title">Cost-Performance Frontier</h3>
+            <p class="sub">At each sweep cost, the model no other beats for the same money or less.</p>
+            <table id="frontier" class="frontier"></table>
+            <p class="sub" id="frontier-note"></p>
+          </section>
+          <section class="panel marginal-panel" aria-labelledby="marginal-title">
+            <h3 class="section-title" id="marginal-title">Marginal Performance Cost</h3>
+            <p class="sub">What each step up the frontier buys, and what it costs per point.</p>
+            <table id="marginal" class="frontier"></table>
+          </section>
+          <section class="panel span-2 video-panel" aria-labelledby="video-title">
+            <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>
+            <div class="row video-knobs">
+              <label>Frame size <select id="video-res"><option value="640x360">640×360</option><option value="1280x720" selected>1280×720</option><option value="1920x1080">1920×1080</option></select></label>
+              <label>Frames per second <select id="video-fps"><option value="0.2">0.2</option><option value="0.5">0.5</option><option value="1" selected>1</option><option value="2">2</option><option value="5">5</option><option value="10">10</option></select></label>
+              <label>Frames per query <select id="video-frames"><option value="1">1</option><option value="4">4</option><option value="8" selected>8</option><option value="16">16</option><option value="32">32</option></select></label>
+            </div>
+            <table id="video-cost" class="frontier"></table>
+            <p class="sub" id="video-cost-note"></p>
+          </section>
+        </div>
+      </section>
+
     </main>
 
     <dialog id="inspector" aria-label="Evidence inspector">

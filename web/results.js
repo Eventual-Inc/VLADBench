@@ -958,15 +958,14 @@ function wireTabs() {
 }
 wireTabs();
 
-// Embed mode: ?embed=overview|results|score|matrix shows one panel with no chrome, for iframes in the blog.
-const EMBED_TABS = { overview: "overview", leaderboard: "overview", plot: "overview", frontier: "overview", video: "overview", results: "paper", score: "leaderboard", matrix: "matrix" };
+// Embed mode: ?embed=leaderboard|plot|frontier|video|results|score|matrix shows one panel with no chrome, for iframes in the blog.
+const EMBED_TABS = { overview: "cost", leaderboard: "leaderboard", plot: "cost", frontier: "cost", video: "cost", results: "overview", score: "leaderboard", matrix: "matrix" };
 const embed = new URLSearchParams(location.search).get("embed");
 if (embed === "full") document.body.classList.add("embed-full");   // whole tabbed page without the site header, for /blog/VLADBench
 if (embed && EMBED_TABS[embed]) {
   document.body.classList.add("embed", `embed-${embed}`);
   for (const page of document.querySelectorAll(".tab-page")) page.hidden = page.dataset.tab !== EMBED_TABS[embed];
-  const shared = document.getElementById("toolbar");
-  if (shared) shared.hidden = !["leaderboard", "matrix"].includes(EMBED_TABS[embed]);
+  for (const shared of document.querySelectorAll("[data-tabs]")) shared.hidden = !["score", "matrix"].includes(embed);
 }
 for (const [id, target] of [["article-link", window.VLADBENCH_ARTICLE], ["blog-link", window.VLADBENCH_BLOG]]) {
   const link = $(id);

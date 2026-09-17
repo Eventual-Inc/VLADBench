@@ -1214,8 +1214,8 @@ summary {
 .frontier .swatch { display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 2px; }
 .chip-frontier { margin-left: 6px; padding: 1px 6px; border: 1px solid var(--accent); border-radius: 999px; color: var(--accent); font-size: 9px; font-weight: 600; letter-spacing: 0.3px; vertical-align: middle; }
 
-.tab-page > .score-bars { max-height: none; }
-.tab-page > .score-bars .bar-chart { overflow-x: auto; }
+.tab-page > .score-bars, .overview-grid > .score-bars { max-height: none; }
+.tab-page > .score-bars .bar-chart, .overview-grid > .score-bars .bar-chart { overflow-x: auto; }
 .tab-page > .score-bars .bar-chart svg { width: 100%; min-width: 900px; height: auto; }
 
 .inline-check { margin-left: 10px; color: var(--muted); font-size: 11px; }
@@ -1297,7 +1297,7 @@ h1, h2, h3, .brand, .tabs [role="tab"] { font-family: "Helvetica Neue", Helvetic
 
 .frontier th, .frontier td { min-width: 0; }
 @media (max-width: 720px) {
-  .tabs [data-desktop], #toolbar, .tab-page[data-tab="leaderboard"], .tab-page[data-tab="matrix"] { display: none !important; }
+  .tabs [data-desktop], #toolbar, .tab-page[data-tab="matrix"], .score-bars { display: none !important; }
 }
 
 /* ---- embed mode (blog iframes) ---- */
@@ -1403,5 +1403,6 @@ body.embed .task-filter { display: none; }
 body.embed-leaderboard .overview-grid > .panel:not(.leaderboard),
 body.embed-plot .overview-grid > .panel:not(.cost-score-panel),
 body.embed-frontier .overview-grid > .panel:not(.frontier-panel):not(.marginal-panel),
-body.embed-video .overview-grid > .panel:not(.video-panel) { display: none; }
+body.embed-video .overview-grid > .panel:not(.video-panel),
+body.embed-score .overview-grid > .panel:not(.score-bars) { display: none; }
 body.embed .overview-grid { gap: 10px; }

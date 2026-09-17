@@ -489,17 +489,18 @@ function taskGroups(tasks) {
 }
 
 function smallMultiple(group, tasks) {
-  // One chart per task family: grouped vertical bars, fixed 0 to 100 axis, so charts compare across the grid.
-  const barWidth = 9, barGap = 1.5, groupPad = 16;
-  const groupWidth = MODELS.length * (barWidth + barGap) - barGap + groupPad;
-  const margin = { top: 14, right: 8, bottom: 62, left: 34 };
-  const plotHeight = 200;
-  // Families with one or two tasks get the width of three so every chart scales alike across the grid.
+  // One chart per task family. Every card shares the same drawing size, so charts render at the same height across
+  // the grid; families with more tasks get narrower bars rather than a shorter chart.
+  const width = 600, plotHeight = 200;
+  const margin = { top: 14, right: 8, bottom: 84, left: 34 };   // room for the longest rotated task label
   const slots = Math.max(tasks.length, 3);
-  const width = margin.left + slots * groupWidth + margin.right;
-  const offset = ((slots - tasks.length) * groupWidth) / 2;
+  const groupWidth = (width - margin.left - margin.right) / slots;
+  const groupPad = Math.min(16, groupWidth * 0.18);
+  const barGap = 1;
+  const barWidth = Math.max(2, (groupWidth - groupPad - barGap * (MODELS.length - 1)) / MODELS.length);
   const height = margin.top + plotHeight + margin.bottom;
   const y = (score) => margin.top + plotHeight * (1 - score / 100);
+  const offset = ((slots - tasks.length) * groupWidth) / 2;
   const root = svg("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": `${humanize(group)} task scores by model` });
   for (let score = 0; score <= 100; score += 25) {
     root.append(svg("line", { x1: margin.left, x2: width - margin.right, y1: y(score), y2: y(score), class: "chart-grid" }),

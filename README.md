@@ -94,7 +94,8 @@ Layout:
 
 - `src/vladbench/`: `dataset`, `spec`, `requests`, `video`, `run`, `scoring`, `cli`.
 - `results/`: everything about a condition in one place. `protocols/` holds the specification (one file is one condition),
-  `runs/` the raw per-question answers (gitignored), `scores-<model>.json` the scored summaries, `audit/` the pinned dataset
+  `runs/` the raw per-question answers (gitignored; `answers/<Task>.json` at the repo root carries every model's answer
+  and its per-question mark for the results page, built by `scripts/build_answers.py`), `scores-<model>.json` the scored summaries, `audit/` the pinned dataset
   metadata and the published Table 10 values, and `rerun.json` the compact record the results page reads.
 - `original/`: the paper's scoring code (its criteria, unchanged), task catalog, and README images, byte for byte, with hashes.
 - `results.html` (tabbed results: cost against score with the frontier and a video-cost calculator, the paper's Table 10 layout, score by task, task matrix), `task-review.html` (the older single-page companion) and `self-test.html` (take the benchmark yourself): static pages, `python3 -m http.server`. `scripts/export_parquet.py` writes the published parquet tables to `results/dataset/`; `scripts/publish_hf.py` pushes them to the Hugging Face dataset (`--with-space` also publishes the static site), sending only changed files; it needs `HF_TOKEN` in `.env`. `scripts/build_blog_embed.py` assembles the bundle the blog serves.

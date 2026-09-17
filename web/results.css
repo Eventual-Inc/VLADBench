@@ -997,7 +997,7 @@ th:first-child {
   padding: 10px 14px 12px;
 }
 
-.detail-row td {
+.detail-row > td {
   padding: 18px;
   background: #0e0e13 !important;
 }
@@ -1310,7 +1310,49 @@ body.embed-full header { display: none !important; }
 body.embed-full main { padding-top: 10px; }
 
 /* ---- expanded task row ---- */
-.task-detail.two-thirds { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(0, 2fr); gap: 20px; align-items: start; }
+.task-detail.two-thirds { display: grid; grid-template-columns: minmax(280px, 1fr) minmax(0, 2fr); gap: 20px; align-items: start; position: sticky; left: 0; }
+.detail-left { min-width: 0; }
+.detail-right { min-width: 0; }
+.clip { margin-bottom: 12px; }
+.clip-frame { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #000; border-radius: 8px; border: 1px solid var(--line); }
+.clip-controls { display: flex; align-items: center; gap: 10px; margin-top: 8px; }
+.clip-button { width: 32px; height: 26px; border: 1px solid var(--line); border-radius: 6px; background: transparent; color: var(--ink); font-size: 11px; cursor: pointer; }
+.clip-strip { flex: 1; display: flex; gap: 3px; }
+.clip-strip i { flex: 1; height: 10px; border-radius: 2px; background: var(--line); cursor: pointer; }
+.clip-strip i.on { background: var(--accent); }
+.detail-question { margin-top: 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+.detail-question b { display: block; font-size: 12px; color: var(--muted); }
+.detail-question p { margin: 6px 0 0; font-size: 12.5px; line-height: 1.5; }
+.detail-question .gold { color: var(--good); }
+.grid-bar { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.grid-pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.grid-pills .pill { padding: 4px 11px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink); font: inherit; font-size: 12px; cursor: pointer; }
+.grid-pills .pill.on { border-color: var(--accent); color: var(--accent); }
+.grid-sort { padding: 4px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--ink); font: inherit; font-size: 12px; }
+.grid-scroll { max-height: 640px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; }
+.answer-grid { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 12px; table-layout: fixed; }
+.answer-grid th, .answer-grid td { padding: 5px 6px; border-bottom: 1px solid var(--line); vertical-align: middle; text-align: left; }
+.answer-grid thead th { position: sticky; top: 0; z-index: 1; background: var(--panel); font-size: 11px; color: var(--muted); font-weight: 500; }
+.answer-grid thead th.model { white-space: normal; line-height: 1.25; vertical-align: bottom; }
+.answer-grid thead th.model .swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 5px; }
+.answer-grid th:nth-child(1), .answer-grid td.thumb { width: 56px; }
+.answer-grid th:nth-child(2), .answer-grid td.qtext { width: 220px; }
+.answer-grid th:nth-child(3), .answer-grid td.gold { width: 90px; }
+.answer-grid td.thumb img { display: block; width: 48px; height: 27px; object-fit: cover; border-radius: 3px; background: #000; }
+.answer-grid .ans-text { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.answer-grid td.qtext .sub { display: block; font-size: 10px; color: var(--muted); }
+.answer-grid td.gold { color: var(--good); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.answer-grid td.ans { border-left: 2px solid var(--bg); }
+.answer-grid td.ans.na { color: var(--muted); }
+.answer-grid td.ans.noformat .ans-text { text-decoration: underline dotted; text-underline-offset: 2px; }
+.answer-grid tbody tr { cursor: pointer; }
+.answer-grid tbody tr:hover td { filter: brightness(1.12); }
+.answer-grid tbody tr.current td.qtext { box-shadow: inset 3px 0 0 var(--accent); }
+.answer-grid tfoot th, .answer-grid tfoot td { position: sticky; height: 27px; box-sizing: border-box; background: var(--panel); border-top: 1px solid var(--line); border-bottom: 0; font-size: 11px; color: var(--muted); font-weight: 500; }
+.answer-grid tfoot tr.strong th, .answer-grid tfoot tr.strong td { color: var(--ink); font-weight: 700; }
+.answer-grid tfoot .num { text-align: right; font-variant-numeric: tabular-nums; }
+.grid-foot { margin-top: 8px; }
+.grid-foot p { margin: 6px 0 0; }
 .detail-meta h4 { margin: 0 0 4px; font: 700 16px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .detail-meta p { margin: 6px 0; font-size: 12.5px; line-height: 1.5; }
 .detail-scoring { margin-top: 12px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; }

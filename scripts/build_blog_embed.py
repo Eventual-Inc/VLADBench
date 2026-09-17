@@ -46,7 +46,8 @@ def build(out: Path = OUT) -> Path:
     (out / "embed.html").write_text(embed_html())
     (out / "site.html").write_text(site_html())
     shutil.copy(ROOT / "self-test.html", out / "self-test.html")   # linked from the results nav
-    shutil.copytree(ROOT / "web", out / "web")
+    shutil.copytree(ROOT / "web", out / "web", ignore=shutil.ignore_patterns("article-gsap.html"))   # the GSAP prototype stays local
+    shutil.copytree(ROOT / "answers", out / "answers")   # per-question answers and marks, one file per task, fetched on expand
     (out / "web/config.js").write_text('window.VLADBENCH_ARTICLE = "/blog/vladbench-reeval";\nwindow.VLADBENCH_BLOG = "/blog";\n')
     for name in DATA_SCRIPTS + ["task-review-data.js"]:
         shutil.copy(ROOT / name, out / name)

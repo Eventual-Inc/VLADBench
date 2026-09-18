@@ -1406,3 +1406,37 @@ body.embed-frontier .overview-grid > .panel:not(.frontier-panel):not(.marginal-p
 body.embed-video .overview-grid > .panel:not(.video-panel),
 body.embed-score .overview-grid > .panel:not(.score-bars) { display: none; }
 body.embed .overview-grid { gap: 10px; }
+
+/* ---- task wheel and radar (Overview) ---- */
+.wheel-panel { padding: 14px 16px; margin-bottom: 12px; }
+.wheel-panel .chart-heading { align-items: start; }
+.wheel-panel #wheel-note { max-width: 640px; }
+.wheel-controls { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.wheel-controls .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.wheel-controls .seg button { padding: 5px 12px; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }
+.wheel-controls .seg button + button { border-left: 1px solid var(--line); }
+.wheel-controls .seg button[aria-pressed="true"] { color: var(--ink); background: #1b1620; }
+.wheel { display: flex; justify-content: center; }
+.wheel svg { width: min(100%, 860px); height: auto; }
+.wheel-guide { fill: none; stroke: var(--line); stroke-width: 1; }
+.wheel-tick { fill: var(--muted); font-size: 10px; }
+.wheel-domain { fill: #1a1520; stroke: var(--bg); stroke-width: 2; }
+.wheel-domain.d0 { fill: #2a1b3a; } .wheel-domain.d1 { fill: #1d2a3a; } .wheel-domain.d2 { fill: #1b3330; } .wheel-domain.d3 { fill: #3a2a1b; } .wheel-domain.d4 { fill: #3a1b2c; }
+.wheel-group { fill: #17141c; stroke: var(--bg); stroke-width: 2; }
+.wheel-domain-label { fill: var(--ink); font-size: 10.5px; font-weight: 600; dominant-baseline: middle; letter-spacing: 0.02em; }
+.wheel-group-label { fill: var(--muted); font-size: 9.5px; dominant-baseline: middle; }
+.wheel-task-label { fill: var(--ink); font-size: 10px; dominant-baseline: middle; pointer-events: none; }
+.wheel-wedge { fill: transparent; stroke: var(--line); stroke-width: 0.6; cursor: pointer; }
+.wheel-wedge:hover { fill: #ffffff0c; }
+.wheel-bar { cursor: pointer; }
+.wheel-bar:hover, .wheel-bar:focus { stroke: var(--ink); stroke-width: 1; outline: none; }
+.wheel-center { fill: var(--ink); font-size: 16px; font-weight: 700; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.wheel-center.sub { fill: var(--muted); font-size: 11px; font-weight: 400; font-family: inherit; }
+.wheel-axis { stroke: var(--line); stroke-width: 1; }
+.wheel-axis-label { fill: var(--ink); font-size: 12px; }
+.wheel-axis-sub { fill: var(--muted); font-size: 10px; }
+.radar-shape { fill-opacity: 0.08; stroke-width: 2; }
+.radar-shape:hover { fill-opacity: 0.22; }
+.radar-dot { stroke: var(--bg); stroke-width: 1; }
+body.embed-wheel .panel:not(.wheel-panel) { display: none; }
+@media (max-width: 720px) { .wheel-controls { align-items: flex-start; } .wheel-panel .chart-heading { flex-direction: column; } }

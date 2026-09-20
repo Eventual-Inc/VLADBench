@@ -1474,13 +1474,13 @@ body.embed-whatif .overview-grid > .panel:not(.whatif-panel) { display: none; }
 .dist-views button + button { border-left: 1px solid var(--line); }
 .dist-views button[aria-pressed="true"] { color: var(--ink); background: #1b1620; }
 .dist-group { fill: var(--muted); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
-.dist-group.then { fill: #f4c46a; }
+.dist-group.then { fill: var(--muted); }
 .dist-group.now { fill: var(--ink); }
-.dist-band.then { fill: #f4c46a22; }
-.dist-dot.then { fill: #f4c46a; stroke: var(--bg); stroke-width: 1; }
-.dist-median.then { stroke: #f4c46a; }
-.dist-mean.then { fill: #000; stroke: #f4c46a; }
-.dist-num.then { fill: #f4c46a; }
+.dist-band.then { fill: #ffffff10; }
+.dist-dot.then { fill: #9a9a9a; fill-opacity: .55; stroke: none; }
+.dist-median.then { stroke: #9a9a9a; }
+.dist-mean.then { fill: #000; stroke: #9a9a9a; }
+.dist-num.then { fill: var(--muted); }
 .dist-num.up { fill: var(--good); }
 .dist-num.down { fill: #ff6b6b; }
 .dist-shift { stroke-width: 1.5; stroke-dasharray: 3 2; }

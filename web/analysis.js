@@ -63,8 +63,8 @@ function renderDistribution() {
   const view = analysis.view;   // both | 2026 | 2025
   const rows = sortedStats();
   const rowH = view === "both" ? 30 : 22, left = 210, plotW = 560, top = 30;
-  const groups = view === "both" ? [["2025", "2025"], ["2026", "2026"], ["shift", "Δ 2026−2025"]] : [[view, view]];
-  const colW = 46, groupGap = 14;
+  const groups = view === "both" ? [["shift", "Δ 2026 − 2025"]] : [[view, view]];
+  const colW = 52, groupGap = 14;
   const right = groups.length * (3 * colW + groupGap) + 20;
   const width = left + plotW + right, height = top + rows.length * rowH + 30;
   const x = (v) => left + (plotW * Math.max(0, Math.min(100, v))) / 100;
@@ -125,7 +125,7 @@ function renderDistribution() {
   for (const button of document.querySelectorAll("[data-dist-view]")) button.setAttribute("aria-pressed", String(button.dataset.distView === view));
   const note = $("distribution-note");
   const n25 = rows.find((r) => r.s25)?.s25.n || 0;
-  if (note) note.textContent = `2025: the ${n25} models in the paper's Table 10, amber. 2026: our ${featured().length} runs${MODELS.length > featured().length ? " without Reka Edge" : ""}, in model colours. Dots are models, the bar the median, the diamond the mean, the band one standard deviation either side; the connector joins the two means. Click a column header to sort, a task or dot to open it in Explore.`;
+  if (note) note.textContent = `Grey: the ${n25} models in the paper's Table 10 (2025). Colour: our ${featured().length} runs (2026)${MODELS.length > featured().length ? ", without Reka Edge" : ""}. Dots are models, the bar the median, the diamond the mean, the band one standard deviation either side; the connector joins the two means. Columns are the change in mean, median, and standard deviation from 2025 to 2026; click one to sort, a task or dot to open it in Explore. Hover a dot for its value.`;
 }
 
 // ---- 2. the bounding-box tasks under three readings -------------------------------------------------

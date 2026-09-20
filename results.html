@@ -14,7 +14,7 @@
     <script src="web/results.js?v=54" defer></script>
     <script src="web/wheel.js?v=1" defer></script>
     <script src="web/task-detail.js?v=3" defer></script>
-    <script src="web/analysis.js?v=9" defer></script>
+    <script src="web/analysis.js?v=10" defer></script>
   </head>
   <body>
     <header>
@@ -148,7 +148,7 @@
           </section>
           <section class="panel span-2 boxes-panel" aria-labelledby="boxes-title">
             <h3 class="section-title" id="boxes-title">With and without bounding boxes</h3>
-            <p class="sub">Three tasks ask for a bounding box, and the prompt gives no coordinate scale. The protocol scores every model in native pixels. OpenAI's models answer in pixels; Qwen, Muse, Gemma, MiniMax, and Reka answer on a 0 to 1000 grid, and Gemini answers y first on that grid. The paper's scorer rescaled boxes for Qwen, InternVL, and Gemini by name. Columns show TOTAL under the protocol, under the paper's rescale, and with the three tasks left out.</p>
+            <p class="sub">Three tasks ask the model to return a bounding box. The question does not say what units to use. We score every box as pixel coordinates. OpenAI's models answer in pixels. Qwen, Muse, Gemma, MiniMax, and Reka answer on a 0 to 1000 grid, and Gemini answers on that grid with y before x, so their boxes land in the wrong place and score near zero. The paper's own scorer rescaled boxes for Qwen, InternVL, and Gemini by model name. The chart shows each model's TOTAL three ways: as scored, with its boxes read on its own grid, and with the three box tasks removed.</p>
             <div id="box-variants" class="table-scroll"></div>
           </section>
           <section class="panel span-2 suspect-panel" aria-labelledby="suspect-title">

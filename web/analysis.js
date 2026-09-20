@@ -167,7 +167,7 @@ function renderBoxVariants() {
 // One row per model: TOTAL under the protocol (filled dot), under the paper's rescale (ring), and with the box
 // tasks left out (square). The line runs from the protocol value to the rescale value.
 function boxShiftChart(rows) {
-  const rowH = 30, left = 200, plotW = 620, top = 30, right = 200;
+  const rowH = 30, left = 200, plotW = 620, top = 30, right = 230;
   const width = left + plotW + right, height = top + rows.length * rowH + 34;
   const values = rows.flatMap(({ v }) => [v.total.pixels, v.total.grid, v.total.none]);
   const lo = Math.floor(Math.min(...values) / 5) * 5 - 5, hi = Math.ceil(Math.max(...values) / 5) * 5;
@@ -175,22 +175,22 @@ function boxShiftChart(rows) {
   const root = svg("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "TOTAL per model under three readings of the bounding-box tasks", class: "dist-svg" });
   for (let v = lo; v <= hi; v += 5) root.append(svg("line", { x1: x(v), x2: x(v), y1: top - 6, y2: height - 28, class: "chart-grid" }), svg("text", { x: x(v), y: height - 14, class: "chart-tick", "text-anchor": "middle" }, v));
   root.append(svg("text", { x: left, y: top - 12, class: "dist-group" }, "TOTAL"));
-  ["protocol", "paper's rescale", "Δ", "without boxes"].forEach((h, i) => root.append(svg("text", { x: left + plotW + 14 + i * 48, y: top - 10, class: "dist-head" }, h)));
+  ["as scored", "own grid", "Δ", "no box tasks"].forEach((h, i) => root.append(svg("text", { x: left + plotW + 14 + i * 48, y: top - 10, class: "dist-head" }, h)));
   rows.forEach(({ model, v }, i) => {
     const y = top + i * rowH + rowH / 2;
     root.append(svg("text", { x: left - 10, y: y + 4, class: "dist-label", "text-anchor": "end" }, model.label));
     root.append(svg("line", { x1: x(v.total.pixels), x2: x(v.total.grid), y1: y, y2: y, stroke: model.color, class: "box-link" }));
-    const none = svg("rect", { x: x(v.total.none) - 4, y: y - 4, width: 8, height: 8, class: "box-none" }); none.append(svg("title", {}, `${model.label} · without the box tasks · ${v.total.none.toFixed(1)}`));
-    const grid = svg("circle", { cx: x(v.total.grid), cy: y, r: 6, fill: "none", stroke: model.color, "stroke-width": 2, class: "box-grid" }); grid.append(svg("title", {}, `${model.label} · paper's rescale · ${v.total.grid.toFixed(1)}`));
-    const pix = svg("circle", { cx: x(v.total.pixels), cy: y, r: 5.5, fill: model.color, class: "box-pix" }); pix.append(svg("title", {}, `${model.label} · protocol, pixels · ${v.total.pixels.toFixed(1)}`));
+    const none = svg("rect", { x: x(v.total.none) - 4, y: y - 4, width: 8, height: 8, class: "box-none" }); none.append(svg("title", {}, `${model.label} · TOTAL with the three box tasks removed · ${v.total.none.toFixed(1)}`));
+    const grid = svg("circle", { cx: x(v.total.grid), cy: y, r: 6, fill: "none", stroke: model.color, "stroke-width": 2, class: "box-grid" }); grid.append(svg("title", {}, `${model.label} · TOTAL if its boxes are read on its own 0–1000 grid · ${v.total.grid.toFixed(1)}`));
+    const pix = svg("circle", { cx: x(v.total.pixels), cy: y, r: 5.5, fill: model.color, class: "box-pix" }); pix.append(svg("title", {}, `${model.label} · TOTAL as scored, boxes read as pixels · ${v.total.pixels.toFixed(1)}`));
     root.append(none, grid, pix);
     const d = v.total.grid - v.total.pixels;
     [v.total.pixels.toFixed(1), v.total.grid.toFixed(1), `${d >= 0 ? "+" : ""}${d.toFixed(1)}`, v.total.none.toFixed(1)].forEach((t, k) => root.append(svg("text", { x: left + plotW + 14 + k * 48, y: y + 4, class: `dist-num${k === 2 ? (d > 0.05 ? " up" : d < -0.05 ? " down" : "") : ""}` }, t)));
   });
   const ly = height - 2;
-  root.append(svg("circle", { cx: left + 6, cy: ly - 4, r: 5, fill: "#b0b0b0" }), svg("text", { x: left + 16, y: ly, class: "cutin-legend" }, "protocol: pixels for every model"),
-              svg("circle", { cx: left + 226, cy: ly - 4, r: 5, fill: "none", stroke: "#b0b0b0", "stroke-width": 2 }), svg("text", { x: left + 236, y: ly, class: "cutin-legend" }, "paper's rescale for grid models"),
-              svg("rect", { x: left + 436, y: ly - 8, width: 8, height: 8, class: "box-none" }), svg("text", { x: left + 450, y: ly, class: "cutin-legend" }, "box tasks left out"));
+  root.append(svg("circle", { cx: left + 6, cy: ly - 4, r: 5, fill: "#b0b0b0" }), svg("text", { x: left + 16, y: ly, class: "cutin-legend" }, "filled dot: TOTAL as scored, every box read as pixel coordinates"),
+              svg("circle", { cx: left + 336, cy: ly - 4, r: 5, fill: "none", stroke: "#b0b0b0", "stroke-width": 2 }), svg("text", { x: left + 346, y: ly, class: "cutin-legend" }, "ring: TOTAL if the model's boxes are read on its own 0–1000 grid"),
+              svg("rect", { x: left + 706, y: ly - 8, width: 8, height: 8, class: "box-none" }), svg("text", { x: left + 720, y: ly, class: "cutin-legend" }, "square: TOTAL with the three box tasks removed"));
   return root;
 }
 

@@ -1440,3 +1440,31 @@ body.embed .overview-grid { gap: 10px; }
 .radar-dot { stroke: var(--bg); stroke-width: 1; }
 body.embed-wheel .panel:not(.wheel-panel) { display: none; }
 @media (max-width: 720px) { .wheel-controls { align-items: flex-start; } .wheel-panel .chart-heading { flex-direction: column; } }
+
+/* ---- analysis tab ---- */
+.dist-svg { width: 100%; height: auto; }
+.dist-label { fill: var(--ink); font-size: 11px; cursor: pointer; }
+.dist-label:hover { fill: var(--accent); }
+.dist-head { fill: var(--muted); font-size: 10.5px; cursor: pointer; letter-spacing: .04em; text-transform: uppercase; }
+.dist-head.on, .dist-head:hover { fill: var(--accent); }
+.dist-num { fill: var(--ink); font-size: 11px; font-variant-numeric: tabular-nums; }
+.dist-band { fill: #ffffff14; }
+.dist-dot { stroke: var(--bg); stroke-width: 1; cursor: pointer; }
+.dist-dot:hover { stroke: var(--ink); }
+.dist-median { stroke: var(--ink); stroke-width: 2; }
+.dist-mean { fill: #000; stroke: var(--ink); stroke-width: 1; }
+.table-scroll { overflow-x: auto; }
+.variants th, .variants td { white-space: nowrap; }
+.whatif-bar { gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
+.whatif-table { margin-bottom: 14px; }
+.whatif-grid th:nth-child(1), .whatif-grid td:nth-child(1) { width: 40px; text-align: center; }
+.whatif-grid th:nth-child(2), .whatif-grid td.thumb { width: 56px; }
+.whatif-grid th:nth-child(3), .whatif-grid td.qtext { width: 260px; cursor: pointer; }
+.whatif-grid th:nth-child(4), .whatif-grid td.gold { width: 110px; }
+.whatif-grid tbody tr.excluded td { opacity: .45; }
+.whatif-grid tbody tr.excluded td:first-child { opacity: 1; }
+.whatif-grid tbody tr { cursor: default; }
+body.embed-distribution .overview-grid > .panel:not(.distribution-panel),
+body.embed-boxes .overview-grid > .panel:not(.boxes-panel),
+body.embed-whatif .overview-grid > .panel:not(.whatif-panel) { display: none; }
+@media (max-width: 720px) { .tab-page[data-tab="analysis"] { display: none !important; } }

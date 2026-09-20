@@ -938,6 +938,7 @@ function renderAll() {
   renderBarChart();
   renderMatrix();
   if (typeof renderWheel === "function") renderWheel();
+  if (typeof renderAnalysis === "function") renderAnalysis();
 }
 
 // Tabs: hash-addressable; phones (<=720px) only get the tabs not marked data-desktop.
@@ -960,7 +961,7 @@ function wireTabs() {
 wireTabs();
 
 // Embed mode: ?embed=leaderboard|plot|frontier|video|results|score|matrix shows one panel with no chrome, for iframes in the blog.
-const EMBED_TABS = { wheel: "overview", overview: "cost", leaderboard: "leaderboard", plot: "cost", frontier: "cost", video: "cost", results: "overview", score: "leaderboard", matrix: "matrix" };
+const EMBED_TABS = { distribution: "analysis", boxes: "analysis", whatif: "analysis", wheel: "overview", overview: "cost", leaderboard: "leaderboard", plot: "cost", frontier: "cost", video: "cost", results: "overview", score: "leaderboard", matrix: "matrix" };
 const embed = new URLSearchParams(location.search).get("embed");
 if (embed === "full") document.body.classList.add("embed-full");   // whole tabbed page without the site header, for /blog/VLADBench
 if (embed && EMBED_TABS[embed]) {

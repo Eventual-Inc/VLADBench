@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=35" />
+    <link rel="stylesheet" href="web/results.css?v=36" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
-    <script src="web/results.js?v=52" defer></script>
+    <script src="task-review-variants.js?v=2" defer></script>
+    <script src="web/results.js?v=53" defer></script>
     <script src="web/wheel.js?v=1" defer></script>
+    <script src="web/analysis.js?v=2" defer></script>
     <script src="web/task-detail.js?v=3" defer></script>
   </head>
   <body>
@@ -37,6 +39,7 @@
           <button role="tab" data-tab="leaderboard" aria-selected="false">Leaderboard</button>
           <button role="tab" data-tab="matrix" data-desktop aria-selected="false">Explore</button>
           <button role="tab" data-tab="cost" aria-selected="false">Cost Performance Frontier</button>
+          <button role="tab" data-tab="analysis" data-desktop aria-selected="false">Analysis</button>
         </div>
         <div class="model-filter" id="model-filter" aria-label="Models shown in every view"></div>
       </div>
@@ -125,6 +128,30 @@
             <tbody id="body"></tbody>
           </table>
         </section>
+      </section>
+
+      <section class="tab-page" data-tab="analysis" hidden>
+        <div class="overview-grid">
+          <section class="panel span-2 distribution-panel" aria-labelledby="distribution-title">
+            <div class="chart-heading">
+              <div>
+                <h3 class="section-title" id="distribution-title">Score distribution per task</h3>
+                <p class="sub" id="distribution-note"></p>
+              </div>
+            </div>
+            <div id="distribution" class="bar-chart"></div>
+          </section>
+          <section class="panel span-2 boxes-panel" aria-labelledby="boxes-title">
+            <h3 class="section-title" id="boxes-title">With and without bounding boxes</h3>
+            <p class="sub">Three tasks ask for a bounding box, and the prompt gives no coordinate scale. The protocol scores every model in native pixels. OpenAI's models answer in pixels; Qwen, Muse, Gemma, MiniMax, and Reka answer on a 0 to 1000 grid, and Gemini answers y first on that grid. The paper's scorer rescaled boxes for Qwen, InternVL, and Gemini by name. Columns show TOTAL under the protocol, under the paper's rescale, and with the three tasks left out.</p>
+            <div id="box-variants" class="table-scroll"></div>
+          </section>
+          <section class="panel span-2 whatif-panel" aria-labelledby="whatif-title">
+            <h3 class="section-title" id="whatif-title">What if a reference answer is wrong</h3>
+            <p class="sub">Leave out questions whose reference you doubt and see every model's task score and TOTAL recomputed from the per-question marks. Nothing here changes the published scores; the exclusion list lives in your browser and can be copied out.</p>
+            <div id="whatif"></div>
+          </section>
+        </div>
       </section>
 
       <section class="tab-page" data-tab="cost" hidden>

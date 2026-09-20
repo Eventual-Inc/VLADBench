@@ -14,7 +14,7 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist/blog/vladbench-reeval"
-DATA_SCRIPTS = ["task-review-tasks.js", "task-review-audit.js", "task-review-published.js", "task-review-results.js"]
+DATA_SCRIPTS = ["task-review-tasks.js", "task-review-audit.js", "task-review-published.js", "task-review-results.js", "task-review-variants.js"]
 FIGURES = ["results/dataset/cost-vs-score.png", "results/dataset/cost-vs-score-hero.png"]
 VIEWS = {
     "overview": ("Leaderboard, Cost vs Score, frontier tables, and the video cost calculator", 2500),

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=36" />
+    <link rel="stylesheet" href="web/results.css?v=38" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
@@ -13,8 +13,8 @@
     <script src="task-review-variants.js?v=2" defer></script>
     <script src="web/results.js?v=53" defer></script>
     <script src="web/wheel.js?v=1" defer></script>
-    <script src="web/analysis.js?v=2" defer></script>
     <script src="web/task-detail.js?v=3" defer></script>
+    <script src="web/analysis.js?v=7" defer></script>
   </head>
   <body>
     <header>
@@ -135,9 +135,14 @@
           <section class="panel span-2 distribution-panel" aria-labelledby="distribution-title">
             <div class="chart-heading">
               <div>
-                <h3 class="section-title" id="distribution-title">Score distribution per task</h3>
+                <h3 class="section-title" id="distribution-title">Score distribution per task, 2025 to 2026</h3>
                 <p class="sub" id="distribution-note"></p>
               </div>
+              <span class="seg dist-views" role="group" aria-label="Series shown">
+                <button type="button" data-dist-view="both" aria-pressed="true">Both years</button>
+                <button type="button" data-dist-view="2026" aria-pressed="false">2026 only</button>
+                <button type="button" data-dist-view="2025" aria-pressed="false">2025 only</button>
+              </span>
             </div>
             <div id="distribution" class="bar-chart"></div>
           </section>
@@ -145,6 +150,16 @@
             <h3 class="section-title" id="boxes-title">With and without bounding boxes</h3>
             <p class="sub">Three tasks ask for a bounding box, and the prompt gives no coordinate scale. The protocol scores every model in native pixels. OpenAI's models answer in pixels; Qwen, Muse, Gemma, MiniMax, and Reka answer on a 0 to 1000 grid, and Gemini answers y first on that grid. The paper's scorer rescaled boxes for Qwen, InternVL, and Gemini by name. Columns show TOTAL under the protocol, under the paper's rescale, and with the three tasks left out.</p>
             <div id="box-variants" class="table-scroll"></div>
+          </section>
+          <section class="panel span-2 suspect-panel" aria-labelledby="suspect-title">
+            <h3 class="section-title" id="suspect-title">Suspect reference answers</h3>
+            <p class="sub">Accuracy by reference answer. When every model fails the same reference, the reference deserves a look before the models do. The flagged tasks carry notes from our audit of the released annotations.</p>
+            <div id="suspect"></div>
+          </section>
+          <section class="panel span-2 cutin-panel" aria-labelledby="cutin-title">
+            <h3 class="section-title" id="cutin-title">One prompt change on Vehicle cut-in</h3>
+            <p class="sub">From our earlier cut-in survey, before this protocol: 260 shared questions, the same references and scorer, two wordings. The official question asks whether the vehicle has "the intention to cross the road". Asking instead whether it intends to cut in more than doubles the judgment accuracy of the Qwen models and Astra, and leaves Gemini where it was. These numbers come from a different runner and are not comparable to the leaderboard; the shift is the point.</p>
+            <div id="cutin-wording" class="bar-chart"></div>
           </section>
           <section class="panel span-2 whatif-panel" aria-labelledby="whatif-title">
             <h3 class="section-title" id="whatif-title">What if a reference answer is wrong</h3>

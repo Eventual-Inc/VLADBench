@@ -3,7 +3,7 @@
 // chips. Per-question recomputation uses answers/<Task>.json and mirrors vladbench.per_question.
 
 const VARIANTS = window.VARIANTS || { box_tasks: [], models: {} };
-const analysis = { sort: "mean", dir: 1, whatIfTask: null, excluded: loadExcluded(), whatIfData: null, whatIfFilter: "hardest" };
+const analysis = { sort: "shift.mean", dir: -1, view: "both", whatIfTask: null, excluded: loadExcluded(), whatIfData: null, whatIfFilter: "hardest" };
 
 function loadExcluded() {
   try { return JSON.parse(localStorage.getItem("vladbench-excluded") || "{}"); } catch { return {}; }
@@ -12,29 +12,46 @@ function saveExcluded() {
   try { localStorage.setItem("vladbench-excluded", JSON.stringify(analysis.excluded)); } catch { /* ignore */ }
 }
 
-// ---- 1. distribution per task ----------------------------------------------------------------------
+// ---- 1. distribution per task, 2025 paper models against our 2026 runs -------------------------------
 
 function featured() {
   return MODELS.filter((m) => m.featured !== false);
 }
 
+const PAPER_MODEL_LABEL = Object.fromEntries((PUBLISHED.models || []).map((m) => [m.id, `${m.abbreviation || m.label || m.id}${m.size_or_version ? " " + m.size_or_version : ""}`]));
+
+function stats(values) {
+  if (!values.length) return null;
+  const sorted = values.slice().sort((a, b) => a - b);
+  const mean = sorted.reduce((s, v) => s + v, 0) / sorted.length;
+  const median = sorted.length % 2 ? sorted[(sorted.length - 1) / 2] : (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2;
+  const sd = Math.sqrt(sorted.reduce((s, v) => s + (v - mean) ** 2, 0) / sorted.length);
+  return { mean, median, sd, min: sorted[0], max: sorted[sorted.length - 1], spread: sorted[sorted.length - 1] - sorted[0], n: sorted.length };
+}
+
 function taskStats() {
   return TASKS.map((task) => {
-    const points = featured().filter((m) => m.tasks[task.name]?.score != null).map((m) => ({ model: m, value: composite(m, task.name) }));
-    if (!points.length) return null;
-    const values = points.map((p) => p.value).sort((a, b) => a - b);
-    const mean = values.reduce((s, v) => s + v, 0) / values.length;
-    const median = values.length % 2 ? values[(values.length - 1) / 2] : (values[values.length / 2 - 1] + values[values.length / 2]) / 2;
-    const sd = Math.sqrt(values.reduce((s, v) => s + (v - mean) ** 2, 0) / values.length);
-    return { task, points, mean, median, sd, min: values[0], max: values[values.length - 1], spread: values[values.length - 1] - values[0] };
+    const now = featured().filter((m) => m.tasks[task.name]?.score != null).map((m) => ({ label: m.label, color: m.color, model: m, value: composite(m, task.name) }));
+    const row = PAPER_TASKS.find((r) => r.task === task.name);
+    const then = row ? Object.entries(row.scores).filter(([, v]) => v != null).map(([id, v]) => ({ label: PAPER_MODEL_LABEL[id] || id, value: v })) : [];
+    if (!now.length && !then.length) return null;
+    const s26 = stats(now.map((p) => p.value)), s25 = stats(then.map((p) => p.value));
+    const shift = s26 && s25 ? { mean: s26.mean - s25.mean, median: s26.median - s25.median, sd: s26.sd - s25.sd } : { mean: 0, median: 0, sd: 0 };
+    return { task, now, then, s26, s25, shift };
   }).filter(Boolean);
+}
+
+// Sort keys: "task", or "<series>.<stat>" with series 2025 | 2026 | shift.
+function sortValue(row, key) {
+  if (key === "task") return TASKS.indexOf(row.task);
+  const [series, stat] = key.split(".");
+  const source = series === "2025" ? row.s25 : series === "2026" ? row.s26 : row.shift;
+  return source ? source[stat] : -Infinity;
 }
 
 function sortedStats() {
   const rows = taskStats();
-  const key = analysis.sort;
-  if (key === "task") rows.sort((a, b) => TASKS.indexOf(a.task) - TASKS.indexOf(b.task));
-  else rows.sort((a, b) => a[key] - b[key]);
+  rows.sort((a, b) => sortValue(a, analysis.sort) - sortValue(b, analysis.sort));
   if (analysis.dir < 0) rows.reverse();
   return rows;
 }
@@ -43,46 +60,72 @@ function renderDistribution() {
   const host = $("distribution");
   if (!host) return;
   host.replaceChildren();
+  const view = analysis.view;   // both | 2026 | 2025
   const rows = sortedStats();
-  const rowH = 22, left = 210, right = 250, plotW = 620, top = 26;
+  const rowH = view === "both" ? 30 : 22, left = 210, plotW = 560, top = 30;
+  const groups = view === "both" ? [["2025", "2025"], ["2026", "2026"], ["shift", "Δ 2026−2025"]] : [[view, view]];
+  const colW = 46, groupGap = 14;
+  const right = groups.length * (3 * colW + groupGap) + 20;
   const width = left + plotW + right, height = top + rows.length * rowH + 30;
-  const x = (v) => left + (plotW * v) / 100;
-  const root = svg("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Score distribution per task across the models shown", class: "dist-svg" });
+  const x = (v) => left + (plotW * Math.max(0, Math.min(100, v))) / 100;
+  const root = svg("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Score distribution per task, 2025 paper models and 2026 runs", class: "dist-svg" });
   for (const v of [0, 25, 50, 75, 100]) {
     root.append(svg("line", { x1: x(v), x2: x(v), y1: top - 6, y2: height - 24, class: "chart-grid" }),
                 svg("text", { x: x(v), y: height - 8, class: "chart-tick", "text-anchor": "middle" }, v));
   }
-  // Column headers double as sort controls.
-  const columns = [["mean", "mean", 0], ["median", "median", 60], ["sd", "sd", 120], ["spread", "spread", 175]];
-  columns.forEach(([key, label, dx]) => {
+  const header = (key, label, px, py, cls = "") => {
     const active = analysis.sort === key;
-    const t = svg("text", { x: left + plotW + 16 + dx, y: top - 10, class: `dist-head${active ? " on" : ""}`, role: "button", tabindex: 0 }, `${label}${active ? (analysis.dir > 0 ? " ▲" : " ▼") : ""}`);
+    const t = svg("text", { x: px, y: py, class: `dist-head ${cls}${active ? " on" : ""}`, role: "button", tabindex: 0 }, `${label}${active ? (analysis.dir > 0 ? " ▲" : " ▼") : ""}`);
     t.onclick = () => { if (analysis.sort === key) analysis.dir *= -1; else { analysis.sort = key; analysis.dir = 1; } renderDistribution(); };
     root.append(t);
+  };
+  header("task", "task", 8, top - 12);
+  const colX = [];
+  groups.forEach(([series, title], gi) => {
+    const gx = left + plotW + 20 + gi * (3 * colW + groupGap);
+    root.append(svg("text", { x: gx, y: top - 22, class: `dist-group ${series === "2025" ? "then" : series === "2026" ? "now" : ""}` }, title));
+    ["mean", "median", "sd"].forEach((stat, si) => { header(`${series}.${stat}`, stat, gx + si * colW, top - 10); colX.push([series, stat, gx + si * colW]); });
   });
-  const byTask = svg("text", { x: 8, y: top - 10, class: `dist-head${analysis.sort === "task" ? " on" : ""}`, role: "button", tabindex: 0 }, `task${analysis.sort === "task" ? (analysis.dir > 0 ? " ▲" : " ▼") : ""}`);
-  byTask.onclick = () => { if (analysis.sort === "task") analysis.dir *= -1; else { analysis.sort = "task"; analysis.dir = 1; } renderDistribution(); };
-  root.append(byTask);
-
+  const diamond = (cx, cy, cls) => svg("path", { d: `M${cx},${cy - 5} L${cx + 5},${cy} L${cx},${cy + 5} L${cx - 5},${cy} Z`, class: cls });
   rows.forEach((row, i) => {
     const y = top + i * rowH + rowH / 2;
     const label = svg("text", { x: left - 10, y: y + 4, class: "dist-label", "text-anchor": "end", role: "button", tabindex: 0 }, humanize(row.task.name));
     label.onclick = () => { location.hash = "matrix"; selectTask(row.task); };
     root.append(label);
-    root.append(svg("rect", { x: x(Math.max(0, row.mean - row.sd)), y: y - 7, width: x(Math.min(100, row.mean + row.sd)) - x(Math.max(0, row.mean - row.sd)), height: 14, class: "dist-band" }));
-    row.points.forEach((p) => {
-      const dot = svg("circle", { cx: x(p.value), cy: y, r: 4.2, fill: p.model.color, class: "dist-dot", tabindex: 0, role: "button", "aria-label": `${p.model.label} ${percent(p.value, 1)}` });
-      dot.append(svg("title", {}, `${humanize(row.task.name)} · ${p.model.label} · ${percent(p.value, 1)}`));
-      dot.onclick = () => { location.hash = "matrix"; selectTask(row.task, p.model); };
-      root.append(dot);
+    const lanes = view === "both" ? { "2025": y - 7, "2026": y + 7 } : { [view]: y };
+    if (lanes["2025"] !== undefined && row.s25) {
+      const ly = lanes["2025"];
+      root.append(svg("rect", { x: x(row.s25.mean - row.s25.sd), y: ly - 5, width: x(row.s25.mean + row.s25.sd) - x(row.s25.mean - row.s25.sd), height: 10, class: "dist-band then" }));
+      row.then.forEach((p) => { const d = svg("circle", { cx: x(p.value), cy: ly, r: 3, class: "dist-dot then" }); d.append(svg("title", {}, `${humanize(row.task.name)} · 2025 · ${p.label} · ${percent(p.value, 1)}`)); root.append(d); });
+      root.append(svg("line", { x1: x(row.s25.median), x2: x(row.s25.median), y1: ly - 6, y2: ly + 6, class: "dist-median then" }), diamond(x(row.s25.mean), ly, "dist-mean then"));
+    }
+    if (lanes["2026"] !== undefined && row.s26) {
+      const ly = lanes["2026"];
+      root.append(svg("rect", { x: x(row.s26.mean - row.s26.sd), y: ly - 5, width: x(row.s26.mean + row.s26.sd) - x(row.s26.mean - row.s26.sd), height: 10, class: "dist-band" }));
+      row.now.forEach((p) => {
+        const d = svg("circle", { cx: x(p.value), cy: ly, r: 3.6, fill: p.color, class: "dist-dot", tabindex: 0, role: "button" });
+        d.append(svg("title", {}, `${humanize(row.task.name)} · 2026 · ${p.label} · ${percent(p.value, 1)}`));
+        d.onclick = () => { location.hash = "matrix"; selectTask(row.task, p.model); };
+        root.append(d);
+      });
+      root.append(svg("line", { x1: x(row.s26.median), x2: x(row.s26.median), y1: ly - 6, y2: ly + 6, class: "dist-median" }), diamond(x(row.s26.mean), ly, "dist-mean"));
+    }
+    if (view === "both" && row.s25 && row.s26) {
+      root.append(svg("line", { x1: x(row.s25.mean), x2: x(row.s26.mean), y1: y, y2: y, class: `dist-shift ${row.shift.mean >= 0 ? "up" : "down"}` }));
+    }
+    colX.forEach(([series, stat, px]) => {
+      const source = series === "2025" ? row.s25 : series === "2026" ? row.s26 : row.shift;
+      const v = source ? source[stat] : null;
+      const text = v == null ? "—" : series === "shift" ? `${v >= 0 ? "+" : ""}${v.toFixed(1)}` : v.toFixed(1);
+      const cls = series === "shift" ? (v > 0 ? "dist-num up" : v < 0 ? "dist-num down" : "dist-num") : series === "2025" ? "dist-num then" : "dist-num";
+      root.append(svg("text", { x: px, y: y + 4, class: cls }, text));
     });
-    root.append(svg("line", { x1: x(row.median), x2: x(row.median), y1: y - 8, y2: y + 8, class: "dist-median" }));
-    root.append(svg("path", { d: `M${x(row.mean)},${y - 5} L${x(row.mean) + 5},${y} L${x(row.mean)},${y + 5} L${x(row.mean) - 5},${y} Z`, class: "dist-mean" }));
-    columns.forEach(([key, , dx]) => root.append(svg("text", { x: left + plotW + 16 + dx, y: y + 4, class: "dist-num" }, row[key].toFixed(1))));
   });
   host.append(root);
+  for (const button of document.querySelectorAll("[data-dist-view]")) button.setAttribute("aria-pressed", String(button.dataset.distView === view));
   const note = $("distribution-note");
-  if (note) note.textContent = `${rows.length} tasks × ${featured().length} models${MODELS.length > featured().length ? " (Reka Edge left out, as in the leaderboard)" : ""}. Dots are models, the white bar the median, the diamond the mean, the band one standard deviation either side of the mean. Click a header to sort, a dot or a task to open it in Explore.`;
+  const n25 = rows.find((r) => r.s25)?.s25.n || 0;
+  if (note) note.textContent = `2025: the ${n25} models in the paper's Table 10, amber. 2026: our ${featured().length} runs${MODELS.length > featured().length ? " without Reka Edge" : ""}, in model colours. Dots are models, the bar the median, the diamond the mean, the band one standard deviation either side; the connector joins the two means. Click a column header to sort, a task or dot to open it in Explore.`;
 }
 
 // ---- 2. the bounding-box tasks under three readings -------------------------------------------------
@@ -267,7 +310,119 @@ function paintWhatIf(task, data, body) {
 function renderAnalysis() {
   renderDistribution();
   renderBoxVariants();
+  renderSuspect();
+  renderCutinWording();
   renderWhatIf();
+}
+
+for (const button of document.querySelectorAll("[data-dist-view]")) {
+  button.addEventListener("click", () => { analysis.view = button.dataset.distView; renderDistribution(); });
+}
+// renderAnalysis() is called at the very end of this file, after every constant it needs exists.
+
+
+// ---- 4. suspect references: accuracy by reference label ------------------------------------------
+
+// Tasks whose reference answers deserve a second look, with what the audit found.
+const SUSPECT_NOTES = {
+  Vehicle_Cutin: "172 of the 174 yes/no references are \"yes\". Answering \"yes\" to every question would score 99% on the judgment component; the models say yes between 7% and 39% of the time, and each model's judgment accuracy equals its yes rate. The question asks whether a vehicle has \"the intention to cross the road\", which reads as odd for a vehicle. See the wording review below.",
+  VRU_Cross: "88 of 92 yes/no references are \"yes\". The descriptive references mix \"jaywalking\" (40) with \"cross the crosswalk\" (27), so the same behaviour is labelled two ways depending on the clip.",
+  Light: "Seven clips carry the reference \"dawn&dusk\" next to 51 \"daytime\" and 42 \"nighttime\". The second question's lighting labels (\"backlit\", \"diffuse\", \"shadowed light\") are judgment calls that the frames do not always settle.",
+  Weather: "Five weather labels, with \"cloudy\" (7) and \"overcast\" (30) both present; the distinction is not one a single frame supports well.",
+  Long_Short_Parking: "The reason labels overlap: \"Parking\", \"Temporary parking\", and \"Waiting to start\" describe the same stopped vehicle at different moments.",
+};
+
+function renderSuspect() {
+  const host = $("suspect");
+  if (!host) return;
+  host.replaceChildren();
+  const bar = element("div", undefined, "row whatif-bar");
+  const select = element("select", undefined, "grid-sort");
+  const tasks = TASKS.filter((t) => MODELS.some((m) => m.tasks[t.name]?.score != null));
+  const suspects = tasks.filter((t) => SUSPECT_NOTES[t.name]), others = tasks.filter((t) => !SUSPECT_NOTES[t.name]);
+  const group = (label, list) => { const g = element("optgroup"); g.label = label; list.forEach((t) => { const o = element("option", humanize(t.name)); o.value = t.name; o.selected = analysis.suspectTask === t.name; g.append(o); }); select.append(g); };
+  group("Flagged in the audit", suspects); group("Every other task", others);
+  if (!analysis.suspectTask) analysis.suspectTask = suspects.find((t) => t.name === "Vehicle_Cutin")?.name || suspects[0]?.name || tasks[0]?.name;
+  select.value = analysis.suspectTask;
+  select.onchange = () => { analysis.suspectTask = select.value; renderSuspect(); };
+  bar.append(select);
+  host.append(bar);
+  const task = tasks.find((t) => t.name === analysis.suspectTask);
+  if (!task) return;
+  if (SUSPECT_NOTES[task.name]) host.append(element("p", SUSPECT_NOTES[task.name], "suspect-note"));
+  const body = element("div"); host.append(body);
+  body.append(element("p", "Loading answers…", "sub"));
+  loadAnswers(task).then((data) => paintSuspect(task, data, body)).catch(() => body.replaceChildren(element("p", "Per-question answers could not be loaded.", "sub")));
+}
+
+function paintSuspect(task, data, body) {
+  body.replaceChildren();
+  const models = featured().filter((m) => data.models.includes(m.id));
+  const groups = new Map();
+  for (const q of data.questions) {
+    const key = `${q.kind}::${goldText(q.gold)}`;
+    if (!groups.has(key)) groups.set(key, { kind: q.kind, gold: goldText(q.gold), questions: [] });
+    groups.get(key).questions.push(q);
+  }
+  const rows = [...groups.values()].filter((g) => g.kind !== "box").sort((a, b) => b.questions.length - a.questions.length);
+  const table = element("table", undefined, "frontier suspect-table");
+  const head = element("tr");
+  ["Reference answer", "Kind", "Questions", "Best model", ...models.map((m) => m.label)].forEach((h) => head.append(element("th", h)));
+  const thead = element("thead"); thead.append(head); table.append(thead);
+  const tb = element("tbody");
+  rows.forEach((g) => {
+    const tr = element("tr");
+    const acc = models.map((m) => { const marks = g.questions.map((q) => q.answers[m.id]?.[1]).filter((v) => v != null); return marks.length ? marks.reduce((s, v) => s + v, 0) / marks.length : null; });
+    const best = Math.max(...acc.filter((v) => v != null));
+    if (best === 0) tr.classList.add("nobody");
+    tr.append(element("td", g.gold, "gold"), element("td", g.kind), element("td", g.questions.length, "num"), element("td", best === 0 ? "nobody" : percent(100 * best, 0), "num"));
+    acc.forEach((v) => { const cell = element("td", v == null ? "—" : percent(100 * v, 0), "num"); if (v != null) { const { background, ink } = heatColor(100 * v); cell.style.background = background; cell.style.color = ink; } tr.append(cell); });
+    tr.onclick = () => { analysis.whatIfTask = task.name; analysis.whatIfFilter = "dataset"; renderWhatIf(); document.querySelector(".whatif-panel")?.scrollIntoView({ behavior: "smooth" }); };
+    tb.append(tr);
+  });
+  table.append(tb);
+  const dead = rows.filter((g) => models.every((m) => g.questions.every((q) => !q.answers[m.id]?.[1])));
+  const scroll = element("div", undefined, "table-scroll");
+  scroll.append(table);
+  body.append(element("p", `${rows.length} distinct reference answers${dead.length ? `; ${dead.length} that no model ever matched, marked in red` : ""}. Cells are each model's accuracy on the questions carrying that reference. Click a row to open the task in the what-if panel.`, "sub"), scroll);
+}
+
+// ---- 5. the cut-in wording review ----------------------------------------------------------------
+
+// From the earlier Vehicle Cut-in survey (VLADBench-cutin-survey, 260 shared questions, its own runner, before the
+// protocol). Official wording asks whether the vehicle has "the intention to cross the road"; the reworded run asks
+// whether it "intend[s] to cut in (enter or cross into the ego vehicle's path)". Same references, same scorer.
+const CUTIN_SURVEY = [
+  { model: "Qwen 3.6 35B A3B FP8", reasoning: "off", official: { score: 43.52, judgment: 31.6 }, reworded: { score: 71.10, judgment: 71.8 } },
+  { model: "Qwen 3.6 35B A3B", reasoning: "off", official: { score: 42.03, judgment: 29.3 }, reworded: { score: 66.56, judgment: 65.5 } },
+  { model: "GPT-6 Astra", reasoning: "low", official: { score: 40.66, judgment: 25.9 }, reworded: { score: 58.47, judgment: 52.3 } },
+  { model: "Gemini 3.8 Flash", reasoning: "on", official: { score: 33.15, judgment: 15.5 }, reworded: { score: 34.66, judgment: 18.4 } },
+];
+
+function renderCutinWording() {
+  const host = $("cutin-wording");
+  if (!host) return;
+  host.replaceChildren();
+  const width = 900, rowH = 44, left = 230, plotW = 560, top = 34;
+  const height = top + CUTIN_SURVEY.length * rowH + 52;
+  const x = (v) => left + (plotW * v) / 100;
+  const root = svg("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Vehicle cut-in judgment accuracy under the official and reworded prompts", class: "dist-svg" });
+  for (const v of [0, 25, 50, 75, 100]) root.append(svg("line", { x1: x(v), x2: x(v), y1: top - 6, y2: height - 46, class: "chart-grid" }), svg("text", { x: x(v), y: height - 32, class: "chart-tick", "text-anchor": "middle" }, v));
+  root.append(svg("text", { x: left, y: top - 14, class: "dist-group" }, "Judgment accuracy, % of yes/no questions right"));
+  root.append(svg("text", { x: left + plotW + 10, y: top - 14, class: "dist-group" }, "task score"));
+  CUTIN_SURVEY.forEach((r, i) => {
+    const y = top + i * rowH + rowH / 2;
+    root.append(svg("text", { x: left - 10, y: y - 2, class: "dist-label", "text-anchor": "end" }, r.model), svg("text", { x: left - 10, y: y + 12, class: "chart-tick", "text-anchor": "end" }, `reasoning ${r.reasoning}`));
+    root.append(svg("line", { x1: x(r.official.judgment), x2: x(r.reworded.judgment), y1: y, y2: y, class: "cutin-link" }));
+    const a = svg("circle", { cx: x(r.official.judgment), cy: y, r: 7, class: "cutin-dot official" }); a.append(svg("title", {}, `official wording · ${r.official.judgment}%`));
+    const b = svg("circle", { cx: x(r.reworded.judgment), cy: y, r: 7, class: "cutin-dot reworded" }); b.append(svg("title", {}, `reworded · ${r.reworded.judgment}%`));
+    root.append(a, b);
+    root.append(svg("text", { x: x(r.reworded.judgment) + 12, y: y + 4, class: "dist-num" }, `+${(r.reworded.judgment - r.official.judgment).toFixed(1)}`));
+    root.append(svg("text", { x: left + plotW + 10, y: y + 4, class: "dist-num" }, `${r.official.score.toFixed(1)} → ${r.reworded.score.toFixed(1)}`));
+  });
+  root.append(svg("circle", { cx: left, cy: height - 8, r: 5, class: "cutin-dot official" }), svg("text", { x: left + 10, y: height - 4, class: "cutin-legend", "text-anchor": "start" }, "official: \"the intention to cross the road\""),
+              svg("circle", { cx: left + 290, cy: height - 8, r: 5, class: "cutin-dot reworded" }), svg("text", { x: left + 300, y: height - 4, class: "cutin-legend", "text-anchor": "start" }, "reworded: \"intend to cut in (enter or cross into the ego vehicle's path)\""));
+  host.append(root);
 }
 
 renderAnalysis();

@@ -3,7 +3,8 @@
 // chips. Per-question recomputation uses answers/<Task>.json and mirrors vladbench.per_question.
 
 const VARIANTS = window.VARIANTS || { box_tasks: [], models: {} };
-const analysis = { sort: "shift.mean", dir: -1, view: "both", whatIfTask: null, excluded: loadExcluded(), whatIfData: null, whatIfFilter: "hardest" };
+const PRESET = new URLSearchParams(location.search);
+const analysis = { sort: PRESET.get("sort") || "shift.mean", dir: PRESET.get("dir") === "asc" ? 1 : -1, view: PRESET.get("view") || "both", suspectTask: PRESET.get("task") || null, whatIfTask: null, excluded: loadExcluded(), whatIfData: null, whatIfFilter: "hardest" };
 
 function loadExcluded() {
   try { return JSON.parse(localStorage.getItem("vladbench-excluded") || "{}"); } catch { return {}; }
@@ -260,6 +261,7 @@ function renderWhatIf() {
     picker.append(clear, copy);
   }
   host.append(picker);
+  if (!analysis.whatIfTask && PRESET.get("task") && !analysis.whatIfPreset) { analysis.whatIfPreset = true; analysis.whatIfTask = PRESET.get("task"); return renderWhatIf(); }
   if (!analysis.whatIfTask) { host.append(element("p", "Pick a task, tick the questions whose reference answer you doubt, and every model's task score and TOTAL are recomputed without them. Exclusions stay in this browser until cleared.", "sub")); return; }
   const task = TASKS.find((t) => t.name === analysis.whatIfTask);
   const body = element("div"); host.append(body);

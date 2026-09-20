@@ -96,7 +96,10 @@ function svg(tag, attributes = {}, text) {
   return node;
 }
 
-const humanize = (value) => String(value).replaceAll("_", " ");
+// Display names. The released dataset misspells three task keys; the keys stay as released so the scorer and the
+// data files match, and only the label is corrected.
+const SPELLING = { Bahavior: "Behavior", Obsturction: "Obstruction" };
+const humanize = (value) => Object.entries(SPELLING).reduce((text, [wrong, right]) => text.replaceAll(wrong, right), String(value).replaceAll("_", " "));
 const percent = (value, digits = 2) => `${Number(value).toFixed(digits)}%`;
 const money = (value) => (value === null || value === undefined ? "—" : `$${Number(value).toFixed(2)}`);
 const seconds = (value) => `${Number(value).toFixed(1)} s`;

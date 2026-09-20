@@ -1496,3 +1496,7 @@ body.embed-whatif .overview-grid > .panel:not(.whatif-panel) { display: none; }
 body.embed-suspect .overview-grid > .panel:not(.suspect-panel),
 body.embed-cutin .overview-grid > .panel:not(.cutin-panel) { display: none; }
 .cutin-legend { fill: var(--muted); font-size: 10.5px; }
+.box-link { stroke-width: 2.5; opacity: .8; }
+.box-none { fill: #8a8a8a; }
+.variants-details { margin-top: 10px; }
+.variants-details summary { cursor: pointer; color: var(--muted); font-size: 12px; }

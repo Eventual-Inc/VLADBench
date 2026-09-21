@@ -1520,3 +1520,25 @@ body.embed-cutin .overview-grid > .panel:not(.cutin-panel) { display: none; }
 .quad-cell.distrust .quad-chip:hover { border-color: #D85A30; }
 body.embed-quadrants .overview-grid > .panel:not(.quadrants-panel) { display: none; }
 @media (max-width: 900px) { .quad-grid { grid-template-columns: 1fr; grid-template-rows: none; } .quad-head { display: none; } .quad-side { align-items: flex-start; text-align: left; } }
+
+/* ---- front page canvas ---- */
+.hero-panel { padding: 14px 16px; margin-bottom: 12px; }
+.hero { width: 100%; }
+.hero-svg { width: 100%; height: auto; display: block; }
+.hero-tick { fill: var(--muted); font-size: 12px; }
+.hero-axis { fill: var(--muted); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+.hero-then { stroke: #8a8a8a; stroke-width: 1.5; opacity: .8; }
+.hero-then-label { fill: var(--muted); font-size: 11px; }
+.hero-frontier { fill: none; stroke: var(--accent); stroke-width: 2; stroke-dasharray: 6 4; }
+.hero-frontier-area { fill: var(--accent); fill-opacity: .04; }
+.hero-key-ring { fill: none; stroke: var(--line); stroke-width: 1; }
+.hero-key-axis { stroke: var(--line); stroke-width: 1; }
+.hero-key-label { fill: var(--muted); font-size: 11px; }
+.hero-glyph { cursor: pointer; }
+.hero-glyph-ring { fill: none; stroke: var(--line); stroke-width: .8; }
+.hero-glyph-shape { fill-opacity: .28; stroke-width: 1.8; stroke-linejoin: round; }
+.hero-glyph.on-frontier .hero-glyph-shape { fill-opacity: .45; }
+.hero-glyph:hover .hero-glyph-shape, .hero-glyph:focus .hero-glyph-shape { fill-opacity: .7; stroke-width: 2.5; }
+.hero-glyph:focus { outline: none; }
+.hero-label { fill: var(--ink); font-size: 12.5px; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+body.embed-hero .panel:not(.hero-panel) { display: none; }

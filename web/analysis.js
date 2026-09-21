@@ -461,3 +461,68 @@ function renderCutinWording() {
 }
 
 renderAnalysis();
+
+// ---- 6. the four quadrants: trust × saturation ---------------------------------------------------
+
+// Trust comes from the reference audit, not from the numbers; saturation is the field mean against a threshold.
+const SATURATION = 75;      // field mean at or above this counts as saturated
+const AGREEMENT = 2.5;      // or a standard deviation below this: every model lands within a few points
+const DISTRUST = {
+  Weather: "17% of questions miss for every model",
+  Light: "20% of questions miss for every model; best score fell since 2025",
+  Vehicle_Cutin: "172 of 174 references are \"yes\"",
+  VRU_Cross: "88 of 92 references are \"yes\"",
+  Vehicle_Bahavior: "exact-match descriptions",
+  VRU_Bahavior: "exact-match descriptions",
+  Long_Short_Parking: "overlapping reason labels",
+  VRU_Recognition: "box units differ by model",
+  Vehicle_Recognition: "box units differ by model",
+  Obstruction_Recognition: "box units differ by model",
+};
+const TRUST_NOTES = { Traffic_Light: "7 of 795 references not among the options", Sign_Sign_Relation: "19% miss for every model", Spatial_Temporal_Reasoning: "Astra 95, field 73", Risk_Prediction: "Gemma 52, the rest above 75" };
+const QUADRANT_COPY = {
+  "trust-saturated": ["Trusted · near saturation", "References hold up. Field mean at or above 75."],
+  "trust-headroom": ["Trusted · headroom", "References hold up. Field mean below 75."],
+  "distrust-saturated": ["Not trusted · near saturation", "References or grading fail. Models within a few points of each other."],
+  "distrust-headroom": ["Not trusted · headroom", "References or grading fail. Field mean below 75."],
+};
+
+function renderQuadrants() {
+  const host = $("quadrants");
+  if (!host) return;
+  host.replaceChildren();
+  const rows = taskStats().filter((r) => r.s26);
+  const cells = { "trust-saturated": [], "trust-headroom": [], "distrust-saturated": [], "distrust-headroom": [] };
+  for (const row of rows) {
+    const saturated = row.s26.mean >= SATURATION || row.s26.sd < AGREEMENT;
+    const key = `${DISTRUST[row.task.name] ? "distrust" : "trust"}-${saturated ? "saturated" : "headroom"}`;
+    cells[key].push(row);
+  }
+  const grid = element("div", undefined, "quad-grid");
+  grid.append(element("div"), element("div", `Near saturation · field mean ≥ ${SATURATION}, or sd < ${AGREEMENT}`, "quad-head"), element("div", `Headroom · field mean < ${SATURATION}`, "quad-head"));
+  [["trust", "Trusted", "audit found no reference or grading problem"], ["distrust", "Not trusted", "audit found a reference or grading problem"]].forEach(([trust, title, sub]) => {
+    const side = element("div", undefined, "quad-side"); side.append(element("b", title), element("span", sub));
+    grid.append(side);
+    ["saturated", "headroom"].forEach((sat) => {
+      const key = `${trust}-${sat}`;
+      const cell = element("div", undefined, `quad-cell ${trust}`);
+      const [h, p] = QUADRANT_COPY[key];
+      cell.append(element("h4", h), element("p", p, "sub"));
+      const chips = element("div", undefined, "quad-chips");
+      cells[key].sort((a, b) => b.s26.mean - a.s26.mean).forEach((row) => {
+        const chip = element("button", undefined, "quad-chip"); chip.type = "button";
+        const note = DISTRUST[row.task.name] || TRUST_NOTES[row.task.name];
+        chip.append(element("b", humanize(row.task.name)), element("span", `${row.s26.mean.toFixed(0)} · sd ${row.s26.sd.toFixed(0)}${note ? " · " + note : ""}`));
+        chip.title = `${humanize(row.task.name)}: field mean ${row.s26.mean.toFixed(1)}, sd ${row.s26.sd.toFixed(1)}, best ${row.s26.max.toFixed(1)}. Click to open in Explore.`;
+        chip.onclick = () => { location.hash = "matrix"; selectTask(row.task); };
+        chips.append(chip);
+      });
+      cell.append(chips);
+      grid.append(cell);
+    });
+  });
+  host.append(grid);
+}
+
+renderAnalysis = ((original) => function () { original(); renderQuadrants(); })(renderAnalysis);
+renderQuadrants();

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=40" />
+    <link rel="stylesheet" href="web/results.css?v=42" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
@@ -14,7 +14,7 @@
     <script src="web/results.js?v=54" defer></script>
     <script src="web/wheel.js?v=1" defer></script>
     <script src="web/task-detail.js?v=3" defer></script>
-    <script src="web/analysis.js?v=11" defer></script>
+    <script src="web/analysis.js?v=13" defer></script>
   </head>
   <body>
     <header>
@@ -145,6 +145,11 @@
               </span>
             </div>
             <div id="distribution" class="bar-chart"></div>
+          </section>
+          <section class="panel span-2 quadrants-panel" aria-labelledby="quadrants-title">
+            <h3 class="section-title" id="quadrants-title">Tasks by trust and saturation</h3>
+            <p class="sub">Rows: whether our audit of the released annotations found a reference or grading problem. Columns: whether the field mean is at or above 75, or every model lands within a few points. Each chip shows the field mean and standard deviation across the models shown, and the audit note where there is one. Click a task to open it in Explore.</p>
+            <div id="quadrants"></div>
           </section>
           <section class="panel span-2 boxes-panel" aria-labelledby="boxes-title">
             <h3 class="section-title" id="boxes-title">With and without bounding boxes</h3>

@@ -1468,7 +1468,7 @@ body.embed-wheel .panel:not(.wheel-panel) { display: none; }
 body.embed-distribution .overview-grid > .panel:not(.distribution-panel),
 body.embed-boxes .overview-grid > .panel:not(.boxes-panel),
 body.embed-whatif .overview-grid > .panel:not(.whatif-panel) { display: none; }
-@media (max-width: 720px) { body:not(.embed) .tab-page[data-tab="analysis"] { display: none !important; } }
+@media (max-width: 720px) { body:not(.embed) .tab-page[data-tab="analysis"], body:not(.embed) .tab-page[data-tab="caveats"] { display: none !important; } }
 
 .dist-views { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; align-self: start; }
 .dist-views button { padding: 5px 12px; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 12px; cursor: pointer; }

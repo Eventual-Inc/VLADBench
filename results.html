@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=44" />
+    <link rel="stylesheet" href="web/results.css?v=45" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
     <script src="task-review-variants.js?v=2" defer></script>
-    <script src="web/results.js?v=56" defer></script>
+    <script src="web/results.js?v=57" defer></script>
     <script src="web/wheel.js?v=1" defer></script>
     <script src="web/task-detail.js?v=3" defer></script>
     <script src="web/analysis.js?v=13" defer></script>
@@ -39,6 +39,7 @@
           <button role="tab" data-tab="leaderboard" aria-selected="false">Leaderboard</button>
           <button role="tab" data-tab="matrix" data-desktop aria-selected="false">Explore</button>
           <button role="tab" data-tab="cost" aria-selected="false">Cost Performance Frontier</button>
+          <button role="tab" data-tab="caveats" data-desktop aria-selected="false">Caveats</button>
           <button role="tab" data-tab="analysis" data-desktop aria-selected="false">Analysis</button>
         </div>
         <div class="model-filter" id="model-filter" aria-label="Models shown in every view"></div>
@@ -130,22 +131,8 @@
         </section>
       </section>
 
-      <section class="tab-page" data-tab="analysis" hidden>
+      <section class="tab-page" data-tab="caveats" hidden>
         <div class="overview-grid">
-          <section class="panel span-2 distribution-panel" aria-labelledby="distribution-title">
-            <div class="chart-heading">
-              <div>
-                <h3 class="section-title" id="distribution-title">Score distribution per task, 2025 to 2026</h3>
-                <p class="sub" id="distribution-note"></p>
-              </div>
-              <span class="seg dist-views" role="group" aria-label="Series shown">
-                <button type="button" data-dist-view="both" aria-pressed="true">Both years</button>
-                <button type="button" data-dist-view="2026" aria-pressed="false">2026 only</button>
-                <button type="button" data-dist-view="2025" aria-pressed="false">2025 only</button>
-              </span>
-            </div>
-            <div id="distribution" class="bar-chart"></div>
-          </section>
           <section class="panel span-2 quadrants-panel" aria-labelledby="quadrants-title">
             <h3 class="section-title" id="quadrants-title">Tasks by trust and saturation</h3>
             <p class="sub">Rows: whether our audit of the released annotations found a reference or grading problem. Columns: whether the field mean is at or above 75, or every model lands within a few points. Each chip shows the field mean and standard deviation across the models shown, and the audit note where there is one. Click a task to open it in Explore.</p>
@@ -165,6 +152,25 @@
             <h3 class="section-title" id="cutin-title">One prompt change on Vehicle cut-in</h3>
             <p class="sub">From our earlier cut-in survey, before this protocol: 260 shared questions, the same references and scorer, two wordings. The official question asks whether the vehicle has "the intention to cross the road". Asking instead whether it intends to cut in more than doubles the judgment accuracy of the Qwen models and Astra, and leaves Gemini where it was. These numbers come from a different runner and are not comparable to the leaderboard; the shift is the point.</p>
             <div id="cutin-wording" class="bar-chart"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="tab-page" data-tab="analysis" hidden>
+        <div class="overview-grid">
+          <section class="panel span-2 distribution-panel" aria-labelledby="distribution-title">
+            <div class="chart-heading">
+              <div>
+                <h3 class="section-title" id="distribution-title">Score distribution per task, 2025 to 2026</h3>
+                <p class="sub" id="distribution-note"></p>
+              </div>
+              <span class="seg dist-views" role="group" aria-label="Series shown">
+                <button type="button" data-dist-view="both" aria-pressed="true">Both years</button>
+                <button type="button" data-dist-view="2026" aria-pressed="false">2026 only</button>
+                <button type="button" data-dist-view="2025" aria-pressed="false">2025 only</button>
+              </span>
+            </div>
+            <div id="distribution" class="bar-chart"></div>
           </section>
           <section class="panel span-2 whatif-panel" aria-labelledby="whatif-title">
             <h3 class="section-title" id="whatif-title">What if a reference answer is wrong</h3>

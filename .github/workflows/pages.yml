@@ -1,0 +1,51 @@
+# Publish the results companion as a static site at https://eventual-inc.github.io/VLADBench/
+# Enable once in the repository: Settings -> Pages -> Source: GitHub Actions.
+name: pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "results.html"
+      - "self-test.html"
+      - "web/**"
+      - "answers/**"
+      - "task-review-*.js"
+      - "results/dataset/*.png"
+      - "scripts/build_blog_embed.py"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the standalone site
+        run: PYTHONPATH=src python3 scripts/build_blog_embed.py --pages dist/pages
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -2,6 +2,7 @@
 
   PYTHONPATH=src python3 scripts/build_blog_embed.py                       # writes dist/blog/vladbench-reeval/
   PYTHONPATH=src python3 scripts/build_blog_embed.py --into <blog>/content/daft/assets   # and copies it there
+  PYTHONPATH=src python3 scripts/build_blog_embed.py --pages dist/pages                  # standalone site for GitHub Pages
 
 The bundle holds site.html (the whole results page), embed.html (the same page in ?embed= mode, loading the slim
 task list instead of the 16 MB question file), the web/ assets, the data scripts, and the figures. It prints the
@@ -39,16 +40,17 @@ def site_html() -> str:
     return (ROOT / "results.html").read_text()
 
 
-def build(out: Path = OUT) -> Path:
+def build(out: Path = OUT, *, pages: bool = False, article: str = "/blog/vladbench-reeval", blog: str = "/blog") -> Path:
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
     (out / "embed.html").write_text(embed_html())
-    (out / "site.html").write_text(site_html())
+    # As a standalone site the whole page is the index; inside the blog it is one file among the assets.
+    (out / ("index.html" if pages else "site.html")).write_text(site_html())
     shutil.copy(ROOT / "self-test.html", out / "self-test.html")   # linked from the results nav
     shutil.copytree(ROOT / "web", out / "web", ignore=shutil.ignore_patterns("article-gsap.html"))   # the GSAP prototype stays local
     shutil.copytree(ROOT / "answers", out / "answers")   # per-question answers and marks, one file per task, fetched on expand
-    (out / "web/config.js").write_text('window.VLADBENCH_ARTICLE = "/blog/vladbench-reeval";\nwindow.VLADBENCH_BLOG = "/blog";\n')
+    (out / "web/config.js").write_text(f'window.VLADBENCH_ARTICLE = "{article}";\nwindow.VLADBENCH_BLOG = "{blog}";\n')
     for name in DATA_SCRIPTS + ["task-review-data.js"]:
         shutil.copy(ROOT / name, out / name)
     for figure in FIGURES:
@@ -71,8 +73,14 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--into", type=Path, help="blog assets directory; the bundle lands in <into>/vladbench-reeval/")
     parser.add_argument("--base", default="/blog/assets/vladbench-reeval", help="URL path the blog serves the folder at")
+    parser.add_argument("--pages", type=Path, help="also write a standalone GitHub Pages site here (index.html, absolute blog links)")
+    parser.add_argument("--article", default="https://www.eventual.ai/blog/vladbench-reeval", help="article URL the Pages nav links to")
+    parser.add_argument("--blog", default="https://www.eventual.ai/blog", help="blog URL the Pages nav links to")
     args = parser.parse_args()
     out = build()
+    if args.pages:
+        site = build(args.pages, pages=True, article=args.article, blog=args.blog)
+        print(f"Pages site: {site} ({sum(f.stat().st_size for f in site.rglob('*') if f.is_file()) / 1e6:.1f} MB)")
     if args.into:
         target = args.into / "vladbench-reeval"
         if target.exists():

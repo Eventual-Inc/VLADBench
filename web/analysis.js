@@ -4,7 +4,7 @@
 
 const VARIANTS = window.VARIANTS || { box_tasks: [], models: {} };
 const PRESET = new URLSearchParams(location.search);
-const analysis = { sort: PRESET.get("sort") || "shift.mean", dir: PRESET.get("dir") === "asc" ? 1 : -1, view: PRESET.get("view") || "both", suspectTask: PRESET.get("task") || null, whatIfTask: null, excluded: loadExcluded(), whatIfData: null, whatIfFilter: "hardest" };
+const analysis = { grouping: PRESET.get("group") || "none", domain: PRESET.get("domain") || "", sort: PRESET.get("sort") || "shift.mean", dir: PRESET.get("dir") === "asc" ? 1 : -1, view: PRESET.get("view") || "both", suspectTask: PRESET.get("task") || null, whatIfTask: null, excluded: loadExcluded(), whatIfData: null, whatIfFilter: "hardest" };
 
 function loadExcluded() {
   try { return JSON.parse(localStorage.getItem("vladbench-excluded") || "{}"); } catch { return {}; }
@@ -51,10 +51,40 @@ function sortValue(row, key) {
 }
 
 function sortedStats() {
-  const rows = taskStats();
+  const rows = taskStats().filter((row) => !analysis.domain || row.task.category === analysis.domain);
   rows.sort((a, b) => sortValue(a, analysis.sort) - sortValue(b, analysis.sort));
   if (analysis.dir < 0) rows.reverse();
+  if (analysis.grouping !== "none") {
+    const key = (task) => analysis.grouping === "family" ? `${task.category}::${task.group}` : task.category;
+    const order = [...new Set(TASKS.map(key))];
+    rows.sort((a, b) => order.indexOf(key(a.task)) - order.indexOf(key(b.task)));
+  }
   return rows;
+}
+
+function buildDistributionControls() {
+  const host = $("distribution-controls");
+  if (!host) return;
+  const addSelect = (label, field, options) => {
+    const wrapper = element("label", `${label} `);
+    const select = element("select", undefined, "grid-sort");
+    select.id = `distribution-${field}`;
+    options.forEach(([value, title]) => {
+      const option = element("option", title); option.value = value; select.append(option);
+    });
+    if (!options.some(([value]) => value === analysis[field])) analysis[field] = options[0][0];
+    select.value = analysis[field];
+    select.onchange = () => {
+      analysis[field] = select.value;
+      const url = new URL(location.href);
+      url.searchParams.set(field === "grouping" ? "group" : field, select.value);
+      history.replaceState(null, "", url);
+      renderDistribution();
+    };
+    wrapper.append(select); host.append(wrapper);
+  };
+  addSelect("Group tasks by", "grouping", [["domain", "Domain"], ["family", "Domain + task family"], ["none", "No grouping"]]);
+  addSelect("Show", "domain", [["", "All domains"], ...[...new Set(TASKS.map((t) => t.category))].map((c) => [c, humanize(c)])]);
 }
 
 function renderDistribution() {
@@ -62,12 +92,27 @@ function renderDistribution() {
   if (!host) return;
   host.replaceChildren();
   const view = analysis.view;   // both | 2026 | 2025
+  // Keep the selected statistic and direction when changing the visible series.
+  if (analysis.sort !== "task") {
+    const stat = analysis.sort.split(".")[1];
+    analysis.sort = `${view === "both" ? "shift" : view}.${stat}`;
+  }
   const rows = sortedStats();
   const rowH = view === "both" ? 30 : 22, left = 210, plotW = 560, top = 30;
   const groups = view === "both" ? [["shift", "Δ 2026 − 2025"]] : [[view, view]];
   const colW = 52, groupGap = 14;
   const right = groups.length * (3 * colW + groupGap) + 20;
-  const width = left + plotW + right, height = top + rows.length * rowH + 30;
+  let cursor = top, previousGroup = null;
+  const headings = [];
+  const positions = rows.map((row) => {
+    const key = analysis.grouping === "family" ? `${row.task.category}::${row.task.group}` : row.task.category;
+    if (analysis.grouping !== "none" && key !== previousGroup) {
+      const label = analysis.grouping === "family" ? `${humanize(row.task.category)} · ${humanize(row.task.group)}` : humanize(row.task.category);
+      headings.push({ y: cursor + 18, label }); cursor += 32; previousGroup = key;
+    }
+    const y = cursor + rowH / 2; cursor += rowH; return y;
+  });
+  const width = left + plotW + right, height = cursor + 30;
   const x = (v) => left + (plotW * Math.max(0, Math.min(100, v))) / 100;
   const root = svg("svg", { viewBox: `0 0 ${width} ${height}`, role: "img", "aria-label": "Score distribution per task, 2025 paper models and 2026 runs", class: "dist-svg" });
   for (const v of [0, 25, 50, 75, 100]) {
@@ -87,10 +132,15 @@ function renderDistribution() {
     root.append(svg("text", { x: gx, y: top - 22, class: `dist-group ${series === "2025" ? "then" : series === "2026" ? "now" : ""}` }, title));
     ["mean", "median", "sd"].forEach((stat, si) => { header(`${series}.${stat}`, stat, gx + si * colW, top - 10); colX.push([series, stat, gx + si * colW]); });
   });
+  headings.forEach(({ y, label }) => {
+    root.append(svg("rect", { x: 0, y: y - 17, width, height: 28, class: "dist-domain-band" }),
+      svg("text", { x: 8, y, class: "dist-domain-heading" }, label));
+  });
   const diamond = (cx, cy, cls) => svg("path", { d: `M${cx},${cy - 5} L${cx + 5},${cy} L${cx},${cy + 5} L${cx - 5},${cy} Z`, class: cls });
   rows.forEach((row, i) => {
-    const y = top + i * rowH + rowH / 2;
+    const y = positions[i];
     const label = svg("text", { x: left - 10, y: y + 4, class: "dist-label", "text-anchor": "end", role: "button", tabindex: 0 }, humanize(row.task.name));
+    label.append(svg("title", {}, `${humanize(row.task.name)} · ${humanize(row.task.category)} · ${humanize(row.task.group)}`));
     label.onclick = () => { location.hash = "matrix"; selectTask(row.task); };
     root.append(label);
     const lanes = view === "both" ? { "2025": y - 7, "2026": y + 7 } : { [view]: y };
@@ -126,7 +176,7 @@ function renderDistribution() {
   for (const button of document.querySelectorAll("[data-dist-view]")) button.setAttribute("aria-pressed", String(button.dataset.distView === view));
   const note = $("distribution-note");
   const n25 = rows.find((r) => r.s25)?.s25.n || 0;
-  if (note) note.textContent = `Grey: the ${n25} models in the paper's Table 10 (2025). Colour: our ${featured().length} runs (2026)${MODELS.length > featured().length ? ", without Reka Edge" : ""}. Dots are models, the bar the median, the diamond the mean, the band one standard deviation either side; the connector joins the two means. Columns are the change in mean, median, and standard deviation from 2025 to 2026; click one to sort, a task or dot to open it in Explore. Hover a dot for its value.`;
+  if (note) note.textContent = `Grey: the ${n25} models in the paper's Table 10 (2025). Colour: our ${featured().length} runs (2026)${MODELS.length > featured().length ? ", without Reka Edge" : ""}. Dots are models, the bar the median, the diamond the mean, the band one standard deviation either side; the connector joins the two means. ${view === "both" ? "Columns are the change in mean, median, and standard deviation from 2025 to 2026" : `Columns are the ${view} mean, median, and standard deviation`}; click one to sort, a task or dot to open it in Explore. Hover a dot for its value. ${analysis.grouping === "none" ? "Tasks sort across all domains." : "Tasks sort within each group."} Year-to-year differences are descriptive: model cohorts and evaluation conditions differ.`;
 }
 
 // ---- 2. the bounding-box tasks under three readings -------------------------------------------------
@@ -460,6 +510,7 @@ function renderCutinWording() {
   host.append(root);
 }
 
+buildDistributionControls();
 renderAnalysis();
 
 // ---- 6. the four quadrants: trust × saturation ---------------------------------------------------

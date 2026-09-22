@@ -1343,3 +1343,9 @@ body.embed-cutin .overview-grid > .panel:not(.cutin-panel) { display: none; }
 .quad-cell.distrust .quad-chip:hover { border-color: #D85A30; }
 body.embed-quadrants .overview-grid > .panel:not(.quadrants-panel) { display: none; }
 @media (max-width: 900px) { .quad-grid { grid-template-columns: 1fr; grid-template-rows: none; } .quad-head { display: none; } .quad-side { align-items: flex-start; text-align: left; } }
+
+/* Capability grouping in the analysis distribution. */
+.distribution-controls { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 12px 0 18px; }
+.distribution-controls label { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 8px; }
+.dist-domain-band { fill: var(--bg); }
+.dist-domain-heading { fill: var(--ink); font-size: 12px; font-weight: 600; }

@@ -17,13 +17,15 @@ frame sequence, and whether their reasoning can be switched off.
 
 ## What they do not support
 
-- Comparison with the paper's Table 10. Different inference stack, different
-  image handling, unobserved provider preprocessing.
+- Treating a gap to the paper's Table 10 as model progress alone. The 2025 and
+  2026 numbers come from different model sets, inference stacks, and image
+  handling, with unobserved provider preprocessing.
 - Attributing a gap to model quality alone. Some models reason at their lowest
   available level, others have reasoning off; Qwen Max and the OpenAI models
   see frames as separate images, the others see a video.
-- A single benchmark TOTAL. The paper's weighting is not reproduced; task means
-  in the companion are descriptive only.
+- Reading TOTAL as more than the question-weighted mean of the 28 task
+  composites. That weighting reproduces 241 of the paper's 250 group averages
+  within 0.1; the paper does not state it.
 - Anything about a model whose run is not `protocol_complete` in its score
   file, beyond the footnoted numbers.
 

@@ -25,6 +25,7 @@ VIEWS = {
     "video": ("Metered cost of video question answering, with knobs", 620),
     "results": ("Our results in the paper's Table 10 layout, above the paper's own table", 2200),
     "score": ("Score by task, one bar per model", 900),
+    "distribution": ("Task-score distributions, 2025 paper models and 2026 runs", 1600),
     "matrix": ("Task by model matrix with scorer components", 1600),
 }
 
@@ -47,6 +48,8 @@ def build(out: Path = OUT, *, pages: bool = False, article: str = "/blog/vladben
     (out / "embed.html").write_text(embed_html())
     # As a standalone site the whole page is the index; inside the blog it is one file among the assets.
     (out / ("index.html" if pages else "site.html")).write_text(site_html())
+    if pages:
+        (out / "results.html").write_text(site_html())   # the nav and self-test.html link here
     shutil.copy(ROOT / "self-test.html", out / "self-test.html")   # linked from the results nav
     shutil.copytree(ROOT / "web", out / "web")   # the page's scripts and stylesheet
     shutil.copytree(ROOT / "answers", out / "answers")   # per-question answers and marks, one file per task, fetched on expand

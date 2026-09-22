@@ -106,7 +106,7 @@ class BuildTests(unittest.TestCase):
 class SpecTests(unittest.TestCase):
     def test_live_spec_loads(self):
         self.assertEqual(SPEC["protocol"]["max_tokens"], 8192)
-        self.assertEqual(len(SPEC["models"]), 12)
+        self.assertEqual(len(SPEC["models"]), 15)
 
     def test_undeclared_deviations_are_rejected(self):
         cases = {

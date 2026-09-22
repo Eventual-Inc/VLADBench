@@ -5,9 +5,9 @@ pip install -e .            # numpy, pillow, python-dotenv; ffmpeg must be on PA
 cp .env.example .env        # OPENROUTER_API_KEY; HF_TOKEN to publish
 
 vladbench validate results/protocols/full-original.json
-vladbench run results/protocols/full-original.json --smoke --models inkling qwen38max   # first question of every task (billable)
-vladbench run results/protocols/full-original.json --models inkling                     # everything unanswered (billable)
-vladbench score results/protocols/full-original.json --models inkling                   # writes results/scores-inkling.json
+vladbench run results/protocols/full-original.json --smoke --models gemini38 qwen38max  # first question of every task (billable)
+vladbench run results/protocols/full-original.json --models gemini38                    # everything unanswered (billable)
+vladbench score results/protocols/full-original.json --models gemini38                  # writes results/scores-gemini38.json
 python3 scripts/build_review_results.py                                                  # rebuilds results/ and the companion assets
 PYTHONPATH=src python3 scripts/export_parquet.py                                 # writes results/dataset/*.parquet for publishing
 PYTHONPATH=src python3 scripts/publish_hf.py [--dry-run]                         # dataset card + Space build; uploads with HF_TOKEN

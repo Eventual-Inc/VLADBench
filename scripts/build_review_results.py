@@ -12,17 +12,20 @@ RESULTS_PATH = ROOT / "results/rerun.json"
 RESULTS = ROOT / "results"
 SPECIFICATION = ROOT / "results/protocols/full-original.json"
 LABELS = {"gemini38": "Gemini 3.8 Flash", "qwen38max": "Qwen 3.8 Max",
-          "muse13": "Muse Spark 1.3", "minimax3": "MiniMax M3", "gemma431": "Gemma 4 31B", "luna56": "GPT-5.6 Luna", "astra6": "GPT-6 Astra", "sol56": "GPT-5.6 Sol", "gemini25lite": "Gemini 2.5 Flash Lite", "rekaedge": "Reka Edge", "qwen38or": "Qwen 3.8 27B", "qwen36or": "Qwen 3.6 35B A3B"}
+          "muse13": "Muse Spark 1.3", "minimax3": "MiniMax M3", "gemma431": "Gemma 4 31B", "luna56": "GPT-5.6 Luna", "astra6": "GPT-6 Astra", "sol56": "GPT-5.6 Sol", "gemini25lite": "Gemini 2.5 Flash Lite", "rekaedge": "Reka Edge", "qwen38or": "Qwen 3.8 27B", "qwen36or": "Qwen 3.6 35B A3B",
+          "opus55": "Claude Opus 5.5", "luna6": "GPT-6 Luna", "sol6": "GPT-6 Sol"}
 # Parameter counts from the model cards where published (Hugging Face safetensors totals or provider descriptions, 2026-09-15).
 PARAMETERS = {"gemini38": "undisclosed", "qwen38max": "2.4T MoE",
               "muse13": "undisclosed", "minimax3": "undisclosed", "gemma431": "30.7B dense", "luna56": "undisclosed", "astra6": "undisclosed",
-              "sol56": "undisclosed", "gemini25lite": "undisclosed", "rekaedge": "7B", "qwen38or": "27B dense", "qwen36or": "35B MoE, 3B active"}
+              "sol56": "undisclosed", "gemini25lite": "undisclosed", "rekaedge": "7B", "qwen38or": "27B dense", "qwen36or": "35B MoE, 3B active",
+              "opus55": "undisclosed", "luna6": "undisclosed", "sol6": "undisclosed"}
 # Lab and a within-lab size rank (smallest first) for grouping columns; undisclosed sizes are ranked by product tier.
 LAB = {"qwen38max": "Alibaba", "gemma431": "Google", "gemini25lite": "Google",
        "gemini38": "Google", "luna56": "OpenAI", "sol56": "OpenAI", "astra6": "OpenAI", "muse13": "Meta", "minimax3": "MiniMax",
-       "rekaedge": "Reka", "qwen38or": "Alibaba", "qwen36or": "Alibaba"}
+       "rekaedge": "Reka", "qwen38or": "Alibaba", "qwen36or": "Alibaba",
+       "opus55": "Anthropic", "luna6": "OpenAI", "sol6": "OpenAI"}
 SIZE_RANK = {"qwen38or": 1, "qwen36or": 2, "qwen38max": 4, "gemma431": 1, "gemini25lite": 2, "gemini38": 3, "luna56": 1, "sol56": 2, "astra6": 3,
-             "muse13": 1, "minimax3": 1, "rekaedge": 1}
+             "muse13": 1, "minimax3": 1, "rekaedge": 1, "opus55": 1, "luna6": 1, "sol6": 2}
 # Complete models kept in the dataset and the full tables but left out of the headline figure and leaderboard.
 NOT_FEATURED = {"rekaedge": "7B edge model scoring 39.8; kept in the data, left out of the headline figures as an outlier"}
 REVISION = "1895f22252f9a702fed95334c8e3b60280b4c626"

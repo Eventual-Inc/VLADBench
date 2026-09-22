@@ -56,7 +56,8 @@ def frame_tokens(rule: Rule, width: int, height: int, frames: int = 8) -> float:
 # for 2-frame clips or 1920x1208 frames; the live check at 720p x 8 frames passes within 10%. pair: the standard Qwen
 # tokeniser as served by most OpenRouter hosts (about 880 tokens per pair at 720p); DeepInfra, Darkbloom, Phala, and
 # AtlasCloud subsample frames and bill about a third of it, so hourly figures for the open Qwens are an upper bound.
-# area: Alibaba bills Qwen Max images at about 1,000 tokens per megapixel, within 5% at every resolution here.
+# area: Alibaba bills Qwen Max images at about 1,000 tokens per megapixel, within 5% at every resolution here;
+# Anthropic bills Claude images at about 1,300 per megapixel.
 # Muse and MiniMax video paths are flat to within about 20%; Reka within 10%.
 RULES: dict[str, Rule] = {
     "luna56": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
@@ -71,6 +72,9 @@ RULES: dict[str, Rule] = {
     "muse13": Rule("flat", tokens_per_frame=130),      # Meta video path: 96 to 126 per frame on the dataset's 4 to 6 frame clips, 130 live on 8 frames
     "minimax3": Rule("flat", tokens_per_frame=185),    # three hosts; 168 to 231 per frame at 720p and 1080p
     "rekaedge": Rule("flat", tokens_per_frame=57),
+    # Anthropic image path: about 1,199 billed tokens for a 1280x720 frame, 2,694 at 1920x1080, 3,039 at 1920x1208
+    # (live, 2026-09-22), so tokens scale with area at about width * height / 770.
+    "opus55": Rule("area", tokens_per_pixel=1199 / (1280 * 720)),
 }
 
 

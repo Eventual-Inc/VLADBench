@@ -11,9 +11,10 @@ ROOT = Path(__file__).resolve().parents[1]
 RUNS = ROOT / "results/runs/full-original"
 SLUGS = {"luna56": "openai/gpt-5.6-luna", "astra6": "openai/gpt-6-astra", "gemini38": "google/gemini-3.8-flash",
          "gemini25lite": "google/gemini-2.5-flash-lite", "gemma431": "google/gemma-4-31b-it", "qwen36or": "qwen/qwen3.6-35b-a3b",
-         "qwen38max": "qwen/qwen3.8-max-0902", "muse13": "meta/muse-spark-1.3", "minimax3": "minimax/minimax-m3", "rekaedge": "rekaai/reka-edge"}
+         "qwen38max": "qwen/qwen3.8-max-0902", "muse13": "meta/muse-spark-1.3", "minimax3": "minimax/minimax-m3", "rekaedge": "rekaai/reka-edge",
+         "opus55": "anthropic/claude-opus-5.5"}
 # Median billed prompt tokens per frame at 1280x720 over 743 sequence questions, 2026-09-16, minus the question text.
-MEASURED_720P = {"luna56": 1102, "astra6": 1102, "gemini38": 63, "gemini25lite": 255, "gemma431": 74, "qwen38max": 945}
+MEASURED_720P = {"luna56": 1102, "astra6": 1102, "gemini38": 63, "gemini25lite": 255, "gemma431": 74, "qwen38max": 945, "opus55": 1199}
 # Video paths that are only roughly flat: measured per-frame range at 720p and 1080p, 4 to 6 frame clips.
 MEASURED_RANGE = {"muse13": (96, 131), "minimax3": (168, 231), "rekaedge": (54, 60)}
 # Qwen's standard tokeniser at 720p, from the hosts that do not subsample (Parasail, CoreWeave, SiliconFlow, Reka, ...):
@@ -68,7 +69,7 @@ class SweepValidationTests(unittest.TestCase):
     def records(self, model):
         return [json.loads(line) for path in glob.glob(str(RUNS / model / "*.jsonl")) for line in open(path)]
 
-    SINGLE_HOST = {"luna56", "astra6", "gemini38", "gemini25lite", "qwen38max", "muse13", "rekaedge"}   # served by their own vendor at list price
+    SINGLE_HOST = {"luna56", "astra6", "gemini38", "gemini25lite", "qwen38max", "muse13", "rekaedge", "opus55"}   # served by their own vendor at list price
 
     def test_single_host_models_bill_exactly_at_list_price(self):
         from dotenv import load_dotenv

@@ -176,7 +176,7 @@ function renderDistribution() {
   for (const button of document.querySelectorAll("[data-dist-view]")) button.setAttribute("aria-pressed", String(button.dataset.distView === view));
   const note = $("distribution-note");
   const n25 = rows.find((r) => r.s25)?.s25.n || 0;
-  if (note) note.textContent = `Grey: the ${n25} models in the paper's Table 10 (2025). Colour: our ${featured().length} runs (2026)${MODELS.length > featured().length ? ", without Reka Edge" : ""}. Dots are models, the bar the median, the diamond the mean, the band one standard deviation either side; the connector joins the two means. ${view === "both" ? "Columns are the change in mean, median, and standard deviation from 2025 to 2026" : `Columns are the ${view} mean, median, and standard deviation`}; click one to sort, a task or dot to open it in Explore. Hover a dot for its value. ${analysis.grouping === "none" ? "Tasks sort across all domains." : "Tasks sort within each group."} Year-to-year differences are descriptive: model cohorts and evaluation conditions differ.`;
+  if (note) note.textContent = `Grey dots are the ${n25} models in the paper's Table 10 (2025). Coloured dots are our ${featured().length} runs (2026). The bar is the median, the diamond is the mean, and the band covers one standard deviation. ${view === "both" ? "The columns show the change from 2025 to 2026" : `The columns show the ${view} values`}. Click a column to sort it.`;
 }
 
 // ---- 2. the bounding-box tasks under three readings -------------------------------------------------
@@ -312,7 +312,7 @@ function renderWhatIf() {
   }
   host.append(picker);
   if (!analysis.whatIfTask && PRESET.get("task") && !analysis.whatIfPreset) { analysis.whatIfPreset = true; analysis.whatIfTask = PRESET.get("task"); return renderWhatIf(); }
-  if (!analysis.whatIfTask) { host.append(element("p", "Pick a task, tick the questions whose reference answer you doubt, and every model's task score and TOTAL are recomputed without them. Exclusions stay in this browser until cleared.", "sub")); return; }
+  if (!analysis.whatIfTask) { host.append(element("p", "Pick a task, then tick questions to exclude them.", "sub")); return; }
   const task = TASKS.find((t) => t.name === analysis.whatIfTask);
   const body = element("div"); host.append(body);
   body.append(element("p", "Loading answers…", "sub"));
@@ -408,14 +408,8 @@ for (const button of document.querySelectorAll("[data-dist-view]")) {
 
 // ---- 4. suspect references: accuracy by reference label ------------------------------------------
 
-// Tasks whose reference answers deserve a second look, with what the audit found.
-const SUSPECT_NOTES = {
-  Vehicle_Cutin: "172 of the 174 yes/no references are \"yes\". Answering \"yes\" to every question would score 99% on the judgment component; the models say yes between 7% and 39% of the time, and each model's judgment accuracy equals its yes rate. The question asks whether a vehicle has \"the intention to cross the road\", which reads as odd for a vehicle. See the wording review below.",
-  VRU_Cross: "88 of 92 yes/no references are \"yes\". The descriptive references mix \"jaywalking\" (40) with \"cross the crosswalk\" (27), so the same behaviour is labelled two ways depending on the clip.",
-  Light: "Seven clips carry the reference \"dawn&dusk\" next to 51 \"daytime\" and 42 \"nighttime\". The second question's lighting labels (\"backlit\", \"diffuse\", \"shadowed light\") are judgment calls that the frames do not always settle.",
-  Weather: "Five weather labels, with \"cloudy\" (7) and \"overcast\" (30) both present; the distinction is not one a single frame supports well.",
-  Long_Short_Parking: "The reason labels overlap: \"Parking\", \"Temporary parking\", and \"Waiting to start\" describe the same stopped vehicle at different moments.",
-};
+// Tasks the audit flagged; listed first in the picker.
+const SUSPECT_TASKS = new Set(["Vehicle_Cutin", "VRU_Cross", "Light", "Weather", "Long_Short_Parking"]);
 
 function renderSuspect() {
   const host = $("suspect");
@@ -424,7 +418,7 @@ function renderSuspect() {
   const bar = element("div", undefined, "row whatif-bar");
   const select = element("select", undefined, "grid-sort");
   const tasks = TASKS.filter((t) => MODELS.some((m) => m.tasks[t.name]?.score != null));
-  const suspects = tasks.filter((t) => SUSPECT_NOTES[t.name]), others = tasks.filter((t) => !SUSPECT_NOTES[t.name]);
+  const suspects = tasks.filter((t) => SUSPECT_TASKS.has(t.name)), others = tasks.filter((t) => !SUSPECT_TASKS.has(t.name));
   const group = (label, list) => { const g = element("optgroup"); g.label = label; list.forEach((t) => { const o = element("option", humanize(t.name)); o.value = t.name; o.selected = analysis.suspectTask === t.name; g.append(o); }); select.append(g); };
   group("Flagged in the audit", suspects); group("Every other task", others);
   if (!analysis.suspectTask) analysis.suspectTask = suspects.find((t) => t.name === "Vehicle_Cutin")?.name || suspects[0]?.name || tasks[0]?.name;
@@ -434,7 +428,6 @@ function renderSuspect() {
   host.append(bar);
   const task = tasks.find((t) => t.name === analysis.suspectTask);
   if (!task) return;
-  if (SUSPECT_NOTES[task.name]) host.append(element("p", SUSPECT_NOTES[task.name], "suspect-note"));
   const body = element("div"); host.append(body);
   body.append(element("p", "Loading answers…", "sub"));
   loadAnswers(task).then((data) => paintSuspect(task, data, body)).catch(() => body.replaceChildren(element("p", "Per-question answers could not be loaded.", "sub")));
@@ -469,7 +462,7 @@ function paintSuspect(task, data, body) {
   const dead = rows.filter((g) => models.every((m) => g.questions.every((q) => !q.answers[m.id]?.[1])));
   const scroll = element("div", undefined, "table-scroll");
   scroll.append(table);
-  body.append(element("p", `${rows.length} distinct reference answers${dead.length ? `; ${dead.length} that no model ever matched, marked in red` : ""}. Cells are each model's accuracy on the questions carrying that reference. Click a row to open the task in the what-if panel.`, "sub"), scroll);
+  body.append(element("p", `Each row is one reference answer. Each cell is one model's accuracy on the questions with that reference. Red rows are references that no model matched.`, "sub"), scroll);
 }
 
 // ---- 5. the cut-in wording review ----------------------------------------------------------------
@@ -513,29 +506,17 @@ function renderCutinWording() {
 buildDistributionControls();
 renderAnalysis();
 
-// ---- 6. the four quadrants: trust × saturation ---------------------------------------------------
+// ---- 6. the four quadrants: audit result × saturation ---------------------------------------------------
 
 // Trust comes from the reference audit, not from the numbers; saturation is the field mean against a threshold.
 const SATURATION = 75;      // field mean at or above this counts as saturated
 const AGREEMENT = 2.5;      // or a standard deviation below this: every model lands within a few points
-const DISTRUST = {
-  Weather: "17% of questions miss for every model",
-  Light: "20% of questions miss for every model; best score fell since 2025",
-  Vehicle_Cutin: "172 of 174 references are \"yes\"",
-  VRU_Cross: "88 of 92 references are \"yes\"",
-  Vehicle_Bahavior: "exact-match descriptions",
-  VRU_Bahavior: "exact-match descriptions",
-  Long_Short_Parking: "overlapping reason labels",
-  VRU_Recognition: "box units differ by model",
-  Vehicle_Recognition: "box units differ by model",
-  Obstruction_Recognition: "box units differ by model",
-};
-const TRUST_NOTES = { Traffic_Light: "7 of 795 references not among the options", Sign_Sign_Relation: "19% miss for every model", Spatial_Temporal_Reasoning: "Astra 95, field 73", Risk_Prediction: "Gemma 52, the rest above 75" };
+const DISTRUST = new Set(["Weather", "Light", "Vehicle_Cutin", "VRU_Cross", "Vehicle_Bahavior", "VRU_Bahavior", "Long_Short_Parking", "VRU_Recognition", "Vehicle_Recognition", "Obstruction_Recognition"]);
 const QUADRANT_COPY = {
-  "trust-saturated": ["Trusted · near saturation", "References hold up. Field mean at or above 75."],
-  "trust-headroom": ["Trusted · headroom", "References hold up. Field mean below 75."],
-  "distrust-saturated": ["Not trusted · near saturation", "References or grading fail. Models within a few points of each other."],
-  "distrust-headroom": ["Not trusted · headroom", "References or grading fail. Field mean below 75."],
+  "trust-saturated": ["No problem found · near saturation", "Field mean at or above 75, or models within a few points of each other."],
+  "trust-headroom": ["No problem found · headroom", "Field mean below 75."],
+  "distrust-saturated": ["Problem found · near saturation", "Field mean at or above 75, or models within a few points of each other."],
+  "distrust-headroom": ["Problem found · headroom", "Field mean below 75."],
 };
 
 function renderQuadrants() {
@@ -546,12 +527,12 @@ function renderQuadrants() {
   const cells = { "trust-saturated": [], "trust-headroom": [], "distrust-saturated": [], "distrust-headroom": [] };
   for (const row of rows) {
     const saturated = row.s26.mean >= SATURATION || row.s26.sd < AGREEMENT;
-    const key = `${DISTRUST[row.task.name] ? "distrust" : "trust"}-${saturated ? "saturated" : "headroom"}`;
+    const key = `${DISTRUST.has(row.task.name) ? "distrust" : "trust"}-${saturated ? "saturated" : "headroom"}`;
     cells[key].push(row);
   }
   const grid = element("div", undefined, "quad-grid");
   grid.append(element("div"), element("div", `Near saturation · field mean ≥ ${SATURATION}, or sd < ${AGREEMENT}`, "quad-head"), element("div", `Headroom · field mean < ${SATURATION}`, "quad-head"));
-  [["trust", "Trusted", "audit found no reference or grading problem"], ["distrust", "Not trusted", "audit found a reference or grading problem"]].forEach(([trust, title, sub]) => {
+  [["trust", "No problem found", "the audit found no reference or grading problem"], ["distrust", "Problem found", "the audit found a reference or grading problem"]].forEach(([trust, title, sub]) => {
     const side = element("div", undefined, "quad-side"); side.append(element("b", title), element("span", sub));
     grid.append(side);
     ["saturated", "headroom"].forEach((sat) => {
@@ -562,8 +543,7 @@ function renderQuadrants() {
       const chips = element("div", undefined, "quad-chips");
       cells[key].sort((a, b) => b.s26.mean - a.s26.mean).forEach((row) => {
         const chip = element("button", undefined, "quad-chip"); chip.type = "button";
-        const note = DISTRUST[row.task.name] || TRUST_NOTES[row.task.name];
-        chip.append(element("b", humanize(row.task.name)), element("span", `${row.s26.mean.toFixed(0)} · sd ${row.s26.sd.toFixed(0)}${note ? " · " + note : ""}`));
+        chip.append(element("b", humanize(row.task.name)), element("span", `${row.s26.mean.toFixed(0)} · sd ${row.s26.sd.toFixed(0)}`));
         chip.title = `${humanize(row.task.name)}: field mean ${row.s26.mean.toFixed(1)}, sd ${row.s26.sd.toFixed(1)}, best ${row.s26.max.toFixed(1)}. Click to open in Explore.`;
         chip.onclick = () => { location.hash = "matrix"; selectTask(row.task); };
         chips.append(chip);

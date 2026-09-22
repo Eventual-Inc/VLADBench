@@ -21,7 +21,7 @@ from vladbench.scoring import load_scorer
 ROOT = Path(__file__).resolve().parents[1]
 BOX_TASKS = ["VRU_Recognition", "Vehicle_Recognition", "Obstruction_Recognition"]
 BOX = re.compile(r"\[\s*([^\],]*\d+[^\],]*)\s*,\s*([^\],]*\d+[^\],]*)\s*,\s*([^\],]*\d+[^\],]*)\s*,\s*([^\],]*\d+[^\],]*)\s*\]")
-# Which models answer on a 0-1000 grid, and whether they write y before x. OpenAI models answer in pixels.
+# Which models answer on a 0-1000 grid, and whether they write y before x. OpenAI and Anthropic models answer in pixels.
 GRID = {"gemini38": True, "gemini25lite": True, "gemma431": False, "qwen38max": False, "qwen36or": False, "qwen38or": False,
         "muse13": False, "minimax3": False, "rekaedge": False}
 

@@ -10,6 +10,8 @@ Markdown to paste into the post.
 """
 
 import argparse
+import json
+import re
 from pathlib import Path
 import shutil
 
@@ -18,12 +20,12 @@ OUT = ROOT / "dist/blog/vladbench-reeval"
 DATA_SCRIPTS = ["task-review-tasks.js", "task-review-audit.js", "task-review-published.js", "task-review-results.js", "task-review-variants.js"]
 FIGURES = ["results/dataset/cost-vs-score.png", "results/dataset/cost-vs-score-hero.png"]
 VIEWS = {
-    "overview": ("Leaderboard, Cost vs Score, frontier tables, and the video cost calculator", 2500),
+    "overview": ("Cost vs Score, frontier tables, and the video cost calculator", 2000),
     "leaderboard": ("Leaderboard with score, sweep cost, and metered video costs", 700),
     "plot": ("Cost vs Score with the cost-performance frontier", 640),
-    "frontier": ("Cost-performance frontier and marginal cost per point", 520),
+    "frontier": ("Cost-performance frontier, and the frontier under each box reading", 620),
     "video": ("Metered cost of video question answering, with knobs", 620),
-    "results": ("Our results in the paper's Table 10 layout, above the paper's own table", 2200),
+    "results": ("Task wheel, our results in the paper's Table 10 layout, and the paper's own table", 3600),
     "score": ("Score by task, one bar per model", 900),
     "distribution": ("Task-score distributions, 2025 paper models and 2026 runs", 1600),
     "matrix": ("Task by model matrix with scorer components", 1600),
@@ -33,7 +35,9 @@ VIEWS = {
 def embed_html() -> str:
     """results.html with the slim task list instead of the 16 MB question file."""
     html = (ROOT / "results.html").read_text()
-    return html.replace('<script src="task-review-data.js" defer></script>', '<script src="task-review-tasks.js" defer></script>')
+    slim, count = re.subn(r'<script src="task-review-data\.js(\?v=\d+)?" defer></script>', '<script src="task-review-tasks.js" defer></script>', html)
+    assert count == 1, "results.html no longer loads task-review-data.js the way embed_html expects"
+    return slim
 
 
 def site_html() -> str:
@@ -51,9 +55,11 @@ def build(out: Path = OUT, *, pages: bool = False, article: str = "/blog/vladben
     if pages:
         (out / "results.html").write_text(site_html())   # the nav and self-test.html link here
     shutil.copy(ROOT / "self-test.html", out / "self-test.html")   # linked from the results nav
+    shutil.copy(ROOT / "results/rerun.json", out / "rerun.json")   # machine-readable results next to the page
     shutil.copytree(ROOT / "web", out / "web")   # the page's scripts and stylesheet
     shutil.copytree(ROOT / "answers", out / "answers")   # per-question answers and marks, one file per task, fetched on expand
-    (out / "web/config.js").write_text(f'window.VLADBENCH_ARTICLE = "{article}";\nwindow.VLADBENCH_BLOG = "{blog}";\n')
+    # An empty URL leaves that nav link hidden, e.g. before the article is published.
+    (out / "web/config.js").write_text(f"window.VLADBENCH_ARTICLE = {json.dumps(article or None)};\nwindow.VLADBENCH_BLOG = {json.dumps(blog or None)};\n")
     for name in DATA_SCRIPTS + ["task-review-data.js"]:
         shutil.copy(ROOT / name, out / name)
     for figure in FIGURES:
@@ -67,7 +73,7 @@ def snippets(base: str) -> str:
         lines.append(f'<iframe src="{base}/embed.html?embed={view}" title="{caption}" width="100%" height="{height}" loading="lazy" style="border:0;background:#08080b"></iframe>')
         lines.append("")
     lines += ["Add `&models=frontier` or `&models=gemma431,gemini38,astra6` to any embed to show a subset; ids are the protocol file's model ids.",
-              "Each iframe is the same page in a different mode; the weights bar, heat pickers, and hover states all work inside the frame.",
+              "Each iframe is the same page in a different mode. Controls and hover states work inside the frame.",
               "Heights are starting points; the matrix and results panels scroll inside the frame if the height is shorter than the content."]
     return "\n".join(lines)
 
@@ -77,7 +83,7 @@ def main():
     parser.add_argument("--into", type=Path, help="blog assets directory; the bundle lands in <into>/vladbench-reeval/")
     parser.add_argument("--base", default="/blog/assets/vladbench-reeval", help="URL path the blog serves the folder at")
     parser.add_argument("--pages", type=Path, help="also write a standalone GitHub Pages site here (index.html, absolute blog links)")
-    parser.add_argument("--article", default="https://www.eventual.ai/blog/vladbench-reeval", help="article URL the Pages nav links to")
+    parser.add_argument("--article", default="", help="article URL the Pages nav links to; empty hides the link until the post is live")
     parser.add_argument("--blog", default="https://www.eventual.ai/blog", help="blog URL the Pages nav links to")
     args = parser.parse_args()
     out = build()

@@ -1225,7 +1225,7 @@ body.embed .task-filter { display: none; }
 /* single-panel embeds of the overview */
 body.embed-leaderboard .overview-grid > .panel:not(.leaderboard),
 body.embed-plot .overview-grid > .panel:not(.cost-score-panel),
-body.embed-frontier .overview-grid > .panel:not(.frontier-panel):not(.marginal-panel),
+body.embed-frontier .overview-grid > .panel:not(.frontier-panel):not(.readings-panel),
 body.embed-video .overview-grid > .panel:not(.video-panel),
 body.embed-score .overview-grid > .panel:not(.score-bars) { display: none; }
 body.embed .overview-grid { gap: 10px; }
@@ -1349,3 +1349,10 @@ body.embed-quadrants .overview-grid > .panel:not(.quadrants-panel) { display: no
 .distribution-controls label { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 8px; }
 .dist-domain-band { fill: var(--bg); }
 .dist-domain-heading { fill: var(--ink); font-size: 12px; font-weight: 600; }
+
+/* Box reading control and the frontier-by-reading table. */
+.cost-controls { gap: 12px 24px; margin-top: 8px; }
+.cost-controls label { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 8px; }
+.readings-panel td.on-frontier { color: var(--ink); font-weight: 600; }
+.readings-panel td.on-frontier::before { content: "● "; color: var(--accent, #ff00ff); }
+.readings-panel th.active { color: var(--ink); }

@@ -297,7 +297,7 @@ def main():
     inputs = build_task_inputs()
     write_javascript(ROOT / "task-review-data.js", "REVIEW_DATA", inputs)
     # Same task list without the per-question items: what blog embeds load instead of the 16 MB file.
-    write_javascript(ROOT / "task-review-tasks.js", "REVIEW_DATA", [dict(task, items=[]) for task in inputs])
+    write_javascript(ROOT / "task-review-tasks.js", "REVIEW_DATA", [dict(task, items=[], question_count=len(task["items"])) for task in inputs])
     write_javascript(ROOT / "task-review-audit.js", "REVIEW_AUDIT", audit)
     write_javascript(ROOT / "task-review-published.js", "PUBLISHED", published)
     write_javascript(ROOT / "task-review-results.js", "FULL_RESULTS", rerun)

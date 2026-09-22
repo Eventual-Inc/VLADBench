@@ -39,6 +39,12 @@ function wheelTasks() {
   return TASKS.filter((task) => MODELS.some((m) => m.tasks[task.name]?.score != null));
 }
 
+// Explore is hidden on phones, so a tap there shows the value under the wheel instead of switching tabs.
+function openTask(task, model, readout) {
+  if (window.matchMedia("(max-width: 720px)").matches) { const note = $("wheel-note"); if (note) note.textContent = readout; return; }
+  location.hash = "matrix"; selectTask(task, model || undefined);
+}
+
 function drawWheel(root) {
   const tasks = wheelTasks();
   const n = tasks.length;
@@ -79,7 +85,7 @@ function drawWheel(root) {
     const a0 = angleOf(index), a1 = a0 + step;
     const wedge = svg("path", { d: sectorPath(label[0], bars[1], a0 + 0.002, a1 - 0.002), class: "wheel-wedge" });
     wedge.append(svg("title", {}, `${humanize(task.name)} · ${humanize(task.group)}`));
-    wedge.onclick = () => { location.hash = "matrix"; selectTask(task); };
+    wedge.onclick = () => openTask(task, null, `${humanize(task.name)} · ${humanize(task.group)}`);
     root.append(wedge);
     const mid = (a0 + a1) / 2;
     const [tx, ty] = polar((label[0] + label[1]) / 2, mid);
@@ -91,10 +97,10 @@ function drawWheel(root) {
     scored.forEach((model, k) => {
       const score = composite(model, task.name);
       const b0 = a0 + pad + k * width, b1 = b0 + width * 0.82;
-      const bar = svg("path", { d: sectorPath(bars[0], bars[0] + (bars[1] - bars[0]) * score / 100, b0, b1), fill: model.color, class: "wheel-bar", tabindex: 0, role: "button",
+      const bar = svg("path", { d: sectorPath(bars[0], bars[0] + (bars[1] - bars[0]) * score / 100, b0, b1), fill: model.color, class: "wheel-bar",
                                  "aria-label": `${humanize(task.name)}, ${model.label}, ${percent(score, 1)}` });
       bar.append(svg("title", {}, `${humanize(task.name)} · ${model.label} · ${percent(score, 1)}`));
-      bar.onclick = () => { location.hash = "matrix"; selectTask(task, model); };
+      bar.onclick = () => openTask(task, model, `${humanize(task.name)} · ${model.label} · ${percent(score, 1)}`);
       root.append(bar);
     });
   });
@@ -164,8 +170,8 @@ function renderWheel() {
   for (const button of document.querySelectorAll("[data-wheel-mode]")) button.setAttribute("aria-pressed", String(button.dataset.wheelMode === wheelState.mode));
   const note = $("wheel-note");
   if (note) note.textContent = wheelState.mode === "radar"
-    ? "Each axis is one of the benchmark's ten task groups; a model's value is the mean of the group's tasks, each weighted by its number of questions. The outer ring is 100. Use the model chips to compare a few models at a time."
-    : "Five domains inside, ten task groups, then the 28 scored tasks under the paper's abbreviations. In each task's wedge one bar per model, growing outward from 0 to 100. Click a wedge or a bar to open that task in Explore.";
+    ? "Each axis is one task group. Each polygon is one model, and its value on an axis is the question-weighted mean of that group's tasks. The outer ring is 100."
+    : "The rings show the domains, then the task groups, then the tasks. Each bar is one model's score on one task, from 0 at the inner edge to 100 at the outer edge. Click a bar to open the task in Explore.";
 }
 
 for (const button of document.querySelectorAll("[data-wheel-mode]")) {

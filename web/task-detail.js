@@ -29,6 +29,7 @@ function renderTaskDetail(task) {
   row.append(cell);
   detailState.question = 0; detailState.shown = PAGE; stopClip();
   right.append(element("p", "Loading answers…", "sub"));
+  if (!MODELS.some((m) => m.tasks[task.name]?.scorer_function)) { right.replaceChildren(); paintLeft(task, null, left); return row; }
   loadAnswers(task).then((data) => {
     detailState.data = data;
     paintLeft(task, data, left);
@@ -83,7 +84,11 @@ function clipPlayer(data, question) {
 function paintLeft(task, data, left) {
   stopClip();
   left.replaceChildren();
-  const sample = MODELS[0].tasks[task.name];
+  const sample = MODELS.map((m) => m.tasks[task.name]).find((r) => r?.scorer_function);
+  if (!sample) {
+    left.append(element("h4", humanize(task.name)), element("p", "This task has no released references or scorer, so it is not scored.", "sub"));
+    return;
+  }
   const question = data ? data.questions[detailState.question] : null;
   if (question) left.append(clipPlayer(data, question));
   const meta = element("div", undefined, "detail-meta");
@@ -242,6 +247,6 @@ function paintGrid(task, data, right, left) {
   } else if (!rows.length) {
     foot.append(element("p", "No questions match this filter.", "sub"));
   }
-  foot.append(element("p", "Cells show each model's answer, tinted by the credit it earned under the paper's scoring code; a dotted underline means the answer was not in the requested format. Marks are our per-question reading of that code and sum exactly to the components in the bottom rows. Click a row to see its clip on the left.", "sub"));
+  foot.append(element("p", "Each cell shows one model's answer. The tint shows the credit the answer earned. A dotted underline means the answer was not in the requested format. Click a row to show its clip.", "sub"));
   right.append(foot);
 }

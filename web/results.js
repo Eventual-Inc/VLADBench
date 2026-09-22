@@ -8,15 +8,15 @@ const AUDIT = window.REVIEW_AUDIT || { tasks: [] };
 const PUBLISHED = window.PUBLISHED || { models: [], rows: [] };
 const RERUN = window.FULL_RESULTS || { dataset: {}, models: [] };
 
-// One hue per model in specification order, never by rank. Validated for the dark
-// panel (adjacent CVD ΔE ≥ 8); identity is also carried by legend and leaderboard swatches.
-const MODEL_COLORS = [
-  "#3987e5", "#d95926", "#199e70", "#c98500", "#d55181",
-  "#008300", "#9085e9", "#e66767", "#1f9fb3", "#b86b2d",
-];
-const modelColor = (index) => MODEL_COLORS[index % MODEL_COLORS.length];
-// Colours follow specification order so a model keeps its hue as others arrive; display order groups labs, smallest model first.
-const COLOURED = RERUN.models.map((model, index) => ({ ...model, kind: "rerun", color: modelColor(index) }));
+// One hue per lab; models within a lab differ by lightness. Fifteen models cannot each get a hue that passes
+// colour-vision checks, so every chart also labels models by name. Keyed by id so a model keeps its colour.
+const MODEL_COLORS = {
+  astra6: "#9287eb", sol56: "#786ccd", luna56: "#aca2ff", sol6: "#6052b0", luna6: "#c7beff",
+  qwen38max: "#4a98f7", qwen38or: "#0761bc", qwen36or: "#82d1ff",
+  gemini38: "#ec6a39", gemini25lite: "#af3000", gemma431: "#ffa372",
+  opus55: "#199e70", muse13: "#c98500", minimax3: "#d55181", rekaedge: "#008300",
+};
+const COLOURED = RERUN.models.map((model) => ({ ...model, kind: "rerun", color: MODEL_COLORS[model.id] || "#b0b0b0" }));
 const ALL_MODELS = groupByLab(COLOURED);
 // MODELS is the visible subset; every view iterates it. applyModelFilter swaps its contents in place.
 const MODELS = ALL_MODELS.slice();
@@ -225,7 +225,7 @@ function renderLeaderboard() {
   });
   table.append(body);
   $("leaderboard-note").textContent =
-    "Score is the paper's TOTAL: the average of the 28 task scores with each task weighted by its number of questions, using the paper's component weights. Sweep cost is what the full sweep was billed through OpenRouter. Input $/frame, output $/query, and the hourly estimate follow the video cost calculator below and its knobs. Latency: p25–p75 box, median tick, p95 dot."
+    "Score is TOTAL, the mean of the 28 task scores weighted by question count. Sweep cost is the billed cost of all 11,193 answers. The per-frame, per-query, and hourly costs use the settings of the video cost calculator on the Cost tab. The latency box spans p25 to p75, the tick is the median, and the dot is p95."
     + (omitted.length ? ` Left out of this table and the plot, still in every other tab: ${omitted.map((m) => `${m.label} (${modelMean(m).toFixed(1)}; ${m.not_featured_reason})`).join("; ")}.` : "");
 }
 
@@ -274,11 +274,27 @@ function placeLabels(points, x, y, bounds) {
   return out;
 }
 
+const READINGS = [["pixels", "Pixels"], ["grid", "Own grid"], ["none", "No box tasks"]];
+const costState = { reading: ["pixels", "grid", "none"].includes(new URLSearchParams(location.search).get("boxes")) ? new URLSearchParams(location.search).get("boxes") : "pixels" };
+
+// TOTAL under one reading of the box tasks; pixels is the leaderboard's score.
+function readingScore(model, reading) {
+  if (reading === "pixels") return modelMean(model);
+  return window.VARIANTS?.models?.[model.id]?.total?.[reading] ?? null;
+}
+
+function costPoints(reading) {
+  return MODELS.filter((m) => m.usage?.cost_usd && m.featured !== false && readingScore(m, reading) != null)
+    .map((m) => { const score = readingScore(m, reading); return { model: m, cost: m.usage.cost_usd, score, spread: taskSpread(m), gpu: Boolean(m.usage.cost_basis), text: `${m.label} · ${score.toFixed(1)}` }; });
+}
+
 function renderCostScore() {
   const chart = $("cost-score");
   if (!chart) return;
   chart.replaceChildren();
-  const points = MODELS.filter((m) => m.usage?.cost_usd && m.featured !== false).map((m) => ({ model: m, cost: m.usage.cost_usd, score: modelMean(m), spread: taskSpread(m), gpu: Boolean(m.usage.cost_basis), text: `${m.label} · ${modelMean(m).toFixed(1)}` }));
+  const select = $("box-reading");
+  if (select) select.value = costState.reading;
+  const points = costPoints(costState.reading);
   const width = 1180, height = 460, margin = { top: 24, right: 48, bottom: 52, left: 54 };
   const plotW = width - margin.left - margin.right, plotH = height - margin.top - margin.bottom;
   const costs = points.map((p) => p.cost);
@@ -328,8 +344,8 @@ function renderCostScore() {
     root.append(dot, svg("text", { x: lx, y: ly, class: "chart-point-label", "text-anchor": anchor }, p.text));
   }
   chart.append(root);
-  $("cost-score-note").textContent = "Cost is what the full sweep of 11,193 answers was billed through OpenRouter, 2026-09-13 to 2026-09-16. Dashed staircase: the cost-performance frontier, the best TOTAL available at each cost. Dotted curves: constant TOTAL per dollar.";
   renderFrontier(points, frontier);
+  renderReadings();
 }
 
 // The frontier stated as a table: which model to pick at each budget, and who beats every other model for less.
@@ -351,40 +367,37 @@ function renderFrontier(points, frontier) {
     body.append(row);
   });
   table.append(body);
-  const dominated = points.filter((p) => !frontier.includes(p)).map((p) => {
-    const by = frontier.filter((f) => f.score > p.score && f.cost <= p.cost).sort((a, b) => b.score - a.score)[0];
-    const saving = p.cost - by.cost;
-    const forLess = saving > 0.005 ? ` for ${money(saving)} less` : " at the same budget";
-    return `${p.model.label} (${p.score.toFixed(1)}, ${money(p.cost)}) is beaten by ${by.model.label}: ${by.score.toFixed(1)}${forLess}`;
-  });
-  $("frontier-note").textContent = dominated.length ? `Every other model is dominated. ${dominated.join(". ")}.` : "";
-  renderMarginal(frontier);
 }
 
-// Each step up the frontier: points gained, extra spend, and the price of one more point.
-function renderMarginal(frontier) {
-  const table = $("marginal");
+// Every model's TOTAL under the three box readings, with frontier membership per reading.
+function renderReadings() {
+  const table = $("readings");
   if (!table) return;
   table.replaceChildren();
+  const onFrontier = Object.fromEntries(READINGS.map(([key]) => [key, new Set(paretoFrontier(costPoints(key)).map((p) => p.model.id))]));
   const head = element("tr");
-  [["Step up the frontier", ""], ["Points gained", "num"], ["Extra cost", "num"], ["Per point", "num"]].forEach(([label, cls]) => head.append(element("th", label, cls)));
+  head.append(element("th", "Model"), element("th", "Sweep cost", "num"));
+  READINGS.forEach(([key, label]) => head.append(element("th", label, `num${key === costState.reading ? " active" : ""}`)));
   const thead = element("thead"); thead.append(head); table.append(thead);
   const body = element("tbody");
-  for (let i = 1; i < frontier.length; i += 1) {
-    const from = frontier[i - 1], to = frontier[i];
-    const points = to.score - from.score, spend = to.cost - from.cost;
+  costPoints("pixels").sort((a, b) => a.cost - b.cost).forEach((p) => {
     const row = element("tr");
-    const step = element("td");
-    for (const p of [from, to]) {
-      const swatch = element("i", undefined, "swatch"); swatch.style.background = p.model.color;
-      step.append(swatch, element("b", p.model.label));
-      if (p === from) step.append(document.createTextNode(" → "));
-    }
-    row.append(step, element("td", `+${points.toFixed(1)}`, "num"), element("td", `+${money(spend)}`, "num"), element("td", `${money(spend / points)} per point`, "num"));
+    const name = element("td"); const swatch = element("i", undefined, "swatch"); swatch.style.background = p.model.color;
+    name.append(swatch, element("b", p.model.label)); row.append(name, element("td", money(p.cost), "num"));
+    READINGS.forEach(([key]) => {
+      const score = readingScore(p.model, key);
+      row.append(element("td", score == null ? "" : score.toFixed(1), `num${onFrontier[key].has(p.model.id) ? " on-frontier" : ""}`));
+    });
     body.append(row);
-  }
+  });
   table.append(body);
 }
+
+$("box-reading")?.addEventListener("change", (event) => {
+  costState.reading = event.target.value;
+  const url = new URL(location.href); url.searchParams.set("boxes", costState.reading); history.replaceState(null, "", url);
+  renderCostScore();
+});
 
 // ---- video cost calculator: the metering rules from vladbench.metering, run in the browser -----------------------
 
@@ -392,6 +405,7 @@ const RESOLUTIONS = { "640x360": [640, 360], "1280x720": [1280, 720], "1920x1080
 
 function clipTokens(rule, width, height, frames) {
   if (rule.kind === "patch") return frames * Math.ceil(width / rule.patch) * Math.ceil(height / rule.patch) * rule.multiplier;
+  if (rule.kind === "area") return frames * rule.tokens_per_pixel * width * height;
   if (rule.kind === "pair") return Math.ceil(frames / 2) * rule.tokens_per_pixel * width * height;
   return frames * rule.tokens_per_frame;
 }
@@ -434,9 +448,8 @@ function renderVideoCost() {
   }
   table.append(body);
   const missing = rankedModels().filter((m) => !m.usage?.metering).map((m) => m.label);
-  $("video-cost-note").textContent = `${(s.fps * 3600).toLocaleString()} frames and ${Math.round(s.fps * 3600 / s.frames).toLocaleString()} queries an hour at ${s.width}x${s.height}. `
-    + "Tokens per frame come from each provider's tokeniser rule fitted to our billed tokens and checked live; prices are what the sweep was actually charged per token; output tokens per query are measured, reasoning included. "
-    + "OpenAI and Qwen bill by pixel area, so resolution moves them; Google's video path bills a flat count per frame. Qwen figures are an upper bound because some OpenRouter hosts subsample frames."
+  $("video-cost-note").textContent = `One hour of video at ${s.width}x${s.height} is ${(s.fps * 3600).toLocaleString()} frames and ${Math.round(s.fps * 3600 / s.frames).toLocaleString()} queries. `
+    + "Tokens per frame use each provider's tokeniser rule, fitted to our billed tokens. Prices are the per-token rates the sweep was billed. Output tokens per query are measured and include reasoning."
     + (missing.length ? ` No fitted rule yet for ${missing.join(", ")}.` : "");
 }
 
@@ -686,7 +699,7 @@ function renderMatrix() {
     const taskCell = element("td");
     const taskButton = element("button", `${state.expanded === task.name ? "▾" : "▸"} ${humanize(task.name)}`, "task-button");
     taskButton.onclick = () => { state.expanded = state.expanded === task.name ? null : task.name; renderMatrix(); };
-    taskCell.append(taskButton, element("span", `${humanize(task.group)} · ${task.items.length.toLocaleString()} questions`, "sub"));
+    taskCell.append(taskButton, element("span", `${humanize(task.group)} · ${(task.question_count ?? task.items.length).toLocaleString()} questions`, "sub"));
     labelStrip(task, taskCell);
     row.append(taskCell);
     const scores = MODELS.map((m) => composite(m, task.name)).filter((s) => s !== null);
@@ -923,9 +936,7 @@ function renderPaperFormat() {
   renderTable10("ours-head", "ours-body", ours);
   renderTable10("paper-head", "paper-body", publishedTable10Columns());
   const check = paperWeightingCheck();
-  $("table10-note").textContent = "Each task gets its own score. MEAN and TOTAL roll tasks up by averaging them with each task weighted by how many questions it has, so a task with 795 questions counts about four times as much as one with 200. "
-    + `The paper does not say how it rolled up its own numbers, but this rule reproduces its printed rows within 0.1 for ${check.within} of ${check.total} group averages; the rest differ by question counts between dataset revisions. `
-    + "";
+  $("table10-note").textContent = `MEAN and TOTAL weight each task by its number of questions. This rule reproduces ${check.within} of the paper's ${check.total} group averages within 0.1.`;
   $("copy-latex").onclick = () => navigator.clipboard.writeText(table10Text(ours, "latex"));
   $("copy-csv").onclick = () => navigator.clipboard.writeText(table10Text(ours, "csv"));
 }
@@ -963,7 +974,7 @@ function wireTabs() {
 }
 wireTabs();
 
-// Embed mode: ?embed=leaderboard|plot|frontier|video|results|score|matrix shows one panel with no chrome, for iframes in the blog.
+// Embed mode: ?embed=<name> (see EMBED_TABS) shows one panel with no chrome, for iframes in the blog.
 const EMBED_TABS = { quadrants: "caveats", boxes: "caveats", suspect: "caveats", cutin: "caveats", distribution: "analysis", whatif: "analysis", wheel: "overview", overview: "cost", leaderboard: "leaderboard", plot: "cost", frontier: "cost", video: "cost", results: "overview", score: "leaderboard", matrix: "matrix" };
 const embed = new URLSearchParams(location.search).get("embed");
 if (embed === "full") document.body.classList.add("embed-full");   // whole tabbed page without the site header, for /blog/VLADBench

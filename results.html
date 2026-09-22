@@ -4,17 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VLADBench re-evaluation</title>
-    <link rel="stylesheet" href="web/results.css?v=46" />
+    <link rel="stylesheet" href="web/results.css?v=47" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
     <script src="task-review-variants.js?v=2" defer></script>
-    <script src="web/results.js?v=57" defer></script>
-    <script src="web/wheel.js?v=1" defer></script>
-    <script src="web/task-detail.js?v=3" defer></script>
-    <script src="web/analysis.js?v=15" defer></script>
+    <script src="web/results.js?v=59" defer></script>
+    <script src="web/wheel.js?v=2" defer></script>
+    <script src="web/task-detail.js?v=4" defer></script>
+    <script src="web/analysis.js?v=17" defer></script>
   </head>
   <body>
     <header>
@@ -27,6 +27,7 @@
         <a id="article-link" href="#" hidden>Article</a>
         <a id="blog-link" href="#" hidden>Blog</a>
         <a href="self-test.html">Take the benchmark</a>
+        <a href="https://huggingface.co/datasets/Eventual-Inc/VLADBench-reeval" target="_blank" rel="noopener noreferrer">Dataset ↗</a>
         <a href="https://github.com/Eventual-Inc/VLADBench" target="_blank" rel="noopener noreferrer">Repository ↗</a>
         <a class="request" href="mailto:everett@eventualcomputing.com?subject=VLADBench%3A%20please%20run%20a%20model&body=Model%20(provider%2Fslug)%3A%0AWhy%20it%20matters%20to%20you%3A%0A">Request a model</a>
       </nav>
@@ -67,7 +68,7 @@
         <section class="panel paper" aria-labelledby="paper-title">
           <div class="chart-heading">
             <p class="eyebrow" id="paper-title">How well frontier VLMs understand driving scenes</p>
-            <p class="sub">Every task of the benchmark, in the paper's Table 10 layout, on our runs: its task abbreviations and order, MEAN after each task group, TOTAL last. Columns grouped by lab, smallest model first. Best per row underlined.</p>
+            <p class="sub">Each cell is one model's score on one task, in the layout of the paper's Table 10. The best score in each row is underlined.</p>
             <div class="row heat-controls">
               <span class="control-group" aria-label="Heat scale">
                 <label>Low <input id="heat-low" type="color" /></label>
@@ -92,7 +93,7 @@
           <p class="sub" id="table10-note"></p>
           <div class="chart-heading">
             <p class="eyebrow">Paper, Table 10 as published (2025)</p>
-            <p class="sub">Different models, inference stack, and image handling. Read side by side, not merged. Row labels as printed, including L.R.RL for Light-Lane Relation.</p>
+            <p class="sub">This is the paper's Table 10 as published in 2025. Its models, inference stack, and image handling differ from ours.</p>
           </div>
           <div class="matrix paper-matrix table10">
             <table>
@@ -134,23 +135,23 @@
       <section class="tab-page" data-tab="caveats" hidden>
         <div class="overview-grid">
           <section class="panel span-2 quadrants-panel" aria-labelledby="quadrants-title">
-            <h3 class="section-title" id="quadrants-title">Tasks by trust and saturation</h3>
-            <p class="sub">Rows: whether our audit of the released annotations found a reference or grading problem. Columns: whether the field mean is at or above 75, or every model lands within a few points. Each chip shows the field mean and standard deviation across the models shown, and the audit note where there is one. Click a task to open it in Explore.</p>
+            <h3 class="section-title" id="quadrants-title">Tasks by audit result and saturation</h3>
+            <p class="sub">Each chip is one task and shows its field mean and standard deviation. Rows show whether the audit found a problem with the task's references or grading. Columns show whether the task is near saturation.</p>
             <div id="quadrants"></div>
           </section>
           <section class="panel span-2 boxes-panel" aria-labelledby="boxes-title">
             <h3 class="section-title" id="boxes-title">With and without bounding boxes</h3>
-            <p class="sub">Three tasks ask the model to return a bounding box. The question does not say what units to use. We score every box as pixel coordinates. OpenAI's models answer in pixels. Qwen, Muse, Gemma, MiniMax, and Reka answer on a 0 to 1000 grid, and Gemini answers on that grid with y before x, so their boxes land in the wrong place and score near zero. The paper's own scorer rescaled boxes for Qwen, InternVL, and Gemini by model name. The chart shows each model's TOTAL three ways: as scored, with its boxes read on its own grid, and with the three box tasks removed.</p>
+            <p class="sub">Each row is one model. The filled dot is TOTAL with boxes scored in pixels, and the open dot is TOTAL with boxes read on the model's own grid. The columns also give TOTAL without the three box tasks.</p>
             <div id="box-variants" class="table-scroll"></div>
           </section>
           <section class="panel span-2 suspect-panel" aria-labelledby="suspect-title">
             <h3 class="section-title" id="suspect-title">Suspect reference answers</h3>
-            <p class="sub">Accuracy by reference answer. When every model fails the same reference, the reference deserves a look before the models do. The flagged tasks carry notes from our audit of the released annotations.</p>
+            <p class="sub">Pick a task to see each model's accuracy grouped by reference answer.</p>
             <div id="suspect"></div>
           </section>
           <section class="panel span-2 cutin-panel" aria-labelledby="cutin-title">
             <h3 class="section-title" id="cutin-title">One prompt change on Vehicle cut-in</h3>
-            <p class="sub">From our earlier cut-in survey, before this protocol: 260 shared questions, the same references and scorer, two wordings. The official question asks whether the vehicle has "the intention to cross the road". Asking instead whether it intends to cut in more than doubles the judgment accuracy of the Qwen models and Astra, and leaves Gemini where it was. These numbers come from a different runner and are not comparable to the leaderboard; the shift is the point.</p>
+            <p class="sub">Each pair of bars is one model's judgment accuracy under the official question and under the reworded question. These runs used an earlier runner, not the protocol runner.</p>
             <div id="cutin-wording" class="bar-chart"></div>
           </section>
         </div>
@@ -175,7 +176,7 @@
           </section>
           <section class="panel span-2 whatif-panel" aria-labelledby="whatif-title">
             <h3 class="section-title" id="whatif-title">What if a reference answer is wrong</h3>
-            <p class="sub">Leave out questions whose reference you doubt and see every model's task score and TOTAL recomputed from the per-question marks. Nothing here changes the published scores; the exclusion list lives in your browser and can be copied out.</p>
+            <p class="sub">Exclude questions from a task to recompute every model's task score and TOTAL. Exclusions stay in your browser and do not change the published scores.</p>
             <div id="whatif"></div>
           </section>
         </div>
@@ -186,21 +187,23 @@
           <section class="panel cost-score-panel span-2" aria-labelledby="cost-score-title">
             <div class="chart-heading">
               <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
-              <p class="sub">Every model's TOTAL against what its full sweep cost. Up and to the left is better. <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label></p>
+              <p class="sub">Each dot is one model. The x axis is the cost of the full sweep, and the y axis is TOTAL. The staircase joins the models that no cheaper model beats.</p>
+              <div class="row cost-controls">
+                <label>Box tasks <select id="box-reading"><option value="pixels">scored in pixels, as released</option><option value="grid">read on each model's own grid</option><option value="none">left out of TOTAL</option></select></label>
+                <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label>
+              </div>
             </div>
             <div id="cost-score" class="bar-chart"></div>
-            <p class="sub" id="cost-score-note"></p>
           </section>
           <section class="panel frontier-panel" aria-labelledby="frontier-title">
             <h3 class="section-title" id="frontier-title">Cost-Performance Frontier</h3>
-            <p class="sub">At each sweep cost, the model no other beats for the same money or less.</p>
+            <p class="sub">Each row is a price range. The model in the row has the highest TOTAL of any model that costs that much or less.</p>
             <table id="frontier" class="frontier"></table>
-            <p class="sub" id="frontier-note"></p>
           </section>
-          <section class="panel marginal-panel" aria-labelledby="marginal-title">
-            <h3 class="section-title" id="marginal-title">Marginal Performance Cost</h3>
-            <p class="sub">What each step up the frontier buys, and what it costs per point.</p>
-            <table id="marginal" class="frontier"></table>
+          <section class="panel readings-panel" aria-labelledby="readings-title">
+            <h3 class="section-title" id="readings-title">Frontier Under Each Box Reading</h3>
+            <p class="sub">Each row is one model, ordered by sweep cost. Each column is TOTAL under one reading of the three box tasks. A marked cell means the model is on the frontier under that reading.</p>
+            <table id="readings" class="frontier"></table>
           </section>
           <section class="panel span-2 video-panel" aria-labelledby="video-title">
             <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>

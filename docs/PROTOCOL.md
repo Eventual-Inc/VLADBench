@@ -10,7 +10,7 @@ frame sequence, and whether their reasoning can be switched off.
 - Per-task scores for each model, scored once over complete samples.
 - Comparisons between models that share the same sequence transport and
   reasoning availability (Qwen 3.6 vs Qwen 3.8; Gemini vs Muse; Qwen Max vs
-  Inkling).
+  Claude Opus 5.5).
 - Ordering claims across all models, stated with the per-model declarations
   attached, for example "Gemini 3.8 Flash scores higher than both Qwen models
   on 25 of 28 tasks under these conditions".
@@ -21,8 +21,8 @@ frame sequence, and whether their reasoning can be switched off.
   2026 numbers come from different model sets, inference stacks, and image
   handling, with unobserved provider preprocessing.
 - Attributing a gap to model quality alone. Some models reason at their lowest
-  available level, others have reasoning off; Qwen Max and the OpenAI models
-  see frames as separate images, the others see a video.
+  available level, others have reasoning off; Qwen Max, Claude Opus 5.5, and
+  the OpenAI models see frames as separate images, the others see a video.
 - Reading TOTAL as more than the question-weighted mean of the 28 task
   composites. That weighting reproduces 241 of the paper's 250 group averages
   within 0.1; the paper does not state it.
@@ -56,6 +56,9 @@ Defined by `results/protocols/full-original.json`. One file is one condition.
 | GPT-5.6 Luna (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
 | GPT-6 Astra (OpenRouter, OpenAI) | ordered `image_url` parts | low, mandatory; `minimal` also accepted | n/a | n/a |
 | GPT-5.6 Sol (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
+| GPT-6 Luna (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
+| GPT-6 Sol (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
+| Claude Opus 5.5 (OpenRouter, Anthropic) | ordered `image_url` parts | low, cannot be disabled | n/a | n/a |
 | Gemini 2.5 Flash Lite (OpenRouter) | MP4, `processing: static` | low, requested; thinking is off by default | one-frame MP4 | H.264 crf18 if needed |
 | Reka Edge (OpenRouter) | MP4, `processing: static` | off; non-reasoning model | one-frame MP4 | H.264 crf18 if needed |
 | Qwen 3.8 27B (OpenRouter, third-party hosts) | MP4, `processing: static`, Alibaba route excluded | off | one-frame MP4 | H.264 crf18 if needed |

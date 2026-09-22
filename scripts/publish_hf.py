@@ -25,7 +25,7 @@ DATASET_DIR = ROOT / "results/dataset"
 SPACE_BUILD = ROOT / "dist/space"
 RERUN = ROOT / "results/rerun.json"
 SPEC = ROOT / "results/protocols/full-original.json"
-SITE_FILES = ["results.html", "task-review.html", "self-test.html", "task-review-data.js", "task-review-audit.js",
+SITE_FILES = ["results.html", "self-test.html", "task-review-data.js", "task-review-audit.js",
               "task-review-published.js", "task-review-results.js"]
 TABLES = ["models", "tasks", "questions", "answers", "task_scores"]
 

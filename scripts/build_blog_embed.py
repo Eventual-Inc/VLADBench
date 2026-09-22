@@ -48,7 +48,7 @@ def build(out: Path = OUT, *, pages: bool = False, article: str = "/blog/vladben
     # As a standalone site the whole page is the index; inside the blog it is one file among the assets.
     (out / ("index.html" if pages else "site.html")).write_text(site_html())
     shutil.copy(ROOT / "self-test.html", out / "self-test.html")   # linked from the results nav
-    shutil.copytree(ROOT / "web", out / "web", ignore=shutil.ignore_patterns("article-gsap.html"))   # the GSAP prototype stays local
+    shutil.copytree(ROOT / "web", out / "web")   # the page's scripts and stylesheet
     shutil.copytree(ROOT / "answers", out / "answers")   # per-question answers and marks, one file per task, fetched on expand
     (out / "web/config.js").write_text(f'window.VLADBENCH_ARTICLE = "{article}";\nwindow.VLADBENCH_BLOG = "{blog}";\n')
     for name in DATA_SCRIPTS + ["task-review-data.js"]:

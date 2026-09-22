@@ -11,7 +11,7 @@ vladbench score results/protocols/full-original.json --models inkling           
 python3 scripts/build_review_results.py                                                  # rebuilds results/ and the companion assets
 PYTHONPATH=src python3 scripts/export_parquet.py                                 # writes results/dataset/*.parquet for publishing
 PYTHONPATH=src python3 scripts/publish_hf.py [--dry-run]                         # dataset card + Space build; uploads with HF_TOKEN
-python3 -m http.server                                                           # open /results.html, /task-review.html or /self-test.html
+python3 -m http.server                                                           # open /results.html or /self-test.html
 ```
 
 ## What happens

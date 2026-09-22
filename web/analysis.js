@@ -234,7 +234,7 @@ function boxShiftChart(rows) {
     const none = svg("rect", { x: x(v.total.none) - 4, y: y - 4, width: 8, height: 8, class: "box-none" }); none.append(svg("title", {}, `${model.label} · TOTAL with the three box tasks removed · ${v.total.none.toFixed(1)}`));
     const grid = svg("circle", { cx: x(v.total.grid), cy: y, r: 6, fill: "none", stroke: model.color, "stroke-width": 2, class: "box-grid" }); grid.append(svg("title", {}, `${model.label} · TOTAL if its boxes are read on its own 0–1000 grid · ${v.total.grid.toFixed(1)}`));
     const pix = svg("circle", { cx: x(v.total.pixels), cy: y, r: 5.5, fill: model.color, class: "box-pix" }); pix.append(svg("title", {}, `${model.label} · TOTAL as scored, boxes read as pixels · ${v.total.pixels.toFixed(1)}`));
-    root.append(none, grid, pix);
+    root.append(none, ...(v.convention === "grid" ? [grid] : []), pix);   // pixel models have no other grid to read
     const d = v.total.grid - v.total.pixels;
     [v.total.pixels.toFixed(1), v.total.grid.toFixed(1), `${d >= 0 ? "+" : ""}${d.toFixed(1)}`, v.total.none.toFixed(1)].forEach((t, k) => root.append(svg("text", { x: left + plotW + 14 + k * 48, y: y + 4, class: `dist-num${k === 2 ? (d > 0.05 ? " up" : d < -0.05 ? " down" : "") : ""}` }, t)));
   });

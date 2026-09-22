@@ -32,7 +32,7 @@ Status values:
 | C16 | No machine-readable download | Fixed, `bea5286`. rerun.json in the Pages bundle and a Dataset nav link. |
 | C17 | About 364 tab stops in the wheel | Fixed, `bea5286`. Bars are no longer tab stops. |
 | C18 | self-test.html stylesheet version | Fixed, `bea5286` |
-| C19 | Pixel models drawn with a no-op "own grid" ring | Local |
+| C19 | Pixel models drawn with a no-op "own grid" ring | Fixed, `bd9f939` |
 | C20 | Reka note repeats its score | Local. Takes effect at the results rebuild. |
 | C21 | PROTOCOL "higher than both Qwen models on 25 of 28" | Local. Reworded to name the two Qwen models; verified 25 of 28. |
 | C22 | Weather and Light under "near saturation" only because of agreement | Declined. Weather and Light are saturated; the questions no model answers are bad questions. |

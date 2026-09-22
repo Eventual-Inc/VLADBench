@@ -5,6 +5,7 @@ TOTAL is the question-count-weighted mean of the 28 task composites, and the das
 """
 
 import json
+import re
 from pathlib import Path
 
 import matplotlib
@@ -15,8 +16,8 @@ from matplotlib import font_manager
 ROOT = Path(__file__).resolve().parents[1]
 RERUN = ROOT / "results/rerun.json"
 OUT = ROOT / "results/dataset/cost-vs-score.png"
-COLOURS = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767", "#1f9fb3", "#b86b2d",
-           "#7aa6ff", "#ffb347"]
+# Model colours come from the site so the figure and the page agree.
+COLOURS = dict(re.findall(r'(\w+): "(#[0-9a-f]{6})"', (ROOT / "web/results.js").read_text().split("const MODEL_COLORS = {")[1].split("};")[0]))
 BG, PANEL, INK, MUTED, LINE, ACCENT = "#000000", "#090909", "#ffffff", "#b0b0b0", "#2a2a2a", "#ff00ff"
 
 
@@ -37,7 +38,7 @@ def points_from(rerun: dict) -> list[dict]:
         usage = m.get("usage") or {}
         if usage.get("cost_usd") is None or not m.get("featured", True):
             continue
-        out.append({"label": m["label"], "cost": usage["cost_usd"], "score": total(m), "colour": COLOURS[index % len(COLOURS)]})
+        out.append({"label": m["label"], "cost": usage["cost_usd"], "score": total(m), "colour": COLOURS.get(m["id"], MUTED)})
     return out
 
 

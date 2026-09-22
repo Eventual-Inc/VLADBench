@@ -8,13 +8,14 @@ const AUDIT = window.REVIEW_AUDIT || { tasks: [] };
 const PUBLISHED = window.PUBLISHED || { models: [], rows: [] };
 const RERUN = window.FULL_RESULTS || { dataset: {}, models: [] };
 
-// One hue per lab; models within a lab differ by lightness. Fifteen models cannot each get a hue that passes
+// One hue per lab; models within a lab differ by lightness, the largest model brightest. Fifteen models cannot each get a hue that passes
 // colour-vision checks, so every chart also labels models by name. Keyed by id so a model keeps its colour.
 const MODEL_COLORS = {
-  astra6: "#9287eb", sol56: "#786ccd", luna56: "#aca2ff", sol6: "#6052b0", luna6: "#c7beff",
-  qwen38max: "#4a98f7", qwen38or: "#0761bc", qwen36or: "#82d1ff",
-  gemini38: "#ec6a39", gemini25lite: "#af3000", gemma431: "#ffa372",
-  opus55: "#199e70", muse13: "#c98500", minimax3: "#d55181", rekaedge: "#008300",
+  astra6: "#f5f5f5", sol6: "#d1d1d1", sol56: "#b1b1b1", luna6: "#959595", luna56: "#7a7a7a",   // OpenAI: grey to white
+  opus55: "#d95926",                                                                              // Anthropic: orange
+  gemini38: "#ffc15c", gemini25lite: "#e09b2e", gemma431: "#b97600",                              // Google: yellow
+  qwen38max: "#b1a8ff", qwen38or: "#8a7fe2", qwen36or: "#6558b7",                                 // Alibaba: purple
+  muse13: "#3987e5", minimax3: "#e0355a", rekaedge: "#008300",                                    // Meta blue, MiniMax red, Reka green
 };
 const COLOURED = RERUN.models.map((model) => ({ ...model, kind: "rerun", color: MODEL_COLORS[model.id] || "#b0b0b0" }));
 const ALL_MODELS = groupByLab(COLOURED);

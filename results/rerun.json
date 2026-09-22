@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "kind": "complete_model_reruns",
-  "generated_at": "2026-09-16T04:34:41.985517+00:00",
+  "generated_at": "2026-09-22T20:31:36.060058+00:00",
   "dataset": {
     "repository": "depth2world/VLADBench",
     "revision": "1895f22252f9a702fed95334c8e3b60280b4c626",
     "tasks": 28,
     "questions_per_model": 11193,
-    "responses": 134316
+    "responses": 145509
   },
   "scorer": {
     "variant": "upstream",
@@ -26,7 +26,7 @@
   },
   "experiment": {
     "specification": "results/protocols/full-original.json",
-    "specification_sha256": "7e26460d65257b2a90df86bdbe682337715f86cd3e320d4af97b33d2fd34b846",
+    "specification_sha256": "00e3d4cfb59d9c665ec7fd1a17a88553528bc08dd8d0da464d4b09b46194c508",
     "protocol": {
       "prompt": "original",
       "coordinate_convention": "native_pixels",
@@ -4551,7 +4551,7 @@
         "median_task_score": 84.52537640927224,
         "minimum": "Vehicle_Cutin",
         "maximum": "Spatial_Temporal_Reasoning",
-        "task_wins": 22
+        "task_wins": 15
       },
       "tasks": {
         "Traffic_Light": {
@@ -8954,6 +8954,746 @@
           "prompt_price": 1.305420440301476e-07,
           "completion_price": 9.709584943087404e-07,
           "output_tokens_per_query": 4.301259715893862,
+          "text_tokens": 110
+        },
+        "video_cost_basis": "1280x720 at 1 FPS in non-overlapping 8-frame clips, one question each: 3,600 frames and 450 queries an hour; fitted tokeniser rule (vladbench.metering), the sweep's effective per-token prices, measured output tokens per query including reasoning"
+      }
+    },
+    {
+      "id": "opus55",
+      "label": "Claude Opus 5.5",
+      "model": "anthropic/claude-opus-5.5",
+      "reasoning": "low",
+      "parameters": "undisclosed",
+      "lab": "Anthropic",
+      "featured": true,
+      "not_featured_reason": null,
+      "size_rank": 1,
+      "prompt": "original",
+      "transport": "Ordered image URLs for sequences and image URLs",
+      "declared": {
+        "input_transport": "ordered_image_urls",
+        "reasoning_effort": "low",
+        "reasoning_parameter": "openrouter_reasoning",
+        "single_frame_policy": "not_applicable",
+        "oversize_fallback": "not_applicable"
+      },
+      "completion_cap": 8192,
+      "truncated_answers": 0,
+      "carried_from_superseded_condition": 0,
+      "oversize_fallback_requests": 0,
+      "responses": 11193,
+      "dataset_complete": true,
+      "source": "results/scores-opus55.json",
+      "source_sha256": "c3d82df50d12e563bda2b0f0f631312b2bb319963dae4c8707221de662d9bc52",
+      "summary": {
+        "unweighted_mean_task_score": 78.00522385412609,
+        "median_task_score": 81.0754643245105,
+        "minimum": "Vehicle_Cutin",
+        "maximum": "Lane_Speed_Relation",
+        "task_wins": 7
+      },
+      "tasks": {
+        "Traffic_Light": {
+          "usage": {
+            "cost_usd": 8.240848,
+            "answers": 795,
+            "latency_p50": 3.508365292000235
+          },
+          "score": 89.63522012578618,
+          "components": {
+            "accuracy": 0.8716981132075472,
+            "instruction_following": 0.9949685534591195,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 129,
+          "questions_scored": 795,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Pavement_Marking": {
+          "usage": {
+            "cost_usd": 5.05542,
+            "answers": 564,
+            "latency_p50": 3.5048133749951376
+          },
+          "score": 91.06382978723404,
+          "components": {
+            "accuracy": 0.8936170212765957,
+            "instruction_following": 0.9787234042553191,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 119,
+          "questions_scored": 564,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Traffic_Sign": {
+          "usage": {
+            "cost_usd": 6.51896,
+            "answers": 701,
+            "latency_p50": 3.520640041999286
+          },
+          "score": 94.49358059914408,
+          "components": {
+            "accuracy": 0.9315263908701854,
+            "instruction_following": 0.9985734664764622,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 250,
+          "questions_scored": 701,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Right_Of_Way": {
+          "usage": {
+            "cost_usd": 13.244664,
+            "answers": 309,
+            "latency_p50": 4.244896958000027
+          },
+          "score": 84.20711974110033,
+          "components": {
+            "accuracy": 0.8025889967637541,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 103,
+          "questions_scored": 309,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "VRU_Recognition": {
+          "usage": {
+            "cost_usd": 4.800764,
+            "answers": 424,
+            "latency_p50": 3.3495252080028877
+          },
+          "score": 86.20859903905144,
+          "components": {
+            "accuracy": 0.8632075471698113,
+            "instruction_following": 0.9504716981132075,
+            "other": 0.8012929239432239,
+            "other_name": "mean_iou",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 135,
+          "questions_scored": 424,
+          "scorer_function": "Grounding_criterion_QA",
+          "dataset_complete": true
+        },
+        "Vehicle_Recognition": {
+          "usage": {
+            "cost_usd": 2.462844,
+            "answers": 223,
+            "latency_p50": 3.383306208997965
+          },
+          "score": 90.03865040318173,
+          "components": {
+            "accuracy": 0.9551569506726457,
+            "instruction_following": 0.9910313901345291,
+            "other": 0.7486725022286291,
+            "other_name": "mean_iou",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 98,
+          "questions_scored": 223,
+          "scorer_function": "Grounding_criterion_QA",
+          "dataset_complete": true
+        },
+        "Vehicle_Status": {
+          "usage": {
+            "cost_usd": 2.953604,
+            "answers": 257,
+            "latency_p50": 3.8454156670049997
+          },
+          "score": 71.67315175097276,
+          "components": {
+            "accuracy": 0.6575875486381323,
+            "instruction_following": 0.953307392996109,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 113,
+          "questions_scored": 257,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Lane_Recognition": {
+          "usage": {
+            "cost_usd": 9.94298,
+            "answers": 780,
+            "latency_p50": 3.3356519590015523
+          },
+          "score": 93.23076923076923,
+          "components": {
+            "accuracy": 0.9153846153846154,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 100,
+          "questions_scored": 780,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Obstruction_Recognition": {
+          "usage": {
+            "cost_usd": 4.001176,
+            "answers": 680,
+            "latency_p50": 3.141045500000473
+          },
+          "score": 90.64919341333304,
+          "components": {
+            "accuracy": 0.8926470588235295,
+            "instruction_following": 0.9970588235294118,
+            "other": 0.8691888000522777,
+            "other_name": "mean_iou",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 224,
+          "questions_scored": 680,
+          "scorer_function": "Grounding_criterion_QA",
+          "dataset_complete": true
+        },
+        "Light": {
+          "usage": {
+            "cost_usd": 1.12468,
+            "answers": 200,
+            "latency_p50": 2.9661915420001606
+          },
+          "score": 69.6,
+          "components": {
+            "accuracy": 0.62,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 100,
+          "questions_scored": 200,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Weather": {
+          "usage": {
+            "cost_usd": 1.505036,
+            "answers": 248,
+            "latency_p50": 2.94002429099055
+          },
+          "score": 75.0,
+          "components": {
+            "accuracy": 0.6895161290322581,
+            "instruction_following": 0.9919354838709677,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 124,
+          "questions_scored": 248,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Sign_Sign_Relation": {
+          "usage": {
+            "cost_usd": 2.075,
+            "answers": 192,
+            "latency_p50": 5.701750250009354
+          },
+          "score": 60.85503472222222,
+          "components": {
+            "accuracy": 0.5108506944444444,
+            "instruction_following": 1.0,
+            "other": 0.5104166666666666,
+            "other_name": "paired_improvement",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 55,
+          "questions_scored": 192,
+          "scorer_function": "Relation_criterion_QA",
+          "dataset_complete": true
+        },
+        "Sign_Lane_Relation": {
+          "usage": {
+            "cost_usd": 14.125584,
+            "answers": 1072,
+            "latency_p50": 6.557209457998397
+          },
+          "score": 87.26057213930352,
+          "components": {
+            "accuracy": 0.8392412935323391,
+            "instruction_following": 1.0,
+            "other": 0.8432835820895522,
+            "other_name": "paired_improvement",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 124,
+          "questions_scored": 1072,
+          "scorer_function": "Relation_criterion_QA",
+          "dataset_complete": true
+        },
+        "Light_Lane_Relation": {
+          "usage": {
+            "cost_usd": 10.188544,
+            "answers": 702,
+            "latency_p50": 6.860348542002612
+          },
+          "score": 70.40835707502362,
+          "components": {
+            "accuracy": 0.644634377967709,
+            "instruction_following": 0.9985754985754985,
+            "other": 0.6068376068376068,
+            "other_name": "paired_improvement",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 111,
+          "questions_scored": 702,
+          "scorer_function": "Relation_criterion_QA",
+          "dataset_complete": true
+        },
+        "Lane_Speed_Relation": {
+          "usage": {
+            "cost_usd": 3.533228,
+            "answers": 340,
+            "latency_p50": 6.573376957996516
+          },
+          "score": 96.8235294117647,
+          "components": {
+            "accuracy": 0.9647058823529412,
+            "instruction_following": 1.0,
+            "other": 0.9529411764705882,
+            "other_name": "paired_improvement",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 44,
+          "questions_scored": 340,
+          "scorer_function": "RoadSpeed_criterion_QA",
+          "dataset_complete": true
+        },
+        "Lane_Change_Relation": {
+          "usage": {
+            "cost_usd": 10.887836,
+            "answers": 784,
+            "latency_p50": 5.83589466700505
+          },
+          "score": 90.89285714285715,
+          "components": {
+            "accuracy": 0.8367346938775511,
+            "instruction_following": 0.9987244897959183,
+            "other": 0.9693877551020408,
+            "other_name": "paired_improvement",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0.3,
+            "accuracy": 0.5,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 108,
+          "questions_scored": 784,
+          "scorer_function": "RoadChange_criterion_QA",
+          "dataset_complete": true
+        },
+        "VRU_Cutin": {
+          "usage": {
+            "cost_usd": 6.753648,
+            "answers": 267,
+            "latency_p50": 4.219994166996912
+          },
+          "score": 69.88764044943821,
+          "components": {
+            "accuracy": 0.34831460674157305,
+            "instruction_following": 1.0,
+            "other": 0.6629213483146067,
+            "other_name": "judgment_accuracy",
+            "accuracy_name": "description_accuracy"
+          },
+          "weights": {
+            "other": 0.7,
+            "accuracy": 0.1,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 89,
+          "questions_scored": 267,
+          "scorer_function": "Judge_criterion_QA",
+          "dataset_complete": true
+        },
+        "Vehicle_Cutin": {
+          "usage": {
+            "cost_usd": 11.402168,
+            "answers": 261,
+            "latency_p50": 4.619620333003695
+          },
+          "score": 37.89272030651341,
+          "components": {
+            "accuracy": 0.19540229885057472,
+            "instruction_following": 0.9923371647509579,
+            "other": 0.22988505747126436,
+            "other_name": "judgment_accuracy",
+            "accuracy_name": "description_accuracy"
+          },
+          "weights": {
+            "other": 0.7,
+            "accuracy": 0.1,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 87,
+          "questions_scored": 261,
+          "scorer_function": "Judge_criterion_QA",
+          "dataset_complete": true
+        },
+        "VRU_Cross": {
+          "usage": {
+            "cost_usd": 10.917908,
+            "answers": 276,
+            "latency_p50": 4.528442333990824
+          },
+          "score": 80.68840579710144,
+          "components": {
+            "accuracy": 0.5217391304347826,
+            "instruction_following": 0.9963768115942029,
+            "other": 0.7934782608695652,
+            "other_name": "judgment_accuracy",
+            "accuracy_name": "description_accuracy"
+          },
+          "weights": {
+            "other": 0.7,
+            "accuracy": 0.1,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 92,
+          "questions_scored": 276,
+          "scorer_function": "Judge_criterion_QA",
+          "dataset_complete": true
+        },
+        "Long_Short_Parking": {
+          "usage": {
+            "cost_usd": 10.558004,
+            "answers": 320,
+            "latency_p50": 4.2489384159998735
+          },
+          "score": 72.25,
+          "components": {
+            "accuracy": 0.653125,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 98,
+          "questions_scored": 320,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Vehicle_Bahavior": {
+          "usage": {
+            "cost_usd": 5.356332,
+            "answers": 80,
+            "latency_p50": 8.91714916699857
+          },
+          "score": 58.0,
+          "components": {
+            "accuracy": 0.475,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 80,
+          "questions_scored": 80,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "VRU_Bahavior": {
+          "usage": {
+            "cost_usd": 5.163276,
+            "answers": 99,
+            "latency_p50": 5.311693833995378
+          },
+          "score": 66.86868686868686,
+          "components": {
+            "accuracy": 0.5858585858585859,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 99,
+          "questions_scored": 99,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Key_Obsturction_Detection": {
+          "usage": {
+            "cost_usd": 6.714048,
+            "answers": 547,
+            "latency_p50": 5.272347709003952
+          },
+          "score": 81.46252285191956,
+          "components": {
+            "accuracy": 0.0,
+            "instruction_following": 0.9579524680073126,
+            "other": 0.7787934186471663,
+            "other_name": "judgment_accuracy",
+            "accuracy_name": "description_accuracy"
+          },
+          "weights": {
+            "other": 0.8,
+            "accuracy": 0,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 154,
+          "questions_scored": 547,
+          "scorer_function": "Judge_criterion_QA",
+          "dataset_complete": true
+        },
+        "Spatial_Temporal_Reasoning": {
+          "usage": {
+            "cost_usd": 7.405724,
+            "answers": 161,
+            "latency_p50": 6.642356957992888
+          },
+          "score": 87.75510204081633,
+          "components": {
+            "accuracy": 0.8367346938775511,
+            "instruction_following": 1.0,
+            "other": 0.8571428571428571,
+            "other_name": "judgment_accuracy",
+            "accuracy_name": "description_accuracy"
+          },
+          "weights": {
+            "other": 0.4,
+            "accuracy": 0.4,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 87,
+          "questions_scored": 161,
+          "scorer_function": "Judge_criterion_QA",
+          "dataset_complete": true
+        },
+        "Risk_Prediction": {
+          "usage": {
+            "cost_usd": 14.6932,
+            "answers": 272,
+            "latency_p50": 6.626990458011278
+          },
+          "score": 81.625,
+          "components": {
+            "accuracy": 0.7875,
+            "instruction_following": 1.0,
+            "other": 0.7678571428571429,
+            "other_name": "judgment_accuracy",
+            "accuracy_name": "description_accuracy"
+          },
+          "weights": {
+            "other": 0.7,
+            "accuracy": 0.1,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 103,
+          "questions_scored": 272,
+          "scorer_function": "Judge_criterion_QA",
+          "dataset_complete": true
+        },
+        "Drive_Efficiency": {
+          "usage": {
+            "cost_usd": 19.023408,
+            "answers": 303,
+            "latency_p50": 5.4546799160016235
+          },
+          "score": 70.03300330033004,
+          "components": {
+            "accuracy": 0.6270627062706271,
+            "instruction_following": 0.9933993399339934,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 101,
+          "questions_scored": 303,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Longitudinal": {
+          "usage": {
+            "cost_usd": 4.346072,
+            "answers": 101,
+            "latency_p50": 4.67492708300415
+          },
+          "score": 65.94059405940594,
+          "components": {
+            "accuracy": 0.5742574257425742,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 101,
+          "questions_scored": 101,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        },
+        "Lateral": {
+          "usage": {
+            "cost_usd": 2.283272,
+            "answers": 235,
+            "latency_p50": 5.37202249999973
+          },
+          "score": 69.70212765957447,
+          "components": {
+            "accuracy": 0.6212765957446809,
+            "instruction_following": 1.0,
+            "other": 0.0,
+            "other_name": "unused",
+            "accuracy_name": "accuracy"
+          },
+          "weights": {
+            "other": 0,
+            "accuracy": 0.8,
+            "instruction_following": 0.2
+          },
+          "samples_scored": 109,
+          "questions_scored": 235,
+          "scorer_function": "Geneal_criterion_QA",
+          "dataset_complete": true
+        }
+      },
+      "usage": {
+        "cost_usd": 205.278228,
+        "cost_receipts": 11193,
+        "answers": 11193,
+        "latency_seconds": {
+          "n": 11193,
+          "p25": 3.244491375007783,
+          "p50": 4.495430499999202,
+          "p75": 6.545375874993624,
+          "p95": 8.816241833003005,
+          "max": 380.3187435419968
+        },
+        "input_cost_per_frame_usd": 0.004796,
+        "output_cost_per_query_usd": 0.0015912052175466808,
+        "cost_per_video_hour_usd": 18.179642347896007,
+        "tokens_per_frame_720p": 1199.0,
+        "metering": {
+          "rule": {
+            "kind": "area",
+            "patch": 0,
+            "multiplier": 0.0,
+            "tokens_per_pixel": 0.0013009982638888889,
+            "tokens_per_frame": 0.0
+          },
+          "prompt_price": 4e-06,
+          "completion_price": 1.9999999999999998e-05,
+          "output_tokens_per_query": 79.56026087733404,
           "text_tokens": 110
         },
         "video_cost_basis": "1280x720 at 1 FPS in non-overlapping 8-frame clips, one question each: 3,600 frames and 450 queries an hour; fitted tokeniser rule (vladbench.metering), the sweep's effective per-token prices, measured output tokens per query including reasoning"

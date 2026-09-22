@@ -85,6 +85,7 @@ def answer_row(model_id: str, record: dict, question_id: str, condition: str) ->
     answer = record.get("answer") or ""
     return {"model_id": model_id, "question_id": question_id, "answer": answer, "answer_chars": len(answer),
             "finish_reason": record.get("finish_reason"), "attempt": int(record.get("attempt") or 1),
+            "served_provider": (record.get("response") or {}).get("provider"), "served_model": (record.get("response") or {}).get("model"),
             "elapsed_seconds": record.get("elapsed_seconds"), "prompt_tokens": usage_field(record, "prompt_tokens"),
             "completion_tokens": usage_field(record, "completion_tokens"),
             "reasoning_tokens": usage_field(record, "completion_tokens_details", "reasoning_tokens"),

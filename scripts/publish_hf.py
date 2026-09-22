@@ -56,8 +56,8 @@ def cap_note(models: list[dict]) -> str:
         note = ("The archived first protocol used a 512-token completion guard. " + ", ".join(capped)
                 + " ran under it and were not re-run; the Truncated column counts answers that guard cut short. ")
     for m in (m for m in models if m.get("carried_from_superseded_condition")):
-        note += (f"{m['label']} also started under it; its cut answers were re-asked under the live 8192 guard and the rest "
-                 f"carried over ({m['carried_from_superseded_condition']:,} answers, `models.carried_from_512`). ")
+        note += (f"{m['label']} first ran under an archived protocol with a 512-token completion guard. Its cut answers were re-asked "
+                 f"under the live 8192 guard and the rest carried over ({m['carried_from_superseded_condition']:,} answers, `models.carried_from_512`). ")
     return note
 
 

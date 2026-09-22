@@ -271,6 +271,57 @@
         "variable": "OPENROUTER_API_KEY"
       },
       "backend_reproducibility": "Open weights served by third-party hosts through OpenRouter (Darkbloom, Parasail observed); the serving backend is not pinned. Video requests exclude the Alibaba route, which rejects clips under four frames. Reasoning is disabled with reasoning.enabled=false (zero reasoning tokens observed). Replaces the self-hosted Modal sweep of the same weights, which ran under the archived 512 guard."
+    },
+    {
+      "id": "opus55",
+      "provider": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1",
+      "model": "anthropic/claude-opus-5.5",
+      "reasoning_effort": "low",
+      "reasoning_parameter": "openrouter_reasoning",
+      "input_transport": "ordered_image_urls",
+      "single_frame_policy": "not_applicable",
+      "oversize_fallback": "not_applicable",
+      "video_options": {},
+      "credential": {
+        "type": "environment",
+        "variable": "OPENROUTER_API_KEY"
+      },
+      "backend_reproducibility": "Pinned to anthropic/claude-opus-5.5. Anthropic models accept images but not video, so sequences are sent as ordered image_url parts. Thinking cannot be disabled on Opus 5.5, so reasoning is set to its lowest effort, low, through OpenRouter's reasoning.effort. Served by Anthropic through OpenRouter."
+    },
+    {
+      "id": "luna6",
+      "provider": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1",
+      "model": "openai/gpt-6-luna",
+      "reasoning_effort": "none",
+      "reasoning_parameter": "openrouter_reasoning",
+      "input_transport": "ordered_image_urls",
+      "single_frame_policy": "not_applicable",
+      "oversize_fallback": "not_applicable",
+      "video_options": {},
+      "credential": {
+        "type": "environment",
+        "variable": "OPENROUTER_API_KEY"
+      },
+      "backend_reproducibility": "Pinned to openai/gpt-6-luna, served by OpenAI through OpenRouter. The endpoint accepts reasoning.enabled=false (zero reasoning tokens), so reasoning is disabled as the lowest setting. Images only, so sequences are sent as ordered image_url parts."
+    },
+    {
+      "id": "sol6",
+      "provider": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1",
+      "model": "openai/gpt-6-sol",
+      "reasoning_effort": "none",
+      "reasoning_parameter": "openrouter_reasoning",
+      "input_transport": "ordered_image_urls",
+      "single_frame_policy": "not_applicable",
+      "oversize_fallback": "not_applicable",
+      "video_options": {},
+      "credential": {
+        "type": "environment",
+        "variable": "OPENROUTER_API_KEY"
+      },
+      "backend_reproducibility": "Pinned to openai/gpt-6-sol, served by OpenAI through OpenRouter. The endpoint accepts reasoning.enabled=false (zero reasoning tokens), so reasoning is disabled as the lowest setting. Images only, so sequences are sent as ordered image_url parts."
     }
   ]
 }

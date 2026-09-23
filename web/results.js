@@ -347,6 +347,7 @@ function renderCostScore() {
   chart.append(root);
   renderFrontier(points, frontier);
   renderReadings();
+  renderServing();
 }
 
 // The frontier stated as a table: which model to pick at each budget, and who beats every other model for less.
@@ -409,6 +410,31 @@ function clipTokens(rule, width, height, frames) {
   if (rule.kind === "area") return frames * rule.tokens_per_pixel * width * height;
   if (rule.kind === "pair") return Math.ceil(frames / 2) * rule.tokens_per_pixel * width * height;
   return frames * rule.tokens_per_frame;
+}
+
+// Answer time and cost per featured model: median and 95th-percentile seconds per request, cost per video hour at the
+// calculator's settings, and score. Sorted by the 95th percentile, so the most consistent models come first.
+function renderServing() {
+  const table = $("serving");
+  if (!table) return;
+  table.replaceChildren();
+  const s = videoSettings();
+  const rows = MODELS.filter((m) => m.featured !== false && m.usage?.latency_seconds)
+    .map((m) => ({ m, lat: m.usage.latency_seconds, hour: meteredHour(m, s)?.total }))
+    .sort((a, b) => a.lat.p95 - b.lat.p95);
+  const head = element("tr");
+  [["Model", ""], ["Median answer", "num"], ["95th percentile", "num"], ["Per video hour", "num"], ["Score", "num"]].forEach(([label, cls]) => head.append(element("th", label, cls)));
+  const thead = element("thead"); thead.append(head); table.append(thead);
+  const body = element("tbody");
+  for (const { m, lat, hour } of rows) {
+    const tr = element("tr");
+    const name = element("td"); const swatch = element("i", undefined, "swatch"); swatch.style.background = m.color;
+    name.append(swatch, element("b", m.label));
+    tr.append(name, element("td", seconds(lat.p50), "num"), element("td", seconds(lat.p95), "num"),
+              element("td", hour == null ? "n/a" : money(hour), "num"), element("td", modelMean(m).toFixed(1), "num"));
+    body.append(tr);
+  }
+  table.append(body);
 }
 
 function videoSettings() {
@@ -973,7 +999,7 @@ function wireTabs() {
 wireTabs();
 
 // Embed mode: ?embed=<name> (see EMBED_TABS) shows one panel with no chrome, for iframes in the blog.
-const EMBED_TABS = { quadrants: "caveats", boxes: "caveats", suspect: "caveats", cutin: "caveats", distribution: "analysis", whatif: "analysis", wheel: "overview", overview: "cost", leaderboard: "leaderboard", plot: "cost", frontier: "cost", video: "cost", results: "overview", score: "leaderboard", matrix: "matrix" };
+const EMBED_TABS = { quadrants: "caveats", boxes: "caveats", suspect: "caveats", cutin: "caveats", distribution: "analysis", whatif: "analysis", wheel: "overview", overview: "cost", leaderboard: "leaderboard", plot: "cost", frontier: "cost", serving: "cost", video: "cost", results: "overview", score: "leaderboard", matrix: "matrix" };
 const embed = new URLSearchParams(location.search).get("embed");
 if (embed === "full") document.body.classList.add("embed-full");   // whole tabbed page without the site header, for /blog/VLADBench
 if (embed && EMBED_TABS[embed]) {
@@ -986,7 +1012,7 @@ for (const [id, target] of [["article-link", window.VLADBENCH_ARTICLE], ["blog-l
   if (link && target) { link.href = target; link.target = "_top"; link.hidden = false; }   // leave the iframe when embedded
 }
 $("cost-linear")?.addEventListener("change", renderCostScore);
-for (const id of ["video-res", "video-fps", "video-frames"]) $(id)?.addEventListener("change", () => { renderVideoCost(); renderLeaderboard(); });
+for (const id of ["video-res", "video-fps", "video-frames"]) $(id)?.addEventListener("change", () => { renderVideoCost(); renderLeaderboard(); renderServing(); });
 $("inspector-close").onclick = () => $("inspector").close();
 
 buildModelFilter();

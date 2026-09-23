@@ -91,6 +91,14 @@ Each row is one model, ordered by sweep cost. Each column is TOTAL under one rea
 scored, each model's own grid, or the box tasks left out. A marked cell means the model is on the frontier under that
 reading.
 
+## Serving Efficiency
+
+Each row is one featured model. Median and 95th-percentile answer time are per request, measured by the harness
+through OpenRouter, so they include routing and network time. Models that take ordered images and models that take
+video receive different payloads, so answer times are comparable within a transport more than across. Cost per video
+hour follows the video cost calculator's settings. Rows are sorted by the 95th percentile, so the models whose slowest
+answers are fastest come first.
+
 ## Metered Cost of Video Question Answering
 
 Cost of one hour of video question answering at the chosen frame size, frame rate, and clip length, with one question

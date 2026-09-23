@@ -1227,6 +1227,7 @@ body.embed-leaderboard .overview-grid > .panel:not(.leaderboard),
 body.embed-plot .overview-grid > .panel:not(.cost-score-panel),
 body.embed-frontier .overview-grid > .panel:not(.frontier-panel):not(.readings-panel),
 body.embed-video .overview-grid > .panel:not(.video-panel),
+body.embed-serving .overview-grid > .panel:not(.serving-panel),
 body.embed-score .overview-grid > .panel:not(.score-bars) { display: none; }
 body.embed .overview-grid { gap: 10px; }
 

@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
-    <link rel="stylesheet" href="web/results.css?v=51" />
+    <link rel="stylesheet" href="web/results.css?v=52" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
     <script src="task-review-published.js" defer></script>
     <script src="task-review-results.js?v=12" defer></script>
     <script src="task-review-variants.js?v=2" defer></script>
-    <script src="web/results.js?v=62" defer></script>
+    <script src="web/results.js?v=63" defer></script>
     <script src="web/wheel.js?v=3" defer></script>
     <script src="web/task-detail.js?v=5" defer></script>
     <script src="web/analysis.js?v=19" defer></script>
@@ -209,6 +209,11 @@
             <h3 class="section-title" id="readings-title">Frontier by Box Scoring</h3>
             <p class="sub">TOTAL per box scoring; dots mark the frontier. <a class="more" href="https://github.com/Eventual-Inc/VLADBench/blob/main/docs/companion.md#frontier-by-box-scoring" target="_blank" rel="noopener">details</a></p>
             <table id="readings" class="frontier"></table>
+          </section>
+          <section class="panel span-2 serving-panel" aria-labelledby="serving-title">
+            <h3 class="section-title" id="serving-title">Serving Efficiency</h3>
+            <p class="sub">Answer time and cost per model, most consistent first. <a class="more" href="https://github.com/Eventual-Inc/VLADBench/blob/main/docs/companion.md#serving-efficiency" target="_blank" rel="noopener">details</a></p>
+            <table id="serving" class="frontier"></table>
           </section>
           <section class="panel span-2 video-panel" aria-labelledby="video-title">
             <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>

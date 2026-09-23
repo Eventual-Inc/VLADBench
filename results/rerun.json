@@ -6747,7 +6747,7 @@
       "parameters": "7B",
       "lab": "Reka",
       "featured": false,
-      "not_featured_reason": "7B edge model scoring 39.8; kept in the data, left out of the headline figures as an outlier",
+      "not_featured_reason": "7B edge model; kept in the data, left out of the headline figures as an outlier",
       "size_rank": 1,
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",

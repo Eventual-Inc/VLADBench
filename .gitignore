@@ -16,5 +16,4 @@ results/runs/
 results/dataset/*
 !results/dataset/cost-vs-score.png
 !results/dataset/cost-vs-score-hero.png
-hosting/.venv/
 .claude/launch.json

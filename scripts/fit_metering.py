@@ -1,6 +1,6 @@
 """Re-derive the tokeniser rules in vladbench.metering from the sweeps and report the residuals.
 
-  PYTHONPATH=src python3 scripts/fit_metering.py
+  uv run python scripts/fit_metering.py
 
 For every model with a rule: billed visual tokens per clip at each frame resolution the dataset contains, the rule's
 prediction, and the residual; the effective per-token prices the sweep paid against OpenRouter's list; and which hosts
@@ -8,28 +8,28 @@ served the model. Run it after a new sweep lands to confirm the rules still hold
 """
 
 from collections import defaultdict
-import glob
 import json
 import os
-from pathlib import Path
 from statistics import median
 
 from dotenv import load_dotenv
 
+from vladbench import paths
 from vladbench.metering import RULES, TEXT_TOKENS, clip_tokens, effective_prices, fetch_prices
 from vladbench.requests import questions, tasks
+from vladbench.spec import load_spec
+from vladbench.usage import answer_records
 
-ROOT = Path(__file__).resolve().parents[1]
-RUNS = ROOT / "results/runs/full-original"
-MEDIA = ROOT / "results/runs/media"
+MEDIA = paths.ROOT / "results/runs/media"
 
 
 def frame_dimensions() -> dict[str, tuple[int, int]]:
     """Frame size per URL from the media receipts; sequence frames only, which is what the video path bills."""
-    dims = {}
+    dims: dict[str, tuple[int, int]] = {}
     for receipt in MEDIA.glob("*.json"):
         for frame in json.loads(receipt.read_text()).get("frames", []):
-            dims[frame["url"]] = tuple(frame["dimensions"])
+            width, height = frame["dimensions"]
+            dims[frame["url"]] = (width, height)
     return dims
 
 
@@ -40,14 +40,10 @@ def clips() -> dict[str, tuple[int, tuple[int, int]]]:
     for task in tasks():
         for q in questions(task):
             if q["sequence"]:
-                sizes = {dims.get(u) for u in q["image_urls"]}
-                if len(sizes) == 1 and None not in sizes:
+                sizes = {dims[u] for u in q["image_urls"] if u in dims}
+                if len(sizes) == 1 and all(u in dims for u in q["image_urls"]):
                     out[q["id"]] = (len(q["image_urls"]), sizes.pop())
     return out
-
-
-def records(model_id: str) -> list[dict]:
-    return [json.loads(line) for path in glob.glob(str(RUNS / model_id / "*.jsonl")) for line in open(path)]
 
 
 def report(model_id: str, rows: list[dict], shapes: dict, slug: str, listed) -> None:
@@ -71,14 +67,14 @@ def report(model_id: str, rows: list[dict], shapes: dict, slug: str, listed) -> 
 
 
 def main():
-    load_dotenv(ROOT / ".env")
-    spec = json.loads((ROOT / "results/protocols/full-original.json").read_text())
+    load_dotenv(paths.ROOT / ".env")
+    spec = load_spec(paths.PROTOCOL)
     slugs = {m["id"]: m["model"] for m in spec["models"] if m["id"] in RULES}
     key = os.environ.get("OPENROUTER_API_KEY")
     listed = fetch_prices(key, list(slugs.values())) if key else {}
     shapes = clips()
     for model_id, slug in slugs.items():
-        rows = records(model_id)
+        rows = answer_records(model_id)
         if rows:
             report(model_id, rows, shapes, slug, listed.get(slug))
 

@@ -12,7 +12,7 @@ on:
       - "answers/**"
       - "task-review-*.js"
       - "results/dataset/*.png"
-      - "scripts/build_blog_embed.py"
+      - "src/vladbench/site.py"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -30,11 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v6
       - name: Build the standalone site
-        run: PYTHONPATH=src python3 scripts/build_blog_embed.py --pages dist/pages
+        run: uv run vladbench build --steps site --site dist/pages
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

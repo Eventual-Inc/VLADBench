@@ -1,17 +1,19 @@
 # Reproduction
 
 ```sh
-pip install -e .            # numpy, pillow, python-dotenv; ffmpeg must be on PATH for video models
+uv sync --group scripts     # ffmpeg must be on PATH for video models
 cp .env.example .env        # OPENROUTER_API_KEY; HF_TOKEN to publish
 
-vladbench validate results/protocols/full-original.json
-vladbench run results/protocols/full-original.json --smoke --models gemini38 qwen38max  # first question of every task (billable)
-vladbench run results/protocols/full-original.json --models gemini38                    # everything unanswered (billable)
-vladbench score results/protocols/full-original.json --models gemini38                  # writes results/scores-gemini38.json
-python3 scripts/build_review_results.py                                                  # rebuilds results/ and the companion assets
-PYTHONPATH=src python3 scripts/export_parquet.py                                 # writes results/dataset/*.parquet for publishing
-PYTHONPATH=src python3 scripts/publish_hf.py [--dry-run]                         # dataset card + Space build; uploads with HF_TOKEN
-python3 -m http.server                                                           # open /results.html or /self-test.html
+uv run vladbench validate results/protocols/full-original.json
+uv run vladbench run results/protocols/full-original.json --smoke --models gemini38 qwen38max  # first question of every task (billable)
+uv run vladbench run results/protocols/full-original.json --models gemini38                    # everything unanswered (billable)
+uv run vladbench score results/protocols/full-original.json --models gemini38                  # writes results/scores-gemini38.json
+uv run vladbench build                  # record, site data, answers, variants, parquet, figures, card, Pages site; stops on a partial run
+uv run vladbench publish [--dry-run]    # uploads results/dataset/ with HF_TOKEN
+python3 -m http.server                  # open /results.html or /self-test.html
+
+A new model needs a protocol entry in results/protocols/full-original.json and a registry entry in results/models.json
+(label, lab, parameters, size rank, featured, box convention, colour).
 ```
 
 ## What happens

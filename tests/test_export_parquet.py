@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATASET = ROOT / "results/dataset"
 
 
-@unittest.skipUnless((DATASET / "task_scores.parquet").exists(), "run scripts/export_parquet.py first")
+@unittest.skipUnless((DATASET / "task_scores.parquet").exists(), "run vladbench build first")
 class ExportParquetTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -47,21 +47,17 @@ class ExportParquetTests(unittest.TestCase):
                 self.assertAlmostEqual(by_model[model["model_id"]], model["cost_usd"], places=6)
 
 
-class PublishTests(unittest.TestCase):
+class CardTests(unittest.TestCase):
     def test_dataset_card_lists_every_table_and_model(self):
-        import importlib.util
-        spec = importlib.util.spec_from_file_location("publish_hf", ROOT / "scripts/publish_hf.py")
-        assert spec is not None and spec.loader is not None
-        publish = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(publish)
+        from vladbench import paths
+        from vladbench.card import check_card, render_card
+        from vladbench.export import TABLES
         rerun = json.loads((ROOT / "results/rerun.json").read_text())
-        card = publish.dataset_card("Eventual-Inc/VLADBench-reeval", rerun)
-        for table in publish.TABLES:
+        card = render_card(rerun, paths.CARD_TEMPLATE.read_text(), repo="Eventual-Inc/VLADBench-reeval", protocol_sha256="0" * 64)
+        check_card(card, rerun)
+        for table in TABLES:
             self.assertIn(f"config_name: {table}", card)
-        for model in rerun["models"]:
-            self.assertIn(model["label"], card)
         self.assertIn(f"{rerun['dataset']['responses']:,}", card)
-        self.assertIn("sdk: static", publish.space_readme("Eventual-Inc/VLADBench-reeval"))
 
 
 if __name__ == "__main__":

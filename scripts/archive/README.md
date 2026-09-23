@@ -15,6 +15,7 @@ protocol choices drifted from one another:
 | `run_video_smoke.py`, `run_gemini_video_smoke.py`, `run_managed_video_smoke.py` | 28-question smoke runs | One first question per task |
 | `score_managed_suite.py`, `summarize_*.py`, `supervise_gemini_full.py` | `scores.json`, `usage-summary.json` in the groups above | Scoring and bookkeeping for the groups above |
 | `openai_video_request.py` | none | Manual single request |
+| `audit_gold_distributions.py` | `results/audit/gold-distributions.json`, `.md` (committed) | None: it reads the pinned annotations only. Archived 2026-09-22 until the audit post needs new numbers; to be rewritten as `vladbench audit` |
 | `full-original-512.json` | the condition the three complete models (qwen36, qwen38, gemini38) were verified against | Identical to `protocols/full-original.json` except for a 512-token completion cap that bound reasoning models |
 
 The recorded requests themselves are the ground truth. On 2026-09-14 every request these

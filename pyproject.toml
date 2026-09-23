@@ -34,12 +34,9 @@ force-exclude = true
 # Errors that are bugs, not style: pyflakes, bugbear, syntax.
 select = ["F", "B", "E9"]
 
-[tool.ruff.lint.per-file-ignores]
-# The DiffusionGemma proxy is outside the benchmark; its zips pair structurally equal lists.
-"hosting/*" = ["B905", "B007"]
-
 [tool.ty.src]
-include = ["src", "tests"]   # scripts/ joins once it is split into modules
+include = ["src", "tests", "scripts"]
+exclude = ["scripts/archive"]
 
 [tool.codespell]
 skip = "*.json,*.jsonl,*.parquet,*.js.map,./original,./answers,./results,./dist,./task-review-*.js"

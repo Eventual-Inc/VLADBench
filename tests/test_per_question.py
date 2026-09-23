@@ -37,25 +37,24 @@ class MarkTests(unittest.TestCase):
         self.assertEqual(components_from_marks("RoadSpeed_criterion_QA", marks)[2], 1.0)
 
 
-@unittest.skipUnless(RUNS.is_dir() and (ROOT / "task-review-results.js").exists(), "sweep records not present")
+@unittest.skipUnless(RUNS.is_dir() and (ROOT / "results/rerun.json").exists(), "sweep records not present")
 class ReproductionTests(unittest.TestCase):
     def test_marks_reproduce_released_components_for_every_model_and_task(self):
-        import importlib.util
-        spec = importlib.util.spec_from_file_location("build_answers", ROOT / "scripts/build_answers.py")
-        assert spec is not None and spec.loader is not None
-        build = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(build)
+        from vladbench.answers import check_marks, mark_task, recorded_answers
+        from vladbench.record import load_record
         from vladbench.requests import questions
-        models = build.published()["models"]
-        scorers = build.load_scorer()[0].func_mapping
+        from vladbench.scoring import load_scorer
+        models = load_record()["models"]
+        scorers = load_scorer()[0].func_mapping
         for task in ("Traffic_Light", "VRU_Recognition", "Sign_Lane_Relation", "Lane_Speed_Relation", "Lane_Change_Relation", "Vehicle_Cutin"):
             requests = questions(task)
+            family = scorers[task].__name__
             for model in models:
-                marks = build.mark_task(task, scorers[task].__name__, model["id"], requests)
+                marks = mark_task(family, recorded_answers(model["id"], task), requests)
                 if marks is None:
                     continue
                 with self.subTest(task=task, model=model["id"]):
-                    build.check(task, scorers[task].__name__, model, marks)   # raises SystemExit on mismatch
+                    check_marks(task, family, model, marks)   # raises MarksMismatch on a difference
 
 
 if __name__ == "__main__":

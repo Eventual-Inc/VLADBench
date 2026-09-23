@@ -8,6 +8,9 @@ scripts before they were deleted. Differences from the plan:
   checked in CI; the record and answer files are checked where the sweep records exist.
 - usage.frames_per_question was dead code in the old builder and was dropped.
 - aggregate.frontier keeps a pricier model that only ties the top score, the same rule as paretoFrontier in web/results.js.
+- `vladbench audit` is not added yet; the audit script is archived until the audit post needs new numbers.
+- The registry is checked against the protocol in `build.build` (`require_models`), not in `spec.py`, so `vladbench run`
+  and `score` do not need the registry.
 
 ## Goal
 

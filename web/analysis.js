@@ -176,7 +176,7 @@ function renderDistribution() {
   for (const button of document.querySelectorAll("[data-dist-view]")) button.setAttribute("aria-pressed", String(button.dataset.distView === view));
   const note = $("distribution-note");
   const n25 = rows.find((r) => r.s25)?.s25.n || 0;
-  if (note) note.textContent = `Grey dots are the ${n25} models in the paper's Table 10 (2025). Coloured dots are our ${featured().length} runs (2026). The bar is the median, the diamond is the mean, and the band covers one standard deviation. ${view === "both" ? "The columns show the change from 2025 to 2026" : `The columns show the ${view} values`}. Click a column to sort it.`;
+  setNote(note, `Grey: ${n25} paper models, 2025. Colour: 2026 runs.`, "score-distribution-per-task");
 }
 
 // ---- 2. the bounding-box tasks under three readings -------------------------------------------------
@@ -462,7 +462,9 @@ function paintSuspect(task, data, body) {
   const dead = rows.filter((g) => models.every((m) => g.questions.every((q) => !q.answers[m.id]?.[1])));
   const scroll = element("div", undefined, "table-scroll");
   scroll.append(table);
-  body.append(element("p", `Each row is one reference answer. Each cell is one model's accuracy on the questions with that reference. Red rows are references that no model matched.`, "sub"), scroll);
+  const legend = element("p", undefined, "sub");
+  setNote(legend, "Rows: reference answers. Red: no model matched.", "suspect-reference-answers");
+  body.append(legend, scroll);
 }
 
 // ---- 5. the cut-in wording review ----------------------------------------------------------------

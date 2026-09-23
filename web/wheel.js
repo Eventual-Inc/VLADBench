@@ -169,9 +169,7 @@ function renderWheel() {
   }
   for (const button of document.querySelectorAll("[data-wheel-mode]")) button.setAttribute("aria-pressed", String(button.dataset.wheelMode === wheelState.mode));
   const note = $("wheel-note");
-  if (note) note.textContent = wheelState.mode === "radar"
-    ? "Each axis is one task group. Each polygon is one model, and its value on an axis is the question-weighted mean of that group's tasks. The outer ring is 100."
-    : "The rings show the domains, then the task groups, then the tasks. Each bar is one model's score on one task, from 0 at the inner edge to 100 at the outer edge. Click a bar to open the task in Explore.";
+  setNote(note, wheelState.mode === "radar" ? "Each polygon is one model across task groups." : "Each bar: one model's score on one task.", "task-wheel");
 }
 
 for (const button of document.querySelectorAll("[data-wheel-mode]")) {

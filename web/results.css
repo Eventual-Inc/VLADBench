@@ -1370,3 +1370,5 @@ h1, h2, h3, .brand { font-family: var(--font-sans); font-weight: 700; letter-spa
 .section-title { font: 600 16px/1.25 var(--font-mono); letter-spacing: -0.02em; }
 .sub { font-size: 11px; line-height: 1.5; color: var(--label); }
 svg text { font-family: var(--font-sans); }
+.sub .more { color: var(--label); font-size: 11px; text-decoration: underline; text-underline-offset: 2px; margin-left: 2px; }
+.sub .more:hover { color: var(--accent); }

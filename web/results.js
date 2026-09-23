@@ -174,6 +174,16 @@ function latencyStrip(usage, scaleMax) {
   return wrap;
 }
 
+// A panel description: one short line and a link to its section of docs/companion.md.
+const DOCS = "https://github.com/Eventual-Inc/VLADBench/blob/main/docs/companion.md#";
+function setNote(node, text, anchor) {
+  if (!node) return;
+  node.textContent = text + " ";
+  const more = element("a", "details", "more");
+  more.href = DOCS + anchor; more.target = "_blank"; more.rel = "noopener";
+  node.append(more);
+}
+
 function renderLeaderboard() {
   const table = $("leaderboard");
   table.replaceChildren();
@@ -217,9 +227,7 @@ function renderLeaderboard() {
     body.append(row);
   });
   table.append(body);
-  $("leaderboard-note").textContent =
-    "Score is TOTAL, the mean of the 28 task scores weighted by question count. Sweep cost is the billed cost of all 11,193 answers. The per-frame, per-query, and hourly costs use the settings of the video cost calculator on the Cost tab. The latency box spans p25 to p75, the tick is the median, and the dot is p95."
-    + (omitted.length ? ` Left out of this table and the plot, still in every other tab: ${omitted.map((m) => `${m.label} (${modelMean(m).toFixed(1)}; ${m.not_featured_reason})`).join("; ")}.` : "");
+  setNote($("leaderboard-note"), "TOTAL, sweep cost, and cost per video hour.", "leaderboard");
 }
 
 // ---- headline: spend vs TOTAL ------------------------------------------------------------
@@ -440,10 +448,7 @@ function renderVideoCost() {
     body.append(tr);
   }
   table.append(body);
-  const missing = rankedModels().filter((m) => !m.usage?.metering).map((m) => m.label);
-  $("video-cost-note").textContent = `One hour of video at ${s.width}x${s.height} is ${(s.fps * 3600).toLocaleString()} frames and ${Math.round(s.fps * 3600 / s.frames).toLocaleString()} queries. `
-    + "Tokens per frame use each provider's tokeniser rule, fitted to our billed tokens. Prices are the per-token rates the sweep was billed. Output tokens per query are measured and include reasoning."
-    + (missing.length ? ` No fitted rule yet for ${missing.join(", ")}.` : "");
+  setNote($("video-cost-note"), `${(s.fps * 3600).toLocaleString()} frames and ${Math.round(s.fps * 3600 / s.frames).toLocaleString()} queries per hour.`, "metered-cost-of-video-question-answering");
 }
 
 // ---- horizontal bar chart -------------------------------------------------------------
@@ -929,7 +934,7 @@ function renderPaperFormat() {
   renderTable10("ours-head", "ours-body", ours);
   renderTable10("paper-head", "paper-body", publishedTable10Columns());
   const check = paperWeightingCheck();
-  $("table10-note").textContent = `MEAN and TOTAL weight each task by its number of questions. This rule reproduces ${check.within} of the paper's ${check.total} group averages within 0.1.`;
+  setNote($("table10-note"), `Question-weighted; reproduces ${check.within} of ${check.total} paper averages.`, "table-10-layout");
   $("copy-latex").onclick = () => navigator.clipboard.writeText(table10Text(ours, "latex"));
   $("copy-csv").onclick = () => navigator.clipboard.writeText(table10Text(ours, "csv"));
 }

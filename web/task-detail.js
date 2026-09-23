@@ -247,6 +247,6 @@ function paintGrid(task, data, right, left) {
   } else if (!rows.length) {
     foot.append(element("p", "No questions match this filter.", "sub"));
   }
-  foot.append(element("p", "Each cell shows one model's answer. The tint shows the credit the answer earned. A dotted underline means the answer was not in the requested format. Click a row to show its clip.", "sub"));
+  const legend = element("p", undefined, "sub"); setNote(legend, "Tint shows credit; dotted underline, format error.", "explore"); foot.append(legend);
   right.append(foot);
 }

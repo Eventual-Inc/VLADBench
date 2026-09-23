@@ -16,6 +16,8 @@ fork is not affiliated with them. Its scores should be cited as this re-evaluati
 The re-evaluation now covers 15 models and 167,895 scored answers. `vladbench build` replaces the build scripts, and
 per-answer serving hosts are published with the dataset.
 
+Earlier releases: [`CHANGELOG.md`](CHANGELOG.md).
+
 ## Overview
 
 - The released VLADBench questions, frames, references, prompts, scoring code, and per-task weights, unchanged:

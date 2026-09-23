@@ -130,7 +130,7 @@ The Caveats tab on the [companion site](https://eventual-inc.github.io/VLADBench
 
 @article{li2025vladbench,
   title   = {Fine-Grained Evaluation of Large Vision-Language Models in Autonomous Driving},
-  author  = {Li, Yue and others},
+  author  = {Li, Yue and Tian, Meng and Lin, Zhenyu and Zhu, Jiangtong and Zhu, Dechang and Liu, Haiqiang and Wang, Zining and Zhang, Yueyi and Xiong, Zhiwei and Zhao, Xinhai},
   journal = {arXiv preprint arXiv:2503.21505},
   year    = {2025}
 }

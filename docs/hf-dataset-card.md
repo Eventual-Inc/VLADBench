@@ -110,7 +110,7 @@ The overall score is a question-weighted average. VLADBench is comprised of 28 t
 - **Descriptive answers are exact match.** Vehicle and VRU behavior are graded against one short reference, so a reasonable answer in different words scores zero.
 - **Two Qwen 3.8 27B answers hit the completion guard.** They're scored as returned, which by our own protocol means that run isn't protocol-complete.
 - **Empty or cut-off answers were re-asked.** The harness re-asks up to four times when an answer is empty, cut off, or degenerate, and keeps the last one. Only the kept answer's cost is recorded, so sweep costs are a lower bound. `answers.attempt` counts these re-asks together with HTTP retries.
-- **Open-weight models were served by several hosts.** OpenRouter routed Qwen 3.8 27B and Qwen 3.6 35B A3B across several third-party hosts, which can run different quantizations.
+- **Open-weight models were served by several hosts.** OpenRouter routed Qwen 3.8 27B and Qwen 3.6 35B A3B across several third-party hosts, which can run different quantizations. `answers.served_provider` records the host for each answer.
 - **One Qwen 3.6 35B A3B answer ended in a provider error.** It is scored as returned.
 - **Trajectory is not scored.** The release has no references or scorer for it, so TOTAL covers 28 of the 29 tasks.
 - **Every model ran once.** Differences under about two points could be run-to-run noise.

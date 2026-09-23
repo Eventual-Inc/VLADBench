@@ -63,6 +63,8 @@ RULES: dict[str, Rule] = {
     "luna56": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
     "sol56": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
     "astra6": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
+    "luna6": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
+    "sol6": Rule("patch", patch=32, multiplier=1.2, input_rate="input_cache_write"),
     "qwen36or": Rule("pair", tokens_per_pixel=880 / (1280 * 720)),
     "qwen38or": Rule("pair", tokens_per_pixel=880 / (1280 * 720)),
     "qwen38max": Rule("area", tokens_per_pixel=945 / (1280 * 720)),

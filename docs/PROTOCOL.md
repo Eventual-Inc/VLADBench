@@ -12,8 +12,8 @@ frame sequence, and whether their reasoning can be switched off.
   reasoning availability (Qwen 3.6 vs Qwen 3.8; Gemini vs Muse; Qwen Max vs
   Claude Opus 5.5).
 - Ordering claims across all models, stated with the per-model declarations
-  attached, for example "Gemini 3.8 Flash scores higher than both Qwen models
-  on 25 of 28 tasks under these conditions".
+  attached, for example "Gemini 3.8 Flash scores higher than Qwen 3.8 27B and
+  Qwen 3.6 35B A3B on 25 of 28 tasks under these conditions".
 
 ## What they do not support
 
@@ -59,7 +59,7 @@ Defined by `results/protocols/full-original.json`. One file is one condition.
 | GPT-6 Luna (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
 | GPT-6 Sol (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
 | Claude Opus 5.5 (OpenRouter, Anthropic) | ordered `image_url` parts | low, cannot be disabled | n/a | n/a |
-| Gemini 2.5 Flash Lite (OpenRouter) | MP4, `processing: static` | low, requested; thinking is off by default | one-frame MP4 | H.264 crf18 if needed |
+| Gemini 2.5 Flash Lite (OpenRouter) | MP4, `processing: static` | off | one-frame MP4 | H.264 crf18 if needed |
 | Reka Edge (OpenRouter) | MP4, `processing: static` | off; non-reasoning model | one-frame MP4 | H.264 crf18 if needed |
 | Qwen 3.8 27B (OpenRouter, third-party hosts) | MP4, `processing: static`, Alibaba route excluded | off | one-frame MP4 | H.264 crf18 if needed |
 | Qwen 3.6 35B A3B (OpenRouter, third-party hosts) | MP4, `processing: static`, Alibaba route excluded | off | one-frame MP4 | H.264 crf18 if needed |

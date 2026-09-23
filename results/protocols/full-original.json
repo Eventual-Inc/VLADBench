@@ -179,7 +179,7 @@
       "provider": "OpenRouter",
       "endpoint": "https://openrouter.ai/api/v1",
       "model": "google/gemini-2.5-flash-lite",
-      "reasoning_effort": "low",
+      "reasoning_effort": "none",
       "reasoning_parameter": "openrouter_reasoning",
       "input_transport": "video_mp4",
       "single_frame_policy": "as_is",
@@ -193,7 +193,7 @@
         "type": "environment",
         "variable": "OPENROUTER_API_KEY"
       },
-      "backend_reproducibility": "Provider-managed route. Gemini 2.5 Flash Lite ships with thinking off by default; low is requested through OpenRouter's reasoning parameter to match the Gemini 3.8 Flash declaration. Requests above the 20 MB provider body limit fall back to a receipted H.264 crf18 encoding. Provider frame sampling is not observed."
+      "backend_reproducibility": "Provider-managed route. Gemini 2.5 Flash Lite ships with thinking off by default and runs with reasoning off. Requests above the 20 MB provider body limit fall back to a receipted H.264 crf18 encoding. Provider frame sampling is not observed."
     },
     {
       "id": "rekaedge",

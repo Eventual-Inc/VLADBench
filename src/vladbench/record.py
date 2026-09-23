@@ -45,6 +45,8 @@ class ModelRecord(TypedDict):
     featured: bool
     not_featured_reason: str | None
     size_rank: int
+    color: str
+    box_convention: str
     prompt: str
     transport: str
     declared: dict
@@ -141,7 +143,7 @@ def model_record(info: ModelInfo, result: dict, records: Sequence[dict], source:
     return {
         "id": info.id, "label": info.label, "model": result["model"], "reasoning": reasoning_label(result["declared"]["reasoning_effort"]),
         "parameters": info.parameters, "lab": info.lab, "featured": info.featured, "not_featured_reason": info.not_featured_reason,
-        "size_rank": info.size_rank, "prompt": "original", "transport": transport_label(result["declared"]),
+        "size_rank": info.size_rank, "color": info.color, "box_convention": info.box_convention, "prompt": "original", "transport": transport_label(result["declared"]),
         "declared": result.get("declared") or {}, "completion_cap": result["protocol"]["max_tokens"],
         "truncated_answers": result.get("truncated_answers"),
         "carried_from_superseded_condition": result.get("carried_from_superseded_condition") or 0,

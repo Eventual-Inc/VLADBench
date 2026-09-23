@@ -89,6 +89,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 3,
+      "color": "#ffc15c",
+      "box_convention": "grid_yx",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -829,6 +831,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 4,
+      "color": "#b1a8ff",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Ordered image URLs for sequences and image URLs",
       "declared": {
@@ -1569,6 +1573,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 1,
+      "color": "#3987e5",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -2309,6 +2315,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 1,
+      "color": "#e0355a",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -3049,6 +3057,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 1,
+      "color": "#b97600",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -3789,6 +3799,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 1,
+      "color": "#7a7a7a",
+      "box_convention": "pixels",
       "prompt": "original",
       "transport": "Ordered image URLs for sequences and image URLs",
       "declared": {
@@ -4529,6 +4541,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 3,
+      "color": "#f5f5f5",
+      "box_convention": "pixels",
       "prompt": "original",
       "transport": "Ordered image URLs for sequences and image URLs",
       "declared": {
@@ -5269,6 +5283,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 2,
+      "color": "#b1b1b1",
+      "box_convention": "pixels",
       "prompt": "original",
       "transport": "Ordered image URLs for sequences and image URLs",
       "declared": {
@@ -6009,6 +6025,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 2,
+      "color": "#e09b2e",
+      "box_convention": "grid_yx",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -6749,6 +6767,8 @@
       "featured": false,
       "not_featured_reason": "7B edge model; kept in the data, left out of the headline figures as an outlier",
       "size_rank": 1,
+      "color": "#008300",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -7489,6 +7509,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 1,
+      "color": "#8a7fe2",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -8229,6 +8251,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 2,
+      "color": "#6558b7",
+      "box_convention": "grid",
       "prompt": "original",
       "transport": "Lossless 1 FPS MP4 sequences and image URLs; receipted H.264 fallback above the provider body limit",
       "declared": {
@@ -8969,6 +8993,8 @@
       "featured": true,
       "not_featured_reason": null,
       "size_rank": 1,
+      "color": "#d95926",
+      "box_convention": "pixels",
       "prompt": "original",
       "transport": "Ordered image URLs for sequences and image URLs",
       "declared": {

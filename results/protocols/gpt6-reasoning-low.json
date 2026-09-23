@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "name": "gpt6-reasoning-low",
+  "dataset_revision": "1895f22252f9a702fed95334c8e3b60280b4c626",
+  "tasks": "all",
+  "protocol": {
+    "prompt": "original",
+    "coordinate_convention": "native_pixels",
+    "image_detail": "auto",
+    "max_tokens": 8192,
+    "temperature": null,
+    "timeout_seconds": 300,
+    "max_attempts": 4,
+    "concurrency_per_model": 7,
+    "minimum_free_gib": 1.0,
+    "reasoning_policy": "lowest_enabled",
+    "sequence_policy": "declared_transport",
+    "video": {
+      "fps": 1,
+      "encoding": "libx264rgb-crf0",
+      "frame_selection": "annotation_frames_in_order"
+    }
+  },
+  "models": [
+    {
+      "id": "luna6low",
+      "provider": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1",
+      "model": "openai/gpt-6-luna",
+      "reasoning_effort": "low",
+      "reasoning_parameter": "openrouter_reasoning",
+      "input_transport": "ordered_image_urls",
+      "single_frame_policy": "not_applicable",
+      "oversize_fallback": "not_applicable",
+      "video_options": {},
+      "credential": {
+        "type": "environment",
+        "variable": "OPENROUTER_API_KEY"
+      },
+      "backend_reproducibility": "openai/gpt-6-luna with reasoning at low, matching GPT-6 Astra, to test whether reasoning explains the generation gap. Otherwise identical to the luna6 declaration in full-original.json."
+    },
+    {
+      "id": "sol6low",
+      "provider": "OpenRouter",
+      "endpoint": "https://openrouter.ai/api/v1",
+      "model": "openai/gpt-6-sol",
+      "reasoning_effort": "low",
+      "reasoning_parameter": "openrouter_reasoning",
+      "input_transport": "ordered_image_urls",
+      "single_frame_policy": "not_applicable",
+      "oversize_fallback": "not_applicable",
+      "video_options": {},
+      "credential": {
+        "type": "environment",
+        "variable": "OPENROUTER_API_KEY"
+      },
+      "backend_reproducibility": "openai/gpt-6-sol with reasoning at low, matching GPT-6 Astra, to test whether reasoning explains the generation gap. Otherwise identical to the sol6 declaration in full-original.json."
+    }
+  ]
+}

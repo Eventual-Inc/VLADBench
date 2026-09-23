@@ -51,6 +51,7 @@ class PublishTests(unittest.TestCase):
     def test_dataset_card_lists_every_table_and_model(self):
         import importlib.util
         spec = importlib.util.spec_from_file_location("publish_hf", ROOT / "scripts/publish_hf.py")
+        assert spec is not None and spec.loader is not None
         publish = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(publish)
         rerun = json.loads((ROOT / "results/rerun.json").read_text())

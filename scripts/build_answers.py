@@ -64,7 +64,7 @@ def mark_task(task: str, family: str, model_id: str, requests: list[dict]) -> di
     for group in by_sample.values():
         group.sort(key=lambda r: r["question_index"])
         sample = group[0]["sample"]
-        for r, mark in zip(group, sample_marks(family, sample, [answers[r["id"]] for r in group])):
+        for r, mark in zip(group, sample_marks(family, sample, [answers[r["id"]] for r in group]), strict=True):
             mark["text"] = answers[r["id"]]
             marks[r["id"]] = mark
     return marks
@@ -73,7 +73,7 @@ def mark_task(task: str, family: str, model_id: str, requests: list[dict]) -> di
 def check(task: str, family: str, model: dict, marks: dict[str, dict]) -> None:
     got = components_from_marks(family, list(marks.values()))
     want = model["tasks"][task]["components"]
-    for value, key in zip(got, ("accuracy", "instruction_following", "other")):
+    for value, key in zip(got, ("accuracy", "instruction_following", "other"), strict=True):
         if abs(value - want[key]) > TOLERANCE:
             raise SystemExit(f"{model['id']} {task}: per-question {key} {value:.6f} != released {want[key]:.6f}")
 

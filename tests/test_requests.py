@@ -13,7 +13,7 @@ from vladbench.spec import load_spec
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = load_spec(ROOT / "results/protocols/full-original.json")
 MODELS = {m["id"]: m for m in SPEC["models"]}
-SAMPLE = {"id": "s1", "country": "China", "questions": ["first.png; Keep ; punctuation."], "reference": ["yes"]}
+SAMPLE: dict = {"id": "s1", "country": "China", "questions": ["first.png; Keep ; punctuation."], "reference": ["yes"]}
 SEQUENCE = {"id": "s2", "country": "China", "sequence": "scene", "image_path": ["frame_9.png", "frame_2.png", "frame_5.png"],
             "questions": ["[image_path]; What happened?"], "reference": ["yes"]}
 
@@ -92,6 +92,7 @@ class BuildTests(unittest.TestCase):
         real, h2, receipt = build(SPEC, MODELS["qwen36or"], q, FakeMedia())
         self.assertEqual(h1, h2)
         self.assertTrue(real["messages"][0]["content"][0]["video_url"]["url"].startswith("data:video/mp4;base64,"))
+        assert receipt is not None
         self.assertEqual(receipt["encoded_sha256"], digest(q["image_urls"]))
         single = question(dict(SEQUENCE, image_path=["only.png"]))
         for model in ("qwen36or", "gemini38"):
@@ -151,6 +152,7 @@ class OversizeFallbackTests(unittest.TestCase):
         with patch("vladbench.requests.PROVIDER_BODY_LIMIT", 100):
             payload, h, receipt = build(SPEC, MODELS["gemini38"], q, media)
         self.assertEqual(media.compressed_calls, 1)
+        assert receipt is not None
         self.assertTrue(receipt["provider_size_fallback"])
         self.assertEqual(receipt["encoded_sha256"], "small")
         self.assertEqual(h, build(SPEC, MODELS["gemini38"], q)[1], "the protocol hash ignores which encoding was sent")

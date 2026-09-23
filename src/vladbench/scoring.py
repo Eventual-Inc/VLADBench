@@ -19,6 +19,7 @@ import re
 import time
 import types
 from pathlib import Path
+from collections.abc import Sequence
 from typing import Any
 
 from .requests import build, questions, tasks
@@ -174,7 +175,7 @@ def validate_sample(sample: Any, family: str, model: str) -> list[str]:
         return errors
     errors = parity_errors(sample, family)
     check = REFERENCE_CHECK.get(family, plain_error)
-    for index, (question, reference) in enumerate(zip(sample["questions"], sample["reference"])):
+    for index, (question, reference) in enumerate(zip(sample["questions"], sample["reference"], strict=True)):
         error = check(question, reference, sample, model)
         if error:
             errors.append(f"question {index}: {error}")
@@ -189,10 +190,10 @@ def blank(answer: Any) -> bool:
 
 def answers_by_index(result: dict, group: list[dict], responses: dict) -> dict[int, str]:
     """Answered question indexes for one sample; records what is missing."""
-    answers = {}
+    answers: dict[int, str] = {}
     for request in group:
         answer = responses.get(request["id"])
-        if blank(answer):
+        if not isinstance(answer, str) or blank(answer):
             result["missing_request_ids"].append(request["id"])
             continue
         answers[request["question_index"]] = answer
@@ -345,7 +346,7 @@ def empty_result(task: str, requests: list[dict], family: str | None, weight: li
         "status": "unscorable", "complete": False, "dataset_complete": False,
         "score": None, "eligible_subset_score": None, "components": None,
         "dataset_totals": {"samples": first.get("task_total_samples"), "questions": first.get("task_total_questions")},
-        "weights": dict(zip(("other", "accuracy", "instruction_following"), weight)),
+        "weights": dict(zip(("other", "accuracy", "instruction_following"), weight, strict=True)),
         "denominators": {"samples_total": 0, "samples_scored": 0, "questions_expected": 0, "questions_prepared": len(requests),
                          "responses_received": 0, "questions_scored": 0, "judgment": 0, "description": 0,
                          "bounding_box": 0, "comparison_pairs": 0},
@@ -376,7 +377,7 @@ def score_task(task: str, requests: list[dict], responses: dict[str, str], *, sc
     family = getattr(fn, "__name__", None)
     weight = weights.get(task, [0, .8, .2])
     result = empty_result(task, requests, family, weight, metadata, scorer_model)
-    if fn is None:
+    if fn is None or family is None:
         return unsupported(result, task)
     if not requests:
         return exclude(result, {"reason": "No prepared requests for task", "code": "no_requests"})
@@ -420,9 +421,10 @@ def matches(spec: dict, model: dict, record: dict, question: dict, superseded: l
     return record["protocol_sha256"] in {live, carried_hash(record, model, question, superseded)}
 
 
-def verified_answers(spec: dict, model: dict, path: Path, expected: dict, superseded: list[dict] = ()) -> tuple[dict, dict]:
+def verified_answers(spec: dict, model: dict, path: Path, expected: dict, superseded: Sequence[dict] = ()) -> tuple[dict, dict]:
     """Answers whose stored request hash matches the live specification, or a superseded one whose cap did not bind."""
-    answers, stats = {}, {"mismatched": [], "truncated": 0, "fallbacks": 0, "carried": 0}
+    answers: dict[str, str] = {}
+    stats: dict[str, Any] = {"mismatched": [], "truncated": 0, "fallbacks": 0, "carried": 0}
     for record in read_jsonl(path):
         question = expected.get(record["id"])
         if question is None or not matches(spec, model, record, question, list(superseded)):
@@ -452,7 +454,7 @@ def model_result(spec: dict, model: dict, folder: Path, scored: dict, totals: di
     }
 
 
-def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: Path = ROOT / "results", superseded: list[dict] = ()) -> dict:
+def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: Path = ROOT / "results", superseded: Sequence[dict] = ()) -> dict:
     """Score one model's recorded answers for a condition; every answer's request hash is verified first.
 
     ``superseded`` lists earlier specifications whose answers may be carried

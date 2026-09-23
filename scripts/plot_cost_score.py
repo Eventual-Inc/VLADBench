@@ -34,7 +34,7 @@ def frontier(points: list[dict]) -> list[dict]:
 
 def points_from(rerun: dict) -> list[dict]:
     out = []
-    for index, m in enumerate(rerun["models"]):
+    for m in rerun["models"]:
         usage = m.get("usage") or {}
         if usage.get("cost_usd") is None or not m.get("featured", True):
             continue

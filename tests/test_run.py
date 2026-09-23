@@ -17,7 +17,15 @@ SAMPLE = {"id": "s1", "country": "China", "questions": ["a.png; Is it day? Answe
           "reference": ["yes", "no"]}
 
 
+class FakeServer(ThreadingHTTPServer):
+    """Records every request and replies from a script of (status, body) pairs."""
+    payloads: list[dict]
+    script: list[tuple[int, dict | None]]
+
+
 class Provider(BaseHTTPRequestHandler):
+    server: FakeServer
+
     def do_POST(self):
         payload = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
         self.server.payloads.append(payload)
@@ -30,19 +38,19 @@ class Provider(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
-    def log_message(self, *args):
+    def log_message(self, format, *args):  # noqa: A002 - the base class names it format
         pass
 
 
 class RunTests(unittest.TestCase):
     def setUp(self):
-        self.server = ThreadingHTTPServer(("127.0.0.1", 0), Provider)
+        self.server = FakeServer(("127.0.0.1", 0), Provider)
         self.server.payloads, self.server.script = [], []
         threading.Thread(target=self.server.serve_forever, daemon=True).start()
         self.addCleanup(self.server.shutdown)
         spec = load_spec(ROOT / "results/protocols/full-original.json")
         model = dict(next(m for m in spec["models"] if m["id"] == "luna56"), endpoint=f"http://127.0.0.1:{self.server.server_port}/v1")
-        self.spec = dict(spec, name="test", models=[model])
+        self.spec: dict = dict(spec, name="test", models=[model])
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         self.runs = Path(self.tmp.name)

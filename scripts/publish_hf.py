@@ -138,6 +138,8 @@ def render_figures() -> None:
     import importlib.util
 
     spec = importlib.util.spec_from_file_location("plot_cost_score", ROOT / "scripts/plot_cost_score.py")
+
+    assert spec is not None and spec.loader is not None
     plot = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(plot)
     plot.render()

@@ -27,7 +27,7 @@ LAB = {"qwen38max": "Alibaba", "gemma431": "Google", "gemini25lite": "Google",
 SIZE_RANK = {"qwen38or": 1, "qwen36or": 2, "qwen38max": 4, "gemma431": 1, "gemini25lite": 2, "gemini38": 3, "luna56": 1, "sol56": 2, "astra6": 3,
              "muse13": 1, "minimax3": 1, "rekaedge": 1, "opus55": 1, "luna6": 1, "sol6": 2}
 # Complete models kept in the dataset and the full tables but left out of the headline figure and leaderboard.
-NOT_FEATURED = {"rekaedge": "7B edge model scoring 39.8; kept in the data, left out of the headline figures as an outlier"}
+NOT_FEATURED = {"rekaedge": "7B edge model; kept in the data, left out of the headline figures as an outlier"}
 REVISION = "1895f22252f9a702fed95334c8e3b60280b4c626"
 BASE = f"https://huggingface.co/datasets/depth2world/VLADBench/resolve/{REVISION}/"
 

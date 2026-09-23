@@ -17,3 +17,35 @@ package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[dependency-groups]
+# Tests, lint, and types. `uv sync` installs this group by default.
+dev = ["pytest>=8", "ruff>=0.13", "ty>=0.0.83", "codespell>=2.4", "pyarrow>=17"]
+# The build and publish scripts under scripts/.
+scripts = ["pyarrow>=17", "matplotlib>=3.9", "huggingface_hub>=0.34"]
+
+[tool.ruff]
+line-length = 160
+extend-exclude = ["original", "dist", "answers", "results"]
+# Apply the excludes to files passed explicitly, as pre-commit does; original/ must stay byte for byte.
+force-exclude = true
+
+[tool.ruff.lint]
+# Errors that are bugs, not style: pyflakes, bugbear, syntax.
+select = ["F", "B", "E9"]
+
+[tool.ruff.lint.per-file-ignores]
+# The DiffusionGemma proxy is outside the benchmark; its zips pair structurally equal lists.
+"hosting/*" = ["B905", "B007"]
+
+[tool.ty.src]
+include = ["src", "tests"]   # scripts/ joins once it is split into modules
+
+[tool.codespell]
+skip = "*.json,*.jsonl,*.parquet,*.js.map,./original,./answers,./results,./dist,./task-review-*.js"
+# Upstream task and field names kept byte for byte, and CSS/JS identifiers.
+ignore-words-list = "bahavior,obsturction,amercia,geneal,ans,unparseable,pipeine,finall"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

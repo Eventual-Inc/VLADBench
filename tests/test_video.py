@@ -1,4 +1,5 @@
 """Frames in, byte-identical MP4 out; runs the real ffmpeg on tiny images."""
+from email.message import Message
 from io import BytesIO
 from pathlib import Path
 import shutil
@@ -53,8 +54,8 @@ class VideoTests(unittest.TestCase):
                 cache.compressed(urls, path, receipt)
 
     def test_fetch_retries_transient_errors_only(self):
-        rate_limited = HTTPError("u", 429, "slow", None, BytesIO())
-        forbidden = HTTPError("u", 403, "no", None, BytesIO())
+        rate_limited = HTTPError("u", 429, "slow", Message(), BytesIO())
+        forbidden = HTTPError("u", 403, "no", Message(), BytesIO())
         self.assertTrue(transient(rate_limited) and transient(TimeoutError()) and transient(ConnectionResetError()))
         self.assertFalse(transient(forbidden))
         with patch("vladbench.video.urlopen", side_effect=[rate_limited, BytesIO(b"ok")]), patch("vladbench.video.time.sleep") as sleep:

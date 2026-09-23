@@ -134,9 +134,13 @@ class MediaCache:
     def lossless(self, image_urls: list[str]) -> tuple[Path, bytes, dict]:
         key = digest({"urls": image_urls, "encoding": LOSSLESS_LABEL})
         with self.lock(key):
-            if self.load(key) is None:
+            cached = self.load(key)
+            if cached is None:
                 self.store(key, *self.encode_lossless(image_urls))
-            return self.load(key)
+                cached = self.load(key)
+            if cached is None:
+                raise RuntimeError(f"Video cache write failed for {key}")
+            return cached
 
     def encode_compressed(self, source_path: Path, source_receipt: dict) -> tuple[bytes, dict]:
         with tempfile.TemporaryDirectory() as folder:
@@ -149,6 +153,10 @@ class MediaCache:
     def compressed(self, image_urls: list[str], source_path: Path, source_receipt: dict) -> tuple[Path, bytes, dict]:
         key = digest({"urls": image_urls, "encoding": COMPRESSED_LABEL})
         with self.lock(key):
-            if self.load(key) is None:
+            cached = self.load(key)
+            if cached is None:
                 self.store(key, *self.encode_compressed(source_path, source_receipt))
-            return self.load(key)
+                cached = self.load(key)
+            if cached is None:
+                raise RuntimeError(f"Video cache write failed for {key}")
+            return cached

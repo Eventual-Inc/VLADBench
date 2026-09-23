@@ -1,0 +1,44 @@
+# Tests, lint, types, spelling, and links on every push and pull request.
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked
+      - name: ruff
+        run: uv run ruff check .
+      - name: ty
+        run: uv run ty check
+      - name: pytest
+        run: uv run pytest -q
+      - name: codespell
+        run: uv run codespell
+      - name: site scripts parse
+        run: for f in web/*.js; do node --check "$f"; done
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          # The card's image resolves on Hugging Face, not in the repository; the article link is live once the post ships.
+          args: >-
+            --no-progress --max-concurrency 8 --timeout 20
+            --exclude "localhost|127\.0\.0\.1|^mailto:|eventual\.ai/blog/vladbench-reeval"
+            --exclude-path docs/reviews
+            --exclude "cost-vs-score\.png$"
+            README.md docs/*.md results.html self-test.html
+          fail: true

@@ -3,8 +3,6 @@
 import copy
 import hashlib
 import json
-from pathlib import Path
-import tempfile
 import types
 import unittest
 
@@ -28,7 +26,7 @@ def prepared(fixture, answers=None):
         }
         for index in range(len(sample["questions"]))
     ]
-    responses = {request["id"]: answer for request, answer in zip(requests, answers if answers is not None else fixture["answers"])}
+    responses = {request["id"]: answer for request, answer in zip(requests, answers if answers is not None else fixture["answers"], strict=True)}
     return requests, responses
 
 
@@ -74,7 +72,7 @@ class ScoringFixturesTest(unittest.TestCase):
                         self.assertTrue(actual["complete"])
                         self.assertFalse(actual["dataset_complete"])
                         self.assertEqual(actual["denominators"]["questions_scored"], expected[0])
-                        for name, value in zip(("accuracy", "instruction_following", "other"), expected[1:]):
+                        for name, value in zip(("accuracy", "instruction_following", "other"), expected[1:], strict=True):
                             self.assertAlmostEqual(actual["components"][name], value)
                         expected_score = sum(100 * actual["components"][name] * weight for name, weight in actual["weights"].items())
                         self.assertAlmostEqual(actual["score"], expected_score)
@@ -253,11 +251,11 @@ class ScoringFixturesTest(unittest.TestCase):
         located = "img.png; Where is the car located in the image?"
         sample = {"dimension": [1920, 1080]}
         self.assertIsNone(grounding_error("img.png; What color?", "red", sample, "native_pixels"))
-        self.assertIn("four finite numbers", grounding_error(located, [1, 2, 3], sample, "native_pixels"))
-        self.assertIn("reversed", grounding_error(located, [10, 10, 5, 20], sample, "native_pixels"))
+        self.assertIn("four finite numbers", str(grounding_error(located, [1, 2, 3], sample, "native_pixels")))
+        self.assertIn("reversed", str(grounding_error(located, [10, 10, 5, 20], sample, "native_pixels")))
         self.assertIsNone(grounding_error(located, [1, 2, 3, 4], sample, "native_pixels"))
         self.assertIsNone(grounding_error(located, [1, 2, 3, 4], sample, "Qwen"))
-        self.assertIn("dimension", grounding_error(located, [1, 2, 3, 4], {}, "Qwen"))
+        self.assertIn("dimension", str(grounding_error(located, [1, 2, 3, 4], {}, "Qwen")))
 
     def test_dataset_completeness_requires_matching_full_counts(self):
         fixture = synthetic("Weather", ["yes"])

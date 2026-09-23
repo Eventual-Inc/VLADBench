@@ -92,7 +92,7 @@ def speed_mark(reference: str, prediction: str) -> dict:
     credit = instruction = 0
     if len(matches) == 1:
         instruction = 1
-        credit = sum(0.5 for a, b in zip(gold, matches[0]) if a == b)
+        credit = sum(0.5 for a, b in zip(gold, matches[0], strict=False) if a == b)   # the released scorer truncates to the shorter
     return {"accuracy": credit, "instruction": instruction, "other": None, "kind": "speed", "pair": None}
 
 
@@ -108,10 +108,10 @@ def question_mark(family: str, question: str, reference, prediction: str) -> dic
 
 def sample_marks(family: str, sample: dict, predictions: list[str]) -> list[dict]:
     """Marks for every question of one annotation sample, with the paired-consistency flag filled in."""
-    marks = [question_mark(family, q, r, p) for q, r, p in zip(sample["questions"], sample["reference"], predictions)]
+    marks = [question_mark(family, q, r, p) for q, r, p in zip(sample["questions"], sample["reference"], predictions, strict=True)]
     if family in PAIRED_FAMILIES:
         half = len(marks) // 2
-        for first, second in zip(marks[:half], marks[half:]):
+        for first, second in zip(marks[:half], marks[half:], strict=False):   # an odd count leaves the last question unpaired
             a, b = second["accuracy"], first["accuracy"]      # the scorer compares the second half against the first
             second["pair"] = int((a == 1 and b == 1) or a > b)
     return marks

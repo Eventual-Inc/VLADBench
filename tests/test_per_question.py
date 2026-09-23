@@ -1,5 +1,4 @@
 """Per-question marks re-aggregate to the released scorer's components for every model and task."""
-import json
 from pathlib import Path
 import unittest
 
@@ -43,6 +42,7 @@ class ReproductionTests(unittest.TestCase):
     def test_marks_reproduce_released_components_for_every_model_and_task(self):
         import importlib.util
         spec = importlib.util.spec_from_file_location("build_answers", ROOT / "scripts/build_answers.py")
+        assert spec is not None and spec.loader is not None
         build = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(build)
         from vladbench.requests import questions

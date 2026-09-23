@@ -58,7 +58,7 @@ class TotalTests(unittest.TestCase):
         script = (f"const state = {{weights: null}};\nconst TASKS = {json.dumps(load_js(ROOT / 'task-review-tasks.js'))};\n{functions}\n"
                   f"const models = {json.dumps(json.loads((ROOT / 'results/rerun.json').read_text())['models'])};\n"
                   "console.log(JSON.stringify(Object.fromEntries(models.map((m) => [m.id, modelMean(m)]))));")
-        site = json.loads(subprocess.run(["node", "-e", script], capture_output=True, text=True, check=True).stdout)
+        site = json.loads(subprocess.run(["node", "-"], input=script, capture_output=True, text=True, check=True).stdout)   # stdin: the record exceeds the argument limit
         for model in json.loads((ROOT / "results/rerun.json").read_text())["models"]:
             with self.subTest(model=model["id"]):
                 self.assertAlmostEqual(site[model["id"]], total(model["tasks"]), places=9)

@@ -1,9 +1,9 @@
 ---
-name: evaluate-a-model
-description: Run VLADBench on a model the user names (an OpenRouter model, or their own OpenAI-compatible endpoint), score it, and compare it with the published results. Use when asked to benchmark, evaluate, or test a model on VLADBench.
+name: evaluate-model
+description: Run VLADBench on a named model (an OpenRouter model or an OpenAI-compatible endpoint), score it, and compare it with the published results. Use when asked to benchmark or evaluate a model on VLADBench.
 ---
 
-# Evaluate a model on VLADBench
+# Evaluate a model
 
 1. **Write a protocol file for the model.** Copy one model entry from `results/protocols/full-original.json` into a
    new file, for example `results/protocols/<name>.json`, keeping the top-level fields and changing `name`.
@@ -17,7 +17,7 @@ description: Run VLADBench on a model the user names (an OpenRouter model, or th
 2. **Smoke test.** `uv run vladbench run results/protocols/<name>.json --smoke --models <id>`. Report the answers in
    `results/runs/<name>-smoke/<id>/`: all 28 should have `finish_reason: stop` and a non-empty answer. For OpenRouter,
    sum `usage.cost` and multiply by about 11,193 / 28 × 0.65 for a full-sweep estimate (smoke tests overestimate).
-   Ask before the full run if the estimate is over a few dollars.
+   Obtain approval for the full run when the estimate exceeds a few dollars.
 3. **Full run.** `uv run vladbench run results/protocols/<name>.json --models <id>`. It resumes if stopped.
 4. **Score.** `uv run vladbench score results/protocols/<name>.json --models <id>`. Check `dataset_complete` and
    `protocol_complete` in the output.

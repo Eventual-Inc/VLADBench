@@ -4,14 +4,14 @@ This repository re-evaluates vision-language models on VLADBench, a driving-scen
 (arXiv 2503.21505), with the paper's prompts, frames, references, scorer, and per-task weights. It records what every
 sweep cost. Results: https://eventual-inc.github.io/VLADBench/. Data: https://huggingface.co/datasets/Eventual-Inc/VLADBench-reeval.
 
-Common requests and where to start:
+Procedures:
 
-| Request | Start with |
+| Task | Procedure |
 |---|---|
-| Run the benchmark on my model | `.claude/skills/evaluate-a-model/SKILL.md` |
-| Which model fits my budget or video volume? Am I overspending? | `.claude/skills/cost-for-your-fleet/SKILL.md` |
-| Can I trust this task's score? Why do models fail it? | `.claude/skills/check-a-task/SKILL.md` |
-| What are the known problems with the benchmark? | `docs/PROTOCOL.md`, the Known issues section of `docs/hf-dataset-card.md`, `docs/reviews/` |
+| Evaluate a model on the benchmark | `.claude/skills/evaluate-model/SKILL.md` |
+| Estimate the cost of video question answering at a stated workload | `.claude/skills/estimate-video-cost/SKILL.md` |
+| Audit a task's references, scoring, and model answers | `.claude/skills/audit-task/SKILL.md` |
+| Known limitations of the benchmark and this re-evaluation | `docs/PROTOCOL.md`, the Known issues section of `docs/hf-dataset-card.md`, `docs/reviews/` |
 
 ## Setup
 
@@ -33,7 +33,7 @@ uv run vladbench build                                         # rebuilds every 
 uv run vladbench publish --dry-run                             # the Hugging Face upload; maintainers only
 ```
 
-Runs cost money. Always run `--smoke` first and report its cost before a full run. OpenRouter reserves the maximum
+Runs are billed. Run `--smoke` first and report its cost before a full run. OpenRouter reserves the maximum
 cost of every in-flight request against the account balance, so a low balance stops a sweep with HTTP 402 even when
 the total cost would fit. A stopped run resumes where it left off.
 

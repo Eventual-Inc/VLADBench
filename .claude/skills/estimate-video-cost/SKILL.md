@@ -1,12 +1,12 @@
 ---
-name: cost-for-your-fleet
-description: Estimate what running each benchmarked VLM over a fleet's video would cost, and which model gives the best VLADBench score for a budget. Use when asked about VLM cost, budget, video volume, or whether a team is overspending on a model.
+name: estimate-video-cost
+description: Estimate the cost of video question answering with each benchmarked model at a stated workload, and identify the highest-scoring model within a budget. Use when asked about model cost, budget, or video volume.
 ---
 
-# Cost for your fleet
+# Estimate video cost
 
-Ask for, or assume and state: hours of video per day, frame size, frames per second, frames per question, and a
-daily budget. The published figures assume 1280x720, 1 FPS, 8-frame clips, one question per clip, no overlap.
+State the workload: hours of video per day, frame size, frames per second, frames per question, and the daily
+budget, if any. The published figures assume 1280x720, 1 FPS, 8-frame clips, one question per clip, no overlap.
 
 Compute with `uv run python`:
 
@@ -30,9 +30,9 @@ for m in record["models"]:
 - The frontier: `frontier(Point(id, cost, score) ...)` over featured models gives the models no cheaper model beats.
   The five on the frontier under every box reading are Gemma 4 31B, Qwen 3.6 35B A3B, Gemini 3.8 Flash,
   Claude Opus 5.5, and GPT-6 Astra; check `task-review-variants.js` if the record has changed.
-- If the user's task is one family of VLADBench tasks (for example signs, vulnerable road users, or planning),
+- If the intended use corresponds to one family of VLADBench tasks (for example signs, vulnerable road users, or planning),
   rank by the question-weighted mean of those tasks instead of TOTAL.
 
-State the limits with the answer: prices are what our sweeps were billed and change; open-weight models were served
-by several OpenRouter hosts at different prices, so their figures are blends; output length depends on the question;
-VLADBench score is a proxy for the user's task, not a measurement of it.
+State the limitations with the estimate: prices are those billed during the sweeps and are subject to change;
+open-weight models were served by several OpenRouter hosts at different prices, so their figures are blended; output
+length depends on the question; a VLADBench score is a proxy for the intended task, not a measurement of it.

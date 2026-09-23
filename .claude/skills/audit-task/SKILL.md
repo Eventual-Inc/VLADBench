@@ -1,9 +1,9 @@
 ---
-name: check-a-task
-description: Inspect one VLADBench task's questions, references, and every model's answers to judge whether its score can be trusted and why models fail it. Use when asked whether a task or benchmark score is reliable, why models miss a task, or to audit references.
+name: audit-task
+description: Inspect one VLADBench task's questions, references, and model answers to assess the reliability of its score and the causes of model errors. Use when asked about the reliability of a task score, the causes of model errors, or the quality of references.
 ---
 
-# Check a task
+# Audit a task
 
 Task names are the dataset's keys, including its misspellings (`Vehicle_Bahavior`, `Key_Obsturction_Detection`).
 The list is in `results/rerun.json` under `task_order`.
@@ -11,7 +11,7 @@ The list is in `results/rerun.json` under `task_order`.
 `answers/<Task>.json` holds every question with its prompt, reference (`gold`), frame paths (relative to `base`),
 and `answers[model_id] = [text, accuracy, instruction, other, pair]`.
 
-Look for, with `uv run python`:
+Examine, with `uv run python`:
 
 1. **Questions no model gets right** (`accuracy` 0 for every model). Open a few frames (`base` + image path) and read
    the reference. On Weather and Light these were reference problems, for example a dusk clip with a bright sky
@@ -24,6 +24,6 @@ Look for, with `uv run python`:
    that answer on a 0-1000 grid score near zero. `results/models.json` has each model's `box_convention`.
 6. **Spread**: the task's mean and standard deviation across models, from `results/rerun.json`.
 
-Report what fraction of the score each problem could explain, with question ids, and point to the site's Explore and
-Caveats tabs (https://eventual-inc.github.io/VLADBench/) for the same data. Known issues are listed in
+Report the share of the score each problem could account for, with question ids, and refer to the Explore and
+Caveats tabs of https://eventual-inc.github.io/VLADBench/ for the same data. Known issues are listed in
 `docs/hf-dataset-card.md` and `docs/reviews/`.

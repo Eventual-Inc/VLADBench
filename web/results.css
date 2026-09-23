@@ -287,7 +287,7 @@ small {
 .chart-tick,
 .chart-task-label {
   fill: var(--muted);
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-sans);
 }
 
 .chart-tick {
@@ -325,7 +325,7 @@ small {
 
 .chart-value {
   fill: var(--muted);
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-sans);
   font-size: 10px;
   font-variant-numeric: tabular-nums;
 }
@@ -1084,10 +1084,10 @@ body.embed .model-filter { display: none; }
 .rule { margin: 26px 0 16px; border: 0; border-top: 1px solid var(--line); }
 .cost-score-panel .frontier { margin-top: 10px; }
 
-/* All titles: Helvetica Neue Bold. */
+/* Card titles: mono semibold, as on eventual.ai's cards. */
 .eyebrow, #leaderboard-title, #score-bars-title, #paper-title {
-  font: 700 15px/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: -0.2px;
+  font: 600 16px/1.25 var(--font-mono);
+  letter-spacing: -0.02em;
   text-transform: none;
   color: var(--ink);
   margin: 0 0 6px;
@@ -1356,3 +1356,17 @@ body.embed-quadrants .overview-grid > .panel:not(.quadrants-panel) { display: no
 .readings-panel td.on-frontier { color: var(--ink); font-weight: 600; }
 .readings-panel td.on-frontier::before { content: "● "; color: var(--accent, #ff00ff); }
 .readings-panel th.active { color: var(--ink); }
+
+/* Typography after eventual.ai: bold tight sans headings, monospace body and interface, card titles in mono semibold. IBM Plex Mono stands in for the site's licensed favoritMono. Chart text stays
+   sans because label placement assumes proportional widths. */
+:root {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --label: #b0b0b0;
+}
+body { font-family: var(--font-mono); font-size: 13px; }
+h1, h2, h3, .brand { font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.03em; }
+.tabs [role="tab"], button, input, select, table, .sub, .panel p { font-family: var(--font-mono); }
+.section-title { font: 600 16px/1.25 var(--font-mono); letter-spacing: -0.02em; }
+.sub { font-size: 11px; line-height: 1.5; color: var(--label); }
+svg text { font-family: var(--font-sans); }

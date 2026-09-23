@@ -1372,3 +1372,12 @@ h1, h2, h3, .brand { font-family: var(--font-sans); font-weight: 700; letter-spa
 svg text { font-family: var(--font-sans); }
 .sub .more { color: var(--label); font-size: 11px; text-decoration: underline; text-underline-offset: 2px; margin-left: 2px; }
 .sub .more:hover { color: var(--accent); }
+
+/* Controls sit under their chart in a card, so the copy above runs straight into the chart. */
+.control-card { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; margin-top: 12px; padding: 10px 12px;
+                border: 1px solid var(--line); border-radius: 8px; background: var(--panel-strong); }
+.control-card label { color: var(--label); font-size: 12px; display: inline-flex; align-items: center; gap: 8px; }
+.control-card .distribution-controls { margin: 0; }
+#suspect, #whatif { display: flex; flex-direction: column; }
+#suspect > .whatif-bar, #whatif > .whatif-bar { order: 2; margin-top: 12px; padding: 10px 12px; border: 1px solid var(--line);
+                                                border-radius: 8px; background: var(--panel-strong); }

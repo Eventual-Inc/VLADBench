@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
-    <link rel="stylesheet" href="web/results.css?v=50" />
+    <link rel="stylesheet" href="web/results.css?v=51" />
     <script src="web/config.js"></script>
     <script src="task-review-data.js?v=2" defer></script>
     <script src="task-review-audit.js" defer></script>
@@ -58,21 +58,28 @@
               <p class="eyebrow" id="wheel-title">The benchmark at a glance</p>
               <p class="sub" id="wheel-note"></p>
             </div>
-            <div class="wheel-controls">
+          </div>
+          <div id="wheel" class="wheel"></div>
+            <div class="control-card wheel-controls">
               <span class="seg" role="group" aria-label="View">
                 <button type="button" data-wheel-mode="wheel" aria-pressed="true">Task wheel</button>
                 <button type="button" data-wheel-mode="radar" aria-pressed="false">Radar</button>
               </span>
               <div id="wheel-legend" class="bar-legend" aria-label="Model legend"></div>
             </div>
-          </div>
-          <div id="wheel" class="wheel"></div>
         </section>
         <section class="panel paper" aria-labelledby="paper-title">
           <div class="chart-heading">
             <p class="eyebrow" id="paper-title">How well frontier VLMs understand driving scenes</p>
             <p class="sub">Our scores in the paper's Table 10 layout. <a class="more" href="https://github.com/Eventual-Inc/VLADBench/blob/main/docs/companion.md#table-10-layout" target="_blank" rel="noopener">details</a></p>
-            <div class="row heat-controls">
+          </div>
+          <div class="matrix paper-matrix table10">
+            <table>
+              <thead id="ours-head"></thead>
+              <tbody id="ours-body"></tbody>
+            </table>
+          </div>
+            <div class="control-card heat-controls">
               <span class="control-group" aria-label="Heat scale">
                 <label>Low <input id="heat-low" type="color" /></label>
                 <label>Mid <input id="heat-mid" type="color" /></label>
@@ -86,13 +93,6 @@
                 <button id="copy-csv" type="button">Copy CSV</button>
               </span>
             </div>
-          </div>
-          <div class="matrix paper-matrix table10">
-            <table>
-              <thead id="ours-head"></thead>
-              <tbody id="ours-body"></tbody>
-            </table>
-          </div>
           <p class="sub" id="table10-note"></p>
           <div class="chart-heading">
             <p class="eyebrow">Paper, Table 10 as published (2025)</p>
@@ -168,14 +168,16 @@
                 <h3 class="section-title" id="distribution-title">Score distribution per task, 2025 to 2026</h3>
                 <p class="sub" id="distribution-note"></p>
               </div>
+            </div>
+            <div id="distribution" class="bar-chart"></div>
+            <div class="control-card">
               <span class="seg dist-views" role="group" aria-label="Series shown">
                 <button type="button" data-dist-view="both" aria-pressed="true">Both years</button>
                 <button type="button" data-dist-view="2026" aria-pressed="false">2026 only</button>
                 <button type="button" data-dist-view="2025" aria-pressed="false">2025 only</button>
               </span>
+              <div id="distribution-controls" class="distribution-controls"></div>
             </div>
-            <div id="distribution-controls" class="distribution-controls"></div>
-            <div id="distribution" class="bar-chart"></div>
           </section>
           <section class="panel span-2 whatif-panel" aria-labelledby="whatif-title">
             <h3 class="section-title" id="whatif-title">What if a reference answer is wrong</h3>
@@ -191,12 +193,12 @@
             <div class="chart-heading">
               <h3 class="section-title" id="cost-score-title">Cost vs Score</h3>
               <p class="sub">Sweep cost against TOTAL; staircase marks the frontier. <a class="more" href="https://github.com/Eventual-Inc/VLADBench/blob/main/docs/companion.md#cost-vs-score" target="_blank" rel="noopener">details</a></p>
-              <div class="row cost-controls">
+            </div>
+            <div id="cost-score" class="bar-chart"></div>
+              <div class="control-card cost-controls">
                 <label>Box tasks <select id="box-reading"><option value="pixels">scored in pixels, as released</option><option value="grid">read on each model's own grid</option><option value="none">left out of TOTAL</option></select></label>
                 <label class="inline-check"><input id="cost-linear" type="checkbox" /> linear x</label>
               </div>
-            </div>
-            <div id="cost-score" class="bar-chart"></div>
           </section>
           <section class="panel frontier-panel" aria-labelledby="frontier-title">
             <h3 class="section-title" id="frontier-title">Cost-Performance Frontier</h3>
@@ -210,12 +212,12 @@
           </section>
           <section class="panel span-2 video-panel" aria-labelledby="video-title">
             <h3 class="section-title" id="video-title">Metered Cost of Video Question Answering</h3>
-            <div class="row video-knobs">
+            <table id="video-cost" class="frontier"></table>
+            <div class="control-card video-knobs">
               <label>Frame size <select id="video-res"><option value="640x360">640×360</option><option value="1280x720" selected>1280×720</option><option value="1920x1080">1920×1080</option></select></label>
               <label>Frames per second <select id="video-fps"><option value="0.2">0.2</option><option value="0.5">0.5</option><option value="1" selected>1</option><option value="2">2</option><option value="5">5</option><option value="10">10</option></select></label>
               <label>Frames per query <select id="video-frames"><option value="1">1</option><option value="4">4</option><option value="8" selected>8</option><option value="16">16</option><option value="32">32</option></select></label>
             </div>
-            <table id="video-cost" class="frontier"></table>
             <p class="sub" id="video-cost-note"></p>
           </section>
         </div>

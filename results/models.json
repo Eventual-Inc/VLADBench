@@ -1,0 +1,138 @@
+{
+  "gemini38": {
+    "label": "Gemini 3.8 Flash",
+    "lab": "Google",
+    "parameters": "undisclosed",
+    "size_rank": 3,
+    "featured": true,
+    "box_convention": "grid_yx",
+    "color": "#ffc15c"
+  },
+  "qwen38max": {
+    "label": "Qwen 3.8 Max",
+    "lab": "Alibaba",
+    "parameters": "2.4T MoE",
+    "size_rank": 4,
+    "featured": true,
+    "box_convention": "grid",
+    "color": "#b1a8ff"
+  },
+  "muse13": {
+    "label": "Muse Spark 1.3",
+    "lab": "Meta",
+    "parameters": "undisclosed",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "grid",
+    "color": "#3987e5"
+  },
+  "minimax3": {
+    "label": "MiniMax M3",
+    "lab": "MiniMax",
+    "parameters": "undisclosed",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "grid",
+    "color": "#e0355a"
+  },
+  "gemma431": {
+    "label": "Gemma 4 31B",
+    "lab": "Google",
+    "parameters": "30.7B dense",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "grid",
+    "color": "#b97600"
+  },
+  "luna56": {
+    "label": "GPT-5.6 Luna",
+    "lab": "OpenAI",
+    "parameters": "undisclosed",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "pixels",
+    "color": "#7a7a7a"
+  },
+  "astra6": {
+    "label": "GPT-6 Astra",
+    "lab": "OpenAI",
+    "parameters": "undisclosed",
+    "size_rank": 3,
+    "featured": true,
+    "box_convention": "pixels",
+    "color": "#f5f5f5"
+  },
+  "sol56": {
+    "label": "GPT-5.6 Sol",
+    "lab": "OpenAI",
+    "parameters": "undisclosed",
+    "size_rank": 2,
+    "featured": true,
+    "box_convention": "pixels",
+    "color": "#b1b1b1"
+  },
+  "gemini25lite": {
+    "label": "Gemini 2.5 Flash Lite",
+    "lab": "Google",
+    "parameters": "undisclosed",
+    "size_rank": 2,
+    "featured": true,
+    "box_convention": "grid_yx",
+    "color": "#e09b2e"
+  },
+  "rekaedge": {
+    "label": "Reka Edge",
+    "lab": "Reka",
+    "parameters": "7B",
+    "size_rank": 1,
+    "featured": false,
+    "box_convention": "grid",
+    "color": "#008300",
+    "not_featured_reason": "7B edge model; kept in the data, left out of the headline figures as an outlier"
+  },
+  "qwen38or": {
+    "label": "Qwen 3.8 27B",
+    "lab": "Alibaba",
+    "parameters": "27B dense",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "grid",
+    "color": "#8a7fe2"
+  },
+  "qwen36or": {
+    "label": "Qwen 3.6 35B A3B",
+    "lab": "Alibaba",
+    "parameters": "35B MoE, 3B active",
+    "size_rank": 2,
+    "featured": true,
+    "box_convention": "grid",
+    "color": "#6558b7"
+  },
+  "opus55": {
+    "label": "Claude Opus 5.5",
+    "lab": "Anthropic",
+    "parameters": "undisclosed",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "pixels",
+    "color": "#d95926"
+  },
+  "luna6": {
+    "label": "GPT-6 Luna",
+    "lab": "OpenAI",
+    "parameters": "undisclosed",
+    "size_rank": 1,
+    "featured": true,
+    "box_convention": "pixels",
+    "color": "#959595"
+  },
+  "sol6": {
+    "label": "GPT-6 Sol",
+    "lab": "OpenAI",
+    "parameters": "undisclosed",
+    "size_rank": 2,
+    "featured": true,
+    "box_convention": "pixels",
+    "color": "#d1d1d1"
+  }
+}

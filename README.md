@@ -46,14 +46,14 @@ Video models need `ffmpeg` on `PATH`.
 ## Basic Usage
 
 What each command needs. The raw answer records (`results/runs/`) are not in git, so a fresh clone can read and
-check the published results but cannot rescore or fully rebuild them.
+rebuild the site, figures, and dataset card from the committed record, but cannot rescore the published models.
 
 | Needs | Commands |
 |---|---|
-| Nothing | `validate`, reading `results/rerun.json` ([below](#reading-results-in-python)), `build --steps site`, `pytest` |
-| An API key, 28 billed answers | `run --smoke` |
+| Nothing | `validate`, reading `results/rerun.json` ([below](#reading-results-in-python)), `build`, `pytest` |
+| An API key, 28 billed answers (about a minute and $0.06 for Gemini 3.8 Flash) | `run --smoke` |
 | An API key, 11,193 billed answers per model | `run`, then `score` |
-| Every model's raw answer records (maintainers) | `build`, `publish` |
+| Every model's raw answer records (maintainers) | the `record`, `answers`, and `export` build steps; `publish` |
 
 `score` refuses to replace a score file that has more answers than it found.
 
@@ -90,7 +90,9 @@ uv run vladbench build            # record, site data, answers, variants, parque
 uv run vladbench build --steps site --site dist/pages
 ```
 
-The build refuses a model whose run is partial or whose answers are newer than its score file.
+The `record`, `answers`, and `export` steps read the raw answer records, which are not in git; without them the build
+skips those steps, says so, and starts from the committed `results/rerun.json`. The build refuses a model whose run is
+partial or whose answers are newer than its score file.
 
 ## Advanced Usage
 

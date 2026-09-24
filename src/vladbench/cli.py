@@ -28,13 +28,16 @@ def score(spec: dict, args) -> None:
 
 
 def build(args) -> None:
-    from .build import STEPS
+    from . import paths
     from .build import build as build_all
-    steps = args.steps.split(",") if args.steps else STEPS
+    steps = args.steps.split(",") if args.steps else None
     report = build_all(steps=steps, allow_incomplete=args.allow_incomplete, site_out=args.site, article=args.article)
     print(f"{len(report.models)} models: {', '.join(report.models)}")
     for step, written in report.written.items():
         print(f"{step:10} {len(written)} file{'s' if len(written) != 1 else ''}")
+    if report.skipped:
+        print(f"skipped    {', '.join(report.skipped)}: they read the sweep records in {paths.relative(paths.RUNS)}, which are not in git; "
+              "the other steps started from the committed results/rerun.json")
 
 
 def publish(args) -> None:
@@ -61,6 +64,9 @@ def publish(args) -> None:
 
 
 COMMANDS = {"validate": validate, "run": run, "score": score}
+HELP = {"validate": "Check a protocol file and print its models and settings",
+        "run": "Ask every unanswered question and save the answers under results/runs/ (billed; resumes)",
+        "score": "Score saved answers with the paper's scorer and write results/scores-<id>.json"}
 OTHER = {"build": build, "publish": publish}
 
 
@@ -68,7 +74,7 @@ def parser() -> argparse.ArgumentParser:
     top = argparse.ArgumentParser(description=__doc__)
     sub = top.add_subparsers(dest="command", required=True)
     for name in COMMANDS:
-        p = sub.add_parser(name)
+        p = sub.add_parser(name, help=HELP[name])
         p.add_argument("specification", type=Path)
         p.add_argument("--models", nargs="+")
     sub.choices["run"].add_argument("--smoke", action="store_true", help="First question of every task only")
@@ -87,9 +93,18 @@ def parser() -> argparse.ArgumentParser:
 
 
 def main(argv=None) -> int:
+    """Expected failures (a missing key, a partial run, a refused overwrite) print one line; VLADBENCH_DEBUG=1 shows the traceback."""
+    import os
+
+    from .record import IncompleteRun
     args = parser().parse_args(argv)
-    if args.command in OTHER:
-        OTHER[args.command](args)
-    else:
-        COMMANDS[args.command](load_spec(args.specification), args)
+    try:
+        if args.command in OTHER:
+            OTHER[args.command](args)
+        else:
+            COMMANDS[args.command](load_spec(args.specification), args)
+    except (ValueError, IncompleteRun) as error:
+        if os.environ.get("VLADBENCH_DEBUG"):
+            raise
+        raise SystemExit(f"vladbench {args.command}: {error}") from None
     return 0

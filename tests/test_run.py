@@ -8,7 +8,9 @@ import unittest
 from unittest.mock import patch
 
 from vladbench import run as run_module
-from vladbench.run import credential, read_jsonl, run
+from concurrent.futures import ThreadPoolExecutor
+
+from vladbench.run import collect, credential, read_jsonl, run
 from vladbench.scoring import score_model
 from vladbench.spec import load_spec
 
@@ -193,6 +195,26 @@ class RunTests(unittest.TestCase):
             path.write_text("".join(json.dumps(r) + "\n" for r in carried))
             with self.assertRaisesRegex(ValueError, "do not match"):
                 score_model(self.spec, self.spec["models"][0], runs_dir=self.runs, results_dir=self.runs / "results")
+
+
+class CollectTests(unittest.TestCase):
+    def test_answers_land_in_their_task_files_and_each_task_is_announced_once(self):
+        finished = []
+        with tempfile.TemporaryDirectory() as tmp, ThreadPoolExecutor(max_workers=3) as pool:
+            folder = Path(tmp)
+            jobs = [("Weather", "a"), ("Light", "b"), ("Weather", "c")]
+            futures = {pool.submit(dict, id=qid): task for task, qid in jobs}
+            collect(pool, futures, folder, finished.append)
+            self.assertEqual(sorted(r["id"] for r in read_jsonl(folder / "Weather.jsonl")), ["a", "c"])
+            self.assertEqual([r["id"] for r in read_jsonl(folder / "Light.jsonl")], ["b"])
+        self.assertEqual(sorted(finished), ["Light", "Weather"])
+
+    def test_a_failure_stops_the_run(self):
+        def fail():
+            raise RuntimeError("provider down")
+        with tempfile.TemporaryDirectory() as tmp, ThreadPoolExecutor(max_workers=1) as pool:
+            with self.assertRaisesRegex(RuntimeError, "provider down"):
+                collect(pool, {pool.submit(fail): "Weather"}, Path(tmp), lambda task: None)
 
 
 if __name__ == "__main__":

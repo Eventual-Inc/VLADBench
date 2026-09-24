@@ -29,7 +29,8 @@ uv run vladbench validate results/protocols/full-original.json
 uv run vladbench run   <protocol.json> --smoke --models <id>   # one question per task, 28 answers; billable
 uv run vladbench run   <protocol.json> --models <id>           # every unanswered question, 11,193 per model; billable; resumes
 uv run vladbench score <protocol.json> --models <id>           # writes results/scores-<id>.json
-uv run vladbench build                                         # rebuilds every derived file; stops if any run is partial
+uv run vladbench build                                         # rebuilds every derived file; stops if any run is partial;
+                                                               # without results/runs/ it skips record, answers, export
 uv run vladbench publish --dry-run                             # the Hugging Face upload; maintainers only
 ```
 

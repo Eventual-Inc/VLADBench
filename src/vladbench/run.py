@@ -7,7 +7,9 @@ survives one retry raises and stops the process.
 """
 from __future__ import annotations
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from collections import Counter
+from collections.abc import Callable
+from concurrent.futures import Future, ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 import json
 import os
@@ -15,6 +17,7 @@ from pathlib import Path
 import platform
 import subprocess
 import time
+from typing import TextIO
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
@@ -166,16 +169,27 @@ def ask(spec: dict, model: dict, question: dict, media: MediaCache, api_key: str
     return record(question, protocol_sha256, receipt, response, answer, time.monotonic() - started, attempts)
 
 
-def collect(pool: ThreadPoolExecutor, futures: list, path: Path) -> None:
-    """Append each answer as it completes; stop everything on the first failure."""
+def collect(pool: ThreadPoolExecutor, futures: dict[Future, str], folder: Path, finished: Callable[[str], None]) -> None:
+    """Append each answer to its task's file as it completes, calling ``finished`` as each task's last answer lands;
+    stop everything on the first failure."""
+    left = Counter(futures.values())
+    files: dict[str, TextIO] = {}
     try:
-        with path.open("a") as out:
-            for future in as_completed(futures):
-                out.write(canonical_json(future.result()) + "\n")
-                out.flush()
+        for future in as_completed(futures):
+            task = futures[future]
+            if task not in files:
+                files[task] = (folder / f"{task}.jsonl").open("a")
+            files[task].write(canonical_json(future.result()) + "\n")
+            files[task].flush()
+            left[task] -= 1
+            if not left[task]:
+                finished(task)
     except BaseException:
         pool.shutdown(cancel_futures=True)
         raise
+    finally:
+        for out in files.values():
+            out.close()
 
 
 def pending_questions(spec: dict, task: str, path: Path, smoke: bool) -> tuple[int, list[dict]]:
@@ -185,23 +199,25 @@ def pending_questions(spec: dict, task: str, path: Path, smoke: bool) -> tuple[i
     return len(done), pending
 
 
-def run_task(spec: dict, model: dict, task: str, folder: Path, media: MediaCache, api_key: str, smoke: bool) -> None:
-    path = folder / f"{task}.jsonl"
-    done, pending = pending_questions(spec, task, path, smoke)
-    if pending:
-        with ThreadPoolExecutor(max_workers=spec["protocol"]["concurrency_per_model"]) as pool:
-            collect(pool, [pool.submit(ask, spec, model, q, media, api_key) for q in pending], path)
-    print(f"{model['id']} {task}: {done + len(pending)} answered", flush=True)
-
-
 def run_model(spec: dict, model: dict, folder: Path, media: MediaCache, smoke: bool) -> None:
+    """Every task's unanswered questions share one pool, so a smoke run's one question per task is asked in parallel too."""
     api_key = credential(model)
     folder.mkdir(parents=True, exist_ok=True)
     meta = {"specification": spec["path"], "specification_sha256": spec["sha256"], "model": model, "protocol": spec["protocol"],
             "smoke": smoke, "started_at": datetime.now(timezone.utc).isoformat(), **provenance()}
     (folder / "meta.json").write_text(json.dumps(meta, indent=2) + "\n")
-    for task in tasks(spec["dataset_revision"]):
-        run_task(spec, model, task, folder, media, api_key, smoke)
+    plan = {task: pending_questions(spec, task, folder / f"{task}.jsonl", smoke) for task in tasks(spec["dataset_revision"])}
+
+    def finished(task: str) -> None:
+        done, pending = plan[task]
+        print(f"{model['id']} {task}: {done + len(pending)} answered", flush=True)
+
+    for task, (_, pending) in plan.items():
+        if not pending:
+            finished(task)
+    with ThreadPoolExecutor(max_workers=spec["protocol"]["concurrency_per_model"]) as pool:
+        futures = {pool.submit(ask, spec, model, q, media, api_key): task for task, (_, pending) in plan.items() for q in pending}
+        collect(pool, futures, folder, finished)
 
 
 def wanted_ids(spec: dict, model_ids: list[str] | None) -> set[str]:
@@ -219,6 +235,9 @@ def select_models(spec: dict, model_ids: list[str] | None) -> list[dict]:
 
 def run(spec: dict, model_ids: list[str] | None = None, *, smoke: bool = False, runs_dir: Path = RUNS) -> None:
     condition = spec["name"] + ("-smoke" if smoke else "")
+    models = select_models(spec, model_ids)
+    for model in models:
+        credential(model)  # every key before anything is written or billed
     media = MediaCache(runs_dir / "media", fps=spec["protocol"]["video"]["fps"])
-    for model in select_models(spec, model_ids):
+    for model in models:
         run_model(spec, model, runs_dir / condition / model["id"], media, smoke)

@@ -19,12 +19,14 @@ Qwen 3.8 Max, Qwen 3.8 27B, Qwen 3.6 35B A3B, Muse Spark 1.3, MiniMax M3, and Re
 ### Added
 
 - Protocol-driven runner and scorer: one file per condition, request hashes on every answer, the paper's scoring code
-  preserved byte for byte.
+  preserved byte for byte. A model's questions across all tasks share one request pool, and every API key is checked
+  before anything is written.
 - Billed cost per answer and tokeniser rules for cost per hour of video (`vladbench.metering`).
 - Per-question marks that re-aggregate to the released scorer's components (`answers/<Task>.json`).
 - Results site at https://eventual-inc.github.io/VLADBench/ and the parquet dataset with serving host per answer.
-- `vladbench build` and `vladbench publish`; the build refuses partial runs and stale score files, and `score` refuses
-  to replace a score file that has more answers than it found.
+- `vladbench build` and `vladbench publish`; the build refuses partial runs and stale score files, and on a checkout
+  without the raw answer records it builds the site, figures, and card from the committed record. `score` refuses to
+  replace a score file that has more answers than it found. Expected CLI errors print one line.
 - Model registry (`results/models.json`) with each model's box convention.
 - Frontier and totals under three bounding-box readings (`vladbench.boxes`).
 - CI, pre-commit hooks, `AGENTS.md`, and procedures for agents in `.claude/skills/`.

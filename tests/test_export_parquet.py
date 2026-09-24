@@ -46,6 +46,11 @@ class ExportParquetTests(unittest.TestCase):
             if model["cost_basis"].startswith("provider receipts"):
                 self.assertAlmostEqual(by_model[model["model_id"]], model["cost_usd"], places=6)
 
+    def test_model_and_task_rows_rebuild_the_committed_tables(self):
+        from vladbench.export import model_rows, task_rows
+        self.assertEqual(model_rows(self.rerun), self.tables["models"])
+        self.assertEqual(task_rows(self.rerun), self.tables["tasks"])
+
 
 class CardTests(unittest.TestCase):
     def test_dataset_card_lists_every_table_and_model(self):

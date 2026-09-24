@@ -1032,6 +1032,7 @@ summary {
 .cost-score-panel { padding: 14px 16px; }
 .chart-axis { fill: var(--muted); font-size: 11px; }
 .chart-point-label { fill: var(--ink); font-size: 11px; }
+.chart-leader { stroke: var(--muted); stroke-width: 1; }
 
 .chart-iso { fill: none; stroke: var(--dim); stroke-width: 1; stroke-dasharray: 2 3; }
 .chart-iso-label { fill: var(--dim); font-size: 10px; }
@@ -1243,19 +1244,19 @@ body.embed .overview-grid { gap: 10px; }
 .wheel { display: flex; justify-content: center; }
 .wheel svg { width: min(100%, 860px); height: auto; }
 .wheel-guide { fill: none; stroke: var(--line); stroke-width: 1; }
-.wheel-tick { fill: var(--muted); font-size: 10px; }
+.wheel-tick { fill: var(--muted); font-size: 13px; }
 .wheel-domain { fill: #1a1520; stroke: var(--bg); stroke-width: 2; }
 .wheel-domain.d0 { fill: #2a1b3a; } .wheel-domain.d1 { fill: #1d2a3a; } .wheel-domain.d2 { fill: #1b3330; } .wheel-domain.d3 { fill: #3a2a1b; } .wheel-domain.d4 { fill: #3a1b2c; }
 .wheel-group { fill: #17141c; stroke: var(--bg); stroke-width: 2; }
-.wheel-domain-label { fill: var(--ink); font-size: 10.5px; font-weight: 600; dominant-baseline: middle; letter-spacing: 0.02em; }
-.wheel-group-label { fill: var(--muted); font-size: 9.5px; dominant-baseline: middle; }
-.wheel-task-label { fill: var(--ink); font-size: 10px; dominant-baseline: middle; pointer-events: none; }
+.wheel-domain-label { fill: var(--ink); font-size: 14px; font-weight: 600; dominant-baseline: middle; letter-spacing: 0.02em; }
+.wheel-group-label { fill: var(--muted); font-size: 12.5px; dominant-baseline: middle; }
+.wheel-task-label { fill: var(--ink); font-size: 12px; dominant-baseline: middle; pointer-events: none; }
 .wheel-wedge { fill: transparent; stroke: var(--line); stroke-width: 0.6; cursor: pointer; }
 .wheel-wedge:hover { fill: #ffffff0c; }
 .wheel-bar { cursor: pointer; }
 .wheel-bar:hover, .wheel-bar:focus { stroke: var(--ink); stroke-width: 1; outline: none; }
-.wheel-center { fill: var(--ink); font-size: 16px; font-weight: 700; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-.wheel-center.sub { fill: var(--muted); font-size: 11px; font-weight: 400; font-family: inherit; }
+.wheel-center { fill: var(--ink); font-size: 24px; font-weight: 700; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.wheel-center.sub { fill: var(--muted); font-size: 16px; font-weight: 400; font-family: inherit; }
 .wheel-axis { stroke: var(--line); stroke-width: 1; }
 .wheel-axis-label { fill: var(--ink); font-size: 12px; }
 .wheel-axis-sub { fill: var(--muted); font-size: 10px; }

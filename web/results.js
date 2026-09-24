@@ -259,12 +259,12 @@ function placeLabels(points, x, y, bounds) {
     let chosen = null;
     for (let pass = 0; pass < 6 && !chosen; pass += 1) {
       for (const [dx, dy, anchor] of candidates) {
-        const ly = cy + dy + pass * 14;
+        const ly = cy + dy + (dy <= 0 ? -1 : 1) * pass * 14;   // push away from the dot
         const bx = anchor === "start" ? cx + dx : anchor === "end" ? cx + dx - w : cx - w / 2;
         const box = { x: bx, y: ly - 10, w, h };
         if (box.x < bounds.x0 || box.x + w > bounds.x1 || box.y < bounds.y0 || box.y + h > bounds.y1) continue;
         if (boxes.some((b) => overlaps(box, b))) continue;
-        chosen = { x: cx + dx, y: ly, anchor, box };
+        chosen = { x: cx + dx, y: ly, anchor, box, pushed: pass > 0 };
         break;
       }
     }
@@ -296,7 +296,8 @@ function renderCostScore() {
   const select = $("box-reading");
   if (select) select.value = costState.reading;
   const points = costPoints(costState.reading);
-  const width = 1180, height = 460, margin = { top: 24, right: 48, bottom: 52, left: 54 };
+  // Fit the drawing to its container so text keeps its CSS size; a hidden tab has no width and gets the full layout.
+  const width = Math.max(560, Math.min(1180, chart.clientWidth || 1180)), height = Math.max(340, Math.min(460, Math.round(width * 0.55))), margin = { top: 24, right: 48, bottom: 52, left: 54 };
   const plotW = width - margin.left - margin.right, plotH = height - margin.top - margin.bottom;
   const costs = points.map((p) => p.cost);
   const scores = points.map((p) => p.score);
@@ -338,8 +339,10 @@ function renderCostScore() {
 
   const bounds = { x0: margin.left + 2, x1: margin.left + plotW - 2, y0: margin.top, y1: margin.top + plotH };
   const labels = placeLabels(points.slice().sort((a, b) => b.score - a.score), x, y, bounds);
-  for (const { point: p, x: lx, y: ly, anchor } of labels) {
+  for (const { point: p, x: lx, y: ly, anchor, box, pushed } of labels) {
     const cx = x(p.cost), cy = y(p.score);
+    // A label pushed away from its dot gets a leader line to the nearest point of its box.
+    if (pushed) root.append(svg("line", { x1: cx, y1: cy, x2: Math.max(box.x, Math.min(cx, box.x + box.w)), y2: cy < box.y ? box.y : box.y + box.h, class: "chart-leader" }));
     const dot = svg("circle", { cx, cy, r: 6.5, fill: p.model.color, stroke: p.gpu ? "#fff" : "#08080b", "stroke-width": 1.5, "stroke-dasharray": p.gpu ? "2 2" : null });
     dot.append(svg("title", {}, `${p.model.label} · TOTAL ${p.score.toFixed(2)} · task scores middle half ${p.spread.p25.toFixed(1)}–${p.spread.p75.toFixed(1)} · ${money(p.cost)}${p.gpu ? " GPU hours" : ""}${frontier.includes(p) ? " · on the frontier" : ""}`));
     root.append(dot, svg("text", { x: lx, y: ly, class: "chart-point-label", "text-anchor": anchor }, p.text));
@@ -1020,3 +1023,10 @@ buildTaskFilter();
 renderAll();
 renderPaperFormat();
 wireHeatPicker();
+
+// The cost plot and the distribution draw at their container's width; redraw them when that width changes.
+let refit = 0;
+const redrawFitted = () => { renderCostScore(); if (typeof renderDistribution === "function") renderDistribution(); };
+window.addEventListener("resize", () => { clearTimeout(refit); refit = setTimeout(redrawFitted, 150); });
+for (const button of document.querySelectorAll('.tabs [role="tab"]')) button.addEventListener("click", redrawFitted);
+window.addEventListener("hashchange", redrawFitted);

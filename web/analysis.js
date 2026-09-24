@@ -98,10 +98,12 @@ function renderDistribution() {
     analysis.sort = `${view === "both" ? "shift" : view}.${stat}`;
   }
   const rows = sortedStats();
-  const rowH = view === "both" ? 30 : 22, left = 210, plotW = 560, top = 30;
+  const rowH = view === "both" ? 30 : 22, left = 210, top = 30;
   const groups = view === "both" ? [["shift", "Δ 2026 − 2025"]] : [[view, view]];
   const colW = 52, groupGap = 14;
   const right = groups.length * (3 * colW + groupGap) + 20;
+  // Fit the drawing to its container so text keeps its CSS size; a hidden tab has no width and gets the full layout.
+  const plotW = Math.max(220, Math.min(560, (host.clientWidth || 1e4) - left - right));
   let cursor = top, previousGroup = null;
   const headings = [];
   const positions = rows.map((row) => {

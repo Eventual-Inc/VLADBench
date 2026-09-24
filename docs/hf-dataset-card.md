@@ -18,7 +18,7 @@ configs:
 
 # VLADBench-reeval
 
-We re-evaluated the VLADBench benchmark (Li et al., 2025, [arXiv:2503.21505](https://arxiv.org/abs/2503.21505)) against current SOTA VLMs under the original scoring criteria and prompts. See [Eventual-Inc/VLADBench](https://github.com/Eventual-Inc/VLADBench) for the code, and the [companion site](https://eventual-inc.github.io/VLADBench/) for interactive results.
+We re-evaluated the VLADBench benchmark (Li et al., 2025, [arXiv:2503.21505](https://arxiv.org/abs/2503.21505)) against current SOTA VLMs under the original scoring criteria and prompts. See [Eventual-Inc/VLADBench](https://github.com/Eventual-Inc/VLADBench) for the code, the [companion site](https://eventual-inc.github.io/VLADBench/) for interactive results, and the [article](https://www.eventual.ai/blog/vladbench-reeval) for a summary of the findings.
 
 ## Cost vs Score
 

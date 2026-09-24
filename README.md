@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/Eventual-Inc/VLADBench/actions/workflows/ci.yml/badge.svg)](https://github.com/Eventual-Inc/VLADBench/actions/workflows/ci.yml)
 [![Results](https://img.shields.io/badge/results-companion-ff00ff)](https://eventual-inc.github.io/VLADBench/)
+[![Article](https://img.shields.io/badge/article-eventual.ai-000000)](https://www.eventual.ai/blog/vladbench-reeval)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20dataset-VLADBench--reeval-yellow)](https://huggingface.co/datasets/Eventual-Inc/VLADBench-reeval)
 
 A fork of [Depth2World/VLADBench](https://github.com/Depth2World/VLADBench) that re-evaluates current
@@ -14,6 +15,7 @@ re-evaluation was carried out independently of the paper's authors.
 
 - **2026-09-24, v1.0.0.** First release: 15 models, 167,895 scored answers, billed costs, the results site, and the
   Hugging Face dataset. [Changelog](CHANGELOG.md#v100--2026-09-24).
+  Article: [What I learned re-evaluating VLADBench on the latest VLMs](https://www.eventual.ai/blog/vladbench-reeval).
 - **2026-09-22.** Claude Opus 5.5, GPT-6 Luna, and GPT-6 Sol added; Gemini 2.5 Flash Lite re-run with reasoning off.
   `vladbench build` replaces the build scripts, and per-answer serving hosts are published with the dataset.
 

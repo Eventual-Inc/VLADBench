@@ -7,16 +7,17 @@
 A fork of [Depth2World/VLADBench](https://github.com/Depth2World/VLADBench) that re-evaluates current
 vision-language models on the benchmark and records the cost of every evaluation. The benchmark, its questions,
 references, and scoring code are the work of the original authors ([paper](https://arxiv.org/abs/2503.21505),
-[dataset](https://huggingface.co/datasets/depth2world/VLADBench), [upstream README](docs/upstream-readme.md)). This
-fork is not affiliated with them. Its scores should be cited as this re-evaluation, not as results from the paper.
+[dataset](https://huggingface.co/datasets/depth2world/VLADBench), [upstream README](docs/upstream-readme.md)). The
+re-evaluation was carried out independently of the paper's authors.
 
-## Announcement
+## Announcements
 
-**2026-09-22.** Claude Opus 5.5, GPT-6 Luna, and GPT-6 Sol added; Gemini 2.5 Flash Lite re-run with reasoning off.
-The re-evaluation now covers 15 models and 167,895 scored answers. `vladbench build` replaces the build scripts, and
-per-answer serving hosts are published with the dataset.
+- **2026-09-24, v1.0.0.** First release: 15 models, 167,895 scored answers, billed costs, the results site, and the
+  Hugging Face dataset. [Changelog](CHANGELOG.md#v100--2026-09-24).
+- **2026-09-22.** Claude Opus 5.5, GPT-6 Luna, and GPT-6 Sol added; Gemini 2.5 Flash Lite re-run with reasoning off.
+  `vladbench build` replaces the build scripts, and per-answer serving hosts are published with the dataset.
 
-Earlier releases: [`CHANGELOG.md`](CHANGELOG.md).
+Every release: [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Overview
 
@@ -41,6 +42,18 @@ cp .env.example .env        # OPENROUTER_API_KEY, or the key variable a protocol
 Video models need `ffmpeg` on `PATH`.
 
 ## Basic Usage
+
+What each command needs. The raw answer records (`results/runs/`) are not in git, so a fresh clone can read and
+check the published results but cannot rescore or fully rebuild them.
+
+| Needs | Commands |
+|---|---|
+| Nothing | `validate`, reading `results/rerun.json` ([below](#reading-results-in-python)), `build --steps site`, `pytest` |
+| An API key, 28 billed answers | `run --smoke` |
+| An API key, 11,193 billed answers per model | `run`, then `score` |
+| Every model's raw answer records (maintainers) | `build`, `publish` |
+
+`score` refuses to replace a score file that has more answers than it found.
 
 ### Evaluating a model
 

@@ -23,7 +23,7 @@ def score(spec: dict, args) -> None:
     from .scoring import score_model
     superseded = [load_spec(path) for path in args.accept_superseded]
     for model in select_models(spec, args.models):
-        result = score_model(spec, model, superseded=superseded)
+        result = score_model(spec, model, superseded=superseded, force=args.force)
         print(json.dumps({k: result[k] for k in ("model_id", "dataset_complete", "protocol_complete", "truncated_answers", "request_success")}))
 
 
@@ -74,6 +74,7 @@ def parser() -> argparse.ArgumentParser:
     sub.choices["run"].add_argument("--smoke", action="store_true", help="First question of every task only")
     sub.choices["score"].add_argument("--accept-superseded", type=Path, action="append", default=[], metavar="SPEC",
                                       help="Accept answers carried from this earlier specification when its cap did not bind them")
+    sub.choices["score"].add_argument("--force", action="store_true", help="Replace a score file that has more answers than this run")
     b = sub.add_parser("build", help="Rebuild every derived file from the score files, in order")
     b.add_argument("--steps", help="Comma-separated subset of: record,site-data,answers,variants,export,figures,card,site")
     b.add_argument("--allow-incomplete", action="store_true", help="Leave out models whose run is partial instead of stopping")

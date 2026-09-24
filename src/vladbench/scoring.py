@@ -454,11 +454,13 @@ def model_result(spec: dict, model: dict, folder: Path, scored: dict, totals: di
     }
 
 
-def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: Path = ROOT / "results", superseded: Sequence[dict] = ()) -> dict:
+def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: Path = ROOT / "results", superseded: Sequence[dict] = (),
+                force: bool = False) -> dict:
     """Score one model's recorded answers for a condition; every answer's request hash is verified first.
 
     ``superseded`` lists earlier specifications whose answers may be carried
     over when their completion cap did not bind (see scripts/adopt_capped_answers.py).
+    An existing score file with more answers is kept unless ``force``.
     """
     folder = Path(runs_dir) / spec["name"] / model["id"]
     results_dir = Path(results_dir)
@@ -475,6 +477,12 @@ def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: 
         totals["fallbacks"] += stats["fallbacks"]
         totals["carried"] += stats["carried"]
     result = model_result(spec, model, folder, scored, totals)
+    out = results_dir / f"scores-{model['id']}.json"
+    if out.exists() and not force:
+        kept = json.loads(out.read_text()).get("request_success", {}).get("completed", 0)
+        if totals["completed"] < kept:
+            raise ValueError(f"{model['id']}: found {totals['completed']:,} answers in {folder}, but {out.name} has {kept:,}; "
+                             "not overwriting it (pass --force to replace it)")
     results_dir.mkdir(exist_ok=True)
-    (results_dir / f"scores-{model['id']}.json").write_text(json.dumps(result, indent=2) + "\n")
+    out.write_text(json.dumps(result, indent=2) + "\n")
     return result

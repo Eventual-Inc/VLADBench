@@ -160,6 +160,18 @@ class RunTests(unittest.TestCase):
         with patch("vladbench.scoring.tasks", return_value=["Weather"]), self.assertRaisesRegex(ValueError, "do not match"):
             score_model(self.spec, self.spec["models"][0], runs_dir=self.runs, results_dir=self.runs / "results")
 
+    def test_score_keeps_a_score_file_with_more_answers(self):
+        run(self.spec, runs_dir=self.runs)
+        with patch("vladbench.scoring.tasks", return_value=["Weather"]):
+            score_model(self.spec, self.spec["models"][0], runs_dir=self.runs, results_dir=self.runs / "results")
+            saved = (self.runs / "results" / "scores-luna56.json").read_text()
+            (self.runs / "test" / "luna56" / "Weather.jsonl").unlink()
+            with self.assertRaisesRegex(ValueError, "not overwriting"):
+                score_model(self.spec, self.spec["models"][0], runs_dir=self.runs, results_dir=self.runs / "results")
+            self.assertEqual((self.runs / "results" / "scores-luna56.json").read_text(), saved)
+            forced = score_model(self.spec, self.spec["models"][0], runs_dir=self.runs, results_dir=self.runs / "results", force=True)
+        self.assertEqual(forced["request_success"]["completed"], 0)
+
 
     def test_carried_answers_count_only_when_their_cap_did_not_bind(self):
         run(self.spec, runs_dir=self.runs)

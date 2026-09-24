@@ -41,17 +41,34 @@ def question_record(task: str, revision: str, sample: dict, sample_index: int, q
         image_urls=image_urls(sample, raw, task, revision), task_total_samples=totals[0], task_total_questions=totals[1])
 
 
+def question_kinds(sample: dict) -> set[str]:
+    """The kinds a task's scorer needs at least one of: a bounding-box question, a yes/no judgment."""
+    kinds = {"bounding_box" for q in sample["questions"] if "located in the image?" in str(q).lower()}
+    return kinds | {"judgment" for r in sample["reference"] if str(r).strip().rstrip(".").lower() in ("yes", "no")}
+
+
+def smoke_samples(samples: list[dict]) -> list[int]:
+    """The first sample, plus the first sample of each question kind the task has and the chosen ones lack.
+
+    The scorer scores whole samples, and some scorers need at least one question of a kind.
+    """
+    chosen: list[int] = []
+    have: set[str] = set()
+    for index, sample in enumerate(samples):
+        missing = question_kinds(sample) - have
+        if not chosen or missing:
+            chosen.append(index)
+            have |= missing
+    return chosen
+
+
 def questions(task: str, revision: str = DEFAULT_REVISION, *, smoke: bool = False) -> list[dict]:
-    """Every question of a task in annotation order; smoke keeps only the first."""
+    """Every question of a task in annotation order; smoke keeps a few whole samples the scorer can score (smoke_samples)."""
     samples = load_task(task, revision)
     totals = (len(samples), sum(len(s["questions"]) for s in samples))
-    result = []
-    for sample_index, sample in enumerate(samples):
-        for question_index in range(len(sample["questions"])):
-            result.append(question_record(task, revision, sample, sample_index, question_index, totals))
-            if smoke:
-                return result
-    return result
+    keep = smoke_samples(samples) if smoke else range(len(samples))
+    return [question_record(task, revision, samples[i], i, question_index, totals)
+            for i in keep for question_index in range(len(samples[i]["questions"]))]
 
 
 def reasoning_settings(model: dict) -> dict:

@@ -200,7 +200,7 @@ def pending_questions(spec: dict, task: str, path: Path, smoke: bool) -> tuple[i
 
 
 def run_model(spec: dict, model: dict, folder: Path, media: MediaCache, smoke: bool) -> None:
-    """Every task's unanswered questions share one pool, so a smoke run's one question per task is asked in parallel too."""
+    """Every task's unanswered questions share one pool, so a smoke run's few questions per task are asked in parallel too."""
     api_key = credential(model)
     folder.mkdir(parents=True, exist_ok=True)
     meta = {"specification": spec["path"], "specification_sha256": spec["sha256"], "model": model, "protocol": spec["protocol"],

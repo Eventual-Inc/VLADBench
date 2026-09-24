@@ -40,6 +40,18 @@ class CliTests(unittest.TestCase):
         self.assertEqual(score.call_args.args[1]["id"], "luna56")
         self.assertEqual(json.loads(out.getvalue())["request_success"], {"completed": 1, "total": 2})
 
+    def test_score_smoke_prints_each_task(self):
+        result = {"model_id": "luna56", "dataset_complete": False, "protocol_complete": False, "truncated_answers": 0,
+                  "request_success": {"completed": 3, "total": 3}, "source": str(ROOT / "results/runs/full-original-smoke/luna56"),
+                  "tasks": {"Weather": {"score": 50.0}, "Light": {"score": None, "exclusions": [{"reason": "no judgment question"}]}}}
+        out = io.StringIO()
+        with patch("vladbench.scoring.score_model", return_value=result) as score, redirect_stdout(out):
+            main(["score", SPEC, "--smoke", "--models", "luna56"])
+        self.assertTrue(score.call_args.kwargs["smoke"])
+        self.assertIn("Weather", out.getvalue())
+        self.assertIn("unscorable: no judgment question", out.getvalue())
+        self.assertIn("results/runs/full-original-smoke/luna56/scores.json", out.getvalue())
+
     def test_unknown_model_is_a_one_line_error(self):
         with patch("vladbench.scoring.score_model"), self.assertRaisesRegex(SystemExit, "vladbench score: unknown model ids"):
             main(["score", SPEC, "--models", "nope"])

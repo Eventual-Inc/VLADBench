@@ -145,10 +145,16 @@ class RunTests(unittest.TestCase):
                 run(self.spec, runs_dir=self.runs)
         self.assertLessEqual(post.call_count, 2 * self.spec["protocol"]["max_attempts"])  # two questions in flight
 
-    def test_smoke_asks_only_the_first_question_into_a_separate_condition(self):
+    def test_smoke_asks_the_first_sample_into_a_separate_condition_and_scores_it_there(self):
         run(self.spec, smoke=True, runs_dir=self.runs)
-        self.assertEqual(len(self.server.payloads), 1)
+        self.assertEqual(len(self.server.payloads), 2)  # Weather's first sample has two questions
         self.assertTrue((self.runs / "test-smoke" / "luna56" / "Weather.jsonl").exists())
+        with patch("vladbench.scoring.tasks", return_value=["Weather"]):
+            result = score_model(self.spec, self.spec["models"][0], runs_dir=self.runs, results_dir=self.runs / "results", smoke=True)
+        self.assertEqual(result["tasks"]["Weather"]["status"], "complete")
+        self.assertIsNotNone(result["tasks"]["Weather"]["score"])
+        self.assertTrue((self.runs / "test-smoke" / "luna56" / "scores.json").exists())
+        self.assertFalse((self.runs / "results").exists())
 
     def test_score_verifies_request_hashes_before_scoring(self):
         run(self.spec, runs_dir=self.runs)

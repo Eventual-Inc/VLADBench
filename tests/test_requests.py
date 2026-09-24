@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 from vladbench.dataset import DEFAULT_REVISION, list_tasks, remote_url, validate_sample
-from vladbench.requests import build, digest, questions
+from vladbench.requests import build, digest, questions, smoke_samples
 from vladbench.spec import load_spec
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -98,10 +98,20 @@ class BuildTests(unittest.TestCase):
         for model in ("qwen36or", "gemini38"):
             self.assertEqual(build(SPEC, MODELS[model], single)[0]["messages"][0]["content"][0]["video_url"]["encoded_frames"], 1)
 
-    def test_smoke_is_the_first_question_only(self):
+    def test_smoke_adds_a_sample_for_each_question_kind_the_first_lacks(self):
+        plain = {"questions": ["x;What colour is it?"], "reference": ["Red"]}
+        box = {"questions": ["x;Where is the car located in the image?"], "reference": ["[1,2,3,4]"]}
+        judged = {"questions": ["x;Is it safe?"], "reference": ["Yes"]}
+        self.assertEqual(smoke_samples([plain, plain, box, box, judged]), [0, 2, 4])
+        self.assertEqual(smoke_samples([judged, plain]), [0])
+        self.assertEqual(smoke_samples([]), [])
+
+    def test_smoke_is_every_question_of_the_first_sample(self):
         with patch("vladbench.requests.load_task", return_value=[SAMPLE, SEQUENCE]):
-            self.assertEqual(len(questions("Vehicle_Cutin", smoke=True)), 1)
-            self.assertEqual(len(questions("Vehicle_Cutin")), 2)
+            smoke = questions("Vehicle_Cutin", smoke=True)
+            self.assertEqual({q["sample_index"] for q in smoke}, {0})
+            self.assertEqual(len(smoke), len(SAMPLE["questions"]))
+            self.assertEqual(len(questions("Vehicle_Cutin")), len(SAMPLE["questions"]) + len(SEQUENCE["questions"]))
 
 
 class SpecTests(unittest.TestCase):

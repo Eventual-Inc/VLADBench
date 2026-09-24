@@ -51,7 +51,7 @@ rebuild the site, figures, and dataset card from the committed record, but canno
 | Needs | Commands |
 |---|---|
 | Nothing | `validate`, reading `results/rerun.json` ([below](#reading-results-in-python)), `build`, `pytest` |
-| An API key, 28 billed answers (about a minute and $0.06 for Gemini 3.8 Flash) | `run --smoke` |
+| An API key, 99 billed answers about 3 minutes and $0.16 for Gemini 3.8 Flash | `run --smoke`, then `score --smoke` |
 | An API key, 11,193 billed answers per model | `run`, then `score` |
 | Every model's raw answer records (maintainers) | the `record`, `answers`, and `export` build steps; `publish` |
 
@@ -61,12 +61,15 @@ rebuild the site, figures, and dataset card from the committed record, but canno
 
 ```sh
 uv run vladbench validate results/protocols/full-original.json
-uv run vladbench run   results/protocols/full-original.json --smoke --models gemini38   # one question per task
+uv run vladbench run   results/protocols/full-original.json --smoke --models gemini38   # a few whole samples per task
+uv run vladbench score results/protocols/full-original.json --smoke --models gemini38   # scores them beside the answers
 uv run vladbench run   results/protocols/full-original.json --models gemini38           # all unanswered questions; resumes
 uv run vladbench score results/protocols/full-original.json --models gemini38           # writes results/scores-gemini38.json
 ```
 
-Runs are billed. Run `--smoke` first; its 28 answers show the endpoint works and give a cost estimate.
+Runs are billed. Run `--smoke` first: its 99 answers, a few complete samples per task, show the endpoint works, give
+a cost estimate, and score every task. Smoke scores rest on one sample per task and are not comparable to the
+published scores.
 
 ### Adding a model
 

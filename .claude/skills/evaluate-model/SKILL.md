@@ -15,8 +15,9 @@ description: Run VLADBench on a named model (an OpenRouter model or an OpenAI-co
    - Keep `protocol` unchanged: temperature null, original prompts, native-pixel coordinates, 8192 max tokens.
    Validate: `uv run vladbench validate results/protocols/<name>.json`.
 2. **Smoke test.** `uv run vladbench run results/protocols/<name>.json --smoke --models <id>`. Report the answers in
-   `results/runs/<name>-smoke/<id>/`: all 28 should have `finish_reason: stop` and a non-empty answer. For OpenRouter,
-   sum `usage.cost` and multiply by about 11,193 / 28 × 0.65 for a full-sweep estimate (smoke tests overestimate).
+   `results/runs/<name>-smoke/<id>/`: all 99 should have `finish_reason: stop` and a non-empty answer, and
+   `vladbench score ... --smoke --models <id>` should give every task a score. For OpenRouter,
+   sum `usage.cost` and multiply by about 11,193 / 99 × 0.9 for a full-sweep estimate (measured on Gemini 3.8 Flash; smoke tests overestimate).
    Obtain approval for the full run when the estimate exceeds a few dollars.
 3. **Full run.** `uv run vladbench run results/protocols/<name>.json --models <id>`. It resumes if stopped.
 4. **Score.** `uv run vladbench score results/protocols/<name>.json --models <id>`. Check `dataset_complete` and

@@ -19,11 +19,17 @@ def run(spec: dict, args) -> None:
 
 
 def score(spec: dict, args) -> None:
+    from . import paths
     from .run import select_models
     from .scoring import score_model
     superseded = [load_spec(path) for path in args.accept_superseded]
     for model in select_models(spec, args.models):
-        result = score_model(spec, model, superseded=superseded, force=args.force)
+        result = score_model(spec, model, superseded=superseded, force=args.force, smoke=args.smoke)
+        if args.smoke:
+            for task, task_result in result["tasks"].items():
+                value = task_result["score"]
+                print(f"{model['id']} {task:28} " + (f"{value:6.1f}" if value is not None else f"unscorable: {task_result['exclusions'][0]['reason']}"))
+            print(f"{model['id']} smoke scores: {paths.relative(Path(result['source']) / 'scores.json')} (a few samples per task, not comparable to the published scores)")
         print(json.dumps({k: result[k] for k in ("model_id", "dataset_complete", "protocol_complete", "truncated_answers", "request_success")}))
 
 
@@ -77,9 +83,10 @@ def parser() -> argparse.ArgumentParser:
         p = sub.add_parser(name, help=HELP[name])
         p.add_argument("specification", type=Path)
         p.add_argument("--models", nargs="+")
-    sub.choices["run"].add_argument("--smoke", action="store_true", help="First question of every task only")
+    sub.choices["run"].add_argument("--smoke", action="store_true", help="A few whole samples of every task, enough for the scorer (99 questions)")
     sub.choices["score"].add_argument("--accept-superseded", type=Path, action="append", default=[], metavar="SPEC",
                                       help="Accept answers carried from this earlier specification when its cap did not bind them")
+    sub.choices["score"].add_argument("--smoke", action="store_true", help="Score the smoke run's answers; writes beside them, not to results/")
     sub.choices["score"].add_argument("--force", action="store_true", help="Replace a score file that has more answers than this run")
     b = sub.add_parser("build", help="Rebuild every derived file from the score files, in order")
     b.add_argument("--steps", help="Comma-separated subset of: record,site-data,answers,variants,export,figures,card,site")

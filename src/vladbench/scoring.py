@@ -455,18 +455,19 @@ def model_result(spec: dict, model: dict, folder: Path, scored: dict, totals: di
 
 
 def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: Path = ROOT / "results", superseded: Sequence[dict] = (),
-                force: bool = False) -> dict:
+                force: bool = False, smoke: bool = False) -> dict:
     """Score one model's recorded answers for a condition; every answer's request hash is verified first.
 
     ``superseded`` lists earlier specifications whose answers may be carried
     over when their completion cap did not bind (see scripts/adopt_capped_answers.py).
-    An existing score file with more answers is kept unless ``force``.
+    An existing score file with more answers is kept unless ``force``. With ``smoke``, the smoke run's one question
+    per task is scored and written beside its answers, never to results/.
     """
-    folder = Path(runs_dir) / spec["name"] / model["id"]
+    folder = Path(runs_dir) / (spec["name"] + ("-smoke" if smoke else "")) / model["id"]
     results_dir = Path(results_dir)
     scored, totals = {}, {"completed": 0, "total": 0, "truncated": 0, "fallbacks": 0, "carried": 0}
     for task in tasks(spec["dataset_revision"]):
-        expected = {q["id"]: q for q in questions(task, spec["dataset_revision"])}
+        expected = {q["id"]: q for q in questions(task, spec["dataset_revision"], smoke=smoke)}
         answers, stats = verified_answers(spec, model, folder / f"{task}.jsonl", expected, superseded)
         if stats["mismatched"]:
             raise ValueError(f"{model['id']} {task}: {len(stats['mismatched'])} answers do not match the specification's requests, e.g. {stats['mismatched'][:5]}")
@@ -477,6 +478,9 @@ def score_model(spec: dict, model: dict, *, runs_dir: Path = RUNS, results_dir: 
         totals["fallbacks"] += stats["fallbacks"]
         totals["carried"] += stats["carried"]
     result = model_result(spec, model, folder, scored, totals)
+    if smoke:
+        (folder / "scores.json").write_text(json.dumps(result, indent=2) + "\n")
+        return result
     out = results_dir / f"scores-{model['id']}.json"
     if out.exists() and not force:
         kept = json.loads(out.read_text()).get("request_success", {}).get("completed", 0)

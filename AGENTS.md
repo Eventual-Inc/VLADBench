@@ -26,7 +26,8 @@ Run Python through `uv run`. The CLI is `uv run vladbench <command>`.
 
 ```sh
 uv run vladbench validate results/protocols/full-original.json
-uv run vladbench run   <protocol.json> --smoke --models <id>   # one question per task, 28 answers; billable
+uv run vladbench run   <protocol.json> --smoke --models <id>   # a few whole samples per task, 99 answers; billable
+uv run vladbench score <protocol.json> --smoke --models <id>   # scores them beside the answers, not in results/
 uv run vladbench run   <protocol.json> --models <id>           # every unanswered question, 11,193 per model; billable; resumes
 uv run vladbench score <protocol.json> --models <id>           # writes results/scores-<id>.json
 uv run vladbench build                                         # rebuilds every derived file; stops if any run is partial;

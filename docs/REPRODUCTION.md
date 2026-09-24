@@ -5,7 +5,7 @@ uv sync --group scripts     # ffmpeg must be on PATH for video models
 cp .env.example .env        # OPENROUTER_API_KEY; HF_TOKEN to publish
 
 uv run vladbench validate results/protocols/full-original.json
-uv run vladbench run results/protocols/full-original.json --smoke --models gemini38 qwen38max  # first question of every task (billable)
+uv run vladbench run results/protocols/full-original.json --smoke --models gemini38 qwen38max  # a few whole samples per task (billable)
 uv run vladbench run results/protocols/full-original.json --models gemini38                    # everything unanswered (billable)
 uv run vladbench score results/protocols/full-original.json --models gemini38                  # writes results/scores-gemini38.json
 uv run vladbench build                  # record, site data, answers, variants, parquet, figures, card, Pages site; stops on a partial run

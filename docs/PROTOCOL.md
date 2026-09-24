@@ -1,108 +1,86 @@
 # Protocol
 
-Every released VLADBench question was sent once, with its original wording, to
-each model through that model's own endpoint, and the answers were scored with
-the paper's scoring criteria. Models differ in two declared ways: how they receive a
-frame sequence, and whether their reasoning can be switched off.
+This document describes how the re-evaluation was run and how problems were handled as they came up. The settings
+live in `results/protocols/full-original.json`, and the file's hash identifies the condition.
 
-## What the numbers support
+## How the benchmark was run
 
-- Per-task scores for each model, scored once over complete samples.
-- Comparisons between models that share the same sequence transport and
-  reasoning availability (Qwen 3.6 vs Qwen 3.8; Gemini vs Muse; Qwen Max vs
-  Claude Opus 5.5).
-- Ordering claims across all models, stated with the per-model declarations
-  attached, for example "Gemini 3.8 Flash scores higher than Qwen 3.8 27B and
-  Qwen 3.6 35B A3B on 25 of 28 tasks under these conditions".
+- **Dataset.** `depth2world/VLADBench` at revision `1895f222…`: 28 tasks, 11,193 questions per model. Trajectory has
+  no released references or scorer, so it is left out. The paper's final scores leave it out too.
+- **Prompts.** Each question's original text, after the country sentence that the released sample uses. There is no
+  system prompt and there are no examples.
+- **Images.** A single-image question sends the pinned dataset URL with `detail: auto`. Images are not resized.
+- **Frame sequences.** Each model receives sequences in one of two ways: as an MP4 built from the annotated frames in
+  order at 1 FPS, encoded losslessly (crf 0), or as the frames in order as separate images. The table at the end
+  shows which.
+- **Reasoning.** Off where the provider allows it, and low otherwise.
+- **Generation.** Temperature is left unset. `max_tokens` is 8192, as a guard against runaway output. A run counts as
+  complete only if no answer reached it.
+- **Serving.** Every model was called through OpenRouter, and each model ran once. Differences under about two points
+  may be run-to-run noise.
+- **Scoring.** The paper's released scorer (`evaluate_utils.py` at commit `b0dde78`), kept under `original/` with one
+  syntax fix. Bounding boxes are scored in pixels.
 
-## What they do not support
+## Quirks and how they were handled
 
-- Treating a gap to the paper's Table 10 as model progress alone. The 2025 and
-  2026 numbers come from different model sets, inference stacks, and image
-  handling, with unobserved provider preprocessing.
-- Attributing a gap to model quality alone. Some models reason at their lowest
-  available level, others have reasoning off; Qwen Max, Claude Opus 5.5, and
-  the OpenAI models see frames as separate images, the others see a video.
-- Reading TOTAL as more than the question-weighted mean of the 28 task
-  composites. That weighting reproduces 241 of the paper's 250 group averages
-  within 0.1; the paper does not state it.
-- Anything about a model whose run is not `protocol_complete` in its score
-  file, beyond the footnoted numbers.
+- **Retries.** A request that fails with a transient error is tried up to four times, waiting 1, 2, and 4 seconds
+  after rate limits and timeouts, and 10, 20, and 40 seconds after server errors and failed image fetches. An answer
+  that comes back empty, is cut off by the guard, or is a single character repeated is asked again, up to four times.
+  If no attempt produces an answer, the question is scored as unanswered.
+- **Large requests.** OpenRouter rejects request bodies over 20 MB. Videos over the limit were re-encoded with H.264
+  at crf 18, which is lossy, and the answer record flags them. This affected 242 Gemini 3.8 Flash requests.
+- **Single-frame sequences.** 256 of the 2,684 sequence questions have one annotated frame. Video models receive them
+  as a one-frame MP4.
+- **Qwen 3.8 Max.** Alibaba's endpoint rejects video with fewer than four frames, which would have affected 876
+  sequence questions. Qwen 3.8 Max receives every sequence as separate images instead.
+- **Reasoning that cannot be turned off.** Gemini 3.8 Flash, Qwen 3.8 Max, Muse Spark 1.3, MiniMax M3, Claude Opus
+  5.5, and GPT-6 Astra run with reasoning low. GPT-6 Astra also accepts `minimal`, which was not used. MiniMax M3
+  produces reasoning tokens even when asked not to.
+- **Hosts that change per request.** OpenRouter sends MiniMax M3 and Gemma 4 31B to third-party hosts that vary from
+  request to request (Parasail, Venice, and Friendli were seen), and the open-weight Qwen models to Darkbloom and
+  Parasail. The open-weight Qwen models exclude the Alibaba route, which rejects clips under four frames. The dataset
+  records the host that served each answer.
+- **Pinned model IDs.** The OpenAI models are called by exact ID, such as `openai/gpt-5.6-luna`, rather than moving
+  aliases such as `~openai/gpt-luna-latest`.
+- **Gemini 3.8 Flash's first run.** It first ran with a 512-token cap, which cut off 56 answers. Those 56 were asked
+  again under the 8192 guard on 2026-09-15, and the other answers were kept. The score file counts the kept answers
+  as `carried_from_superseded_condition`. The earlier settings file is archived at
+  `scripts/archive/full-original-512.json`.
+- **Earlier Qwen runs.** Qwen 3.6 35B A3B and Qwen 3.8 27B first ran on self-hosted Modal endpoints under the same
+  512-token cap. OpenRouter runs replaced them, and the old score files are in `results/archive/`.
+- **Gemini 2.5 Flash Lite.** It first ran with reasoning low and was re-run with reasoning off. The earlier answers
+  are archived.
+- **Box units.** The prompt gives the image size in pixels but does not say what units a box should use. Models that
+  answer on a 0-1000 grid score near zero on the three box tasks. The site and `vladbench.boxes` also report those
+  models with boxes read on their own grid.
+- **What providers do.** What a provider does with a request after it arrives (decoding, frame sampling, resizing) is
+  not visible to us.
 
-## The protocol
+## Tracing an answer to its request
 
-Defined by `results/protocols/full-original.json`. One file is one condition.
+Each answer records the SHA-256 of the request that produced it, with video bytes replaced by the frame URLs they were
+built from. The scorer rebuilds each request and refuses an answer whose hash does not match. The kept Gemini 3.8
+Flash answers match the archived settings file instead. Media receipts under `results/runs/media/` record the frame
+hashes, the video hash, the frame count, and any re-encoding.
 
-| | |
-|---|---|
-| Dataset | `depth2world/VLADBench` at revision `1895f222…`; 28 released tasks, 11,193 questions per model. `Trajectory` has no released annotation or scorer and is excluded, as in the paper. |
-| Prompt | The annotation's question text, byte for byte, after the country sentence the released sample uses. No system prompt, no examples. |
-| Static questions | One `image_url` to the pinned dataset URL, `detail: auto`, no local resizing. |
-| Sequences | Declared per model: a lossless 1 FPS MP4 of the annotation's frames in annotation order, or the frames as ordered `image_url` parts. |
-| Reasoning | Each model's lowest enabled setting: off where the provider allows it, otherwise its minimum. |
-| Generation | Temperature unset. `max_tokens` 8192 as a runaway guard, not a variable: a model is `protocol_complete` only if no answer hit it. Up to three retries on transient errors: 1, 2, 4 s backoff for rate limits and timeouts, 10, 20, 40 s for provider outages (5xx) and for a provider failing to fetch a dataset image. A response with no visible answer, whether cut off by the guard or returned empty by the host, is redrawn within the same budget; if none of the draws answers, the question is recorded as unanswered. |
-| Coordinates | Native pixels in prompts and scoring. |
-| Scorer | The released `evaluate_utils.py` at commit `b0dde78`, preserved under `original/` with one disclosed syntax repair. |
+## Per-model settings
 
-## Per-model declarations
+| Model | Frame sequences | Reasoning | Host |
+|---|---|---|---|
+| Gemini 3.8 Flash | MP4 | low | provider-managed |
+| Gemini 2.5 Flash Lite | MP4 | off | provider-managed |
+| Gemma 4 31B | MP4 | off | third-party, varies |
+| GPT-5.6 Luna | images | off | OpenAI |
+| GPT-5.6 Sol | images | off | OpenAI |
+| GPT-6 Luna | images | off | OpenAI |
+| GPT-6 Sol | images | off | OpenAI |
+| GPT-6 Astra | images | low | OpenAI |
+| Claude Opus 5.5 | images | low | Anthropic |
+| Qwen 3.8 Max | images | low | Alibaba |
+| Qwen 3.8 27B | MP4 | off | third-party, varies; not Alibaba |
+| Qwen 3.6 35B A3B | MP4 | off | third-party, varies; not Alibaba |
+| Muse Spark 1.3 | MP4 | low | provider-managed |
+| MiniMax M3 | MP4 | low | third-party, varies |
+| Reka Edge | MP4 | off | provider-managed, not pinned |
 
-| Model | Sequence transport | Reasoning | Single-frame sequences¹ | Oversize² |
-|---|---|---|---|---|
-| Gemini 3.8 Flash (OpenRouter)³ | MP4, `processing: static` | low, cannot be disabled | one-frame MP4 | H.264 crf18, 242 requests |
-| Qwen 3.8 Max (OpenRouter, Alibaba)⁴ | ordered `image_url` parts | low, cannot be disabled | n/a | n/a |
-| Muse Spark 1.3 (OpenRouter) | MP4, `processing: static` | low, cannot be disabled | one-frame MP4 | H.264 crf18 if needed |
-| MiniMax M3 (OpenRouter)⁵ | MP4, `processing: static` | low, cannot be disabled | one-frame MP4 | H.264 crf18 if needed |
-| Gemma 4 31B (OpenRouter)⁵ | MP4, `processing: static` | off | one-frame MP4 | H.264 crf18 if needed |
-| GPT-5.6 Luna (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
-| GPT-6 Astra (OpenRouter, OpenAI) | ordered `image_url` parts | low, mandatory; `minimal` also accepted | n/a | n/a |
-| GPT-5.6 Sol (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
-| GPT-6 Luna (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
-| GPT-6 Sol (OpenRouter, OpenAI) | ordered `image_url` parts | off | n/a | n/a |
-| Claude Opus 5.5 (OpenRouter, Anthropic) | ordered `image_url` parts | low, cannot be disabled | n/a | n/a |
-| Gemini 2.5 Flash Lite (OpenRouter) | MP4, `processing: static` | off | one-frame MP4 | H.264 crf18 if needed |
-| Reka Edge (OpenRouter) | MP4, `processing: static` | off; non-reasoning model | one-frame MP4 | H.264 crf18 if needed |
-| Qwen 3.8 27B (OpenRouter, third-party hosts) | MP4, `processing: static`, Alibaba route excluded | off | one-frame MP4 | H.264 crf18 if needed |
-| Qwen 3.6 35B A3B (OpenRouter, third-party hosts) | MP4, `processing: static`, Alibaba route excluded | off | one-frame MP4 | H.264 crf18 if needed |
-
-¹ 256 of the 2,684 sequence questions have a single annotated frame. Video
-models receive it as a one-frame MP4.
-
-² OpenRouter rejects bodies above 20 MB. Requests over the limit are re-encoded
-with H.264 crf18 and flagged in the answer record and the score file.
-
-³ Gemini 3.8 Flash was first run under an earlier file, identical except for a
-512-token cap, archived at `scripts/archive/full-original-512.json`. The cap
-bound 56 answers. Answers the cap did not touch are carried into the live
-condition unchanged, each keeping its hash under the archived file; the 56 were
-re-asked under the live guard on 2026-09-15, and the scorer accepts a carried
-answer only when its `finish_reason` shows the cap did not bind. The score file
-records `carried_from_superseded_condition`. Qwen 3.6 35B A3B and Qwen 3.8 27B
-were also run under that cap on self-hosted Modal endpoints; those sweeps were
-replaced by OpenRouter runs under the live protocol, and their score files are
-kept in `results/archive/` for reference only.
-
-⁴ Alibaba's endpoint rejects any video with fewer than four frames, which would
-have affected 876 of the 2,684 sequence questions, so Qwen Max receives every
-sequence as ordered images instead.
-
-⁵ OpenRouter routes these models to third-party hosts that vary per request
-(Parasail, Venice, and Friendli were observed), so the serving backend is not
-pinned. MiniMax still emits reasoning tokens when asked to disable reasoning;
-Gemma does not.
-
-What any provider does after receiving a request (decoding, frame sampling,
-resizing) is not observed.
-
-## How an answer is tied to its request
-
-Every recorded answer carries the SHA-256 of the request it was given, computed
-with the video bytes replaced by the frame URLs they were built from. Scoring
-rebuilds each request from the specification and refuses to score an answer
-whose hash differs. Media receipts under `results/runs/media/` record frame
-hashes, encoded-video hash, frame count, padding, and any fallback.
-
-The three earlier sweeps were checked the same way against the archived file on
-2026-09-14: 3,137 of 3,137 sample runs per model matched, 11,193 answers each,
-and regenerating recorded payloads through the current code produced identical
-hashes. Runs record the git commit and dirty flag; the request hash is the
-provenance.
+Every model is called through OpenRouter. MP4 models send video with `processing: static`.

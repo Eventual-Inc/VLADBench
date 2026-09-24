@@ -158,8 +158,9 @@ def render_cost_score(record: Record, registry: Mapping[str, ModelInfo], out: Pa
     _style_axes(ax, points)
     _draw(ax, points)
     ax.set_title("VLADBench re-evaluation: Cost vs Score" if hero else "Cost vs Score", loc="left", color=INK, fontsize=26 if hero else 22, fontweight="bold", pad=14)
-    fig.text(0.01, 0.01, FOOTNOTE, color=MUTED, fontsize=12, va="bottom")
-    fig.tight_layout(rect=(0, 0.05, 1, 1))
+    if not hero:   # the hero is a cover image; the plot gets the space
+        fig.text(0.01, 0.01, FOOTNOTE, color=MUTED, fontsize=12, va="bottom")
+    fig.tight_layout(rect=(0, 0 if hero else 0.05, 1, 1))
     out.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(out, facecolor=BG)
     plt.close(fig)

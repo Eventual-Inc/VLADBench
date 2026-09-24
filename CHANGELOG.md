@@ -18,18 +18,43 @@ Qwen 3.8 Max, Qwen 3.8 27B, Qwen 3.6 35B A3B, Muse Spark 1.3, MiniMax M3, and Re
 
 ### Added
 
-- Protocol-driven runner and scorer: one file per condition, request hashes on every answer, the paper's scoring code
-  preserved byte for byte. A model's questions across all tasks share one request pool, and every API key is checked
-  before anything is written.
-- Billed cost per answer and tokeniser rules for cost per hour of video (`vladbench.metering`).
+Evaluation
+- Protocol-driven runner and scorer: one protocol file per condition, a request hash on every answer, and the paper's
+  scoring code kept byte for byte in `original/`.
+- `vladbench validate`, `run`, `score`, `build`, and `publish`, with help text for each command.
+- Smoke test: `run --smoke` asks a few whole samples of every task, 99 questions, enough for the scorer to score all
+  28 tasks. `score --smoke` scores them and writes `scores.json` beside the answers, never to `results/`.
+- A model's questions across all tasks share one request pool, so a smoke run takes about 3 minutes instead of 24.
+- Every API key is checked before anything is written or billed.
+- `score` refuses to replace a score file that has more answers than it found; `--force` replaces it.
+- Expected CLI errors print one line; `VLADBENCH_DEBUG=1` shows the traceback.
+
+Results and cost
+- Billed cost per answer, and tokeniser rules for cost per hour of video (`vladbench.metering`).
 - Per-question marks that re-aggregate to the released scorer's components (`answers/<Task>.json`).
-- Results site at https://eventual-inc.github.io/VLADBench/ and the parquet dataset with serving host per answer.
-- `vladbench build` and `vladbench publish`; the build refuses partial runs and stale score files, and on a checkout
-  without the raw answer records it builds the site, figures, and card from the committed record. `score` refuses to
-  replace a score file that has more answers than it found. Expected CLI errors print one line.
-- Model registry (`results/models.json`) with each model's box convention.
+- Model registry (`results/models.json`) with each model's label, lab, colour, and box convention.
 - Frontier and totals under three bounding-box readings (`vladbench.boxes`).
-- CI, pre-commit hooks, `AGENTS.md`, and procedures for agents in `.claude/skills/`.
+
+Build and publishing
+- `vladbench build` replaces the build scripts. It refuses partial runs and stale score files.
+- On a checkout without the raw answer records, `build` skips the record, answers, and export steps, says so, and
+  builds the site data, figures, dataset card, and site from the committed `results/rerun.json`.
+- The parquet dataset on Hugging Face, with the serving host of every answer.
+
+Results site (https://eventual-inc.github.io/VLADBench/)
+- Overview in the paper's Table 10 layout, leaderboard, every answer to every question, the cost-performance frontier
+  with a video cost calculator, caveats, and the 2025 and 2026 score distributions.
+- Serving Efficiency table under the frontier: answer time, cost per video hour, and score.
+- Every panel embeddable with `embed.html?embed=<name>`; panel descriptions link to `docs/companion.md`.
+- Figures and embeds readable at blog width: larger text and markers, leader lines for displaced labels, and plots
+  drawn at container width. The hero PNG drops the footnote.
+- Links to the article from the README, the dataset card, and the site's navigation.
+
+Documentation and tooling
+- README in the layout of an evaluation harness fork, with a table of what each command needs and a dated log of
+  announcements; the upstream README is in `docs/upstream-readme.md`.
+- `AGENTS.md` and procedures in `.claude/skills/` to evaluate a model, estimate video cost, and audit a task.
+- CI, pre-commit hooks (ruff, ty, codespell), and tests for every module; 94% line coverage.
 
 ### Method notes
 

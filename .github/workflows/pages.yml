@@ -10,9 +10,13 @@ on:
       - "self-test.html"
       - "web/**"
       - "answers/**"
-      - "task-review-*.js"
-      - "results/dataset/*.png"
-      - "src/vladbench/site.py"
+      - "results/rerun.json"
+      - "results/models.json"
+      - "results/audit/**"
+      - "original/all_task.json"
+      - "src/vladbench/**"
+      - "uv.lock"
+      - "pyproject.toml"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -32,7 +36,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
       - name: Build the standalone site
-        run: uv run vladbench build --steps site --site dist/pages --article https://www.eventual.ai/blog/vladbench-reeval
+        run: uv run --group scripts vladbench build --steps site --site dist/pages --article https://www.eventual.ai/blog/vladbench-reeval
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

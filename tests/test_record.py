@@ -5,15 +5,12 @@ from pathlib import Path
 import unittest
 
 from vladbench.aggregate import total
-from vladbench.boxes import BOX_TASKS
+from vladbench.boxes import BOX_TASKS, variants
+from vladbench.registry import load_registry
 from vladbench.record import IncompleteRun, require_complete
 
 ROOT = Path(__file__).resolve().parents[1]
 
-
-def load_js(path: Path):
-    text = path.read_text()
-    return json.loads(text[text.index("=") + 1:].strip().rstrip(";"))
 
 
 class CompletenessTests(unittest.TestCase):
@@ -39,7 +36,7 @@ class PublishedNumbersTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.record = json.loads((ROOT / "results/rerun.json").read_text())
-        cls.variants = load_js(ROOT / "task-review-variants.js")
+        cls.variants = variants(cls.record, load_registry())
 
     def test_task_scores_match_their_score_files(self):
         for model in self.record["models"]:

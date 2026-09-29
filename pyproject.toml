@@ -20,7 +20,7 @@ where = ["src"]
 
 [dependency-groups]
 # Tests, lint, and types. `uv sync` installs this group by default.
-dev = ["pytest>=8", "ruff>=0.13", "ty>=0.0.83", "codespell>=2.4", "pyarrow>=17"]
+dev = ["pytest>=8", "ruff>=0.13", "ty>=0.0.83", "codespell>=2.4", "pyarrow>=17", "matplotlib>=3.9"]
 # The build and publish scripts under scripts/.
 scripts = ["pyarrow>=17", "matplotlib>=3.9", "huggingface_hub>=0.34"]
 

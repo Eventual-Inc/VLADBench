@@ -16,7 +16,7 @@ from vladbench.build import NEEDS_RUNS, STEPS, build, have_runs, plan
 from vladbench.record import IncompleteRun, build_record, load_record
 from vladbench.registry import load_registry
 from vladbench.site import build_site
-from vladbench.sitedata import FILES, site_file, task_inputs, write_js, write_site_data
+from vladbench.sitedata import FILES, task_inputs, write_js, write_site_data
 from vladbench.spec import load_spec
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,17 +33,18 @@ class CommittedOutputs(unittest.TestCase):
         self.assertTrue(filecmp.cmp(ours, committed, shallow=False), f"{ours.name} differs from the committed {committed}")
 
     def test_site_data(self):
+        site = build_site(self.tmp / "site-data-pages")
         for path in write_site_data(self.record, task_inputs(), self.tmp):
             with self.subTest(file=path.name):
-                self.same(path, site_file([k for k, (name, _) in FILES.items() if name == path.name][0]))
+                self.same(path, site / path.name)
 
     def test_variants(self):
         path = write_js(self.tmp / FILES["variants"][0], FILES["variants"][1], variants(self.record, load_registry()))
-        self.same(path, site_file("variants"))
+        self.same(path, build_site(self.tmp / "variant-pages") / path.name)
 
     def test_site_bundle(self):
         site = build_site(self.tmp / "pages")
-        for name in ("index.html", "results.html", "embed.html", "self-test.html", "rerun.json", "web/config.js", *(n for n, _ in FILES.values())):
+        for name in ("index.html", "results.html", "embed.html", "self-test.html", "rerun.json", "web/config.js", "cost-vs-score.png", "cost-vs-score-hero.png", *(n for n, _ in FILES.values())):
             with self.subTest(file=name):
                 self.assertTrue((site / name).is_file())
         self.assertNotIn("task-review-data.js", (site / "embed.html").read_text())

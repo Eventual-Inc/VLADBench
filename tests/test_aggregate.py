@@ -7,13 +7,10 @@ import subprocess
 import unittest
 
 from vladbench.aggregate import Point, TaskScore, Tie, frontier, group_means, task_wins, total
+from vladbench.sitedata import task_inputs
 
 ROOT = Path(__file__).resolve().parents[1]
 
-
-def load_js(path: Path):
-    text = path.read_text()
-    return json.loads(text[text.index("=") + 1:].strip().rstrip(";"))
 
 
 class TotalTests(unittest.TestCase):
@@ -31,7 +28,7 @@ class TotalTests(unittest.TestCase):
             total(self.TASKS, skip={"A", "B"})
 
     def test_reproduces_241_of_the_papers_250_group_averages(self):
-        published = load_js(ROOT / "task-review-published.js")
+        published = json.loads((ROOT / "results/audit/published-results-2025.json").read_text())
         record = json.loads((ROOT / "results/rerun.json").read_text())
         counts = {t: r["questions_scored"] for t, r in record["models"][0]["tasks"].items()}
         within = checked = 0
@@ -55,7 +52,7 @@ class TotalTests(unittest.TestCase):
         found = [re.search(rf"^function {name}\(.*?^}}", source, re.S | re.M) for name in ("composite", "modelMean")]
         assert all(found), "web/results.js no longer defines composite and modelMean"
         functions = "\n".join(m.group(0) for m in found if m)
-        script = (f"const state = {{weights: null}};\nconst TASKS = {json.dumps(load_js(ROOT / 'task-review-tasks.js'))};\n{functions}\n"
+        script = (f"const state = {{weights: null}};\nconst TASKS = {json.dumps(task_inputs())};\n{functions}\n"
                   f"const models = {json.dumps(json.loads((ROOT / 'results/rerun.json').read_text())['models'])};\n"
                   "console.log(JSON.stringify(Object.fromEntries(models.map((m) => [m.id, modelMean(m)]))));")
         site = json.loads(subprocess.run(["node", "-"], input=script, capture_output=True, text=True, check=True).stdout)   # stdin: the record exceeds the argument limit

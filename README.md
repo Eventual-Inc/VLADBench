@@ -90,9 +90,10 @@ To evaluate a model without changing the published results, place it in its own 
 
 ```sh
 uv run vladbench build            # record, site data, answers, variants, parquet, figures, dataset card, site
-uv run vladbench build --steps site --site dist/pages
+uv run --group scripts vladbench build --steps site --site dist/pages
 ```
 
+The Pages build recreates the six `task-review-*.js` data files and both charts from tracked inputs.
 The `record`, `answers`, and `export` steps read the raw answer records, which are not in git; without them the build
 skips those steps, says so, and starts from the committed `results/rerun.json`. The build refuses a model whose run is
 partial or whose answers are newer than its score file.
@@ -155,7 +156,7 @@ The dataset, https://huggingface.co/datasets/Eventual-Inc/VLADBench-reeval, has 
 | `results/protocols/` | protocol files, one per condition |
 | `results/models.json` | model registry |
 | `results/scores-*.json`, `results/rerun.json` | score files and the record built from them |
-| `answers/` | every model's answer and per-question mark, per task |
+| `answers/` | every model's answer and per-question mark, per task; required by the interactive site |
 | `original/` | the paper's scoring code and task catalog, byte for byte, with hashes |
 | `docs/` | [protocol and limitations](docs/PROTOCOL.md), [reproduction](docs/REPRODUCTION.md), reviews, and plans |
 

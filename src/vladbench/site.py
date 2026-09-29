@@ -11,11 +11,15 @@ import re
 import shutil
 
 from . import paths
-from .sitedata import FILES
+from .sitedata import FILES, task_inputs, write_site_data
+from .boxes import variants
+from .figures import render_figures
+from .record import load_record
+from .registry import load_registry
+from .sitedata import write_js
 
 FULL_DATA = re.compile(r'<script src="task-review-data\.js(\?v=\d+)?" defer></script>')
 SLIM_DATA = '<script src="task-review-tasks.js" defer></script>'
-FIGURES = ("cost-vs-score.png", "cost-vs-score-hero.png")
 
 
 def embed_html(results_html: str) -> str:
@@ -44,8 +48,8 @@ def build_site(out: Path, *, article: str | None = None, blog: str | None = "htt
     shutil.copytree(paths.ROOT / "web", out / "web")
     shutil.copytree(paths.ANSWERS, out / "answers")                            # fetched one task at a time when a row expands
     (out / "web/config.js").write_text(config_js(article, blog))
-    for name, _ in FILES.values():
-        shutil.copy(paths.SITE_DATA / name, out / name)
-    for figure in FIGURES:
-        shutil.copy(paths.DATASET / figure, out / figure)
+    record = load_record()
+    write_site_data(record, task_inputs(), out)
+    write_js(out / FILES["variants"][0], FILES["variants"][1], variants(record, load_registry()))
+    render_figures(record, load_registry(), out)
     return out

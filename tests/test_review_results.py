@@ -1,4 +1,7 @@
 import json
+import tempfile
+
+from vladbench.sitedata import FILES, write_js
 from pathlib import Path
 import unittest
 
@@ -36,7 +39,8 @@ class ReviewResultsTests(unittest.TestCase):
             self.assertIsNotNone(model["usage"]["cost_usd"], f"{model['id']} has no billed cost")
 
     def test_browser_asset_matches_json_record(self):
-        javascript = (ROOT / "task-review-results.js").read_text()
+        with tempfile.TemporaryDirectory() as tmp:
+            javascript = write_js(Path(tmp) / FILES["results"][0], FILES["results"][1], self.result).read_text()
         prefix = "window.FULL_RESULTS = "
         self.assertTrue(javascript.startswith(prefix))
         self.assertTrue(javascript.endswith(";\n"))
